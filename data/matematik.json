@@ -1,0 +1,1019 @@
+{
+  "id": "matematik",
+  "ad": "Matematik",
+  "konular": [
+    {
+      "id": "matematik-temel-kavramlar",
+      "baslik": "Temel Kavramlar ve Sayı Basamakları",
+      "anlatim": {
+        "ozet": "Doğal sayılar, tam sayılar, basamak değeri ve farklı taban sistemleri matematiğin temel taşlarıdır; bu konuyu sağlam öğrenmeden ilerideki tüm konular sallantılı kalır.",
+        "icerik": [
+          "Doğal sayılar 0, 1, 2, 3, 4... şeklinde devam eden, eksi (negatif) olmayan sayılardır. Tam sayılar ise doğal sayılara negatif sayıları da (...-3, -2, -1, 0, 1, 2, 3...) ekleyerek elde edilir. Bir sayının 'basamak değeri', o rakamın bulunduğu basamağa göre aldığı değerdir. Örneğin 4restoran 538 sayısında 5 rakamı yüzler basamağındadır ve basamak değeri 5×100=500'dür. Aynı şekilde 3 rakamının basamak değeri 3×10=30, 8 rakamının basamak değeri 8×1=8'dir. Bir sayının rakamları toplamı ise sadece rakamların kendisini (basamak değerlerini değil) toplamaktır: 538 sayısında rakamlar toplamı 5+3+8=16'dır.",
+          "Mutlak değer, bir sayının sıfıra olan uzaklığını gösterir ve her zaman pozitiftir ya da sıfırdır; |−5|=5 ve |5|=5'tir. Üslü sayılarda taban aynıyken çarpma işleminde üsler toplanır (a^m × a^n = a^(m+n)), bölme işleminde ise üsler çıkarılır (a^m ÷ a^n = a^(m-n)). Örnek: 2^5 × 2^3 ÷ 2^4 işleminde önce üsler toplanır (5+3=8), sonra çıkarılır (8-4=4), sonuç 2^4=16 olur.",
+          "Taban aritmetiği, günlük hayatta kullandığımız 10'luk (ondalık) sistemin dışında sayı yazma biçimleridir. 5 tabanında yazılan (234)5 sayısını 10'luk tabana çevirmek için her basamağı, bulunduğu konumun taban üzerinden kuvvetiyle çarpıp toplarız: (234)5 = 2×5² + 3×5¹ + 4×5⁰ = 2×25 + 3×5 + 4×1 = 50+15+4 = 69. Bu mantık her taban için aynı şekilde işler; sadece taban sayısı (5 yerine 6, 7 gibi) değişir.",
+          "Ardışık sayılar, birbirini takip eden sayılardır (örnek: 7, 8, 9 ardışık doğal sayılardır). Ardışık iki sayı toplamı verildiğinde, küçük sayıyı x, büyük sayıyı x+1 alarak denklem kurulur ve çözülür. Bu tip sorularda sistematik olarak denklem kurma alışkanlığı kazanmak çok önemlidir."
+        ],
+        "anahtarNoktalar": [
+          "Basamak değeri = rakam × basamağın taban kuvveti (birler=1, onlar=10, yüzler=100...)",
+          "Rakamlar toplamı ≠ basamak değerleri toplamı; rakamlar toplamında sadece rakamlar toplanır",
+          "a^m × a^n = a^(m+n) (üs toplama kuralı, taban aynı olmalı)",
+          "a^m ÷ a^n = a^(m-n) (üs çıkarma kuralı, taban aynı olmalı)",
+          "Mutlak değer her zaman pozitif veya sıfırdır: |x| ≥ 0",
+          "Taban dönüşümünde her basamak, taban sayısının kuvvetiyle çarpılıp toplanır",
+          "Ardışık sayı problemlerinde küçüğü x, bir sonrakini x+1 ile ifade et",
+          "En küçük 4 basamaklı doğal sayı 1000, en büyük 3 basamaklı doğal sayı 999'dur"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "En büyük 4 basamaklı tek doğal sayı ile en küçük 4 basamaklı çift doğal sayının farkı kaçtır?",
+          "secenekler": [
+            "8999",
+            "8998",
+            "9000",
+            "8989",
+            "9001"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "En büyük 4 basamaklı tek doğal sayı 9999'dur (9999 tek bir sayıdır). En küçük 4 basamaklı çift doğal sayı 1000'dir (1000 çift bir sayıdır). Fark: 9999 − 1000 = 8999."
+        },
+        {
+          "soru": "En büyük 3 basamaklı doğal sayı ile en küçük 2 basamaklı doğal sayının toplamı kaçtır?",
+          "secenekler": [
+            "1008",
+            "1009",
+            "1010",
+            "999",
+            "1000"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "En büyük 3 basamaklı doğal sayı 999'dur. En küçük 2 basamaklı doğal sayı 10'dur (01 değil, çünkü 2 basamaklı bir sayının ilk rakamı 0 olamaz). Toplam: 999 + 10 = 1009."
+        },
+        {
+          "soru": "5 tabanında yazılan (234)₅ sayısının 10'luk taban karşılığı kaçtır?",
+          "secenekler": [
+            "59",
+            "64",
+            "69",
+            "74",
+            "79"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Taban dönüşümünde her basamak, bulunduğu konumun taban kuvvetiyle çarpılır: (234)₅ = 2×5² + 3×5¹ + 4×5⁰ = 2×25 + 3×5 + 4×1 = 50 + 15 + 4 = 69."
+        },
+        {
+          "soru": "7368 sayısında 3 rakamının basamak değeri kaçtır?",
+          "secenekler": [
+            "3",
+            "30",
+            "3000",
+            "300",
+            "33"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "7368 sayısında rakamlar soldan sağa binler(7), yüzler(3), onlar(6), birler(8) basamaklarındadır. 3 rakamı yüzler basamağındadır, bu yüzden basamak değeri 3×100=300'dür."
+        },
+        {
+          "soru": "Ardışık iki doğal sayının toplamı 57'dir. Bu iki sayının çarpımı kaçtır?",
+          "secenekler": [
+            "784",
+            "800",
+            "820",
+            "841",
+            "812"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Küçük sayı x, büyük sayı x+1 olsun. x + (x+1) = 57 → 2x+1=57 → 2x=56 → x=28. Sayılar 28 ve 29'dur. Çarpımları: 28×29 = 812."
+        },
+        {
+          "soru": "2⁵ × 2³ ÷ 2⁴ işleminin sonucu kaçtır?",
+          "secenekler": [
+            "16",
+            "8",
+            "32",
+            "64",
+            "4"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Taban aynı olduğunda çarpmada üsler toplanır, bölmede üsler çıkarılır: 2⁵ × 2³ = 2⁸. Sonra 2⁸ ÷ 2⁴ = 2⁴ = 16."
+        },
+        {
+          "soru": "|3 − 8| + |−5 + 2| işleminin sonucu kaçtır?",
+          "secenekler": [
+            "3",
+            "8",
+            "5",
+            "10",
+            "−8"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Önce parantez içleri hesaplanır: 3−8=−5, −5+2=−3. Mutlak değer bir sayının sıfıra uzaklığıdır ve her zaman pozitiftir: |−5|=5, |−3|=3. Toplam: 5+3=8."
+        },
+        {
+          "soru": "En küçük 4 basamaklı doğal sayı ile en büyük 3 basamaklı doğal sayının farkı kaçtır?",
+          "secenekler": [
+            "0",
+            "10",
+            "1",
+            "100",
+            "2"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "En küçük 4 basamaklı doğal sayı 1000'dir. En büyük 3 basamaklı doğal sayı 999'dur. Fark: 1000 − 999 = 1."
+        },
+        {
+          "soru": "Rakamları birbirinden farklı, 3 basamaklı en küçük tek doğal sayı kaçtır?",
+          "secenekler": [
+            "100",
+            "101",
+            "102",
+            "103",
+            "111"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "3 basamaklı en küçük sayılardan başlanır: 100 (çift, eler), 101 (rakamlar farklı değil, iki tane 1 var), 102 (çift), 103 → tek sayı ve rakamları (1,0,3) birbirinden farklı. Aranan sayı 103'tür."
+        },
+        {
+          "soru": "6 tabanında yazılan (1023)₆ sayısının 10'luk taban karşılığı kaçtır?",
+          "secenekler": [
+            "219",
+            "225",
+            "237",
+            "243",
+            "231"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "(1023)₆ = 1×6³ + 0×6² + 2×6¹ + 3×6⁰ = 1×216 + 0×36 + 2×6 + 3×1 = 216+0+12+3 = 231."
+        }
+      ]
+    },
+    {
+      "id": "matematik-bolunebilme",
+      "baslik": "Bölme, Bölünebilme, EBOB-EKOK",
+      "anlatim": {
+        "ozet": "Bölünebilme kuralları büyük sayılarla hızlıca işlem yapmayı sağlar; EBOB ve EKOK ise paylaştırma, buluşma ve gruplama problemlerinin anahtarıdır.",
+        "icerik": [
+          "Bölünebilme kuralları, bir sayıyı bölme işlemi yapmadan başka bir sayıya tam bölünüp bölünmediğini anlamamızı sağlar. 2 ile bölünebilme: sayının son rakamı çift olmalı (0,2,4,6,8). 3 ile bölünebilme: rakamlar toplamı 3'ün katı olmalı. 4 ile bölünebilme: son iki basamağın oluşturduğu sayı 4'e tam bölünmeli. 5 ile bölünebilme: son rakam 0 veya 5 olmalı. 9 ile bölünebilme: rakamlar toplamı 9'un katı olmalı. 10 ile bölünebilme: son rakam 0 olmalı. Örnek: 4356 sayısı 3'e bölünür mü? Rakamlar toplamı 4+3+5+6=18, 18 ise 3'ün katıdır, dolayısıyla 4356 da 3'e tam bölünür.",
+          "EBOB (En Büyük Ortak Bölen), iki ya da daha fazla sayıyı aynı anda tam bölen sayıların en büyüğüdür. EKOK (En Küçük Ortak Kat) ise iki ya da daha fazla sayının ortak katlarının en küçüğüdür. EBOB bulmak için sayılar asal çarpanlarına ayrılır ve ortak olan asal çarpanlar en küçük üsleriyle çarpılır; EKOK için ise ortak olan ve olmayan tüm asal çarpanlar en büyük üsleriyle çarpılır. Örnek: 24=2³×3, 36=2²×3². EBOB(24,36)=2²×3=12. EKOK(24,36)=2³×3²=72.",
+          "Önemli bir kural: iki sayının EBOB'u ile EKOK'unun çarpımı, o iki sayının çarpımına eşittir. Yani EBOB(a,b) × EKOK(a,b) = a × b. Bu formül, EBOB veya EKOK'tan biri bilinmiyorsa diğerini bulmamıza yardımcı olur. Örnek: EBOB'u 6, EKOK'u 72 olan iki sayıdan biri 18 ise diğeri = (6×72)/18 = 24'tür.",
+          "EBOB problemleri genelde 'en büyük... eşit parçalara bölme' veya 'aynı anda olabilecek en büyük grup' şeklinde, EKOK problemleri ise 'kaç günde tekrar buluşurlar' veya 'aynı anda gerçekleşen en küçük ortak zaman' şeklinde sorulur."
+        ],
+        "anahtarNoktalar": [
+          "2,4,5,10 kuralları sayının SON rakam(lar)ına; 3,9 kuralları rakamlar TOPLAMINA bakar",
+          "EBOB: ortak asal çarpanların KÜÇÜK üslüsü; EKOK: tüm asal çarpanların BÜYÜK üslüsü",
+          "EBOB(a,b) × EKOK(a,b) = a × b (çok kullanışlı kısayol formülü)",
+          "'Eşit paylara ayırma, en büyük grup' sorularında EBOB aranır",
+          "'Birlikte/yeniden buluşma, ortak periyot' sorularında EKOK aranır",
+          "EBOB her zaman sayılardan küçük veya eşit, EKOK her zaman sayılardan büyük veya eşittir",
+          "Asal sayılar sadece 1'e ve kendisine bölünür; 1 asal sayı değildir"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "24 ve 36 sayılarının EBOB'u kaçtır?",
+          "secenekler": [
+            "12",
+            "6",
+            "8",
+            "18",
+            "24"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "24 = 2³×3, 36 = 2²×3². Ortak asal çarpanlar 2 ve 3'tür; her birinin küçük üssü alınır: 2² × 3¹ = 4×3 = 12. EBOB(24,36)=12."
+        },
+        {
+          "soru": "8 ve 12 sayılarının EKOK'u kaçtır?",
+          "secenekler": [
+            "16",
+            "24",
+            "20",
+            "36",
+            "48"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "8 = 2³, 12 = 2²×3. EKOK için tüm asal çarpanların büyük üssü çarpılır: 2³ × 3 = 8×3 = 24. EKOK(8,12)=24."
+        },
+        {
+          "soru": "4A56 dört basamaklı sayısı 9 ile tam bölünebildiğine göre A rakamı kaçtır?",
+          "secenekler": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "9 ile bölünebilme kuralı: rakamlar toplamı 9'un katı olmalıdır. Rakamlar toplamı: 4+A+5+6 = 15+A. Bu toplamın 9'un katı (9 veya 18) olması gerekir. 15+A=18 olursa A=3 olur (15+A=9 için A negatif olur, mümkün değil). A=3."
+        },
+        {
+          "soru": "18 ve 24 sayılarının EBOB'u ile EKOK'unun çarpımı kaçtır?",
+          "secenekler": [
+            "288",
+            "360",
+            "400",
+            "432",
+            "504"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "EBOB(a,b) × EKOK(a,b) = a × b kuralı kullanılır. 18 × 24 = 432. (Kontrol: EBOB(18,24)=6, EKOK(18,24)=72, 6×72=432, doğrulanır.)"
+        },
+        {
+          "soru": "3B4 üç basamaklı sayısı 4 ile tam bölünebildiğine göre, B yerine yazılabilecek kaç farklı rakam vardır?",
+          "secenekler": [
+            "3",
+            "4",
+            "6",
+            "10",
+            "5"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "4 ile bölünebilme kuralı: son iki basamağın oluşturduğu sayı (B4) 4'e tam bölünmelidir. B=0→04=4 (bölünür), B=2→24 (bölünür), B=4→44 (bölünür), B=6→64 (bölünür), B=8→84 (bölünür). B'nin tek rakamları (1,3,5,7,9) için B4 sayısı 4'e bölünmez. Toplam 5 farklı B değeri (0,2,4,6,8) uygundur."
+        },
+        {
+          "soru": "60, 75 ve 90 sayılarının EBOB'u kaçtır?",
+          "secenekler": [
+            "15",
+            "5",
+            "10",
+            "20",
+            "30"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "60 = 2²×3×5, 75 = 3×5², 90 = 2×3²×5. Üç sayıda da ortak olan asal çarpanlar 3 ve 5'tir, en küçük üsleriyle: 3¹×5¹=15. EBOB(60,75,90)=15."
+        },
+        {
+          "soru": "Bir sayı hem 6 hem de 8 ile tam bölünebilmektedir. Bu sayı en az kaç olabilir?",
+          "secenekler": [
+            "12",
+            "24",
+            "16",
+            "20",
+            "48"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Hem 6 hem 8'e bölünen en küçük pozitif sayı, bu iki sayının EKOK'udur. 6=2×3, 8=2³. EKOK=2³×3=24. Aranan en küçük sayı 24'tür."
+        },
+        {
+          "soru": "252 sayısı aşağıdaki sayılardan hangisine tam bölünmez?",
+          "secenekler": [
+            "2",
+            "3",
+            "5",
+            "4",
+            "9"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "252'nin son rakamı 2 olduğundan 2'ye bölünür. Rakamlar toplamı 2+5+2=9, hem 3'e hem 9'a bölünür. Son iki basamağı 52, 4'e tam bölünür (52÷4=13). Ancak son rakamı 0 veya 5 olmadığından 5'e bölünmez. Cevap 5'tir."
+        },
+        {
+          "soru": "İki sayının EBOB'u 6, EKOK'u 72'dir. Bu sayılardan biri 18 olduğuna göre diğer sayı kaçtır?",
+          "secenekler": [
+            "12",
+            "18",
+            "30",
+            "24",
+            "36"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "EBOB(a,b) × EKOK(a,b) = a × b kuralından: 6 × 72 = 18 × b → 432 = 18b → b = 432/18 = 24."
+        },
+        {
+          "soru": "84 ve 126 sayılarının EBOB'u ile EKOK'unun toplamı kaçtır?",
+          "secenekler": [
+            "252",
+            "273",
+            "315",
+            "336",
+            "294"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "84 = 2²×3×7, 126 = 2×3²×7. EBOB = ortak çarpanların küçük üssü: 2×3×7 = 42. EKOK = tüm çarpanların büyük üssü: 2²×3²×7 = 252. Toplam: 42 + 252 = 294."
+        }
+      ]
+    },
+    {
+      "id": "matematik-rasyonel-sayilar",
+      "baslik": "Rasyonel Sayılar ve Ondalık Kesirler",
+      "anlatim": {
+        "ozet": "Rasyonel sayılar iki tam sayının oranı olarak yazılabilen sayılardır; kesir işlemlerini ve ondalık-kesir dönüşümünü bilmek günlük hayatta ve sınavda sıkça karşımıza çıkar.",
+        "icerik": [
+          "Rasyonel sayı, a/b şeklinde yazılabilen (b≠0) sayıdır; a'ya pay, b'ye payda denir. Kesirlerde toplama ve çıkarma yapmak için paydaların eşit (ortak payda) olması gerekir. Örnek: 3/4 + 1/6 işleminde paydaların ortak katı (EKOK) 12'dir. 3/4=9/12, 1/6=2/12 olur. Toplam: 9/12+2/12=11/12. Kesirlerde çarpma işleminde paylar kendi aralarında, paydalar kendi aralarında çarpılır: 3/4 × 2/9 = (3×2)/(4×9) = 6/36 = 1/6 (sadeleştirildi). Bölme işleminde ise ikinci kesirin (bölen) payı ve paydası yer değiştirilip çarpma yapılır: 5/6 ÷ 5/12 = 5/6 × 12/5 = 60/30 = 2.",
+          "Basit kesir, payı paydasından küçük olan kesirdir (örnek: 3/4). Bileşik kesir, payı paydasından büyük veya eşit olan kesirdir (örnek: 7/3). Tam sayılı kesir (örnek: 2 tam 1/3), bir tam sayı ile bir basit kesrin bir arada yazılmasıdır ve bileşik kesre çevrilebilir: tam sayı × payda + pay, payda aynı kalır. 2 tam 1/3 = (2×3+1)/3 = 7/3.",
+          "Ondalık sayılar, kesirlerin virgüllü gösterimidir. Bir kesri ondalık sayıya çevirmek için pay paydaya bölünür: 2/5 = 2÷5 = 0,4. Ondalık sayıyı kesre çevirmek için ise virgülden sonraki basamak sayısı kadar 10'un kuvveti paydaya yazılır ve sadeleştirilir: 0,75 = 75/100 = 3/4 (25 ile sadeleştirildi). Ondalık sayılarda toplama-çıkarma yaparken virgüller alt alta gelecek şekilde işlem yapılır: 1,20 + 0,35 = 1,55.",
+          "Kesirleri karşılaştırırken ortak payda bulmak ya da her birini ondalık sayıya çevirmek pratik yöntemlerdir. Örnek: 3/5=0,6 ; 2/3≈0,667 ; 7/10=0,7. Küçükten büyüğe sıralama: 3/5 < 2/3 < 7/10."
+        ],
+        "anahtarNoktalar": [
+          "Kesir toplama/çıkarma: önce ortak payda (paydaların EKOK'u) bulunur",
+          "Kesir çarpma: pay paya, payda paydaya çarpılır",
+          "Kesir bölme: ikinci kesir ters çevrilip çarpılır ('bölü' → 'çarpı ve ters')",
+          "Basit kesir: pay < payda; bileşik kesir: pay ≥ payda",
+          "Tam sayılı kesri bileşiğe çevirme: (tam sayı × payda + pay) / payda",
+          "Ondalığı kesre çevirme: virgülden sonraki basamak sayısı kadar sıfır paydaya yazılır",
+          "Kesri ondalığa çevirme: pay paydaya bölünür",
+          "Karşılaştırmada ortak paydaya getirmek ya da ondalığa çevirmek en güvenli yoldur"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "3/4 + 1/6 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "11/12",
+            "4/10",
+            "7/12",
+            "10/12",
+            "5/6"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Paydaların ortak katı (EKOK) 12'dir. 3/4 = 9/12, 1/6 = 2/12. Toplam: 9/12 + 2/12 = 11/12."
+        },
+        {
+          "soru": "2/5 kesrinin ondalık sayı karşılığı kaçtır?",
+          "secenekler": [
+            "0,2",
+            "0,4",
+            "0,25",
+            "0,5",
+            "2,5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Kesri ondalığa çevirmek için pay paydaya bölünür: 2 ÷ 5 = 0,4."
+        },
+        {
+          "soru": "0,75 ondalık sayısının sadeleştirilmiş kesir karşılığı nedir?",
+          "secenekler": [
+            "75/100",
+            "7/5",
+            "3/4",
+            "1/4",
+            "4/3"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "0,75 = 75/100 yazılır. 75 ve 100'ün EBOB'u 25'tir. Her ikisi 25'e bölünür: 75÷25=3, 100÷25=4. Sonuç: 3/4."
+        },
+        {
+          "soru": "5/8 − 1/4 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "1/4",
+            "1/2",
+            "4/4",
+            "3/8",
+            "5/4"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Ortak payda 8'dir. 1/4 = 2/8. İşlem: 5/8 − 2/8 = 3/8."
+        },
+        {
+          "soru": "2 tam 1/3 sayısının bileşik kesir karşılığı nedir?",
+          "secenekler": [
+            "3/3",
+            "5/3",
+            "6/3",
+            "8/3",
+            "7/3"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Tam sayılı kesri bileşik kesre çevirme: (tam sayı × payda + pay) / payda. (2×3+1)/3 = (6+1)/3 = 7/3."
+        },
+        {
+          "soru": "3/4 × 2/9 işleminin sadeleştirilmiş sonucu kaçtır?",
+          "secenekler": [
+            "1/6",
+            "5/13",
+            "6/36",
+            "1/3",
+            "2/3"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Kesir çarpmada pay paya, payda paydaya çarpılır: (3×2)/(4×9) = 6/36. 6 ve 36'nın EBOB'u 6'dır; sadeleştirilince 1/6 elde edilir."
+        },
+        {
+          "soru": "5/6 ÷ 5/12 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "1/2",
+            "2",
+            "1",
+            "5/2",
+            "25/72"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Kesir bölmede ikinci kesir ters çevrilip çarpılır: 5/6 ÷ 5/12 = 5/6 × 12/5 = 60/30 = 2."
+        },
+        {
+          "soru": "1,2 + 0,35 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "1,37",
+            "1,45",
+            "1,55",
+            "1,52",
+            "1,65"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Virgüller alt alta gelecek şekilde toplama yapılır: 1,20 + 0,35 = 1,55."
+        },
+        {
+          "soru": "7/20 kesrinin ondalık sayı karşılığı kaçtır?",
+          "secenekler": [
+            "0,07",
+            "0,2",
+            "0,7",
+            "0,35",
+            "3,5"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Pay paydaya bölünür: 7 ÷ 20 = 0,35. (Kontrol: 7/20 = 35/100 = 0,35)"
+        },
+        {
+          "soru": "3/5, 2/3 ve 7/10 kesirleri küçükten büyüğe sıralandığında hangisi en büyüktür?",
+          "secenekler": [
+            "3/5",
+            "2/3",
+            "Hepsi eşittir",
+            "Karşılaştırılamaz",
+            "7/10"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Kesirleri ondalığa çevirelim: 3/5=0,6 ; 2/3≈0,667 ; 7/10=0,7. Sıralama: 0,6 < 0,667 < 0,7 olduğundan en büyük kesir 7/10'dur."
+        }
+      ]
+    },
+    {
+      "id": "matematik-problemler",
+      "baslik": "Sayı, Yaş, Kar-Zarar, Yüzde ve Faiz Problemleri",
+      "anlatim": {
+        "ozet": "Yüzde, kâr-zarar, faiz ve yaş problemleri günlük hayattan örneklerle kurulan denklem problemleridir; doğru denklemi kurmayı öğrenmek çözümün yarısıdır.",
+        "icerik": [
+          "Yüzde (%) ifadesi, bir bütünün 100 eş parçasından kaç tanesi anlamına gelir; %20 demek 20/100 = 0,20 demektir. Bir sayının yüzdesini bulmak için sayı, yüzde oranıyla (ondalık hale getirilerek) çarpılır. Örnek: 250'nin %20'si = 250 × 0,20 = 50. İndirim problemlerinde, indirimli fiyat = orijinal fiyat − (orijinal fiyat × indirim oranı) şeklinde hesaplanır. Örnek: 400 TL'lik bir ürün %15 indirimle satılırsa: 400 − (400×0,15) = 400 − 60 = 340 TL.",
+          "Kâr-zarar problemlerinde, kâr = satış fiyatı − alış fiyatı'dır (satış > alış ise kârdır). Kâr yüzdesi = (kâr / alış fiyatı) × 100 formülüyle bulunur. Örnek: 800 TL'ye alınan bir mal 920 TL'ye satılırsa kâr = 920−800=120 TL'dir. Kâr yüzdesi = (120/800)×100 = %15. Tersine, alış fiyatı bilinmeyip satış fiyatı ve kâr yüzdesi verilirse: alış fiyatı = satış fiyatı / (1 + kâr oranı). Örnek: %25 kârla 500 TL'ye satılan bir ürünün alış fiyatı = 500 / 1,25 = 400 TL.",
+          "Basit faiz problemlerinde faiz tutarı = anapara × faiz oranı × süre (yıl) formülüyle hesaplanır. Örnek: Yıllık %10 faiz oranıyla 2000 TL, 3 yılda ne kadar faiz getirir? Faiz = 2000 × 0,10 × 3 = 600 TL.",
+          "Yaş problemlerinde, kişilerin bugünkü yaşları bilinmeyen olarak (x, y gibi) tanımlanır ve sorudaki ilişkiler (kaç kat, kaç yıl sonra/önce) denklem haline getirilir. Örnek: Babanın yaşı oğlunun yaşının 4 katıdır (baba=4x, oğul=x). 5 yıl sonra babanın yaşı oğlunun yaşının 3 katı olacaktır: 4x+5 = 3(x+5) → 4x+5=3x+15 → x=10. Oğul 10, baba 40 yaşındadır."
+        ],
+        "anahtarNoktalar": [
+          "%a = a/100 = a'nın ondalık karşılığı (örnek: %20 = 0,20)",
+          "İndirimli fiyat = fiyat − (fiyat × indirim oranı)",
+          "Kâr = satış fiyatı − alış fiyatı; Kâr yüzdesi = (kâr/alış fiyatı)×100",
+          "Alış fiyatı = satış fiyatı / (1 + kâr oranı) [kârlı satışta]",
+          "Basit faiz = anapara × oran × yıl",
+          "Yaş problemlerinde 'x yıl sonra' ifadesi her iki kişinin yaşına da aynı x eklenir",
+          "Yaş farkı zamanla DEĞİŞMEZ, sadece yaşların kendisi değişir",
+          "KDV dahil fiyat = KDV hariç fiyat × (1 + KDV oranı)"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "250 sayısının %20'si kaçtır?",
+          "secenekler": [
+            "50",
+            "25",
+            "40",
+            "55",
+            "60"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Bir sayının yüzdesini bulmak için sayı, oranın ondalık karşılığıyla çarpılır: 250 × 0,20 = 50."
+        },
+        {
+          "soru": "400 TL değerindeki bir ürün %15 indirimle satılıyor. İndirimli satış fiyatı kaç TL'dir?",
+          "secenekler": [
+            "320",
+            "340",
+            "330",
+            "350",
+            "360"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İndirim tutarı: 400 × 0,15 = 60 TL. İndirimli fiyat: 400 − 60 = 340 TL."
+        },
+        {
+          "soru": "Bir tüccar 800 TL'ye aldığı bir malı 920 TL'ye satıyor. Tüccarın kâr yüzdesi kaçtır?",
+          "secenekler": [
+            "%10",
+            "%12",
+            "%15",
+            "%20",
+            "%23"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Kâr tutarı: 920 − 800 = 120 TL. Kâr yüzdesi = (kâr / alış fiyatı) × 100 = (120/800) × 100 = %15."
+        },
+        {
+          "soru": "%25 kârla satılan bir ürünün satış fiyatı 500 TL ise alış fiyatı kaç TL'dir?",
+          "secenekler": [
+            "350",
+            "375",
+            "425",
+            "400",
+            "450"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Alış fiyatı = satış fiyatı / (1 + kâr oranı) = 500 / 1,25 = 400 TL. (Kontrol: 400 + 400×0,25 = 400+100=500, doğrulanır.)"
+        },
+        {
+          "soru": "Yıllık %10 basit faiz oranıyla 2000 TL, 3 yıl sonunda ne kadar faiz getirir?",
+          "secenekler": [
+            "200 TL",
+            "400 TL",
+            "800 TL",
+            "2600 TL",
+            "600 TL"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Basit faiz formülü: Faiz = anapara × oran × yıl = 2000 × 0,10 × 3 = 600 TL."
+        },
+        {
+          "soru": "Ali'nin yaşı Ayşe'nin yaşının 3 katıdır. Aralarındaki yaş farkı 24 olduğuna göre Ali kaç yaşındadır?",
+          "secenekler": [
+            "36",
+            "24",
+            "30",
+            "32",
+            "40"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Ayşe'nin yaşı x olsun, Ali'nin yaşı 3x'tir. Yaş farkı: 3x − x = 24 → 2x=24 → x=12. Ayşe 12, Ali 3×12=36 yaşındadır."
+        },
+        {
+          "soru": "Bir sayının %40'ı 60 olduğuna göre bu sayının kendisi kaçtır?",
+          "secenekler": [
+            "100",
+            "150",
+            "120",
+            "140",
+            "160"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Sayı x olsun: x × 0,40 = 60 → x = 60 / 0,40 = 150."
+        },
+        {
+          "soru": "1500 TL'ye alınan bir eşya %12 zararla satılıyor. Satış fiyatı kaç TL'dir?",
+          "secenekler": [
+            "1260",
+            "1280",
+            "1320",
+            "1300",
+            "1350"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Zarar tutarı: 1500 × 0,12 = 180 TL. Satış fiyatı (zararlı satışta alış fiyatından düşülür): 1500 − 180 = 1320 TL."
+        },
+        {
+          "soru": "Babanın yaşı oğlunun yaşının 4 katıdır. 5 yıl sonra babanın yaşı oğlunun yaşının 3 katı olacaktır. Buna göre babanın şimdiki yaşı kaçtır?",
+          "secenekler": [
+            "10",
+            "30",
+            "35",
+            "40",
+            "45"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Oğlunun yaşı x, babanın yaşı 4x olsun. 5 yıl sonra: 4x+5 = 3(x+5) → 4x+5 = 3x+15 → x=10. Oğul 10, baba 4×10=40 yaşındadır. (Kontrol: 5 yıl sonra oğul 15, baba 45; 45=3×15 doğrulanır.)"
+        },
+        {
+          "soru": "%18 KDV dahil fiyatı 2360 TL olan bir ürünün KDV hariç (orijinal) fiyatı kaç TL'dir?",
+          "secenekler": [
+            "1888",
+            "1932",
+            "1980",
+            "2050",
+            "2000"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "KDV dahil fiyat = KDV hariç fiyat × (1 + KDV oranı). KDV hariç fiyat = 2360 / 1,18 = 2000 TL."
+        }
+      ]
+    },
+    {
+      "id": "matematik-hareket-iscilik",
+      "baslik": "Hareket, Hız ve İşçi-Havuz Problemleri",
+      "anlatim": {
+        "ozet": "Hız=yol/zaman formülü ile işçi-havuz problemlerindeki 'birim zamanda yapılan iş' mantığı aslında aynı temel fikre dayanır: bir büyüklüğün zamana bölünmesi.",
+        "icerik": [
+          "Hareket problemlerinin temel formülü: Hız = Yol / Zaman, buradan Yol = Hız × Zaman ve Zaman = Yol / Hız türetilir. Örnek: 240 km yolu 4 saatte alan bir aracın hızı = 240/4 = 60 km/saat. Birim dönüşümü de önemlidir: km/saat'i m/saniye'ye çevirmek için 1000'e çarpılıp 3600'e bölünür (ya da kısaca 3,6'ya bölünür). Örnek: 72 km/saat = 72×1000/3600 = 20 m/saniye.",
+          "İki araç birbirine zıt yönden hareket ediyorsa ve aralarındaki mesafeyi kapatıyorlarsa, hızları toplanır: buluşma zamanı = toplam mesafe / (hız1+hız2). Aynı yönde hareket edip biri diğerini yakalıyorsa hızları çıkarılır: yakalama zamanı = mesafe / (hız farkı). Örnek: 280 km arayla, birbirine doğru 60 km/saat ve 80 km/saat hızla giden iki tren kaç saatte karşılaşır? 280/(60+80) = 280/140 = 2 saat.",
+          "İşçi-havuz problemlerinde, bir işi tek başına tamamlayan birinin 'birim zamanda yaptığı iş oranı' 1/süre olarak ifade edilir. Birlikte çalışıldığında oranlar toplanır. Örnek: Bir işi A 6 günde, B 12 günde bitiriyor. Birlikte çalışırlarsa: A'nın hızı 1/6, B'nin hızı 1/12. Toplam hız: 1/6+1/12 = 2/12+1/12=3/12=1/4. Süre = 1/(1/4) = 4 gün.",
+          "Havuzu dolduran ve boşaltan musluklar birlikte açıldığında, doldurma hızından boşaltma hızı çıkarılır. Örnek: Dolduran musluk 5 saatte, boşaltan musluk 8 saatte havuzu bitiriyor. Birlikte açılırsa net hız = 1/5 − 1/8 = 8/40−5/40=3/40. Havuz 40/3 saatte (yani 13 saat 20 dakikada) dolar."
+        ],
+        "anahtarNoktalar": [
+          "Hız = Yol / Zaman, Yol = Hız × Zaman, Zaman = Yol / Hız",
+          "Zıt yönde hareket: hızlar TOPLANIR (buluşma için)",
+          "Aynı yönde hareket (kovalama): hızlar ÇIKARILIR (yakalama için)",
+          "Bir işi x günde bitiren kişinin günlük iş hızı = 1/x",
+          "Birlikte çalışmada iş hızları TOPLANIR: 1/x + 1/y = 1/birlikte süre",
+          "Dolduran ve boşaltan musluk birlikteyse: doldurma hızı − boşaltma hızı",
+          "km/saat'ten m/saniye'ye çevirmek için 3,6'ya bölünür",
+          "Ortalama hız = TOPLAM yol / TOPLAM zaman (hızların ortalaması DEĞİL)"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "240 km'lik bir yolu 4 saatte alan bir aracın hızı kaç km/saattir?",
+          "secenekler": [
+            "60",
+            "40",
+            "50",
+            "70",
+            "80"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Hız = Yol / Zaman formülü kullanılır: 240 / 4 = 60 km/saat."
+        },
+        {
+          "soru": "90 km/saat sabit hızla giden bir araç 270 km'lik yolu kaç saatte alır?",
+          "secenekler": [
+            "2",
+            "3",
+            "2,5",
+            "3,5",
+            "4"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Zaman = Yol / Hız formülü kullanılır: 270 / 90 = 3 saat."
+        },
+        {
+          "soru": "Bir işi A işçisi tek başına 6 günde, B işçisi tek başına 12 günde bitirebiliyor. İkisi birlikte çalışırsa bu işi kaç günde bitirirler?",
+          "secenekler": [
+            "2",
+            "3",
+            "4",
+            "6",
+            "8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "A'nın günlük iş hızı 1/6, B'nin günlük iş hızı 1/12'dir. Birlikte hız: 1/6+1/12 = 2/12+1/12 = 3/12 = 1/4. Bu da işin 4 günde bittiği anlamına gelir."
+        },
+        {
+          "soru": "Aralarında 280 km olan iki tren, birbirlerine doğru sırasıyla 60 km/saat ve 80 km/saat hızlarla hareket ediyor. Kaç saat sonra karşılaşırlar?",
+          "secenekler": [
+            "1",
+            "1,5",
+            "2,5",
+            "2",
+            "3"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Zıt yönde hareket eden araçların hızları toplanır. Buluşma zamanı = toplam mesafe / (hız1+hız2) = 280/(60+80) = 280/140 = 2 saat."
+        },
+        {
+          "soru": "Bir havuzu dolduran musluk havuzu 5 saatte, boşaltan musluk ise 8 saatte boşaltabiliyor. İki musluk birlikte açılırsa havuz kaç saatte dolar?",
+          "secenekler": [
+            "3 saat",
+            "20/3 saat",
+            "13 saat",
+            "16 saat",
+            "40/3 saat"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Net doldurma hızı = doldurma hızı − boşaltma hızı = 1/5 − 1/8 = 8/40 − 5/40 = 3/40. Süre = 1 / (3/40) = 40/3 saat (yaklaşık 13 saat 20 dakika)."
+        },
+        {
+          "soru": "Bir araç 360 km'lik bir yolu gidişte 90 km/saat, dönüşte 60 km/saat hızla alıyor. Aracın toplam yolculuktaki (gidiş-dönüş) ortalama hızı kaç km/saattir?",
+          "secenekler": [
+            "72",
+            "65",
+            "70",
+            "75",
+            "80"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Gidiş süresi: 360/90=4 saat. Dönüş süresi: 360/60=6 saat. Toplam yol: 360+360=720 km. Toplam süre: 4+6=10 saat. Ortalama hız = toplam yol/toplam süre = 720/10 = 72 km/saat. (Dikkat: hızların aritmetik ortalaması alınmaz!)"
+        },
+        {
+          "soru": "Bir işçi bir işi tek başına 10 saatte yapabiliyor. 4 saat çalıştıktan sonra geri kalan işi, ikinci bir işçiyle birlikte 2 saatte bitiriyorlar. İkinci işçi bu işi tek başına kaç saatte bitirebilir?",
+          "secenekler": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "10"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "1. işçinin hızı 1/10'dur. 4 saatte yaptığı iş: 4×(1/10)=4/10=2/5. Kalan iş: 1−2/5=3/5. Son 2 saatte 1. işçi yine 2×(1/10)=1/5'lik kısmı yapar. 2. işçinin bu 2 saatte yaptığı kısım: 3/5−1/5=2/5. 2. işçinin saatlik hızı: (2/5)/2=1/5. Yani 2. işçi işi tek başına 5 saatte bitirir."
+        },
+        {
+          "soru": "Bir aracın hızı 72 km/saattir. Bu hız m/saniye cinsinden kaçtır?",
+          "secenekler": [
+            "15",
+            "18",
+            "20",
+            "24",
+            "26"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "km/saat'ten m/saniye'ye geçmek için 1000'e çarpılıp 3600'e bölünür (ya da kısaca 3,6'ya bölünür): 72×1000/3600 = 72000/3600 = 20 m/saniye."
+        },
+        {
+          "soru": "Ahmet evden okula yürüyerek 20 dakikada gidiyor. Yürüme hızını 1,25 katına çıkarırsa okula kaç dakikada varır?",
+          "secenekler": [
+            "12",
+            "14",
+            "15",
+            "16",
+            "18"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Yol sabitken hız ile zaman ters orantılıdır. Hız 1,25 katına çıkarsa, süre 1,25'e bölünür: 20 / 1,25 = 16 dakika."
+        },
+        {
+          "soru": "Bir musluk bir havuzu tek başına 6 saatte dolduruyor. 2 saat çalıştıktan sonra ikinci bir musluk daha açılıyor ve havuz, ikinci musluğun açılmasından itibaren 1 saat sonra (yani toplamda 3 saatte) tamamen doluyor. İkinci musluk tek başına bu havuzu kaç saatte doldurur?",
+          "secenekler": [
+            "1",
+            "1,5",
+            "3",
+            "4",
+            "2"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "1. musluğun hızı 1/6'dır. İlk 2 saatte yaptığı: 2×(1/6)=1/3. Kalan: 1−1/3=2/3. Son 1 saatte iki musluk birlikte bu 2/3'lük kısmı bitiriyor: (1/6 + 1/x)×1 = 2/3 → 1/x = 2/3 − 1/6 = 4/6−1/6=3/6=1/2 → x=2. İkinci musluk tek başına havuzu 2 saatte doldurur."
+        }
+      ]
+    },
+    {
+      "id": "matematik-oran-oranti",
+      "baslik": "Oran-Orantı",
+      "anlatim": {
+        "ozet": "Oran iki niceliğin karşılaştırılması, orantı ise eşit oranların eşitliğidir; doğru ve ters orantıyı ayırt etmek paylaştırma ve işçi-zaman problemlerinin temelidir.",
+        "icerik": [
+          "Oran, iki niceliğin birbirine bölünmesiyle elde edilen ifadedir ve a:b veya a/b şeklinde yazılır. Orantı ise iki oranın birbirine eşitlenmesidir: a/b = c/d. Doğru orantıda bir nicelik artarken diğeri de aynı oranda artar (ya da biri azalırken diğeri de azalır). Ters orantıda ise bir nicelik artarken diğeri aynı oranda azalır (çarpımları sabit kalır).",
+          "Doğru orantı örneği: Bir araç sabit hızla 5 saatte 350 km yol alıyorsa, 8 saatte kaç km yol alır? Hız sabit olduğundan yol ile zaman doğru orantılıdır: 350/5 = x/8 → x = 350×8/5 = 560 km. Ters orantı örneği: 8 işçi bir işi 15 günde bitiriyorsa, aynı işi 12 işçi kaç günde bitirir? İşçi sayısı arttıkça süre azalacağından (işçi sayısı × gün = sabit): 8×15 = 12×x → x = 120/12 = 10 gün.",
+          "Paylaştırma problemlerinde bir miktar, verilen orana göre parçalara bölünür. a:b oranında paylaştırma yapılırken toplam (a+b) parçaya bölünüp her birim k ile çarpılır. Örnek: 60 TL, 2:3 oranında paylaştırılıyor. Toplam oran parçası: 2+3=5. Her birim: 60/5=12. Küçük pay: 2×12=24, büyük pay: 3×12=36.",
+          "Üç veya daha fazla sayının oranı da aynı mantıkla çözülür: x:y:z=2:3:5 ve toplamları 100 ise, toplam parça 2+3+5=10, birim=100/10=10. Buna göre x=20, y=30, z=50."
+        ],
+        "anahtarNoktalar": [
+          "Doğru orantı: a/b=c/d (biri artarken diğeri de aynı yönde artar)",
+          "Ters orantı: a×b=c×d (biri artarken diğeri azalır, çarpım sabit kalır)",
+          "Paylaştırmada: toplam parça sayısı = oranların toplamı, birim = toplam miktar/toplam parça",
+          "İşçi sayısı ile süre TERS orantılıdır (daha çok işçi = daha az gün)",
+          "Hız sabitken yol ile zaman DOĞRU orantılıdır",
+          "Harita ölçeği problemleri doğru orantı ile çözülür",
+          "a:b:c oranında paylaştırmada her bir pay = (o terimin oranı × toplam miktar) / (oranlar toplamı)"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "a/b = 3/5 oranı ve a+b=40 olduğuna göre a kaçtır?",
+          "secenekler": [
+            "15",
+            "10",
+            "12",
+            "18",
+            "20"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "a=3k, b=5k olsun (k ortak çarpan). a+b=40 → 3k+5k=40 → 8k=40 → k=5. Buna göre a=3×5=15."
+        },
+        {
+          "soru": "60 TL, iki kişiye 2:3 oranında paylaştırılıyor. Büyük pay kaç TL'dir?",
+          "secenekler": [
+            "24",
+            "36",
+            "30",
+            "32",
+            "40"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Toplam oran parçası: 2+3=5. Her birim: 60/5=12. Büyük pay (3 birim): 3×12=36 TL."
+        },
+        {
+          "soru": "8 işçi bir işi 15 günde bitiriyor. Aynı işi 12 işçi kaç günde bitirir?",
+          "secenekler": [
+            "8",
+            "12",
+            "10",
+            "18",
+            "20"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İşçi sayısı ile gün sayısı ters orantılıdır, çarpımları sabittir: 8×15 = 12×x → 120 = 12x → x=10 gün."
+        },
+        {
+          "soru": "x:y:z = 2:3:5 oranında olan üç sayının toplamı 100 olduğuna göre z kaçtır?",
+          "secenekler": [
+            "20",
+            "30",
+            "40",
+            "50",
+            "60"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Toplam oran parçası: 2+3+5=10. Birim: 100/10=10. z (5 birim) = 5×10=50."
+        },
+        {
+          "soru": "Sabit hızla giden bir araç 5 saatte 350 km yol alıyor. Aynı hızla 8 saatte kaç km yol alır?",
+          "secenekler": [
+            "440",
+            "480",
+            "520",
+            "600",
+            "560"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Hız sabit olduğundan yol ile zaman doğru orantılıdır: 350/5 = x/8 → x = (350×8)/5 = 2800/5 = 560 km."
+        },
+        {
+          "soru": "90 sayısı, 4:5:9 oranında üç sayıya paylaştırılıyor. En küçük pay kaçtır?",
+          "secenekler": [
+            "20",
+            "15",
+            "25",
+            "30",
+            "45"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Toplam oran parçası: 4+5+9=18. Birim: 90/18=5. En küçük pay (4 birim): 4×5=20."
+        },
+        {
+          "soru": "6 makine bir işi 20 saatte bitiriyor. Aynı işi 15 saatte bitirmek için kaç makineye ihtiyaç vardır?",
+          "secenekler": [
+            "6",
+            "8",
+            "7",
+            "9",
+            "10"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Makine sayısı ile süre ters orantılıdır: 6×20 = x×15 → 120=15x → x=8 makine."
+        },
+        {
+          "soru": "Bir haritada 2 cm, gerçekte 50 km'yi göstermektedir. Aynı haritada 7 cm gerçekte kaç km'yi gösterir?",
+          "secenekler": [
+            "140",
+            "150",
+            "175",
+            "160",
+            "200"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Harita ölçeği doğru orantıdır: 2/50 = 7/x → x = (50×7)/2 = 350/2 = 175 km."
+        },
+        {
+          "soru": "a ile b ters orantılıdır. a=8 iken b=15 olduğuna göre a=12 olduğunda b kaçtır?",
+          "secenekler": [
+            "8",
+            "9",
+            "12",
+            "10",
+            "18"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Ters orantıda a×b sabittir: 8×15=120. a=12 iken: 12×b=120 → b=120/12=10."
+        },
+        {
+          "soru": "Bir sınıftaki kız öğrenci sayısının erkek öğrenci sayısına oranı 3/4'tür. Sınıfta toplam 35 öğrenci olduğuna göre kız öğrenci sayısı kaçtır?",
+          "secenekler": [
+            "12",
+            "14",
+            "18",
+            "20",
+            "15"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Kız:Erkek = 3:4, toplam oran parçası 3+4=7. Birim: 35/7=5. Kız öğrenci sayısı (3 birim): 3×5=15."
+        }
+      ]
+    },
+    {
+      "id": "matematik-geometri-temelleri",
+      "baslik": "Temel Geometri",
+      "anlatim": {
+        "ozet": "Üçgen ve dörtgenlerin çevre-alan formülleri ile temel açı kuralları, geometri sorularının %90'ını çözmeye yeten küçük ama güçlü bir araç setidir.",
+        "icerik": [
+          "Çevre, bir şeklin tüm kenarlarının uzunluklarının toplamıdır. Dikdörtgenin çevresi: 2×(uzun kenar + kısa kenar). Karenin çevresi: 4×kenar. Alan ise bir şeklin kapladığı yüzey miktarıdır. Dikdörtgenin alanı: uzun kenar × kısa kenar. Karenin alanı: kenar × kenar. Örnek: Kenarları 6 cm ve 9 cm olan dikdörtgenin çevresi 2×(6+9)=30 cm'dir.",
+          "Üçgenin alanı = (taban × yükseklik) / 2 formülüyle hesaplanır. Örnek: tabanı 10 cm, yüksekliği 6 cm olan üçgenin alanı (10×6)/2=30 cm²'dir. Bir üçgenin iç açıları toplamı her zaman 180 derecedir. İkizkenar üçgende taban açıları birbirine eşittir; tepe açısı = 180 − 2×(taban açısı). Örnek: taban açısı 70° olan ikizkenar üçgende tepe açısı = 180−2×70=40°'dir.",
+          "Yamuğun alanı = ((taban1+taban2)/2) × yükseklik formülüyle bulunur. Örnek: taban uzunlukları 8 cm ve 12 cm, yüksekliği 5 cm olan yamuğun alanı = ((8+12)/2)×5 = 10×5=50 cm². Paralelkenarın alanı = taban × yükseklik'tir (dikdörtgenle aynı mantık, çünkü paralelkenar 'eğilmiş dikdörtgen' gibi düşünülebilir). Çemberin çevresi = 2×π×yarıçap formülüyle hesaplanır; π yaklaşık 22/7 veya 3,14 alınır.",
+          "Pisagor teoremi, dik üçgenlerde kullanılan temel bir kuraldır: dik kenarların karelerinin toplamı, hipotenüsün (dik açının karşısındaki en uzun kenar) karesine eşittir: a²+b²=c². En sık kullanılan Pisagor üçlüsü 3-4-5'tir: 3²+4²=9+16=25=5². Hacim ise üç boyutlu cisimlerin kapladığı uzaydır; dikdörtgenler prizmasının hacmi = en × boy × yükseklik'tir."
+        ],
+        "anahtarNoktalar": [
+          "Dikdörtgen çevresi=2×(a+b), alanı=a×b; Kare çevresi=4×a, alanı=a²",
+          "Üçgen alanı = (taban × yükseklik) / 2",
+          "Üçgenin iç açıları toplamı her zaman 180°'dir",
+          "İkizkenar üçgende taban açıları eşittir, tepe açısı=180−2×taban açısı",
+          "Yamuk alanı = ((taban1+taban2)/2) × yükseklik",
+          "Paralelkenar alanı = taban × yükseklik",
+          "Çember çevresi = 2×π×yarıçap (π≈22/7 veya 3,14)",
+          "Pisagor teoremi: a²+b²=c² (sadece dik üçgende geçerli); 3-4-5 en bilinen üçlü"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Kenarları 6 cm ve 9 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+          "secenekler": [
+            "30",
+            "15",
+            "24",
+            "27",
+            "54"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Dikdörtgenin çevresi = 2×(uzun kenar+kısa kenar) = 2×(6+9) = 2×15 = 30 cm."
+        },
+        {
+          "soru": "Bir kenarı 7 cm olan karenin alanı kaç cm²'dir?",
+          "secenekler": [
+            "14",
+            "49",
+            "21",
+            "28",
+            "42"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Karenin alanı = kenar × kenar = 7×7 = 49 cm²."
+        },
+        {
+          "soru": "Tabanı 10 cm, yüksekliği 6 cm olan bir üçgenin alanı kaç cm²'dir?",
+          "secenekler": [
+            "16",
+            "20",
+            "30",
+            "40",
+            "60"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Üçgenin alanı = (taban × yükseklik) / 2 = (10×6)/2 = 60/2 = 30 cm²."
+        },
+        {
+          "soru": "Bir üçgenin iç açıları x, 2x ve 3x derece olarak ölçülmüştür. x kaç derecedir?",
+          "secenekler": [
+            "20",
+            "25",
+            "36",
+            "30",
+            "45"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Üçgenin iç açıları toplamı 180 derecedir: x+2x+3x=180 → 6x=180 → x=30."
+        },
+        {
+          "soru": "Taban uzunlukları 8 cm ve 12 cm, yüksekliği 5 cm olan bir yamuğun alanı kaç cm²'dir?",
+          "secenekler": [
+            "40",
+            "45",
+            "55",
+            "60",
+            "50"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Yamuğun alanı = ((taban1+taban2)/2) × yükseklik = ((8+12)/2)×5 = (20/2)×5 = 10×5 = 50 cm²."
+        },
+        {
+          "soru": "Yarıçapı 7 cm olan bir çemberin çevresi kaç cm'dir? (π=22/7 alınız)",
+          "secenekler": [
+            "44",
+            "22",
+            "33",
+            "49",
+            "154"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Çemberin çevresi = 2×π×yarıçap = 2×(22/7)×7 = 2×22 = 44 cm."
+        },
+        {
+          "soru": "Boyutları 4 cm, 5 cm ve 6 cm olan bir dikdörtgenler prizmasının hacmi kaç cm³'tür?",
+          "secenekler": [
+            "15",
+            "120",
+            "60",
+            "90",
+            "150"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Dikdörtgenler prizmasının hacmi = en × boy × yükseklik = 4×5×6 = 120 cm³."
+        },
+        {
+          "soru": "Taban uzunluğu 9 cm, yüksekliği 4 cm olan bir paralelkenarın alanı kaç cm²'dir?",
+          "secenekler": [
+            "13",
+            "18",
+            "36",
+            "26",
+            "45"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Paralelkenarın alanı = taban × yükseklik = 9×4 = 36 cm²."
+        },
+        {
+          "soru": "Bir ikizkenar üçgende taban açılarından biri 70 derece olduğuna göre, tepe açısı kaç derecedir?",
+          "secenekler": [
+            "20",
+            "30",
+            "50",
+            "40",
+            "70"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "İkizkenar üçgende iki taban açısı birbirine eşittir, yani diğer taban açısı da 70°'dir. Üçgenin iç açıları toplamı 180° olduğundan tepe açısı = 180−70−70 = 40°."
+        },
+        {
+          "soru": "Kenar uzunlukları 3 cm, 4 cm ve 5 cm olan bir üçgen hakkında aşağıdakilerden hangisi doğrudur?",
+          "secenekler": [
+            "Eşkenar üçgendir",
+            "Dar açılı üçgendir",
+            "Geniş açılı üçgendir",
+            "Böyle bir üçgen çizilemez",
+            "Dik üçgendir, hipotenüsü 5 cm'dir"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Pisagor teoremi kontrol edilir: en uzun kenarın karesi, diğer iki kenarın karelerinin toplamına eşit mi? 3²+4²=9+16=25 ve 5²=25. Eşit olduğundan bu üçgen dik üçgendir ve hipotenüsü (dik açının karşısındaki en uzun kenar) 5 cm'dir."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "kpss-calisma-asistani",
+  "version": "1.0.0",
+  "description": "2026 Ortaöğretim KPSS Genel Yetenek - Genel Kültür çalışma uygulaması",
+  "main": "main.js",
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "validate-data": "node scripts/validate-data.js",
+    "build:mac": "npm run validate-data && electron-builder --mac --dir && node scripts/copy-to-desktop.js"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.kpss.calismaasistani",
+    "productName": "KPSS",
+    "asar": false,
+    "files": [
+      "main.js",
+      "index.html",
+      "src/**/*",
+      "data/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": "dir",
+      "category": "public.app-category.education"
+    }
+  }
+}

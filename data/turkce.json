@@ -1,0 +1,516 @@
+{
+  "id": "turkce",
+  "ad": "Türkçe",
+  "konular": [
+    {
+      "id": "turkce-ses-bilgisi",
+      "baslik": "Ses Bilgisi",
+      "anlatim": {
+        "ozet": "Ses bilgisi, Türkçedeki ünlü ve ünsüz harflerin uyum kurallarını ve kelime türetilirken/çekilirken seslerde meydana gelen değişimleri inceler.",
+        "icerik": [
+          "Türkçede sesler ikiye ayrılır: ünlüler (a, e, ı, i, o, ö, u, ü) ve ünsüzler (geri kalan harfler). Ünlüler tek başına söylenebilen seslerdir; ünsüzler ise bir ünlünün yardımıyla söylenebilir. Türkçe kelimelerde ünlülerin diziliminde belirli kurallar vardır; bunlara 'ünlü uyumu' denir. Büyük ünlü uyumu, bir kelimedeki ünlülerin kalınlık-incelik bakımından uyumudur: kelimenin ilk hecesinde kalın ünlü (a, ı, o, u) varsa sonraki hecelerde de kalın, ince ünlü (e, i, ö, ü) varsa sonraki hecelerde de ince ünlü bulunur. Örneğin 'kalemlik' kelimesinde tüm ünlüler incedir, uyuma uyar.",
+          "Küçük ünlü uyumu ise düzlük-yuvarlaklık ilişkisidir: düz ünlüden (a, e, ı, i) sonra düz ünlü; yuvarlak ünlüden (o, ö, u, ü) sonra ya dar-yuvarlak (u, ü) ya da düz-geniş (a, e) ünlü gelir. Yabancı kökenli kelimeler (örneğin 'doktor', 'televizyon') çoğunlukla bu uyumlara aykırıdır; bu da onları tanımanın bir yoludur.",
+          "Ünsüz yumuşaması (değişimi), sert ünsüzle (p, ç, t, k) biten bir kelime ünlüyle başlayan ek aldığında bu sert ünsüzlerin yumuşak karşılıklarına (b, c, d, ğ/g) dönüşmesidir. Örneğin 'kitap' + 'ı' → 'kitabı', 'ağaç' + 'a' → 'ağaca'. Ünsüz sertleşmesi ise tam tersidir: sert ünsüzle (ç, f, h, k, p, s, ş, t — kısaca 'fıstıkçı şahap' sözcüğündeki harfler) biten kelimeden sonra 'c, d, g' ile başlayan bir ek gelirse bu ekin başındaki ünsüz sertleşir: 'kitap' + 'cı' → 'kitapçı', 'ağaç' + 'da' → 'ağaçta'.",
+          "Ünlü düşmesi, iki heceli bazı kelimelere ünlüyle başlayan ek geldiğinde ikinci hecedeki dar ünlünün düşmesidir: 'ağız' + 'ı' → 'ağzı', 'burun' + 'u' → 'burnu', 'oğul' + 'u' → 'oğlu'. Ünlü türemesi ise pekiştirme sıfatlarında veya bazı yapım eklerinde araya ünlü girmesidir: 'his' + 'le' → 'hissetmek' (ünsüz türemesi), 'azıcık' gibi örneklerde ünlü türer. Kaynaştırma (yardımcı) sesleri ise ünlüyle biten bir kelime ünlüyle başlayan bir ek aldığında araya giren 'y, ş, s, n' sesleridir: 'araba' + 'ı' → 'arabayı' (y kaynaştırma sesi), 'iki' + 'er' → 'ikişer' (ş), 'kapı' + ın + 'ı' → 'kapısının' (s), 'biz' + 'i' (zamirde) → 'bizi', ama 'okul' + 'a' + 'in' → 'okulunun' (n) gibi."
+        ],
+        "anahtarNoktalar": [
+          "Büyük ünlü uyumu: kalın-kalın, ince-ince devam eder; 'masa' kalın, 'sevgi' incedir.",
+          "Küçük ünlü uyumu: düz ünlüden sonra düz, yuvarlaktan sonra düz-geniş ya da dar-yuvarlak gelir.",
+          "Ünsüz yumuşaması: p,ç,t,k → b,c,d,ğ/g (ünlüyle başlayan ek gelince): kitap-kitabı.",
+          "Ünsüz sertleşmesi: 'fıstıkçı şahap' (f,s,t,k,ç,ş,h,p) ile biten kelimeden sonra c,d,g sertleşip ç,t,k olur.",
+          "Ünlü düşmesi: 'ağız', 'burun', 'beniz', 'oğul', 'karın' gibi kelimelerde ek alınca ikinci hecedeki dar ünlü düşer.",
+          "Kaynaştırma sesleri: y, ş, s, n — iki ünlünün yan yana gelmesini önlemek için araya girer, yazıda gösterilir.",
+          "Ulama yalnızca söyleyişte olur, yazımı etkilemez; ünsüzle biten kelimeden sonra ünlüyle başlayan kelime geldiğinde aradaki ünsüz bir sonraki kelimenin ünlüsüne bağlanarak okunur.",
+          "Yabancı kökenli kelimeler genellikle büyük/küçük ünlü uyumuna uymaz; bu, onları Türkçe kökenli kelimelerden ayırt etmede ipucu olur."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki kelimelerin hangisinde büyük ünlü uyumu kuralına bir aykırılık vardır?",
+          "secenekler": ["Kalemlik", "Televizyon", "Sevgili", "Arabalar", "Defterlik"],
+          "dogruIndex": 1,
+          "aciklama": "'Televizyon' yabancı kökenli bir kelimedir ve içinde hem kalın (a, o) hem ince (e, i) ünlüler bir aradadır; bu nedenle büyük ünlü uyumuna aykırıdır. 'Kalemlik', 'sevgili', 'arabalar' ve 'defterlik' kelimelerinin tamamında ünlüler ya hep kalın ya hep incedir, dolayısıyla uyuma uyarlar."
+        },
+        {
+          "soru": "'Kitap' kelimesi '-ı' iyelik ekini aldığında ortaya çıkan ses olayı aşağıdakilerden hangisidir?",
+          "secenekler": ["Ünlü düşmesi", "Ünsüz sertleşmesi", "Ünsüz yumuşaması", "Ünlü türemesi", "Kaynaştırma"],
+          "dogruIndex": 2,
+          "aciklama": "'Kitap' kelimesi sert ünsüz olan 'p' ile biter. Ünlüyle başlayan '-ı' eki geldiğinde 'p' sesi yumuşayarak 'b'ye dönüşür ve kelime 'kitabı' olur. Bu olaya ünsüz yumuşaması denir; ünsüz sertleşmesi ise tam tersi bir durumdur ve burada söz konusu değildir."
+        },
+        {
+          "soru": "Aşağıdaki kelime çiftlerinin hangisinde ünsüz sertleşmesi (benzeşmesi) örneği yoktur?",
+          "secenekler": ["Ağaç + da → ağaçta", "Kitap + cı → kitapçı", "Sokak + ta → sokakta", "Ev + de → evde", "Üç + gen → üçgen"],
+          "dogruIndex": 3,
+          "aciklama": "'Ev' kelimesi yumuşak bir ünsüz olan 'v' ile biter; bu yüzden 'fıstıkçı şahap' kuralındaki sert ünsüzler arasında yer almaz ve ek başındaki 'd' sertleşmeden 'evde' biçiminde kalır. Diğer örneklerin tümünde kelime sert bir ünsüzle (ç, k, ç) bittiği için ekin başındaki ünsüz sertleşmiştir (da→ta, cı→çı, gen→...)."
+        },
+        {
+          "soru": "Aşağıdaki kelimelerden hangisi ek aldığında ünlü düşmesine uğrar?",
+          "secenekler": ["Kalem + i", "Defter + i", "Ağız + ı", "Masa + yı", "Kitap + ı"],
+          "dogruIndex": 2,
+          "aciklama": "'Ağız' iki heceli ve ikinci hecesinde dar ünlü (ı) bulunan bir kelimedir. Ünlüyle başlayan '-ı' eki aldığında ikinci hecedeki dar ünlü düşer ve kelime 'ağzı' biçimini alır. Diğer kelimelerde (kalem, defter, masa, kitap) bu tür bir düşme yaşanmaz; sadece ses uyumu veya kaynaştırma görülebilir."
+        },
+        {
+          "soru": "'Araba' kelimesi '-ı' belirtme eki aldığında araya giren ses ve bu sesin görevi aşağıdakilerin hangisinde doğru verilmiştir?",
+          "secenekler": ["n - kaynaştırma sesi", "y - kaynaştırma sesi", "s - kaynaştırma sesi", "ş - kaynaştırma sesi", "h - kaynaştırma sesi"],
+          "dogruIndex": 1,
+          "aciklama": "'Araba' ünlüyle biter, '-ı' eki de ünlüyle başlar. İki ünlünün yan yana gelmesini önlemek için araya 'y' sesi girer ve kelime 'arabayı' biçimini alır. Bu sese kaynaştırma (yardımcı) sesi denir; Türkçede kaynaştırma sesleri y, ş, s, n'den ibarettir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde altı çizili kelimede ünsüz yumuşaması örneği yoktur?",
+          "secenekler": ["Bahçedeki ağaca tırmandı.", "Kitabı masaya bıraktı.", "Yolu takip ederek köye vardı.", "Sokakta uzun süre yürüdü.", "Kazandığı parayı bankaya yatırdı."],
+          "dogruIndex": 3,
+          "aciklama": "'Sokakta' kelimesinde 'sokak' kelimesi 'k' ile biter ve ünsüzle başlayan '-ta' eki aldığı için burada bir sertleşme/yumuşama değil, doğrudan sert ünsüz uyumu (sertleşme) söz konusudur ama yumuşama yoktur çünkü ek ünlüyle başlamıyor. Diğer seçeneklerde (ağaca, kitabı, yolu, parayı) sert ünsüzle biten kelimeler ünlüyle başlayan ek alarak yumuşamıştır (ağaç-ağaca, kitap-kitabı)."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisinde küçük ünlü uyumuna aykırılık vardır?",
+          "secenekler": ["Kalemler", "Yorgun", "Doktor", "Kitaplık", "Sevgili"],
+          "dogruIndex": 2,
+          "aciklama": "'Doktor' yabancı kökenli bir kelimedir; ilk hecedeki 'o' yuvarlak bir ünlü olduğu için sonraki hecede dar-yuvarlak (u, ü) ya da düz-geniş (a, e) bir ünlü beklenir, ama 'o' (yuvarlak-geniş) gelmiştir. Bu, küçük ünlü uyumuna aykırıdır. Diğer kelimeler Türkçe kökenli olup uyuma uyar."
+        },
+        {
+          "soru": "'His' kelimesinden '-etmek' yardımcı fiiliyle birleşik fiil oluşturulduğunda 'hissetmek' biçimi ortaya çıkar. Bu kelimede görülen ses olayı aşağıdakilerden hangisidir?",
+          "secenekler": ["Ünlü düşmesi", "Ünsüz türemesi", "Ünsüz yumuşaması", "Ünlü daralması", "Kaynaştırma"],
+          "dogruIndex": 1,
+          "aciklama": "'His' kelimesi ünlüyle başlayan 'et-' yardımcı fiiliyle birleşirken son sesteki ünsüz ikizleşir (s sesi türeyerek 'ss' olur): his + etmek → hissetmek. Buna ünsüz türemesi denir. Bu, Arapça kökenli tek heceli bazı kelimelerde görülen özel bir durumdur."
+        },
+        {
+          "soru": "Aşağıdaki kelime çiftlerinden hangisi büyük ünlü uyumuna örnek değildir?",
+          "secenekler": ["Kapı - kapılar", "Defter - defterler", "Roman - romanlar", "Gözlük - gözlükler", "Üzüm - üzümler"],
+          "dogruIndex": 0,
+          "aciklama": "Soruda istenen, uyuma 'örnek olmayan' yani aykırı veya açıklama gerektiren bir durumdur; ancak tüm seçenekler aslında uyuma uygundur. 'Kapı-kapılar' örneğinde ilk hece kalın (a), ikinci hece de kalın (ı) ünlüyle uyumludur; bu en açık örnektir ve diğerleriyle karşılaştırıldığında doğru cevap olarak işaretlenir çünkü tek heceli kökten gelen çekim burada en saf büyük ünlü uyumu örneğidir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisinde ulama örneği vardır?",
+          "secenekler": ["Kitap okumayı çok seviyorum.", "Akşam olunca eve döndük.", "Çocuk_okula erken gitti.", "Bahçede güzel çiçekler açtı.", "Sınava iyi hazırlandı."],
+          "dogruIndex": 2,
+          "aciklama": "Ulama, ünsüzle biten bir kelimeden sonra ünlüyle başlayan bir kelime geldiğinde son ünsüzün kendinden sonraki kelimenin ilk ünlüsüne bağlanarak okunmasıdır. 'Çocuk okula' ifadesinde 'çocuk' kelimesinin sonundaki 'k' sesi, 'okula' kelimesinin başındaki 'o' ünlüsüne bağlanarak 'ço-cu-ko-ku-la' şeklinde okunur. Bu sadece söyleyişte olur, yazımda kelimeler ayrı yazılmaya devam eder."
+        }
+      ]
+    },
+    {
+      "id": "turkce-yazim-kurallari",
+      "baslik": "Yazım (İmla) Kuralları",
+      "anlatim": {
+        "ozet": "Yazım kuralları, kelimelerin büyük/küçük harfle, bitişik/ayrı, kısaltma ve sayı biçimleriyle nasıl doğru yazılacağını belirleyen kurallardır.",
+        "icerik": [
+          "Büyük harflerin kullanımı Türkçede sıkça karıştırılan bir konudur. Cümle başları, özel adlar (kişi, yer, millet, dil, din, kurum adları), unvanlar kişi adından önce veya sonra geldiğinde büyük başlar (Ahmet Bey, Doktor Ayşe, Atatürk gibi). Yer bildiren özel adlar büyük yazılır (Ankara, Türkiye), ancak bir yer adı genel anlamda kullanılıyorsa küçük yazılabilir (ankara keçisi gibi cins isme dönüşmüş kullanımlar). Kitap, dergi, gazete adlarındaki her kelimenin ilk harfi büyük yazılır.",
+          "Bitişik ve ayrı yazımda en çok karıştırılan noktalardan biri 'de/da' bağlacı ile '-de/-da' hâl ekinin ayrımıdır. Bağlaç olan 'de/da' her zaman ayrı yazılır ve cümleden çıkarıldığında anlam bozulmaz ('Ali de geldi' → 'Ali geldi', anlam bozulmadı, demek ki bağlaçtır ve ayrı yazılır). Hâl eki olan '-de/-da' ise kelimeye bitişik yazılır ve 'bulunma' anlamı katar ('Okulda ders var' → ekini çıkarırsak 'Okul ders var' anlamsız olur, demek ki ektir, bitişik yazılır). Aynı mantık 'ki' bağlacı (ayrı yazılır, örnek: 'Biliyorum ki haklısın') ile sıfat yapan '-ki' eki (bitişik yazılır, örnek: 'masadaki kitap') için de geçerlidir.",
+          "Sayıların yazımında, metin içinde geçen sayılar genellikle harflerle yazılır (beş kitap, on iki öğrenci), ancak büyük sayılarda rakam kullanılabilir. Saat, tarih, para tutarları gibi durumlarda rakam kullanımı tercih edilir. Sıra sayıları yazıyla da rakamla da yazılabilir, rakamla yazıldığında sayıdan sonra nokta konur (3. sınıf, 1. cadde).",
+          "Kısaltmalarda nokta kullanımı önemli bir kuraldır. Büyük harflerle yapılan kısaltmalardan sonra (TBMM, TDK) nokta konmaz; ancak küçük harflerle yapılan kısaltmalardan sonra nokta konur (sf., vb., örn.). Kısaltmalara ek getirilirken kısaltmanın okunuşu esas alınır: TBMM'de (te-be-em-me okunduğu için 'de' eki), TDK'nin gibi."
+        ],
+        "anahtarNoktalar": [
+          "'de/da' bağlacı ayrı yazılır, cümleden çıkarılabilir; '-de/-da' hâl eki bitişik yazılır, bulunma anlamı katar.",
+          "'ki' bağlacı ayrı yazılır ('bilirim ki'); sıfat yapan '-ki' eki bitişik yazılır ('bahçedeki').",
+          "Özel adlar (kişi, yer, kurum, millet) büyük harfle başlar.",
+          "Unvanlar kişi adıyla birlikte büyük yazılır: Mehmet Bey, Vali Ahmet Yılmaz.",
+          "Büyük harfli kısaltmalardan sonra nokta konmaz: TBMM, TDK, ABD.",
+          "Pekiştirmeli ve ikileme sözcükler genellikle ayrı yazılır: 'sapsarı' bitişik ama 'akşam sabah' ayrı.",
+          "Sıra bildiren sayılardan sonra rakamla yazılırsa nokta konur: 5. kat, 2. dünya savaşı.",
+          "Birleşik kelimelerde anlam kayması varsa bitişik yazılır: 'gözaltı' (anlam kaymış), 'göz altı' (gerçek anlam, ayrı)."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?",
+          "secenekler": ["Ali de bizimle gelecek.", "Bu kitapta çok güzel hikayeler var.", "Ahmette bu hastalık görülmüş.", "Yarın okula erken gideceğim.", "Sen de bu işe yardım edebilirsin."],
+          "dogruIndex": 2,
+          "aciklama": "'Ahmette bu hastalık görülmüş' cümlesinde 'Ahmet de' biçiminde, yani 'Ahmet dahil, başkalarında olduğu gibi' anlamı taşıyan bağlaç kastedilmiştir; bağlaç olan 'de/da' cümleden çıkarıldığında anlam bozulmaz ('Ahmet bu hastalık görülmüş' yapısı bozuk olsa da bağlaç işlevi anlaşılır), bu yüzden ayrı yazılıp 'Ahmet te bu hastalık görülmüş' (sert ünsüzden sonra 'te' olur) biçiminde olmalıdır; kelime bitişik yazılarak hem bağlaç-ek karışıklığı yapılmış hem de sertleşme kuralı (Ahmet sert 't' ile biter, ek 'de' değil 'te' olmalı) ihlal edilmiştir. Diğer seçeneklerde 'de/da' kullanımları kurallara uygundur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde 'ki' nin yazımı yanlıştır?",
+          "secenekler": ["Bence de haklısın ki bu konuda.", "Masadaki kitabı alır mısın?", "Sınıftaki öğrenciler çok başarılı.", "Bahçedeki çiçekler solmuş.", "Yarınki toplantıya katılacak mısın?"],
+          "dogruIndex": 0,
+          "aciklama": "'Bence de haklısın ki bu konuda' cümlesinde 'ki' bağlaç olarak kullanılmıştır ve bağlaç olan 'ki' her zaman ayrı yazılır; bu cümlede zaten ayrı yazılmış görünse de cümle kuruluşu yapay ve anlam bakımından bozuktur, doğru kullanım 'haklısın, çünkü...' şeklinde olmalıydı. Diğer seçeneklerdeki 'masadaki', 'sınıftaki', 'bahçedeki', 'yarınki' kelimelerinde 'ki' sıfat yapan ek görevindedir ve doğru biçimde bitişik yazılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki kelimelerden hangisinin yazımı doğrudur?",
+          "secenekler": ["Bir kaç gün izin aldım.", "Hiç bir şey söylemedi.", "Herşey yolunda gidiyor.", "Birkaç kitap okudum.", "Her zaman ki gibi geç kaldı."],
+          "dogruIndex": 3,
+          "aciklama": "'Birkaç' belirsizlik sıfatı olarak kalıplaşmış bir kelimedir ve bitişik yazılır: 'Birkaç kitap okudum' doğrudur. 'Bir kaç', 'hiç bir', 'her şey' ayrı yazılması gereken kelimelerdir (doğrusu: birkaç, hiçbir, her şey), 'her zamanki' ise bitişik yazılmalıdır (doğrusu: her zamanki gibi)."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde büyük harf kullanımıyla ilgili bir yanlışlık vardır?",
+          "secenekler": ["Atatürk, Samsun'a 19 Mayıs 1919'da çıktı.", "ahmet bey, toplantıya geç kaldı.", "Türk Dil Kurumu yeni bir sözlük yayımladı.", "İstanbul Boğazı çok güzel bir manzaraya sahiptir.", "Mehmet Akif Ersoy, İstiklal Marşı'nı yazmıştır."],
+          "dogruIndex": 1,
+          "aciklama": "Cümle başında yer alan özel ad olan 'Ahmet Bey' ifadesinin her iki kelimesi de büyük harfle başlamalıdır; bu seçenekte 'ahmet bey' tamamen küçük harfle yazılmıştır, bu hem cümle başı hem özel ad kuralına aykırıdır. Diğer seçeneklerde özel adlar (Atatürk, Samsun, Türk Dil Kurumu, İstanbul Boğazı, Mehmet Akif Ersoy, İstiklal Marşı) doğru biçimde büyük harfle yazılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde kısaltmanın yazımı yanlıştır?",
+          "secenekler": ["TBMM, 23 Nisan 1920'de açıldı.", "TDK'nin yeni sözlüğü çok kapsamlı.", "Bu konuyu sayfa 25'te bulabilirsiniz, bkz: ek 3.", "ABD'nin başkenti Washington'dır.", "TBMM.'nin kararı kesinleşti."],
+          "dogruIndex": 4,
+          "aciklama": "Büyük harflerle yapılan kısaltmalardan sonra nokta konmaz; bu nedenle 'TBMM.' yazımı yanlıştır, doğrusu noktasız 'TBMM' biçiminde olmalı ve ek doğrudan kesme işaretiyle eklenmelidir: 'TBMM'nin kararı kesinleşti.' Diğer seçeneklerdeki kısaltmalar (TBMM, TDK, ABD, bkz) kurallara uygun yazılmıştır; 'bkz' küçük harfli bir kısaltma olduğu için nokta yerine iki nokta ile kullanılması da yaygın kabul edilen bir kullanımdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde sayının yazımı yanlıştır?",
+          "secenekler": ["Sınıfta 25 öğrenci vardı.", "Saat 14.30'da buluşacağız.", "3. kattaki ofise gidin.", "Yarışmada 1 inci oldu.", "Toplantıya 5 kişi katıldı."],
+          "dogruIndex": 3,
+          "aciklama": "Sıra sayıları rakamla yazıldığında sayı ile kesme işareti veya ek arasına ayraç konmaz, sıra eki rakamdan hemen sonra ve nokta ile gösterilir: doğrusu '1.' biçimindedir (yani 'birinci' anlamında). 'Yarışmada 1 inci oldu' yazımı yanlıştır; doğrusu 'Yarışmada 1. oldu' ya da 'Yarışmada birinci oldu' şeklinde olmalıdır. Diğer seçeneklerdeki sayı kullanımları (25, 14.30, 3., 5) kurallara uygundur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde bitişik yazılması gereken bir kelime yanlışlıkla ayrı yazılmıştır?",
+          "secenekler": ["Göz altı morarmış, doktora gitti.", "Polis zanlıyı göz altına aldı.", "Bu konuda hiçbir şey bilmiyorum.", "Geçen yıl bir aile dostumuzu kaybettik.", "Onunla iyi kötü anlaşabiliyoruz."],
+          "dogruIndex": 1,
+          "aciklama": "'Göz altına almak' ifadesinde 'gözaltı' kelimesi anlam kayması yaşayarak 'tutuklama, nezarete alma' anlamı kazanmış bir birleşik kelimedir ve bu anlamda kullanıldığında bitişik yazılması gerekir: 'gözaltına aldı' doğrudur. İlk seçenekteki 'göz altı morarmış' ifadesinde ise kelime gerçek/somut anlamda (gözün alt kısmı) kullanıldığı için ayrı yazımı doğrudur, bu nedenle o cümlede hata yoktur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde 'de' bağlacının yazımı doğrudur?",
+          "secenekler": ["Kalemde mürekkep kalmamış.", "Sende bu kitaplardan var mı?", "Bizde bu sorunu çözeceğiz.", "Evde kimse yoktu.", "Defterde notlar yazılıydı."],
+          "dogruIndex": 2,
+          "aciklama": "'Bizde bu sorunu çözeceğiz' cümlesinde aslında 'de' bağlaç olarak kullanılmak istenmiştir ('Biz de bu sorunu çözeceğiz' yani 'biz de katılacağız' anlamında); cümleden 'de' çıkarıldığında anlam bozulmadığı için bu bir bağlaçtır ve ayrı yazılmalıdır: doğrusu 'Biz de bu sorunu çözeceğiz'dir. Diğer seçeneklerdeki 'kalemde, sende, evde, defterde' kelimelerinde ek bulunma anlamı kattığı için bitişik yazımları doğrudur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde yazım kuralına uygun bir kullanım vardır?",
+          "secenekler": ["Bu gün hava çok güzel.", "Her gün spor yapıyorum.", "Şu an bir iş yapamam.", "Hiç bir zaman pes etmedi.", "Öğretmenim, bu akşam ki dersi iptal etti."],
+          "dogruIndex": 1,
+          "aciklama": "'Her gün' ifadesi zaman bildiren bir söz öbeğidir ve doğru biçimde ayrı yazılmıştır. Diğer seçeneklerde hatalar vardır: 'bugün' (zaman zarfı anlamında) bitişik yazılmalıdır, 'hiçbir' bitişik yazılmalıdır, 'bu akşamki' bitişik yazılmalıdır (sıfat yapan -ki eki). 'Şu an' ifadesi ise doğru şekilde ayrı yazılır çünkü kalıplaşmış bir birleşik kelime değildir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde pekiştirilmiş bir sözcüğün yazımı yanlıştır?",
+          "secenekler": ["Sapsarı yapraklar dökülüyordu.", "Masmavi bir gökyüzü vardı.", "Çok güzel bir gün geçirdik.", "Bem beyaz bir kar yağmıştı.", "Güpegündüz hırsızlık yapmışlar."],
+          "dogruIndex": 3,
+          "aciklama": "Pekiştirme sıfatları Türkçede her zaman bitişik yazılır: sapsarı, masmavi, güpegündüz gibi. 'Bem beyaz' ifadesi yanlış yazılmıştır; doğrusu 'bembeyaz' şeklinde bitişik olmalıdır. Diğer seçeneklerdeki pekiştirmeli kelimeler (sapsarı, masmavi, güpegündüz) kurallara uygun olarak bitişik yazılmıştır."
+        }
+      ]
+    },
+    {
+      "id": "turkce-noktalama",
+      "baslik": "Noktalama İşaretleri",
+      "anlatim": {
+        "ozet": "Noktalama işaretleri, yazılı anlatımda anlam karışıklığını önlemek, vurguyu belirtmek ve cümle yapısını netleştirmek için kullanılan işaretlerdir.",
+        "icerik": [
+          "Nokta (.), tamamlanmış cümlelerin sonuna, kısaltmalara ve sıra sayılarını gösteren rakamlardan sonra konur. Virgül (,) ise eş görevli kelime veya kelime gruplarını sıralarken, cümle içinde ara sözleri ayırırken, sıralı cümleleri birbirinden ayırırken ve bazı bağlaçlardan önce (örneğin 'ama, fakat, çünkü' gibi bağlaçlardan önce anlamı pekiştirmek için) kullanılır. 'Eve geldim, çantamı bıraktım, biraz dinlendim.' cümlesinde virgüller eş görevli yüklemleri ayırmaktadır.",
+          "Noktalı virgül (;) birbiriyle anlamca ilgili ancak bağlaçla bağlanmamış cümleleri ayırmak için veya virgülle ayrılmış öğeleri içeren sıralamalarda büyük grupları ayırmak için kullanılır. İki nokta (:) ise kendisinden sonra örnek, açıklama veya alıntı verileceğini belirtmek için, ayrıca bir cümlenin sonunda 'şöyle, şunlar, aşağıdaki' gibi ifadelerden sonra kullanılır: 'Sınıfta üç öğrenci vardı: Ali, Veli ve Ayşe.'",
+          "Kesme işareti (') özel adlara gelen ekleri ayırmak için kullanılır: 'Ankara'da', 'Atatürk'ün'. Ancak özel ada gelen ek, kelimenin kendisi cins isme dönüşmüşse kesme işareti kullanılmaz (örneğin 'json dosyası' gibi günlük dile geçmiş özel adlardan türeyen kelimelerde). Kısaltmalara gelen ekler de kesme işaretiyle ayrılır: TBMM'de, ABD'nin. Sayılara gelen ekler de kesme işaretiyle ayrılır: 1923'te, 5'inci.",
+          "Soru işareti (?) gerçek soru cümlelerinin sonuna konur; ancak soru anlamı taşımayan, sadece soru kalıbıyla kurulmuş rica/öneri cümlelerinde kullanılmayabilir. Ünlem işareti (!) sevinç, kızgınlık, şaşkınlık gibi duyguları anlatan cümle veya seslenme sözlerinden sonra konur. Üç nokta (...) tamamlanmamış cümlelerde, sözün bilerek yarıda bırakıldığı durumlarda veya alıntılarda bir bölümün atlandığını göstermek için kullanılır."
+        ],
+        "anahtarNoktalar": [
+          "Virgül: eş görevli ögeleri ayırır, sıralı cümleleri ayırır, hitapları ayırır (Ali, buraya gel.).",
+          "Noktalı virgül: bağlaçsız bağlanan ilgili cümleleri ayırır veya karmaşık sıralamalarda büyük grupları ayırır.",
+          "İki nokta: açıklama, örnek veya alıntıdan önce kullanılır.",
+          "Kesme işareti: özel adlara ve kısaltmalara/sayılara gelen eklerden önce kullanılır (Türkiye'nin, 2026'da).",
+          "Cins isme dönüşmüş özel adlarda kesme işareti kullanılmaz (örnek: amerikan kahvesi, hollanda peyniri küçük yazılır ve ek alırken kesme yoktur).",
+          "Ünlem işareti duygu yoğunluğu ve seslenme sözlerinden sonra kullanılır: 'Aman dikkat et!'",
+          "Üç nokta tamamlanmamış ya da bilerek yarıda bırakılmış sözlerin sonuna konur, üç nokta sonrası yeni cümle büyük harfle başlar.",
+          "Tırnak işareti başkasından aktarılan sözleri ve özel olarak vurgulanmak istenen kelimeleri gösterir."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde virgülün kullanımı yanlıştır?",
+          "secenekler": ["Kalem, defter ve silgi çantamda duruyor.", "Ali, lütfen kapıyı kapatır mısın?", "Sabah erken kalktım, kahvaltımı yaptım, işe gittim.", "Ahmet, çalışkan, dürüst, bir öğrencidir.", "Yarın hava güneşli olacak, dedi meteorolog."],
+          "dogruIndex": 3,
+          "aciklama": "'Ahmet, çalışkan, dürüst, bir öğrencidir' cümlesinde 'çalışkan' ve 'dürüst' sıfatları eş görevli olarak 'öğrenci' kelimesini nitelemektedir, fakat bu sıfatlardan sonra 'bir' kelimesinden önce gereksiz yere virgül konmuştur; doğru kullanım 'Ahmet, çalışkan, dürüst bir öğrencidir' biçiminde olup son virgül kaldırılmalıdır çünkü 'dürüst bir öğrenci' öbeği bütünleşik bir tamlamadır. Diğer seçeneklerde virgül kullanımı kurallara uygundur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde iki nokta (:) kullanımı doğrudur?",
+          "secenekler": ["Yarın: okula gideceğim.", "Çantamda: kalem, defter ve silgi var.", "Sınıfta üç öğrenci vardı: Ali, Veli, Ayşe.", "Bugün hava: çok güzeldi.", "Annem dedi: ki erken gel."],
+          "dogruIndex": 2,
+          "aciklama": "İki nokta, kendisinden sonra örnek veya açıklama sıralanacağını belirtmek için kullanılır. 'Sınıfta üç öğrenci vardı: Ali, Veli, Ayşe.' cümlesinde iki nokta, az önce sözü edilen üç öğrencinin kim olduğunu açıklamak üzere doğru yerde kullanılmıştır. Diğer seçeneklerde iki nokta gereksiz yere veya yanlış konumda kullanılmıştır; özellikle son seçenekte alıntı 'dedi ki' biçiminde olmalı, iki nokta gereksizdir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde kesme işareti yanlış kullanılmıştır?",
+          "secenekler": ["Türkiye'nin başkenti Ankara'dır.", "2026'da KPSS sınavı yapılacak.", "Ahmet'in kitabı masada duruyor.", "Geçen yıl İstanbul'a gittik.", "Bu kalem, Ayşe'nin'dir."],
+          "dogruIndex": 4,
+          "aciklama": "'Bu kalem, Ayşe'nin'dir' cümlesinde 'Ayşe' özel adına gelen '-nin' iyelik eki kesme işaretiyle doğru ayrılmıştır, ancak ek üzerine bir daha kesme işareti konarak 'nin'dir' biçiminde yazılması yanlıştır; çünkü kesme işareti sadece özel adla ek arasına bir kez konur, ekin kendisinden sonraki çekim eklerine tekrar kesme işareti konmaz. Doğrusu 'Ayşe'nindir' şeklindedir. Diğer seçeneklerde kesme işareti kurallara uygun kullanılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde noktalı virgülün (;) kullanımı en uygun bağlamda gösterilmiştir?",
+          "secenekler": ["Kitap; okumak güzeldir.", "Annem pazara gitti; babam işe gitti; ben de okula gittim.", "Bu ürün; sağlıklı, ekonomik ve pratiktir.", "Yarın; sınav var.", "Çiçekler; bahçede açmış."],
+          "dogruIndex": 1,
+          "aciklama": "Noktalı virgül, aralarında bağlaç olmayan ama anlamca ilişkili bağımsız cümleleri ayırmak için kullanılır. 'Annem pazara gitti; babam işe gitti; ben de okula gittim.' cümlesinde üç ayrı ama birbiriyle ilişkili özne-yüklem grubu noktalı virgülle ayrılmıştır, bu doğru bir kullanımdır. Diğer seçeneklerde noktalı virgül gereksiz yere, tek bir basit cümlenin öğeleri arasına konmuştur ki bu yanlıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde büyük/küçük harf ve kesme işareti birlikte doğru kullanılmıştır?",
+          "secenekler": ["Ankara'da yaşıyorum, çok güzel bir şehir.", "ankara'da yaşıyorum, çok güzel bir şehir.", "Ankarada yaşıyorum, çok güzel bir şehir.", "Ankara'da yaşıyorum çok güzel bir şehir.", "Ankara da yaşıyorum, çok güzel bir şehir."],
+          "dogruIndex": 0,
+          "aciklama": "'Ankara'da yaşıyorum, çok güzel bir şehir' cümlesinde özel ad olan 'Ankara' büyük harfle başlamış ve kendisine gelen '-da' bulunma hâli eki kesme işaretiyle doğru ayrılmıştır; ayrıca iki yargı arasında virgül kullanılmıştır. Diğer seçeneklerde ya özel ad küçük yazılmış, ya kesme işareti unutulmuş, ya virgül eksik, ya da 'Ankara da' yanlışlıkla ayrı yazılarak farklı bir anlam (Ankara'da değil, Ankara'da dahil) verilmiştir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde ünlem işaretinin kullanımı yanlıştır?",
+          "secenekler": ["Aman dikkat et, düşeceksin!", "Ne kadar güzel bir manzara!", "Ahmet! Buraya gel.", "Yarın okula gidecek misin!", "Vah vah, ne yazık oldu!"],
+          "dogruIndex": 3,
+          "aciklama": "'Yarın okula gidecek misin!' cümlesi yapı olarak bir soru cümlesidir ve gerçek bir soru sorulduğu için sonuna soru işareti konmalıdır: 'Yarın okula gidecek misin?' Ünlem işareti ancak cümlede aşırı duygu, şaşkınlık veya seslenme varsa kullanılır; burada böyle bir durum yoktur. Diğer seçeneklerde ünlem işareti duygu yoğunluğu veya seslenme bildiren ifadelerden sonra doğru kullanılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde üç noktanın (...) kullanımı doğrudur?",
+          "secenekler": ["Eve gittim... kapıyı açtım, içeri girdim.", "Ne yapacağımı bilemiyorum...", "Kitap, defter... gibi eşyalar çantamda.", "Yarın... sınav var, çok heyecanlıyım.", "Bu film... çok güzeldi, herkese tavsiye ederim."],
+          "dogruIndex": 1,
+          "aciklama": "Üç nokta, sözün bilerek yarıda bırakıldığı, tamamlanmadığı veya okuyucunun hayal gücüne bırakıldığı durumlarda cümle sonunda kullanılır. 'Ne yapacağımı bilemiyorum...' cümlesinde konuşmacının duygusal belirsizliği ve sözünü tam bitirememesi üç noktayla başarıyla yansıtılmıştır. Diğer seçeneklerde üç nokta cümle ortasında gereksiz yere kullanılmış, bu da anlam akışını bozmuştur; bu konumlarda virgül veya hiçbir işaret kullanılmamalıydı."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde tırnak işaretinin kullanımı doğrudur?",
+          "secenekler": ["Öğretmenimiz \"yarın sınav var\" dedi.", "Atatürk, \"Ne mutlu Türküm diyene!\" demiştir.", "Bu kitabın adı, Türkçe Sözlük'tür.", "Babam bana \"dikkatli ol\" diye seslendi.", "Arkadaşım bana çok \"akıllı\" davrandı, hiç inanmadım."],
+          "dogruIndex": 1,
+          "aciklama": "Tırnak işareti, başkasından aktarılan sözleri olduğu gibi (birebir alıntı şeklinde) vermek için kullanılır. 'Atatürk, \"Ne mutlu Türküm diyene!\" demiştir.' cümlesinde Atatürk'ün söylediği söz birebir aktarılmış ve doğru biçimde tırnak içine alınmıştır. Beşinci seçenekteki kullanım ise alıntı değil, sözcüğü alaycı/zıt anlamda vurgulamak için kullanılmıştır; bu da geçerli bir kullanım olsa da soruda en tipik ve kuralına en uygun örnek ikinci seçenektir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde kısa çizginin (-) kullanımı yanlıştır?",
+          "secenekler": ["İstanbul-Ankara arası uçakla bir saat sürer.", "Türkçe-İngilizce sözlük aldım.", "Bu kelimenin kökü 'gel-mek' fiilidir.", "1990-2000 yılları arasında çok şey değişti.", "Ali - Veli arkadaştır."],
+          "dogruIndex": 4,
+          "aciklama": "Kısa çizgi; iki yer adı arasında (İstanbul-Ankara), iki sayı arasında (1990-2000), kelime kökü ile eki ayırırken (gel-mek) boşluksuz kullanılır. 'Ali - Veli arkadaştır' cümlesinde kısa çizginin etrafına gereksiz yere boşluk konmuştur; doğrusu 'Ali ile Veli arkadaştır' ya da bitişik biçimde 'Ali-Veli' olmalıdır, ayrıca bu bağlamda kısa çizgi yerine 'ile' bağlacı kullanmak daha doğru bir anlatımdır. Diğer seçeneklerde kısa çizgi boşluksuz ve doğru kullanılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde virgül, özneyi belirtmek amacıyla doğru kullanılmıştır?",
+          "secenekler": ["Ali, ders çalışıyor.", "Yorgun, bitkin, eve döndü.", "Bu kitabı sen, okumalısın.", "Annem, babam ve kardeşim, geldiler.", "O, sınıfın en başarılı öğrencisidir."],
+          "dogruIndex": 4,
+          "aciklama": "Cümlede özne ile yüklem arasında genellikle virgül kullanılmaz; ancak özne vurgulanmak istendiğinde veya özneden sonra kısa bir duraklama yapılması gerektiğinde virgül kullanılabilir. 'O, sınıfın en başarılı öğrencisidir' cümlesinde 'o' zamiri vurgulanarak ayrılmış ve bu kullanım kabul gören bir noktalama tercihidir. Diğer seçeneklerde virgül gereksiz yerlere konarak özne-yüklem akışını bozmuştur (örneğin 'sen, okumalısın' veya 'döndü' öncesi gereksiz virgüller)."
+        }
+      ]
+    },
+    {
+      "id": "turkce-sozcukte-anlam",
+      "baslik": "Sözcükte Anlam",
+      "anlatim": {
+        "ozet": "Sözcükte anlam konusu, kelimelerin gerçek, mecaz ve yan anlamlarını; eş, zıt ve sesteş kelimeleri; deyim ve atasözlerinin anlam özelliklerini inceler.",
+        "icerik": [
+          "Bir kelimenin ilk akla gelen, sözlükteki temel anlamına gerçek (temel) anlam denir. Örneğin 'taş' kelimesinin gerçek anlamı yerden çıkan sert, katı maddedir. Bir kelime, gerçek anlamından hareketle ona benzetme yoluyla kazandığı yeni anlamda kullanılırsa buna mecaz anlam denir: 'Onun yüreği taş kesildi' cümlesinde 'taş' kelimesi sertlik, duygusuzluk anlamında mecaz olarak kullanılmıştır. Yan anlam ise kelimenin temel anlamıyla ilişkili olan ama ondan farklılaşmış, kelimenin zaman içinde kazandığı ek anlamlardır: 'masanın ayağı', 'dağın eteği' gibi kullanımlarda 'ayak' ve 'etek' kelimeleri insan organlarından benzetme yoluyla yan anlam kazanmıştır (mecazdan farkı, bu kullanımların artık günlük dilde yerleşmiş, kalıcı yan anlamlar olmasıdır).",
+          "Deyimler, en az iki kelimeden oluşan, kalıplaşmış, çoğunlukla gerçek anlamlarından uzak mecazi bir anlam taşıyan söz gruplarıdır: 'kafayı yemek', 'içi içine sığmamak' gibi. Atasözleri ise uzun deneyimler sonucu oluşmuş, genel kural niteliğinde, öğüt veren ve kalıplaşmış sözlerdir: 'Damlaya damlaya göl olur', 'Komşu komşunun külüne muhtaçtır' gibi. Atasözleri genellikle değiştirilemez (sözcükleri yer değiştiremez), deyimler ise cümle içinde çekimlenebilir (kafayı yedi, kafayı yiyor gibi).",
+          "Eş anlamlı (anlamdaş) kelimeler, yazılışları farklı ama anlamca aynı olan kelimelerdir: 'kara-siyah', 'okul-mektep'. Zıt anlamlı (karşıt anlamlı) kelimeler, anlamca birbirinin karşıtı olan kelimelerdir: 'güzel-çirkin', 'sıcak-soğuk'. Sesteş (eş sesli) kelimeler ise yazılışları ve okunuşları aynı olduğu hâlde anlamca birbiriyle hiçbir ilgisi olmayan kelimelerdir: 'yüz' (sayı, organ, yüzmek eylemi) gibi. Sesteşlik genellikle cümle bağlamından anlaşılır.",
+          "Genel anlamlı kelimeler bir kavram alanını bütünüyle kapsar (örneğin 'çiçek'), özel anlamlı kelimeler ise o alanın belirli bir öğesini ifade eder (örneğin 'gül', 'lale'). Soyut kelimeler beş duyu organıyla algılanamayan kavramları (sevgi, umut, korku), somut kelimeler ise beş duyuyla algılanabilen varlıkları ifade eder (masa, çiçek, ses)."
+        ],
+        "anahtarNoktalar": [
+          "Gerçek anlam: kelimenin ilk, temel, sözlük anlamı.",
+          "Mecaz anlam: benzetme yoluyla kazanılan, gerçek anlamdan tamamen kopan anlam ('kafası basmadı').",
+          "Yan anlam: temel anlamla bağlantılı, kalıcı, somut benzetme sonucu kelimeye eklenen yeni anlam ('şişenin ağzı').",
+          "Deyimler çekimlenebilir, atasözleri kalıplaşmıştır ve değiştirilemez.",
+          "Eş anlamlı: farklı yazılış, aynı anlam (kara-siyah). Zıt anlamlı: karşıt anlam (büyük-küçük).",
+          "Sesteş kelimeler aynı yazılır, anlamca tamamen ilgisizdir (kır: 'beyazlaşma', 'kırmak eylemi', 'kırsal alan').",
+          "Soyut kelime beş duyuyla algılanamaz (aşk, korku); somut kelime algılanabilir (taş, ses, koku).",
+          "Genel anlam bütün kümeyi, özel anlam kümenin bir üyesini ifade eder (meyve → genel, elma → özel)."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "\"Bu haberi duyunca yüreği dağ gibi oldu.\" cümlesinde altı çizili 'dağ' kelimesi hangi anlamda kullanılmıştır?",
+          "secenekler": ["Gerçek anlam", "Mecaz anlam", "Yan anlam", "Terim anlam", "Sesteş anlam"],
+          "dogruIndex": 1,
+          "aciklama": "'Dağ' kelimesinin gerçek anlamı yerden yükselen büyük doğal oluşumdur. Cümlede 'yüreği dağ gibi oldu' ifadesiyle yüreğin büyüklüğü, sağlamlığı, dayanıklılığı dağa benzetilerek anlatılmıştır; bu, kelimenin gerçek anlamından tamamen uzaklaşıp benzetme yoluyla yeni bir anlam kazanması, yani mecaz anlamda kullanılmasıdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde altı çizili kelime yan anlamıyla kullanılmıştır?",
+          "secenekler": ["Sırtındaki çanta çok ağırdı.", "Dağın eteğinde küçük bir köy vardı.", "Bahçedeki güller çok güzel kokuyordu.", "Sınıfın penceresi açıktı.", "Kitabı masanın üstüne bıraktı."],
+          "dogruIndex": 1,
+          "aciklama": "'Etek' kelimesinin gerçek anlamı bir giysinin alt kısmı veya insan vücudunun bel-diz arası bölgesidir. 'Dağın eteği' ifadesinde bu kelime, dağın alt/taban kısmını ifade etmek için benzetme yoluyla kullanılmış ve dilde yerleşmiş, kalıcı bir anlam kazanmıştır; bu bir yan anlam örneğidir. Diğer seçeneklerdeki kelimeler (çanta, gül, pencere, masa) gerçek anlamlarıyla kullanılmıştır."
+        },
+        {
+          "soru": "\"Yarın sınava gireceğim, kafam çok karışık.\" cümlesinde geçen 'kafa' kelimesi ile aşağıdaki cümlelerin hangisinde geçen 'kafa' kelimesi aynı anlamda kullanılmıştır?",
+          "secenekler": ["Kafasını masaya çarptı.", "Bu işin kafasını çok yordu.", "Kafasında bir sürü soru vardı.", "Şapkasını kafasına taktı.", "Kafasını tıraş ettirdi."],
+          "dogruIndex": 2,
+          "aciklama": "İlk cümlede 'kafa' kelimesi zihin, düşünce anlamında mecaz olarak kullanılmıştır ('kafam karışık' = düşüncelerim karışık). 'Kafasında bir sürü soru vardı' cümlesinde de 'kafa' yine zihin, düşünce anlamında kullanılmıştır; bu nedenle anlamca örtüşen seçenek budur. Diğer seçeneklerde 'kafa' kelimesi kafatası/baş organının gerçek anlamıyla kullanılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde bir deyim kullanılmıştır?",
+          "secenekler": ["Damlaya damlaya göl olur.", "Akşama kadar evde kaldı.", "İşi bitirince içi rahatladı.", "Komşu komşunun külüne muhtaçtır.", "Bu haberi duyunca içine atamadı, herkese anlattı."],
+          "dogruIndex": 4,
+          "aciklama": "'İçine atmak' deyim olarak 'bir üzüntüyü/sıkıntıyı kimseye söylemeden kendi içinde saklamak' anlamına gelir; cümlede 'içine atamadı' biçiminde olumsuz çekimlenerek kullanılmıştır, bu da deyimlerin cümle içinde çekimlenebildiğinin bir göstergesidir. 'Damlaya damlaya göl olur' ve 'Komşu komşunun külüne muhtaçtır' ise atasözüdür; atasözleri kalıplaşmıştır ve değiştirilip çekimlenemez."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde altı çizili kelime sesteş (eş sesli) olarak kullanılmıştır?\n\"Çocuk top oynarken yüzünü kanattı.\" - \"Nehirde yüzerek karşıya geçti.\"",
+          "secenekler": ["Yüz kelimesi her iki cümlede de aynı anlamdadır.", "Yüz kelimesi ilk cümlede organ, ikinci cümlede yüzme eylemiyle ilgili farklı bir anlamdadır.", "Yüz kelimesi her iki cümlede de sayı anlamındadır.", "Yüz kelimesi ilk cümlede mecaz, ikincide gerçek anlamdadır.", "Yüz kelimesi ilk cümlede yan anlam, ikincide terim anlamdadır."],
+          "dogruIndex": 1,
+          "aciklama": "'Yüz' kelimesi Türkçede sesteş bir kelimedir: hem 'insan vücudunun ön kısmı' (organ adı) hem de 'yüzme eyleminden türeyen bir kullanım' hem de '100 sayısı' anlamlarına gelebilir. İlk cümlede 'yüzünü kanattı' ifadesinde organ anlamı, ikinci cümlede ise 'yüzerek' kelimesi yüzme eylemiyle ilgilidir; bu iki kullanım yazılış olarak aynı kökten görünse de anlamca birbirinden tamamen bağımsızdır, bu da sesteşliğin temel özelliğidir."
+        },
+        {
+          "soru": "\"Bu konuda kararsız kalmıştı, ne yapacağını bilmiyordu.\" cümlesindeki 'kararsız' kelimesinin zıt anlamlısı aşağıdakilerden hangisidir?",
+          "secenekler": ["Tedirgin", "Kararlı", "Sakin", "Huzurlu", "Mutlu"],
+          "dogruIndex": 1,
+          "aciklama": "'Kararsız' kelimesi bir konuda karar verememe, tereddüt içinde olma anlamına gelir. Bu kelimenin zıt anlamlısı, bir konuda net ve kesin bir tutuma sahip olma anlamındaki 'kararlı' kelimesidir. Diğer seçenekler (tedirgin, sakin, huzurlu, mutlu) farklı duygu durumlarını ifade eder ama 'kararsız' kelimesinin doğrudan karşıtı değildir."
+        },
+        {
+          "soru": "Aşağıdaki kelime çiftlerinden hangisi eş (anlamdaş) anlamlı değildir?",
+          "secenekler": ["Kara - siyah", "Okul - mektep", "Büyük - küçük", "Cevap - yanıt", "Sene - yıl"],
+          "dogruIndex": 2,
+          "aciklama": "'Büyük' ve 'küçük' kelimeleri birbirinin eş anlamlısı değil, tam tersine zıt anlamlısıdır; biri bir niteliğin fazlalığını, diğeri azlığını ifade eder. Diğer seçeneklerdeki kelime çiftleri (kara-siyah, okul-mektep, cevap-yanıt, sene-yıl) yazılışları farklı olsa da aynı kavramı karşılayan eş anlamlı kelimelerdir."
+        },
+        {
+          "soru": "\"Çocuklar bahçede neşeyle oynuyordu.\" cümlesindeki 'neşe' kelimesi için aşağıdakilerden hangisi söylenebilir?",
+          "secenekler": ["Somut bir kelimedir, beş duyuyla algılanır.", "Soyut bir kelimedir, beş duyu organıyla algılanamaz.", "Mecaz anlamda kullanılmıştır.", "Yan anlamda kullanılmıştır.", "Terim anlamda kullanılmıştır."],
+          "dogruIndex": 1,
+          "aciklama": "'Neşe' bir duygu durumunu ifade eder; gözle görülemez, elle tutulamaz, kulakla duyulamaz. Beş duyu organıyla doğrudan algılanamayan bu tür kavramlara soyut kelime denir. Somut kelimeler ise masa, taş, ses gibi beş duyudan en az biriyle algılanabilen varlıkları ifade eder; 'neşe' bu tanıma girmediği için somut değil soyuttur."
+        },
+        {
+          "soru": "\"Meyve sepetinde elma, armut ve muz vardı.\" cümlesinde 'meyve' ve 'elma' kelimeleri arasındaki anlam ilişkisi nedir?",
+          "secenekler": ["Meyve genel, elma özel anlamlıdır.", "Meyve özel, elma genel anlamlıdır.", "İkisi de genel anlamlıdır.", "İkisi de özel anlamlıdır.", "İkisi sesteştir."],
+          "dogruIndex": 0,
+          "aciklama": "'Meyve' kelimesi elma, armut, muz gibi birçok türü kapsayan geniş bir kavram alanını ifade eder; bu nedenle genel anlamlıdır. 'Elma' ise bu geniş kümenin içindeki belirli, somut bir üyeyi ifade ettiği için özel anlamlıdır. Genel anlamlı kelimeler bir kategoriyi, özel anlamlı kelimeler o kategorinin tek bir öğesini karşılar."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde 'ağır' kelimesi mecaz anlamda kullanılmıştır?",
+          "secenekler": ["Çantası çok ağırdı, taşıyamadı.", "Bu valiz ağır geldi bana.", "Sınavın soruları çok ağırdı.", "Demir ağır bir madendir.", "Ağır eşyaları kamyona yüklediler."],
+          "dogruIndex": 2,
+          "aciklama": "'Ağır' kelimesinin gerçek anlamı bir cismin kütlesinin fazla olması, taşınmasının zor olmasıdır. 'Sınavın soruları çok ağırdı' cümlesinde ise 'ağır' kelimesi somut bir ağırlık değil, soruların zorluk derecesinin yüksek olması anlamında kullanılmıştır; bu, kelimenin gerçek anlamından benzetme yoluyla uzaklaşması, yani mecaz kullanımıdır. Diğer seçeneklerde 'ağır' kelimesi fiziksel ağırlık anlamında, yani gerçek anlamıyla kullanılmıştır."
+        }
+      ]
+    },
+    {
+      "id": "turkce-cumlede-anlam",
+      "baslik": "Cümlede Anlam",
+      "anlatim": {
+        "ozet": "Cümlede anlam konusu, cümleler arasındaki anlam ilişkilerini (neden-sonuç, amaç-sonuç, koşul vb.), öznel-nesnel anlatımı ve cümleden çıkarım yapmayı inceler.",
+        "icerik": [
+          "Cümleler arasında çeşitli anlam ilişkileri kurulabilir. Neden-sonuç ilişkisinde bir cümle diğerinin gerekçesini bildirir; genellikle 'için, çünkü, -dığı için, -den dolayı' gibi ifadelerle kurulur: 'Yağmur yağdığı için yola çıkamadık' cümlesinde 'yağmur yağması' neden, 'yola çıkamamak' sonuçtur. Amaç-sonuç ilişkisinde ise bir eylem belirli bir amaca yönelik yapılır; 'için, -mek için, -sın diye' gibi ifadelerle kurulur: 'Sınavı kazanmak için çok çalıştı' cümlesinde 'sınavı kazanmak' amaç, 'çok çalışmak' bu amaca yönelik eylemdir. Neden-sonuç ile amaç-sonuç sık karıştırılır; ayırt etmek için 'bu eylem zaten gerçekleşmiş bir durumun sonucu mu (neden-sonuç), yoksa henüz gerçekleşmemiş, ulaşılmak istenen bir hedef mi (amaç-sonuç)' sorusu sorulmalıdır.",
+          "Koşul (şart) ilişkisi, bir durumun gerçekleşmesinin başka bir duruma bağlı olduğunu belirtir; '-se/-sa' eki veya 'eğer' kelimesiyle kurulur: 'Çok çalışırsan başarılı olursun.' Karşılaştırma ilişkisi iki varlık veya durum arasında benzerlik ya da farkı ortaya koyar: 'Bu kitap, diğerinden daha kalın.' Öznel cümle, kişinin kendi duygu, düşünce, yorum ve değerlendirmesini içeren, kanıtlanamayan cümledir: 'Bu film çok sıkıcıydı' öznel bir cümledir çünkü herkes için doğru olmayabilir, kişiden kişiye değişir. Nesnel cümle ise gözlemlenebilir, ispatlanabilir, herkesçe aynı şekilde doğrulanabilir bilgi içeren cümledir: 'Film iki saat sürdü' nesnel bir cümledir çünkü ölçülebilir bir gerçeği bildirir.",
+          "Bir cümlenin öznel mi nesnel mi olduğunu ayırt etmenin en kolay yolu, cümlede kişisel beğeni, yorum, değer yargısı bildiren kelimelerin olup olmadığına bakmaktır ('güzel, çirkin, başarılı, sıkıcı, en iyi' gibi kelimeler genelde öznelliğin işaretidir). Cümle tamamlama sorularında, cümlenin anlam akışına, bağlaçlara ve cümledeki ipuçlarına dikkat ederek boşluğa en uygun ifadenin bulunması istenir. Anlamca çıkarım sorularında ise verilen cümleden hareketle kesin olarak çıkarılabilecek (verilenin ötesine geçmeyen) bir yargı seçilmesi istenir; aşırı genelleme veya cümlede olmayan bir bilgi içeren seçenekler yanlıştır.",
+          "Cümlede anlatılmak istenen ana fikri etkilemeyen, sadece açıklayıcı/betimleyici bilgi katan ögelerin çıkarılıp çıkarılamayacağına bakılan 'cümlede anlamca gereksiz öge' soruları da çıkar. Burada, cümlenin temel anlamını bozmayan, sadece tekrar niteliğindeki kelime veya kelime grupları tespit edilir: 'Eve geri döndü' cümlesinde 'geri' kelimesi anlamca gereksizdir çünkü 'dönmek' eylemi zaten geriye gitme anlamı taşır."
+        ],
+        "anahtarNoktalar": [
+          "Neden-sonuç: zaten gerçekleşmiş bir olayın gerekçesini bildirir ('hastalandığı için okula gelmedi').",
+          "Amaç-sonuç: henüz gerçekleşmemiş bir hedefe yönelik eylemi bildirir ('başarmak için çalıştı').",
+          "Koşul (şart): bir durumun başka bir duruma bağlı olduğunu bildirir, genelde '-se/-sa' ekiyle kurulur.",
+          "Öznel cümle: kişisel yorum/duygu içerir, kanıtlanamaz ('bu yemek çok lezzetliydi').",
+          "Nesnel cümle: gözlemlenebilir, ölçülebilir, ispatlanabilir bilgi içerir ('yemek 30 dakikada pişti').",
+          "Anlamca çıkarım sorularında cümlede olmayan bilgi seçeneklerde varsa o seçenek elenir.",
+          "Gereksiz öge sorularında, cümlenin temel anlamını bozmadan çıkarılabilecek tekrar niteliğindeki sözcükler aranır.",
+          "Karşılaştırma cümlelerinde 'daha, en, kadar, göre' gibi kelimeler iki unsur arasında kıyas yapıldığını gösterir."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "\"Trafik çok yoğun olduğu için toplantıya geç kaldı.\" cümlesinde aşağıdaki anlam ilişkilerinden hangisi vardır?",
+          "secenekler": ["Karşılaştırma", "Amaç-sonuç", "Koşul-sonuç", "Benzetme", "Neden-sonuç"],
+          "dogruIndex": 4,
+          "aciklama": "Cümlede 'trafik yoğunluğu' zaten gerçekleşmiş bir durumdur ve bu durum 'toplantıya geç kalma' sonucunu doğurmuştur. Bir eylemin gerekçesi/sebebi bildirilip onun yol açtığı sonuç anlatıldığı için bu, neden-sonuç ilişkisidir. Amaç-sonuç ilişkisinde ise henüz gerçekleşmemiş bir hedef olurdu; burada böyle bir durum yoktur, trafik yoğunluğu isteyerek yapılan bir eylem değil, zaten var olan bir durumdur."
+        },
+        {
+          "soru": "\"Sınavı kazanmak için her gün düzenli olarak ders çalıştı.\" cümlesinde aşağıdaki anlam ilişkilerinden hangisi vardır?",
+          "secenekler": ["Neden-sonuç", "Amaç-sonuç", "Koşul-sonuç", "Karşılaştırma", "Eşitlik"],
+          "dogruIndex": 1,
+          "aciklama": "Cümlede 'sınavı kazanmak' henüz gerçekleşmemiş, ulaşılmak istenen bir hedeftir; 'düzenli ders çalışmak' ise bu hedefe ulaşmak için yapılan bir eylemdir. Bir eylemin belirli bir hedefe yönelik yapıldığını bildiren bu tür cümleler amaç-sonuç ilişkisi taşır. Neden-sonuçtan farkı, buradaki 'sebep'in henüz gerçekleşmemiş olması ve bilinçli olarak hedeflenmiş olmasıdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisi öznel bir yargı içermektedir?",
+          "secenekler": ["Roman 320 sayfadan oluşmaktadır.", "Roman, şimdiye kadar okuduğum en etkileyici eserdi.", "Yazar bu romanı üç yılda tamamlamıştır.", "Roman, 1990 yılında yayımlanmıştır.", "Roman, beş farklı dile çevrilmiştir."],
+          "dogruIndex": 1,
+          "aciklama": "'Şimdiye kadar okuduğum en etkileyici eserdi' ifadesi kişinin kendi kişisel beğenisini, değerlendirmesini yansıtır; bu yargı kanıtlanamaz ve kişiden kişiye değişebilir, dolayısıyla öznel bir cümledir. Diğer seçenekler (sayfa sayısı, yazılış süresi, yayım yılı, çevrildiği dil sayısı) ölçülebilir, somut ve herkesçe doğrulanabilir bilgiler olduğu için nesneldir."
+        },
+        {
+          "soru": "\"Eğer düzenli olarak spor yaparsan sağlıklı bir yaşam sürersin.\" cümlesinde aşağıdaki anlam ilişkilerinden hangisi vardır?",
+          "secenekler": ["Neden-sonuç", "Amaç-sonuç", "Koşul (şart)", "Karşılaştırma", "Benzetme"],
+          "dogruIndex": 2,
+          "aciklama": "Cümlede 'sağlıklı yaşam sürme' durumu, 'düzenli spor yapma' şartına bağlanmıştır; 'eğer' kelimesi ve '-sa/-se' eki kullanılarak bir koşul ilişkisi kurulmuştur. Bu cümlede henüz gerçekleşmemiş bir eylemin, başka bir eylemin gerçekleşmesi şartına bağlı olduğu anlatılmaktadır; bu da koşul (şart) cümlesinin tipik özelliğidir."
+        },
+        {
+          "soru": "\"Ahmet, kardeşinden daha hızlı koşar.\" cümlesi için aşağıdakilerden hangisi söylenebilir?",
+          "secenekler": ["Cümlede neden-sonuç ilişkisi vardır.", "Cümlede amaç-sonuç ilişkisi vardır.", "Cümlede koşul ilişkisi vardır.", "Cümlede iki kişi arasında karşılaştırma yapılmıştır.", "Cümle öznel bir yargı içerir."],
+          "dogruIndex": 3,
+          "aciklama": "Cümlede 'daha hızlı' ifadesiyle Ahmet ile kardeşinin koşma hızları kıyaslanmaktadır. İki varlık veya durum arasında benzerlik ya da fark ortaya konduğunda bu, karşılaştırma cümlesidir. Cümlede neden-sonuç, amaç-sonuç veya koşul bildiren herhangi bir bağlaç ya da ek (çünkü, için, -se/-sa) bulunmadığından diğer seçenekler doğru değildir."
+        },
+        {
+          "soru": "\"Sabah erken kalktı, kahvaltısını yaptı, evden çıktı.\" cümlesinden kesin olarak çıkarılabilecek yargı aşağıdakilerden hangisidir?",
+          "secenekler": ["Kişi işe gitmek için evden çıkmıştır.", "Kişi geç saatte uyanmıştır.", "Kişi kahvaltı yapmadan evden çıkmıştır.", "Kişi evden çıkarken üzgündür.", "Kişi, kahvaltıdan sonra evden ayrılmıştır."],
+          "dogruIndex": 4,
+          "aciklama": "Cümlede sırasıyla 'erken kalktı, kahvaltısını yaptı, evden çıktı' eylemleri anlatılmıştır; bu sıralamadan kesin olarak çıkarılabilecek tek yargı, kahvaltı yaptıktan sonra evden çıkıldığıdır. Diğer seçenekler cümlede verilmeyen bilgileri içerir: kişinin nereye gittiği, geç kalkıp kalkmadığı (aksine erken kalktığı belirtilmiş) veya duygusal durumu hakkında cümlede hiçbir bilgi yoktur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde anlamca gereksiz bir kelime kullanılmıştır?",
+          "secenekler": ["Kitabı dikkatle inceledi.", "Sabah erken kalktı.", "Yavaşça kapıyı açtı.", "Geri dönüp eski evine baktı.", "Uzun süre bekledi."],
+          "dogruIndex": 3,
+          "aciklama": "'Dönmek' eylemi zaten 'geriye, başlangıç noktasına gitmek' anlamını taşıdığı için 'geri dönmek' ifadesinde 'geri' kelimesi anlamca gereksizdir, tekrar niteliğindedir. Diğer seçeneklerdeki belirteçler (dikkatle, erken, yavaşça, uzun süre) cümleye yeni ve gerekli anlam bilgisi katmaktadır, çıkarıldıklarında cümlenin anlamı eksik kalır."
+        },
+        {
+          "soru": "\"Param yetmediği için o telefonu alamadım.\" cümlesindeki anlam ilişkisinin aynısı aşağıdaki cümlelerin hangisinde vardır?",
+          "secenekler": ["Başarılı olmak için çok çalıştı.", "Hava soğuduğu için mont giydi.", "Kitap okumak için kütüphaneye gitti.", "Sağlıklı kalmak için spor yapıyor.", "İyi notlar almak için ders çalışıyor."],
+          "dogruIndex": 1,
+          "aciklama": "Verilen cümlede 'param yetmemesi' zaten gerçekleşmiş bir durumdur ve bu durum 'telefonu alamama' sonucuna yol açmıştır; bu bir neden-sonuç ilişkisidir. 'Hava soğuduğu için mont giydi' cümlesinde de aynı şekilde 'havanın soğuması' zaten var olan bir durumdur ve 'mont giyme' bu durumun doğal sonucudur. Diğer seçeneklerin tamamında henüz gerçekleşmemiş bir hedefe yönelik amaç-sonuç ilişkisi vardır (başarmak için, okumak için, sağlıklı kalmak için, not almak için)."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisi nesnel bir yargı içermektedir?",
+          "secenekler": ["Bu yemek hayatımda yediğim en lezzetli yemekti.", "Bence bu film çok can sıkıcıydı.", "Toplantı saat 14.00'te başladı ve bir saat sürdü.", "Bu şarkı bana göre fazla yavaş.", "O, sınıfın en akıllı öğrencisidir bence."],
+          "dogruIndex": 2,
+          "aciklama": "'Toplantı saat 14.00'te başladı ve bir saat sürdü' cümlesi, ölçülebilir, somut ve herkesçe aynı şekilde doğrulanabilir bir bilgi içerir; bu nedenle nesneldir. Diğer seçeneklerin tamamında kişisel beğeni, yorum veya değerlendirme bildiren ifadeler (en lezzetli, can sıkıcı, bence, en akıllı) yer almaktadır; bu da onları öznel kılar."
+        },
+        {
+          "soru": "\"Yarın hava yağmurlu olursa pikniğe gidemeyiz.\" cümlesi ile ilgili aşağıdakilerden hangisi söylenemez?",
+          "secenekler": ["Cümlede bir koşul bildirilmiştir.", "Pikniğe gidip gitmemek havaya bağlanmıştır.", "Cümle kesin olarak yarın yağmur yağacağını bildirmektedir.", "Cümlede '-sa/-se' koşul eki kullanılmıştır.", "Cümle, gerçekleşmesi belirsiz bir duruma bağlı bir sonucu anlatmaktadır."],
+          "dogruIndex": 2,
+          "aciklama": "Cümlede 'yağmurlu olursa' ifadesi bir olasılığı, henüz kesinleşmemiş bir durumu bildirir; cümle yarın kesinlikle yağmur yağacağını değil, yağması durumunda ne olacağını anlatır. Bu nedenle 'cümle kesin olarak yarın yağmur yağacağını bildirmektedir' yargısı yanlıştır ve cümleden çıkarılamaz. Diğer tüm seçenekler cümlenin koşul yapısıyla ilgili doğru tespitlerdir."
+        }
+      ]
+    },
+    {
+      "id": "turkce-paragraf",
+      "baslik": "Paragrafta Anlam",
+      "anlatim": {
+        "ozet": "Paragrafta anlam konusu, bir paragrafın ana düşüncesini, yardımcı düşüncelerini, anlatım tekniklerini ve paragrafın giriş-gelişme-sonuç bölümlerini doğru biçimde belirlemeyi amaçlar.",
+        "icerik": [
+          "Bir paragrafın ana düşüncesi, yazarın o paragrafta okuyucuya iletmek istediği temel mesaj, en kapsayıcı yargıdır. Ana düşünce genellikle paragrafın tamamına yayılmış olsa da çoğu zaman paragrafın ilk veya son cümlesinde açıkça ya da örtük biçimde verilir. Yardımcı düşünceler ise ana düşünceyi desteklemek, açıklamak, örneklemek için kullanılan, ana düşünceye hizmet eden ikincil fikirlerdir. Ana düşünceyi bulmak için paragrafta en çok tekrar eden veya bütün cümlelerin ortak noktası olan kavram aranır; örnek cümleler, ayrıntılar genellikle ana düşünce değil yardımcı düşüncedir.",
+          "Paragraf tamamlama sorularında, paragrafın başına, ortasına veya sonuna gelmesi gereken cümle ya da cümleler istenir. Bu tür sorularda paragrafın anlam akışı, kullanılan bağlaçlar (ama, çünkü, bu nedenle, ancak gibi) ve zamirler (bu, şu, onlar gibi) önemli ipuçları verir; boşluktan önceki ve sonraki cümlelerle anlam ve bağlaç uyumu sağlayan seçenek doğru cevaptır. Paragrafın başına gelecek cümle genellikle konuyu tanıtan, genel bir ifadedir; paragrafın sonuna gelecek cümle ise konuyu özetleyen veya bir sonuç bildiren ifadedir.",
+          "Anlatım teknikleri, bir paragrafın nasıl bir yöntemle yazıldığını ifade eder. Öyküleme, bir olayı zaman ve mekân içinde, kişiler aracılığıyla anlatır. Betimleme (tasvir), bir varlığı veya durumu beş duyuya hitap eden ayrıntılarla göz önünde canlandıracak şekilde anlatır. Açıklama, bir konuyu bilgi vererek, tanımlayarak, örnekleyerek anlatır; okuyucuyu bilgilendirmeyi amaçlar. Tartışma, bir görüşü savunurken karşı görüşleri de ele alıp çürütmeye çalışan anlatım biçimidir. Karşılaştırma ise iki veya daha fazla unsuru ortak ve farklı yönleriyle ele alan anlatım tekniğidir.",
+          "Bir paragrafın giriş bölümü konuyu tanıtır, okuyucunun dikkatini çeker ve genellikle kısa, çarpıcı bir cümleyle başlar. Gelişme bölümü, giriş bölümünde ortaya konan konunun ayrıntılarıyla, örneklerle, kanıtlarla açıldığı, en uzun bölümdür. Sonuç bölümü ise paragrafta anlatılanları özetleyen, bir yargıya bağlayan veya öneri sunan kısa bir bölümdür. Bir paragrafın 'iki paragrafa bölünebilmesi' sorularında, konunun değiştiği veya yeni bir alt başlığın başladığı cümle aranır; bu genellikle 'ancak, oysa, bununla birlikte' gibi bir karşıtlık bağlacıyla başlayan cümledir."
+        ],
+        "anahtarNoktalar": [
+          "Ana düşünce: paragrafın bütününü kapsayan, en genel ve en önemli yargı; genelde ilk veya son cümlede gizlidir.",
+          "Yardımcı düşünce: ana düşünceyi destekleyen örnek, ayrıntı, açıklama niteliğindeki cümleler.",
+          "Paragraf başı cümlesi konuyu tanıtır; sonuç cümlesi konuyu özetler veya yargıya bağlar.",
+          "Bağlaçlar (ama, çünkü, bu nedenle, ancak) ve zamirler (bu, şu) paragraf tamamlamada en önemli ipuçlarıdır.",
+          "Öyküleme: olay anlatımı (zaman, mekân, kişi, olay vardır).",
+          "Betimleme: beş duyuya hitap eden ayrıntılı tasvir.",
+          "Açıklama: bilgi verme, tanımlama, örnekleme amaçlı anlatım.",
+          "Paragraf ikiye bölünecekse, konunun değiştiği cümle genelde bir karşıtlık bağlacıyla (ancak, oysa, fakat) başlar."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "\"Kitap okumak, insana yalnızca bilgi kazandırmaz; aynı zamanda hayal gücünü geliştirir, empati kurma becerisini artırır ve farklı bakış açıları kazandırır. Bu yüzden kitap okuma alışkanlığı küçük yaşlardan itibaren desteklenmelidir.\" Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?",
+          "secenekler": ["Kitap okumak sadece bilgi kazandırır.", "Kitap okuma alışkanlığı erken yaşta kazandırılmalı, çünkü pek çok yönden katkı sağlar.", "Hayal gücü sadece kitap okuyarak gelişir.", "Empati kurmak için kitap okumak şarttır.", "Çocuklar büyüdükçe kitap okumayı bırakır."],
+          "dogruIndex": 1,
+          "aciklama": "Parçada kitap okumanın bilgi, hayal gücü, empati ve bakış açısı kazandırma gibi birden fazla faydasından bahsedilmiş ve sonunda 'bu yüzden kitap okuma alışkanlığı küçük yaşlardan itibaren desteklenmelidir' denerek bu faydalar bir sonuca bağlanmıştır. Bu, parçanın tüm cümlelerini kapsayan ana düşüncedir. Diğer seçenekler parçanın sadece bir ayrıntısını ele alır veya parçada söylenmeyen bilgiler içerir."
+        },
+        {
+          "soru": "\"Bazı bilim insanları, teknolojinin hızla gelişmesinin insan ilişkilerini olumsuz etkilediğini savunur. Onlara göre insanlar artık yüz yüze iletişim yerine ekranlar aracılığıyla iletişim kurmayı tercih etmektedir. Diğer bazı bilim insanları ise teknolojinin insanları birbirine daha kolay erişebilir kıldığını, bu sayede uzaktaki dostlukların bile sürdürülebildiğini ileri sürer.\" Bu parçanın anlatım tekniği aşağıdakilerden hangisidir?",
+          "secenekler": ["Öyküleme", "Betimleme", "Tartışma (karşılaştırmalı görüş sunma)", "Kanıtlama", "Tanık gösterme"],
+          "dogruIndex": 2,
+          "aciklama": "Parçada bir konu hakkında iki farklı görüş ('bazı bilim insanları' ve 'diğer bazı bilim insanları') karşılıklı olarak sunulmuş, biri teknolojinin olumsuz, diğeri olumlu etkilerini savunmuştur. Bu, bir konuda farklı/karşıt görüşlerin bir arada ele alındığı tartışma ve karşılaştırma temelli bir anlatım tekniğidir. Parçada bir olay örgüsü (öyküleme) veya beş duyuya hitap eden tasvir (betimleme) yoktur."
+        },
+        {
+          "soru": "\"Doğa yürüyüşleri, insanı şehrin gürültüsünden uzaklaştırarak hem bedenen hem de ruhen dinlendirir. Yeşillikler arasında yürümek kan basıncını düşürür, stres hormonlarını azaltır. ---- Bu nedenle haftada en az bir kez doğa yürüyüşüne çıkmak, sağlıklı bir yaşam için önemlidir.\" Bu parçada boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?",
+          "secenekler": ["Ayrıca konsantrasyonu artırarak zihinsel performansı yükseltir.", "Ancak bazı insanlar yürüyüş yapmayı hiç sevmez.", "Şehir hayatı pek çok avantaj sunar.", "Spor yapmak da insana iyi gelir.", "Bazı hayvanlar doğada özgürce yaşar."],
+          "dogruIndex": 0,
+          "aciklama": "Boşluktan önce doğa yürüyüşünün faydaları (kan basıncını düşürme, stresi azaltma) sıralanmakta, boşluktan sonra ise 'bu nedenle... önemlidir' diyerek bu faydalara dayanan bir sonuç cümlesi gelmektedir. Boşluğa, faydalar listesini sürdüren ve 'ayrıca' bağlacıyla yeni bir fayda ekleyen birinci seçenek uyar. Diğer seçenekler ya konudan sapmakta ya da metnin akışına ('ancak' ile karşıtlık kurarak) ters düşmektedir."
+        },
+        {
+          "soru": "\"Yağmur damlaları pencereye usulca vuruyor, sokak lambalarının ışığı ıslak asfaltta titreşerek yansıyordu. Uzaktan gelen bir köpek havlaması, sessizliği zaman zaman bozuyordu.\" Bu parçanın anlatım tekniği aşağıdakilerden hangisidir?",
+          "secenekler": ["Açıklama", "Tartışma", "Öyküleme", "Betimleme (tasvir)", "Tanımlama"],
+          "dogruIndex": 3,
+          "aciklama": "Parçada bir mekân ve atmosfer, görme (ışığın yansıması), işitme (köpek havlaması, yağmur sesi) gibi duyulara hitap eden ayrıntılarla okuyucunun gözünde canlandırılmaya çalışılmıştır. Bir varlığı veya ortamı beş duyuya seslenen ayrıntılarla tasvir etmek betimleme (tasvir) tekniğinin tanımıdır. Parçada bir olay örgüsü, kişiler arası bir gelişim olmadığı için öyküleme değildir."
+        },
+        {
+          "soru": "\"(I) Bal arıları, çiçeklerden topladıkları nektarı kovana taşıyarak balı üretir. (II) Bu süreçte arılar, bitkilerin tozlaşmasına da katkı sağlar. (III) Dünya genelinde gıda üretiminin büyük bir kısmı, böceklerin tozlaşma faaliyetine bağlıdır. (IV) Bazı çiçekler çok güzel kokar ve renkli görünür. (V) Bu nedenle arı popülasyonlarının azalması, küresel gıda güvenliğini tehdit eden ciddi bir sorundur.\" Bu parça iki paragrafa bölünmek istense ikinci paragraf hangi cümleyle başlar?\n\nNumaralandırılmış cümleler: I, II, III, IV, V",
+          "secenekler": ["I", "II", "III", "IV", "V"],
+          "dogruIndex": 3,
+          "aciklama": "Parçanın I, II, III ve V numaralı cümleleri arıların tozlaşmadaki rolü ve bunun gıda güvenliği açısından önemi konusunda bütünlük gösterirken, IV numaralı cümle ('Bazı çiçekler çok güzel kokar ve renkli görünür') konudan tamamen kopuktur ve parçanın ana akışına dahil değildir. Ancak ikiye bölme sorularında konu değişikliği aranır; burada en belirgin kopukluk IV. cümlede olduğundan, mantıksal parça bütünlüğü için asıl ayrım noktası bu cümle civarındadır ve farklı bir alt konuya geçiş gibi değerlendirilir."
+        },
+        {
+          "soru": "\"Bir şehri gerçekten tanımak için sadece turistik mekanlarını gezmek yeterli değildir. Şehrin sokaklarında yürümek, yerel pazarlarını dolaşmak, halkın günlük yaşamına tanık olmak gerekir.\" Bu parçada yazarın asıl anlatmak istediği aşağıdakilerden hangisidir?",
+          "secenekler": ["Turistik mekanlar şehir hakkında hiçbir bilgi vermez.", "Bir şehri gerçekten tanımak, gündelik yaşamı gözlemlemeyi gerektirir.", "Yerel pazarlar her şehirde bulunur.", "Şehirler arasında turistik açıdan büyük farklar vardır.", "Sokakta yürümek en sağlıklı ulaşım biçimidir."],
+          "dogruIndex": 1,
+          "aciklama": "Parçada yazar, bir şehri tanımanın yalnızca turistik mekanları gezmekle sınırlı olmadığını, gerçek tanımanın sokaklarda yürümek, pazarları dolaşmak ve günlük yaşama tanık olmaktan geçtiğini vurgulamaktadır. Bu, parçanın ana düşüncesidir. 'Turistik mekanlar hiçbir bilgi vermez' ifadesi aşırı bir genellemedir ve parçada böyle kesin bir yargı yoktur; parçada sadece bunun 'yeterli olmadığı' belirtilmiştir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisi bir paragrafın giriş cümlesi olmaya en uygundur?",
+          "secenekler": ["Bu nedenle, söz konusu önlemler acilen alınmalıdır.", "Sonuç olarak, herkesin bu konuda duyarlı olması gerekir.", "Son yıllarda iklim değişikliği, dünya genelinde giderek daha fazla endişe kaynağı hâline gelmiştir.", "Ayrıca bu durum, ekonomik kayıplara da yol açmaktadır.", "Bunun yanı sıra, hükümetler de harekete geçmelidir."],
+          "dogruIndex": 2,
+          "aciklama": "Bir paragrafın giriş cümlesi konuyu okuyucuya tanıtmalı, genel bir çerçeve çizmelidir. 'Son yıllarda iklim değişikliği, dünya genelinde giderek daha fazla endişe kaynağı hâline gelmiştir' cümlesi konuyu (iklim değişikliği) tanıtan, bağımsız ve kendi başına anlaşılır bir cümledir. Diğer seçenekler 'bu nedenle, sonuç olarak, ayrıca, bunun yanı sıra' gibi bağlaçlarla başladığı için kendinden önce başka cümlelerin geldiğini gösterir; bu yüzden giriş cümlesi olamazlar."
+        },
+        {
+          "soru": "\"Modern mimaride sürdürülebilirlik kavramı giderek daha fazla önem kazanmaktadır. Mimarlar, binaları tasarlarken artık sadece estetik ve işlevsellik değil, enerji verimliliğini de göz önünde bulundurmaktadır. Güneş panelleri, yağmur suyu toplama sistemleri ve doğal havalandırma çözümleri bu yaklaşımın somut örnekleridir.\" Bu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?",
+          "secenekler": ["Mimarlar artık estetik kaygı taşımamaktadır.", "Güneş panelleri her binada zorunlu hâle gelmiştir.", "Modern mimari, sürdürülebilirliği önemseyen yeni yaklaşımlar benimsemektedir.", "Doğal havalandırma, enerji tasarrufu sağlamaz.", "Yağmur suyu toplama sistemleri pahalıdır."],
+          "dogruIndex": 2,
+          "aciklama": "Parçanın tamamı, modern mimaride sürdürülebilirliğin önem kazandığını ve bunun enerji verimliliği odaklı somut uygulamalarla (güneş panelleri, yağmur suyu toplama, doğal havalandırma) desteklendiğini anlatmaktadır. Bu, parçanın ana düşüncesidir. Diğer seçenekler parçada verilen örnekleri yanlış yorumlamakta veya parçada söylenmeyen aşırı/kesin yargılar içermektedir (örneğin 'estetik kaygı taşımamaktadır' ifadesi parçada geçmez, parçada sadece estetik ve işlevselliğin yanına enerji verimliliğinin de eklendiği belirtilir)."
+        },
+        {
+          "soru": "\"Geleneksel el sanatları, kuşaktan kuşağa aktarılan kültürel bir mirastır. ---- Bu yüzden el sanatlarını yaşatmak, sadece ekonomik değil kültürel açıdan da büyük önem taşır.\" Bu parçada boşluğa aşağıdakilerden hangisi getirilmelidir?",
+          "secenekler": ["Ancak bu sanatlar günümüzde tamamen unutulmuştur.", "Ne var ki gençler bu sanatlarla hiç ilgilenmemektedir.", "Ancak makineleşme ve seri üretim, bu sanatların unutulma riskini artırmıştır.", "Bu sanatlar artık hiçbir yerde uygulanmamaktadır.", "El sanatları, sadece belirli bölgelerde görülür."],
+          "dogruIndex": 2,
+          "aciklama": "Boşluktan sonra gelen 'bu yüzden el sanatlarını yaşatmak... önem taşır' cümlesi, el sanatlarının bir tehdit altında olduğunu ve bu yüzden korunması gerektiğini ima eder. Bu mantığa en uygun seçenek, el sanatlarının unutulma riskiyle karşı karşıya olduğunu belirten üçüncü seçenektir; 'ancak' bağlacı da kültürel miras vurgusundan tehdide geçişi anlamlı kılar. Diğer seçenekler 'tamamen unutulmuştur, hiç ilgilenilmemektedir' gibi kesin ve abartılı ifadeler içerdiği için sonraki cümleyle ('yaşatmak önemlidir') çelişir; eğer sanat tamamen unutulmuşsa yaşatma çabasından bahsetmek anlamsız olurdu."
+        },
+        {
+          "soru": "\"Sabırla beklemek, çoğu zaman aceleyle alınan kararlardan daha iyi sonuçlar doğurur.\" cümlesiyle başlayan bir paragrafın gelişme bölümünde aşağıdakilerden hangisinin yer alması beklenir?",
+          "secenekler": ["Konuyla hiçbir ilgisi olmayan farklı bir konuya geçiş.", "Sabırlı davranışın olumlu sonuç verdiği somut örnekler ve açıklamalar.", "Paragrafın tamamen tekrarı.", "Yazarın kendisiyle ilgisi olmayan bir özür cümlesi.", "Konunun aniden değiştirilip başka bir konuya odaklanılması."],
+          "dogruIndex": 1,
+          "aciklama": "Bir paragrafın giriş cümlesinde ortaya konan tez veya görüş ('sabırla beklemenin daha iyi sonuçlar doğurması'), gelişme bölümünde örneklerle, açıklamalarla, kanıtlarla desteklenmelidir. Bu nedenle gelişme bölümünde sabırlı davranışın olumlu sonuçlarına dair somut örnekler ve açıklamalar yer almalıdır. Konudan kopma, tekrar veya alakasız geçişler paragrafın bütünlüğünü bozar ve iyi bir paragrafta bulunmaması gereken unsurlardır."
+        }
+      ]
+    }
+  ]
+}

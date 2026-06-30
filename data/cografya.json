@@ -1,0 +1,881 @@
+{
+  "id": "cografya",
+  "ad": "Coğrafya",
+  "konular": [
+    {
+      "id": "cografya-turkiyenin-yeri-konumu",
+      "baslik": "Türkiye'nin Yeri ve Konumu",
+      "anlatim": {
+        "ozet": "Türkiye'nin coğrafi konumu, matematik (mutlak) ve özel (göreceli) konum olmak üzere iki başlıkta incelenir ve bu konum ülkenin iklimini, yaşamını ve stratejik önemini doğrudan etkiler.",
+        "icerik": [
+          "Bir yerin konumunu anlamak, o yerin neden öyle olduğunu anlamanın ilk adımıdır. Coğrafyada konum ikiye ayrılır: Matematik konum, bir yerin Dünya üzerindeki enlem ve boylam derecelerine göre belirlenen, değişmeyen kesin konumudur. Özel konum ise bir yerin komşularına, denizlere, ulaşım yollarına ve yer şekillerine göre olan, yorum gerektiren konumudur.",
+          "Türkiye'nin matematik konumu 36°-42° kuzey paralelleri ile 26°-45° doğu meridyenleri arasındadır. Bu konum sayesinde Türkiye, Kuzey Yarım Küre'de, Orta Kuşak (ılıman kuşak) içinde yer alır. Enlem, bir yerin Ekvator'a olan uzaklığını gösterir ve güneş ışınlarının geliş açısını, dolayısıyla sıcaklığı belirler. Boylam ise yerel saat farklarını belirler; Türkiye doğu-batı yönünde geniş bir alana yayıldığı için ülke içinde yaklaşık 76 dakikalık yerel saat farkı vardır, ancak pratikte tek bir saat dilimi kullanılır.",
+          "Türkiye'nin matematik konumunun sonuçları şunlardır: Türkiye Orta Kuşak'ta olduğu için dört mevsim belirgin biçimde yaşanır, güneş ışınları yıl boyunca hiçbir yerde tam dik açıyla düşmez (yani hiçbir yerinde Ekvator gibi dikine güneş ışını alan bölge yoktur), yerel saat farkı doğudan batıya gidildikçe artar (doğu erken, batı geç saat gösterir).",
+          "Özel konumun sonuçları ise çok daha çeşitlidir: Üç tarafının denizlerle çevrili olması, kara ve deniz arasındaki ısınma-soğuma farkından dolayı kıyı kesimlerde daha ılıman, iç kesimlerde daha sert (karasal) iklim özellikleri görülmesine yol açar. Asya ile Avrupa kıtaları arasında, üç önemli denizi (Karadeniz, Akdeniz, Ege) birbirine bağlayan İstanbul ve Çanakkale boğazlarına sahip olması Türkiye'ye önemli bir transit ticaret ve ulaşım avantajı sağlar. Ayrıca Türkiye, Asya, Avrupa ve Afrika kıtalarının kesişim noktasına yakın olması nedeniyle tarih boyunca pek çok medeniyete ev sahipliği yapmış, bu da turizm ve kültürel çeşitlilik açısından zenginlik sağlamıştır."
+        ],
+        "anahtarNoktalar": [
+          "Matematik konum: 36°-42° kuzey paralelleri, 26°-45° doğu meridyenleri arası",
+          "Türkiye tamamen Kuzey Yarım Küre ve Doğu Yarım Küre'de yer alır",
+          "Matematik konum: enlem sıcaklığı, boylam yerel saati belirler",
+          "Türkiye'nin hiçbir yerine güneş ışınları tam dik açıyla düşmez",
+          "Doğuda yerel saat batıya göre daha ileridir (doğu erken doğar)",
+          "Özel konum: üç tarafı denizlerle çevrili, boğazlara sahip, üç kıtaya yakın",
+          "Özel konumun sonuçları yoruma dayalı, matematik konumun sonuçları kesindir",
+          "Boğazlar (İstanbul ve Çanakkale) Türkiye'ye transit ticaret avantajı sağlar"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdakilerden hangisi Türkiye'nin matematik (mutlak) konumunun bir sonucu değildir?",
+          "secenekler": [
+            "Dört mevsimin belirgin olarak yaşanması",
+            "Yerel saat farkının doğudan batıya doğru azalması",
+            "Güneş ışınlarının hiçbir yere tam dik açıyla düşmemesi",
+            "Ülkenin Orta Kuşak'ta yer alması",
+            "Doğudaki illerde güneşin batıdakilere göre daha erken doğması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Yerel saat farkı doğudan batıya gidildikçe AZALMAZ, ARTAR; yani doğu ile batı arasındaki saat farkı doğuya gidildikçe artar çünkü güneş doğuda daha erken doğar. Bu nedenle 'doğudan batıya azalması' ifadesi yanlıştır ve matematik konumun sonucu olarak doğru tanımlanmamıştır. Diğer seçenekler matematik konumun (enlem-boylam) doğrudan sonuçlarıdır."
+        },
+        {
+          "soru": "Türkiye'nin üç tarafının denizlerle çevrili olması aşağıdakilerden hangisine örnektir?",
+          "secenekler": [
+            "Matematik konum",
+            "Özel (göreceli) konum",
+            "Coğrafi enlem",
+            "Boylam farkı",
+            "Yerel saat dilimi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Bir yerin denizlere, komşularına ve yer şekillerine göre durumu özel (göreceli) konumu ifade eder. Denizlerle çevrili olmak, matematik konum gibi enlem-boylam derecelerine değil, yorum gerektiren coğrafi bir konuma dayanır; bu yüzden özel konum örneğidir."
+        },
+        {
+          "soru": "Türkiye'nin matematik konumuna göre 36°-42° kuzey paralelleri arasında yer alması, aşağıdakilerden hangisi üzerinde doğrudan etkilidir?",
+          "secenekler": [
+            "Yerel saat farkı",
+            "Komşu ülke sayısı",
+            "Sıcaklığın enleme bağlı dağılışı",
+            "Boğazların varlığı",
+            "Yarımada şeklinde olması"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Enlem, bir yerin Ekvator'a olan uzaklığını belirttiği için güneş ışınlarının geliş açısını ve buna bağlı olarak sıcaklığın dağılışını doğrudan etkiler. Paralel dereceleri (enlem) ile ilgili olan tek seçenek budur; diğerleri özel konum veya şekil ile ilgilidir."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi Türkiye'nin özel konumunun sonuçlarından biridir?",
+          "secenekler": [
+            "Ülkenin dört mevsiminin belirgin yaşanması",
+            "Güneş ışınlarının yıl boyunca eğik açıyla düşmesi",
+            "İstanbul ve Çanakkale Boğazları sayesinde transit ticaretin gelişmesi",
+            "Yaz ve kış mevsimleri arasında gün uzunluğu farkının olması",
+            "Ekvator'a olan uzaklığın sabit olması"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Boğazların varlığı ve bunların ticarete sağladığı avantaj, ülkenin komşularına ve denizlere göre konumuyla yani özel konumla ilgilidir. Diğer seçenekler enlem temelli matematik konumun sonuçlarıdır."
+        },
+        {
+          "soru": "Bir KPSS adayı, 'Türkiye'de İstanbul'da saat 12.00 iken Van'da yerel saat İstanbul'a göre ileridir.' bilgisini doğru biçimde hangi kavramla ilişkilendirir?",
+          "secenekler": [
+            "Enlem farkı",
+            "Boylam farkı",
+            "Yer şekillerinin etkisi",
+            "Bakı farkı",
+            "Denize uzaklık"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Yerel saat farkları doğu-batı yönündeki konum yani BOYLAM farkından kaynaklanır. Van, İstanbul'a göre daha doğuda (büyük boylam derecesinde) olduğu için güneşi daha erken görür ve yerel saati ileridir. Enlem ise kuzey-güney yöndeki konumu ifade eder ve saat farkıyla ilgili değildir."
+        },
+        {
+          "soru": "Türkiye'nin Asya, Avrupa ve Afrika kıtalarının kesişim bölgesine yakın konumda bulunması, aşağıdakilerden hangisi üzerinde en çok etkili olmuştur?",
+          "secenekler": [
+            "Yerel saat farklarının oluşmasında",
+            "Dört mevsimin yaşanmasında",
+            "Tarih boyunca farklı kültür ve medeniyetlere ev sahipliği yapmasında",
+            "Sıcaklığın enleme göre değişmesinde",
+            "Güneş ışınlarının geliş açısının değişmesinde"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Üç kıtanın kesişim noktasına yakın olmak özel konumla ilgilidir ve bu durum tarih boyunca ticaret yollarının kesişmesine, göçlere ve farklı medeniyetlerin bu topraklarda yaşamasına neden olmuştur. Bu, kültürel ve tarihi zenginliğin temel nedenidir."
+        },
+        {
+          "soru": "Aşağıdaki ifadelerden hangisi yanlıştır?",
+          "secenekler": [
+            "Türkiye tamamen Kuzey Yarım Küre'dedir",
+            "Türkiye'nin en doğusu ile en batısı arasında yerel saat farkı vardır",
+            "Türkiye'nin matematik konumu enlem ve boylam dereceleriyle ifade edilir",
+            "Türkiye Ekvator üzerinde yer aldığı için tropikal iklime sahiptir",
+            "Türkiye'nin özel konumu komşu ülkelere göre yorumlanır"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Türkiye Ekvator üzerinde değil, 36°-42° kuzey paralelleri arasında, yani Orta Kuşak'ta yer alır. Bu nedenle tropikal değil, ılıman kuşak iklim özellikleri görülür. Diğer ifadeler doğrudur."
+        },
+        {
+          "soru": "Türkiye'nin hiçbir yerinde güneş ışınlarının yıl içinde tam dik açıyla düşmemesinin temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Ülkenin üç tarafının denizlerle çevrili olması",
+            "Ülkenin Orta Kuşak'ta, dönenceler dışında yer alması",
+            "Ülkenin boğazlara sahip olması",
+            "Ülkenin yarımada konumunda olması",
+            "Ülkenin komşu sayısının fazla olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Güneş ışınlarının tam dik açıyla düşmesi yalnızca Yengeç ve Oğlak dönenceleri arasındaki bölgede (Sıcak Kuşak'ta) yıl içinde belirli zamanlarda mümkündür. Türkiye bu dönencelerin kuzeyinde, Orta Kuşak'ta yer aldığı için ışınlar her zaman eğik açıyla düşer."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi matematik konum ile özel konumu ayırt etmede kullanılan temel ölçüttür?",
+          "secenekler": [
+            "Matematik konum kesin rakamlarla, özel konum yorumla ifade edilir",
+            "Matematik konum sadece enlemle, özel konum sadece boylamla ifade edilir",
+            "Matematik konum değişkendir, özel konum sabittir",
+            "Matematik konum komşu ülkelere göre belirlenir",
+            "Özel konum denizlerle ilgisizdir"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Matematik konum enlem ve boylam dereceleriyle kesin ve değişmez biçimde ifade edilirken, özel konum komşuluk, denize yakınlık, ulaşım yolları gibi yoruma açık unsurlarla değerlendirilir. Bu, iki konum türü arasındaki temel ayrımdır."
+        },
+        {
+          "soru": "Bir öğrenci, 'Türkiye'nin doğusunda yaşayanlar batısında yaşayanlara göre güneşi daha erken görür, bu nedenle resmi saat uygulamasında tek saat dilimi kullanılmasına rağmen yerel saatler arasında fark bulunur.' demektedir. Bu ifade hangi konuyla ilgilidir?",
+          "secenekler": [
+            "Özel konumun ekonomik sonuçları",
+            "Matematik konumun boylama bağlı sonucu",
+            "Yer şekillerinin iklime etkisi",
+            "Denizel etkinin sıcaklığa etkisi",
+            "Bakı faktörünün bitki örtüsüne etkisi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Yerel saat farkları doğu-batı doğrultusundaki konumla yani boylam dereceleriyle ilgilidir ve bu matematik konumun bir sonucudur. Doğuda bulunan yerler güneşi daha erken gördüğü için yerel saatleri ileridir."
+        }
+      ]
+    },
+    {
+      "id": "cografya-iklim",
+      "baslik": "Türkiye'nin İklimi",
+      "anlatim": {
+        "ozet": "Türkiye, denizlere ve yer şekillerine göre değişen üç temel iklim tipine (Karadeniz, Akdeniz, karasal) sahiptir; bu çeşitliliğin temel nedeni ülkenin kıyı-iç kesim, dağ-ova gibi coğrafi farklılıklarıdır.",
+        "icerik": [
+          "İklim, bir yerde uzun yıllar boyunca gözlenen ortalama hava koşullarıdır ve günlük değişen 'hava durumu' ile karıştırılmamalıdır. Türkiye, özel konumu (denizlere komşuluğu, dağların uzanış yönü) nedeniyle aynı enlemde bulunan birçok ülkeden farklı olarak tek bir iklim tipine değil, birden fazla iklim tipine sahiptir.",
+          "Karadeniz İklimi: Karadeniz kıyılarında görülür. Her mevsim yağışlıdır, yazlar serin, kışlar ılıman geçer; yıllık sıcaklık farkı azdır. Bunun nedeni, dağların kıyıya paralel uzanması sonucu deniz etkisinin iç kesimlere değil dar bir kıyı şeridine sıkışmasıdır. Doğu Karadeniz'de yağış miktarı Türkiye'nin en yüksek değerlerine ulaşır çünkü nemli hava kütleleri dağlara çarparak yamaç boyunca yükselir (orografik/yamaç yağışı).",
+          "Akdeniz İklimi: Akdeniz ve Ege kıyılarında görülür. Yazlar sıcak ve kurak, kışlar ılıman ve yağışlı geçer. Yağışlar çoğunlukla kış mevsiminde, cephesel kökenli olarak düşer. Bu iklimde kızılçam ormanları ve maki adı verilen az yağış isteyen, sert yapraklı çalı topluluğu yaygındır.",
+          "Karasal (Step) İklim: İç Anadolu, Doğu Anadolu ve Güneydoğu Anadolu'nun büyük bölümünde görülür. Denizden uzaklık ve yükselti nedeniyle yazlar sıcak ve kurak, kışlar soğuk ve kar yağışlı geçer; yıllık ve günlük sıcaklık farkı (karasallık derecesi) fazladır. Doğal bitki örtüsü step (bozkır) adı verilen kısa boylu ot topluluğudur. İklimi etkileyen başlıca faktörler şunlardır: enlem (Ekvator'a yakınlık sıcaklığı artırır), yükselti (yükseldikçe sıcaklık her 200 metrede yaklaşık 1°C azalır), denize uzaklık/yakınlık (karasallık), dağların uzanış doğrultusu (denize paralel mi dik mi olduğu) ve bakı (güneşe dönük yamaçların daha sıcak olması)."
+        ],
+        "anahtarNoktalar": [
+          "Karadeniz iklimi: her mevsim yağışlı, yazlar serin kışlar ılıman, az sıcaklık farkı",
+          "Akdeniz iklimi: yazlar sıcak-kurak, kışlar ılıman-yağışlı, maki bitki örtüsü",
+          "Karasal iklim: yazlar sıcak-kurak, kışlar soğuk-karlı, step bitki örtüsü",
+          "Doğu Karadeniz, dağlara çarpan nemli hava nedeniyle Türkiye'nin en yağışlı bölgesidir",
+          "Dağların kıyıya paralel uzanması deniz etkisinin içeri girmesini engeller",
+          "Yükseldikçe sıcaklık düşer, denizden uzaklaştıkça karasallık (sıcaklık farkı) artar",
+          "Bakı: güneşe dönük (gündöneminde kalan) yamaçlar daha sıcak ve kurak olur",
+          "Akdeniz yağışları kışın, cephesel kökenli düşer; Doğu Karadeniz yağışları yamaç kökenlidir"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdakilerden hangisi Karadeniz ikliminin temel özelliklerinden biridir?",
+          "secenekler": [
+            "Yazların sıcak ve kurak geçmesi",
+            "Yağışların yalnızca kış mevsiminde görülmesi",
+            "Her mevsim yağışlı olması ve yıllık sıcaklık farkının az olması",
+            "Doğal bitki örtüsünün step olması",
+            "Kışların soğuk ve kar yağışlı geçmesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Karadeniz iklimi, denizin ılımanlaştırıcı etkisi sayesinde her mevsim yağış alır ve yazla kış arasındaki sıcaklık farkı azdır. Yazlar serin, kışlar ılıman geçer; bu da onu Akdeniz ve karasal iklimden ayıran temel özelliktir."
+        },
+        {
+          "soru": "Doğu Karadeniz Bölümü'nün Türkiye'nin en fazla yağış alan yeri olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Enlem derecesinin düşük olması",
+            "Dağların kıyıya paralel uzanması ve nemli hava kütlelerinin yamaçta yükselerek yağışa dönüşmesi",
+            "Bölgenin step bitki örtüsüne sahip olması",
+            "Bölgenin Ekvator'a yakın olması",
+            "Karasallığın fazla olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Doğu Karadeniz'de dağlar kıyıya paralel ve yüksektir; denizden gelen nemli hava bu dağlara çarparak yamaç boyunca yükselir, soğur ve yoğunlaşarak yamaç (orografik) yağışı oluşturur. Bu nedenle bölge Türkiye'nin en yağışlı yeridir."
+        },
+        {
+          "soru": "Akdeniz ikliminin görüldüğü bir yerde aşağıdaki bitki örtüsü tiplerinden hangisinin yaygın olması beklenir?",
+          "secenekler": [
+            "Step (bozkır)",
+            "Tundra",
+            "Maki",
+            "Karaçam ormanı (yüksek kesim)",
+            "Çöl bitkileri"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Akdeniz ikliminin yazları sıcak ve kurak geçtiği için bu kuraklığa dayanıklı, sert ve parlak yapraklı çalı topluluğu olan maki yaygın bitki örtüsüdür. Step ise karasal iklim bölgelerinde görülür."
+        },
+        {
+          "soru": "Bir yerin denizden uzaklaştıkça yazların daha sıcak, kışların daha soğuk geçmesi ve yıllık sıcaklık farkının artması durumu aşağıdaki kavramlardan hangisiyle açıklanır?",
+          "secenekler": [
+            "Bakı etkisi",
+            "Karasallık",
+            "Enlem etkisi",
+            "Yükselti etkisi",
+            "Basınç etkisi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Karasallık, bir yerin denizden uzaklığına bağlı olarak yazın aşırı ısınması, kışın aşırı soğuması ve günlük-yıllık sıcaklık farkının artması durumudur. Denizler ısınıp soğuması yavaş olduğu için kıyılarda bu fark azdır, iç kesimlerde ise belirgindir."
+        },
+        {
+          "soru": "Aynı yükseltideki bir dağın güneye bakan yamacının kuzeye bakan yamacına göre daha sıcak ve kurak olmasının nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Karasallık",
+            "Bakı (güneşe dönük olma durumu)",
+            "Enlem farkı",
+            "Basınç farkı",
+            "Denize uzaklık"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Bakı, bir yamacın güneş ışınlarını alma açısına göre güneşli ya da gölgeli kalmasıdır. Kuzey Yarım Küre'de güneye dönük yamaçlar güneş ışınlarını daha dik açıyla aldığı için daha sıcak ve kuru, kuzeye dönük yamaçlar daha serin ve nemli olur."
+        },
+        {
+          "soru": "İç Anadolu Bölgesi'nde görülen karasal (step) iklimin özellikleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+          "secenekler": [
+            "Yazlar sıcak ve kurak geçer",
+            "Kışlar soğuk ve kar yağışlı geçer",
+            "Yıllık sıcaklık farkı oldukça fazladır",
+            "Doğal bitki örtüsü maki ve kızılçamdır",
+            "Yağışlar çoğunlukla ilkbahar mevsiminde görülür"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Karasal iklimin doğal bitki örtüsü step (bozkır) adı verilen kısa boylu ot topluluğudur; maki ve kızılçam Akdeniz ikliminin bitki örtüsüdür. Bu nedenle verilen ifade yanlıştır, diğer özellikler karasal iklime uygundur."
+        },
+        {
+          "soru": "Yükseköğretim adayı bir öğrenci, yükseltinin sıcaklık üzerindeki etkisini şöyle özetliyor: 'Aynı enlemde bulunsalar bile, yüksekte kalan bir yerleşim yeri alçaktaki bir yerleşim yerine göre daha ......... olur.' Bu cümlede boşluğa aşağıdakilerden hangisi gelmelidir?",
+          "secenekler": [
+            "sıcak",
+            "soğuk",
+            "nemli",
+            "kurak",
+            "rüzgarsız"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Yükseklere çıkıldıkça atmosfer kalınlığı ve basıncı azaldığı için sıcaklık genel olarak her 200 metrede yaklaşık 1°C düşer. Bu nedenle yüksek yerler aynı enlemdeki alçak yerlere göre daha soğuk olur."
+        },
+        {
+          "soru": "Akdeniz iklim bölgesinde yağışların büyük bölümünün kış mevsiminde düşmesinin temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Yazın bu bölgede tropikal hava kütlelerinin etkili olması",
+            "Kışın bu bölgede cephe sistemlerinin ve düzensiz basınç alanlarının etkili olması, yazın ise subtropikal yüksek basıncın egemen olması",
+            "Yazın bölgeye kutup kökenli soğuk havanın gelmesi",
+            "Kışın bölgenin dağlarla çevrili olması",
+            "Yazın yükseltinin azalması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Akdeniz ikliminde yazın subtropikal yüksek basınç kuşağı bölge üzerine yerleşir ve bu durgun, kuru hava kütlesi yağışı engeller. Kışın ise bu basınç kuşağı güneye çekilir, yerini düzensiz basınç alanlarına ve cephelere bırakır; bu da kış yağışlarına neden olur."
+        },
+        {
+          "soru": "Aşağıdaki şehir-iklim eşleştirmelerinden hangisi yanlıştır?",
+          "secenekler": [
+            "Rize - Karadeniz iklimi",
+            "Antalya - Akdeniz iklimi",
+            "Sivas - Karasal iklim",
+            "Konya - Karasal iklim",
+            "Trabzon - Akdeniz iklimi"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Trabzon, Karadeniz kıyısında yer aldığı için Karadeniz iklimine sahiptir, Akdeniz iklimine değil. Diğer eşleştirmeler (Rize-Karadeniz, Antalya-Akdeniz, Sivas-Konya-Karasal) coğrafi olarak doğrudur."
+        },
+        {
+          "soru": "Bir bölgede sıcaklığı etkileyen faktörler değerlendirilirken aşağıdakilerden hangisi diğerlerinden farklı bir kategoriye (insan kaynaklı değil, doğal/coğrafi) ait değildir; yani hangisi sıcaklığı etkileyen doğal bir faktör değildir?",
+          "secenekler": [
+            "Enlem",
+            "Yükselti",
+            "Denize uzaklık",
+            "Bakı",
+            "Nüfus yoğunluğunun resmi istatistiklerde yayımlanma sıklığı"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Enlem, yükselti, denize uzaklık (karasallık) ve bakı; sıcaklığı etkileyen başlıca doğal/coğrafi faktörlerdir. Nüfus istatistiklerinin yayımlanma sıklığı ise iklimle veya sıcaklıkla hiçbir doğal ilişkisi olmayan idari bir kavramdır."
+        }
+      ]
+    },
+    {
+      "id": "cografya-yer-sekilleri",
+      "baslik": "Yer Şekilleri",
+      "anlatim": {
+        "ozet": "Türkiye, dağların genç ve diri olması, ortalama yükseltinin fazla olması ve akarsuların derin vadiler açmasıyla tanınan, engebeli bir yüzey şekline sahip bir ülkedir.",
+        "icerik": [
+          "Yer şekilleri (yeryüzü şekilleri), bir bölgenin dağ, ova, plato, akarsu gibi fiziki unsurlarının tamamını ifade eder ve bunların oluşumunda iç kuvvetler (orojenez/dağ oluşumu, epirojenez/kıta oluşumu, volkanizma, deprem) ile dış kuvvetler (akarsular, rüzgar, buzul, dalga aşındırması) birlikte rol oynar. Türkiye, Alp-Himalaya orojenez kuşağı üzerinde yer aldığı için dağları genç ve diri (hareketli, deprem riski taşıyan) dağlardır.",
+          "Türkiye'de dağlar genellikle kıyıya paralel uzanır: Kuzeyde Karadeniz (Kuzey Anadolu) Dağları, güneyde Toros (Güney Anadolu) Dağları bulunur. Bu sıradağlar arasında kalan iç kesimde ise İç Anadolu ve Doğu Anadolu'nun yüksek platoları yer alır. Doğu Anadolu, dağların birbirine yaklaşıp yükseltinin arttığı, Türkiye'nin ortalama yükseltisi en fazla olan bölümüdür; bu nedenle volkanik dağlar (Ağrı, Süphan, Nemrut gibi) burada yoğunlaşmıştır.",
+          "Plato, akarsular tarafından derin vadilerle yarılmış, çevresine göre yüksekte kalan düzlüklerdir. Ova ise nispeten alçak, düz veya hafif eğimli geniş düzlüklerdir; oluşumlarına göre tektonik (çöküntü) ovalar, akarsu ovaları, karstik ovalar ve birikinti ovaları gibi türlere ayrılır. Örneğin Çukurova, Bafra ve Çarşamba ovaları akarsuların taşıdığı alüvyonlarla oluşmuş delta ovalarıdır.",
+          "Akarsular, yüksek eğimli arazilerde hızlı aktıkları için derin ve dar vadiler (kanyon) oluştururken, düzlüklerde yavaşlayarak menderesler çizer ve taşıdığı malzemeyi (alüvyon) biriktirir. Türkiye'nin akarsuları genelde kısa, eğimli ve rejimleri (akış düzeni) düzensizdir; bu da hidroelektrik potansiyeli açısından avantaj sağlar ama ulaşıma elverişli değildir. Fırat ve Dicle, Türkiye'nin en uzun akarsularındandır ve Basra Körfezi'ne dökülür."
+        ],
+        "anahtarNoktalar": [
+          "Türkiye dağları Alp-Himalaya kuşağında yer alan genç ve diri dağlardır",
+          "Kuzeyde Karadeniz (Kuzey Anadolu) Dağları, güneyde Toros (Güney Anadolu) Dağları kıyıya paralel uzanır",
+          "Doğu Anadolu, Türkiye'nin en yüksek ortalama yükseltiye sahip bölümüdür",
+          "Volkanik dağlar (Ağrı, Süphan, Nemrut, Erciyes, Hasan Dağı) yoğunlukla Doğu ve İç Anadolu'dadır",
+          "Plato: akarsularla yarılmış, yüksekte kalan düzlük; Ova: alçak ve düz geniş arazi",
+          "Delta ovaları akarsuların taşıdığı alüvyonun deniz kıyısında birikmesiyle oluşur (Çukurova, Bafra, Çarşamba)",
+          "Türkiye akarsuları kısa, eğimli, hızlı akışlı ve düzensiz rejimlidir; hidroelektrik potansiyeli yüksektir",
+          "İç kuvvetler (orojenez, volkanizma, deprem) ile dış kuvvetler (akarsu, rüzgar, dalga) birlikte yüzey şeklini oluşturur"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Türkiye dağlarının genç ve diri (hareketli) olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Ülkenin Orta Kuşak'ta yer alması",
+            "Ülkenin üç tarafının denizlerle çevrili olması",
+            "Ülkenin Alp-Himalaya orojenez (dağ oluşum) kuşağı üzerinde bulunması",
+            "Ülkenin step ikliminin etkili olduğu bir bölgede bulunması",
+            "Ülkenin matematik konumunun 36-42 derece arasında olması"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye, levha hareketleri sonucu oluşan ve hâlâ aktif olan Alp-Himalaya dağ oluşum (orojenez) kuşağı üzerinde yer alır. Bu nedenle dağları jeolojik olarak gençtir, yükselmeye devam eder ve deprem riski taşıyan diri faylara sahiptir."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi Türkiye'de kıyıya paralel uzanan iki ana sıradağdan biri değildir?",
+          "secenekler": [
+            "Karadeniz (Kuzey Anadolu) Dağları",
+            "Ağrı Dağı",
+            "Toros (Güney Anadolu) Dağları",
+            "Kuzey Anadolu Dağları'nın doğu uzantıları",
+            "Toros Dağları'nın batı kesimleri (Batı Toroslar)"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Ağrı Dağı, kıyıya paralel uzanan bir sıradağ değil, Doğu Anadolu'da yer alan tek başına yükselen bir volkanik dağdır (Türkiye'nin en yüksek noktası). Karadeniz Dağları ve Toros Dağları ise kıyı boyunca uzanan iki ana sıradağ sistemidir."
+        },
+        {
+          "soru": "Türkiye'nin ortalama yükseltisinin en fazla olduğu bölüm aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Marmara",
+            "Ege",
+            "Akdeniz",
+            "Doğu Anadolu",
+            "Karadeniz kıyı şeridi"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Doğu Anadolu'da Kuzey Anadolu ve Toros Dağları birbirine yaklaşır, araya volkanik dağlar ve yüksek platolar eklenir; bu nedenle Doğu Anadolu, Türkiye'nin ortalama yükseltisi en fazla olan bölümüdür."
+        },
+        {
+          "soru": "Bir akarsuyun denize döküldüğü yerde taşıdığı alüvyonları biriktirerek oluşturduğu, Çukurova'nın da örneği olduğu düzlük türü aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Plato",
+            "Karstik ova",
+            "Dağ sırası",
+            "Tektonik ova",
+            "Delta ovası"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Delta ovaları, akarsuların denize ya da göle döküldüğü yerde hızının azalmasıyla taşıdığı alüvyonu (sediment) biriktirmesi sonucu oluşan verimli düzlüklerdir. Çukurova, Bafra ve Çarşamba ovaları bu türün tipik örnekleridir."
+        },
+        {
+          "soru": "Plato ile ova arasındaki temel fark aşağıdakilerden hangisinde doğru verilmiştir?",
+          "secenekler": [
+            "Plato her zaman deniz kıyısında, ova her zaman iç kesimde bulunur",
+            "Plato volkanik kökenlidir, ova ise her zaman karstiktir",
+            "Plato akarsularla yarılmış ve çevresine göre yüksekte kalan düzlüktür, ova ise alçak ve düz geniş bir arazidir",
+            "Plato yalnızca Doğu Anadolu'da, ova yalnızca Marmara'da bulunur",
+            "Plato ile ova arasında oluşum bakımından hiçbir fark yoktur"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Plato, akarsuların derin vadiler açarak yardığı, çevresine göre yüksekte kalan geniş düzlüktür. Ova ise nispeten alçak, düz ya da hafif eğimli geniş bir arazidir. Bu, iki yer şekli arasındaki temel tanım farkıdır."
+        },
+        {
+          "soru": "Türkiye'deki akarsuların genel olarak kısa, eğimli ve rejimlerinin düzensiz olmasının sonucu olarak aşağıdakilerden hangisi söylenebilir?",
+          "secenekler": [
+            "Ulaşıma çok elverişlidirler",
+            "Hidroelektrik enerji üretimi potansiyeli yüksektir",
+            "Yıl boyunca taşıdıkları su miktarı sabittir",
+            "Hepsi aynı denize dökülür",
+            "Delta ovası oluşturmazlar"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Eğimin fazla olması akarsuyun hızını ve dolayısıyla potansiyel enerjisini artırır; bu nedenle Türkiye akarsuları ulaşıma elverişli olmasa da hidroelektrik enerji üretimi açısından önemli bir potansiyele sahiptir."
+        },
+        {
+          "soru": "Doğu Anadolu'da yoğun olarak görülen Ağrı, Süphan ve Nemrut gibi dağların ortak özelliği aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Kıyıya paralel uzanan kıvrım dağları olmaları",
+            "Karstik aşınımla oluşmaları",
+            "Volkanik kökenli olmaları",
+            "Buzul aşındırmasıyla oluşmaları",
+            "Step ikliminin etkisiyle oluşmaları"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ağrı, Süphan ve Nemrut dağları; yer altındaki magmanın yeryüzüne çıkmasıyla oluşan volkanik dağlardır. Bunlar kıvrım (orojenik) dağlardan farklı olarak tek başlarına, koni biçiminde yükselirler."
+        },
+        {
+          "soru": "Bir akarsuyun dağlık ve eğimli arazide derin, dar vadiler (kanyon) oluşturması, yer şekillerinin oluşumunda hangi kuvvetin etkisine örnektir?",
+          "secenekler": [
+            "İç kuvvetlerin (orojenez)",
+            "Dış kuvvetlerin (akarsu aşındırması)",
+            "Volkanizmanın",
+            "Depremin",
+            "Epirojenezin"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Akarsuların aşındırma, taşıma ve biriktirme faaliyetleri dış kuvvetler arasında yer alır. Eğimli arazide hızlı akan akarsu, zeminini aşındırarak derin ve dar vadiler (kanyonlar) oluşturur; bu dış kuvvetlerin (akarsu aşındırması) tipik bir sonucudur."
+        },
+        {
+          "soru": "Fırat ve Dicle nehirleri ile ilgili aşağıdaki bilgilerden hangisi doğrudur?",
+          "secenekler": [
+            "Karadeniz'e dökülürler",
+            "Türkiye sınırları içinde doğup Basra Körfezi'ne dökülürler",
+            "Akdeniz ikliminin olduğu bir bölgede doğarlar",
+            "Türkiye'nin en kısa akarsularıdır",
+            "Yalnızca göllere dökülürler, denize ulaşmazlar"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Fırat ve Dicle, Doğu Anadolu'daki yüksek platolardan doğar, Türkiye'den çıktıktan sonra Suriye ve Irak topraklarından geçerek birleşir ve sonunda Basra Körfezi'ne dökülür. Bu, Türkiye'nin en uzun ve önemli akarsularındandır."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi yer şekillerinin oluşumunda etkili olan 'iç kuvvetlere' bir örnek değildir?",
+          "secenekler": [
+            "Deprem",
+            "Volkanizma",
+            "Orojenez (dağ oluşumu)",
+            "Rüzgar aşındırması",
+            "Epirojenez (kıta/yer kabuğu hareketleri)"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Rüzgar aşındırması, yeryüzünü dışarıdan etkileyen bir kuvvettir ve dış kuvvetler arasında sayılır. Deprem, volkanizma, orojenez ve epirojenez ise yer kabuğunun içinden kaynaklanan iç kuvvetlerdir."
+        }
+      ]
+    },
+    {
+      "id": "cografya-nufus-yerlesme",
+      "baslik": "Nüfus ve Yerleşme",
+      "anlatim": {
+        "ozet": "Türkiye'de nüfus dağılışı; iklim, yer şekilleri, ekonomik faaliyetler ve ulaşım gibi doğal ve beşeri faktörlere göre büyük farklılıklar gösterir; kıyı kesimler ve büyük şehirler yoğun nüfusluyken, yüksek dağlık ve engebeli iç-doğu kesimler seyrek nüfusludur.",
+        "icerik": [
+          "Nüfus dağılışını etkileyen faktörler ikiye ayrılır: Doğal (fiziki) faktörler iklim, yer şekilleri, toprak verimi ve su kaynaklarını; beşeri (insan kaynaklı) faktörler ise sanayi, ticaret, ulaşım imkanları ve tarım faaliyetlerini kapsar. Genel kural olarak, ılıman iklimli, düz/ovalık, verimli topraklı ve ulaşıma elverişli yerler yoğun nüfusludur; sert iklimli, yüksek ve engebeli, ulaşımı zor yerler ise seyrek nüfusludur.",
+          "Türkiye'de nüfusun en yoğun olduğu yerler kıyı kesimler, özellikle Marmara Bölgesi (İstanbul başta olmak üzere) ile büyük ovalar (Çukurova gibi) ve sanayi-ticaretin geliştiği büyük şehirlerdir (İstanbul, Ankara, İzmir, Bursa). Nüfusun en seyrek olduğu yerler ise yüksek ve engebeli Doğu Anadolu'nun dağlık kesimleri ile bazı iç kesimlerdeki kurak/yarı kurak step alanlarıdır.",
+          "Göç, insanların ekonomik, sosyal, siyasi veya doğal nedenlerle yaşadıkları yeri kalıcı veya geçici olarak değiştirmesidir. Türkiye'de Cumhuriyet döneminden itibaren en belirgin göç türü kırdan kente (köyden şehre) göçtür; bu göçün temel nedeni kırsal alandaki tarımsal işsizlik/toprak yetersizliği (itici faktör) ile şehirlerdeki iş, eğitim ve sağlık imkanlarının fazlalığıdır (çekici faktör). Bu göç dalgası, büyük şehirlerde hızlı ve çoğu zaman çarpık (plansız) şehirleşmeye yol açmıştır.",
+          "Şehirleşme (kentleşme), şehirlerde yaşayan nüfusun toplam nüfusa oranının artması ve şehirlerin sayıca, fonksiyonel olarak büyümesi sürecidir. Türkiye'de Cumhuriyet'in ilk yıllarında nüfusun büyük bölümü kırsalda yaşarken, sanayileşme ve tarımda makineleşmeyle (örneğin traktör kullanımının artmasıyla tarımda iş gücüne duyulan ihtiyacın azalması) günümüzde nüfusun büyük çoğunluğu şehirlerde yaşamaktadır."
+        ],
+        "anahtarNoktalar": [
+          "Nüfus dağılışını doğal faktörler (iklim, yer şekilleri, toprak, su) ve beşeri faktörler (sanayi, ulaşım, ticaret) belirler",
+          "Yoğun nüfuslu alanlar: kıyılar, ovalar, büyük şehirler (İstanbul, Ankara, İzmir, Bursa)",
+          "Seyrek nüfuslu alanlar: Doğu Anadolu'nun yüksek-engebeli kesimleri, kurak step alanları",
+          "Göçün itici nedenleri: tarımsal işsizlik, toprak yetersizliği, kan davası, terör",
+          "Göçün çekici nedenleri: iş imkanı, eğitim, sağlık, sosyal-kültürel olanaklar",
+          "Cumhuriyet sonrası en belirgin göç türü kırdan kente göçtür",
+          "Tarımda makineleşme (traktör vb.) kırsaldan kente göçü hızlandıran önemli bir etkendir",
+          "Hızlı ve çarpık şehirleşme; gecekondu, altyapı yetersizliği gibi sorunlara yol açmıştır"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdakilerden hangisi Türkiye'de nüfus dağılışını etkileyen doğal (fiziki) faktörlerden biridir?",
+          "secenekler": [
+            "Sanayi tesislerinin yoğunluğu",
+            "Ulaşım ağının gelişmişliği",
+            "Yer şekillerinin engebeliliği",
+            "Ticaret hacmi",
+            "Eğitim imkanlarının fazlalığı"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Yer şekilleri (dağlık-düz olması, yükseklik) iklim ve toprak verimi gibi doğal/fiziki faktörler arasındadır. Sanayi, ulaşım, ticaret ve eğitim ise insan etkinliğine dayalı beşeri faktörlerdir."
+        },
+        {
+          "soru": "Türkiye'de nüfusun en seyrek olduğu alanlar genellikle hangi özelliklere sahiptir?",
+          "secenekler": [
+            "Düz, alçak ve verimli ovalık alanlar",
+            "Kıyı kesimindeki sanayileşmiş şehirler",
+            "Ilıman iklimli ve ticareti gelişmiş bölgeler",
+            "Yüksek, engebeli ve ulaşımı zor dağlık alanlar",
+            "Liman kentleri"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Yüksek ve engebeli araziler tarıma elverişli olmadığı, ulaşımı zorlaştırdığı ve iklim koşulları sert olduğu için bu tür alanlarda nüfus yoğunluğu düşüktür. Doğu Anadolu'nun yüksek kesimleri buna örnektir."
+        },
+        {
+          "soru": "Türkiye'de Cumhuriyet döneminden itibaren gözlenen en belirgin göç hareketi aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Kentten kıra göç",
+            "Kırdan kente (köyden şehre) göç",
+            "Sadece dış ülkelere göç",
+            "Yalnızca mevsimlik tarım göçü",
+            "Kentten kente eşit dağılımlı göç"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Türkiye'de tarımsal işsizlik ve toprak yetersizliği gibi itici faktörlerle kırsaldaki nüfus, iş ve eğitim imkanı arayışıyla şehirlere yönelmiş; bu kırdan kente göç, Cumhuriyet sonrası en belirgin göç türü olmuştur."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi göçün 'itici' faktörlerinden biridir?",
+          "secenekler": [
+            "Şehirlerdeki iş imkanlarının fazlalığı",
+            "Kırsalda tarımsal işsizlik ve toprak yetersizliği",
+            "Şehirlerdeki eğitim olanaklarının gelişmişliği",
+            "Şehirlerdeki sağlık hizmetlerinin kalitesi",
+            "Şehirlerdeki sosyal-kültürel imkanların çeşitliliği"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İtici faktörler, insanları yaşadıkları yerden ayrılmaya zorlayan olumsuz koşullardır. Kırsalda tarımsal işsizlik, toprak yetersizliği ve geçim zorluğu, insanları köyden ayrılmaya iten temel itici faktörlerdendir. Diğer seçenekler ise kişiyi şehre çeken 'çekici' faktörlerdir."
+        },
+        {
+          "soru": "Tarımda makineleşmenin (örneğin traktör kullanımının yaygınlaşması) kırsal nüfus üzerindeki temel etkisi aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Kırsalda iş gücüne duyulan ihtiyacı artırarak köyden kente göçü azaltmıştır",
+            "Kırsalda iş gücüne duyulan ihtiyacı azaltarak köyden kente göçü hızlandırmıştır",
+            "Tarımsal üretimi tamamen durdurmuştur",
+            "Şehirlerden kırsala göçü tetiklemiştir",
+            "Nüfus dağılışını hiç etkilememiştir"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Traktör ve benzeri tarım makinelerinin yaygınlaşması, daha önce insan/hayvan gücüyle yapılan işleri makinelerin yapmasını sağlamış, böylece kırsalda çalışacak insana duyulan ihtiyaç azalmış ve açığa çıkan iş gücü şehirlere göç etmiştir."
+        },
+        {
+          "soru": "Türkiye'de hızlı ve plansız şehirleşmenin en yaygın sonuçlarından biri aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Kırsal nüfusun aşırı artması",
+            "Şehirlerde gecekondulaşma ve altyapı sorunlarının ortaya çıkması",
+            "Tarım alanlarının genişlemesi",
+            "Şehirlerde nüfusun azalması",
+            "Sanayi üretiminin tamamen durması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Kısa sürede çok fazla göç alan şehirlerde konut, altyapı (yol, su, kanalizasyon) ve hizmetlerin bu hızlı artışa yetişememesi sonucunda düzensiz, plansız yapılaşma yani gecekondulaşma ortaya çıkmıştır."
+        },
+        {
+          "soru": "Aşağıdaki illerden hangisi Türkiye'de nüfus yoğunluğunun en fazla olduğu iller arasında yer alır?",
+          "secenekler": [
+            "Hakkari",
+            "Tunceli",
+            "Ardahan",
+            "İstanbul",
+            "Bayburt"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "İstanbul; sanayi, ticaret, ulaşım ve hizmet sektörünün çok gelişmiş olması, iş imkanlarının fazlalığı ve tarihsel olarak göç alması nedeniyle Türkiye'nin nüfus yoğunluğu en fazla olan ilidir. Diğer seçenekler Doğu Anadolu'da nüfusu görece az olan illerdir."
+        },
+        {
+          "soru": "Şehirleşme (kentleşme) kavramı en doğru biçimde aşağıdakilerden hangisinde tanımlanmıştır?",
+          "secenekler": [
+            "Kırsal alanlarda yaşayan nüfusun azalmadan sabit kalması",
+            "Şehirlerde yaşayan nüfusun toplam nüfusa oranının artması ve şehirlerin büyümesi süreci",
+            "Sadece şehir sınırlarının coğrafi olarak genişlemesi",
+            "Kırsal nüfusun tarımsal üretimini artırması",
+            "Şehirler arasındaki göçün tamamen durması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Şehirleşme; sanayileşme ve ekonomik gelişmeyle birlikte kentlerde yaşayan nüfus oranının artması, kentlerin nüfusça ve işlevce büyümesi sürecidir. Bu süreç genellikle kırdan kente göçle birlikte ilerler."
+        },
+        {
+          "soru": "Bir bölgede nüfusun yoğun olmasını sağlayan beşeri faktörler arasında aşağıdakilerden hangisi sayılabilir?",
+          "secenekler": [
+            "Yükseltinin fazla olması",
+            "İklimin çok sert olması",
+            "Sanayi ve ticaret faaliyetlerinin gelişmiş olması",
+            "Toprağın taşlık ve verimsiz olması",
+            "Yer şekillerinin çok engebeli olması"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Sanayi ve ticaretin gelişmiş olması, iş imkanı yaratarak nüfusu bir bölgeye çeken önemli bir beşeri faktördür. Diğer seçenekler ise nüfusu azaltıcı yönde etkili olan doğal/fiziki faktörlerdir."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi Türkiye'de nüfusun yoğun olduğu Çukurova gibi alanların ortak özelliğidir?",
+          "secenekler": [
+            "Yüksek dağlık ve engebeli olmaları",
+            "Step ikliminin egemen olduğu kurak alanlar olmaları",
+            "Verimli, düz ovalık ve tarıma elverişli alanlar olmaları",
+            "Ulaşımdan tamamen yoksun, izole alanlar olmaları",
+            "Sadece hayvancılığa elverişli yüksek yaylalar olmaları"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Çukurova gibi alüvyonlu delta ovaları, düz, verimli toprağa sahip ve tarıma son derece elverişlidir. Bu özellikleri sayesinde yoğun tarımsal üretim yapılır, iş imkanı fazladır ve nüfus yoğunluğu yüksektir."
+        }
+      ]
+    },
+    {
+      "id": "cografya-ekonomik-faaliyetler",
+      "baslik": "Ekonomik Faaliyetler: Tarım, Sanayi, Hayvancılık",
+      "anlatim": {
+        "ozet": "Türkiye'de tarım iklim, toprak ve su koşullarına göre bölgeden bölgeye çeşitlilik gösterir; sanayi ise başta hammaddeye yakınlık, ulaşım ve iş gücü olmak üzere çeşitli faktörlere bağlı olarak büyük şehirlerde yoğunlaşmıştır.",
+        "icerik": [
+          "Tarımı etkileyen faktörler iklim (sıcaklık ve yağış koşulları), toprak (verim ve yapı), su kaynakları (sulama imkanı), yer şekilleri (eğim ve düzlük) ve beşeri faktörler (teknoloji, pazar, ulaşım, tarım politikaları) olarak sıralanabilir. Her bitkinin yetişebilmesi için belirli bir sıcaklık ve yağış eşiği (isteği) vardır; bu nedenle her ürün her bölgede yetiştirilemez.",
+          "Türkiye'de başlıca tarım ürünleri ve yetiştiği bölgeler şöyledir: Çay, yüksek nem ve yağış isteyen bir bitki olduğu için yalnızca Doğu Karadeniz kıyısında (özellikle Rize) yetişir. Fındık, ılıman ve nemli iklim ister; Karadeniz kıyı şeridi (özellikle Ordu, Giresun) dünya fındık üretiminde liderdir. Turunçgiller (portakal, mandalina, limon) kışın don olayının yaşanmadığı ılıman Akdeniz ve Ege kıyılarında yetişir. Pamuk, yüksek sıcaklık ve büyüme döneminde bol su ister; Çukurova, Ege (Büyük Menderes havzası) ve Güneydoğu Anadolu (GAP sayesinde) önemli pamuk üretim alanlarıdır. Buğday, kurak ve yarı kurak iklime dayanıklı olduğu için İç Anadolu'da en yaygın tarla bitkisidir. Zeytin, kışı ılıman, yazı sıcak-kurak geçen Akdeniz ikliminin tipik ürünüdür ve Ege-Akdeniz kıyılarında yoğunlaşır.",
+          "Hayvancılık, arazi ve iklim koşullarına göre çeşitlenir: Büyükbaş hayvancılık (özellikle sığır) çayır-mera bakımından zengin, nemli Karadeniz Bölgesi'nde; küçükbaş hayvancılık (koyun-keçi) ise otlak alanlarının yaygın olduğu, daha kurak step iklimine sahip İç Anadolu ve Doğu Anadolu'da yaygındır. Tiftik keçisi yetiştiriciliği ile Ankara özdeşleşmiştir.",
+          "Sanayi tesisleri kurulurken hammaddeye yakınlık, pazara (tüketici nüfusa) yakınlık, ulaşım imkanları, enerji kaynaklarına yakınlık, sermaye ve nitelikli iş gücü gibi faktörler önemlidir. Bu nedenle Türkiye'de sanayi, başta İstanbul, Kocaeli, Bursa olmak üzere Marmara Bölgesi'nde ve İzmir, Adana gibi büyük şehirlerde yoğunlaşmıştır. Demir-çelik sanayisi için Karabük (kömür ve demir cevherine yakınlık) önemli bir merkezdir."
+        ],
+        "anahtarNoktalar": [
+          "Çay ve fındık: Doğu Karadeniz'in nemli ikliminin tipik ürünleri (çay: Rize, fındık: Ordu-Giresun)",
+          "Turunçgiller ve zeytin: kışı ılıman geçen Akdeniz-Ege kıyılarının ürünleridir, dona dayanıksızdır",
+          "Pamuk: yüksek sıcaklık ve bol su ister; Çukurova, Ege, GAP sayesinde Güneydoğu Anadolu önemlidir",
+          "Buğday: kurak/yarı kurak iklime dayanıklıdır, İç Anadolu'nun başlıca tarla bitkisidir",
+          "Büyükbaş hayvancılık nemli-çayırlık Karadeniz'de, küçükbaş hayvancılık kurak step bölgelerinde yaygındır",
+          "Tiftik keçisi Ankara ile özdeşleşmiştir",
+          "Sanayi; hammadde, pazar, ulaşım, enerji ve iş gücüne yakınlık faktörlerine göre yer seçer",
+          "Sanayi Marmara (İstanbul-Kocaeli-Bursa) başta olmak üzere büyük şehirlerde yoğunlaşmıştır; Karabük demir-çelik sanayisiyle bilinir"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Çay tarımının Türkiye'de yalnızca Doğu Karadeniz kıyısında yoğunlaşmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bu bölgenin step iklimine sahip olması",
+            "Çayın yüksek nem ve bol yağış isteyen bir bitki olması, bu koşulun da yalnızca burada bulunması",
+            "Bölgenin dona dayanıklı toprak yapısına sahip olması",
+            "Bölgede sulama kanallarının fazla olması",
+            "Bölgenin GAP kapsamında olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Çay, gelişimi için yüksek nem ve bol miktarda yağış ister. Türkiye'de bu iklim koşulunu en fazla karşılayan yer, her mevsim bol yağış alan Doğu Karadeniz kıyı şerididir; bu nedenle çay tarımı bölgeye özgüdür."
+        },
+        {
+          "soru": "Turunçgil (portakal, mandalina vb.) tarımının Akdeniz ve Ege kıyılarında yoğunlaşmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bu bölgelerin küçükbaş hayvancılığa elverişli olması",
+            "Bu bölgelerde kışın don olayının yaşanmaması",
+            "Bu bölgelerin İç Anadolu kadar kurak olması",
+            "Bu bölgelerde yazların serin geçmesi",
+            "Bu bölgelerin step bitki örtüsüne sahip olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Turunçgiller dona karşı çok hassastır ve donda zarar görür. Akdeniz ikliminin görüldüğü kıyı kesimlerinde kışlar ılıman geçtiği için don riski düşüktür; bu da turunçgil tarımına uygun ortam sağlar."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi pamuk tarımının yoğun olarak yapıldığı alanlardan biri değildir?",
+          "secenekler": [
+            "Çukurova",
+            "Büyük Menderes Havzası (Ege)",
+            "Güneydoğu Anadolu (GAP sayesinde)",
+            "Doğu Karadeniz kıyı şeridi",
+            "Adana ve çevresi"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Pamuk, yüksek sıcaklık ve büyüme döneminde bol su isteyen bir bitkidir; Çukurova, Ege ve GAP'la sulanan Güneydoğu Anadolu bu koşulları sağlar. Doğu Karadeniz ise serin ve aşırı nemli olduğu, pamuk için uygun sıcaklık sağlamadığı için bu bölgede pamuk tarımı yapılmaz."
+        },
+        {
+          "soru": "Buğdayın İç Anadolu'da en yaygın tarla bitkisi olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Buğdayın yalnızca dağlık alanlarda yetişmesi",
+            "İç Anadolu'nun her mevsim yağışlı olması",
+            "Buğdayın kurak ve yarı kurak iklim koşullarına dayanıklı olması",
+            "Buğdayın yüksek nem isteyen bir bitki olması",
+            "İç Anadolu'nun deniz seviyesinde olması"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Buğday, diğer birçok tarım ürününe göre az yağışla yetişebilen, kurak ve yarı kurak iklim koşullarına dayanıklı bir tahıldır. İç Anadolu'nun karasal/step ikliminde bu nedenle yaygın biçimde yetiştirilir."
+        },
+        {
+          "soru": "Büyükbaş hayvancılığın (özellikle sığır yetiştiriciliğinin) Karadeniz Bölgesi'nde yoğun olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bölgenin kurak step alanlarına sahip olması",
+            "Bölgenin her mevsim yağışlı olması nedeniyle çayır-mera bakımından zengin olması",
+            "Bölgenin yüksek sıcaklık ortalamasına sahip olması",
+            "Bölgede tiftik keçisi yetiştiriciliğinin yaygın olması",
+            "Bölgenin pamuk üretiminde öncü olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Karadeniz Bölgesi'nin her mevsim yağışlı olması, bol otlak/çayır alanı oluşmasını sağlar. Sığır gibi büyükbaş hayvanlar bol yeşil ot ve su ihtiyacı duyduğu için bu bölgede büyükbaş hayvancılık yaygındır."
+        },
+        {
+          "soru": "Küçükbaş hayvancılığın (koyun-keçi) İç Anadolu ve Doğu Anadolu'da yaygın olmasının nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bu bölgelerin her mevsim bol yağış alması",
+            "Bu bölgelerde turunçgil tarımının yaygın olması",
+            "Koyun ve keçinin kurak/step bitki örtüsüne ve daha az suya dayanıklı olması",
+            "Bu bölgelerin deniz kıyısında bulunması",
+            "Çayın bu bölgelerde yetişmesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Koyun ve keçi gibi küçükbaş hayvanlar, sığıra göre daha az su ve daha düşük kalitede otlakla yetinebilir; step bitki örtüsüne sahip kurak iç ve doğu kesimlerde bu nedenle küçükbaş hayvancılık öne çıkar."
+        },
+        {
+          "soru": "Tiftik keçisi yetiştiriciliğiyle özdeşleşen il aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Rize",
+            "Antalya",
+            "Ankara",
+            "Trabzon",
+            "Hatay"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ankara ve çevresi, tiftik keçisi (Ankara keçisi) yetiştiriciliği ile tarih boyunca özdeşleşmiştir; bu keçinin yünü olan tiftik, dokumacılıkta önemli bir hammaddedir."
+        },
+        {
+          "soru": "Bir sanayi tesisinin Karabük'te demir-çelik üretimine yönelmesinde en etkili faktör aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bölgenin turizm potansiyelinin yüksek olması",
+            "Bölgenin kömür ve demir cevheri kaynaklarına yakınlığı",
+            "Bölgenin Akdeniz iklimine sahip olması",
+            "Bölgenin nüfus yoğunluğunun en az olması",
+            "Bölgenin step bitki örtüsüne sahip olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Demir-çelik üretiminde temel hammaddeler demir cevheri ve kömürdür (enerji kaynağı). Karabük, bu hammaddelere yakınlığı nedeniyle Türkiye'nin önemli demir-çelik sanayi merkezlerinden biri olmuştur; bu, sanayide hammaddeye yakınlık faktörünün tipik bir örneğidir."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi sanayi tesislerinin kuruluş yeri seçiminde etkili olan faktörlerden biri değildir?",
+          "secenekler": [
+            "Hammaddeye yakınlık",
+            "Pazara (tüketici nüfusa) yakınlık",
+            "Ulaşım imkanlarının elverişliliği",
+            "Nitelikli iş gücüne erişim",
+            "Bölgenin matematik konumunun enlem derecesi"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Sanayi kuruluş yeri seçiminde hammadde, pazar, ulaşım, enerji ve iş gücü gibi ekonomik-beşeri faktörler belirleyicidir. Bir yerin yalnızca enlem derecesi (matematik konumu) tek başına sanayi yer seçiminde doğrudan belirleyici bir ölçüt değildir."
+        },
+        {
+          "soru": "Zeytin tarımının Ege ve Akdeniz kıyılarında yoğunlaşmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bu bölgelerde kışların soğuk ve karlı geçmesi",
+            "Zeytinin Akdeniz ikliminin kışı ılıman, yazı sıcak-kurak özelliğine uygun bir bitki olması",
+            "Bu bölgelerin step bitki örtüsüne sahip olması",
+            "Zeytinin yüksek rakımlı soğuk bölgelerde yetişmesi",
+            "Bu bölgelerin Doğu Anadolu'ya yakın olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Zeytin, Akdeniz ikliminin tipik bir bitkisidir; kışın ılıman ve yağışlı, yazın sıcak ve kurak geçen iklim koşullarına uyum sağlamıştır. Bu nedenle Ege ve Akdeniz kıyı kuşağında yaygın olarak yetiştirilir."
+        }
+      ]
+    },
+    {
+      "id": "cografya-bolgeler",
+      "baslik": "Türkiye'nin Coğrafi Bölgeleri",
+      "anlatim": {
+        "ozet": "Türkiye, iklim, bitki örtüsü, tarım ürünleri ve yer şekilleri bakımından benzerlik gösteren alanların bir araya getirilmesiyle Marmara, Ege, Akdeniz, İç Anadolu, Karadeniz, Doğu Anadolu ve Güneydoğu Anadolu olmak üzere 7 coğrafi bölgeye ayrılır.",
+        "icerik": [
+          "Türkiye'nin coğrafi bölgelere ayrılmasındaki amaç, benzer doğal ve beşeri özellik gösteren alanları bir arada inceleyerek coğrafi araştırmayı, planlamayı ve eğitimi kolaylaştırmaktır. Bölgeler 1941 yılında yapılan I. Coğrafya Kongresi'nde iklim, bitki örtüsü, tarım ürünleri, yer şekilleri ve ulaşım gibi ölçütler dikkate alınarak belirlenmiştir.",
+          "Marmara Bölgesi: Türkiye'nin en küçük yüzölçümlü fakat nüfus ve sanayi bakımından en yoğun bölgesidir. İstanbul ve Çanakkale boğazlarına sahiptir, bu nedenle Asya ile Avrupa arasında geçiş bölgesidir. Hem Karadeniz hem Akdeniz iklim özellikleri görülebilir; sanayi, ticaret ve nüfus yoğunluğu en yüksek bölgedir.",
+          "Ege Bölgesi: Kıyı ile iç kesim arasındaki dağların kıyıya dik uzanması, deniz etkisinin iç kesimlere kadar sokulmasını sağlar. Bu nedenle Ege'de kıyı ile iç kesim arasındaki iklim farkı diğer bölgelere göre daha azdır. İncir, üzüm, zeytin ve pamuk gibi ürünlerle öne çıkar; İzmir önemli bir liman ve sanayi kentidir.",
+          "Akdeniz Bölgesi: Toros Dağları kıyıya paralel uzanır. Akdeniz iklimi ve maki bitki örtüsü görülür; turunçgil ve sera tarımı (özellikle Antalya) gelişmiştir. Çukurova, bölgenin en önemli tarım ve sanayi alanlarından biridir.",
+          "İç Anadolu Bölgesi: Çevresi dağlarla kuşatılmış, karasal iklimin egemen olduğu bir plato bölgesidir. Step bitki örtüsü görülür, buğday başlıca tarım ürünüdür. Ankara (başkent) bu bölgededir; Tuz Gölü ve volkanik dağlar (Erciyes, Hasan Dağı) bölgenin önemli unsurlarıdır.",
+          "Karadeniz Bölgesi: Dağların kıyıya paralel uzanması nedeniyle dar bir kıyı şeridi ile iç kesim arasında belirgin iklim farkı vardır. Her mevsim yağışlı Karadeniz iklimi, çay ve fındık tarımı, yoğun orman örtüsü ile tanınır; kıyıda düzlük az olduğu için tarım alanları sınırlıdır.",
+          "Doğu Anadolu Bölgesi: Türkiye'nin en geniş yüzölçümüne ve en yüksek ortalama rakımına sahip bölgesidir. Dağlar birbirine yaklaşır, volkanik dağlar (Ağrı, Süphan, Nemrut) ve büyük göller (Van Gölü) bulunur; kışlar çok sert ve uzun geçer, hayvancılık (özellikle küçükbaş) önemli bir geçim kaynağıdır.",
+          "Güneydoğu Anadolu Bölgesi: Türkiye'nin en küçük ikinci bölgesidir (Marmara'dan sonra), düz ve hafif dalgalı platolardan oluşur. Karasal iklime yakın, kurak bir iklimi vardır; GAP (Güneydoğu Anadolu Projesi) sayesinde sulama imkanı artmış, pamuk üretimi gelişmiştir. Fırat ve Dicle nehirleri bu bölgeden geçer."
+        ],
+        "anahtarNoktalar": [
+          "Türkiye 7 coğrafi bölgeye ayrılır: Marmara, Ege, Akdeniz, İç Anadolu, Karadeniz, Doğu Anadolu, Güneydoğu Anadolu",
+          "Bölgeler 1941'deki I. Coğrafya Kongresi'nde iklim, bitki örtüsü, tarım ve yer şekillerine göre belirlendi",
+          "Marmara: en küçük yüzölçümlü, nüfus ve sanayide en yoğun bölge, boğazlara sahip",
+          "Ege: dağlar kıyıya dik, kıyı-iç kesim iklim farkı az; incir-üzüm-zeytin önemli",
+          "Akdeniz: Toros Dağları kıyıya paralel, turunçgil ve sera tarımı (Antalya) öne çıkar",
+          "İç Anadolu: çevresi dağlarla çevrili plato, karasal iklim, buğday ve Tuz Gölü, başkent Ankara",
+          "Karadeniz: dar kıyı şeridi, her mevsim yağışlı iklim, çay-fındık, yoğun orman",
+          "Doğu Anadolu: en geniş ve en yüksek bölge, volkanik dağlar, Van Gölü, sert kışlar",
+          "Güneydoğu Anadolu: en küçük ikinci bölge, düz platolar, GAP ile gelişen pamuk tarımı"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Türkiye'nin coğrafi bölgelere ayrılmasında temel olarak hangi ölçütler dikkate alınmıştır?",
+          "secenekler": [
+            "Yalnızca nüfus yoğunluğu",
+            "İklim, bitki örtüsü, tarım ürünleri ve yer şekilleri benzerliği",
+            "Yalnızca idari sınırlar",
+            "Yalnızca ekonomik gelir düzeyi",
+            "Yalnızca dil ve etnik dağılım"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Coğrafi bölgeler, benzer doğal (iklim, bitki örtüsü, yer şekilleri) ve beşeri (tarım, ulaşım) özellikler gösteren alanların gruplandırılmasıyla oluşturulmuştur; idari sınırlarla birebir örtüşmez."
+        },
+        {
+          "soru": "Türkiye'nin nüfus ve sanayi bakımından en yoğun, fakat yüzölçümü bakımından en küçük coğrafi bölgesi aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Ege Bölgesi",
+            "Marmara Bölgesi",
+            "İç Anadolu Bölgesi",
+            "Doğu Anadolu Bölgesi",
+            "Karadeniz Bölgesi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Marmara Bölgesi, yüzölçümü en küçük bölge olmasına rağmen İstanbul başta olmak üzere yoğun sanayileşme ve göç alması nedeniyle nüfus yoğunluğu en fazla olan bölgedir."
+        },
+        {
+          "soru": "Ege Bölgesi'nde kıyı ile iç kesim arasındaki iklim farkının diğer bölgelere göre daha az olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bölgede hiç dağ bulunmaması",
+            "Dağların kıyıya dik uzanarak deniz etkisinin iç kesimlere kadar sokulmasına imkan vermesi",
+            "Bölgenin step ikliminin etkisi altında olması",
+            "Bölgenin Doğu Anadolu'ya komşu olması",
+            "Bölgede volkanik dağların bulunması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Ege Bölgesi'nde dağlar (örneğin Menderes ve Gediz vadilerini oluşturan sıradağlar) kıyıya dik uzanır. Bu sayede deniz etkisi vadiler boyunca iç kesimlere kadar sokulabilir ve kıyı-iç kesim iklim farkı azalır."
+        },
+        {
+          "soru": "Aşağıdaki bölge-başkent/önemli şehir eşleştirmelerinden hangisi yanlıştır?",
+          "secenekler": [
+            "İç Anadolu - Ankara",
+            "Marmara - İstanbul",
+            "Akdeniz - Antalya",
+            "Ege - İzmir",
+            "Güneydoğu Anadolu - Trabzon"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Trabzon, Güneydoğu Anadolu'da değil Karadeniz Bölgesi'nde yer alan bir kıyı kentidir. Güneydoğu Anadolu'nun önemli şehirleri arasında Gaziantep, Şanlıurfa ve Diyarbakır sayılabilir."
+        },
+        {
+          "soru": "Türkiye'nin en geniş yüzölçümüne ve en yüksek ortalama rakımına sahip coğrafi bölgesi aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Karadeniz Bölgesi",
+            "İç Anadolu Bölgesi",
+            "Doğu Anadolu Bölgesi",
+            "Güneydoğu Anadolu Bölgesi",
+            "Marmara Bölgesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Doğu Anadolu Bölgesi, dağların birbirine yaklaşıp yükseltinin arttığı, volkanik dağların ve yüksek platoların yoğunlaştığı bölgedir; hem yüzölçümü en geniş hem de ortalama rakımı en yüksek bölgedir."
+        },
+        {
+          "soru": "Güneydoğu Anadolu Bölgesi'nde GAP (Güneydoğu Anadolu Projesi) sayesinde en çok gelişme gösteren tarım ürünü aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Çay",
+            "Fındık",
+            "Pamuk",
+            "Tiftik",
+            "Zeytin"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "GAP kapsamında yapılan barajlar ve sulama kanalları sayesinde Güneydoğu Anadolu'da kurak iklime rağmen sulu tarım imkanı artmış; bol su isteyen pamuk üretimi bölgede büyük gelişme göstermiştir."
+        },
+        {
+          "soru": "İç Anadolu Bölgesi ile ilgili aşağıdaki bilgilerden hangisi doğrudur?",
+          "secenekler": [
+            "Çevresi dağlarla çevrili bir plato bölgesidir ve karasal iklim egemendir",
+            "Türkiye'nin en yağışlı bölgesidir",
+            "Maki bitki örtüsü ile kaplıdır",
+            "Çay ve fındık tarımı bu bölgede yaygındır",
+            "Türkiye'nin en küçük yüzölçümüne sahip bölgesidir"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "İç Anadolu, çevresindeki dağlarla (kuzeyde Karadeniz, güneyde Toroslar) çevrelenmiş, denizden uzak kaldığı için karasal/step ikliminin egemen olduğu bir plato bölgesidir. Diğer seçenekler başka bölgelerin (Karadeniz, Akdeniz) özellikleridir."
+        },
+        {
+          "soru": "Van Gölü hangi coğrafi bölgede yer alır?",
+          "secenekler": [
+            "Ege Bölgesi",
+            "Akdeniz Bölgesi",
+            "Doğu Anadolu Bölgesi",
+            "Marmara Bölgesi",
+            "Karadeniz Bölgesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Van Gölü, Doğu Anadolu Bölgesi'nde, volkanik set (Nemrut Dağı'nın oluşturduğu set) sonucu oluşmuş Türkiye'nin en büyük gölüdür."
+        },
+        {
+          "soru": "Karadeniz Bölgesi'nde kıyı kesiminde tarım alanlarının sınırlı olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Bölgenin çok kurak olması",
+            "Dağların kıyıya paralel ve denize yakın yükselmesi nedeniyle düz/ova alanların dar olması",
+            "Bölgede hiç yağış görülmemesi",
+            "Bölgenin step ikliminin etkisinde olması",
+            "Bölgenin Güneydoğu Anadolu'ya komşu olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Karadeniz kıyısında dağlar denize çok yakın ve paralel olarak yükselir; bu nedenle kıyı ile dağlar arasında geniş düzlükler oluşamaz ve tarım alanları dar bir şeritle sınırlı kalır, genellikle teraslama yapılarak tarım sürdürülür."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi Akdeniz Bölgesi'nin tipik özelliklerinden biri değildir?",
+          "secenekler": [
+            "Toros Dağları'nın kıyıya paralel uzanması",
+            "Maki bitki örtüsünün yaygın olması",
+            "Antalya çevresinde sera tarımının gelişmiş olması",
+            "Turunçgil tarımının yapılması",
+            "Çay tarımının bölgenin başlıca geliri olması"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Çay tarımı, yüksek nem isteyen bir bitki olduğu için Akdeniz Bölgesi'nde değil, her mevsim yağışlı Doğu Karadeniz kıyısında yapılır. Akdeniz Bölgesi turunçgil, sera tarımı ve maki bitki örtüsüyle tanınır."
+        }
+      ]
+    }
+  ]
+}
