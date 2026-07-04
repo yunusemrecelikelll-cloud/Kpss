@@ -1,48 +1,32 @@
-// Sınav süresi sayacı
 const Timer = (() => {
-  const SECONDS_PER_QUESTION = 65; // KPSS GY-GK temposu (~120 soru / 130 dk)
+  const SECS_PER_Q = 65; // ~KPSS GY-GK temposu
 
-  let intervalId = null;
-  let remaining = 0;
-  let onTick = null;
-  let onExpire = null;
+  let _id = null, _remaining = 0, _onTick = null, _onExpire = null;
 
-  function durationForQuestionCount(count) {
-    return count * SECONDS_PER_QUESTION;
+  function durationFor(n) { return n * SECS_PER_Q; }
+
+  function format(s) {
+    const m = Math.floor(Math.abs(s) / 60).toString().padStart(2, '0');
+    const sec = Math.floor(Math.abs(s) % 60).toString().padStart(2, '0');
+    return `${m}:${sec}`;
   }
 
-  function format(seconds) {
-    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
-    const s = Math.floor(seconds % 60).toString().padStart(2, '0');
-    return `${m}:${s}`;
-  }
-
-  function start(totalSeconds, tickCb, expireCb) {
+  function start(total, tick, expire) {
     stop();
-    remaining = totalSeconds;
-    onTick = tickCb;
-    onExpire = expireCb;
-    if (onTick) onTick(remaining);
-    intervalId = setInterval(() => {
-      remaining -= 1;
-      if (onTick) onTick(remaining);
-      if (remaining <= 0) {
-        stop();
-        if (onExpire) onExpire();
-      }
+    _remaining = total; _onTick = tick; _onExpire = expire;
+    if (tick) tick(_remaining);
+    _id = setInterval(() => {
+      _remaining -= 1;
+      if (_onTick) _onTick(_remaining);
+      if (_remaining <= 0) { stop(); if (_onExpire) _onExpire(); }
     }, 1000);
   }
 
-  function stop() {
-    if (intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
-    }
-  }
+  function stop() { if (_id) { clearInterval(_id); _id = null; } }
 
-  function elapsedSeconds(totalSeconds) {
-    return totalSeconds - remaining;
-  }
+  function elapsed(total) { return total - _remaining; }
 
-  return { durationForQuestionCount, format, start, stop, elapsedSeconds };
+  function getRemaining() { return _remaining; }
+
+  return { durationFor, format, start, stop, elapsed, getRemaining };
 })();

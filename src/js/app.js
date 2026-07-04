@@ -1,421 +1,708 @@
-// Uygulama yönlendirme + ekran çizimi
+// KPSS v2 — Ana uygulama mantığı
 const SUBJECTS = [
-  { id: 'turkce', ad: 'Türkçe', icon: '📖', dosya: 'data/turkce.json' },
-  { id: 'matematik', ad: 'Matematik', icon: '🔢', dosya: 'data/matematik.json' },
-  { id: 'tarih', ad: 'Tarih', icon: '🏛️', dosya: 'data/tarih.json' },
-  { id: 'cografya', ad: 'Coğrafya', icon: '🗺️', dosya: 'data/cografya.json' },
-  { id: 'vatandaslik', ad: 'Vatandaşlık', icon: '⚖️', dosya: 'data/vatandaslik.json' }
+  { id: 'guncel',      ad: 'Güncel Bilgiler',    icon: '📰', dosya: 'data/guncel.json' },
+  { id: 'vatandaslik', ad: 'Vatandaşlık',        icon: '⚖️', dosya: 'data/vatandaslik.json' },
+  { id: 'cografya',    ad: 'Coğrafya',           icon: '🗺️', dosya: 'data/cografya.json' },
+  { id: 'tarih',       ad: 'Tarih',              icon: '🏛️', dosya: 'data/tarih.json' },
+  { id: 'matematik',   ad: 'Matematik-Geometri', icon: '🔢', dosya: 'data/matematik.json' },
+  { id: 'turkce',      ad: 'Türkçe',             icon: '📖', dosya: 'data/turkce.json' },
 ];
 
-let currentView = 'home';
-let currentParams = {};
+// Tam deneme sınavı dağılımı (toplam 120 soru)
+const FULL_TEST_DIST = {
+  turkce: 30, matematik: 30, tarih: 24, cografya: 24, vatandaslik: 8, guncel: 4
+};
 
-function esc(str) {
-  const d = document.createElement('div');
-  d.textContent = str == null ? '' : String(str);
-  return d.innerHTML;
+let _view = 'home', _params = {}, _loadErr = false;
+
+const esc = s => { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; };
+const $ = id => document.getElementById(id);
+const sub = id => SUBJECTS.find(s => s.id === id);
+const topic = (s, tid) => s.data?.konular.find(t => t.id === tid);
+
+// ── Toast ──
+function toast(msg, type = 'info', dur = 3000) {
+  const el = $('toast');
+  if (!el) return;
+  const icons = { info: 'ℹ️', success: '✅', error: '❌', badge: '🏅' };
+  el.innerHTML = `<span>${icons[type] || 'ℹ️'}</span><span>${esc(msg)}</span>`;
+  el.className = `toast ${type}`;
+  el.classList.remove('hide');
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.add('hide'), dur);
 }
 
-function getSubject(id) {
-  return SUBJECTS.find(s => s.id === id);
+// ── Particles ──
+function spawnParticles() {
+  const colors = ['#8b5cf6','#f472b6','#34d399','#fbbf24','#38bdf8'];
+  for (let i = 0; i < 12; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const sz = Math.random() * 4 + 2;
+    p.style.cssText = `width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-delay:${Math.random()*18}s;animation-duration:${14+Math.random()*12}s`;
+    document.body.appendChild(p);
+  }
 }
 
-function getTopic(subject, topicId) {
-  return subject.data.konular.find(t => t.id === topicId);
-}
-
-async function loadAllSubjects() {
-  const results = await Promise.all(
-    SUBJECTS.map(s => fetch(s.dosya).then(r => r.json()))
-  );
-  SUBJECTS.forEach((s, i) => { s.data = results[i]; });
-}
-
-function setRoot(html) {
-  document.getElementById('view-root').innerHTML = html;
-}
-
+// ── Router ──
 function navigate(view, params = {}) {
   Timer.stop();
-  currentView = view;
-  currentParams = params;
+  _view = view; _params = params;
   render();
   window.scrollTo(0, 0);
 }
 
 function render() {
-  if (currentView === 'home') return renderHome();
-  if (currentView === 'subject') return renderSubjectPage(currentParams.subjectId);
-  if (currentView === 'topic') return renderTopicPage(currentParams.subjectId, currentParams.topicId);
-  if (currentView === 'quiz') return renderQuizScreen();
-  if (currentView === 'result') return renderResultScreen(currentParams.result);
+  const v = _view;
+  if (v === 'home') return renderHome();
+  if (v === 'subject') return renderSubject(_params.sid);
+  if (v === 'topic') return renderTopic(_params.sid, _params.tid);
+  if (v === 'quiz') return renderQuizView();
+  if (v === 'result') return renderResult(_params.result);
+  if (v === 'leaderboard') return renderLeaderboard();
+  if (v === 'badges') return renderBadges();
+  if (v === 'wrong') return renderWrongBank();
+  if (v === 'settings') return renderSettings();
+  if (v === 'fulltest') return startFullTest();
+  if (v === 'missions') return renderMissions();
 }
 
-/* ---------------- Anasayfa ---------------- */
-function computeOverallStats() {
-  const attempts = Storage.getAttempts();
-  const completed = Storage.getCompletedTopics();
-  const totalTopics = SUBJECTS.reduce((sum, s) => sum + s.data.konular.length, 0);
-  const completedCount = SUBJECTS.reduce(
-    (sum, s) => sum + s.data.konular.filter(t => completed[t.id]).length, 0
-  );
-  const totalSolved = attempts.reduce((sum, a) => sum + a.toplam, 0);
-  const totalCorrect = attempts.reduce((sum, a) => sum + a.dogru, 0);
-  const successRate = totalSolved ? Math.round((totalCorrect / totalSolved) * 100) : 0;
+function setRoot(html) { $('view-root').innerHTML = html; }
 
-  const subjectStats = SUBJECTS.map(s => {
-    const subAttempts = attempts.filter(a => a.subjectId === s.id);
-    const avg = subAttempts.length
-      ? Math.round(subAttempts.reduce((sum, a) => sum + a.skor, 0) / subAttempts.length)
-      : null;
-    return { id: s.id, ad: s.ad, avg };
-  });
-
-  return { totalTopics, completedCount, totalSolved, successRate, subjectStats, attemptsCount: attempts.length };
+// ── Load ──
+async function loadAllSubjects() {
+  const results = await Promise.allSettled(SUBJECTS.map(s => fetch(s.dosya).then(r => r.json())));
+  results.forEach((r, i) => { if (r.status === 'fulfilled') SUBJECTS[i].data = r.value; });
 }
 
+// ── Streak + missions check after each result ──
+function postResultChecks(result) {
+  Storage.touchStreak();
+  const newBadges = Badges.check(SUBJECTS);
+  const newMissions = Missions.checkAll();
+  newBadges.forEach(b => setTimeout(() => toast(`🏅 Yeni rozet: ${b.name}!`, 'badge', 4000), 800));
+  newMissions.forEach(m => setTimeout(() => toast(`✅ Görev tamamlandı: ${m.title}!`, 'success', 4000), 1600));
+}
+
+// ── Home ──
 function renderHome() {
-  const name = Storage.getUserName();
-  const stats = computeOverallStats();
+  const name = Storage.getUserName() || 'Aday';
+  const overall = Storage.computeOverall();
+  const completed = Storage.getCompletedTopics();
+  const streak = Storage.getStreak();
+  const totalTopics = SUBJECTS.reduce((s, x) => s + (x.data?.konular.length || 0), 0);
+  const doneTopics = SUBJECTS.reduce((s, x) => s + (x.data?.konular.filter(t => completed[t.id]).length || 0), 0);
 
-  const subjectCards = SUBJECTS.map(s => {
-    const total = s.data.konular.length;
-    const completed = Storage.getCompletedTopics();
+  // Motivasyon mesajı
+  const motivations = [
+    '💪 Her doğru cevap seni hedefe bir adım yaklaştırıyor!',
+    '🌟 Bugün çalıştığın her dakika sınav günü gülümsetecek.',
+    '✨ Sen bunu başarabilirsin — devam et!',
+    '🔥 Seri bozulmasın, bugün en az bir test çöz!',
+    `🏆 ${streak.count > 1 ? `${streak.count} günlük serideysin!` : 'Bugün yeni bir seri başlat!'}`,
+  ];
+  const motivMsg = motivations[new Date().getDate() % motivations.length];
+
+  // Günün önerisi
+  const suggestion = Missions.getTodaySuggestion(SUBJECTS);
+  const suggestHtml = suggestion ? `
+    <div style="margin-top:14px;padding:12px 14px;background:rgba(244,114,182,0.1);border:1px solid rgba(244,114,182,0.25);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:10px">
+      <span style="font-size:13.5px;color:var(--text-dim)">✨ <b style="color:var(--rose)">Bugün önerilen:</b> ${esc(suggestion.s.icon)} ${esc(suggestion.s.ad)} — <b>${esc(suggestion.t.baslik)}</b></span>
+      <button class="btn btn-secondary" style="padding:6px 14px;font-size:12.5px;white-space:nowrap" id="go-suggest">Başla</button>
+    </div>` : '';
+
+  // Subject cards
+  const subCards = SUBJECTS.filter(s => s.data).map(s => {
+    const cnt = s.data.konular.length;
     const done = s.data.konular.filter(t => completed[t.id]).length;
-    const pct = total ? Math.round((done / total) * 100) : 0;
+    const pct = cnt ? Math.round(done / cnt * 100) : 0;
+    const avg = Storage.computeSubjectAvg(s.id);
     return `
-      <div class="card subject-card" data-subject="${s.id}">
+      <div class="card subject-card" data-sid="${s.id}">
         <div class="subject-icon">${s.icon}</div>
         <div class="subject-name">${esc(s.ad)}</div>
-        <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
-        <div class="progress-label">${done}/${total} konu tamamlandı</div>
+        <div class="progress-wrap" style="margin-bottom:8px"><div class="progress-fill" style="width:${pct}%"></div></div>
+        <div class="subject-meta">
+          <div class="progress-label">${done}/${cnt} konu</div>
+          <div class="subject-check-ring ${done === cnt && cnt > 0 ? 'done' : ''}">${done === cnt && cnt > 0 ? '✓' : ''}</div>
+        </div>
+        ${avg !== null ? `<div style="font-size:11.5px;color:var(--text-faint);margin-top:6px">Ort. %${avg}</div>` : ''}
       </div>`;
   }).join('');
 
-  let strongest = '', weakest = '';
-  const withAvg = stats.subjectStats.filter(s => s.avg !== null);
-  if (withAvg.length) {
-    const sorted = [...withAvg].sort((a, b) => b.avg - a.avg);
-    strongest = sorted[0].ad;
-    weakest = sorted[sorted.length - 1].ad;
-  }
+  // Best/worst subject
+  const subAvgs = SUBJECTS.filter(s => s.data).map(s => ({ s, avg: Storage.computeSubjectAvg(s.id) })).filter(x => x.avg !== null);
+  const bestSub = subAvgs.length ? subAvgs.reduce((a, b) => a.avg >= b.avg ? a : b) : null;
+  const worstSub = subAvgs.length ? subAvgs.reduce((a, b) => a.avg <= b.avg ? a : b) : null;
+
+  const draft = Storage.getDraft();
 
   setRoot(`
-    <div class="card hero">
-      <div class="hero-greeting">Merhaba, ${esc(name || 'Aday')}! 🌙</div>
-      <p class="hero-sub">2026 Ortaöğretim KPSS hazırlığında bugün hangi konuyu çalışmak istersin?</p>
+    ${draft ? `
+      <div class="draft-banner">
+        <p>🔄 Yarım kalan test: <strong>${esc(draft.topicBaslik || 'Deneme')}</strong> — kaldığın yerden devam edebilirsin.</p>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-gold" style="padding:7px 14px;font-size:13px" id="resume-btn">Devam Et</button>
+          <button class="btn btn-ghost" style="padding:7px 12px;font-size:13px" id="discard-btn">Sil</button>
+        </div>
+      </div>` : ''}
+
+    <div class="card hero-card anim-fade">
+      <div class="hero-greeting">Merhaba, <span>${esc(name)}</span>! 🌸</div>
+      <p class="hero-sub">2026 Ortaöğretim KPSS hazırlığında bugün ne çalışmak istersin?</p>
+      <div class="hero-motivation">${motivMsg}</div>
+      ${suggestHtml}
     </div>
 
-    <div class="stat-grid">
+    <div class="stat-grid anim-fade">
       <div class="card stat-card">
-        <div class="stat-value">${stats.successRate}%</div>
-        <div class="stat-label">Genel Başarı Oranı</div>
+        <span class="stat-icon">🎯</span>
+        <div class="stat-value">${overall.rate}%</div>
+        <div class="stat-label">Genel Başarı</div>
       </div>
       <div class="card stat-card">
-        <div class="stat-value">${stats.totalSolved}</div>
+        <span class="stat-icon">📝</span>
+        <div class="stat-value">${overall.solved}</div>
         <div class="stat-label">Çözülen Soru</div>
       </div>
       <div class="card stat-card">
-        <div class="stat-value">${stats.completedCount}/${stats.totalTopics}</div>
-        <div class="stat-label">Tamamlanan Konu</div>
+        <span class="stat-icon">✅</span>
+        <div class="stat-value">${doneTopics}/${totalTopics}</div>
+        <div class="stat-label">Konu</div>
       </div>
       <div class="card stat-card">
-        <div class="stat-value">${stats.attemptsCount}</div>
-        <div class="stat-label">Çözülen Test</div>
+        <span class="stat-icon">🔥</span>
+        <div class="stat-value">${streak.count}</div>
+        <div class="stat-label">Günlük Seri</div>
       </div>
     </div>
 
-    ${withAvg.length ? `
-    <div class="card stat-card" style="margin-bottom:30px;">
-      <div class="stat-label" style="margin-bottom:6px;">🏆 En güçlü dersin: <b style="color:var(--success)">${esc(strongest)}</b> &nbsp;•&nbsp; 🌱 Biraz daha çalışman gereken: <b style="color:var(--accent-2)">${esc(weakest)}</b></div>
-    </div>` : ''}
+    ${bestSub && worstSub ? `
+      <div class="card" style="padding:14px 18px;margin-bottom:22px;display:flex;gap:24px;flex-wrap:wrap">
+        <div style="font-size:13.5px">🏆 <b style="color:var(--mint)">En iyi dersin:</b> ${esc(bestSub.s.icon)} ${esc(bestSub.s.ad)} (%${bestSub.avg})</div>
+        <div style="font-size:13.5px">📌 <b style="color:var(--rose)">Çalışman gereken:</b> ${esc(worstSub.s.icon)} ${esc(worstSub.s.ad)} (%${worstSub.avg})</div>
+      </div>` : ''}
+
+    <div class="card full-test-card anim-fade" style="margin-bottom:28px">
+      <div class="info">
+        <h3>🎯 Tam Deneme Sınavı</h3>
+        <p>Gerçek KPSS formatında 120 soru, 130 dakika</p>
+        <div class="test-tags">
+          <span class="tag">📖 Türkçe 30</span>
+          <span class="tag">🔢 Mat. 30</span>
+          <span class="tag">🏛️ Tarih 24</span>
+          <span class="tag">🗺️ Coğ. 24</span>
+          <span class="tag">⚖️ Vat. 8</span>
+          <span class="tag">📰 Güncel 4</span>
+        </div>
+      </div>
+      <button class="btn btn-gold" id="fulltest-btn">Sınava Gir ➜</button>
+    </div>
 
     <div class="section-title">Dersler</div>
-    <div class="subject-grid">${subjectCards}</div>
+    <div class="subject-grid anim-fade">${subCards}</div>
+
+    ${subAvgs.length > 1 ? `
+      <div class="section-title" style="margin-top:28px">Ders Başarı Grafiği</div>
+      <div class="card" style="padding:24px">
+        <div id="subject-chart"></div>
+      </div>` : ''}
   `);
 
-  document.querySelectorAll('.subject-card').forEach(el => {
-    el.addEventListener('click', () => navigate('subject', { subjectId: el.dataset.subject }));
-  });
+  // Chart
+  if (subAvgs.length > 1) {
+    Charts.barChart('subject-chart', subAvgs.map(x => ({ id: x.s.id, label: x.s.ad, value: x.avg || 0 })));
+  }
+
+  // Events
+  document.querySelectorAll('.subject-card').forEach(el => el.addEventListener('click', () => navigate('subject', { sid: el.dataset.sid })));
+  $('fulltest-btn')?.addEventListener('click', () => navigate('fulltest'));
+  $('resume-btn')?.addEventListener('click', resumeDraft);
+  $('discard-btn')?.addEventListener('click', () => { Storage.clearDraft(); render(); });
+  $('go-suggest')?.addEventListener('click', () => suggestion && navigate('topic', { sid: suggestion.s.id, tid: suggestion.t.id }));
 }
 
-/* ---------------- Ders / Konu Listesi ---------------- */
-function renderSubjectPage(subjectId) {
-  const subject = getSubject(subjectId);
+// ── Subject ──
+function renderSubject(sid) {
+  const s = sub(sid);
+  if (!s || !s.data) return navigate('home');
   const completed = Storage.getCompletedTopics();
 
-  const rows = subject.data.konular.map(t => {
+  const rows = s.data.konular.map(t => {
     const done = !!completed[t.id];
-    const best = Storage.getBestScoreForTopic(t.id);
+    const best = Storage.getBestScore(t.id);
+    const badgeCls = best === null ? '' : best >= 70 ? 'high' : best < 50 ? 'low' : '';
     return `
-      <div class="card topic-row" data-topic="${t.id}">
-        <div class="topic-row-left">
+      <div class="card topic-row" data-tid="${t.id}">
+        <div class="topic-left">
           <div class="topic-check ${done ? 'done' : ''}">${done ? '✓' : ''}</div>
           <div>
             <div class="topic-title">${esc(t.baslik)}</div>
-            ${best !== null ? `<div class="topic-best">En iyi skor: %${best}</div>` : `<div class="topic-best">Henüz çözülmedi</div>`}
+            <div class="topic-meta">${t.sorular?.length || 0} soru • ${best !== null ? '%' + best + ' en iyi' : 'Henüz çözülmedi'}</div>
           </div>
         </div>
-        <div class="topic-arrow">›</div>
+        <div class="topic-row-right">
+          ${best !== null ? `<span class="score-badge ${badgeCls}">%${best}</span>` : ''}
+          <span style="color:var(--text-faint);font-size:18px">›</span>
+        </div>
       </div>`;
   }).join('');
 
   setRoot(`
-    <div class="breadcrumb">
-      <span class="clickable" data-nav="home">Anasayfa</span><span>›</span><span>${esc(subject.ad)}</span>
-    </div>
-    <h2>${subject.icon} ${esc(subject.ad)}</h2>
-    <p style="margin-bottom:24px;">Bu derste ${subject.data.konular.length} konu var. Sırayla çalışmanı öneririz, ama dilediğin konudan başlayabilirsin.</p>
+    <div class="breadcrumb"><span class="crumb" data-go="home">Anasayfa</span><span class="sep">›</span><span>${esc(s.ad)}</span></div>
+    <h2 style="font-size:22px;font-weight:800;margin:0 0 6px">${s.icon} ${esc(s.ad)}</h2>
+    <p style="font-size:13.5px;color:var(--text-faint);margin-bottom:22px">${s.data.konular.length} konu • Sırayla çalışmanı öneririz, ama istediğin konudan başlayabilirsin.</p>
     <div class="topic-list">${rows}</div>
   `);
 
-  document.querySelector('[data-nav="home"]').addEventListener('click', () => navigate('home'));
-  document.querySelectorAll('.topic-row').forEach(el => {
-    el.addEventListener('click', () => navigate('topic', { subjectId, topicId: el.dataset.topic }));
-  });
+  document.querySelectorAll('.crumb').forEach(el => el.dataset.go === 'home' && el.addEventListener('click', () => navigate('home')));
+  document.querySelectorAll('.topic-row').forEach(el => el.addEventListener('click', () => navigate('topic', { sid, tid: el.dataset.tid })));
 }
 
-/* ---------------- Konu Anlatımı ---------------- */
-function renderTopicPage(subjectId, topicId) {
-  const subject = getSubject(subjectId);
-  const topic = getTopic(subject, topicId);
-  const a = topic.anlatim;
-  const durationSec = Timer.durationForQuestionCount(topic.sorular.length);
-  const durationMin = Math.round(durationSec / 60);
+// ── Topic ──
+function renderTopic(sid, tid) {
+  const s = sub(sid); if (!s?.data) return navigate('home');
+  const t = topic(s, tid); if (!t) return navigate('subject', { sid });
+  const a = t.anlatim || {};
+  const dur = Math.round(Timer.durationFor(t.sorular.length) / 60);
+  const ytUrl = `https://www.youtube.com/results?search_query=KPSS+${encodeURIComponent(t.baslik)}+konu+anlat%C4%B1m%C4%B1`;
+
+  const pointsHtml = (a.anahtarNoktalar || []).map(p => `<li>${esc(p)}</li>`).join('');
+  const parasHtml = (a.icerik || []).map(p => `<p class="lecture-para">${esc(p)}</p>`).join('');
 
   setRoot(`
     <div class="breadcrumb">
-      <span class="clickable" data-nav="home">Anasayfa</span><span>›</span>
-      <span class="clickable" data-nav="subject">${esc(subject.ad)}</span><span>›</span>
-      <span>${esc(topic.baslik)}</span>
+      <span class="crumb" data-go="home">Anasayfa</span><span class="sep">›</span>
+      <span class="crumb" data-go="sub">${esc(s.ad)}</span><span class="sep">›</span>
+      <span>${esc(t.baslik)}</span>
     </div>
-
-    <div class="topic-header">
-      <div class="topic-eyebrow">${esc(subject.ad)} • Konu Anlatımı</div>
-      <h2>${esc(topic.baslik)}</h2>
-    </div>
+    <div class="topic-eyebrow">${esc(s.ad)} • Konu Anlatımı</div>
+    <h2 style="font-size:22px;font-weight:800;margin:0 0 18px">${esc(t.baslik)}</h2>
 
     <div class="card lecture-card">
-      <div class="lecture-summary">${esc(a.ozet)}</div>
-      ${a.icerik.map(p => `<p class="lecture-paragraph">${esc(p)}</p>`).join('')}
-      ${a.anahtarNoktalar && a.anahtarNoktalar.length ? `
-        <ul class="lecture-points">
-          ${a.anahtarNoktalar.map(k => `<li>${esc(k)}</li>`).join('')}
-        </ul>` : ''}
+      ${a.ozet ? `<div class="lecture-ozet">${esc(a.ozet)}</div>` : ''}
+      ${parasHtml}
+      ${pointsHtml ? `<ul class="lecture-points">${pointsHtml}</ul>` : ''}
+      <a class="yt-link" id="yt-link" target="_blank">▶ YouTube'da "${esc(t.baslik)}" ara</a>
     </div>
 
-    <div class="card start-test-bar">
-      <div class="start-test-info">${topic.sorular.length} soru • yaklaşık ${durationMin} dakika • gerçek sınav temposunda</div>
-      <button class="btn btn-primary" id="start-test-btn">Teste Başla →</button>
+    <div class="card start-bar">
+      <div class="start-info">${t.sorular.length} soru &nbsp;•&nbsp; ~${dur} dakika &nbsp;•&nbsp; <b>Gerçek sınav temposu</b></div>
+      <button class="btn btn-primary" id="start-btn">Teste Başla →</button>
     </div>
   `);
 
-  document.querySelector('[data-nav="home"]').addEventListener('click', () => navigate('home'));
-  document.querySelector('[data-nav="subject"]').addEventListener('click', () => navigate('subject', { subjectId }));
-  document.getElementById('start-test-btn').addEventListener('click', () => goToQuiz(subjectId, topicId));
+  $('yt-link').href = ytUrl;
+  document.querySelectorAll('.crumb').forEach(el => {
+    if (el.dataset.go === 'home') el.addEventListener('click', () => navigate('home'));
+    if (el.dataset.go === 'sub')  el.addEventListener('click', () => navigate('subject', { sid }));
+  });
+  $('start-btn').addEventListener('click', () => beginQuiz(sid, s.ad, tid, t.baslik, t.sorular, false));
 }
 
-/* ---------------- Test Ekranı ---------------- */
-function goToQuiz(subjectId, topicId) {
-  const subject = getSubject(subjectId);
-  const topic = getTopic(subject, topicId);
-  Quiz.start(subject, topic);
-  currentView = 'quiz';
-  currentParams = { subjectId, topicId };
-  renderQuizScreen();
-  const state = Quiz.getState();
-  Timer.start(state.durationSec, updateTimerDisplay, () => finishQuiz());
+// ── Full Test ──
+function startFullTest() {
+  const allQs = [];
+  SUBJECTS.forEach(s => {
+    if (!s.data) return;
+    const n = FULL_TEST_DIST[s.id] || 0;
+    if (!n) return;
+    const pool = [];
+    s.data.konular.forEach(t => (t.sorular || []).forEach(q => pool.push({ ...q, _sid: s.id, _sad: s.ad })));
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    allQs.push(...shuffled.slice(0, n));
+  });
+
+  if (allQs.length < 10) { toast('Yeterli soru yüklenemedi. Lütfen bekleyin.', 'error'); navigate('home'); return; }
+
+  beginQuiz('full', 'Genel Deneme', 'full-test', '120 Soruluk Deneme Sınavı', allQs, true);
 }
 
-function updateTimerDisplay(remaining) {
-  const el = document.getElementById('quiz-timer');
+// ── Begin quiz (with draft check) ──
+function beginQuiz(sid, sad, tid, tbaslik, questions, isFullTest) {
+  Timer.stop();
+  const draft = Storage.getDraft();
+  if (draft && draft.topicId === tid && draft.answers) {
+    if (confirm(`"${tbaslik}" için yarım kalan testine devam etmek ister misin?`)) {
+      Quiz.restoreFromDraft(draft);
+      navigate('quiz');
+      Timer.start(draft.durationSec, updateTimer, () => finishQuiz());
+      return;
+    }
+    Storage.clearDraft();
+  }
+  Quiz.start(sid, sad, tid, tbaslik, questions, isFullTest);
+  navigate('quiz');
+  Timer.start(Quiz.getState().durationSec, updateTimer, () => finishQuiz());
+}
+
+function resumeDraft() {
+  const draft = Storage.getDraft();
+  if (!draft) return;
+  Quiz.restoreFromDraft(draft);
+  navigate('quiz');
+  Timer.start(draft.durationSec, updateTimer, () => finishQuiz());
+}
+
+// ── Quiz ──
+function updateTimer(rem) {
+  const el = $('quiz-timer');
   if (!el) return;
-  el.textContent = Timer.format(remaining);
-  el.classList.toggle('warning', remaining <= 60);
+  el.textContent = Timer.format(rem);
+  el.classList.toggle('warning', rem <= 60);
 }
 
-function renderQuizScreen() {
-  const state = Quiz.getState();
-  if (!state) return;
-  const q = state.questions[state.currentIndex];
-  const selected = state.answers[state.currentIndex];
-  const letters = ['A', 'B', 'C', 'D', 'E'];
+function renderQuizView() {
+  const st = Quiz.getState();
+  if (!st) { navigate('home'); return; }
+  const q = st.questions[st.currentIndex];
+  const letters = ['A','B','C','D','E'];
 
-  const dots = state.questions.map((_, i) => `
-    <div class="quiz-dot ${state.answers[i] !== null ? 'answered' : ''} ${i === state.currentIndex ? 'current' : ''}" data-goto="${i}">${i + 1}</div>
+  const dots = st.questions.map((_, i) => `
+    <div class="q-dot ${st.answers[i] !== null ? 'answered' : ''} ${i === st.currentIndex ? 'current' : ''}" data-i="${i}">${i+1}</div>
   `).join('');
 
-  const options = q.secenekler.map((opt, i) => `
-    <div class="option-row ${selected === i ? 'selected' : ''}" data-option="${i}">
-      <div class="option-letter">${letters[i]}</div>
-      <div class="option-text">${esc(opt)}</div>
-    </div>
-  `).join('');
+  const opts = q.secenekler.map((o, i) => `
+    <div class="q-opt ${st.answers[st.currentIndex] === i ? 'selected' : ''}" data-oi="${i}">
+      <div class="opt-letter">${letters[i]}</div>
+      <div class="opt-text">${esc(o)}</div>
+    </div>`).join('');
+
+  const kaynak = q.kaynak ? `<span style="font-size:11px;color:var(--text-faint);margin-left:8px">${esc(q.kaynak)}</span>` : '';
 
   setRoot(`
-    <div class="quiz-top">
+    <div class="quiz-header">
       <div>
-        <div class="quiz-progress-text">${esc(state.subjectAd)} • ${esc(state.topicBaslik)}</div>
-        <div class="quiz-progress-text">Soru ${state.currentIndex + 1} / ${state.questions.length}</div>
+        <div class="quiz-meta"><b>${esc(st.subjectAd)}</b> • ${esc(st.topicBaslik)}</div>
+        <div class="quiz-meta">Soru <b>${st.currentIndex+1}</b> / ${st.questions.length}</div>
       </div>
-      <div class="quiz-timer" id="quiz-timer">${Timer.format(state.durationSec)}</div>
+      <div class="quiz-timer" id="quiz-timer">${Timer.format(st.durationSec)}</div>
     </div>
-
     <div class="quiz-dots">${dots}</div>
-
-    <div class="card question-card">
-      <div class="question-text">${esc(q.soru)}</div>
-      <div class="option-list">${options}</div>
+    <div class="card q-card">
+      <div class="q-number">Soru ${st.currentIndex+1}${kaynak}</div>
+      <div class="q-text">${esc(q.soru)}</div>
+      <div class="q-options">${opts}</div>
     </div>
-
     <div class="quiz-nav">
-      <button class="btn btn-ghost" id="quiz-prev" ${state.currentIndex === 0 ? 'disabled' : ''}>← Önceki</button>
+      <button class="btn btn-ghost" id="q-prev" ${st.currentIndex === 0 ? 'disabled' : ''}>← Önceki</button>
       <div class="quiz-nav-right">
-        ${state.currentIndex < state.questions.length - 1
-          ? `<button class="btn btn-secondary" id="quiz-next">Sonraki →</button>`
-          : ''}
-        <button class="btn btn-primary" id="quiz-finish">Testi Bitir</button>
+        ${st.currentIndex < st.questions.length - 1 ? `<button class="btn btn-secondary" id="q-next">Sonraki →</button>` : ''}
+        <button class="btn btn-primary" id="q-finish">Testi Bitir</button>
       </div>
     </div>
   `);
 
-  document.querySelectorAll('.option-row').forEach(el => {
-    el.addEventListener('click', () => {
-      Quiz.answerCurrent(Number(el.dataset.option));
-      renderQuizScreen();
-    });
-  });
-  document.querySelectorAll('.quiz-dot').forEach(el => {
-    el.addEventListener('click', () => {
-      Quiz.goTo(Number(el.dataset.goto));
-      renderQuizScreen();
-    });
-  });
-  const prevBtn = document.getElementById('quiz-prev');
-  if (prevBtn) prevBtn.addEventListener('click', () => { Quiz.prev(); renderQuizScreen(); });
-  const nextBtn = document.getElementById('quiz-next');
-  if (nextBtn) nextBtn.addEventListener('click', () => { Quiz.next(); renderQuizScreen(); });
-  document.getElementById('quiz-finish').addEventListener('click', () => {
-    const unanswered = state.answers.filter(a => a === null).length;
-    if (unanswered > 0) {
-      const ok = confirm(`${unanswered} soruyu boş bıraktın. Yine de testi bitirmek istiyor musun?`);
-      if (!ok) return;
-    }
+  document.querySelectorAll('.q-dot').forEach(el => el.addEventListener('click', () => { Quiz.goTo(Number(el.dataset.i)); renderQuizView(); }));
+  document.querySelectorAll('.q-opt').forEach(el => el.addEventListener('click', () => { Quiz.answer(Number(el.dataset.oi)); renderQuizView(); }));
+  $('q-prev')?.addEventListener('click', () => { Quiz.prev(); renderQuizView(); });
+  $('q-next')?.addEventListener('click', () => { Quiz.next(); renderQuizView(); });
+  $('q-finish')?.addEventListener('click', () => {
+    const unanswered = Quiz.getState().answers.filter(a => a === null).length;
+    if (unanswered > 0 && !confirm(`${unanswered} soru boş. Yine de bitirmek istiyor musun?`)) return;
     finishQuiz();
   });
 }
 
-function finishQuiz() {
-  const state = Quiz.getState();
-  if (!state) return;
-  const totalDuration = state.durationSec;
-  const elapsed = Timer.elapsedSeconds(totalDuration);
+// ── Finish quiz ──
+async function finishQuiz() {
+  const st = Quiz.getState();
+  if (!st) return;
+  const total = st.durationSec;
+  const elapsed = Timer.elapsed(total);
   Timer.stop();
   const result = Quiz.finish(elapsed);
+  Storage.addAttempt({ ...result });
+  if (result.skor === 100 || result.skor >= 60) Storage.markTopicCompleted(result.topicId);
 
-  Storage.addAttempt({
-    topicId: result.topicId,
-    subjectId: result.subjectId,
-    tarih: result.tarih,
-    dogru: result.dogru,
-    yanlis: result.yanlis,
-    bos: result.bos,
-    toplam: result.toplam,
-    skor: result.skor,
-    sureSn: result.sureSn
-  });
-  Storage.markTopicCompleted(result.topicId);
+  postResultChecks(result);
+  await Leaderboard.submitResult(result);
 
-  currentView = 'result';
-  currentParams = { result };
-  renderResultScreen(result);
+  navigate('result', { result });
 }
 
-/* ---------------- Sonuç Ekranı ---------------- */
-function personalizedMessage(skor) {
+// ── Result ──
+function renderResult(result) {
+  const scoreClsRing = `score-ring`;
+  const letters = ['A','B','C','D','E'];
   const name = Storage.getUserName() || 'Aday';
-  if (skor >= 80) return `${name}, harika gidiyorsun! Bu konuyu gerçekten kavramışsın. 🌟`;
-  if (skor >= 50) return `${name}, fena değil! Yanlışlarını gözden geçirip bir kez daha denersen bu konu tamamen cebinde olacak. 💪`;
-  return `${name}, bu konuda biraz daha tekrar yapmakta fayda var. Anlatımı tekrar oku ve yeniden dene — başaracaksın. 🌱`;
-}
 
-function renderResultScreen(result) {
-  const letters = ['A', 'B', 'C', 'D', 'E'];
+  function msg(skor) {
+    if (skor >= 85) return `${name}, muhteşem! 🌟 Bu konuyu tamamen kavramışsın!`;
+    if (skor >= 70) return `${name}, çok iyi! 💪 Küçük eksiklerini gider, bu konu sende!`;
+    if (skor >= 50) return `${name}, fena değil! 🌱 Biraz daha çalışırsan harika olacaksın.`;
+    return `${name}, bu konu biraz zorluyordu ama sorun değil! 🤗 Anlatımı tekrar oku ve yeniden dene.`;
+  }
 
   const reviewHtml = result.review.map((r, i) => {
-    const optionsHtml = r.secenekler.map((opt, idx) => {
+    const opts = r.secenekler.map((o, idx) => {
       let cls = '';
-      if (idx === r.dogruIndex) cls = 'correct-answer';
-      else if (idx === r.verilenIndex) cls = 'wrong-chosen';
-      return `<div class="review-option ${cls}">${letters[idx]}) ${esc(opt)}</div>`;
+      if (idx === r.dogruIndex) cls = 'is-correct';
+      else if (idx === r.verilenIndex) cls = 'is-wrong';
+      return `<div class="review-opt ${cls}">${letters[idx]}) ${esc(o)}</div>`;
     }).join('');
 
-    const badgeText = r.durum === 'dogru' ? 'Doğru' : r.durum === 'yanlis' ? 'Yanlış' : 'Boş';
+    const distractorHtml = (r.status === 'yanlis' && r.distractorAciklama) ? `
+      <div class="review-distractor"><b>🤔 Büyük ihtimalle neden seçtin?</b> ${esc(r.distractorAciklama)}</div>` : '';
 
     return `
-      <div class="card review-item ${r.durum}">
+      <div class="card review-item ${r.status}">
         <div class="review-head">
-          <span class="review-badge ${r.durum}">${badgeText}</span>
-          <span class="topic-best">Soru ${i + 1}</span>
+          <span class="review-badge ${r.status}">${r.status === 'dogru' ? 'Doğru ✓' : r.status === 'yanlis' ? 'Yanlış ✗' : 'Boş'}</span>
+          <span class="review-qnum">Soru ${i+1}${r.kaynak ? ` • ${esc(r.kaynak)}` : ''}</span>
         </div>
-        <div class="review-question">${esc(r.soru)}</div>
-        ${optionsHtml}
+        <div class="review-q">${esc(r.soru)}</div>
+        ${opts}
         <div class="review-explain">💡 ${esc(r.aciklama)}</div>
+        ${distractorHtml}
       </div>`;
   }).join('');
 
   setRoot(`
-    <div class="card result-hero">
-      <div class="result-score">%${result.skor}</div>
-      <div class="result-score-label">${esc(result.subjectAd)} • ${esc(result.topicBaslik)}</div>
-      <div class="result-message">${esc(personalizedMessage(result.skor))}</div>
+    <div class="card result-hero anim-bounce">
+      <div class="${scoreClsRing}" style="--score-pct:${result.skor * 3.6}deg">
+        <div class="score-num">%${result.skor}</div>
+      </div>
+      <div class="result-topic">${esc(result.subjectAd)} • ${esc(result.topicBaslik)}</div>
+      <div class="result-msg">${esc(msg(result.skor))}</div>
       <div class="result-stats">
-        <div class="result-stat dogru"><div class="result-stat-value">${result.dogru}</div><div class="result-stat-label">Doğru</div></div>
-        <div class="result-stat yanlis"><div class="result-stat-value">${result.yanlis}</div><div class="result-stat-label">Yanlış</div></div>
-        <div class="result-stat bos"><div class="result-stat-value">${result.bos}</div><div class="result-stat-label">Boş</div></div>
+        <div class="res-stat dogru"><div class="res-stat-val">${result.dogru}</div><div class="res-stat-lbl">Doğru ✓</div></div>
+        <div class="res-stat yanlis"><div class="res-stat-val">${result.yanlis}</div><div class="res-stat-lbl">Yanlış ✗</div></div>
+        <div class="res-stat bos"><div class="res-stat-val">${result.bos}</div><div class="res-stat-lbl">Boş —</div></div>
       </div>
       <div class="result-actions">
-        <button class="btn btn-secondary" id="result-topic">Konuya Dön</button>
-        <button class="btn btn-ghost" id="result-retry">Tekrar Çöz</button>
-        <button class="btn btn-primary" id="result-home">Anasayfaya Dön</button>
+        ${result.topicId !== 'full-test' ? `<button class="btn btn-secondary" id="r-topic">Konuya Dön</button>` : ''}
+        <button class="btn btn-ghost" id="r-retry">Tekrar Çöz</button>
+        <button class="btn btn-primary" id="r-home">Anasayfa</button>
+        <button class="btn btn-ghost" id="r-lb" style="border-color:rgba(251,191,36,0.4);color:var(--gold)">🏆 Sıralama</button>
       </div>
     </div>
-
     <div class="section-title">Soru Soru Değerlendirme</div>
     <div class="review-list">${reviewHtml}</div>
   `);
 
-  document.getElementById('result-topic').addEventListener('click', () =>
-    navigate('topic', { subjectId: result.subjectId, topicId: result.topicId }));
-  document.getElementById('result-retry').addEventListener('click', () =>
-    goToQuiz(result.subjectId, result.topicId));
-  document.getElementById('result-home').addEventListener('click', () => navigate('home'));
-}
-
-/* ---------------- Başlangıç ---------------- */
-function submitName() {
-  const input = document.getElementById('name-input');
-  const val = input.value.trim();
-  if (!val) { input.focus(); return; }
-  Storage.setUserName(val);
-  document.getElementById('name-modal').classList.add('hidden');
-  render();
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-  await loadAllSubjects();
-
-  document.getElementById('name-submit').addEventListener('click', submitName);
-  document.getElementById('name-input').addEventListener('keydown', e => {
-    if (e.key === 'Enter') submitName();
+  $('r-topic')?.addEventListener('click', () => result.topicId !== 'full-test' && navigate('topic', { sid: result.subjectId, tid: result.topicId }));
+  $('r-retry')?.addEventListener('click', () => {
+    if (result.topicId === 'full-test') navigate('fulltest');
+    else {
+      const s = sub(result.subjectId);
+      const t = s && topic(s, result.topicId);
+      if (t) beginQuiz(result.subjectId, result.subjectAd, result.topicId, result.topicBaslik, t.sorular, false);
+    }
   });
-  document.getElementById('nav-home').addEventListener('click', () => navigate('home'));
-  document.getElementById('brand-home').addEventListener('click', () => navigate('home'));
+  $('r-home')?.addEventListener('click', () => navigate('home'));
+  $('r-lb')?.addEventListener('click', () => navigate('leaderboard'));
+}
 
-  if (!Storage.getUserName()) {
-    document.getElementById('name-modal').classList.remove('hidden');
-    document.getElementById('name-input').focus();
+// ── Leaderboard ──
+async function renderLeaderboard() {
+  setRoot(`<div class="empty"><span class="empty-icon">🏆</span><p>Sıralama yükleniyor...</p></div>`);
+  const list = await Leaderboard.getTopList(30);
+  const myName = Storage.getUserName();
+  const isOnline = Leaderboard.isOnline();
+
+  if (!isOnline) {
+    setRoot(`
+      <h2 style="font-size:20px;font-weight:800;margin:0 0 10px">🏆 Sıralama</h2>
+      <div class="card" style="padding:22px 24px;margin-bottom:20px;border-color:rgba(251,191,36,0.3)">
+        <p style="margin:0;font-size:14px;color:var(--text-dim)">🔌 <b style="color:var(--warn)">Çevrimdışı mod</b> — Diğer kullanıcılarla karşılaştırabilmek için <b>Ayarlar</b>'dan bir Firebase URL gir (ücretsiz, 2 dk kurulum).</p>
+        <button class="btn btn-secondary" style="margin-top:12px" id="go-settings">⚙️ Ayarlara Git</button>
+      </div>
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-faint)">Kendi skorların</h3>
+      ${renderLocalScores()}
+    `);
+    $('go-settings')?.addEventListener('click', () => navigate('settings'));
+    return;
   }
 
+  const rows = list.map((entry, i) => {
+    const rank = i + 1;
+    const rankCls = rank === 1 ? 'gold' : rank === 2 ? 'silver' : rank === 3 ? 'bronze' : '';
+    const rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank;
+    const isMe = entry.name === myName;
+    return `
+      <div class="lb-row">
+        <div class="lb-rank ${rankCls}">${rankEmoji}</div>
+        <div class="lb-name">${esc(entry.name)}${isMe ? '<span class="lb-you">Sen</span>' : ''}</div>
+        <div>
+          <div class="lb-score">%${entry.skor}</div>
+          <div class="lb-detail">${esc(entry.subject || 'Deneme')} • ${entry.dogru}D/${entry.yanlis}Y</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  setRoot(`
+    <h2 style="font-size:20px;font-weight:800;margin:0 0 18px">🏆 Sıralama</h2>
+    <div class="card" style="padding:6px 8px">${rows || '<div class="lb-status">Henüz skor yok. İlk testi çöz!</div>'}</div>
+  `);
+}
+
+function renderLocalScores() {
+  const attempts = Storage.getAttempts().slice(-10).reverse();
+  if (!attempts.length) return '<div class="lb-status">Henüz çözülen test yok.</div>';
+  return `<div class="card" style="padding:6px 8px">${attempts.map((a, i) => `
+    <div class="lb-row">
+      <div class="lb-rank">${i+1}</div>
+      <div class="lb-name">${esc(a.topicBaslik || 'Test')}</div>
+      <div><div class="lb-score">%${a.skor}</div><div class="lb-detail">${a.dogru}D/${a.yanlis}Y</div></div>
+    </div>`).join('')}</div>`;
+}
+
+// ── Badges ──
+function renderBadges() {
+  const all = Badges.getAll();
+  const items = all.map(b => {
+    const unlocked = Storage.isBadgeUnlocked(b.id);
+    return `
+      <div class="card badge-item ${unlocked ? 'unlocked' : ''}">
+        <span class="badge-icon ${unlocked ? '' : 'locked'}">${b.icon}</span>
+        <div class="badge-name" style="${unlocked ? '' : 'color:var(--text-faint)'}">${esc(b.name)}</div>
+        <div class="badge-desc">${esc(b.desc)}</div>
+        ${unlocked ? '<div style="font-size:10px;color:var(--mint);margin-top:4px;font-weight:700">Kazanıldı ✓</div>' : ''}
+      </div>`;
+  }).join('');
+
+  setRoot(`
+    <h2 style="font-size:20px;font-weight:800;margin:0 0 6px">🎖 Rozetler</h2>
+    <p style="font-size:13.5px;color:var(--text-faint);margin-bottom:22px">${Storage.getUnlockedBadges().length} / ${all.length} kazanıldı</p>
+    <div class="badges-grid">${items}</div>
+  `);
+}
+
+// ── Wrong Bank ──
+function renderWrongBank() {
+  const bank = Storage.getWrongBank();
+  if (!bank.length) {
+    setRoot(`<div class="empty"><span class="empty-icon">🌟</span><p>Yanlış sorular bankan boş! Harika gidiyorsun.</p></div>`);
+    return;
+  }
+
+  const grouped = {};
+  bank.forEach(q => { (grouped[q.subjectAd] = grouped[q.subjectAd] || []).push(q); });
+
+  const summary = Object.entries(grouped).map(([sad, qs]) =>
+    `<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px" class="card" style="margin-bottom:8px">
+      <div style="font-weight:700">${esc(sad)}</div>
+      <div style="color:var(--danger);font-weight:700">${qs.length} yanlış</div>
+    </div>`).join('');
+
+  setRoot(`
+    <h2 style="font-size:20px;font-weight:800;margin:0 0 6px">❌ Yanlışlarım</h2>
+    <p style="font-size:13.5px;color:var(--text-faint);margin-bottom:18px">${bank.length} soru birikmiş</p>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px">${summary}</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-primary" id="wb-test">Yanlışlarımı Sına →</button>
+      <button class="btn btn-danger" id="wb-clear">Bankayı Temizle</button>
+    </div>
+  `);
+
+  $('wb-test').addEventListener('click', () => {
+    const qs = [...bank].sort(() => Math.random() - 0.5).slice(0, 20);
+    beginQuiz('wrong', 'Yanlışlarım', 'wrong-bank', 'Yanlışlar Testi', qs, false);
+  });
+  $('wb-clear').addEventListener('click', () => {
+    if (confirm('Tüm yanlış soru bankasını temizlemek istiyor musun?')) {
+      Storage.clearWrongBank();
+      toast('Yanlış soru bankası temizlendi.', 'success');
+      renderWrongBank();
+    }
+  });
+}
+
+// ── Settings ──
+function renderSettings() {
+  const s = Storage.getSettings();
+  setRoot(`
+    <h2 style="font-size:20px;font-weight:800;margin:0 0 18px">⚙️ Ayarlar</h2>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:16px">
+      <div class="settings-row">
+        <div class="settings-label">
+          <div class="settings-title">🔥 Firebase Liderboard URL</div>
+          <div class="settings-sub">Ücretsiz. <a href="https://console.firebase.google.com" style="color:var(--violet-l)">console.firebase.google.com</a> → Proje oluştur → Realtime DB → Test mode → URL kopyala</div>
+        </div>
+        <input class="settings-input" id="s-fb" placeholder="https://xxx.firebaseio.com" value="${esc(s.firebaseUrl || '')}" />
+      </div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-primary" id="s-save">Kaydet</button>
+      <button class="btn btn-ghost" id="s-test">Bağlantıyı Test Et</button>
+    </div>
+    <div style="margin-top:32px;padding:18px 20px;background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);border-radius:16px">
+      <h3 style="font-size:15px;margin:0 0 8px">Firebase Kurulum Adımları (2 dk)</h3>
+      <ol style="font-size:13.5px;color:var(--text-dim);padding-left:18px;line-height:2">
+        <li>console.firebase.google.com → <b>Add project</b></li>
+        <li>Proje adı: KPSS → Continue → Continue → Create</li>
+        <li>Sol menü: <b>Realtime Database</b> → Create Database → Start in <b>test mode</b> → Enable</li>
+        <li>Database URL'yi kopyala (örn: <code>https://kpss-xxxx-default-rtdb.firebaseio.com</code>)</li>
+        <li>Yukarıdaki kutuya yapıştır → Kaydet</li>
+      </ol>
+    </div>
+  `);
+
+  $('s-save').addEventListener('click', () => {
+    const url = $('s-fb').value.trim();
+    Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: url });
+    toast('Ayarlar kaydedildi!', 'success');
+  });
+  $('s-test').addEventListener('click', async () => {
+    const url = $('s-fb').value.trim();
+    if (!url) { toast('Önce bir URL gir.', 'error'); return; }
+    Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: url });
+    toast('Test ediliyor...', 'info');
+    const ok = await Leaderboard.submitResult({ skor: 0, dogru: 0, yanlis: 0, bos: 0, toplam: 1, subjectAd: 'Test', topicBaslik: 'Test', tarih: new Date().toISOString() });
+    toast(ok ? '✅ Bağlantı başarılı!' : '❌ Bağlantı kurulamadı. URL\'yi kontrol et.', ok ? 'success' : 'error', 5000);
+  });
+}
+
+// ── Missions ──
+function renderMissions() {
+  const all = Missions.getAll();
+  const rows = all.map(m => `
+    <div class="card mission-row">
+      <div class="mission-icon">${m.icon}</div>
+      <div class="mission-info">
+        <div class="mission-title">${esc(m.title)}</div>
+        <div class="mission-desc">${esc(m.desc)}</div>
+        <div class="progress-wrap"><div class="progress-fill" style="width:${m.done ? 100 : 0}%"></div></div>
+      </div>
+      ${m.done ? '<div class="mission-done">✅</div>' : `<div class="mission-pts">+${m.pts} 🌟</div>`}
+    </div>`).join('');
+
+  setRoot(`
+    <h2 style="font-size:20px;font-weight:800;margin:0 0 6px">📋 Görevler</h2>
+    <p style="font-size:13.5px;color:var(--text-faint);margin-bottom:18px">Günlük ve haftalık görevleri tamamla!</p>
+    <div style="display:flex;flex-direction:column;gap:10px">${rows}</div>
+  `);
+}
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', async () => {
+  spawnParticles();
+  await loadAllSubjects();
+  Storage.resetDailyMissions();
+
+  $('name-submit').addEventListener('click', submitName);
+  $('name-input').addEventListener('keydown', e => e.key === 'Enter' && submitName());
+  $('brand-home').addEventListener('click', () => navigate('home'));
+  $('nav-home').addEventListener('click', () => navigate('home'));
+  $('nav-leaderboard').addEventListener('click', () => navigate('leaderboard'));
+  $('nav-badges').addEventListener('click', () => navigate('badges'));
+  $('nav-wrong').addEventListener('click', () => navigate('wrong'));
+  $('nav-settings').addEventListener('click', () => navigate('settings'));
+
+  if (!Storage.getUserName()) {
+    $('name-modal').classList.remove('hidden');
+    $('name-input').focus();
+  }
   navigate('home');
 });
+
+function submitName() {
+  const val = $('name-input').value.trim();
+  if (!val) { $('name-input').focus(); return; }
+  Storage.setUserName(val);
+  $('name-modal').classList.add('hidden');
+  Storage.touchStreak();
+  render();
+  toast(`Hoş geldin, ${Storage.getUserName()}! 🌸`, 'success');
+}

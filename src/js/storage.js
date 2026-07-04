@@ -1,64 +1,131 @@
-// localStorage tabanlı kalıcı veri katmanı
+// KPSS v2 — Kalıcı veri katmanı (localStorage)
 const Storage = (() => {
-  const KEYS = {
-    NAME: 'kpss_userName',
-    COMPLETED: 'kpss_completedTopics',
-    ATTEMPTS: 'kpss_attempts'
+  const K = {
+    NAME:      'kpss_v2_name',
+    COMPLETED: 'kpss_v2_completed',
+    ATTEMPTS:  'kpss_v2_attempts',
+    WRONG:     'kpss_v2_wrong',
+    BADGES:    'kpss_v2_badges',
+    MISSIONS:  'kpss_v2_missions_done',
+    STREAK:    'kpss_v2_streak',
+    DRAFT:     'kpss_v2_draft',
+    SETTINGS:  'kpss_v2_settings',
   };
 
-  function getUserName() {
-    return localStorage.getItem(KEYS.NAME) || '';
+  const get = (k, fb) => { try { return JSON.parse(localStorage.getItem(k)) ?? fb; } catch { return fb; } };
+  const set = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+
+  // ── Name ──
+  function getUserName() { return get(K.NAME, ''); }
+  function setUserName(n) {
+    const trimmed = n.trim();
+    const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
+    set(K.NAME, capitalized);
   }
 
-  function setUserName(name) {
-    localStorage.setItem(KEYS.NAME, name.trim());
+  // ── Completed topics ──
+  function getCompletedTopics() { return get(K.COMPLETED, {}); }
+  function markTopicCompleted(id) { const c = getCompletedTopics(); c[id] = true; set(K.COMPLETED, c); }
+  function isTopicCompleted(id)  { return !!getCompletedTopics()[id]; }
+
+  // ── Attempts ──
+  function getAttempts() { return get(K.ATTEMPTS, []); }
+  function addAttempt(rec) { const a = getAttempts(); a.push(rec); set(K.ATTEMPTS, a); }
+  function getAttemptsForTopic(id) { return getAttempts().filter(a => a.topicId === id); }
+  function getBestScore(id) {
+    const arr = getAttemptsForTopic(id);
+    return arr.length ? Math.max(...arr.map(a => a.skor)) : null;
+  }
+  function getLastAttempt(id) {
+    const arr = getAttemptsForTopic(id);
+    return arr.length ? arr[arr.length - 1] : null;
   }
 
-  function getCompletedTopics() {
-    try {
-      return JSON.parse(localStorage.getItem(KEYS.COMPLETED)) || {};
-    } catch {
-      return {};
-    }
+  // ── Wrong answers bank ──
+  function getWrongBank() { return get(K.WRONG, []); }
+  function addWrongQuestions(questions, subjectId, subjectAd) {
+    const bank = getWrongBank();
+    questions.forEach(q => {
+      const key = q.soru.slice(0, 40);
+      const exists = bank.find(w => w.key === key);
+      if (!exists) bank.push({ key, subjectId, subjectAd, ...q, addedAt: Date.now() });
+      else exists.count = (exists.count || 1) + 1;
+    });
+    // keep latest 200
+    if (bank.length > 200) bank.splice(0, bank.length - 200);
+    set(K.WRONG, bank);
+  }
+  function removeFromWrongBank(key) {
+    const bank = getWrongBank().filter(w => w.key !== key);
+    set(K.WRONG, bank);
+  }
+  function clearWrongBank() { set(K.WRONG, []); }
+
+  // ── Badges ──
+  function getUnlockedBadges() { return get(K.BADGES, []); }
+  function unlockBadge(id) {
+    const b = getUnlockedBadges();
+    if (!b.includes(id)) { b.push(id); set(K.BADGES, b); return true; }
+    return false;
+  }
+  function isBadgeUnlocked(id) { return getUnlockedBadges().includes(id); }
+
+  // ── Missions ──
+  function getMissionsDone() { return get(K.MISSIONS, {}); }
+  function markMissionDone(id) { const m = getMissionsDone(); m[id] = Date.now(); set(K.MISSIONS, m); }
+  function isMissionDone(id)  { const m = getMissionsDone(); return !!m[id]; }
+  function resetDailyMissions() {
+    const m = getMissionsDone();
+    const yesterday = Date.now() - 86400000;
+    Object.keys(m).forEach(k => { if (m[k] < yesterday) delete m[k]; });
+    set(K.MISSIONS, m);
   }
 
-  function markTopicCompleted(topicId) {
-    const completed = getCompletedTopics();
-    completed[topicId] = true;
-    localStorage.setItem(KEYS.COMPLETED, JSON.stringify(completed));
+  // ── Streak ──
+  function getStreak() { return get(K.STREAK, { count: 0, lastDate: null }); }
+  function touchStreak() {
+    const today = new Date().toDateString();
+    const s = getStreak();
+    if (s.lastDate === today) return s;
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+    s.count = (s.lastDate === yesterday) ? s.count + 1 : 1;
+    s.lastDate = today;
+    set(K.STREAK, s);
+    return s;
   }
 
-  function isTopicCompleted(topicId) {
-    return !!getCompletedTopics()[topicId];
-  }
+  // ── Draft quiz (kaldığı yerden devam) ──
+  function saveDraft(state) { set(K.DRAFT, state); }
+  function getDraft()       { return get(K.DRAFT, null); }
+  function clearDraft()     { localStorage.removeItem(K.DRAFT); }
 
-  function getAttempts() {
-    try {
-      return JSON.parse(localStorage.getItem(KEYS.ATTEMPTS)) || [];
-    } catch {
-      return [];
-    }
-  }
+  // ── Settings ──
+  function getSettings() { return get(K.SETTINGS, { firebaseUrl: '', leaderName: '' }); }
+  function saveSettings(s) { set(K.SETTINGS, s); }
 
-  function addAttempt(record) {
-    const attempts = getAttempts();
-    attempts.push(record);
-    localStorage.setItem(KEYS.ATTEMPTS, JSON.stringify(attempts));
+  // ── Stats helpers ──
+  function computeSubjectAvg(subjectId) {
+    const arr = getAttempts().filter(a => a.subjectId === subjectId);
+    if (!arr.length) return null;
+    return Math.round(arr.reduce((s, a) => s + a.skor, 0) / arr.length);
   }
-
-  function getAttemptsForTopic(topicId) {
-    return getAttempts().filter(a => a.topicId === topicId);
-  }
-
-  function getBestScoreForTopic(topicId) {
-    const attempts = getAttemptsForTopic(topicId);
-    if (!attempts.length) return null;
-    return Math.max(...attempts.map(a => a.skor));
+  function computeOverall() {
+    const a = getAttempts();
+    const solved = a.reduce((s, x) => s + x.toplam, 0);
+    const correct = a.reduce((s, x) => s + x.dogru, 0);
+    return { solved, correct, rate: solved ? Math.round(correct / solved * 100) : 0, tests: a.length };
   }
 
   return {
     getUserName, setUserName,
     getCompletedTopics, markTopicCompleted, isTopicCompleted,
-    getAttempts, addAttempt, getAttemptsForTopic, getBestScoreForTopic
+    getAttempts, addAttempt, getAttemptsForTopic, getBestScore, getLastAttempt,
+    getWrongBank, addWrongQuestions, removeFromWrongBank, clearWrongBank,
+    getUnlockedBadges, unlockBadge, isBadgeUnlocked,
+    getMissionsDone, markMissionDone, isMissionDone, resetDailyMissions,
+    getStreak, touchStreak,
+    saveDraft, getDraft, clearDraft,
+    getSettings, saveSettings,
+    computeSubjectAvg, computeOverall,
   };
 })();

@@ -3,292 +3,381 @@
   "ad": "Vatandaşlık",
   "konular": [
     {
-      "id": "vatandaslik-hukukun-temel-kavramlari",
+      "id": "vatandaslik-hukukun-temelleri",
       "baslik": "Hukukun Temel Kavramları",
       "anlatim": {
-        "ozet": "Hukuk, toplum düzenini sağlamak için devlet tarafından konulan ve yaptırıma bağlanan kurallar bütünüdür; diğer toplumsal kurallardan onu ayıran en önemli özellik devlet gücüyle desteklenmesidir.",
+        "ozet": "⚖️ Hukuk kuralları, toplum düzenini sağlayan ve devlet yaptırımıyla desteklenen bağlayıcı kurallardır. Ahlak, din ve görgü kurallarından temel farkı: yaptırımın devlet eliyle uygulanmasıdır.",
         "icerik": [
-          "İnsanlar toplum hâlinde yaşarken birbirleriyle ilişkilerini düzenleyen birtakım kurallara ihtiyaç duyarlar. Din kuralları, ahlak kuralları, görgü kuralları ve hukuk kuralları bu ihtiyacı karşılayan toplumsal düzen kurallarıdır. Bunlar arasında hukuk kuralını diğerlerinden ayıran temel özellik, hukuk kurallarının devlet tarafından konulması ve devletin maddi gücüyle desteklenmiş bir yaptırıma (müeyyideye) sahip olmasıdır. Yani bir hukuk kuralına uyulmadığında devlet, zorla da olsa bu kuralın uygulanmasını sağlayabilir; oysa bir ahlak veya görgü kuralına uyulmaması yalnızca toplumsal ayıplama ile sonuçlanır.",
-          "Hukuk kurallarına uyulmaması hâlinde karşılaşılan sonuca 'yaptırım' denir. Yaptırım türleri kuralın niteliğine göre değişir: Ceza hukukunda yaptırım 'ceza'dır (hapis, adli para cezası gibi). Özel hukukta (örneğin bir sözleşmenin ihlalinde) yaptırım genellikle 'cebri icra'dır, yani devletin zoruyla borcun yerine getirilmesidir. Bazı işlemlerde ise kurala uyulmaması o işlemi geçersiz kılar; buna 'butlan' (kesin hükümsüzlük) denir. İdare hukukunda yaptırım çoğu zaman idari para cezası veya iptal şeklinde karşımıza çıkar.",
-          "Hukuk, düzenlediği ilişkinin tarafları arasındaki konuma göre ikiye ayrılır: Kamu hukuku ve özel hukuk. Kamu hukuku, devletin kendi organlarıyla olan ilişkilerini ya da devletin bireylerle olan ve üstünlük-altlık (eşit olmayan) ilişkisi içinde bulunduğu alanları düzenler. Anayasa hukuku, idare hukuku, ceza hukuku, vergi hukuku kamu hukukunun dallarıdır. Özel hukuk ise eşit konumdaki kişiler (birey-birey veya birey-tüzel kişi) arasındaki ilişkileri düzenler; medeni hukuk, borçlar hukuku, ticaret hukuku özel hukukun başlıca dallarıdır.",
-          "Hukuk kurallarının kaynağı 'normlar hiyerarşisi' denilen bir sıra düzeni içinde yer alır. En üstte Anayasa bulunur; onun altında kanunlar, kanun hükmünde kararnameler (1982 Anayasası'nda olağanüstü hâl KHK'leri hariç bu yetki 2017 değişikliğiyle büyük ölçüde kaldırılmıştır), cumhurbaşkanlığı kararnameleri, yönetmelikler ve diğer düzenleyici işlemler sıralanır. Alt sıradaki bir norm, üst sıradaki norma aykırı olamaz; aykırı olursa iptal edilebilir. Bu hiyerarşik yapı, hukuk düzeninin tutarlılığını ve hukuk devleti ilkesinin işlerliğini sağlar."
+          "📌 Hukuk kuralları; bireylerin birbirleriyle ve devletle olan ilişkilerini düzenleyen, uyulması zorunlu, yaptırıma bağlı kurallardır. Devlet bu kuralların uygulanmasını güvence altına alır.",
+          "📎 Hukuk iki ana dala ayrılır: Kamu hukuku (Anayasa, İdare, Ceza, Vergi, Uluslararası Kamu Hukuku) ve Özel hukuk (Medeni, Borçlar, Ticaret). Kamu hukukunda taraflardan biri her zaman devlettir.",
+          "📎 Yaptırım türleri: Ceza (hapis, para), cebri icra (zorla yerine getirme), tazminat, iptal ve butlan (hükümsüzlük). Hukuki yaptırım, hukuku diğer sosyal kurallardan ayıran en temel özelliktir."
         ],
         "anahtarNoktalar": [
-          "Hukuk kuralını diğer toplumsal kurallardan ayıran özellik: devlet gücüyle desteklenen yaptırımdır.",
-          "Yaptırım türleri: ceza, cebri icra, butlan (geçersizlik), iptal.",
-          "Kamu hukuku: devletin taraf olduğu, üstünlük-altlık ilişkisi içeren hukuk dalı (Anayasa, idare, ceza, vergi hukuku).",
-          "Özel hukuk: eşit taraflar arası ilişkiler (medeni, borçlar, ticaret hukuku).",
-          "Normlar hiyerarşisinin en tepesinde Anayasa yer alır.",
-          "Alt norm, üst norma aykırı olamaz; aykırılık iptal nedenidir.",
-          "Ahlak ve görgü kurallarında devlet zoru yoktur, hukukta vardır.",
-          "Hukuk devleti, devletin de kendi koyduğu kurallarla bağlı olmasıdır."
+          "🔑 Hukuk kurallarının yaptırımı devlet tarafından uygulanır; ahlak kurallarının yaptırımı vicdani kınamadır.",
+          "💡 Kamu hukukunda kamu yararı, özel hukukta bireysel irade esastır.",
+          "🔑 Medeni Kanun → özel hukuk; Anayasa ve Ceza Kanunu → kamu hukuku.",
+          "💡 Hukukun kaynakları hiyerarşisi: Anayasa > Kanun > CB Kararnamesi > Yönetmelik.",
+          "🔑 Türkiye'de yazılı hukukun en üst kaynağı Anayasa'dır; hiçbir kanun Anayasa'ya aykırı olamaz."
         ]
       },
       "sorular": [
         {
-          "soru": "Aşağıdakilerden hangisi hukuk kurallarını diğer toplumsal düzen kurallarından (din, ahlak, görgü) ayıran temel özelliktir?",
+          "soru": "Aşağıdakilerden hangisi hukuk kurallarını diğer sosyal düzen kurallarından ayıran temel özelliktir?",
           "secenekler": [
-            "Yazılı olması",
-            "Devletin maddi gücüyle desteklenmiş bir yaptırıma sahip olması",
-            "Herkes tarafından bilinmesi",
-            "Zamanla değişmemesi",
-            "Sadece bireyler arası ilişkileri düzenlemesi"
-          ],
-          "dogruIndex": 1,
-          "aciklama": "Hukuk kuralını diğer toplumsal kurallardan (din, ahlak, görgü) ayıran en temel özellik, devlet tarafından konulmuş olması ve ihlali hâlinde devletin zorlayıcı gücüyle desteklenen bir yaptırımının (müeyyide) bulunmasıdır. Ahlak kuralına uyulmaması toplumsal ayıplamayla sonuçlanırken, hukuk kuralına uyulmaması devletin organları eliyle (mahkeme, icra dairesi vb.) zorla uygulanabilir."
-        },
-        {
-          "soru": "Bir borçlunun, mahkeme kararına rağmen borcunu ödememesi üzerine devletin icra daireleri aracılığıyla borcun zorla tahsil edilmesi, hangi yaptırım türüne örnektir?",
-          "secenekler": [
-            "Ceza",
-            "Butlan",
-            "Cebri icra",
-            "İptal",
-            "Disiplin cezası"
+            "A) Toplumda genel kabul görmesi",
+            "B) Yazılı olması zorunluluğu",
+            "C) Yaptırımının devlet tarafından uygulanması",
+            "D) Ahlaki değerlere dayanması",
+            "E) Dini kurallara uygun olması"
           ],
           "dogruIndex": 2,
-          "aciklama": "Özel hukuk ilişkilerinde (örneğin borç ilişkisinde) bir yükümlülüğün yerine getirilmemesi durumunda devletin zor kullanarak bu yükümlülüğü yerine getirtmesine 'cebri icra' denir. Ceza, suç işleyen kişiye uygulanan yaptırımdır; butlan bir işlemin geçersizliği anlamına gelir; iptal ise genellikle idari işlemler için kullanılan bir yaptırım türüdür."
+          "aciklama": "Hukuk kurallarını ahlak, din ve görgü kurallarından ayıran en temel özellik, yaptırımının devlet eliyle (cebren) uygulanmasıdır.",
+          "distractorAciklama": "Toplumsal kabul ve ahlaki değerler diğer sosyal kurallarda da bulunur; yazılı olmak da zorunlu değildir (örf-adet hukuku). Belirleyici olan devlet yaptırımıdır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Aşağıdaki hukuk dallarından hangisi özel hukuk kapsamında yer alır?",
+          "soru": "Medeni Kanun aşağıdaki hukuk dallarından hangisinin kapsamına girer?",
           "secenekler": [
-            "Anayasa hukuku",
-            "İdare hukuku",
-            "Ceza hukuku",
-            "Borçlar hukuku",
-            "Vergi hukuku"
+            "A) Ceza hukuku",
+            "B) İdare hukuku",
+            "C) Anayasa hukuku",
+            "D) Özel hukuk",
+            "E) Vergi hukuku"
           ],
           "dogruIndex": 3,
-          "aciklama": "Borçlar hukuku, eşit konumdaki kişiler (gerçek veya tüzel kişiler) arasındaki sözleşme ve borç ilişkilerini düzenlediği için özel hukuk dalıdır. Anayasa hukuku, idare hukuku, ceza hukuku ve vergi hukuku ise devletin taraf olduğu, üstünlük-altlık ilişkisi içeren kamu hukuku dallarıdır."
+          "aciklama": "Medeni Kanun; kişiler, aile, miras ve eşya hukukunu düzenler ve özel hukuk dalı içinde yer alır.",
+          "distractorAciklama": "Ceza, İdare, Anayasa ve Vergi hukuku kamu hukuku dallarıdır; devlet ile birey arasındaki ilişkileri düzenler. Medeni Kanun ise bireyler arasındaki ilişkileri düzenlediği için özel hukuktur.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "Kamu hukuku ile özel hukuk ayrımının temel ölçütü aşağıdakilerden hangisidir?",
+          "soru": "Türk Medeni Kanunu'na göre erginlik (reşitlik) kaç yaşında başlar?",
           "secenekler": [
-            "Kuralın yazılı olup olmadığı",
-            "Kuralın hangi tarihte yürürlüğe girdiği",
-            "İlişkide tarafların eşit konumda olup olmadığı (üstünlük-altlık ilişkisi)",
-            "Kuralın hangi mahkemede uygulandığı",
-            "Kuralın kaç maddeden oluştuğu"
+            "A) 15",
+            "B) 16",
+            "C) 17",
+            "D) 18",
+            "E) 21"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Türk Medeni Kanunu'nun 11. maddesine göre erginlik, 18 yaşının doldurulmasıyla başlar.",
+          "distractorAciklama": "21 yaş eski uygulamayı, 15-17 yaş ise evlilik veya mahkeme kararıyla erken erginlik yaşlarını çağrıştırabilir. Yasal genel erginlik yaşı kesinlikle 18'dir.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi kamu hukukunun bir dalı değildir?",
+          "secenekler": [
+            "A) Anayasa hukuku",
+            "B) İdare hukuku",
+            "C) Vergi hukuku",
+            "D) Borçlar hukuku",
+            "E) Ceza hukuku"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Borçlar hukuku, bireyler arasındaki borç ilişkilerini düzenler ve özel hukukun bir dalıdır.",
+          "distractorAciklama": "Anayasa, İdare, Vergi ve Ceza hukuku taraflardan birinin devlet olduğu kamu hukuku dallarıdır. Borçlar hukuku bireylerarası ilişkileri düzenlediğinden özel hukuk kapsamındadır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Hukukun yazılı kaynaklarının hiyerarşik sıralamasında Anayasa'nın hemen altında yer alan kaynak hangisidir?",
+          "secenekler": [
+            "A) Tüzük",
+            "B) Yönetmelik",
+            "C) Kanun",
+            "D) Örf ve adet",
+            "E) İçtihat"
           ],
           "dogruIndex": 2,
-          "aciklama": "Kamu hukukunda devlet, bireylerle olan ilişkisinde üstün/egemen taraf konumundadır (örneğin vergi toplama, ceza verme yetkisi). Özel hukukta ise taraflar (iki birey, iki şirket vb.) hukuken eşit konumdadır ve aralarındaki ilişki irade serbestisi temelinde kurulur. Bu nedenle ayrımın temel ölçütü taraflar arasındaki eşitlik ya da üstünlük-altlık ilişkisidir."
+          "aciklama": "Normlar hiyerarşisinde sıralama: Anayasa → Kanun → Cumhurbaşkanlığı Kararnamesi → Yönetmelik. Kanun, Anayasa'nın hemen altında yer alır.",
+          "distractorAciklama": "Tüzük ve yönetmelik kanunun altındaki ikincil mevzuattır. Örf-adet ve içtihat yazılı kaynak sayılmaz; boşluk doldurmada kullanılır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Türk hukuk sisteminde normlar hiyerarşisinin (kurallar sıralamasının) en üstünde aşağıdakilerden hangisi yer alır?",
+          "soru": "Aşağıdakilerden hangisi hukuki bir yaptırım türü değildir?",
           "secenekler": [
-            "Anayasa",
-            "Kanunlar",
-            "Cumhurbaşkanlığı kararnameleri",
-            "Yönetmelikler",
-            "Tüzükler"
-          ],
-          "dogruIndex": 0,
-          "aciklama": "Normlar hiyerarşisinde en üstte Anayasa yer alır; tüm kanunlar, kararnameler ve diğer düzenleyici işlemler Anayasa'ya uygun olmak zorundadır. Bir kanun Anayasa'ya aykırıysa Anayasa Mahkemesi tarafından iptal edilebilir. Hiyerarşik sırada Anayasa'nın altında kanunlar, onun altında ise cumhurbaşkanlığı kararnameleri ve yönetmelikler gelir."
-        },
-        {
-          "soru": "Bir cumhurbaşkanlığı kararnamesi ile bir kanun çelişirse aşağıdakilerden hangisi uygulanır?",
-          "secenekler": [
-            "Kararname, çünkü daha günceldir",
-            "Kanun, çünkü normlar hiyerarşisinde kararnameden üstündür",
-            "İkisi de uygulanmaz",
-            "Cumhurbaşkanı hangisinin uygulanacağına tek başına karar verir",
-            "Yerel mahkemeler hangisinin uygulanacağını belirler"
-          ],
-          "dogruIndex": 1,
-          "aciklama": "Normlar hiyerarşisinde kanunlar, cumhurbaşkanlığı kararnamelerinden üstündür. Anayasa'ya göre, kanunla cumhurbaşkanlığı kararnamesinin çelişmesi hâlinde kanun hükümleri uygulanır; aynı konuda hem kanun hem kararname varsa kararname hükümsüz kalır. Bu da hukuk devletinde kuvvetler arasındaki denge ve hiyerarşinin bir gereğidir."
-        },
-        {
-          "soru": "Bir kişinin, kanunda öngörülen şekil şartına uymadan yaptığı bir sözleşmenin hukuken hiç yapılmamış sayılması (geçersiz kabul edilmesi), hangi yaptırım türüne örnektir?",
-          "secenekler": [
-            "Ceza",
-            "Cebri icra",
-            "Butlan",
-            "İdari para cezası",
-            "Disiplin cezası"
+            "A) Tazminat",
+            "B) Cebri icra",
+            "C) Vicdani kınama",
+            "D) İptal",
+            "E) Para cezası"
           ],
           "dogruIndex": 2,
-          "aciklama": "Hukuki bir işlemin, kanunun aradığı geçerlilik şartlarından birini taşımaması nedeniyle baştan itibaren geçersiz sayılmasına 'butlan' denir. Bu, özellikle özel hukuk işlemlerinde (sözleşmeler, evlilik gibi) görülen bir yaptırım türüdür ve cezadan farklı olarak işlemin hukuki sonuç doğurmasını engeller."
+          "aciklama": "Vicdani kınama, ahlak kurallarının yaptırımıdır; hukuki bir yaptırım değildir. Hukuki yaptırımlar: ceza, tazminat, cebri icra, iptal ve butlandır.",
+          "distractorAciklama": "Tazminat, cebri icra, iptal ve para cezası devlet organlarınca uygulanan hukuki yaptırımlardır. Vicdani kınama toplumun bireyi içsel olarak kınamasıdır; ahlaki bir yaptırımdır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Aşağıdakilerden hangisi 'hukuk devleti' ilkesinin bir gereğidir?",
+          "soru": "Türkiye'de özel hukuku ilgilendiren bir uyuşmazlıkta görevli mahkeme aşağıdakilerden hangisidir?",
           "secenekler": [
-            "Devletin kendi koyduğu kurallarla bağlı olmaması",
-            "Yöneticilerin keyfi kararlar alabilmesi",
-            "Devletin de eylem ve işlemlerinin hukuka uygun olması ve yargı denetimine tabi olması",
-            "Kanunların geriye yürüyebilmesi",
-            "Mahkemelerin yürütmenin emrinde çalışması"
+            "A) Danıştay",
+            "B) Anayasa Mahkemesi",
+            "C) Asliye Hukuk Mahkemesi",
+            "D) İdare Mahkemesi",
+            "E) Uyuşmazlık Mahkemesi"
           ],
           "dogruIndex": 2,
-          "aciklama": "Hukuk devleti ilkesi, sadece bireylerin değil devletin ve onun organlarının da hukuk kurallarıyla bağlı olması, eylem ve işlemlerinin yargısal denetime tabi tutulması anlamına gelir. Bu ilke, 1982 Anayasası'nın 2. maddesinde Türkiye Cumhuriyeti'nin nitelikleri arasında sayılmıştır ve keyfi yönetimin önüne geçmeyi amaçlar."
+          "aciklama": "Özel hukuk uyuşmazlıkları adli yargıda çözülür. Asliye Hukuk Mahkemeleri bu uyuşmazlıklara bakmakla görevlidir.",
+          "distractorAciklama": "Danıştay ve İdare Mahkemeleri idari uyuşmazlıklara, Anayasa Mahkemesi anayasaya uygunluk denetimine, Uyuşmazlık Mahkemesi adli-idari yargı çatışmalarına bakar.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Bir esnafın, ruhsatsız iş yeri açması nedeniyle belediye tarafından kendisine para cezası uygulanması, hangi hukuk dalının yaptırımına örnektir?",
+          "soru": "Hukuk kurallarının özelliklerine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
           "secenekler": [
-            "Medeni hukuk",
-            "Borçlar hukuku",
-            "Miras hukuku",
-            "Ticaret hukuku",
-            "İdare hukuku"
+            "A) Hukuk kuralları genel ve soyuttur.",
+            "B) Hukuk kuralları süreklilik taşır.",
+            "C) Hukuk kuralları kişisel nitelik taşır ve yalnızca belirli kişilere yöneliktir.",
+            "D) Hukuk kuralları yaptırıma bağlıdır.",
+            "E) Hukuk kuralları devlet tarafından konulur veya tanınır."
           ],
-          "dogruIndex": 4,
-          "aciklama": "Belediye gibi bir idari makamın, kanuna aykırı bir durum nedeniyle bireye idari para cezası uygulaması idare hukuku kapsamındadır. İdare hukuku, idarenin (devletin yürütme organlarının) bireylerle olan ve üstünlük-altlık ilişkisi içeren faaliyetlerini düzenleyen bir kamu hukuku dalıdır."
+          "dogruIndex": 2,
+          "aciklama": "Hukuk kuralları genel ve soyuttur; belirli kişilere değil, belirli duruma uyan herkese uygulanır. 'Kişisel nitelik taşır' ifadesi yanlıştır.",
+          "distractorAciklama": "Genel-soyut olma, süreklilik, yaptırıma bağlılık ve devlet tarafından konulma hukuk kurallarının temel özellikleridir. Kişisel/bireysel nitelik hukuk kuralının değil idari işlem veya sözleşmenin özelliğidir.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Aşağıdaki ifadelerden hangisi yanlıştır?",
+          "soru": "Aşağıdakilerden hangisi hem kamu hem özel hukuk niteliği taşıyan 'karma' hukuk dalına örnek gösterilebilir?",
           "secenekler": [
-            "Hukuk kuralları devlet gücüyle desteklenir",
-            "Ahlak kurallarına uyulmaması devletin zorlayıcı gücüyle yaptırıma bağlanır",
-            "Ceza hukuku kamu hukuku dalıdır",
-            "Medeni hukuk özel hukuk dalıdır",
-            "Anayasa, normlar hiyerarşisinin en üstünde yer alır"
+            "A) Ceza hukuku",
+            "B) Anayasa hukuku",
+            "C) Is hukuku",
+            "D) Medeni hukuk",
+            "E) İdare hukuku"
           ],
-          "dogruIndex": 1,
-          "aciklama": "Ahlak kuralları toplumsal bir düzen kuralı olmakla birlikte devletin zorlayıcı gücüyle değil, toplumun ayıplaması, dışlaması gibi manevi yaptırımlarla desteklenir. Devlet gücüyle desteklenen yaptırım, sadece hukuk kurallarına özgü bir niteliktir; bu da hukuku diğer kurallardan ayıran temel unsurdur."
+          "dogruIndex": 2,
+          "aciklama": "Is hukuku; işçi-işveren ilişkisini düzenler, hem özel hukuk (bireysel iş sözleşmesi) hem kamu hukuku (iş güvenliği, sosyal güvenlik) unsurları içerdiğinden karma nitelikli bir dal olarak kabul edilir.",
+          "distractorAciklama": "Ceza, Anayasa ve İdare hukuku saf kamu hukuku; Medeni hukuk saf özel hukuk dallarıdır. Is hukuku her iki alanın özelliklerini barındıran karma bir daldır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi hukukun yazısız kaynakları arasında yer alır?",
+          "secenekler": [
+            "A) Kanun hükmünde kararname",
+            "B) Tüzük",
+            "C) Örf ve adet hukuku",
+            "D) Yönetmelik",
+            "E) Anayasa"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Örf ve adet hukuku, toplumda uzun süredir uygulanan ve bağlayıcı olduğuna inanılan kurallardan oluşur; yazılı bir metin gerektirmez ve hukukun yazısız kaynağıdır.",
+          "distractorAciklama": "Anayasa, kanun, KHK, tüzük ve yönetmelik yazılı kaynaklardır; resmi gazetede yayımlanırlar. Örf-adet ise yazısız bir kaynaktır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Haksız fiilden doğan zararı tazmin etmekle yükümlü tutulma hangi hukuki yaptırım türüne girer?",
+          "secenekler": [
+            "A) Ceza yaptırımı",
+            "B) Cebri icra",
+            "C) Butlan",
+            "D) Tazminat",
+            "E) İptal"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Haksız fiilden doğan zararın giderilmesi için uygulanan yaptırım tazminattır. Tazminat, özel hukukta en sık uygulanan yaptırım türüdür.",
+          "distractorAciklama": "Ceza yaptırımı ceza hukuku alanıdır. Cebri icra alacağın zorla tahsilidir. Butlan ve iptal geçersizlik yaptırımlarıdır. Haksız fiil sonucu zarar giderme tazminattır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Anayasa Mahkemesi'nin bir kanunu iptal etmesi hangi tür hukuki yaptırımın örneğidir?",
+          "secenekler": [
+            "A) Cebri icra",
+            "B) Tazminat",
+            "C) Butlan (hükümsüzlük)",
+            "D) Para cezası",
+            "E) Ceza yaptırımı"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa Mahkemesi'nin Anayasa'ya aykırı bulduğu kanunu iptal etmesi, o kanunun hukuken geçersiz sayılması anlamına gelir; bu bir tür butlan/hükümsüzlük yaptırımıdır.",
+          "distractorAciklama": "Cebri icra, tazminat ve para cezası farklı hukuki sonuçlar doğurur. Anayasa'ya aykırı kanunun kaldırılması bir 'geçersizlik/hükümsüzlük' işlemidir; buna butlan veya iptal denir.",
+          "kaynak": "KPSS-Tipi"
         }
       ]
     },
     {
-      "id": "vatandaslik-anayasa-tarihi",
-      "baslik": "Türk Anayasa Tarihi",
+      "id": "vatandaslik-anayasa",
+      "baslik": "Anayasa Tarihi ve 1982 Anayasası",
       "anlatim": {
-        "ozet": "Türkiye, Cumhuriyet döneminde 1921, 1924, 1961 ve 1982 Anayasaları olmak üzere dört temel anayasa metni hazırlamış; her biri döneminin siyasi koşullarını yansıtmıştır.",
+        "ozet": "🏛️ Türkiye 4 anayasa yaşadı: 1921 (Teşkilat-ı Esasiye), 1924, 1961 ve 1982. Günümüzde 1982 Anayasası yürürlüktedir; 2017 referandumuyla Cumhurbaşkanlığı hükümet sistemine geçilmiştir.",
         "icerik": [
-          "1921 Anayasası (Teşkilât-ı Esasiye Kanunu), Kurtuluş Savaşı'nın en zor günlerinde, TBMM tarafından kabul edilen ilk anayasadır. Çok kısa (23 madde) ve özlü bir metindir; temel hak ve özgürlüklere yer vermemiş, dönemin ihtiyacına uygun olarak 'kuvvetler birliği' ilkesini benimsemiştir; yani yasama, yürütme ve hatta bir ölçüde yargı yetkisi TBMM'de toplanmıştır. Olağanüstü bir dönemde hazırlandığı için sade ve hızlı işleyen bir devlet yapısı öngörmüştür.",
-          "1924 Anayasası, Cumhuriyetin ilanından sonra hazırlanan ve daha kapsamlı bir metindir. Yine kuvvetler birliği (güçler birliği) ilkesine dayanır; TBMM'yi 'milletin yegâne ve gerçek temsilcisi' olarak görür ve devletin tüm yetkilerini onda toplar. Tek parti döneminin koşullarını yansıtır, defalarca değişikliğe uğramış (örneğin laiklik ilkesinin eklenmesi 1937'de bu anayasaya yapılmıştır) ve 1961'e kadar yürürlükte kalmıştır.",
-          "1961 Anayasası, 27 Mayıs 1960 askeri müdahalesinin ardından hazırlanmış, kurucu meclis tarafından kabul edilip halkoyuna sunularak yürürlüğe girmiştir. Bu anayasa ilk kez 'kuvvetler ayrılığı' ilkesini benimsemiş, yasama yetkisini TBMM yanında yeni kurulan Cumhuriyet Senatosu ile paylaştırmış (iki meclisli/bikameral sistem), Anayasa Mahkemesi'ni kurmuş ve temel hak ve özgürlükleri geniş biçimde güvence altına almıştır. Özgürlükçü bir anayasa olarak nitelendirilir.",
-          "1982 Anayasası, 12 Eylül 1980 askeri müdahalesinin ardından hazırlanmış, halkoyuyla kabul edilerek yürürlüğe girmiştir ve hâlen yürürlükteki anayasadır. Başlangıçta devlet otoritesini güçlendiren, hak ve özgürlükleri sınırlayıcı hükümler içeren bir metin olarak hazırlanmış, ancak zaman içinde (özellikle 1995, 2001, 2004, 2010 ve 2017 değişiklikleriyle) demokratikleşme yönünde önemli değişikliklere uğramıştır. 2017 Anayasa değişikliğiyle parlamenter sistemden Cumhurbaşkanlığı Hükümet Sistemine geçilmiş, Başbakanlık ve Bakanlar Kurulu kaldırılmış, yürütme yetkisi tek başına Cumhurbaşkanına verilmiştir; bu değişiklikler 2018 genel seçimleriyle birlikte fiilen uygulanmaya başlamıştır."
+          "📌 1921 Anayasası (Teşkilat-ı Esasiye Kanunu): Kurtuluş Savaşı döneminde hazırlandı. Güçler birliği ilkesine dayanır; TBMM hem yasama hem yürütme yetkisini kullanırdı. En kısa Türk anayasasıdır (23 madde).",
+          "📎 1924 Anayasası: Cumhuriyet'in ilanından sonra hazırlandı. 1937'de laiklik ilkesi eklendi. Tek parti döneminin anayasasıdır. 1961'e kadar yürürlükte kaldı.",
+          "📎 1961 Anayasası: 27 Mayıs 1960 darbesi sonrası hazırlandı. Çift meclis (TBMM + Cumhuriyet Senatosu), Anayasa Mahkemesi ve Milli Güvenlik Kurulu ilk kez bu anayasayla kuruldu.",
+          "📎 1982 Anayasası: 12 Eylül 1980 darbesi sonrasında hazırlandı; 7 Kasım 1982'de halkoylamasıyla kabul edildi. 2017 değişiklikleriyle Cumhurbaşkanlığı hükümet sistemine geçildi."
         ],
         "anahtarNoktalar": [
-          "1921 Anayasası: en kısa anayasa, kuvvetler birliği, savaş döneminde hazırlandı.",
-          "1924 Anayasası: TBMM'de yetki toplanması, tek parti dönemi, kuvvetler birliği.",
-          "1961 Anayasası: ilk kez kuvvetler ayrılığı, Anayasa Mahkemesi'nin kuruluşu, çift meclis (TBMM + Cumhuriyet Senatosu).",
-          "1982 Anayasası: hâlen yürürlükte, 12 Eylül sonrası hazırlandı, halkoylamasıyla kabul edildi.",
-          "2017 değişikliğiyle Cumhurbaşkanlığı Hükümet Sistemine geçildi; Başbakanlık kaldırıldı.",
-          "Anayasa Mahkemesi ilk kez 1961 Anayasası ile kuruldu.",
-          "1961 Anayasası 'özgürlükçü', 1982 Anayasası ilk hâliyle 'otoriter' nitelikte kabul edilir.",
-          "Her anayasa, hazırlandığı dönemin siyasi/askeri koşullarının izini taşır."
+          "🔑 1921 Anayasası en kısa (23 madde), 1982 Anayasası en uzundur.",
+          "💡 Anayasa Mahkemesi ilk kez 1961 Anayasası ile kuruldu.",
+          "🔑 Değiştirilmesi teklif dahi edilemeyen maddeler: 1. (Cumhuriyet), 2. (Nitelikleri), 3. (Bütünlüğü, dili, bayrağı, marşı, başkenti).",
+          "💡 2017 referandumuyla Bakanlar Kurulu kaldırıldı; yürütme Cumhurbaşkanı'nda toplandı.",
+          "🔑 Anayasa'nın başlangıç kısmı da anayasal norm olarak bağlayıcıdır."
         ]
       },
       "sorular": [
         {
-          "soru": "Aşağıdaki anayasalardan hangisi, Kurtuluş Savaşı sürerken TBMM tarafından kabul edilen ve oldukça kısa maddelerden oluşan ilk anayasadır?",
+          "soru": "Türkiye Büyük Millet Meclisi'nin ilk anayasası aşağıdakilerden hangisidir?",
           "secenekler": [
-            "1924 Anayasası",
-            "1921 Anayasası",
-            "1961 Anayasası",
-            "1982 Anayasası",
-            "1876 Kanun-i Esasi"
+            "A) 1924 Anayasası",
+            "B) 1961 Anayasası",
+            "C) 1921 Teşkilat-ı Esasiye Kanunu",
+            "D) 1876 Kanun-u Esasi",
+            "E) 1982 Anayasası"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "TBMM'nin ilk anayasası 1921 Teşkilat-ı Esasiye Kanunu'dur. 1876 Kanun-u Esasi ise Osmanlı dönemine aittir.",
+          "distractorAciklama": "1876 Kanun-u Esasi Osmanlı dönemine ait olup Türkiye Cumhuriyeti'nin anayasası değildir. TBMM'nin ilk anayasası 1921'dir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Anayasa Mahkemesi Türkiye'de ilk kez hangi anayasayla kurulmuştur?",
+          "secenekler": [
+            "A) 1921 Anayasası",
+            "B) 1924 Anayasası",
+            "C) 1961 Anayasası",
+            "D) 1982 Anayasası",
+            "E) 2017 anayasa değişikliği"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa Mahkemesi, 1961 Anayasası ile birlikte Türk hukuk sistemine girmiştir.",
+          "distractorAciklama": "1924 Anayasası döneminde kanunların anayasaya uygunluğu denetlenmiyordu. Anayasa Mahkemesi'nin kuruluşu kesinlikle 1961 Anayasası'na dayanır.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "1982 Anayasası'nda değiştirilmesi teklif dahi edilemeyen maddeler hangileridir?",
+          "secenekler": [
+            "A) Yalnızca 1. madde",
+            "B) 1., 2. ve 3. maddeler",
+            "C) 1., 2., 3. ve 4. maddeler",
+            "D) Yalnızca başlangıç kısmı",
+            "E) Tüm temel haklar bölümü"
           ],
           "dogruIndex": 1,
-          "aciklama": "1921 Anayasası (Teşkilât-ı Esasiye Kanunu), Kurtuluş Savaşı'nın devam ettiği olağanüstü koşullarda hazırlanmış, 23 maddeden oluşan çok kısa ve sade bir anayasadır. Temel hak ve özgürlüklere yer vermemiş, tüm yetkiyi TBMM'de toplayan kuvvetler birliği ilkesini benimsemiştir."
+          "aciklama": "Anayasa'nın 4. maddesine göre; 1. madde (Devletin şekli Cumhuriyettir), 2. madde (Cumhuriyetin nitelikleri) ve 3. madde (Devletin bütünlüğü, dili, bayrağı, marşı, başkenti) değiştirilmesi teklif dahi edilemeyen maddelerdir.",
+          "distractorAciklama": "4. maddenin kendisi 'değiştirilemez' hükmünü içerir ancak o madde bu kapsama girmez. Değiştirilemez maddeler 1, 2 ve 3. maddelerdir.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Türk anayasa tarihinde 'kuvvetler ayrılığı' ilkesi ilk kez hangi anayasa ile benimsenmiştir?",
+          "soru": "1982 Anayasası hangi tarihte halkoylamasıyla kabul edilmiştir?",
           "secenekler": [
-            "1921 Anayasası",
-            "1924 Anayasası",
-            "1961 Anayasası",
-            "1982 Anayasası",
-            "1876 Kanun-i Esasi"
+            "A) 12 Eylül 1980",
+            "B) 27 Mayıs 1960",
+            "C) 7 Kasım 1982",
+            "D) 9 Temmuz 1961",
+            "E) 16 Nisan 2017"
           ],
           "dogruIndex": 2,
-          "aciklama": "1961 Anayasası, 1921 ve 1924 Anayasalarının benimsediği kuvvetler birliği anlayışından farklı olarak ilk kez kuvvetler ayrılığı ilkesini getirmiş; yasama, yürütme ve yargı yetkilerini birbirinden ayırmıştır. Bu anayasa aynı zamanda Anayasa Mahkemesi'ni kurarak anayasaya uygunluk denetimini de ilk kez sağlamıştır."
+          "aciklama": "1982 Anayasası, 7 Kasım 1982 tarihinde yapılan halkoylamasıyla %91,4 oranında kabul edilmiştir.",
+          "distractorAciklama": "12 Eylül 1980 darbenin tarihi, 27 Mayıs 1960 ise 1961 Anayasası sürecini başlatan darbenin tarihidir. 16 Nisan 2017 Cumhurbaşkanlığı sistemi referandumunun tarihidir.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Anayasa Mahkemesi, Türk anayasa tarihinde ilk kez hangi anayasa ile kurulmuştur?",
+          "soru": "Çift meclis sistemi (TBMM + Cumhuriyet Senatosu) Türkiye'de hangi anayasa döneminde uygulanmıştır?",
           "secenekler": [
-            "1921 Anayasası",
-            "1924 Anayasası",
-            "1982 Anayasası",
-            "1909 Kanun-i Esasi değişikliği",
-            "1961 Anayasası"
-          ],
-          "dogruIndex": 4,
-          "aciklama": "Anayasa Mahkemesi, ilk kez 1961 Anayasası ile kurulmuş ve kanunların Anayasa'ya uygunluğunu denetleme görevi bu mahkemeye verilmiştir. 1982 Anayasası da Anayasa Mahkemesi'ni korumuş ve görevlerini sürdürmesini sağlamıştır."
-        },
-        {
-          "soru": "Hâlen yürürlükte olan 1982 Anayasası hangi tarihli askeri müdahalenin ardından hazırlanmıştır?",
-          "secenekler": [
-            "27 Mayıs 1960",
-            "12 Mart 1971",
-            "12 Eylül 1980",
-            "28 Şubat 1997",
-            "15 Temmuz 2016"
+            "A) 1921 Anayasası",
+            "B) 1924 Anayasası",
+            "C) 1961 Anayasası",
+            "D) 1982 Anayasası",
+            "E) 2017 sonrası"
           ],
           "dogruIndex": 2,
-          "aciklama": "1982 Anayasası, 12 Eylül 1980 askeri müdahalesinin ardından kurucu meclis tarafından hazırlanmış, 1982 yılında halkoylamasına sunularak kabul edilmiş ve yürürlüğe girmiştir. 1961 Anayasası ise 27 Mayıs 1960 müdahalesinin ardından hazırlanmıştır."
+          "aciklama": "Çift meclis sistemi yalnızca 1961 Anayasası döneminde uygulanmıştır. 1982 Anayasası tek meclis sistemine geri döndü.",
+          "distractorAciklama": "1921 ve 1924 anayasaları tek meclis sistemini benimsedi. 1982 Anayasası da tek meclisle devam etti. Çift meclis yalnızca 1961-1980 dönemine özgüdür.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "1961 Anayasası ile getirilen ve yasama yetkisini TBMM ile birlikte paylaşan, ancak sonradan 1982 Anayasası ile kaldırılan organ aşağıdakilerden hangisidir?",
+          "soru": "1924 Anayasası'na laiklik ilkesi hangi yıl eklenmiştir?",
           "secenekler": [
-            "Cumhuriyet Senatosu",
-            "Danıştay",
-            "Millî Güvenlik Kurulu",
-            "Anayasa Mahkemesi",
-            "Yüksek Hâkimler Kurulu"
+            "A) 1924",
+            "B) 1928",
+            "C) 1937",
+            "D) 1945",
+            "E) 1950"
           ],
-          "dogruIndex": 0,
-          "aciklama": "1961 Anayasası, yasama organını TBMM (Millet Meclisi) ve Cumhuriyet Senatosu olmak üzere iki meclisli (bikameral) bir yapıya kavuşturmuştur. 1982 Anayasası ise tek meclisli sisteme dönülmesini öngörmüş ve Cumhuriyet Senatosu kaldırılmıştır."
+          "dogruIndex": 2,
+          "aciklama": "Laiklik ilkesi 1937 yılında yapılan anayasa değişikliğiyle 1924 Anayasası'na eklenmiştir.",
+          "distractorAciklama": "1928'de 'Devletin dini İslam'dır' ifadesi Anayasa'dan çıkarıldı; ancak laiklik kelimesi metne 1937'de girdi. Bu iki adım karıştırılmamalıdır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "2017 yılında yapılan halkoylamasıyla kabul edilen Anayasa değişikliği ile Türkiye'de hangi hükümet sistemine geçilmiştir?",
+          "soru": "1982 Anayasası'nda 2017 yılında yapılan değişiklikle aşağıdakilerden hangisi kaldırılmıştır?",
           "secenekler": [
-            "Meclis hükümeti sistemi",
-            "Yarı başkanlık sistemi",
-            "Parlamenter sistem",
-            "Cumhurbaşkanlığı Hükümet Sistemi",
-            "Federal sistem"
+            "A) Anayasa Mahkemesi",
+            "B) Danıştay",
+            "C) Bakanlar Kurulu",
+            "D) TBMM",
+            "E) Cumhurbaşkanlığı makamı"
           ],
-          "dogruIndex": 3,
-          "aciklama": "16 Nisan 2017 halkoylamasıyla kabul edilen Anayasa değişikliği ile parlamenter sistemden Cumhurbaşkanlığı Hükümet Sistemine geçilmiştir. Bu sistemde Başbakanlık ve Bakanlar Kurulu kaldırılmış, yürütme yetkisi doğrudan halk tarafından seçilen Cumhurbaşkanına verilmiştir. Değişiklikler 2018 genel seçimleriyle birlikte fiilen uygulamaya geçmiştir."
+          "dogruIndex": 2,
+          "aciklama": "2017 anayasa referandumuyla Bakanlar Kurulu kaldırılmış; yürütme yetkisi doğrudan seçilen Cumhurbaşkanı'nda toplanmıştır.",
+          "distractorAciklama": "Anayasa Mahkemesi, Danıştay, TBMM ve Cumhurbaşkanlığı makamı varlığını sürdürmektedir. Kaldırılan tek kurum yürütmenin kolektif organı olan Bakanlar Kurulu'dur.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "1924 Anayasası ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+          "soru": "Türk anayasa tarihi kronolojik sıralaması aşağıdakilerden hangisinde doğru verilmiştir?",
           "secenekler": [
-            "Kuvvetler ayrılığı ilkesini benimsemiştir",
-            "Anayasa Mahkemesi'ni kurmuştur",
-            "Halkoylamasıyla kabul edilmiştir",
-            "Yetkiyi TBMM'de toplayan kuvvetler birliği ilkesine dayanır",
-            "İki meclisli yasama sistemi öngörmüştür"
+            "A) 1924 → 1921 → 1961 → 1982",
+            "B) 1921 → 1924 → 1982 → 1961",
+            "C) 1921 → 1924 → 1961 → 1982",
+            "D) 1924 → 1961 → 1921 → 1982",
+            "E) 1921 → 1961 → 1924 → 1982"
           ],
-          "dogruIndex": 3,
-          "aciklama": "1924 Anayasası, 1921 Anayasası gibi kuvvetler birliği ilkesine dayanır ve devletin tüm yetkilerini 'milletin yegâne ve gerçek temsilcisi' saydığı TBMM'de toplamıştır. Kuvvetler ayrılığı ve Anayasa Mahkemesi ilk kez 1961 Anayasası ile gelmiştir; 1924 Anayasası halkoyuna sunulmamış, TBMM tarafından kabul edilmiştir."
+          "dogruIndex": 2,
+          "aciklama": "Doğru kronoloji: 1921 Teşkilat-ı Esasiye → 1924 Anayasası → 1961 Anayasası → 1982 Anayasası.",
+          "distractorAciklama": "Diğer seçenekler anayasaların kronolojik sırasını bozmaktadır. 1921 her zaman başta, 1982 her zaman sonda olmalıdır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "1982 Anayasası'nın ilk hâli ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+          "soru": "1961 Anayasası'nı diğer Türk anayasalarından ayıran en önemli özellik hangisidir?",
           "secenekler": [
-            "Temel hak ve özgürlükleri büyük ölçüde genişletici niteliktedir",
-            "Devlet otoritesini güçlendiren, hak ve özgürlükleri sınırlayıcı hükümler içermektedir",
-            "Tamamen değişmeden günümüze kadar gelmiştir",
-            "İlk kez çok partili siyasi hayatı başlatmıştır",
-            "Cumhurbaşkanlığı Hükümet Sistemini ilk hâliyle getirmiştir"
+            "A) Laiklik ilkesini ilk kez düzenlemesi",
+            "B) Cumhurbaşkanlığı makamını oluşturması",
+            "C) Anayasa Mahkemesi ve çift meclis sistemini getirmesi",
+            "D) TBMM'yi kuran ilk anayasa olması",
+            "E) Güçler birliği ilkesini benimsemesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "1961 Anayasası; Anayasa Mahkemesi, çift meclis (TBMM + Cumhuriyet Senatosu) ve Milli Güvenlik Kurulu gibi yeni kurumları Türk anayasal sistemine kazandırmıştır.",
+          "distractorAciklama": "Laiklik 1924 Anayasası'na 1937'de eklendi. TBMM 1921 Anayasası ile kuruldu. Güçler birliği 1921 döneminin ilkesidir. 1961'in özgün katkısı yargısal denetim ve çift meclistir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "1982 Anayasası'na göre temel hak ve özgürlükler kural olarak hangi işlemle sınırlandırılabilir?",
+          "secenekler": [
+            "A) Cumhurbaşkanlığı kararnamesiyle",
+            "B) Yönetmelikle",
+            "C) Kanunla",
+            "D) Tüzükle",
+            "E) Bakanlar Kurulu kararıyla"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "1982 Anayasası'nın 13. maddesine göre temel hak ve özgürlükler, ancak kanunla ve Anayasa'nın ilgili maddelerinde belirtilen sebeplere dayanılarak sınırlandırılabilir.",
+          "distractorAciklama": "CB kararnamesi, yönetmelik ve tüzük temel hakları sınırlandıramaz; bu yalnızca kanunla mümkündür. 2017 sonrasında Bakanlar Kurulu kalmamıştır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Hangi anayasa, askeri müdahale olmaksızın olağan siyasi süreç sonucunda hazırlanmıştır?",
+          "secenekler": [
+            "A) 1961 Anayasası",
+            "B) 1982 Anayasası",
+            "C) 1924 Anayasası",
+            "D) Hem 1961 hem 1982",
+            "E) Hiçbiri olağan süreçle hazırlanmamıştır"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "1924 Anayasası, Kurtuluş Savaşı'nın kazanılması ve Cumhuriyet'in ilanından sonra olağan siyasi süreç içinde TBMM tarafından hazırlanmıştır.",
+          "distractorAciklama": "1961 Anayasası 27 Mayıs 1960, 1982 Anayasası 12 Eylül 1980 askeri darbelerinin ürünüdür. 1924 Anayasası ise TBMM'nin siyasi iradesiyle hazırlanmıştır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "1982 Anayasası'nın başlangıç kısmına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+          "secenekler": [
+            "A) Başlangıç kısmı hukuki bağlayıcılığa sahip değildir.",
+            "B) Başlangıç kısmı anayasal normun parçasıdır ve bağlayıcıdır.",
+            "C) Başlangıç kısmı yalnızca tarihsel belge niteliği taşır.",
+            "D) Başlangıç kısmı kanun düzeyinde bağlayıcıdır.",
+            "E) Başlangıç kısmı sadece yargı kararlarında emsal oluşturur."
           ],
           "dogruIndex": 1,
-          "aciklama": "1982 Anayasası, 12 Eylül 1980 müdahalesinin ardından toplumsal düzeni ve devlet otoritesini güçlendirme amacıyla hazırlanmış, ilk hâliyle hak ve özgürlükleri sınırlayıcı hükümler içermiştir. Ancak zaman içinde 1995, 2001, 2004, 2010 ve 2017 gibi önemli değişikliklerle demokratikleşme yönünde ciddi revizyonlara uğramıştır; Cumhurbaşkanlığı Hükümet Sistemi de 2017 değişikliğiyle sonradan eklenmiştir."
-        },
-        {
-          "soru": "Aşağıdakilerden hangisi 1961 Anayasası'nın getirdiği yeniliklerden biri değildir?",
-          "secenekler": [
-            "Anayasa Mahkemesi'nin kurulması",
-            "Kuvvetler ayrılığı ilkesinin benimsenmesi",
-            "Temel hak ve özgürlüklerin geniş biçimde güvence altına alınması",
-            "Cumhuriyet Senatosu'nun kurulması",
-            "Cumhurbaşkanlığı Hükümet Sisteminin getirilmesi"
-          ],
-          "dogruIndex": 4,
-          "aciklama": "Cumhurbaşkanlığı Hükümet Sistemi, 1961 Anayasası ile değil, 2017 yılında yapılan Anayasa değişikliğiyle 1982 Anayasası'na eklenen bir sistemdir. 1961 Anayasası ise Anayasa Mahkemesi'nin kurulması, kuvvetler ayrılığı, geniş hak ve özgürlükler ile Cumhuriyet Senatosu gibi yenilikleri getirmiştir."
-        },
-        {
-          "soru": "Türk anayasaları kronolojik sıraya konulduğunda aşağıdaki sıralamalardan hangisi doğrudur?",
-          "secenekler": [
-            "1924 - 1921 - 1961 - 1982",
-            "1921 - 1961 - 1924 - 1982",
-            "1921 - 1924 - 1961 - 1982",
-            "1961 - 1921 - 1924 - 1982",
-            "1921 - 1924 - 1982 - 1961"
-          ],
-          "dogruIndex": 2,
-          "aciklama": "Türk anayasa tarihinde kronolojik sıralama şu şekildedir: 1921 Anayasası (Kurtuluş Savaşı döneminde), 1924 Anayasası (Cumhuriyetin ilanından sonra), 1961 Anayasası (27 Mayıs 1960 sonrası) ve son olarak hâlen yürürlükte olan 1982 Anayasası (12 Eylül 1980 sonrası)."
+          "aciklama": "1982 Anayasası'nın başlangıç kısmı, Anayasa'nın ayrılmaz bir parçasıdır ve hukuki bağlayıcılığa sahiptir.",
+          "distractorAciklama": "Başlangıç kısmını salt tarihî belge veya emsal kaynağı olarak değerlendiren görüşler hatalıdır. Anayasa metninde başlangıç kısmının bağlayıcı olduğu ifade edilmektedir.",
+          "kaynak": "KPSS-Tipi"
         }
       ]
     },
@@ -296,434 +385,569 @@
       "id": "vatandaslik-yasama",
       "baslik": "Yasama (TBMM)",
       "anlatim": {
-        "ozet": "Yasama yetkisi Türk Milleti adına Türkiye Büyük Millet Meclisi'ne aittir; TBMM kanun yapma, bütçeyi onaylama ve yürütmeyi denetleme gibi temel görevleri yerine getirir.",
+        "ozet": "🏛️ TBMM 600 milletvekilinden oluşur; milletvekili seçilme yaşı 18'dir. Yasama yetkisi devredilemez; kanunları yapar, bütçeyi onaylar, Cumhurbaşkanı'nı denetler.",
         "icerik": [
-          "Türkiye Büyük Millet Meclisi (TBMM), Anayasa'nın 7. maddesine göre yasama yetkisini Türk Milleti adına kullanan tek organdır ve bu yetki devredilemez. TBMM, 600 milletvekilinden oluşur ve milletvekilleri genel oyla, dört yılda bir yapılan seçimlerle belirlenir. Türkiye'de 18 yaşını dolduran her Türk vatandaşı seçme hakkına sahiptir.",
-          "Milletvekili seçilebilmek için Anayasa ve ilgili kanunlarda bazı şartlar aranır: Türk vatandaşı olmak, 18 yaşını doldurmuş olmak (2017 değişikliğiyle yaş şartı 25'ten 18'e indirilmiştir), en az ilkokul mezunu olmak, kısıtlı olmamak, kamu hizmetinden yasaklı olmamak, askerlikle ilişiği bulunmamak ve taksirli suçlar hariç toplam bir yıl veya daha fazla hapis cezası ile ağır hapis cezasına hüküm giymemiş olmak gibi şartlar aranır.",
-          "TBMM'nin başlıca görev ve yetkileri şunlardır: Kanun koymak, değiştirmek ve kaldırmak; bütçe ve kesin hesap kanun tekliflerini görüşmek ve kabul etmek; para basılmasına ve savaş ilanına karar vermek; milletlerarası antlaşmaların onaylanmasını uygun bulmak; genel ve özel af ilanına karar vermek; Cumhurbaşkanı hakkında Meclis soruşturması açılmasına karar vermek ve yürütmeyi denetlemek (soru, Meclis araştırması, genel görüşme, Meclis soruşturması yollarıyla).",
-          "Bir kanunun yapılma süreci şu şekilde işler: Kanun teklifi, milletvekilleri tarafından TBMM Başkanlığına sunulur (2017 değişikliği ile kanun tasarısı kaldırılmış, yürütme organı da artık 'kanun teklifi' yoluyla düzenleme önerebilir hâle gelmiştir). İlgili komisyonlarda görüşülür, Genel Kurulda görüşülüp oylanır ve kabul edilirse Cumhurbaşkanına gönderilir. Cumhurbaşkanı, kanunu 15 gün içinde yayımlar ya da bir kez daha görüşülmek üzere TBMM'ye geri gönderebilir. TBMM kanunu aynen kabul ederse Cumhurbaşkanı bunu yayımlamak zorundadır."
+          "📌 TBMM yapısı: 600 milletvekili, 5 yılda bir seçim, nispi temsil sistemi (ülke genelinde %7 seçim barajı — 2022'den itibaren). Milletvekili seçilme yaşı 18'dir (2017 değişikliği ile 25'ten indirildi).",
+          "📎 Milletvekili dokunulmazlığı: Yasama sorumsuzluğu (söyledikleri için hesap sorulamamaz — mutlak) ve yasama dokunulmazlığı (görev süresince tutuklanamaz — görece, meclis kaldırabilir) olmak üzere iki türdür.",
+          "📎 Kanun yapım süreci: Teklif (milletvekili) veya tasarı (Cumhurbaşkanı) → Komisyon incelemesi → Genel Kurul görüşmeleri → Oylamayla kabul → Cumhurbaşkanı'na gönderim (15 gün) → Yayım veya veto.",
+          "📎 Önemli görevler: Kanun yapmak, bütçeyi onaylamak, savaş ilanı, uluslararası anlaşmaları onaylamak, Cumhurbaşkanlığı kararnamesini geçersiz kılmak, gensoru, meclis soruşturması."
         ],
         "anahtarNoktalar": [
-          "Yasama yetkisi TBMM'ye aittir ve devredilemez (Anayasa md. 7).",
-          "TBMM 600 milletvekilinden oluşur, seçimler 4 yılda bir yapılır.",
-          "Milletvekili seçilme yaşı 2017 değişikliğiyle 25'ten 18'e indirildi.",
-          "Seçmen olma yaşı 18'dir.",
-          "TBMM'nin denetim yolları: soru, Meclis araştırması, genel görüşme, Meclis soruşturması.",
-          "2017 değişikliğiyle 'kanun tasarısı' kaldırıldı, sadece 'kanun teklifi' kaldı.",
-          "Cumhurbaşkanı kanunu 15 gün içinde yayımlar veya TBMM'ye geri gönderebilir.",
-          "TBMM aynı kanunu aynen kabul ederse Cumhurbaşkanı yayımlamak zorundadır."
+          "🔑 Milletvekili seçilme yaşı: 18 (2017'de 25'ten düşürüldü).",
+          "💡 Seçim barajı: %7 (2022 öncesi %10 idi).",
+          "🔑 TBMM, Cumhurbaşkanı'nın vetosuna rağmen kanunu salt çoğunlukla (301 oy) yeniden kabul edebilir.",
+          "💡 Yasama yetkisi TBMM'ye aittir ve devredilemez.",
+          "🔑 TBMM Başkanı, Genel Kurul tarafından gizli oyla seçilir."
         ]
       },
       "sorular": [
         {
-          "soru": "Türkiye'de yasama yetkisi aşağıdakilerden hangisine aittir?",
+          "soru": "2017 anayasa değişikliğinin ardından milletvekili seçilebilmek için gereken asgari yaş kaçtır?",
           "secenekler": [
-            "Cumhurbaşkanına",
-            "Bakanlar Kuruluna",
-            "Anayasa Mahkemesine",
-            "Türkiye Büyük Millet Meclisine",
-            "Yargıtaya"
-          ],
-          "dogruIndex": 3,
-          "aciklama": "Anayasa'nın 7. maddesine göre yasama yetkisi Türk Milleti adına Türkiye Büyük Millet Meclisinindir ve bu yetki devredilemez. Bu, TBMM'nin kanun yapma konusunda tek yetkili organ olduğu anlamına gelir."
-        },
-        {
-          "soru": "TBMM kaç milletvekilinden oluşur?",
-          "secenekler": [
-            "400",
-            "450",
-            "550",
-            "600",
-            "650"
-          ],
-          "dogruIndex": 3,
-          "aciklama": "2017 Anayasa değişikliği ile milletvekili sayısı 550'den 600'e yükseltilmiştir. TBMM, halkın genel oyla dört yılda bir seçtiği 600 milletvekilinden oluşur."
-        },
-        {
-          "soru": "2017 Anayasa değişikliği ile milletvekili seçilebilme yaşı kaça indirilmiştir?",
-          "secenekler": [
-            "18",
-            "21",
-            "25",
-            "30",
-            "35"
-          ],
-          "dogruIndex": 0,
-          "aciklama": "2017 Anayasa değişikliğinden önce milletvekili seçilebilme yaşı 25 iken, bu değişiklikle 18'e indirilmiştir. Böylece seçme yaşı ile seçilme yaşı eşitlenmiş, 18 yaşını dolduran her Türk vatandaşının belirli şartlarla milletvekili seçilebilmesinin önü açılmıştır."
-        },
-        {
-          "soru": "Aşağıdakilerden hangisi TBMM'nin yürütmeyi denetleme yollarından biri değildir?",
-          "secenekler": [
-            "Soru",
-            "Meclis araştırması",
-            "Genel görüşme",
-            "Meclis soruşturması",
-            "Cumhurbaşkanlığı kararnamesi çıkarmak"
-          ],
-          "dogruIndex": 4,
-          "aciklama": "Cumhurbaşkanlığı kararnamesi çıkarmak, Cumhurbaşkanına ait bir yürütme yetkisidir, TBMM'nin denetim yolu değildir. TBMM'nin yürütmeyi denetleme yolları Anayasa'da soru, Meclis araştırması, genel görüşme ve Meclis soruşturması olarak sayılmıştır."
-        },
-        {
-          "soru": "2017 Anayasa değişikliği sonrasında, kanun yapım sürecinde aşağıdakilerden hangisi kaldırılmıştır?",
-          "secenekler": [
-            "Kanun teklifi",
-            "Kanun tasarısı",
-            "Komisyon görüşmesi",
-            "Genel Kurul oylaması",
-            "Cumhurbaşkanının kanunu yayımlaması"
-          ],
-          "dogruIndex": 1,
-          "aciklama": "Parlamenter sistemde hükümetin (Bakanlar Kurulunun) TBMM'ye sunduğu düzenlemelere 'kanun tasarısı' denirdi. Cumhurbaşkanlığı Hükümet Sistemine geçişle birlikte Bakanlar Kurulu kaldırıldığından kanun tasarısı da kaldırılmış, kanun yapma süreci yalnızca milletvekillerinin sunduğu 'kanun teklifi' yoluyla işler hâle gelmiştir."
-        },
-        {
-          "soru": "TBMM'de kabul edilen bir kanunu Cumhurbaşkanı kaç gün içinde yayımlamak ya da bir daha görüşülmek üzere TBMM'ye geri göndermek zorundadır?",
-          "secenekler": [
-            "7 gün",
-            "10 gün",
-            "15 gün",
-            "30 gün",
-            "60 gün"
+            "A) 21",
+            "B) 25",
+            "C) 18",
+            "D) 30",
+            "E) 20"
           ],
           "dogruIndex": 2,
-          "aciklama": "Anayasa'ya göre Cumhurbaşkanı, TBMM'nin kabul ettiği bir kanunu 15 gün içinde yayımlar ya da uygun görmediği maddeleri belirterek bir daha görüşülmek üzere TBMM'ye geri gönderebilir. TBMM, geri gönderilen kanunu aynen kabul ederse Cumhurbaşkanı bu kanunu yayımlamak zorundadır."
+          "aciklama": "2017 anayasa değişikliğiyle milletvekili seçilme yaşı 25'ten 18'e indirilmiştir.",
+          "distractorAciklama": "25, 2017 öncesindeki yaş sınırıdır. 21 ve 30 ise hiç uygulanmamıştır. Güncel yaş sınırı 18'dir.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "TBMM seçimleri kaç yılda bir yapılır?",
+          "soru": "TBMM kaç milletvekilinden oluşmaktadır?",
           "secenekler": [
-            "2 yılda bir",
-            "3 yılda bir",
-            "4 yılda bir",
-            "5 yılda bir",
-            "7 yılda bir"
+            "A) 400",
+            "B) 450",
+            "C) 550",
+            "D) 600",
+            "E) 650"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "2017 anayasa değişikliğiyle TBMM'nin milletvekili sayısı 550'den 600'e çıkarılmıştır.",
+          "distractorAciklama": "550, 2017 öncesindeki milletvekili sayısıdır. Diğer rakamlar Türk anayasa tarihinde hiç uygulanmamıştır. Güncel sayı 600'dür.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "Yasama sorumsuzluğu ile yasama dokunulmazlığına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+          "secenekler": [
+            "A) Her ikisi de mutlak niteliktedir ve kaldırılamaz.",
+            "B) Yasama sorumsuzluğu mutlak, yasama dokunulmazlığı görece niteliktedir.",
+            "C) Yasama dokunulmazlığı mutlak, yasama sorumsuzluğu görece niteliktedir.",
+            "D) Her ikisi de TBMM kararıyla kaldırılabilir.",
+            "E) Yasama dokunulmazlığı yalnızca görev dışı eylemleri kapsar."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Yasama sorumsuzluğu mutlak niteliktedir; TBMM'deki oy ve sözler nedeniyle milletvekili hiçbir şekilde sorumlu tutulamaz. Yasama dokunulmazlığı ise TBMM kararıyla kaldırılabileceğinden görece niteliktedir.",
+          "distractorAciklama": "Yasama dokunulmazlığının kaldırılabilmesi (görece) ile yasama sorumsuzluğunun hiçbir şekilde kaldırılamaması (mutlak) birbiriyle karıştırılmamalıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "TBMM'de kanun teklifi verme yetkisi 2017 sonrasında kime aittir?",
+          "secenekler": [
+            "A) Yalnızca Cumhurbaşkanı'na",
+            "B) Yalnızca Bakanlar Kurulu'na",
+            "C) Milletvekilleri ile Cumhurbaşkanı'na",
+            "D) Yalnızca milletvekillerine",
+            "E) Milletvekillerine ve Danıştay'a"
           ],
           "dogruIndex": 2,
-          "aciklama": "Anayasa'ya göre TBMM ve Cumhurbaşkanlığı seçimleri dört yılda bir, aynı gün yapılır. Bu düzenleme, 2017 değişikliğiyle Cumhurbaşkanlığı seçimi ile TBMM seçimlerinin eş zamanlı yapılmasını öngörmektedir."
+          "aciklama": "2017 anayasa değişikliğinin ardından kanun teklif etme yetkisi milletvekillerine ve Cumhurbaşkanı'na aittir. Bakanlar Kurulu kaldırıldığından hükümet tasarısı artık yoktur.",
+          "distractorAciklama": "Bakanlar Kurulu 2017'de kaldırılmıştır. Danıştay'ın kanun teklif yetkisi bulunmamaktadır. Doğru cevap milletvekilleri ile Cumhurbaşkanı'dır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Aşağıdakilerden hangisi milletvekili seçilme şartlarından biri değildir?",
+          "soru": "Cumhurbaşkanı, TBMM'de kabul edilen bir kanunu kaç gün içinde yayımlamalı ya da geri göndermelidir?",
           "secenekler": [
-            "Türk vatandaşı olmak",
-            "18 yaşını doldurmuş olmak",
-            "En az ilkokul mezunu olmak",
-            "Askerlikle ilişiği bulunmamak",
-            "Yükseköğretim mezunu olmak zorunluluğu"
+            "A) 7 gün",
+            "B) 10 gün",
+            "C) 15 gün",
+            "D) 30 gün",
+            "E) 60 gün"
           ],
-          "dogruIndex": 4,
-          "aciklama": "Milletvekili seçilebilmek için Anayasa ve Milletvekili Seçimi Kanunu'na göre en az ilkokul mezunu olmak yeterlidir; yükseköğretim mezunu olma zorunluluğu yoktur. Diğer şıklarda sayılan Türk vatandaşı olmak, 18 yaşını doldurmuş olmak ve askerlikle ilişiği bulunmamak ise gerçek seçilme şartlarındandır."
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 89. maddesine göre Cumhurbaşkanı, TBMM'ce kabul edilen kanunları 15 gün içinde yayımlar ya da bir daha görüşülmek üzere TBMM'ye geri gönderir.",
+          "distractorAciklama": "7, 10, 30 ve 60 gün seçenekleri Anayasa'da belirtilen 15 güne karşı dikkat dağıtıcılardır. Doğru süre 15 gündür.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "TBMM'nin bütçe ile ilgili görevi aşağıdakilerden hangisidir?",
+          "soru": "Aşağıdakilerden hangisi TBMM'nin görev ve yetkileri arasında yer almaz?",
           "secenekler": [
-            "Bütçeyi tek başına hazırlamak",
-            "Bütçe ve kesin hesap kanun tekliflerini görüşüp kabul etmek",
-            "Bütçeyi sadece denetlemek, onaylama yetkisi olmamak",
-            "Bütçe hazırlama yetkisini Anayasa Mahkemesine devretmek",
-            "Bütçeyi yalnızca bilgi amaçlı incelemek"
+            "A) Kanun yapmak",
+            "B) Bütçeyi onaylamak",
+            "C) Savaş ilanı",
+            "D) Cumhurbaşkanlığı kararnamesini doğrudan değiştirmek",
+            "E) Uluslararası anlaşmaları onaylamak"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "TBMM, kanun çıkararak kararnameleri geçersiz kılabilir; ancak kararnameleri doğrudan değiştirme yetkisi yoktur.",
+          "distractorAciklama": "TBMM'nin denetim yollarından biri kanun çıkarmaktır; bu ile kararnameyi doğrudan değiştirmek farklı kavramlardır. TBMM doğrudan değiştiremez.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "2022 yılında yapılan değişiklikle Türkiye'deki seçim barajı kaça indirilmiştir?",
+          "secenekler": [
+            "A) %5",
+            "B) %7",
+            "C) %10",
+            "D) %3",
+            "E) %8"
           ],
           "dogruIndex": 1,
-          "aciklama": "TBMM'nin en önemli görevlerinden biri, Cumhurbaşkanı tarafından hazırlanıp TBMM'ye sunulan bütçe kanun teklifini ve kesin hesap kanun tekliflerini görüşüp kabul etmektir. Bütçenin yürütme tarafından hazırlanıp yasama tarafından onaylanması, kuvvetler ayrılığı ve mali denetimin bir gereğidir."
+          "aciklama": "7 Nisan 2022 tarihli kanun değişikliğiyle seçim barajı %10'dan %7'ye indirilmiştir.",
+          "distractorAciklama": "%10 eski baraj oranıdır. %5, %3 ve %8 ise Türkiye'de uygulanmamıştır. Güncel oran %7'dir.",
+          "kaynak": "2024-Güncel"
         },
         {
-          "soru": "Anayasa'nın 7. maddesine göre yasama yetkisinin temel özelliği aşağıdakilerden hangisidir?",
+          "soru": "TBMM'nin yürütmeyi denetleme yollarından biri olan 'gensoru' kime yöneltilebilir?",
           "secenekler": [
-            "Cumhurbaşkanı ile paylaşılır",
-            "Devredilemez",
-            "Sadece olağanüstü hâllerde kullanılır",
-            "Yargı organlarınca onaylanmadan kullanılamaz",
-            "Beş yılda bir yeniden düzenlenir"
+            "A) Yalnızca Cumhurbaşkanı'na",
+            "B) Cumhurbaşkanı yardımcıları ve bakanlara",
+            "C) Anayasa Mahkemesi üyelerine",
+            "D) Danıştay Başkanı'na",
+            "E) Tüm kamu görevlilerine"
           ],
           "dogruIndex": 1,
-          "aciklama": "Anayasa'nın 7. maddesi 'Yasama yetkisi Türk Milleti adına Türkiye Büyük Millet Meclisinindir. Bu yetki devredilemez.' hükmünü içerir. Bu ilke, yasama yetkisinin başka bir organa (örneğin yürütmeye) bırakılamayacağını, TBMM'nin bu konuda tekel konumunda olduğunu ifade eder."
+          "aciklama": "Anayasa'nın 98. maddesine göre gensoru yalnızca Cumhurbaşkanı yardımcıları ve bakanlara yöneltilebilir. Cumhurbaşkanı'na gensoru verilemez.",
+          "distractorAciklama": "Cumhurbaşkanı'nın denetimi meclis soruşturması ve Yüce Divan yoluyla gerçekleşir. Gensoru yalnızca Cumhurbaşkanı yardımcıları ve bakanlar için geçerlidir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Yasama yetkisinin devredilmezliği ilkesi gereği aşağıdakilerden hangisi doğrudur?",
+          "secenekler": [
+            "A) Cumhurbaşkanı hiçbir şekilde düzenleyici işlem yapamaz.",
+            "B) TBMM, yetki kanunuyla Cumhurbaşkanlığı'na sınırsız kararname yetkisi verebilir.",
+            "C) TBMM kanun yapma yetkisini başka bir organa devredemez.",
+            "D) Cumhurbaşkanlığı kararnameleri kanunla çakışırsa kararname üstün gelir.",
+            "E) Yönetmelikler kanun hükmündedir."
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Yasama yetkisi TBMM'ye aittir ve devredilemez; TBMM kanun yapma işlevini başka hiçbir organa devredemez.",
+          "distractorAciklama": "Cumhurbaşkanlığı kararnamesi yetkisi doğrudan Anayasa'dan kaynaklanır; kanunla çakışırsa kanun üstün gelir. Devredilmezlik ilkesi yetki kanunu çıkarılmasını da kısıtlar.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "TBMM Başkanı nasıl seçilir?",
+          "secenekler": [
+            "A) Cumhurbaşkanı tarafından atanır.",
+            "B) En fazla oy alan parti grubunun önerisiyle belirlenir.",
+            "C) TBMM Genel Kurulu tarafından gizli oyla seçilir.",
+            "D) Meclis üyelerinin açık oyuyla belirlenir.",
+            "E) Anayasa Mahkemesi tarafından onaylanır."
+          ],
+          "dogruIndex": 2,
+          "aciklama": "TBMM Başkanı, Genel Kurul tarafından gizli oyla seçilir.",
+          "distractorAciklama": "TBMM Başkanı Cumhurbaşkanı tarafından atanmaz; bu yasama bağımsızlığını zedeler. Seçim gizli oyla ve Genel Kurul tarafından gerçekleşir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "TBMM'de bir kanunun kabulü için gereken karar yeter sayısı nedir?",
+          "secenekler": [
+            "A) Üye tam sayısının salt çoğunluğu (301 oy) aranır.",
+            "B) Toplantıya katılanların salt çoğunluğu, en az 200 oy",
+            "C) Toplantıya katılanların salt çoğunluğu, en az 151 oy",
+            "D) Üye tam sayısının 2/3'ü (400 oy)",
+            "E) Üye tam sayısının 3/5'i (360 oy)"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Anayasa'nın 96. maddesine göre TBMM üye tam sayısının en az 1/3'ü ile toplanır; kararlar toplantıya katılanların salt çoğunluğuyla alınır, ancak bu sayı en az 200'den az olamaz.",
+          "distractorAciklama": "151 tek başına toplantı yeter sayısı değildir; en az 200 oy zorunluluğu vardır. 301 salt çoğunluk değil, mutlak çoğunluktur ve anayasa değişikliklerinde aranır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi milletvekili seçilebilmek için Anayasa'da yer alan koşullardan biri değildir?",
+          "secenekler": [
+            "A) En az 18 yaşında olmak",
+            "B) Türk vatandaşı olmak",
+            "C) İlköğretimini tamamlamış olmak",
+            "D) Üniversite mezunu olmak",
+            "E) Kısıtlı olmamak"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Milletvekili seçilme koşulları arasında üniversite mezunu olmak yer almaz. Koşullar: 18 yaş, Türk vatandaşlığı, ilköğretim mezunu olmak, kısıtlı olmamak, askerliği yapmış olmak, belirli suçlardan mahkûm olmamak.",
+          "distractorAciklama": "Üniversite mezuniyeti milletvekili için koşul değildir. Doğru koşullar arasında yalnızca ilköğretim mezuniyeti yer alır.",
+          "kaynak": "KPSS-Tipi"
         }
       ]
     },
     {
       "id": "vatandaslik-yurutme",
-      "baslik": "Yürütme (Cumhurbaşkanı ve Bakanlıklar)",
+      "baslik": "Yürütme (Cumhurbaşkanlığı Hükümet Sistemi)",
       "anlatim": {
-        "ozet": "2017 Anayasa değişikliğiyle yürütme yetkisi tek başına, halk tarafından doğrudan seçilen Cumhurbaşkanına verilmiş; Başbakanlık ve Bakanlar Kurulu kaldırılarak Cumhurbaşkanlığı Hükümet Sistemine geçilmiştir.",
+        "ozet": "🇹🇷 2017'den bu yana Türkiye'de Cumhurbaşkanlığı hükümet sistemi geçerlidir. Cumhurbaşkanı hem devlet başkanı hem yürütme organının başıdır; Bakanlar Kurulu kaldırılmıştır.",
         "icerik": [
-          "1982 Anayasası'nın ilk hâlinde yürütme yetkisi Cumhurbaşkanı ve Bakanlar Kurulu (Başbakan ve bakanlardan oluşan) tarafından kullanılırdı; bu parlamenter sistemin bir özelliğiydi. 2017 Anayasa değişikliği ile bu yapı tamamen değişmiş, Başbakanlık makamı ve Bakanlar Kurulu kaldırılmış, yürütme yetkisi ve görevi tek başına Cumhurbaşkanına verilmiştir. Bu yeni sisteme 'Cumhurbaşkanlığı Hükümet Sistemi' denir.",
-          "Cumhurbaşkanı artık TBMM tarafından değil, halk tarafından doğrudan, beş yıllık (Anayasa'da dört yıllık dönem öngörülmüş olup TBMM ile eş zamanlı seçim esası benimsenmiştir) bir süre için seçilir ve bir kişi en fazla iki defa Cumhurbaşkanı seçilebilir. Cumhurbaşkanı seçilebilmek için 40 yaşını doldurmuş, yükseköğrenim yapmış ve milletvekili seçilme yeterliliğine sahip olmak gerekir. Cumhurbaşkanı seçimi, ilk turda salt çoğunluk (geçerli oyların yarıdan fazlası) sağlanamazsa en çok oy alan iki aday arasında ikinci tur yapılarak sonuçlandırılır.",
-          "Cumhurbaşkanının başlıca görev ve yetkileri şunlardır: Devletin başı olarak Türkiye Cumhuriyeti'ni ve Türk Milletinin birliğini temsil etmek; gerekli gördüğü hâllerde Bakanlar Kurulu yerine geçen 'Cumhurbaşkanlığı kararnamesi' çıkarmak (temel haklar, kişi hakları ve ödevleri, siyasi haklar ve ödevler kararname ile düzenlenemez); üst düzey kamu yöneticilerini atamak; yürütme yetkisine ilişkin kararlar almak; TBMM seçimlerinin yenilenmesine karar vermek; Bakanlıkları kurmak, kaldırmak; yardımcılarını ve bakanları atamak ve görevden almak; milletlerarası antlaşmaları onaylamak ve yayımlamak; Genelkurmay Başkanını atamak; af ilanına karar vermek (kısmi af) gibi yetkilerdir.",
-          "Cumhurbaşkanı yardımcıları ve bakanlar, TBMM üyeleri arasından veya milletvekili seçilme yeterliliğine sahip kişiler arasından Cumhurbaşkanı tarafından atanır ve yine Cumhurbaşkanı tarafından görevden alınabilir. Bakanlar, Cumhurbaşkanına karşı sorumludur; eski sistemdeki gibi TBMM'ye karşı kolektif (Bakanlar Kurulu) sorumluluk artık yoktur. Cumhurbaşkanı'nın cezai sorumluluğu ise TBMM üye tamsayısının salt çoğunluğunun vereceği önergeyle başlatılan Meclis soruşturması ve nitelikli çoğunlukla Yüce Divan'a sevk usulüyle mümkündür."
+          "📌 Cumhurbaşkanı: Halk tarafından doğrudan seçilir, görev süresi 5 yıl (en fazla 2 dönem). Seçilebilmek için: Türk vatandaşı olmak, 40 yaşını doldurmuş olmak, yükseköğrenim görmüş olmak, milletvekili seçilme yeterliliğine sahip olmak.",
+          "📎 Cumhurbaşkanı'nın başlıca yetkileri: Kanunları yayımlamak veya geri göndermek; Cumhurbaşkanlığı kararnamesi çıkarmak; üst kademe kamu yöneticilerini atamak ve görevden almak; TBMM'yi olağanüstü toplantıya çağırmak; olağanüstü hal ilan etmek.",
+          "📎 Cumhurbaşkanı yardımcıları ve bakanlar: Cumhurbaşkanı tarafından atanır ve görevden alınır. TBMM üyeliğiyle bağdaşmaz. Gensoru ile denetlenebilirler.",
+          "📎 Cumhurbaşkanlığı kararnameleri: Yürütme alanını düzenler; Anayasa'da münhasıran kanunla düzenlenmesi gereken konularda çıkarılamaz; kanunla çelişirse kanun uygulanır."
         ],
         "anahtarNoktalar": [
-          "2017 değişikliğiyle Başbakanlık ve Bakanlar Kurulu kaldırıldı.",
-          "Yürütme yetkisi tek başına Cumhurbaşkanına aittir.",
-          "Cumhurbaşkanı halk tarafından doğrudan seçilir, en fazla iki defa seçilebilir.",
-          "Cumhurbaşkanı adayında 40 yaş ve yükseköğrenim şartı aranır.",
-          "Cumhurbaşkanlığı kararnamesi ile temel haklar düzenlenemez.",
-          "Bakanlar, TBMM'ye değil Cumhurbaşkanına karşı sorumludur.",
-          "Cumhurbaşkanı yardımcılarını ve bakanları atar, görevden alır.",
-          "Cumhurbaşkanının cezai sorumluluğu Meclis soruşturması ve Yüce Divan yoluyla işler."
+          "🔑 Cumhurbaşkanı seçilme yaşı: 40.",
+          "💡 Bakanları atama ve görevden alma yetkisi Cumhurbaşkanı'na aittir.",
+          "🔑 Cumhurbaşkanlığı kararnamesi kanunla çelişirse kanun üstün gelir.",
+          "💡 Olağanüstü hal ilan edilirse TBMM her seferinde en fazla 4 ay uzatabilir.",
+          "🔑 Cumhurbaşkanı'nın yargılanması: Yüce Divan (Anayasa Mahkemesi) yoluyla gerçekleşir."
         ]
       },
       "sorular": [
         {
-          "soru": "2017 Anayasa değişikliği ile Cumhurbaşkanlığı Hükümet Sistemine geçilmesiyle birlikte aşağıdakilerden hangisi kaldırılmıştır?",
+          "soru": "Cumhurbaşkanlığı hükümet sisteminde bakanları atama ve görevden alma yetkisi kime aittir?",
           "secenekler": [
-            "Cumhurbaşkanlığı",
-            "TBMM",
-            "Anayasa Mahkemesi",
-            "Yargıtay",
-            "Başbakanlık ve Bakanlar Kurulu"
+            "A) TBMM'ye",
+            "B) Başbakana",
+            "C) Cumhurbaşkanı'na",
+            "D) Bakanlar Kurulu'na",
+            "E) Danıştay'a"
           ],
-          "dogruIndex": 4,
-          "aciklama": "2017 Anayasa değişikliği ile parlamenter sistemin temel unsurları olan Başbakanlık makamı ve Bakanlar Kurulu tamamen kaldırılmış, yürütme yetkisi tek başına Cumhurbaşkanına verilmiştir. Bu, sistemin en köklü değişikliklerinden biridir."
+          "dogruIndex": 2,
+          "aciklama": "2017 anayasa değişikliğiyle kurulan Cumhurbaşkanlığı hükümet sisteminde bakanları atama ve görevden alma yetkisi münhasıran Cumhurbaşkanı'na aittir.",
+          "distractorAciklama": "Başbakanlık ve Bakanlar Kurulu 2017'de kaldırıldı. TBMM ve Danıştay bu konuda yetkili değildir. Bakanlar doğrudan Cumhurbaşkanı'nca atanır.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "Mevcut sistemde Cumhurbaşkanı kim tarafından seçilir?",
+          "soru": "Türkiye Cumhurbaşkanı seçilebilmek için gereken asgari yaş kaçtır?",
           "secenekler": [
-            "TBMM tarafından",
-            "Anayasa Mahkemesi tarafından",
-            "Bakanlar Kurulu tarafından",
-            "Halk tarafından doğrudan",
-            "Yüksek Seçim Kurulu tarafından"
+            "A) 18",
+            "B) 25",
+            "C) 30",
+            "D) 40",
+            "E) 45"
           ],
           "dogruIndex": 3,
-          "aciklama": "2017 değişikliği öncesinde Cumhurbaşkanı TBMM tarafından seçilirken, değişiklik sonrasında Cumhurbaşkanı halk tarafından doğrudan, genel oyla seçilmektedir. Bu, Cumhurbaşkanlığı Hükümet Sisteminin temel özelliklerinden biridir ve Cumhurbaşkanına güçlü bir demokratik meşruiyet kazandırır."
+          "aciklama": "Anayasa'nın 101. maddesine göre Cumhurbaşkanı seçilebilmek için 40 yaşını doldurmuş olmak gerekir.",
+          "distractorAciklama": "18 milletvekili, 25 eski milletvekili seçilme yaşıdır. 30 ve 45 anayasada yer almaz. Cumhurbaşkanlığı için asgari yaş 40'tır.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "Bir kişi en fazla kaç defa Cumhurbaşkanı seçilebilir?",
+          "soru": "Cumhurbaşkanlığı kararnamesi hangi koşulda çıkarılamaz?",
           "secenekler": [
-            "Bir defa",
-            "İki defa",
-            "Üç defa",
-            "Sınırsız sayıda",
-            "Dört defa"
+            "A) Her konuda çıkarılabilir.",
+            "B) Anayasa'da münhasıran kanunla düzenleneceği belirtilen konularda çıkarılamaz.",
+            "C) Temel haklar yalnızca kararname ile düzenlenebilir.",
+            "D) Kararname her zaman kanundan üstündür.",
+            "E) Kararname TBMM onayı olmadan geçerli olamaz."
           ],
           "dogruIndex": 1,
-          "aciklama": "Anayasa'ya göre bir kişi en fazla iki defa Cumhurbaşkanı seçilebilir. Bu sınırlama, yürütme yetkisinin tek elde aşırı uzun süre toplanmasının önüne geçmeyi amaçlayan bir denge mekanizmasıdır."
+          "aciklama": "Anayasa'nın 104. maddesine göre CB kararnamesi, Anayasa'da münhasıran kanunla düzenleneceği öngörülen konularda ve temel haklara ilişkin hususlarda çıkarılamaz.",
+          "distractorAciklama": "Kararname kanunla çeliştiğinde kanun üstün gelir. TBMM onayı kararname için zorunlu değildir.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Cumhurbaşkanı seçilebilmek için aranan şartlardan biri aşağıdakilerden hangisidir?",
+          "soru": "Cumhurbaşkanı'nın görev süresi ve yeniden seçilme sınırı nedir?",
           "secenekler": [
-            "En az 30 yaşını doldurmuş olmak",
-            "En az 40 yaşını doldurmuş ve yükseköğrenim yapmış olmak",
-            "Sadece TBMM üyesi olmak",
-            "En az iki dönem milletvekilliği yapmış olmak",
-            "Bakanlar Kurulunda görev almış olmak"
+            "A) 4 yıl, en fazla 3 dönem",
+            "B) 5 yıl, en fazla 2 dönem",
+            "C) 7 yıl, yalnızca 1 dönem",
+            "D) 5 yıl, sınır yok",
+            "E) 4 yıl, en fazla 2 dönem"
           ],
           "dogruIndex": 1,
-          "aciklama": "Anayasa'ya göre Cumhurbaşkanı seçilebilmek için 40 yaşını doldurmuş, yükseköğrenim yapmış ve milletvekili seçilme yeterliliğine sahip Türk vatandaşı olmak gerekir. Bu şartlar, Cumhurbaşkanlığı makamının önemine uygun bir olgunluk ve deneyim düzeyini garanti altına almayı amaçlar."
+          "aciklama": "Anayasa'nın 101. maddesine göre Cumhurbaşkanı'nın görev süresi 5 yıldır ve bir kişi en fazla 2 kez Cumhurbaşkanı seçilebilir.",
+          "distractorAciklama": "7 yıl 1 dönem eski sisteme aitti. 4 yıl birçok Batı ülkesinde uygulansa da Türkiye'de süre 5 yıldır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Cumhurbaşkanlığı kararnamesi ile aşağıdakilerden hangisi düzenlenemez?",
+          "soru": "Olağanüstü hal ilanı kimin yetkisindedir ve TBMM kaç ay uzatabilir?",
           "secenekler": [
-            "Temel haklar, kişi hakları ve ödevleri ile siyasi haklar ve ödevler",
-            "Bakanlıkların kuruluşu",
-            "Üst düzey kamu yöneticilerinin atanma usulleri",
-            "Cumhurbaşkanlığı teşkilatının yapısı",
-            "İdari teşkilatla ilgili düzenlemeler"
-          ],
-          "dogruIndex": 0,
-          "aciklama": "Anayasa'ya göre temel haklar, kişi hakları ve ödevleri ile siyasi haklar ve ödevler Cumhurbaşkanlığı kararnamesiyle düzenlenemez; bunlar ancak kanunla düzenlenebilir. Bu sınırlama, temel hak ve özgürlüklerin güvence altına alınması ve yürütmenin keyfi düzenleme yapmasının önlenmesi amacını taşır."
-        },
-        {
-          "soru": "Mevcut sistemde bakanlar, görevlerinden dolayı kime karşı sorumludur?",
-          "secenekler": [
-            "TBMM'ye karşı kolektif olarak",
-            "Cumhurbaşkanına karşı",
-            "Anayasa Mahkemesine karşı",
-            "Danıştaya karşı",
-            "Yargıtaya karşı"
+            "A) TBMM ilan eder; Cumhurbaşkanı uzatır.",
+            "B) Cumhurbaşkanı ilan eder; TBMM her seferinde en fazla 4 ay uzatır.",
+            "C) Cumhurbaşkanı ilan eder; TBMM her seferinde en fazla 3 ay uzatır.",
+            "D) Bakanlar Kurulu ilan eder; TBMM onaylar.",
+            "E) Danıştay ilan eder; TBMM onaylar."
           ],
           "dogruIndex": 1,
-          "aciklama": "Eski parlamenter sistemde Bakanlar Kurulu TBMM'ye karşı kolektif olarak sorumluydu (güvenoyu mekanizması). Cumhurbaşkanlığı Hükümet Sisteminde ise bakanlar, Cumhurbaşkanı tarafından atanıp görevden alındıkları için doğrudan Cumhurbaşkanına karşı sorumludur; TBMM'ye karşı klasik anlamda güvenoyu sorumluluğu kaldırılmıştır."
+          "aciklama": "Anayasa'nın 119. maddesine göre olağanüstü hali Cumhurbaşkanı ilan eder. TBMM her seferinde dörder ayı geçmemek üzere uzatabilir veya kaldırabilir.",
+          "distractorAciklama": "Bakanlar Kurulu 2017'de kaldırıldı. 3 aylık uzatma seçeneği yanlıştır; doğru süre 4 aydır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Cumhurbaşkanının cezai sorumluluğuna gidilmesi için ilk adım olan Meclis soruşturması açılması, TBMM üye tamsayısının hangi oranının teklifiyle başlatılabilir?",
+          "soru": "Cumhurbaşkanı'nın cezai sorumluluğu hangi mahkemede yargılanır?",
           "secenekler": [
-            "Salt çoğunluğu",
-            "Üye tamsayısının beşte biri",
-            "Üye tamsayısının dörtte biri",
-            "Üye tamsayısının onda biri",
-            "Üye tamsayısının tamamı"
+            "A) Yargıtay Ceza Genel Kurulu",
+            "B) Anayasa Mahkemesi (Yüce Divan sıfatıyla)",
+            "C) Danıştay",
+            "D) Ağır Ceza Mahkemesi",
+            "E) Uyuşmazlık Mahkemesi"
           ],
-          "dogruIndex": 0,
-          "aciklama": "Anayasa'ya göre Cumhurbaşkanı hakkında bir suç işlediği iddiasıyla Meclis soruşturması açılması, TBMM üye tamsayısının salt çoğunluğunun (yarıdan bir fazlasının) vereceği önergeyle teklif edilebilir. Bu süreç, nitelikli çoğunluklarla devam ederek Cumhurbaşkanının Yüce Divan'a (Anayasa Mahkemesi) sevkiyle sonuçlanabilir."
+          "dogruIndex": 1,
+          "aciklama": "Anayasa'nın 148. maddesine göre Cumhurbaşkanı göreviyle ilgili suçlamalarda Anayasa Mahkemesi'nin Yüce Divan sıfatıyla yargılanır.",
+          "distractorAciklama": "Yargıtay ve Ağır Ceza Mahkemeleri sıradan ceza davalarına bakar. Cumhurbaşkanı'nın yargılanması özel bir usule tabidir: Anayasa Mahkemesi/Yüce Divan.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Cumhurbaşkanı yardımcıları ve bakanlar nasıl göreve gelir?",
+          "soru": "Cumhurbaşkanı yardımcısı ve bakanların TBMM üyeliğiyle ilişkisi nasıldır?",
           "secenekler": [
-            "TBMM tarafından seçilirler",
-            "Halk tarafından doğrudan seçilirler",
-            "Cumhurbaşkanı tarafından atanırlar",
-            "Anayasa Mahkemesi tarafından onaylanır",
-            "Yüksek Seçim Kurulu tarafından belirlenir"
-          ],
-          "dogruIndex": 2,
-          "aciklama": "Cumhurbaşkanlığı Hükümet Sisteminde Cumhurbaşkanı yardımcıları ve bakanlar, TBMM üyeleri arasından veya milletvekili seçilme yeterliliğine sahip kişiler arasından doğrudan Cumhurbaşkanı tarafından atanır ve yine Cumhurbaşkanı tarafından görevden alınabilir."
-        },
-        {
-          "soru": "Cumhurbaşkanlığı seçiminde ilk turda hiçbir aday geçerli oyların salt çoğunluğunu sağlayamazsa nasıl bir yol izlenir?",
-          "secenekler": [
-            "Seçim bir yıl ertelenir",
-            "TBMM yeni bir Cumhurbaşkanı belirler",
-            "En çok oy alan iki aday arasında ikinci tur yapılır",
-            "Seçime katılan tüm adaylar arasında kura çekilir",
-            "Anayasa Mahkemesi sonucu belirler"
+            "A) TBMM üyeliğiyle tam uyumludur.",
+            "B) Tercihli olup her ikisi seçime göre karar verir.",
+            "C) Cumhurbaşkanı yardımcılığı ve bakanlık TBMM üyeliğiyle bağdaşmaz.",
+            "D) Yalnızca bakanlar TBMM üyesi olamaz.",
+            "E) Yalnızca Cumhurbaşkanı yardımcısı TBMM üyesi olabilir."
           ],
           "dogruIndex": 2,
-          "aciklama": "Anayasa'ya göre Cumhurbaşkanlığı seçiminde ilk oylamada adaylardan biri geçerli oyların salt çoğunluğunu (yarıdan fazlasını) alamazsa, bu oylamayı izleyen ikinci pazar günü ikinci tur oylama yapılır. İkinci tura, ilk turda en çok oy alan iki aday katılır ve en fazla oyu alan Cumhurbaşkanı seçilir."
+          "aciklama": "Anayasa'nın 106. maddesine göre Cumhurbaşkanı yardımcıları ve bakanlar atanmaları halinde milletvekilliği sıfatlarını kaybederler; bu görevler TBMM üyeliğiyle bağdaşmaz.",
+          "distractorAciklama": "Parlamenter sistemde bakanlar genellikle milletvekiliydi. Cumhurbaşkanlığı hükümet sisteminde kuvvetler ayrılığı gereği bu iki görev bağdaşmaz kılınmıştır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Aşağıdakilerden hangisi Cumhurbaşkanının görev ve yetkilerinden biridir?",
+          "soru": "Cumhurbaşkanı'nın TBMM'yi olağanüstü toplantıya çağırma yetkisi nasıl kullanılır?",
           "secenekler": [
-            "Kanun teklifi vermek ve oylamak",
-            "Anayasa Mahkemesi kararlarını denetlemek",
-            "Bakanlıkları kurmak ve kaldırmak",
-            "TBMM Başkanını seçmek",
-            "Milletvekillerinin dokunulmazlığını kaldırmak"
+            "A) Yalnızca Anayasa Mahkemesi kararıyla",
+            "B) Gerekli gördüğü her durumda",
+            "C) TBMM Başkanı'nın onayıyla",
+            "D) Bakanlar Kurulu'nun teklifiyle",
+            "E) Danıştay'ın tavsiyesiyle"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Anayasa'nın 93. maddesine göre Cumhurbaşkanı, gerekli gördüğü hallerde TBMM'yi olağanüstü toplantıya çağırabilir.",
+          "distractorAciklama": "Bu yetki doğrudan Cumhurbaşkanı'na aittir; başka bir kurumun onayı veya teklifi gerekmez. Bakanlar Kurulu kaldırılmıştır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Cumhurbaşkanı kanunu veto ettiğinde (geri gönderdiğinde) TBMM nasıl hareket edebilir?",
+          "secenekler": [
+            "A) Kanun düşer; yeniden görüşülemez.",
+            "B) Üye tam sayısının 2/3 çoğunluğuyla yeniden kabul edebilir.",
+            "C) Üye tam sayısının salt çoğunluğuyla (301 oy) yeniden kabul edebilir.",
+            "D) Yalnızca Anayasa Mahkemesi'nin onayıyla kabul edilebilir.",
+            "E) Cumhurbaşkanı'nın onayı her halükarda zorunludur."
           ],
           "dogruIndex": 2,
-          "aciklama": "Cumhurbaşkanı, yürütme yetkisinin tek sahibi olarak bakanlıkları kurma ve kaldırma yetkisine sahiptir. Kanun teklifi verme ve oylama TBMM'nin (milletvekillerinin) yetkisidir; TBMM Başkanını TBMM kendi üyeleri arasından seçer; milletvekili dokunulmazlığını kaldırma yetkisi de TBMM Genel Kuruluna aittir."
+          "aciklama": "Anayasa'nın 89. maddesine göre Cumhurbaşkanı'nın geri gönderdiği kanun TBMM'de değiştirilmeksizin üye tam sayısının salt çoğunluğuyla (301 oy) yeniden kabul edilirse Cumhurbaşkanı yayımlamak zorundadır.",
+          "distractorAciklama": "2/3 çoğunluk anayasa değişikliklerinde aranır. Geri gönderilen kanunun kabulü için salt çoğunluk (301 oy) yeterlidir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Cumhurbaşkanlığı hükümet sisteminde yürütme yetkisi anayasal olarak kime verilmiştir?",
+          "secenekler": [
+            "A) TBMM'ye",
+            "B) Başbakana",
+            "C) Cumhurbaşkanı'na",
+            "D) Bakanlar Kurulu'na",
+            "E) Devlet Denetleme Kurulu'na"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "2017 anayasa değişikliğiyle yürütme yetkisi ve görevi münhasıran Cumhurbaşkanı'na verilmiştir.",
+          "distractorAciklama": "Parlamenter sistemde yürütme Bakanlar Kurulu'ndaydı. 2017'de sistem değişti; yürütme Cumhurbaşkanı'nda toplandı. TBMM yasama organıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Cumhurbaşkanlığı seçiminde hiçbir aday salt çoğunluğu sağlayamazsa ne olur?",
+          "secenekler": [
+            "A) TBMM Cumhurbaşkanı'nı seçer.",
+            "B) Seçim iptal edilir ve yenilenir.",
+            "C) En çok oy alan iki aday arasında ikinci tur yapılır.",
+            "D) Anayasa Mahkemesi belirleme yapar.",
+            "E) Cumhurbaşkanı yardımcısı görevi üstlenir."
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 101. maddesine göre ilk turda salt çoğunluk sağlanamazsa en fazla oy alan iki aday ikinci tura kalır; ikinci turda en fazla oy alan aday seçilir.",
+          "distractorAciklama": "İki turlu seçim sistemi Türkiye'de uygulanmaktadır. TBMM'nin seçimi veya Anayasa Mahkemesi'nin müdahalesi söz konusu değildir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi Cumhurbaşkanı'nın atama yetkisi kapsamında yer almaz?",
+          "secenekler": [
+            "A) Bakanların atanması",
+            "B) Cumhurbaşkanı yardımcılarının atanması",
+            "C) Üst kademe kamu yöneticilerinin atanması",
+            "D) Milletvekillerinin atanması",
+            "E) Yargıtay Cumhuriyet Başsavcısı'nın atanması"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Milletvekilleri seçimle göreve gelir; Cumhurbaşkanı tarafından atanmaz.",
+          "distractorAciklama": "Bakanlar, CB yardımcıları, üst kademe bürokratlar ve bazı yargı mensupları CB'nca atanır. Milletvekilleri vatandaşların oyuyla seçilir.",
+          "kaynak": "KPSS-Tipi"
         }
       ]
     },
     {
       "id": "vatandaslik-yargi",
-      "baslik": "Yargı",
+      "baslik": "Yargı ve Yerel Yönetimler",
       "anlatim": {
-        "ozet": "Yargı yetkisi, Türk Milleti adına bağımsız ve tarafsız mahkemelerce kullanılır; Türkiye'de adli, idari ve anayasa yargısı olmak üzere farklı yargı kolları ve bunların en üst dereceli mahkemeleri bulunur.",
+        "ozet": "⚖️ Türkiye'de yargı; anayasa yargısı, adli yargı, idari yargı ve uyuşmazlık yargısı olarak dörde ayrılır. Yerel yönetimler ise il özel idaresi, belediye ve köyden oluşur.",
         "icerik": [
-          "Anayasa'nın 9. maddesine göre yargı yetkisi, Türk Milleti adına bağımsız ve tarafsız mahkemelerce kullanılır. Yargı bağımsızlığı, hâkimlerin görevlerinde hiçbir organ, makam, merci veya kişiden emir ve talimat almamaları; yargı tarafsızlığı ise hâkimlerin davanın taraflarına eşit mesafede durması anlamına gelir. Hâkimler ve savcılar, Hâkimler ve Savcılar Kurulu (HSK) tarafından mesleğe kabul edilir, atanır ve denetlenir.",
-          "Türk yargı sistemi temel olarak üç kola ayrılır: Adli yargı, idari yargı ve anayasa yargısı. Adli yargı, bireyler arası uyuşmazlıkları (hukuk davaları) ve suç işleyenlerin yargılanmasını (ceza davaları) kapsar; bu kolun en üst mahkemesi Yargıtay'dır. İdari yargı, idarenin (devlet kurumlarının) işlem ve eylemlerinden doğan uyuşmazlıkları çözer; bu kolun en üst mahkemesi Danıştay'dır. Anayasa yargısı ise kanunların Anayasa'ya uygunluğunu denetler; bu görevi Anayasa Mahkemesi yerine getirir.",
-          "Anayasa Mahkemesi, kanunların, Cumhurbaşkanlığı kararnamelerinin ve TBMM İç Tüzüğü'nün Anayasa'ya uygunluğunu denetler (norm denetimi); ayrıca bireysel başvuruları inceler ve Cumhurbaşkanı ile diğer bazı üst düzey kişileri Yüce Divan sıfatıyla yargılar. Yargıtay, adliye mahkemelerince verilen kararların son inceleme merciidir; yani bir ceza veya hukuk davasında ilk derece ve istinaf mahkemelerinden sonra son başvurulacak yer Yargıtay'dır. Danıştay ise idari mahkemelerce verilen kararların son inceleme mercii olmasının yanında, kanunla gösterilen bazı davalara da ilk ve son derece mahkemesi olarak bakar; ayrıca Cumhurbaşkanınca veya Cumhurbaşkanlığı Kararnamesi taslakları üzerinde istişari (danışma) görüş bildirir.",
-          "Yargı bağımsızlığını güvence altına almak amacıyla hâkimlik teminatı getirilmiştir: Hâkimler, kanunda belirtilen yaş ve mesleki kıdem haricinde azlolunamaz (görevden alınamaz), kendileri istemedikçe Anayasa'da gösterilen yaştan önce emekliye ayrılamaz. Hâkimler ve Savcılar Kurulu (HSK), hâkim ve savcıların mesleğe kabulü, atanması, nakli, terfii, disiplin işlemleri gibi konularda yetkili özerk bir kuruldur ve Adalet Bakanı bu kurulun başkanıdır."
+          "📌 Yargı organları: Anayasa Mahkemesi (anayasaya uygunluk + Yüce Divan), Yargıtay (adli yargı temyiz), Danıştay (idari yargı temyiz), Uyuşmazlık Mahkemesi, Hâkimler ve Savcılar Kurulu (HSK).",
+          "📎 Anayasa Mahkemesi: 12 asıl üyeden oluşur; görev süresi 12 yıl, yeniden seçilemez. Bireysel başvuru hakkı 2010'dan bu yana mevcuttur.",
+          "📎 Yerel yönetimler: İl özel idaresi (il genel meclisi + il encümeni + vali), belediye (belediye meclisi + belediye encümeni + belediye başkanı), köy (köy derneği + ihtiyar kurulu + muhtar).",
+          "📎 Belediye organları: Belediye meclisi (karar organı), belediye encümeni (danışma-yürütme), belediye başkanı (yürütme başı). Üçü de 5 yıllık dönemler için görev yapar."
         ],
         "anahtarNoktalar": [
-          "Yargı yetkisi bağımsız ve tarafsız mahkemelerce kullanılır (Anayasa md. 9).",
-          "Adli yargının en üst mahkemesi Yargıtay'dır.",
-          "İdari yargının en üst mahkemesi Danıştay'dır.",
-          "Anayasa yargısını Anayasa Mahkemesi yürütür; kanunların Anayasa'ya uygunluğunu denetler.",
-          "Anayasa Mahkemesi bireysel başvuruları inceler ve Yüce Divan sıfatıyla yargılama yapar.",
-          "Hâkimler ve Savcılar Kurulu (HSK) hâkim/savcı atama ve denetiminden sorumludur.",
-          "Hâkimlik teminatı: hâkimler kanunda belirtilenler dışında görevden alınamaz.",
-          "Danıştay, idari uyuşmazlıkların yanı sıra istişari görüş de bildirir."
+          "🔑 Anayasa Mahkemesi 12 asıl üye; üyelik süresi 12 yıl, yeniden seçilme yasağı var.",
+          "💡 Yargıtay adli yargının, Danıştay idari yargının en yüksek mahkemesidir.",
+          "🔑 Belediyenin karar organı belediye meclisi; yürütme organı belediye başkanıdır.",
+          "💡 İl özel idaresinin karar organı il genel meclisi; yürütme organı başı validir.",
+          "🔑 Uyuşmazlık Mahkemesi: adli ve idari yargı arasındaki yetki uyuşmazlıklarını çözer."
         ]
       },
       "sorular": [
         {
-          "soru": "Anayasa'nın 9. maddesine göre yargı yetkisi kim adına ve nasıl kullanılır?",
+          "soru": "Türkiye'de adli yargının en yüksek mahkemesi hangisidir?",
           "secenekler": [
-            "Türk Milleti adına, bağımsız ve tarafsız mahkemelerce",
-            "TBMM adına, milletvekillerince",
-            "Cumhurbaşkanı adına, atanmış hâkimlerce",
-            "Hükümet adına, idari makamlarca",
-            "Anayasa Mahkemesi adına, tek bir yüksek mahkemece"
+            "A) Danıştay",
+            "B) Anayasa Mahkemesi",
+            "C) Yargıtay",
+            "D) Uyuşmazlık Mahkemesi",
+            "E) Askeri Yargıtay"
           ],
-          "dogruIndex": 0,
-          "aciklama": "Anayasa'nın 9. maddesi 'Yargı yetkisi, Türk Milleti adına bağımsız ve tarafsız mahkemelerce kullanılır.' hükmünü içerir. Bu madde, yargı bağımsızlığı ve tarafsızlığı ilkelerini anayasal güvence altına alan temel hükümdür."
+          "dogruIndex": 2,
+          "aciklama": "Yargıtay, Türkiye'de adli yargının (hukuk ve ceza) en yüksek temyiz mahkemesidir.",
+          "distractorAciklama": "Danıştay idari yargının, Anayasa Mahkemesi anayasa yargısının, Uyuşmazlık Mahkemesi yargı çatışmalarının en yüksek organıdır. Askeri Yargıtay 2017'de kaldırılmıştır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Adli yargı kolunun (hukuk ve ceza davalarının) en üst dereceli mahkemesi aşağıdakilerden hangisidir?",
+          "soru": "Anayasa Mahkemesi'nin bireysel başvuru yetkisi hangi yılda kazandırılmıştır?",
           "secenekler": [
-            "Danıştay",
-            "Anayasa Mahkemesi",
-            "Sayıştay",
-            "Bölge İdare Mahkemesi",
-            "Yargıtay"
+            "A) 1982",
+            "B) 2001",
+            "C) 2010",
+            "D) 2017",
+            "E) 2023"
           ],
-          "dogruIndex": 4,
-          "aciklama": "Yargıtay, adli yargı kolunda (hukuk ve ceza davalarında) ilk derece ve istinaf mahkemelerince verilen kararların son inceleme merciidir. Yani bir dava Yargıtay'a kadar gelirse, bu davanın adli yargıdaki son yargısal denetim aşamasıdır."
+          "dogruIndex": 2,
+          "aciklama": "2010 anayasa referandumuyla Anayasa Mahkemesi'ne bireysel başvuru hakkı tanınmış ve 2012'den itibaren fiilen uygulanmaya başlanmıştır.",
+          "distractorAciklama": "1982 kuruluş yılıdır; bireysel başvuru o dönemde yoktu. 2017 referandumu hükümet sistemini değiştirdi, bireysel başvuruyla ilgisi yoktur. Doğru yıl 2010'dur.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "İdarenin işlem ve eylemlerinden doğan uyuşmazlıkları çözen idari yargı kolunun en üst mahkemesi hangisidir?",
+          "soru": "Belediyenin karar organı aşağıdakilerden hangisidir?",
           "secenekler": [
-            "Yargıtay",
-            "Danıştay",
-            "Anayasa Mahkemesi",
-            "Hâkimler ve Savcılar Kurulu",
-            "Bölge Adliye Mahkemesi"
+            "A) Belediye başkanı",
+            "B) Belediye encümeni",
+            "C) Belediye meclisi",
+            "D) İl genel meclisi",
+            "E) Mahalle muhtarlığı"
           ],
-          "dogruIndex": 1,
-          "aciklama": "Danıştay, idare hukuku alanındaki uyuşmazlıklara bakan idari yargının en üst mahkemesidir. İdari mahkemelerce verilen kararların son inceleme mercii olmasının yanı sıra, kanunla gösterilen bazı davalara ilk ve son derece mahkemesi olarak bakar ve idareye istişari görüş bildirir."
+          "dogruIndex": 2,
+          "aciklama": "5393 sayılı Belediye Kanunu'na göre belediyenin karar organı belediye meclisidir. Belediye başkanı yürütme, encümen ise danışma/ikincil yürütme organıdır.",
+          "distractorAciklama": "Belediye başkanı yürütme, encümen danışma/ikincil yürütme organıdır. İl genel meclisi il özel idaresinin karar organıdır. Karar organı belediye meclisidir.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "Kanunların ve Cumhurbaşkanlığı kararnamelerinin Anayasa'ya uygunluğunu denetleyen mahkeme aşağıdakilerden hangisidir?",
+          "soru": "İl özel idaresinin yürütme organının başı kimdir?",
           "secenekler": [
-            "Yargıtay",
-            "Danıştay",
-            "Sayıştay",
-            "Anayasa Mahkemesi",
-            "Uyuşmazlık Mahkemesi"
+            "A) Belediye başkanı",
+            "B) İl genel meclisi başkanı",
+            "C) Vali",
+            "D) Kaymakam",
+            "E) İl müdürü"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "5302 sayılı İl Özel İdaresi Kanunu'na göre il özel idaresinin yürütme organının başı validir. Vali devlet tarafından atanır.",
+          "distractorAciklama": "Belediye başkanı belediyenin yürütme organıdır. İl genel meclisi karar organıdır. İl özel idaresinin yürütme başı devlet tarafından atanan validir.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "Adli yargı ile idari yargı arasındaki görev uyuşmazlıklarını çözmekle görevli mahkeme hangisidir?",
+          "secenekler": [
+            "A) Yargıtay",
+            "B) Danıştay",
+            "C) Anayasa Mahkemesi",
+            "D) Uyuşmazlık Mahkemesi",
+            "E) Bölge İdare Mahkemesi"
           ],
           "dogruIndex": 3,
-          "aciklama": "Anayasa Mahkemesi, kanunların, Cumhurbaşkanlığı kararnamelerinin ve TBMM İç Tüzüğü'nün Anayasa'ya şekil ve esas bakımından uygunluğunu denetleyen yüksek mahkemedir. Bu denetime 'norm denetimi' denir ve Anayasa Mahkemesi'nin en temel görevidir."
+          "aciklama": "Uyuşmazlık Mahkemesi, adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözmeye yetkilidir.",
+          "distractorAciklama": "Yargıtay ve Danıştay kendi alanlarının en yüksek mahkemesidir. Anayasa Mahkemesi anayasaya uygunluk denetimi yapar. Yetki çatışmalarını çözen mahkeme Uyuşmazlık Mahkemesi'dir.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Anayasa Mahkemesinin, Cumhurbaşkanı ve bazı üst düzey kişileri görevleriyle ilgili suçlardan dolayı yargıladığı sıfatı aşağıdakilerden hangisidir?",
+          "soru": "2017 anayasa değişikliğiyle kaldırılan yargı organı hangisidir?",
           "secenekler": [
-            "Genel Kurul",
-            "Yüce Divan",
-            "Daire",
-            "İstişare Kurulu",
-            "Tahkim Kurulu"
-          ],
-          "dogruIndex": 1,
-          "aciklama": "Anayasa Mahkemesi, Cumhurbaşkanı, Cumhurbaşkanı yardımcıları, bakanlar, TBMM Başkanı, yüksek mahkeme başkan ve üyeleri gibi belirli üst düzey kişileri görevleriyle ilgili işledikleri iddia edilen suçlardan dolayı Yüce Divan sıfatıyla yargılar. Bu, Anayasa Mahkemesinin norm denetimi dışındaki önemli bir görevidir."
-        },
-        {
-          "soru": "Hâkim ve savcıların mesleğe kabulü, atanması ve disiplin işlemlerinden sorumlu kurul aşağıdakilerden hangisidir?",
-          "secenekler": [
-            "Yargıtay Genel Kurulu",
-            "Danıştay Genel Kurulu",
-            "Hâkimler ve Savcılar Kurulu",
-            "Adalet Komisyonu",
-            "Türkiye Barolar Birliği"
+            "A) Yargıtay",
+            "B) Danıştay",
+            "C) Askeri Yargıtay ve Askeri Yüksek İdare Mahkemesi",
+            "D) Anayasa Mahkemesi",
+            "E) Uyuşmazlık Mahkemesi"
           ],
           "dogruIndex": 2,
-          "aciklama": "Hâkimler ve Savcılar Kurulu (HSK), hâkim ve savcıların mesleğe kabulü, atanması, nakli, terfii ve disiplin işlemleri gibi mesleki konularda yetkili özerk bir anayasal kuruldur. Bu kurul, yargı bağımsızlığının kurumsal güvencelerinden biridir."
+          "aciklama": "2017 anayasa değişikliğiyle Askeri Yargıtay ve Askeri Yüksek İdare Mahkemesi (AYİM) kaldırılmıştır.",
+          "distractorAciklama": "Yargıtay, Danıştay, Anayasa Mahkemesi ve Uyuşmazlık Mahkemesi varlığını sürdürmektedir. Kaldırılan mahkemeler askeri yargı mahkemeleridir.",
+          "kaynak": "2020-KPSS"
         },
         {
-          "soru": "'Hâkimlik teminatı' kavramı aşağıdakilerden hangisini ifade eder?",
+          "soru": "Anayasa Mahkemesi üyelerinin görev süresi ve yeniden seçilme durumu nedir?",
           "secenekler": [
-            "Hâkimlerin maaşlarının yüksek olmasını",
-            "Hâkimlerin, kanunda belirtilen haller dışında görevden alınamamasını ve istemedikçe erken emekliye ayrılamamasını",
-            "Hâkimlerin siyasi parti üyesi olabilmesini",
-            "Hâkimlerin sadece Yargıtay'da görev yapabilmesini",
-            "Hâkimlerin TBMM tarafından seçilmesini"
-          ],
-          "dogruIndex": 1,
-          "aciklama": "Hâkimlik teminatı, hâkimlerin bağımsız ve tarafsız karar verebilmelerini sağlamak amacıyla getirilen anayasal bir güvencedir. Bu teminata göre hâkimler, kanunda gösterilen yaş ve mesleki kıdem hâlleri dışında görevden alınamaz, kendi istekleri olmadıkça belirlenen yaştan önce emekliye sevk edilemez; böylece dış baskılardan korunmaları amaçlanır."
-        },
-        {
-          "soru": "Aşağıdakilerden hangisi yargı bağımsızlığının bir gereği olarak kabul edilir?",
-          "secenekler": [
-            "Hâkimlerin yürütme organının talimatlarına göre karar vermesi",
-            "Hâkimlerin görevlerinde hiçbir organ, makam veya kişiden emir almaması",
-            "Mahkeme kararlarının TBMM tarafından onaylanması",
-            "Hâkimlerin her yıl yeniden atanması",
-            "Yargı kararlarının Cumhurbaşkanı tarafından değiştirilebilmesi"
-          ],
-          "dogruIndex": 1,
-          "aciklama": "Yargı bağımsızlığı, hâkimlerin görevlerini yerine getirirken hiçbir organ, makam, merci veya kişiden emir ve talimat almamalarını, hiçbir telkin ve tavsiyede bulunulamamasını ifade eder. Bu ilke, adil yargılanma hakkının ve hukuk devletinin temel dayanaklarından biridir."
-        },
-        {
-          "soru": "Bir vatandaş, temel hak ve özgürlüklerinin kamu gücü tarafından ihlal edildiğini düşünüyor ve diğer hukuki yollar tükenmişse, son çare olarak hangi yola başvurabilir?",
-          "secenekler": [
-            "Danıştaya itiraz",
-            "Yargıtaya temyiz",
-            "Anayasa Mahkemesine bireysel başvuru",
-            "Sayıştaya şikâyet",
-            "TBMM'ye dilekçe"
+            "A) 4 yıl, yeniden seçilebilir",
+            "B) 7 yıl, yeniden seçilebilir",
+            "C) 12 yıl, yeniden seçilemez",
+            "D) 15 yıl, yeniden seçilemez",
+            "E) Emekliliğe kadar, süre sınırı yok"
           ],
           "dogruIndex": 2,
-          "aciklama": "2010 Anayasa değişikliği ile getirilen bireysel başvuru yolu sayesinde, Anayasa'da güvence altına alınan temel hak ve özgürlüklerden Avrupa İnsan Hakları Sözleşmesi kapsamındaki bir hakkı kamu gücü tarafından ihlal edilen kişiler, olağan hukuk yollarını (mahkemeler) tükettikten sonra Anayasa Mahkemesine bireysel başvuruda bulunabilir."
+          "aciklama": "Anayasa'nın 147. maddesine göre Anayasa Mahkemesi üyelerinin görev süresi 12 yıldır; süresi bitenler yeniden seçilemez.",
+          "distractorAciklama": "4 yıl parlamento dönemini anımsatır; bağımsızlık için yetersizdir. 15 yıl ABD Yüksek Mahkemesi örneğini çağrıştırır. Türkiye'de kesin süre 12 yıldır.",
+          "kaynak": "KPSS-Tipi"
         },
         {
-          "soru": "Aşağıdakilerden hangisi Danıştayın görevlerinden biridir?",
+          "soru": "Danıştay'ın temel işlevi nedir?",
           "secenekler": [
-            "Ceza davalarında temyiz mercii olmak",
-            "Hukuk davalarında ilk derece mahkemesi olmak",
-            "Cumhurbaşkanlığı kararname taslakları hakkında istişari görüş bildirmek",
-            "Anayasa değişikliklerini onaylamak",
-            "Milletvekili dokunulmazlığını kaldırmak"
+            "A) Anayasaya uygunluk denetimi",
+            "B) Adli davaların temyiz incelemesi",
+            "C) İdari davaların temyiz incelemesi ve danışmanlık",
+            "D) Yargı mercileri arasındaki uyuşmazlıkları çözme",
+            "E) Askeri davalara bakma"
           ],
           "dogruIndex": 2,
-          "aciklama": "Danıştay, idari yargının en üst mahkemesi olmasının yanı sıra, Cumhurbaşkanlığınca gönderilen kararname taslakları ve diğer bazı konularda istişari (danışma) nitelikte görüş bildirme görevini de yürütür. Ceza davalarında temyiz mercii Yargıtay, Anayasa değişikliklerinin halkoyuna sunulması süreci ise farklı organların işidir."
+          "aciklama": "Danıştay, idare mahkemelerinin kararlarını temyizen inceler; bazı davalara ilk derece mahkemesi olarak bakar ve idari konularda danışmanlık işlevi görür.",
+          "distractorAciklama": "Anayasaya uygunluk denetimi Anayasa Mahkemesi'ne, adli temyiz Yargıtay'a, yargı uyuşmazlıkları Uyuşmazlık Mahkemesi'ne aittir. Danıştay yalnızca idari yargıyla ilgilidir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Köy idaresinin organları arasında yer almayan hangisidir?",
+          "secenekler": [
+            "A) Muhtar",
+            "B) Köy ihtiyar kurulu",
+            "C) Köy derneği (köy genel kurulu)",
+            "D) Köy encümeni",
+            "E) Hepsi köy organıdır"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "442 sayılı Köy Kanunu'na göre köy idaresinin organları şunlardır: muhtar (yürütme), köy ihtiyar kurulu (karar-danışma) ve köy derneği/genel kurulu. 'Köy encümeni' diye bir organ bulunmamaktadır.",
+          "distractorAciklama": "Encümen belediye ve il özel idaresinde kullanılan bir kavramdır. Köy yönetiminde encümen yoktur; organlar muhtar, ihtiyar kurulu ve köy derneğidir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "HSK (Hâkimler ve Savcılar Kurulu) ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+          "secenekler": [
+            "A) HSK hâkim ve savcıları yargılar.",
+            "B) HSK üyeleri yalnızca TBMM tarafından seçilir.",
+            "C) HSK hâkim ve savcıların atanma, terfi ve disiplin işlemlerini yürütür.",
+            "D) HSK Anayasa Mahkemesi'ne bağlıdır.",
+            "E) HSK üyeleri CB kararnamesiyle atanır."
+          ],
+          "dogruIndex": 2,
+          "aciklama": "HSK; hâkim ve savcıların mesleğe kabul, atama, terfi, disiplin ve görevden alma işlemlerini yürütür. Yargı bağımsızlığının güvencesi olarak tasarlanmıştır.",
+          "distractorAciklama": "HSK mahkeme değildir; yargılamaz. Üyeleri Cumhurbaşkanı ve TBMM tarafından belirlenir. HSK herhangi bir mahkemeye bağlı değildir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Belediye başkanının görev süresi kaç yıldır?",
+          "secenekler": [
+            "A) 3 yıl",
+            "B) 4 yıl",
+            "C) 5 yıl",
+            "D) 6 yıl",
+            "E) 7 yıl"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "5393 sayılı Belediye Kanunu'na göre belediye başkanı 5 yılda bir yerel seçimlerle seçilir.",
+          "distractorAciklama": "4 yıl eski uygulamayı anımsatabilir. Güncel düzenlemeyle milletvekili seçim dönemiyle uyumlu olarak 5 yıla çıkarılmıştır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'de idare hukuku uyuşmazlıklarına ilk derece mahkemesi olarak bakan mahkemeler hangileridir?",
+          "secenekler": [
+            "A) Asliye hukuk mahkemeleri",
+            "B) İdare mahkemeleri ve vergi mahkemeleri",
+            "C) Yargıtay daireleri",
+            "D) Danıştay doğrudan tüm idari davalara bakar.",
+            "E) Bölge adliye mahkemeleri"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İdare hukuku uyuşmazlıklarında ilk derece yargı mercii idare mahkemeleri (genel) ve vergi mahkemeleridir (vergi uyuşmazlıkları). Danıştay temyiz merciidir.",
+          "distractorAciklama": "Asliye hukuk ve bölge adliye mahkemeleri adli yargıya aittir. Danıştay temyiz merciidir; tüm idari davalara ilk derece olarak bakmaz.",
+          "kaynak": "KPSS-Tipi"
         }
       ]
     }
