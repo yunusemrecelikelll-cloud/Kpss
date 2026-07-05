@@ -1,8 +1,11 @@
 /* ===== KPSS V2 — PREMIUM DESIGN ===== */
 :root {
+  /* ── Tema: Gece Yarısı (varsayılan) ── */
   --bg: #0a0612;
   --bg-2: #110920;
   --bg-3: #170d2a;
+  --body-bg: radial-gradient(ellipse 90% 60% at 80% 10%, #200a3c 0%, #0a0612 55%) fixed, radial-gradient(ellipse 60% 40% at 10% 90%, #1a0530 0%, transparent 60%) fixed, #0a0612;
+  --header-bg: rgba(10,6,18,0.75);
   --glass: rgba(255,255,255,0.055);
   --glass-2: rgba(255,255,255,0.09);
   --glass-hover: rgba(255,255,255,0.12);
@@ -28,11 +31,7 @@
   --warn: #fbbf24;
   --warn-bg: rgba(251,191,36,0.13);
 
-  --r-xl: 24px;
-  --r-lg: 18px;
-  --r-md: 12px;
-  --r-sm: 8px;
-  --r-pill: 999px;
+  --r-xl: 24px; --r-lg: 18px; --r-md: 12px; --r-sm: 8px; --r-pill: 999px;
 
   --shadow-card: 0 8px 32px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.07);
   --shadow-glow-v: 0 0 28px rgba(139,92,246,0.35);
@@ -40,17 +39,105 @@
   --shadow-glow-g: 0 0 28px rgba(52,211,153,0.3);
 }
 
+/* ── Tema: Şafak (Açık Mor/Beyaz) ── */
+[data-theme="safak"] {
+  --bg: #faf7ff; --bg-2: #f3edff; --bg-3: #ebe0ff;
+  --body-bg: radial-gradient(ellipse at top right, #ede9fe, #fdf4ff 60%) fixed, #faf7ff;
+  --header-bg: rgba(250,247,255,0.88);
+  --glass: rgba(255,255,255,0.62); --glass-2: rgba(255,255,255,0.80); --glass-hover: rgba(255,255,255,0.92);
+  --border: rgba(139,92,246,0.18); --border-2: rgba(139,92,246,0.3);
+  --violet: #7c3aed; --violet-l: #8b5cf6;
+  --rose: #db2777; --rose-l: #ec4899;
+  --gold: #d97706; --mint: #059669;
+  --text: #1e0835; --text-dim: #4a2d70; --text-faint: #8b7aa8;
+  --success: #059669; --success-bg: rgba(5,150,105,0.12);
+  --danger: #dc2626; --danger-bg: rgba(220,38,38,0.1);
+  --warn: #d97706; --warn-bg: rgba(217,119,6,0.12);
+  --shadow-card: 0 4px 24px rgba(139,92,246,0.18), inset 0 1px 0 rgba(255,255,255,0.9);
+  --shadow-glow-v: 0 0 20px rgba(124,58,237,0.2);
+}
+
+/* ── Tema: Pembe Rüya (Pastel Pembe) ── */
+[data-theme="pembe"] {
+  --bg: #fff0f6; --bg-2: #ffe4f0; --bg-3: #ffd6e8;
+  --body-bg: radial-gradient(ellipse at top, #fce7f3, #fff0f9 55%) fixed, #fff0f6;
+  --header-bg: rgba(255,240,246,0.88);
+  --glass: rgba(255,255,255,0.60); --glass-2: rgba(255,255,255,0.78); --glass-hover: rgba(255,255,255,0.9);
+  --border: rgba(236,72,153,0.2); --border-2: rgba(236,72,153,0.35);
+  --violet: #9333ea; --violet-l: #a855f7;
+  --rose: #e11d48; --rose-l: #f43f5e;
+  --gold: #d97706; --mint: #0d9488;
+  --text: #3b0a2a; --text-dim: #6b2349; --text-faint: #9d6b80;
+  --success: #0d9488; --success-bg: rgba(13,148,136,0.12);
+  --danger: #e11d48; --danger-bg: rgba(225,29,72,0.1);
+  --warn: #d97706; --warn-bg: rgba(217,119,6,0.12);
+  --shadow-card: 0 4px 24px rgba(236,72,153,0.18), inset 0 1px 0 rgba(255,255,255,0.9);
+  --shadow-glow-v: 0 0 20px rgba(147,51,234,0.22);
+  --shadow-glow-r: 0 0 20px rgba(225,29,72,0.22);
+}
+
+/* ── Tema: Zümrüt Gecesi (Koyu Yeşil) ── */
+[data-theme="zumrut"] {
+  --bg: #020d0a; --bg-2: #041410; --bg-3: #071c16;
+  --body-bg: radial-gradient(ellipse at top right, #0a3325 0%, #020d0a 55%) fixed, #020d0a;
+  --header-bg: rgba(2,13,10,0.8);
+  --glass: rgba(255,255,255,0.05); --glass-2: rgba(255,255,255,0.08); --glass-hover: rgba(255,255,255,0.11);
+  --border: rgba(52,211,153,0.15); --border-2: rgba(52,211,153,0.25);
+  --violet: #34d399; --violet-l: #6ee7b7;
+  --rose: #a3e635; --rose-l: #bef264;
+  --gold: #fbbf24; --mint: #06b6d4;
+  --text: #ecfdf5; --text-dim: #a7f3d0; --text-faint: #6ee7b7;
+  --success: #34d399; --success-bg: rgba(52,211,153,0.15);
+  --danger: #f87171; --danger-bg: rgba(248,113,113,0.15);
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(52,211,153,0.08);
+  --shadow-glow-v: 0 0 28px rgba(52,211,153,0.3);
+}
+
+/* ── Tema: Gün Batımı (Sıcak Turuncu/Kırmızı) ── */
+[data-theme="gunbatimi"] {
+  --bg: #120508; --bg-2: #1e0810; --bg-3: #2a0c18;
+  --body-bg: radial-gradient(ellipse at top, #3d0d1a 0%, #120508 55%) fixed, #120508;
+  --header-bg: rgba(18,5,8,0.8);
+  --glass: rgba(255,255,255,0.055); --glass-2: rgba(255,255,255,0.09); --glass-hover: rgba(255,255,255,0.12);
+  --border: rgba(251,146,60,0.18); --border-2: rgba(251,146,60,0.3);
+  --violet: #f97316; --violet-l: #fb923c;
+  --rose: #ef4444; --rose-l: #f87171;
+  --gold: #fbbf24; --mint: #34d399;
+  --text: #fff7ed; --text-dim: #fed7aa; --text-faint: #d97706;
+  --success: #34d399; --success-bg: rgba(52,211,153,0.15);
+  --danger: #ef4444; --danger-bg: rgba(239,68,68,0.15);
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.55), inset 0 1px 0 rgba(251,146,60,0.08);
+  --shadow-glow-v: 0 0 28px rgba(249,115,22,0.35);
+  --shadow-glow-r: 0 0 28px rgba(239,68,68,0.3);
+}
+
+/* ── Tema: Kutup Gecesi (Koyu Mavi/Cyan) ── */
+[data-theme="kutup"] {
+  --bg: #010b18; --bg-2: #021628; --bg-3: #042038;
+  --body-bg: radial-gradient(ellipse at top right, #0a2a4a 0%, #010b18 55%) fixed, #010b18;
+  --header-bg: rgba(1,11,24,0.8);
+  --glass: rgba(255,255,255,0.05); --glass-2: rgba(255,255,255,0.08); --glass-hover: rgba(255,255,255,0.11);
+  --border: rgba(56,189,248,0.15); --border-2: rgba(56,189,248,0.25);
+  --violet: #0ea5e9; --violet-l: #38bdf8;
+  --rose: #818cf8; --rose-l: #a5b4fc;
+  --gold: #fbbf24; --mint: #34d399;
+  --text: #f0f9ff; --text-dim: #bae6fd; --text-faint: #7dd3fc;
+  --success: #34d399; --success-bg: rgba(52,211,153,0.15);
+  --danger: #f87171; --danger-bg: rgba(248,113,113,0.15);
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(56,189,248,0.07);
+  --shadow-glow-v: 0 0 28px rgba(14,165,233,0.35);
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body {
   margin: 0; padding: 0; height: 100%;
-  background: radial-gradient(ellipse 90% 60% at 80% 10%, #200a3c 0%, #0a0612 55%) fixed,
-              radial-gradient(ellipse 60% 40% at 10% 90%, #1a0530 0%, transparent 60%) fixed,
-              #0a0612;
+  background: var(--body-bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition: background 0.4s ease, color 0.3s ease;
 }
 
 ::-webkit-scrollbar { width: 8px; }
@@ -100,7 +187,7 @@ body::before {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 14px 28px;
-  background: rgba(10,6,18,0.75);
+  background: var(--header-bg);
   backdrop-filter: blur(28px);
   border-bottom: 1px solid var(--border);
   position: sticky; top: 0; z-index: 50;
@@ -638,6 +725,17 @@ body::before {
   transition: transform 0.45s cubic-bezier(0.55,0,1,0.45), opacity 0.45s ease;
 }
 #top-notif-icon { font-size: 22px; }
+
+/* ── Theme picker ── */
+.theme-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 10px; }
+.theme-swatch {
+  padding: 14px 10px; border-radius: var(--r-md); cursor: pointer;
+  border: 2px solid transparent; text-align: center; font-size: 12.5px; font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+}
+.theme-swatch:hover { transform: scale(1.04); }
+.theme-swatch.active { border-color: var(--violet-l); box-shadow: 0 0 16px rgba(139,92,246,0.4); }
+.theme-swatch span { display: block; font-size: 22px; margin-bottom: 5px; }
 
 /* ── Toggle Switch ── */
 .toggle-switch { position: relative; display: inline-block; width: 48px; height: 26px; flex-shrink: 0; }

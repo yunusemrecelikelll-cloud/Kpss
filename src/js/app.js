@@ -79,13 +79,24 @@ function render() {
   if (v === 'topic') return renderTopic(_params.sid, _params.tid);
   if (v === 'quiz') return renderQuizView();
   if (v === 'result') return renderResult(_params.result);
-  if (v === 'leaderboard') return renderLeaderboard();
   if (v === 'badges') return renderBadges();
   if (v === 'wrong') return renderWrongBank();
   if (v === 'settings') return renderSettings();
   if (v === 'fulltest') return startFullTest();
   if (v === 'missions') return renderMissions();
 }
+
+// ── Soru bankası: rastgele N soru seç ──
+function pickQuestions(allQuestions, count) {
+  const pool = [...allQuestions];
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, Math.min(count, pool.length));
+}
+
+const MAX_ATTEMPTS_PER_TOPIC = 3;
 
 function setRoot(html) { $('view-root').innerHTML = html; }
 
@@ -284,11 +295,47 @@ function renderTopic(sid, tid) {
   const s = sub(sid); if (!s?.data) return navigate('home');
   const t = topic(s, tid); if (!t) return navigate('subject', { sid });
   const a = t.anlatim || {};
-  const dur = Math.round(Timer.durationFor(t.sorular.length) / 60);
+  const dur = Math.round(Timer.durationFor(Math.min(t.sorular.length, 10)) / 60);
   const ytUrl = `https://www.youtube.com/results?search_query=KPSS+${encodeURIComponent(t.baslik)}+konu+anlat%C4%B1m%C4%B1`;
+  const attempts = Storage.getAttemptsForTopic(tid);
+  const attCount = attempts.length;
+  const maxed = attCount >= MAX_ATTEMPTS_PER_TOPIC;
 
   const pointsHtml = (a.anahtarNoktalar || []).map(p => `<li>${esc(p)}</li>`).join('');
   const parasHtml = (a.icerik || []).map(p => `<p class="lecture-para">${esc(p)}</p>`).join('');
+
+  // Geçmiş test sonuçları
+  const historyHtml = attempts.length ? `
+    <div class="section-title" style="margin-top:22px">📊 Geçmiş Testlerin</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
+      ${attempts.map((a, i) => {
+        const d = new Date(a.tarih).toLocaleDateString('tr-TR');
+        const cls = a.skor >= 70 ? 'high' : a.skor < 50 ? 'low' : '';
+        return `
+          <div class="card" style="padding:12px 16px;display:flex;align-items:center;gap:14px">
+            <div style="font-weight:700;color:var(--text-faint);font-size:13px">${i + 1}. Test</div>
+            <div style="flex:1;font-size:13.5px;color:var(--text-dim)">${d} • ${a.dogru} doğru / ${a.yanlis} yanlış</div>
+            <span class="score-badge ${cls}">%${a.skor}</span>
+          </div>`;
+      }).join('')}
+    </div>` : '';
+
+  const startBar = maxed ? `
+    <div class="card" style="padding:18px 22px;background:rgba(251,191,36,0.08);border-color:rgba(251,191,36,0.3)">
+      <p style="margin:0 0 12px;font-size:14px;color:var(--text-dim)">
+        🎓 Bu konuyu <b>${MAX_ATTEMPTS_PER_TOPIC} kez</b> çözdün. Sıfırlayıp yeniden başlayabilirsin.
+      </p>
+      <button class="btn btn-gold" id="reset-btn">🔄 Testleri Sıfırla</button>
+    </div>` : `
+    <div class="card start-bar">
+      <div class="start-info">
+        ${t.sorular.length} soruluk havuz &nbsp;•&nbsp; her seferinde farklı 10 soru &nbsp;•&nbsp;
+        <b>${MAX_ATTEMPTS_PER_TOPIC - attCount} hak kaldı</b>
+      </div>
+      <button class="btn btn-primary" id="start-btn">
+        ${attCount > 0 ? 'Tekrar Çöz →' : 'Teste Başla →'}
+      </button>
+    </div>`;
 
   setRoot(`
     <div class="breadcrumb">
@@ -306,10 +353,8 @@ function renderTopic(sid, tid) {
       <a class="yt-link" id="yt-link" target="_blank">▶ YouTube'da "${esc(t.baslik)}" ara</a>
     </div>
 
-    <div class="card start-bar">
-      <div class="start-info">${t.sorular.length} soru &nbsp;•&nbsp; ~${dur} dakika &nbsp;•&nbsp; <b>Gerçek sınav temposu</b></div>
-      <button class="btn btn-primary" id="start-btn">Teste Başla →</button>
-    </div>
+    ${historyHtml}
+    ${startBar}
   `);
 
   $('yt-link').href = ytUrl;
@@ -317,7 +362,15 @@ function renderTopic(sid, tid) {
     if (el.dataset.go === 'home') el.addEventListener('click', () => navigate('home'));
     if (el.dataset.go === 'sub')  el.addEventListener('click', () => navigate('subject', { sid }));
   });
-  $('start-btn').addEventListener('click', () => beginQuiz(sid, s.ad, tid, t.baslik, t.sorular, false));
+  $('start-btn')?.addEventListener('click', () => {
+    const qs = pickQuestions(t.sorular, 10);
+    beginQuiz(sid, s.ad, tid, t.baslik, qs, false);
+  });
+  $('reset-btn')?.addEventListener('click', () => {
+    Storage.resetTopicAttempts(tid);
+    toast('Test hakları sıfırlandı!', 'success');
+    renderTopic(sid, tid);
+  });
 }
 
 // ── Full Test ──
@@ -494,7 +547,7 @@ function renderResult(result) {
         ${result.topicId !== 'full-test' ? `<button class="btn btn-secondary" id="r-topic">Konuya Dön</button>` : ''}
         <button class="btn btn-ghost" id="r-retry">Tekrar Çöz</button>
         <button class="btn btn-primary" id="r-home">Anasayfa</button>
-        <button class="btn btn-ghost" id="r-lb" style="border-color:rgba(251,191,36,0.4);color:var(--gold)">🏆 Sıralama</button>
+        <button class="btn btn-ghost" id="r-badges" style="border-color:rgba(251,191,36,0.4);color:var(--gold)">🎖 Rozetler</button>
       </div>
     </div>
     <div class="section-title">Soru Soru Değerlendirme</div>
@@ -503,15 +556,17 @@ function renderResult(result) {
 
   $('r-topic')?.addEventListener('click', () => result.topicId !== 'full-test' && navigate('topic', { sid: result.subjectId, tid: result.topicId }));
   $('r-retry')?.addEventListener('click', () => {
-    if (result.topicId === 'full-test') navigate('fulltest');
-    else {
-      const s = sub(result.subjectId);
-      const t = s && topic(s, result.topicId);
-      if (t) beginQuiz(result.subjectId, result.subjectAd, result.topicId, result.topicBaslik, t.sorular, false);
+    if (result.topicId === 'full-test') { navigate('fulltest'); return; }
+    const s2 = sub(result.subjectId);
+    const t2 = s2 && topic(s2, result.topicId);
+    if (t2) {
+      const attempts = Storage.getAttemptsForTopic(result.topicId);
+      if (attempts.length >= MAX_ATTEMPTS_PER_TOPIC) { toast('Bu konu için maksimum test hakkını kullandın. Konuya git ve sıfırla.', 'error', 4000); return; }
+      beginQuiz(result.subjectId, result.subjectAd, result.topicId, result.topicBaslik, pickQuestions(t2.sorular, 10), false);
     }
   });
   $('r-home')?.addEventListener('click', () => navigate('home'));
-  $('r-lb')?.addEventListener('click', () => navigate('leaderboard'));
+  $('r-badges')?.addEventListener('click', () => { navigate('badges'); setActiveNav('nav-badges'); });
 }
 
 // ── Leaderboard ──
@@ -636,24 +691,47 @@ function renderSettings() {
   const pColor = s.particleColor || 'rainbow';
 
   const colorOpts = [
-    { id: 'rainbow', label: '🌈 Gökkuşağı' },
-    { id: 'violet',  label: '💜 Mor' },
-    { id: 'rose',    label: '🌸 Pembe' },
-    { id: 'gold',    label: '✨ Altın' },
-    { id: 'mint',    label: '💚 Mint' },
-    { id: 'white',   label: '⚪ Gümüş' },
+    { id: 'rainbow', label: '🌈', name: 'Gökkuşağı' },
+    { id: 'violet',  label: '💜', name: 'Mor' },
+    { id: 'rose',    label: '🌸', name: 'Pembe' },
+    { id: 'gold',    label: '✨', name: 'Altın' },
+    { id: 'mint',    label: '💚', name: 'Mint' },
+    { id: 'white',   label: '⚪', name: 'Gümüş' },
   ];
+
+  const currentTheme = s.theme || 'default';
+  const themes = [
+    { id: 'default',    icon: '🌙', name: 'Gece Yarısı',  bg: 'linear-gradient(135deg,#0a0612,#200a3c)', txt: '#f1eeff' },
+    { id: 'safak',      icon: '🌤️', name: 'Şafak',        bg: 'linear-gradient(135deg,#f3edff,#fdf4ff)', txt: '#1e0835' },
+    { id: 'pembe',      icon: '🌸', name: 'Pembe Rüya',   bg: 'linear-gradient(135deg,#fff0f6,#fce7f3)', txt: '#3b0a2a' },
+    { id: 'zumrut',     icon: '🌿', name: 'Zümrüt',       bg: 'linear-gradient(135deg,#020d0a,#0a3325)', txt: '#ecfdf5' },
+    { id: 'gunbatimi',  icon: '🌅', name: 'Gün Batımı',   bg: 'linear-gradient(135deg,#120508,#3d0d1a)', txt: '#fff7ed' },
+    { id: 'kutup',      icon: '🧊', name: 'Kutup Gecesi', bg: 'linear-gradient(135deg,#010b18,#0a2a4a)', txt: '#f0f9ff' },
+  ];
+
+  const themeSwatches = themes.map(t => `
+    <div class="theme-swatch ${currentTheme === t.id ? 'active' : ''}"
+      data-tid="${t.id}"
+      style="background:${t.bg};color:${t.txt}">
+      <span>${t.icon}</span>${t.name}
+    </div>`).join('');
 
   const colorBtns = colorOpts.map(c => `
     <button class="btn ${pColor === c.id ? 'btn-primary' : 'btn-secondary'} color-pick"
-      data-color="${c.id}" style="padding:8px 14px;font-size:13px">${c.label}</button>
+      data-color="${c.id}" style="padding:8px 14px;font-size:13px">${c.label} ${c.name}</button>
   `).join('');
 
   setRoot(`
     <h2 style="font-size:20px;font-weight:800;margin:0 0 22px">⚙️ Ayarlar</h2>
 
+    <!-- Temalar -->
+    <div class="section-title">🎨 Uygulama Teması</div>
+    <div class="card" style="padding:18px 20px;margin-bottom:16px">
+      <div class="theme-grid">${themeSwatches}</div>
+    </div>
+
     <!-- Mouse efekti -->
-    <div class="section-title">🖱️ Mouse Toz Efekti</div>
+    <div class="section-title" style="margin-top:20px">🖱️ Mouse Toz Efekti</div>
     <div class="card" style="padding:20px 22px;margin-bottom:14px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
         <div>
@@ -670,34 +748,17 @@ function renderSettings() {
         <div style="display:flex;flex-wrap:wrap;gap:8px">${colorBtns}</div>
       </div>
     </div>
-
-    <!-- Firebase -->
-    <div class="section-title" style="margin-top:24px">🔥 Sıralama (Liderboard)</div>
-    <div class="card" style="padding:0;overflow:hidden;margin-bottom:14px">
-      <div class="settings-row">
-        <div class="settings-label">
-          <div class="settings-title">Firebase URL</div>
-          <div class="settings-sub">Ücretsiz kurulum — aşağıdaki adımları izle</div>
-        </div>
-        <input class="settings-input" id="s-fb" placeholder="https://xxx.firebaseio.com" value="${esc(s.firebaseUrl || '')}" />
-      </div>
-    </div>
-    <div style="display:flex;gap:10px;margin-bottom:24px">
-      <button class="btn btn-primary" id="s-save">Kaydet</button>
-      <button class="btn btn-ghost" id="s-test">Bağlantıyı Test Et</button>
-    </div>
-
-    <div style="padding:18px 20px;background:rgba(139,92,246,0.07);border:1px solid rgba(139,92,246,0.18);border-radius:16px">
-      <h3 style="font-size:14.5px;margin:0 0 10px;color:var(--text-dim)">Firebase Kurulum Adımları (2 dk)</h3>
-      <ol style="font-size:13.5px;color:var(--text-faint);padding-left:18px;line-height:2.1;margin:0">
-        <li>console.firebase.google.com → <b style="color:var(--text-dim)">Add project</b></li>
-        <li>Proje adı: KPSS → Continue → Create</li>
-        <li>Sol menü: <b style="color:var(--text-dim)">Realtime Database</b> → Create → Test mode → Enable</li>
-        <li>Database URL'yi kopyala</li>
-        <li>Yukarıdaki kutuya yapıştır → Kaydet</li>
-      </ol>
-    </div>
   `);
+
+  // Tema seçimi
+  document.querySelectorAll('.theme-swatch').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('.theme-swatch').forEach(x => x.classList.remove('active'));
+      el.classList.add('active');
+      applyTheme(el.dataset.tid);
+      toast('Tema değiştirildi!', 'success');
+    });
+  });
 
   // Toggle switch
   $('s-particle-on').addEventListener('change', () => {
@@ -710,26 +771,11 @@ function renderSettings() {
   // Color pick
   document.querySelectorAll('.color-pick').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.color-pick').forEach(b => {
-        b.className = 'btn btn-secondary color-pick';
-      });
+      document.querySelectorAll('.color-pick').forEach(b => b.className = 'btn btn-secondary color-pick');
       btn.className = 'btn btn-primary color-pick';
       Storage.saveSettings({ ...Storage.getSettings(), particleColor: btn.dataset.color });
-      toast('Renk teması değiştirildi!', 'success');
+      toast('Mouse rengi değiştirildi!', 'success');
     });
-  });
-
-  $('s-save').addEventListener('click', () => {
-    Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: $('s-fb').value.trim() });
-    toast('Ayarlar kaydedildi!', 'success');
-  });
-  $('s-test').addEventListener('click', async () => {
-    const url = $('s-fb').value.trim();
-    if (!url) { toast('Önce bir URL gir.', 'error'); return; }
-    Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: url });
-    toast('Test ediliyor...', 'info');
-    const ok = await Leaderboard.submitResult({ skor: 0, dogru: 0, yanlis: 0, bos: 0, toplam: 1, subjectAd: 'Test', topicBaslik: 'Test', tarih: new Date().toISOString() });
-    toast(ok ? '✅ Bağlantı başarılı!' : '❌ Bağlantı kurulamadı.', ok ? 'success' : 'error', 4000);
   });
 }
 
@@ -754,19 +800,29 @@ function renderMissions() {
   `);
 }
 
+// ── Theme ──
+function applyTheme(t) {
+  document.documentElement.setAttribute('data-theme', t || 'default');
+  Storage.saveSettings({ ...Storage.getSettings(), theme: t || 'default' });
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', async () => {
+  // Tema uygula
+  const savedTheme = Storage.getSettings().theme || 'default';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
   spawnParticles();
   await loadAllSubjects();
   Storage.resetDailyMissions();
 
   $('name-submit').addEventListener('click', submitName);
   $('name-input').addEventListener('keydown', e => e.key === 'Enter' && submitName());
-  $('brand-home').addEventListener('click', () => navigate('home'));
+  $('brand-home').addEventListener('click', () => { navigate('home'); setActiveNav('nav-home'); });
   $('nav-home').addEventListener('click', () => { navigate('home'); setActiveNav('nav-home'); });
-  $('nav-leaderboard').addEventListener('click', () => { navigate('leaderboard'); setActiveNav('nav-leaderboard'); });
   $('nav-badges').addEventListener('click', () => { navigate('badges'); setActiveNav('nav-badges'); });
   $('nav-wrong').addEventListener('click', () => { navigate('wrong'); setActiveNav('nav-wrong'); });
+  $('nav-missions').addEventListener('click', () => { navigate('missions'); setActiveNav('nav-missions'); });
   $('nav-settings').addEventListener('click', () => { navigate('settings'); setActiveNav('nav-settings'); });
 
   if (!Storage.getUserName()) {

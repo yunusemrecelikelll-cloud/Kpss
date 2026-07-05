@@ -100,8 +100,18 @@ const Storage = (() => {
   function clearDraft()     { localStorage.removeItem(K.DRAFT); }
 
   // ── Settings ──
-  function getSettings() { return get(K.SETTINGS, { firebaseUrl: '', leaderName: '' }); }
+  function getSettings() { return get(K.SETTINGS, { theme: 'default', particleEnabled: true, particleColor: 'rainbow' }); }
   function saveSettings(s) { set(K.SETTINGS, s); }
+
+  // ── Topic attempt reset ──
+  function resetTopicAttempts(topicId) {
+    const all = getAttempts().filter(a => a.topicId !== topicId);
+    set(K.ATTEMPTS, all);
+    const c = getCompletedTopics();
+    delete c[topicId];
+    set(K.COMPLETED, c);
+    clearDraft();
+  }
 
   // ── Stats helpers ──
   function computeSubjectAvg(subjectId) {
@@ -126,6 +136,7 @@ const Storage = (() => {
     getStreak, touchStreak,
     saveDraft, getDraft, clearDraft,
     getSettings, saveSettings,
+    resetTopicAttempts,
     computeSubjectAvg, computeOverall,
   };
 })();

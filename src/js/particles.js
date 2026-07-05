@@ -1,17 +1,17 @@
-// Mouse toz efekti — ayarlardan açılıp/kapatılabilir, renk seçilebilir
+// Mouse toz efekti — yoğun, kısa kuyruklu
 (function () {
   const COLOR_THEMES = {
-    rainbow: ['#a78bfa','#f472b6','#fbbf24','#34d399','#38bdf8','#c4b5fd','#fb7185'],
-    violet:  ['#8b5cf6','#a78bfa','#c4b5fd','#7c3aed','#ddd6fe'],
-    rose:    ['#f472b6','#fb7185','#fda4af','#e11d48','#fce7f3'],
-    gold:    ['#fbbf24','#f59e0b','#fde68a','#d97706','#fef3c7'],
-    mint:    ['#34d399','#10b981','#6ee7b7','#059669','#a7f3d0'],
-    white:   ['#ffffff','#e2e8f0','#f1f5f9','#cbd5e1','#f8fafc'],
+    rainbow: ['#a78bfa','#f472b6','#fbbf24','#34d399','#38bdf8','#c4b5fd','#fb7185','#e879f9'],
+    violet:  ['#8b5cf6','#a78bfa','#c4b5fd','#7c3aed','#ddd6fe','#6d28d9'],
+    rose:    ['#f472b6','#fb7185','#fda4af','#e11d48','#fce7f3','#f9a8d4'],
+    gold:    ['#fbbf24','#f59e0b','#fde68a','#d97706','#fef3c7','#fcd34d'],
+    mint:    ['#34d399','#10b981','#6ee7b7','#059669','#a7f3d0','#86efac'],
+    white:   ['#ffffff','#e2e8f0','#f1f5f9','#cbd5e1','#f8fafc','#e0e7ff'],
   };
 
-  const SKIP = '.btn,.q-opt,.option-row,.q-dot,.nav-pill,.nav-btn,button,input,select,a';
+  const SKIP = '.btn,.q-opt,.option-row,.q-dot,.nav-pill,.nav-btn,button,input,select,a,.toggle-switch,.toggle-slider';
   let last = 0;
-  const THROTTLE = 28; // ~35 olay/sn maksimum
+  const THROTTLE = 16; // ~60 fps
 
   function getSettings() {
     try { return JSON.parse(localStorage.getItem('kpss_v2_settings')) || {}; }
@@ -21,7 +21,7 @@
   function isSafe(el) {
     if (!el) return true;
     const tag = el.tagName;
-    if (tag === 'BUTTON' || tag === 'INPUT' || tag === 'SELECT' || tag === 'A' || tag === 'TEXTAREA') return false;
+    if (['BUTTON','INPUT','SELECT','A','TEXTAREA','LABEL'].includes(tag)) return false;
     if (el.closest(SKIP)) return false;
     return true;
   }
@@ -30,39 +30,36 @@
     const now = Date.now();
     if (now - last < THROTTLE) return;
     last = now;
-
     const s = getSettings();
     if (s.particleEnabled === false) return;
     if (!isSafe(e.target)) return;
-
     const theme = COLOR_THEMES[s.particleColor || 'rainbow'] || COLOR_THEMES.rainbow;
-    const count = 2 + Math.floor(Math.random() * 2); // 2-3 parçacık
+    // Yoğun: 4-7 parçacık
+    const count = 4 + Math.floor(Math.random() * 4);
     for (let i = 0; i < count; i++) spawnDust(e.clientX, e.clientY, theme);
   });
 
   function spawnDust(x, y, colors) {
     const el = document.createElement('div');
     el.className = 'm-spark';
-
     const color = colors[Math.floor(Math.random() * colors.length)];
-    const size  = (Math.random() * 2.5 + 1.5).toFixed(1); // 1.5-4 px — küçük toz
+    // Küçük toz: 1.5-5px
+    const size = (1.5 + Math.random() * 3.5).toFixed(1);
+    // Kısa kuyruk: 2-16px
     const angle = Math.random() * Math.PI * 2;
-    const dist  = Math.random() * 10 + 3; // 3-13 px — kısa kuyruk
-    const jitterX = (Math.random() - 0.5) * 4;
-    const jitterY = (Math.random() - 0.5) * 4;
-    const dx = (Math.cos(angle) * dist + jitterX).toFixed(1) + 'px';
-    const dy = (Math.sin(angle) * dist + jitterY).toFixed(1) + 'px';
-    const dur = (Math.random() * 0.15 + 0.25).toFixed(2) + 's'; // 0.25-0.40s — hızlı yok
+    const dist  = 2 + Math.random() * 14;
+    const dx = (Math.cos(angle) * dist).toFixed(1) + 'px';
+    const dy = (Math.sin(angle) * dist - Math.random() * 8).toFixed(1) + 'px'; // hafif yukarı doğru
+    const dur = (0.2 + Math.random() * 0.25).toFixed(2) + 's';
 
     el.style.cssText =
       `left:${x}px;top:${y}px;` +
       `width:${size}px;height:${size}px;` +
       `background:${color};` +
-      `box-shadow:0 0 ${parseFloat(size) + 2}px ${color}88;` +
+      `box-shadow:0 0 ${parseFloat(size)+2}px ${color}aa;` +
       `--dx:${dx};--dy:${dy};` +
       `animation-duration:${dur};`;
-
     document.body.appendChild(el);
-    setTimeout(() => el.remove(), parseFloat(dur) * 1000 + 30);
+    setTimeout(() => el.remove(), parseFloat(dur) * 1000 + 20);
   }
 })();
