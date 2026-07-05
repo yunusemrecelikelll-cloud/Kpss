@@ -572,6 +572,190 @@
           "kaynak": "2024-Güncel"
         }
       ]
+    },
+    {
+      "id": "guncel-dunya-siyaseti",
+      "baslik": "Dünya Siyaseti ve Uluslararası Örgütler",
+      "anlatim": {
+        "ozet": "🌍 BM, NATO, AB, BRICS ve SCO başlıca uluslararası örgütlerdir. Günümüzde Ukrayna-Rusya savaşı, Orta Doğu çatışmaları ve iklim diplomasisi küresel siyasetin odağındadır.",
+        "icerik": [
+          "📌 Birleşmiş Milletler (BM): 1945'te 51 kurucu üyeyle kurulmuş; günümüzde 193 üyesi var. Genel Merkez New York'ta. Ana organlar: Güvenlik Konseyi (5 daimi + 10 geçici üye), Genel Kurul, Uluslararası Adalet Divanı (Lahey), Sekretarya, Ekonomik ve Sosyal Konsey, Vesayet Konseyi. Daimi üyeler (P5): ABD, Rusya, Çin, İngiltere, Fransa. Her biri veto hakkına sahip.",
+          "📎 NATO: 1949'da Washington Antlaşması ile kuruldu. 'Madde 5' kolektif savunma ilkesi: üyelerden birine saldırı tümüne saldırı sayılır. 2023'te Finlandiya, 2024'te İsveç katıldı (Sovyet dönemi sonrası en büyük genişleme). Genel Merkez Brüksel. Türkiye kurucu üye değil; 1952'de Yunanistan ile birlikte katıldı.",
+          "📎 Ukrayna-Rusya Savaşı: Şubat 2022'de Rusya'nın Ukrayna'ya tam ölçekli askeri saldırısıyla başladı. Avrupa tarihindeki en büyük kara savaşıdır. BM Güvenlik Konseyi'nde Rusya veto yetkisini kullandığı için iş Genel Kurul'a taşındı (ES-11 serisi olağanüstü oturumlar). AB ve ABD, Rusya'ya kapsamlı yaptırımlar uyguladı; Ukrayna'ya Batı'dan silah ve mali yardım yapıldı.",
+          "📎 BRICS: Brezilya, Rusya, Hindistan, Çin, Güney Afrika'nın oluşturduğu büyük ekonomiler grubu. 2024'te Suudi Arabistan, BAE, İran, Etiyopya, Mısır ve Arjantin (Arjantin daha sonra geri çekildi) tam üye olarak davet edildi. BRICS+ olarak anılmaya başlandı."
+        ],
+        "anahtarNoktalar": [
+          "🔑 BM Güvenlik Konseyi'nin 5 daimi üyesi (P5): ABD, Rusya, Çin, İngiltere, Fransa; hepsinin veto hakkı var.",
+          "💡 NATO Madde 5: Bir üyeye saldırı hepsine saldırıdır; kolektif savunma ilkesi.",
+          "🔑 Finlandiya 2023, İsveç 2024'te NATO'ya katıldı.",
+          "💡 Ukrayna savaşı Şubat 2022'de başladı; BM veto sorunu nedeniyle iş Genel Kurul'a taşındı.",
+          "🔑 BRICS 2024 genişlemesiyle küresel GSYİH'ın yaklaşık %35'ini temsil eder hale geldi."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "BM Güvenlik Konseyi'nin 5 daimi üyesinden biri değildir?",
+          "secenekler": ["A) ABD", "B) Rusya", "C) Almanya", "D) Çin", "E) Fransa"],
+          "dogruIndex": 2,
+          "aciklama": "BM Güvenlik Konseyi'nin 5 daimi üyesi (P5): ABD, Rusya, Çin, Fransa ve Birleşik Krallık'tır. Almanya daimi üye değildir; ancak G4 ülkesi olarak daimi üyelik talep etmektedir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "NATO Antlaşması'nın 'Madde 5' ilkesi ne anlama gelir?",
+          "secenekler": ["A) Tüm üyeler nükleer silah paylaşımına tabidir.", "B) Bir üyeye yapılan silahlı saldırı tüm üyelere yapılmış sayılır.", "C) Üyeler yıllık GSYİH'larının %2'sini savunmaya harcamak zorundadır.", "D) Üyeler arasındaki ticaret anlaşmazlıkları NATO tahkimiyle çözülür.", "E) Üyeler büyük nükleer kararlar için oy birliği aramak zorundadır."],
+          "dogruIndex": 1,
+          "aciklama": "Madde 5, NATO'nun kolektif savunma ilkesini düzenler: üyelerden birine silahlı saldırı gerçekleşirse bu saldırı tüm ittifak üyelerine yapılmış sayılır ve ortak savunma mekanizması devreye girer.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye NATO'ya hangi yılda katılmıştır?",
+          "secenekler": ["A) 1945", "B) 1949", "C) 1952", "D) 1963", "E) 1980"],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye, Yunanistan ile birlikte 1952 yılında NATO'ya katılmıştır. NATO'nun kuruluşu 1949'dadır; Türkiye kurucu üye değildir.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "Rusya'nın Ukrayna'ya tam ölçekli askeri saldırısı hangi tarihte başlamıştır?",
+          "secenekler": ["A) Ocak 2021", "B) Kasım 2021", "C) Şubat 2022", "D) Ekim 2022", "E) Mart 2023"],
+          "dogruIndex": 2,
+          "aciklama": "Rusya, 24 Şubat 2022'de Ukrayna'ya tam ölçekli askeri saldırı başlattı. Bu, 2014'teki Kırım ilhakı ve Donbas çatışmalarından farklı olarak Avrupa'nın tamamını etkileyen büyük çaplı bir savaşın başlangıcı oldu.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "2023 yılında NATO'ya katılan ülke hangisidir?",
+          "secenekler": ["A) İsveç", "B) Finlandiya", "C) Ukrayna", "D) Avustralya", "E) Japonya"],
+          "dogruIndex": 1,
+          "aciklama": "Finlandiya, Şubat 2023'te NATO'nun 31. üyesi oldu. İsveç ise Mart 2024'te 32. üye olarak katıldı. İkisi de onlarca yıllık askeri tarafsızlık politikasını Ukrayna savaşının ardından sona erdirdi.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "BM Güvenlik Konseyi'nin toplam üye sayısı kaçtır?",
+          "secenekler": ["A) 5", "B) 10", "C) 15", "D) 20", "E) 25"],
+          "dogruIndex": 2,
+          "aciklama": "BM Güvenlik Konseyi 15 üyeden oluşur: 5 daimi üye (P5) ve Genel Kurul tarafından 2 yıllık dönemler için seçilen 10 geçici üye.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "BRICS grubunun kurucu üyelerinden biri değildir?",
+          "secenekler": ["A) Brezilya", "B) Rusya", "C) Türkiye", "D) Hindistan", "E) Çin"],
+          "dogruIndex": 2,
+          "aciklama": "BRICS'in kurucu üyeleri Brezilya, Rusya, Hindistan, Çin ve Güney Afrika'dır (Güney Afrika 2010'da katıldı). Türkiye BRICS üyesi değildir; SCO'ya gözlemci statüsünde katılım süreci yürütmektedir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "BM'nin genel merkezi hangi şehirdedir?",
+          "secenekler": ["A) Cenevre", "B) Brüksel", "C) Lahey", "D) New York", "E) Paris"],
+          "dogruIndex": 3,
+          "aciklama": "BM Genel Merkezi New York'ta bulunmaktadır. Cenevre'de ise BM Avrupa ofisi ve pek çok BM kuruluşu yer almaktadır. Uluslararası Adalet Divanı Lahey'de, NATO'nun genel merkezi ise Brüksel'dedir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Avrupa Birliği'nin Türkiye'ye yönelik tam üyelik müzakereleri resmen hangi yılda başlamıştır?",
+          "secenekler": ["A) 1987", "B) 1999", "C) 2002", "D) 2005", "E) 2013"],
+          "dogruIndex": 3,
+          "aciklama": "AB tam üyelik müzakereleri Türkiye ile Ekim 2005'te resmen başlatılmıştır. Türkiye 1987'de ortaklık başvurusu yapmış, 1999'da aday ülke statüsü kazanmıştır.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "İklim değişikliğiyle mücadelede Paris Anlaşması'nın temel hedefi nedir?",
+          "secenekler": ["A) Okyanus plastik kirliliğini sıfırlamak", "B) Küresel ortalama sıcaklık artışını sanayi öncesine göre 1,5-2°C ile sınırlamak", "C) Tüm ülkelerin 2030'a kadar sıfır emisyona ulaşması", "D) Fosil yakıt ticaretini yasaklamak", "E) Nükleer santrallerin kapatılmasını sağlamak"],
+          "dogruIndex": 1,
+          "aciklama": "2015 yılında imzalanan Paris Anlaşması'nın temel hedefi; küresel ortalama sıcaklık artışını sanayi öncesi dönemin 2°C üzerinde sınırlamak, mümkünse 1,5°C ile tutmaktır. Bu hedef için ülkeler ulusal katkı beyanlarını (NDC) BM'ye sunar.",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
+    },
+    {
+      "id": "guncel-teknoloji",
+      "baslik": "Teknoloji ve Dijital Dönüşüm",
+      "anlatim": {
+        "ozet": "💻 Yapay zeka, 5G, siber güvenlik, kripto para ve uzay teknolojileri günümüzün dönüştürücü teknoloji gündemleridir. Türkiye'nin Togg ve uzay programı bu alanda öne çıkan millî girişimlerdir.",
+        "icerik": [
+          "📌 Yapay Zeka (AI): ChatGPT, OpenAI tarafından geliştirilen ve Kasım 2022'de kamuoyuyla paylaşılan büyük dil modelidir. Hizmete açıldıktan 2 ayda 100 milyon kullanıcıya ulaşarak tarihin en hızlı büyüyen uygulaması oldu. Üretken yapay zeka (Generative AI) metinden görüntü, ses, video ve kod üretebilir. AB, 2024'te 'AI Act' (Yapay Zeka Yasası) ile dünya genelinde bu alandaki ilk kapsamlı düzenlemeyi hayata geçirdi.",
+          "📎 Türkiye'nin teknoloji atılımları: Togg (Türkiye'nin Otomobili Girişim Grubu) — 2023'te seri üretime başlayan, yerli ve milli elektrikli otomobil. Türksat uyduları: Türkiye'nin iletişim uyduları. TÜBİTAK BİLGEM: siber güvenlik ve bilişim araştırmaları. STM (Savunma Teknolojileri Mühendislik): insansız denizaltı ve yapay zeka tabanlı silah sistemleri. 2023'te Türkiye'nin ilk uzay yolcusu Alper Gezeravcı ISS'a gönderildi.",
+          "📎 Kripto para ve blok zinciri: Bitcoin, 2009'da Satoshi Nakamoto takma adıyla tanıtıldı; 2024'te Bitcoin ETF'lerin ABD'de onaylanmasıyla fiyatı 70.000 doları aştı. Türkiye'de kripto para alım-satımı yasal ancak ödeme aracı olarak kullanımı yasak. Blok zinciri; değişmez dağıtık defter (ledger) teknolojisidir — kripto para dışında tedarik zinciri, sağlık ve tapu kayıtlarında da kullanılır.",
+          "📎 5G ve nesnelerin interneti (IoT): 5G şebekeleri, 4G'ye kıyasla 100 kat daha hızlı veri aktarımı sunabilir; özellikle otonom araçlar, akıllı fabrikalar ve telemedikal için kritik. Türkiye'de 5G'ye geçiş süreci AB standartlarına uygun biçimde planlanmakta ve kademeli devreye alım 2025-2026 dönemine denk gelmesi beklenmektedir."
+        ],
+        "anahtarNoktalar": [
+          "🔑 ChatGPT, Kasım 2022'de yayıma girdi; OpenAI geliştirdi.",
+          "💡 Togg, 2023'te seri üretime başlayan Türkiye'nin ilk yerli elektrikli otomobilidir.",
+          "🔑 AB'nin AI Act'i (2024) dünya tarihinde yapay zekayı kapsamlı biçimde düzenleyen ilk yasadır.",
+          "💡 Bitcoin 2009'da başlatıldı; 2024'te ETF onayıyla 70.000 $ üzerini gördü.",
+          "🔑 Alper Gezeravcı, 2024 başında ISS'a giden Türkiye'nin ilk uzay yolcusudur."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "ChatGPT'yi geliştiren şirket hangisidir?",
+          "secenekler": ["A) Google DeepMind", "B) Meta AI", "C) OpenAI", "D) Microsoft Research", "E) IBM Watson"],
+          "dogruIndex": 2,
+          "aciklama": "ChatGPT, San Francisco merkezli OpenAI şirketi tarafından geliştirilmiş ve Kasım 2022'de kamuoyuyla paylaşılmıştır. Microsoft, OpenAI'ye büyük yatırım yaparak ürünlerini entegre etmiştir.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "Togg (Türkiye'nin Otomobili) hangi yılda seri üretimine başlamıştır?",
+          "secenekler": ["A) 2020", "B) 2021", "C) 2022", "D) 2023", "E) 2025"],
+          "dogruIndex": 3,
+          "aciklama": "Togg, 2023 yılında Bursa Gemlik'teki fabrikasında seri üretime başlamış ve aynı yıl ilk müşterilerine teslim edilmiştir. Türkiye'nin ilk yerli ve milli elektrikli otomobilidir.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "Bitcoin hangi yılda piyasaya çıkmıştır?",
+          "secenekler": ["A) 2005", "B) 2007", "C) 2009", "D) 2011", "E) 2013"],
+          "dogruIndex": 2,
+          "aciklama": "Bitcoin, Satoshi Nakamoto takma adlı kişi/grup tarafından 2009 yılında tanıtılmış; Ocak 2009'da ilk blok (genesis block) üretilmiştir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Avrupa Birliği'nin yapay zekayı kapsamlı biçimde düzenleyen 'AI Act' yasası hangi yılda yürürlüğe girmiştir?",
+          "secenekler": ["A) 2021", "B) 2022", "C) 2023", "D) 2024", "E) 2025"],
+          "dogruIndex": 3,
+          "aciklama": "AB'nin Yapay Zeka Yasası (AI Act) 2024 yılında resmi olarak yürürlüğe girmiştir. Dünya tarihinde yapay zekayı bu ölçekte kapsamlı biçimde düzenleyen ilk yasal çerçevedir.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "Türkiye'nin ilk uzay yolcusu kimdir ve ISS'a hangi yılda gitmiştir?",
+          "secenekler": ["A) Selçuk Bayraktar — 2023", "B) Alper Gezeravcı — 2024", "C) Haluk Bayraktar — 2023", "D) Hasan Doğan — 2022", "E) Türkiye henüz uzay yolcusu göndermemiştir."],
+          "dogruIndex": 1,
+          "aciklama": "Türk astronot Alper Gezeravcı, Ocak 2024'te SpaceX Crew Dragon aracıyla Uluslararası Uzay İstasyonu'na (ISS) gönderilmiş ve yaklaşık 14 gün orada görev yapmıştır.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "Blok zinciri (blockchain) teknolojisinin temel özelliği nedir?",
+          "secenekler": ["A) Merkezi bir sunucu tarafından kontrol edilir.", "B) Verileri değiştirilemez biçimde dağıtık kayıt defterinde saklar.", "C) Yalnızca kripto para işlemlerinde kullanılabilir.", "D) Veriler internet bağlantısı olmadan silinemez.", "E) Her işlem devlet onayına tabidir."],
+          "dogruIndex": 1,
+          "aciklama": "Blok zinciri; verilerin şifrelenerek birbirine bağlı bloklar hâlinde, dağıtık ve değiştirilemez biçimde saklandığı teknolojidir. Kripto para dışında tedarik zinciri, tapu, sağlık ve oy verme sistemlerinde de kullanılır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "5G teknolojisinin 4G'ye kıyasla temel avantajı nedir?",
+          "secenekler": ["A) Daha düşük enerji tüketimi ve daha az baz istasyonu ihtiyacı", "B) Çok daha yüksek veri hızı ve düşük gecikme süresi", "C) Yalnızca şehir merkezlerinde kapsama alanı sunabilir.", "D) Yüksek güvenlik nedeniyle şifreleme gerektirmez.", "E) Uluslararası arama ücretlerini ortadan kaldırır."],
+          "dogruIndex": 1,
+          "aciklama": "5G, 4G'ye kıyasla 100 kata kadar daha hızlı veri iletimi ve çok daha düşük gecikme süresi sunar. Bu özellikler otonom araçlar, akıllı fabrikalar (endüstri 4.0) ve uzaktan cerrahi gibi gecikmeye duyarlı uygulamalar için kritiktir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'de kripto para kullanımına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+          "secenekler": ["A) Türkiye'de kripto para tamamen yasaklanmıştır.", "B) Kripto para alım-satımı serbesttir; ancak mal/hizmet ödemelerinde kullanımı yasaktır.", "C) Türkiye, kripto parayı resmi para birimi olarak kabul etmiştir.", "D) Yalnızca devlet onaylı borsa platformlarında işlem yapılabilir.", "E) Kripto para yatırımcıları vergi ödeme yükümlülüğünden muaftır."],
+          "dogruIndex": 1,
+          "aciklama": "Türkiye'de 2021 yılında yürürlüğe giren düzenlemeyle kripto paraların ödeme aracı olarak kullanılması yasaklandı; ancak borsa platformları üzerinden alım-satım (yatırım amaçlı) yasaldır. 2024'te kripto varlık hizmet sağlayıcılarının lisanslı olması zorunluluğu getirildi.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "TÜBİTAK BİLGEM Türkiye'de hangi alanda çalışmalar yürütmektedir?",
+          "secenekler": ["A) Uzay araştırmaları ve uydu geliştirme", "B) Siber güvenlik ve bilişim teknolojileri araştırmaları", "C) Yerli otomobil geliştirme", "D) Yenilenebilir enerji sistemleri", "E) Nükleer enerji reaktörü tasarımı"],
+          "dogruIndex": 1,
+          "aciklama": "TÜBİTAK BİLGEM (Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi), siber güvenlik, kriptografi, yazılım geliştirme ve bilgi güvenliği alanlarında Türkiye'nin önde gelen araştırma merkezi olarak faaliyet göstermektedir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Üretken yapay zeka (Generative AI) sistemleri aşağıdakilerden hangisini yapabilir?",
+          "secenekler": ["A) Yalnızca metin yorumlayabilir; yeni içerik üretemez.", "B) Fiziksel nesneleri 3D yazıcıyla basabilir.", "C) Metinden görüntü, ses, video ve kod üretebilir.", "D) İnternet erişimi olmadan çalışamaz.", "E) Yalnızca programlama dilleri için kullanılır."],
+          "dogruIndex": 2,
+          "aciklama": "Üretken yapay zeka, metin, görüntü, ses, video ve kod dahil çok sayıda formatta yeni içerik üretebilen yapay zeka sistemlerini kapsar. ChatGPT (metin), DALL-E (görüntü), Sora (video) ve GitHub Copilot (kod) bunların örnekleridir.",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
     }
   ]
 }

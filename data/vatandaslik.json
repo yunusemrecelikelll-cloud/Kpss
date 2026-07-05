@@ -950,6 +950,190 @@
           "kaynak": "KPSS-Tipi"
         }
       ]
+    },
+    {
+      "id": "vatandaslik-temel-haklar",
+      "baslik": "Temel Hak ve Özgürlükler",
+      "anlatim": {
+        "ozet": "🛡️ 1982 Anayasası'nda temel haklar üç grupta incelenir: kişi hakları, siyasi haklar, sosyal ve ekonomik haklar. Bazı haklar mutlak olup hiçbir koşulda kısıtlanamaz.",
+        "icerik": [
+          "📌 Temel haklar üç ana gruba ayrılır: (1) Kişi hakları ve ödevleri: yaşam hakkı, kişi dokunulmazlığı, din-vicdan özgürlüğü, düşünce özgürlüğü, haberleşme özgürlüğü, konut dokunulmazlığı. (2) Siyasi haklar ve ödevler: seçme-seçilme hakkı, siyasi parti kurma, kamu hizmetine girme, dilekçe hakkı, vatan hizmeti. (3) Sosyal ve ekonomik haklar: eğitim hakkı, sağlık hakkı, çalışma hakkı, sosyal güvenlik hakkı, konut hakkı.",
+          "📎 Hakların sınırlandırılması: 1982 Anayasası'nın 13. maddesine göre temel hak ve özgürlükler; ancak kanunla, Anayasa'nın ilgili maddelerinde belirtilen sebeplerle ve özlerine dokunulmaksızın sınırlandırılabilir. Ayrıca sınırlama, demokratik toplum düzeninin gereklerine ve ölçülülük ilkesine aykırı olamaz.",
+          "📎 Mutlak yasaklar: Anayasa'nın 17. maddesine göre 'işkence', 'insan onuruyla bağdaşmayan muamele' hiçbir koşulda uygulanamaz. Yaşam hakkı, savaş hukuku dışında dokunulamaz haklardan biridir. Temel hakların, sırf anayasa değişikliği yoluyla bile özlerine dokunmak mümkün değildir.",
+          "📎 Pozitif ve negatif statü hakları: Negatif statü hakları devletin bireye müdahale etmemesini, dokunmamasını gerektirir (yaşam hakkı, düşünce özgürlüğü). Pozitif statü hakları devletten aktif bir edim, hizmet sunması taleplerini içerir (sağlık hakkı, eğitim hakkı). Aktif statü hakları ise bireyin devlet yönetimine katılmasını ifade eder (seçme hakkı)."
+        ],
+        "anahtarNoktalar": [
+          "🔑 Sınırlandırma yalnızca kanunla ve 'özlerine dokunulmaksızın' yapılabilir.",
+          "💡 Yaşam hakkı ve işkence yasağı mutlak korunan haklardandır.",
+          "🔑 Negatif statü = devlet elini çeksin; Pozitif statü = devlet hizmet sunsun.",
+          "💡 Temel haklar anayasa değişikliğiyle de özlerine dokunacak biçimde kısıtlanamaz.",
+          "🔑 13. madde: sınırlandırma koşulları; ölçülülük ve demokratik toplum gereklerine uygunluk."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdakilerden hangisi 1982 Anayasası kapsamında bir 'kişi hakkı' örneğidir?",
+          "secenekler": ["A) Seçme ve seçilme hakkı", "B) Konut dokunulmazlığı", "C) Sosyal güvenlik hakkı", "D) Çalışma hakkı", "E) Siyasi parti kurma hakkı"],
+          "dogruIndex": 1,
+          "aciklama": "Konut dokunulmazlığı, bireyin özel alanının devlet müdahalesinden korunmasını öngören bir kişi hakkıdır. Seçme-seçilme ve siyasi parti siyasi haklara; sosyal güvenlik ve çalışma hakkı ise sosyal-ekonomik haklara girer.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "1982 Anayasası'nın 13. maddesine göre temel haklar ve özgürlükler hangi işlemle sınırlandırılabilir?",
+          "secenekler": ["A) Cumhurbaşkanlığı kararnamesiyle", "B) Bakanlar Kurulu kararıyla", "C) Kanunla", "D) Yönetmelikle", "E) Tüzükle"],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 13. maddesi gereği temel hak ve özgürlükler ancak kanunla sınırlandırılabilir. Kararname, yönetmelik veya tüzükle temel haklar kısıtlanamaz.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi 'negatif statü hakkı' olarak tanımlanır?",
+          "secenekler": ["A) Sağlık hakkı", "B) Eğitim hakkı", "C) Sosyal güvenlik hakkı", "D) Düşünce özgürlüğü", "E) Seçme hakkı"],
+          "dogruIndex": 3,
+          "aciklama": "Negatif statü hakları, devletin bireye müdahale etmemesini gerektirir. Düşünce özgürlüğü; devletin bireyin düşünmesine karışmamasını öngörür. Sağlık, eğitim ve sosyal güvenlik hakları ise devletten aktif hizmet sunan pozitif statü haklarıdır. Seçme hakkı aktif statü hakkıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi hiçbir koşulda sınırlandırılamayan (mutlak) bir haktır?",
+          "secenekler": ["A) Basın özgürlüğü", "B) Haberleşme özgürlüğü", "C) İşkence ve insanlık dışı muamele yasağı", "D) Seyahat özgürlüğü", "E) Mülkiyet hakkı"],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 17. maddesi gereği işkence ve insanlık dışı muamele hiçbir koşulda uygulanamaz; mutlak yasaklar arasındadır. Diğer haklara belirli koşullarda sınırlama getirilebilir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi siyasi hak ve ödevler kapsamında yer alır?",
+          "secenekler": ["A) Kişi dokunulmazlığı", "B) Konut dokunulmazlığı", "C) Dilekçe hakkı", "D) Sosyal güvenlik hakkı", "E) Eğitim hakkı"],
+          "dogruIndex": 2,
+          "aciklama": "Dilekçe hakkı, vatandaşların yetkili makamlara başvurma hakkıdır ve siyasi haklar kapsamında değerlendirilir. Kişi dokunulmazlığı ve konut dokunulmazlığı kişi hakları; sosyal güvenlik ve eğitim ise sosyal-ekonomik haklardır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Bir temel hakkı sınırlandıran yasal düzenlemede 'özüne dokunma' yasağı ne anlama gelir?",
+          "secenekler": ["A) O hakkı tamamen ortadan kaldırmak yasaktır.", "B) Hak yalnızca kararname ile düzenlenebilir.", "C) Haklar yalnızca savaş döneminde sınırlanabilir.", "D) Sınırlandırma yargı denetimine tabi tutulamaz.", "E) Haklar yalnızca parlamento onayıyla genişletilebilir."],
+          "dogruIndex": 0,
+          "aciklama": "Özüne dokunma yasağı; bir hakkı anlamsız kılacak, kullanılamaz hâle getirecek biçimde sınırlandırmanın yasak olduğu anlamına gelir. Hak sınırlanabilir ama özü korunmalıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi 'pozitif statü hakkı' örneğidir?",
+          "secenekler": ["A) Yaşam hakkı", "B) Düşünce özgürlüğü", "C) Konut dokunulmazlığı", "D) Sağlık hakkı", "E) Haberleşme özgürlüğü"],
+          "dogruIndex": 3,
+          "aciklama": "Pozitif statü hakları, devletten aktif hizmet sunmasını talep etmeyi içerir. Sağlık hakkı; devletin hastane açmasını, sağlık hizmeti sunmasını gerektirir. Yaşam, düşünce, konut ve haberleşme hakları negatif statü haklarıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Anayasa'ya göre olağanüstü hâl döneminde bile hangi hak askıya alınamaz?",
+          "secenekler": ["A) Seyahat özgürlüğü", "B) Basın özgürlüğü", "C) Kişi yaşam hakkı ve işkence yasağı", "D) Toplantı ve gösteri yürüyüşü hakkı", "E) Mülkiyet hakkı"],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 15. maddesi olağanüstü hâl döneminde bazı hakların askıya alınabileceğini; ancak yaşam hakkı, işkence yasağı, suç ve cezaların kanuniliği gibi çekirdek hakların bu durumda bile dokunulamaz olduğunu belirtir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdaki ifadelerden hangisi temel hakların özelliklerine ilişkin yanlış bir bilgi içermektedir?",
+          "secenekler": ["A) Temel haklar anayasayla güvence altına alınmıştır.", "B) Temel haklara getirilen sınırlamalar ölçülü olmalıdır.", "C) Temel haklar yalnızca Türk vatandaşlarına tanınmıştır.", "D) Temel haklar kanunla kısıtlanabilir.", "E) Temel haklara özlerine dokunulamaz."],
+          "dogruIndex": 2,
+          "aciklama": "1982 Anayasası'ndaki temel haklardan bir kısmı (örneğin insan onuruyla ilgili haklar, yaşam hakkı) yabancı uyruklu kişilere de tanınmıştır. Seçme-seçilme ve kamu hizmetine girme gibi siyasi haklar yalnızca Türk vatandaşlarına aittir; ancak temel hakların tamamının yalnızca vatandaşlara tanındığı ifadesi yanlıştır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdaki haklardan hangisi hem kişi hem de sosyal hak özelliği taşıyabilir?",
+          "secenekler": ["A) Yaşam hakkı", "B) Eğitim hakkı", "C) Seçme hakkı", "D) Konut dokunulmazlığı", "E) Dilekçe hakkı"],
+          "dogruIndex": 1,
+          "aciklama": "Eğitim hakkı hem bireyin bilgiye erişim özgürlüğü (kişi boyutu) hem de devletin eğitim hizmeti sunması (sosyal boyut) açısından değerlendirilebileceğinden karma nitelikli bir hak olarak kabul edilebilir. Bu nedenle Anayasa'da hem sosyal-ekonomik hak olarak düzenlenmiş hem de bireysel boyutuna vurgu yapılmıştır.",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
+    },
+    {
+      "id": "vatandaslik-secim",
+      "baslik": "Seçim Sistemi ve Siyasi Partiler",
+      "anlatim": {
+        "ozet": "🗳️ Türkiye'de seçimler beş temel ilkeye dayanır: genel, eşit, gizli, serbest ve tek dereceli oy. Siyasi partiler demokratik yaşamın vazgeçilmez unsurlarıdır.",
+        "icerik": [
+          "📌 Seçimin temel ilkeleri: Genel oy — yeterlilik koşullarını taşıyan herkes oy kullanabilir; mülkiyet, eğitim, vergi ödeme gibi şartlar aranmaz. Eşit oy — her seçmenin bir oyu vardır, oylar eşit ağırlıktadır. Gizli oy — seçmen oy tercihini kimseye açıklamak zorunda değildir. Açık sayım-döküm — oylar açık olarak sayılır ve sonuçlar kamuoyuyla paylaşılır. Serbest oy — seçmen serbestçe tercih yapabilir; baskı ve zorlama yasaktır.",
+          "📎 Seçmen ve aday olma koşulları: Seçmen olma için 18 yaşını doldurmak, Türk vatandaşı olmak yeterlidir; kısıtlılar ve mahkûmlar (kasten işlenen suçlardan) oy kullanamaz. Milletvekili adaylığı için 18 yaş, Türk vatandaşlığı, ilköğretim mezunu olmak, kısıtlı olmamak ve belirli suçlardan mahkûm olmamak gereklidir.",
+          "📎 Siyasi partiler: Demokratik ve laik Cumhuriyet ilkelerine aykırı faaliyet yürüten partiler Anayasa Mahkemesi kararıyla kapatılabilir. Siyasi partiler; kurucu sayısı en az 30 Türk vatandaşı tarafından kurulabilir, Hazine yardımından yararlanmak için seçimlerde %3 oy almak gerekir (eski şart %7 idi). Partiler, üye aidatları ve Hazine yardımıyla finanse edilir.",
+          "📎 Seçim sistemi: Türkiye'de milletvekili seçiminde d'Hondt yöntemiyle uygulanan 'nispi temsil sistemi' kullanılır. Seçim barajı %7'dir (2022 sonrası). Cumhurbaşkanlığı seçimi ise iki turlu çoğunluk sistemiyle yapılır: birinci turda salt çoğunluk (>%50) sağlanamazsa en fazla oy alan iki aday arasında ikinci tur yapılır."
+        ],
+        "anahtarNoktalar": [
+          "🔑 5 temel seçim ilkesi: genel, eşit, gizli, serbest, tek dereceli oy.",
+          "💡 Milletvekili seçilme yaşı: 18 (2017 değişikliği). Cumhurbaşkanı: 40.",
+          "🔑 Seçim barajı: %7 (2022 öncesi %10 idi).",
+          "💡 Parti kapatma: Anayasa Mahkemesi kararıyla; laik/demokratik ilkelere aykırı faaliyetler için.",
+          "🔑 Cumhurbaşkanlığı seçimi iki turlu; milletvekili seçimi nispi temsil (d'Hondt)."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Türkiye'de seçimlerde uygulanan temel ilkelerden biri değildir?",
+          "secenekler": ["A) Genel oy", "B) Gizli oy", "C) Serbest oy", "D) Çok dereceli oy", "E) Eşit oy"],
+          "dogruIndex": 3,
+          "aciklama": "Türkiye'de seçimler tek dereceli (doğrudan) oy ilkesiyle yapılır; seçmenler tercihlerini aracılar olmaksızın doğrudan kullanır. Çok dereceli oy (dolaylı seçim) bu ilkelere dahil değildir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'de bir seçmenin oy kullanabilmesi için gereken asgari yaş kaçtır?",
+          "secenekler": ["A) 21", "B) 20", "C) 19", "D) 18", "E) 17"],
+          "dogruIndex": 3,
+          "aciklama": "Anayasa'nın 67. maddesine göre 18 yaşını dolduran her Türk vatandaşı oy kullanma hakkına sahiptir. 2017 anayasa değişikliğiyle hem oy kullanma hem de milletvekili seçilme yaşı 18 olarak belirlendi.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "Türkiye'de milletvekili seçiminde kullanılan seçim sistemi hangisidir?",
+          "secenekler": ["A) Çoğunluk sistemi (tek turlu)", "B) İki turlu çoğunluk sistemi", "C) Nispi temsil sistemi (d'Hondt)", "D) Tek isim çoğunluk sistemi", "E) Karma sistem"],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye'de milletvekili seçiminde d'Hondt yöntemiyle uygulanan nispi temsil sistemi kullanılır. Cumhurbaşkanlığı seçimi ise iki turlu çoğunluk sistemiyle yapılır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Siyasi partilerin Anayasa Mahkemesi tarafından kapatılması için gereken koşul nedir?",
+          "secenekler": ["A) Seçim barajını aşamamaları", "B) Hazine yardımı almak istememeleri", "C) Demokratik ve laik Cumhuriyet ilkelerine aykırı faaliyet yürütmeleri", "D) Üye sayısının 30'un altına düşmesi", "E) İki seçim döneminde ardışık olarak barajı aşamamaları"],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 69. maddesine göre siyasi partiler, demokratik ve laik Cumhuriyet ilkelerine aykırı eylem odağı hâline geldiklerinde Anayasa Mahkemesi kararıyla kapatılabilir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'de 2022 sonrasında uygulanan seçim barajı kaçtır?",
+          "secenekler": ["A) %3", "B) %5", "C) %7", "D) %10", "E) %8"],
+          "dogruIndex": 2,
+          "aciklama": "7 Nisan 2022 tarihli kanun değişikliğiyle seçim barajı %10'dan %7'ye indirilmiştir. Bu değişiklik öncesinde uygulanan baraj %10 idi.",
+          "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "Cumhurbaşkanlığı seçiminde birinci turda hiçbir aday salt çoğunluğu sağlayamazsa ne olur?",
+          "secenekler": ["A) En fazla oy alan aday Cumhurbaşkanı seçilir.", "B) TBMM Cumhurbaşkanını belirler.", "C) İki aday arasında ikinci tur yapılır.", "D) Seçim ertesi ay yenilenir.", "E) Anayasa Mahkemesi karar verir."],
+          "dogruIndex": 2,
+          "aciklama": "İki turlu sistemde birinci turda salt çoğunluk (%50+1) sağlanamazsa en fazla oy alan iki aday arasında ikinci tur seçimi yapılır; ikinci turda en fazla oyu alan aday Cumhurbaşkanı seçilir.",
+          "kaynak": "2020-KPSS"
+        },
+        {
+          "soru": "Aşağıdaki kişilerin hangisi Türkiye'de oy kullanma hakkına sahip değildir?",
+          "secenekler": ["A) 18 yaşındaki üniversite öğrencisi", "B) Yurt dışında yaşayan Türk vatandaşı", "C) Kasten işlenen suçtan hüküm giyen ve cezası infaz edilmemiş mahkûm", "D) Engelli Türk vatandaşı", "E) 85 yaşındaki emekli"],
+          "dogruIndex": 2,
+          "aciklama": "Anayasa'nın 67. maddesine göre, kasıtlı suçtan mahkûm olup cezası devam eden kişiler oy kullanamaz. Yurt dışındaki vatandaşlar, engelliler ve her yaştaki Türk vatandaşı (18 yaş ve üzeri) oy kullanabilir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Siyasi partilerin Hazine yardımından yararlanabilmesi için seçimlerde almak zorunda oldukları asgari oy oranı nedir?",
+          "secenekler": ["A) %1", "B) %3", "C) %5", "D) %7", "E) %10"],
+          "dogruIndex": 1,
+          "aciklama": "Siyasi Partiler Kanunu'na göre Hazine yardımından yararlanmak isteyen partilerin genel seçimlerde ülke genelinde en az %3 oy alması gerekmektedir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'de yeni bir siyasi parti kurabilmek için gereken asgari kurucu sayısı kaçtır?",
+          "secenekler": ["A) 10", "B) 20", "C) 30", "D) 50", "E) 100"],
+          "dogruIndex": 2,
+          "aciklama": "Siyasi Partiler Kanunu'na göre siyasi partiler, Türkiye Büyük Millet Meclisi seçimlerinde aday gösterebilme yeterliliğindeki en az 30 Türk vatandaşı tarafından kurulabilir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Gizli oy ilkesi seçimlerde ne anlama gelir?",
+          "secenekler": ["A) Oy sayımı gizli kapalı ortamda yapılır.", "B) Seçmen oy tercihini kimseye açıklamak zorunda değildir.", "C) Aday listesi kamuoyuyla paylaşılmaz.", "D) Seçim sonuçları gizli tutulur.", "E) Seçmenler kimliklerini gizlemek zorundadır."],
+          "dogruIndex": 1,
+          "aciklama": "Gizli oy ilkesi, seçmenin oy tercihini başkasına açıklamak zorunda olmadığı, oyunu baskısız ve gizlice kullandığı anlamına gelir. Sayım ise tam tersine açık biçimde yapılır (açık sayım-döküm ilkesi).",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
     }
   ]
 }

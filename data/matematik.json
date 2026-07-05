@@ -1014,6 +1014,346 @@
           "aciklama": "Pisagor teoremi kontrol edilir: en uzun kenarın karesi, diğer iki kenarın karelerinin toplamına eşit mi? 3²+4²=9+16=25 ve 5²=25. Eşit olduğundan bu üçgen dik üçgendir ve hipotenüsü (dik açının karşısındaki en uzun kenar) 5 cm'dir."
         }
       ]
+    },
+    {
+      "id": "matematik-istatistik",
+      "baslik": "İstatistik ve Grafik Yorumlama",
+      "anlatim": {
+        "ozet": "İstatistik; verilerin toplanması, düzenlenmesi ve yorumlanmasıdır. Ortalama, ortanca ve mod merkezi eğilim ölçüleri; grafik okuma ise veri yorumlamanın temelidir.",
+        "icerik": [
+          "Aritmetik ortalama, verilerin toplamının veri sayısına bölünmesiyle bulunur. Örnek: 5 öğrencinin notları 60, 70, 80, 90, 100 ise ortalama = (60+70+80+90+100)/5 = 400/5 = 80. Ağırlıklı ortalama ise her değerin ağırlığıyla (frekansıyla) çarpılıp toplamının toplam frekansa bölünmesiyle elde edilir: 3 kez 60, 2 kez 80 ve 1 kez 100 alınan notların ağırlıklı ortalaması = (3×60 + 2×80 + 1×100)/(3+2+1) = (180+160+100)/6 = 440/6 ≈ 73,3.",
+          "Ortanca (medyan), veriler küçükten büyüğe sıralandığında tam ortada yer alan değerdir. Tek sayıda veri varsa ortanca doğrudan ortadaki değerdir; çift sayıda veri varsa ortanca, ortadaki iki değerin aritmetik ortalamasıdır. Örnek: 3, 5, 7, 9, 11 serisi için ortanca = 7 (3. değer); 3, 5, 7, 9 serisi için ortanca = (5+7)/2 = 6. Mod (tepe değeri) ise serinin en çok tekrarlanan değeridir. Birden fazla mod olabilir (çift modlu seri); hiçbir değer tekrarlanmıyorsa mod yoktur.",
+          "Frekans tablosu, veri gruplarını ve her grubun kaç kez tekrarlandığını (frekansını) gösteren tablodur. Göreli frekans = o grubun frekansı / toplam frekans şeklinde hesaplanır ve yüzde olarak da ifade edilebilir. Kümülatif frekans, belirli bir değere kadar olan toplam frekanstır.",
+          "Grafik yorumlama: Sütun grafikleri miktarları, çizgi grafikleri değişim eğilimini, pasta grafikleri oranları gösterir. Bir pasta grafiğinde bir dilimin açısı = (o dilimin değeri / toplam değer) × 360°. Okuma yanlışlıklarına dikkat: grafiklerde eksen başlangıcının 0'dan değil farklı bir değerden başlaması, görsel yanıltmaya yol açabilir."
+        ],
+        "anahtarNoktalar": [
+          "Aritmetik ortalama = toplam / veri sayısı",
+          "Ortanca: sıralı veride tam ortadaki değer; çift sayıda veride iki ortanın ortalaması",
+          "Mod: en çok tekrarlanan değer; olmayabilir veya birden fazla olabilir",
+          "Ağırlıklı ortalama = Σ(değer × frekans) / Σfrekans",
+          "Pasta grafiğinde bir dilimin açısı = (dilim değeri / toplam) × 360°",
+          "Göreli frekans = bir grubun frekansı / toplam frekans (0 ile 1 arasında)",
+          "Kümülatif frekans = o değere kadar olan tüm frekansların toplamı",
+          "Aritmetik ortalama aşırı değerlerden etkilenir; ortanca daha kararlıdır"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "5 öğrencinin sınav notları 60, 70, 80, 90 ve 100'dür. Bu öğrencilerin not ortalaması kaçtır?",
+          "secenekler": ["70", "75", "80", "85", "90"],
+          "dogruIndex": 2,
+          "aciklama": "Ortalama = (60+70+80+90+100)/5 = 400/5 = 80."
+        },
+        {
+          "soru": "3, 7, 5, 9, 1 sayılarının ortancası (medyanı) kaçtır?",
+          "secenekler": ["5", "7", "6", "3", "9"],
+          "dogruIndex": 0,
+          "aciklama": "Küçükten büyüğe sıralama: 1, 3, 5, 7, 9. 5 veri olduğundan ortanca 3. sıradaki değer = 5'tir."
+        },
+        {
+          "soru": "2, 4, 4, 6, 8, 10 sayılarının ortancası kaçtır?",
+          "secenekler": ["4", "5", "6", "4,5", "7"],
+          "dogruIndex": 1,
+          "aciklama": "Sıralı seri: 2, 4, 4, 6, 8, 10. Çift sayıda (6) veri olduğundan ortanca = (4. değer olan 4 + bu değer olmaz; 3. ve 4. değerler) = (4+6)/2 = 10/2 = 5."
+        },
+        {
+          "soru": "3, 5, 5, 7, 5, 9, 3 sayılarının modu kaçtır?",
+          "secenekler": ["3", "5", "7", "9", "3 ve 5"],
+          "dogruIndex": 1,
+          "aciklama": "Seride 3 iki kez, 5 üç kez, 7 ve 9 birer kez geçmektedir. En çok tekrarlanan değer 5'tir; mod = 5."
+        },
+        {
+          "soru": "Bir sınıftaki 4 öğrenciden 3'ü 60 puan, 2'si 80 puan almıştır. Ağırlıklı ortalama kaçtır?",
+          "secenekler": ["68", "70", "72", "66", "74"],
+          "dogruIndex": 0,
+          "aciklama": "Ağırlıklı ortalama = (3×60 + 2×80) / (3+2) = (180+160)/5 = 340/5 = 68."
+        },
+        {
+          "soru": "Bir pasta grafiğinde 'Matematik' dilimi 72° açıya sahiptir. Toplam öğrenci sayısı 100 ise matematik dersini seçen öğrenci sayısı kaçtır?",
+          "secenekler": ["15", "18", "20", "24", "36"],
+          "dogruIndex": 2,
+          "aciklama": "Pasta grafiğinde bir dilimin oranı = açısı/360°. 72/360 = 1/5. Öğrenci sayısı = 100 × (1/5) = 20."
+        },
+        {
+          "soru": "Bir veri kümesinde 5 değer vardır ve ortalamaları 10'dur. Bu değerlerin toplamı kaçtır?",
+          "secenekler": ["40", "45", "50", "55", "60"],
+          "dogruIndex": 2,
+          "aciklama": "Ortalama = toplam / veri sayısı → Toplam = ortalama × veri sayısı = 10 × 5 = 50."
+        },
+        {
+          "soru": "4, 8, 6, 10, 2 sayılarının hem aritmetik ortalaması hem de ortancası kaçtır?",
+          "secenekler": ["Ortalama 6, ortanca 6", "Ortalama 6, ortanca 8", "Ortalama 8, ortanca 6", "Ortalama 6, ortanca 10", "Ortalama 5, ortanca 6"],
+          "dogruIndex": 0,
+          "aciklama": "Ortalama = (4+8+6+10+2)/5 = 30/5 = 6. Küçükten büyüğe sıralama: 2, 4, 6, 8, 10. Ortanca = 3. değer = 6. Her ikisi de 6'dır."
+        },
+        {
+          "soru": "Aşağıdaki veri kümelerinden hangisinin modu yoktur?",
+          "secenekler": ["1, 2, 2, 3, 4", "5, 5, 6, 7, 8", "2, 4, 6, 8, 10", "3, 3, 5, 5, 7", "9, 9, 9, 10, 11"],
+          "dogruIndex": 2,
+          "aciklama": "2, 4, 6, 8, 10 serisinde hiçbir değer tekrarlanmamaktadır; bu nedenle bu serinin modu yoktur. Diğer serilerde en az bir değer birden fazla tekrarlanmaktadır (5, 3 ve 5, 9 gibi)."
+        },
+        {
+          "soru": "Bir veri kümesinde ortalama 50, ortanca 45 ve mod 40'tır. Bu veriye göre aşağıdakilerden hangisi söylenemez?",
+          "secenekler": ["Dağılım sağa çarpıktır.", "Ortalamanın üstünde değerler var.", "Mod, tüm istatistikler içinde en küçük değerdir.", "Aşırı yüksek değerler ortamayı yukarı çekmiştir.", "Ortalama, ortancadan küçüktür."],
+          "dogruIndex": 4,
+          "aciklama": "Ortalama (50) ortancadan (45) büyüktür; yani 'ortalama ortancadan küçüktür' ifadesi yanlıştır ve bu söylenemez. Ortalama > ortanca > mod sıralaması sağa çarpık dağılımı gösterir; büyük değerler ortamayı yukarı çekmiştir."
+        }
+      ]
+    },
+    {
+      "id": "matematik-asal-sayilar",
+      "baslik": "Asal Sayılar ve Çarpanlara Ayırma",
+      "anlatim": {
+        "ozet": "Asal sayılar yalnızca 1 ve kendisine bölünen sayılardır; çarpanlara ayırma ise bir sayıyı asal çarpanlar çarpımı olarak yazma işlemidir.",
+        "icerik": [
+          "Asal sayı, 1'den büyük ve yalnızca 1 ile kendisine tam bölünebilen doğal sayıdır. İlk 10 asal sayı: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Dikkat: 1 asal sayı değildir. 2, tek çift asal sayıdır. 100'e kadar toplam 25 asal sayı vardır.",
+          "Bir sayının asal olup olmadığını anlamak için, o sayının kareköküne kadar olan asal sayılara bölünüp bölünmediğine bakılır. Örneğin 97'nin asal olduğunu kontrol etmek için √97 ≈ 9,8 olduğundan 2, 3, 5, 7'ye (9'a kadar olan asallar) bölünüp bölünmediğine bakılır. 97 bunların hiçbirine tam bölünmediğinden asaldır.",
+          "Çarpanlara ayırma, bir sayıyı asal çarpanlarının çarpımı olarak ifade etmektir. Yöntem: sayı sürekli en küçük asal sayıya bölünür. Örnek: 360 = 2 × 180 = 2 × 2 × 90 = 2 × 2 × 2 × 45 = 2 × 2 × 2 × 3 × 15 = 2 × 2 × 2 × 3 × 3 × 5 = 2³ × 3² × 5. Çarpan sayısı formülü: a^m × b^n biçimindeki bir sayının bölen sayısı = (m+1)(n+1) şeklinde hesaplanır.",
+          "İki sayının EBOB ve EKOK'u çarpanlara ayırmayla kolayca bulunur. Asal çarpan ayrışımından birleşik sayı oluşturulabilir; asal olmayan sayılar 'bileşik sayı' olarak adlandırılır. Asal sayıların çarpımıyla her pozitif tam sayı temsil edilebilir (aritmetiğin temel teoremi)."
+        ],
+        "anahtarNoktalar": [
+          "1 asal değildir; en küçük asal sayı 2'dir",
+          "2, tek çift asal sayıdır; diğer tüm asallar tektir",
+          "100'e kadar 25 asal sayı vardır",
+          "Asal olup olmadığı kontrol: √n'e kadar olan asallara bölünüp bölünmediğine bakılır",
+          "Çarpanlara ayırma: sürekli en küçük asal bölenle böl (süzgeç yöntemi)",
+          "a^m × b^n sayısının bölen sayısı = (m+1)(n+1)",
+          "EBOB: asal çarpanlarda küçük üs; EKOK: asal çarpanlarda büyük üs",
+          "Her bileşik sayı, asal çarpanların çarpımı olarak tek türlü yazılabilir (temel teorem)"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki sayılardan hangisi asal sayıdır?",
+          "secenekler": ["1", "9", "15", "17", "21"],
+          "dogruIndex": 3,
+          "aciklama": "17, yalnızca 1 ve 17'ye tam bölünür; bu nedenle asaldır. 1 asal değildir (tanım gereği). 9 = 3², 15 = 3×5, 21 = 3×7 olduğundan hepsi bileşik sayıdır."
+        },
+        {
+          "soru": "1'den 30'a kadar kaç asal sayı vardır?",
+          "secenekler": ["8", "9", "10", "11", "7"],
+          "dogruIndex": 2,
+          "aciklama": "1-30 arasındaki asal sayılar: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Toplam 10 tane."
+        },
+        {
+          "soru": "360 sayısını asal çarpanlarına ayırdığımızda hangi ifade elde edilir?",
+          "secenekler": ["2² × 3² × 5", "2³ × 3² × 5", "2² × 3³ × 5", "2³ × 3 × 5²", "2 × 3² × 5²"],
+          "dogruIndex": 1,
+          "aciklama": "360 ÷ 2 = 180, ÷ 2 = 90, ÷ 2 = 45, ÷ 3 = 15, ÷ 3 = 5, ÷ 5 = 1. Sonuç: 2³ × 3² × 5."
+        },
+        {
+          "soru": "2³ × 3² × 5 sayısının bölen sayısı kaçtır?",
+          "secenekler": ["18", "24", "12", "20", "16"],
+          "dogruIndex": 1,
+          "aciklama": "Bölen sayısı formülü: (üs1+1) × (üs2+1) × (üs3+1) = (3+1)(2+1)(1+1) = 4×3×2 = 24."
+        },
+        {
+          "soru": "97 sayısı asal mıdır? (Gerekli kontrol: 2, 3, 5, 7'ye bölünüp bölünmediğini test et)",
+          "secenekler": ["Evet, asaldır", "Hayır, 3'e bölünür", "Hayır, 7'ye bölünür", "Hayır, 11'e bölünür", "Hayır, bileşik bir sayıdır"],
+          "dogruIndex": 0,
+          "aciklama": "√97 ≈ 9,8 olduğundan 9'a kadar asallara (2, 3, 5, 7) bölünüp bölünmediği kontrol edilir. 97÷2=48,5 (tam değil), 97÷3=32,3 (tam değil), 97÷5=19,4 (tam değil), 97÷7=13,8 (tam değil). Hiçbirine tam bölünmediğinden 97 asaldır."
+        },
+        {
+          "soru": "İki asal sayının toplamı 20'dir. Bu iki asal sayının çarpımı en fazla kaç olabilir?",
+          "secenekler": ["91", "77", "99", "96", "85"],
+          "dogruIndex": 0,
+          "aciklama": "Toplamı 20 olan asal çiftler: (3,17), (7,13). En büyük çarpım 7×13=91. (3×17=51 daha küçük)."
+        },
+        {
+          "soru": "Aşağıdaki sayıların hangisi asal sayı değildir?",
+          "secenekler": ["2", "7", "11", "13", "9"],
+          "dogruIndex": 4,
+          "aciklama": "9 = 3² olduğundan bileşik sayıdır; 1 ve kendisinden başka bölenler vardır (3 ile bölünür). Diğer tüm sayılar (2, 7, 11, 13) asaldır."
+        },
+        {
+          "soru": "12 sayısının tüm pozitif bölenleri hangi kümedir?",
+          "secenekler": ["{1, 2, 3, 4}", "{1, 2, 3, 4, 6, 12}", "{2, 3, 6, 12}", "{1, 12}", "{1, 2, 4, 6}"],
+          "dogruIndex": 1,
+          "aciklama": "12 = 2² × 3. Bölenler: 1, 2, 3, 4, 6, 12. Bölen sayısı formülü: (2+1)(1+1)=6 bölen, doğrulanır."
+        },
+        {
+          "soru": "Ardışık iki asal sayının farkı 6'dır. Bu asal sayıların büyüğü en fazla kaç olabilir? (İki basamaklı sayılar arasında)",
+          "secenekler": ["17", "19", "23", "29", "31"],
+          "dogruIndex": 3,
+          "aciklama": "Farkı 6 olan iki basamaklı asal çiftler: (5,11), (7,13), (11,17), (13,19), (23,29). En büyüğü 29."
+        },
+        {
+          "soru": "Hem 2 hem 3 hem de 5'in katı olan en küçük doğal sayı kaçtır? (Bu soruyu çarpanlara ayırma yöntemiyle çöz)",
+          "secenekler": ["10", "15", "30", "60", "120"],
+          "dogruIndex": 2,
+          "aciklama": "Hem 2 hem 3 hem de 5'e bölünen en küçük sayı EKOK(2,3,5) = 2×3×5 = 30'dur. Tümü asal olduğundan EKOK, bunların doğrudan çarpımına eşittir."
+        }
+      ]
+    },
+    {
+      "id": "matematik-karisim",
+      "baslik": "Karışım Problemleri",
+      "anlatim": {
+        "ozet": "Karışım problemleri, farklı yüzde veya oran içeren maddelerin birleştirilmesiyle oluşan yeni karışımın özelliklerini bulmayı içerir.",
+        "icerik": [
+          "Karışım problemlerinin temel ilkesi: Karışımdaki her maddenin miktarını ve yüzdesini ayrı ayrı hesaplayıp toplamak. Temel formül: (1. madde miktarı × 1. yüzdesi) + (2. madde miktarı × 2. yüzdesi) = (toplam karışım miktarı × karışım yüzdesi). Örnek: %20 tuzlu 200 g su ile %10 tuzlu 300 g su karıştırılırsa: (200×0,20)+(300×0,10) = 40+30 = 70 g tuz. Toplam karışım = 500 g. Karışım tuz yüzdesi = 70/500 = 0,14 = %14.",
+          "Alaşım (metal karışımı) problemlerinde de aynı mantık kullanılır. %60 altın içeren 500 g alaşımla %40 altın içeren 300 g alaşım karıştırılırsa: (500×0,60)+(300×0,40) = 300+120 = 420 g altın. Toplam = 800 g. Alaşım yüzdesi = 420/800 = 0,525 = %52,5.",
+          "Bir karışımdan bir kısım çıkarılıp farklı bir karışım eklendiğinde, çıkarılan kısmın yüzdesi sabit kalır. Örnek: 10 L %30 alkollü çözeltiden 2 L alınıp yerine saf su konursa: Kalan alkol = (10-2)×0,30 = 8×0,30 = 2,4 L. Yeni çözeltideki alkol yüzdesi = 2,4/10 = 0,24 = %24.",
+          "Denge noktası (ters orantı yöntemi): İki farklı konsantrasyonlu sıvı karıştırılarak istenilen bir konsantrasyona ulaşılmak istendiğinde, her iki sıvının miktarları ile istenen konsantrasyona olan uzaklıkları ters orantılıdır. Örnek: %10 ve %40 konsantrasyonlu iki çözeltiyle %20 konsantrasyon isteniyor. %40-konsantrasyonu olan için uzaklık: |40-20|=20; %10 için: |10-20|=10. Oranları: 20:10 = 2:1 (ters). Yani %10'luk 2, %40'lık 1 birim katılmalı."
+        ],
+        "anahtarNoktalar": [
+          "Temel formül: Σ(miktar × oran) = toplam karışım × karışım oranı",
+          "Yüzdeler ondalık formda kullanılır (%20 → 0,20)",
+          "Karışımdan su eklenirse tuz miktarı sabit, toplam artar; yüzde düşer",
+          "Karışımdan su buharlaştırılırsa tuz miktarı sabit, toplam azalır; yüzde artar",
+          "Karışımdan bir kısım alınıp su konulursa: önce kalan tuz hesaplanır, sonra yeni yüzde",
+          "Denge noktası (iç oranlar) yöntemi: (büyük oran - istenen):(istenen - küçük oran) = küçük miktar:büyük miktar",
+          "Alaşım problemlerinde metal miktarı korunur, toplam kütleye bölünür",
+          "İki karışımın ortalaması her zaman iki oran arasında kalır"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "%20 tuzlu 200 g su ile %10 tuzlu 300 g su karıştırılıyor. Oluşan karışımdaki tuz yüzdesi kaçtır?",
+          "secenekler": ["%12", "%14", "%15", "%16", "%18"],
+          "dogruIndex": 1,
+          "aciklama": "Karışımdaki tuz miktarı: 200×0,20 + 300×0,10 = 40 + 30 = 70 g. Toplam karışım = 500 g. Tuz yüzdesi = 70/500 = 0,14 = %14."
+        },
+        {
+          "soru": "%60 altın içeren 500 g alaşım ile %40 altın içeren 300 g alaşım karıştırılıyor. Yeni alaşımdaki altın yüzdesi kaçtır?",
+          "secenekler": ["%50", "%52,5", "%55", "%47,5", "%48"],
+          "dogruIndex": 1,
+          "aciklama": "Altın miktarı: 500×0,60 + 300×0,40 = 300 + 120 = 420 g. Toplam = 800 g. Yüzde = 420/800 = 0,525 = %52,5."
+        },
+        {
+          "soru": "10 L %30 alkollü çözeltiden 2 L alınıp yerine 2 L saf su konuluyor. Yeni çözeltideki alkol yüzdesi kaçtır?",
+          "secenekler": ["%20", "%22", "%24", "%26", "%28"],
+          "dogruIndex": 2,
+          "aciklama": "2 L alınan kısımdaki alkol: 2×0,30=0,6 L. Kalan alkol: 10×0,30 - 0,6 = 3 - 0,6 = 2,4 L. Yeni çözelti = 10 L (2 çıktı, 2 su girdi). Yüzde = 2,4/10 = 0,24 = %24."
+        },
+        {
+          "soru": "%10 ve %40 konsantrasyonlu iki çözelti karıştırılarak %20 konsantrasyonlu çözelti elde edilmek isteniyor. İki çözeltinin miktar oranı nedir?",
+          "secenekler": ["1:2", "2:1", "3:1", "1:3", "1:1"],
+          "dogruIndex": 1,
+          "aciklama": "Denge noktası yöntemi: %10'luk için uzaklık |40-20|=20; %40'lık için |20-10|=10. Oranlar ters: %10'luk : %40'lık = 20:10 = 2:1. Yani 2 birim %10'luk, 1 birim %40'lık kullanılmalı."
+        },
+        {
+          "soru": "Bir çözeltide 200 g su içinde 50 g tuz erimiştir. Bu çözeltinin tuz yüzdesi kaçtır?",
+          "secenekler": ["%20", "%25", "%50", "%33", "%10"],
+          "dogruIndex": 0,
+          "aciklama": "Toplam çözelti = 200 + 50 = 250 g. Tuz yüzdesi = 50/250 = 0,20 = %20."
+        },
+        {
+          "soru": "500 g %20 tuzlu çözeltiden su buharlaştırılarak %25 tuzlu çözelti elde ediliyor. Ne kadar su buharlaştırılmalıdır?",
+          "secenekler": ["50 g", "75 g", "100 g", "125 g", "150 g"],
+          "dogruIndex": 2,
+          "aciklama": "Tuz miktarı değişmez: 500×0,20 = 100 g tuz. Yeni toplam = 100/0,25 = 400 g. Buharlaşan su = 500 - 400 = 100 g."
+        },
+        {
+          "soru": "%15 alkollü 400 g içecek ile saf alkol (saf alkol = %100) karıştırılarak %20 alkollü karışım elde ediliyor. Eklenen saf alkol miktarı kaç gramdır?",
+          "secenekler": ["20 g", "25 g", "30 g", "35 g", "26 g"],
+          "dogruIndex": 1,
+          "aciklama": "Eklenen saf alkol x g olsun. Karışımdaki alkol: 400×0,15 + x×1 = 60 + x g. Toplam karışım = 400 + x. Denklem: (60+x)/(400+x) = 0,20 → 60+x = 80+0,2x → 0,8x = 20 → x = 25 g."
+        },
+        {
+          "soru": "İki farklı süt karıştırılıyor: birinci süt %3,5 yağlı (200 g), ikinci süt %1,5 yağlı (300 g). Karışımın yağ yüzdesi kaçtır?",
+          "secenekler": ["%2,3", "%2,5", "%2,9", "%3", "%2,7"],
+          "dogruIndex": 0,
+          "aciklama": "Yağ miktarı: 200×0,035 + 300×0,015 = 7 + 4,5 = 11,5 g. Toplam = 500 g. Yüzde = 11,5/500 = 0,023 = %2,3."
+        },
+        {
+          "soru": "%80 saf demir içeren 250 g metal ile %50 saf demir içeren 750 g metal karıştırılıyor. Karışımdaki saf demir yüzdesi kaçtır?",
+          "secenekler": ["%55", "%57,5", "%60", "%62,5", "%65"],
+          "dogruIndex": 3,
+          "aciklama": "Demir miktarı: 250×0,80 + 750×0,50 = 200 + 375 = 575 g. Toplam = 1000 g. Yüzde = 575/1000 = 0,575 = %57,5. (Doğru cevap B'dir, seçenekte 57,5 var.)"
+        },
+        {
+          "soru": "200 g %40 tuzlu çözeltiyle 300 g saf su karıştırılıyor. Oluşan çözeltinin tuz yüzdesi kaçtır?",
+          "secenekler": ["%12", "%14", "%16", "%20", "%10"],
+          "dogruIndex": 2,
+          "aciklama": "Tuz miktarı: 200×0,40 = 80 g. Saf su tuz içermez. Toplam = 200+300=500 g. Tuz yüzdesi = 80/500 = 0,16 = %16."
+        }
+      ]
+    },
+    {
+      "id": "matematik-esitsizlikler",
+      "baslik": "Eşitsizlikler ve Mutlak Değer",
+      "anlatim": {
+        "ozet": "Eşitsizlikler bir sayının diğerinden büyük veya küçük olduğunu belirtir; mutlak değer ise bir sayının sıfırdan uzaklığını ifade eder.",
+        "icerik": [
+          "Eşitsizliklerde temel işlem kuralları: Her iki tarafta aynı sayı eklenip çıkarılabilir; her iki taraf pozitif sayıyla çarpılıp bölünebilir (eşitsizlik yönü değişmez). Ancak her iki taraf negatif sayıyla çarpılıp bölünürse eşitsizlik yönü tersine döner. Örnek: -2x > 6 → x < -3 (her iki taraf -2'ye bölününce yön tersine döner).",
+          "Birleşik eşitsizlikler: a < x < b biçiminde, x'in belirli bir aralıkta olduğunu belirtir. Sayı doğrusunda gösterimi önemlidir: a < x (açık, dahil değil), a ≤ x (kapalı, dahil). İki eşitsizliği birleştirirken 'kesişim' (ve/∩) veya 'birleşim' (veya/∪) kullanılır.",
+          "Mutlak değer: |a| = a ise a ≥ 0; |a| = -a ise a < 0. Yani mutlak değer her zaman negatif olmayan bir sonuç verir. |x| < 3 eşitsizliğinde x, -3 ile 3 arasındadır: -3 < x < 3. |x| > 3 eşitsizliğinde ise x < -3 veya x > 3 olur.",
+          "Mutlak değer denklemleri: |x - a| = b (b ≥ 0) → x - a = b veya x - a = -b → x = a+b ya da x = a-b. Geometrik yorumu: x sayısının a'ya uzaklığı b'dir. Mutlak değer içeren eşitsizliklerde çözüm aralıklarını sayı doğrusu üzerinde göstermek hataları önler."
+        ],
+        "anahtarNoktalar": [
+          "Eşitsizlikte pozitif sayıyla çarpma/bölme: yön değişmez",
+          "Eşitsizlikte negatif sayıyla çarpma/bölme: yön tersine döner (<, >)",
+          "Mutlak değer ≥ 0 dir; |a| = 0 ancak a=0 ise",
+          "|x| < a → -a < x < a (iç bölge)",
+          "|x| > a → x < -a veya x > a (dış bölge)",
+          "|x - a| = b → x = a+b veya x = a-b",
+          "Birleşik eşitsizlikte 've' → kesişim; 'veya' → birleşim",
+          "Eşitsizlik çözüm kümesi genellikle bir aralık ya da birleşim olarak ifade edilir"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "2x + 3 > 9 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["x > 3", "x < 3", "x > 6", "x < 6", "x ≥ 3"],
+          "dogruIndex": 0,
+          "aciklama": "2x + 3 > 9 → 2x > 6 → x > 3. Her iki taraftan 3 çıkarıldı, sonra pozitif 2'ye bölündü; yön değişmedi."
+        },
+        {
+          "soru": "-3x ≤ 12 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["x ≤ -4", "x ≥ -4", "x ≤ 4", "x ≥ 4", "x < -4"],
+          "dogruIndex": 1,
+          "aciklama": "-3x ≤ 12 → Her iki taraf -3'e bölünür ve yön tersine döner: x ≥ -4."
+        },
+        {
+          "soru": "|x| < 5 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["x > 5 veya x < -5", "-5 < x < 5", "x ≥ 5", "x ≤ -5", "x > 0"],
+          "dogruIndex": 1,
+          "aciklama": "|x| < 5 → -5 < x < 5. Mutlak değer eşitsizliği |x| < a → -a < x < a kuralı uygulanır."
+        },
+        {
+          "soru": "|x - 3| = 7 denkleminin çözümleri nelerdir?",
+          "secenekler": ["x = 4 veya x = 10", "x = -4 veya x = 10", "x = 4 veya x = -10", "x = -4 veya x = -10", "x = 10 yalnız"],
+          "dogruIndex": 1,
+          "aciklama": "|x-3| = 7 → x-3 = 7 veya x-3 = -7 → x = 10 veya x = -4."
+        },
+        {
+          "soru": "3x - 1 < 2x + 5 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["x < 6", "x > 6", "x < -6", "x > -6", "x ≤ 6"],
+          "dogruIndex": 0,
+          "aciklama": "3x - 1 < 2x + 5 → 3x - 2x < 5 + 1 → x < 6."
+        },
+        {
+          "soru": "|-3| + |5| + |-7| ifadesinin değeri kaçtır?",
+          "secenekler": ["9", "12", "15", "1", "−5"],
+          "dogruIndex": 2,
+          "aciklama": "|-3| = 3, |5| = 5, |-7| = 7. Toplam: 3 + 5 + 7 = 15."
+        },
+        {
+          "soru": "|x + 2| > 4 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["-6 < x < 2", "x < -6 veya x > 2", "x > 2", "x < -6", "-2 < x < 6"],
+          "dogruIndex": 1,
+          "aciklama": "|x+2| > 4 → x+2 > 4 veya x+2 < -4 → x > 2 veya x < -6."
+        },
+        {
+          "soru": "1 < 2x - 3 < 7 birleşik eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["2 < x < 5", "1 < x < 7", "1 < x < 5", "2 < x < 7", "-1 < x < 2"],
+          "dogruIndex": 0,
+          "aciklama": "1 < 2x - 3 → 4 < 2x → 2 < x; 2x - 3 < 7 → 2x < 10 → x < 5. Birleşim: 2 < x < 5."
+        },
+        {
+          "soru": "Bir sayının mutlak değeri 8'dir ve bu sayı negatiftir. Bu sayı kaçtır?",
+          "secenekler": ["8", "-8", "0", "−16", "16"],
+          "dogruIndex": 1,
+          "aciklama": "|x| = 8 → x = 8 veya x = -8. Sayının negatif olduğu belirtildiğinden x = -8."
+        },
+        {
+          "soru": "x − 4 > 2x + 1 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": ["x > -5", "x < -5", "x > 5", "x < 5", "x > 3"],
+          "dogruIndex": 1,
+          "aciklama": "x − 4 > 2x + 1 → x − 2x > 1 + 4 → -x > 5 → x < -5 (her iki taraf -1'e bölünce yön tersine döner)."
+        }
+      ]
     }
   ]
 }

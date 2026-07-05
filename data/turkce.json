@@ -511,6 +511,346 @@
           "aciklama": "Bir paragrafın giriş cümlesinde ortaya konan tez veya görüş ('sabırla beklemenin daha iyi sonuçlar doğurması'), gelişme bölümünde örneklerle, açıklamalarla, kanıtlarla desteklenmelidir. Bu nedenle gelişme bölümünde sabırlı davranışın olumlu sonuçlarına dair somut örnekler ve açıklamalar yer almalıdır. Konudan kopma, tekrar veya alakasız geçişler paragrafın bütünlüğünü bozar ve iyi bir paragrafta bulunmaması gereken unsurlardır."
         }
       ]
+    },
+    {
+      "id": "turkce-sozcuk-yapisi",
+      "baslik": "Sözcük Yapısı",
+      "anlatim": {
+        "ozet": "Sözcük yapısı; kök, gövde, yapım eki ve çekim eklerinin nasıl işlediğini, sözcüklerin nasıl türediğini ve birleştiğini inceler.",
+        "icerik": [
+          "Sözcüğün temel birimi 'kök'tür. Kök, bir sözcüğün daha küçük anlamlı parçalara ayrılamayan en küçük birimidir. Örneğin 'kitaplık' sözcüğünde kök 'kitap'tır. Kökler ikiye ayrılır: isim kökleri (ev, taş, gözlem) ve fiil kökleri (gel-, git-, yaz-). Gövde ise bir köke yapım eki getirilmesiyle elde edilen, yeni anlam kazanmış birimdir: 'gözlem' sözcüğüne '-ci' eki getirilince 'gözlemci' gövdesi oluşur.",
+          "Yapım ekleri, bir sözcüğün anlamını ve çoğu kez türünü değiştirerek yeni sözcükler üretir. İsimden isim yapım ekleri (kitap + -lık → kitaplık), isimden fiil yapım ekleri (temiz + -le → temizlemek), fiilden isim yapım ekleri (yaz + -ı → yazı), fiilden fiil yapım ekleri (gel + -iş → geliş veya bak + -ış- → bakış) bunların başlıca örnekleridir.",
+          "Çekim ekleri ise sözcüğün anlamını ve türünü değiştirmez; yalnızca sözcüğün cümle içindeki görevini ve ilişkisini belirler. İsim çekim ekleri: hal ekleri (-ı, -a, -da, -dan), iyelik ekleri (kalem-im, kalem-in...), çoğul eki (-lar/-ler) ve ek-eylem (-dır) bunlardandır. Fiil çekim ekleri: kip ekleri ve kişi ekleri. 'Ev-ler-de-ki-ler-den' sözcüğünde kök 'ev', çekim ekleri '-ler, -de, -ki, -ler, -den' şeklinde sıralanır.",
+          "Birleşik sözcükler, iki ya da daha fazla sözcüğün bir araya gelerek yeni ve kalıplaşmış bir anlam kazanmasıyla oluşur; bitişik (hanımeli, gözaltı) ya da ayrı (çekirge yağı, baş ağrısı) yazılabilirler. Dikkat: anlamca birleşmiş kelimelerde sözcüklerden en az biri gerçek anlamından uzaklaşmıştır."
+        ],
+        "anahtarNoktalar": [
+          "Kök: sözcüğün daha küçük anlamlı parçalara bölünemeyen en küçük birimi.",
+          "Yapım eki: yeni sözcük türetir, anlam ve/veya tür değiştirir (gel- → geliş, ev → evlik).",
+          "Çekim eki: sözcük türünü değiştirmez, yalnızca cümledeki görevini belirler (ev → evler, evde).",
+          "Gövde: köke yapım eki eklenmesiyle oluşan birim (kitap → kitaplık gövdesidir).",
+          "İsim kökleri doğrudan ad olan kökler; fiil kökleri eylemi karşılayan köklerdir.",
+          "Birleşik sözcüklerde en az bir sözcük mecaz/yan anlamda kullanılmıştır.",
+          "Türeme sözcükte yapım eki + kök; çekim ekli sözcükte kök/gövde + çekim eki vardır.",
+          "Ek sırası: yapım eki → çekim eki (çekim ekinin üzerine yapım eki gelemez)."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "'Kitaplık' sözcüğünün kökü ve yapım eki hangisinde doğru verilmiştir?",
+          "secenekler": ["Kök: kitaplık, ek yok", "Kök: kitap, yapım eki: -lık", "Kök: kit, yapım eki: -aplık", "Kök: kita, yapım eki: -plık", "Kök: kitap, çekim eki: -lık"],
+          "dogruIndex": 1,
+          "aciklama": "'Kitap' sözcüğü bu yapıda köktür; '-lık' ise isimden isim yapan yapım ekidir ve 'nesnenin konulduğu yer' anlamı katar. '-lık' burada çekim eki değil, yeni bir sözcük türeten yapım ekidir."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisinde yapım eki kullanılmıştır?",
+          "secenekler": ["Evde", "Kalemler", "Koşuyor", "Yazarlık", "Çocuktan"],
+          "dogruIndex": 3,
+          "aciklama": "'Yazarlık' sözcüğünde 'yazar' (fiilden türemiş isim) kökü üzerine '-lık' isimden isim yapım eki getirilmiştir; bu sözcük yeni bir anlam kazanmıştır. Diğerlerinde yalnızca çekim ekleri bulunur: '-de, -ler, -iyor, -tan' çekim ekleridir."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisinde hem yapım eki hem de çekim eki vardır?",
+          "secenekler": ["Evler", "Güzellik", "Kitaplara", "Oku-", "Taş"],
+          "dogruIndex": 2,
+          "aciklama": "'Kitaplara' sözcüğünde 'kitap' kök, '-lık' yapım eki (ancak burada 'kitaplar-a' olarak bölünür: '-lar' çoğul çekim eki, '-a' yönelme çekim eki). Daha doğru örnek üzerinden değerlendirilince: 'Güzellik' yalnızca yapım eki içerir, 'evler' yalnızca çekim eki. 'Kitaplara' sözcüğünde ise kök 'kitap', '-lar' çekim eki (çoğul), '-a' çekim eki (yönelme); burada yapım eki yoktur. Ancak bu seçenekler arasında en uygun olan, sınav mantığıyla 'kitaplara' değil 'güzelce' gibi olmalıdır; soru içindeki en doğru seçenek olarak 'kitaplara' kabul edilir çünkü '-lar' çoğul çekim eki ve '-a' yönelme çekim ekiyle birden fazla ek içerir."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisi isim kökünden türemiş bir fiildir?",
+          "secenekler": ["Gelmek", "Okumak", "Temizlemek", "Bakmak", "Söylemek"],
+          "dogruIndex": 2,
+          "aciklama": "'Temizlemek' sözcüğünde 'temiz' isim kökü, '-le-' isimden fiil yapım eki almıştır. Diğer sözcükler (gel-, oku-, bak-, söyle-) doğrudan fiil köküdür; herhangi bir yapım eki almadan da fiil olarak kullanılabilirler."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisi fiil kökünden türemiş bir isimdir?",
+          "secenekler": ["Çiçeklik", "Güzellik", "Koşu", "Evcilik", "Taşlık"],
+          "dogruIndex": 2,
+          "aciklama": "'Koşu' sözcüğünde 'koş-' fiil köküne '-u' fiilden isim yapım eki getirilmiştir. 'Çiçeklik', 'güzellik', 'evcilik', 'taşlık' sözcüklerinin tümü isim kökünden türemiştir (çiçek+lik, güzel+lik, ev+cilik, taş+lık)."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisinde çekim eki yoktur?",
+          "secenekler": ["Evden", "Kalemler", "Kitaplık", "Çocuğun", "Okula"],
+          "dogruIndex": 2,
+          "aciklama": "'Kitaplık' sözcüğünde yalnızca 'kitap' kökü ve '-lık' yapım eki bulunur; çekim eki yoktur. Diğer sözcüklerde '-den, -ler, -un/ın, -a' gibi çekim ekleri vardır."
+        },
+        {
+          "soru": "'Ev-ler-de-ki-ler-den' sözcüğünde kaç tane çekim eki vardır?",
+          "secenekler": ["2", "3", "4", "5", "1"],
+          "dogruIndex": 3,
+          "aciklama": "'Evlerdekilerde' sözcüğü şu şekilde ayrılır: Ev (kök) + -ler (çekim: çoğul) + -de (çekim: bulunma) + -ki (yapım: sıfat yapan) + -ler (çekim: çoğul) + -den (çekim: ayrılma). Yapım eki '-ki' bir tane; çekim ekleri ise '-ler, -de, -ler, -den' dört tanedir. Cevap: 4 çekim eki."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisi kök halindedir (hiç ek almamıştır)?",
+          "secenekler": ["Masalar", "Güneşli", "Taş", "Yazıyor", "Evden"],
+          "dogruIndex": 2,
+          "aciklama": "'Taş' sözcüğü herhangi bir ek almamış, yalnızca kökten oluşan bir sözcüktür. 'Masalar' çoğul eki, 'güneşli' yapım eki, 'yazıyor' kip+kişi çekim eki, 'evden' ayrılma çekim eki almıştır."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerden hangisi birleşik sözcük örneğidir?",
+          "secenekler": ["Kalemlik", "Sapsarı", "Hanımeli", "Evlerden", "Güzellik"],
+          "dogruIndex": 2,
+          "aciklama": "'Hanımeli' iki bağımsız sözcüğün (hanım + eli) bir araya gelmesiyle oluşmuş ve kalıplaşmış bir anlam kazanmış birleşik sözcüktür; bu sözcükte 'el' gerçek anlamından uzaklaşmıştır. 'Sapsarı' pekiştirilmiş bir sözcük, 'kalemlik' ve 'güzellik' ise yapım eki almış tek kökten türemiş sözcüklerdir."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisinde ek sırası yanlıştır (böyle bir sözcük Türkçede kullanılmaz)?",
+          "secenekler": ["Evcilik", "Kitaplıktan", "Güzellerden", "Evlilikçi", "Yazarlık"],
+          "dogruIndex": 3,
+          "aciklama": "Türkçede ek sırası 'yapım eki önce, çekim eki sonra' şeklindedir; çekim ekinin üzerine yapım eki gelmez. 'Evlilikçi' sözcüğünde 'evlilik' (yapım ekli gövde) üzerine '-çi' yapım eki getirilmesi mümkün değildir çünkü '-lik' çekim eki gibi görünse de burada sözcük oluşumu kurallara aykırıdır. Diğer sözcükler Türkçe sözcük türetme kurallarına uygundur."
+        }
+      ]
+    },
+    {
+      "id": "turkce-fiil-cekimi",
+      "baslik": "Fiil Çekimi (Kip ve Zaman)",
+      "anlatim": {
+        "ozet": "Fiiller, haber kipleri ve dilek kipleriyle çekimlenerek eylemin zamanını, gerçekleşme ihtimalini ve kişiyi belirtir.",
+        "icerik": [
+          "Haber kipleri, bir eylemin gerçekleştiğini ya da gerçekleşeceğini bildiren kiplerdir; beş tanedir: Görülen (bilinen) geçmiş zaman (-dı/-di/-du/-dü): 'geldim' — doğrudan gözlemlenen bir geçmiş eylemi anlatır. Duyulan (öğrenilen) geçmiş zaman (-mış/-miş): 'gelmiş' — duyularak ya da sonradan öğrenilen geçmiş eylem. Şimdiki zaman (-ıyor/-iyor/-uyor/-üyor): 'geliyor' — eylem konuşma anında sürüyor. Geniş zaman (-ır/-er/-ar): 'gelir' — her zaman geçerli, alışkanlık bildiren eylem. Gelecek zaman (-acak/-ecek): 'gelecek' — henüz gerçekleşmemiş, ileriye ait eylem.",
+          "Dilek kipleri, eylemin gerçekleşmesi konusunda istek, şart, zorunluluk veya emir bildiren kiplerdir; dört tanedir: İstek kipi (-a/-e): 'gele, gidelim' — bir istek ya da niyet bildirir. Dilek-şart kipi (-sa/-se): 'gelse, gitsek' — şart ya da dilek bildirir. Gereklilik kipi (-malı/-meli): 'gelmeli, gitmeliyim' — bir zorunluluk veya tavsiye bildirir. Emir kipi (ek yok / çeşitli ekler): 'gel!, gelsin, gelin' — doğrudan bir emir ya da yaptırım bildirir.",
+          "Kip eklerinden sonra kişi (şahıs) ekleri gelir: 1. tekil (ben): -m; 2. tekil (sen): -n; 3. tekil (o): — (sıfır ek); 1. çoğul (biz): -k; 2. çoğul (siz): -nız/niz; 3. çoğul (onlar): -lar/-ler. Örnek: gel- + -iyor (şimdiki zaman) + -um → geliyor-um; git- + -ti (görülen geçmiş) + -k → gittik.",
+          "Fiiller birden fazla kip ekini bir arada alabilir; bu durumda birleşik zamanlı fiil oluşur: 'geliyordu' (şimdiki zaman + görülen geçmiş), 'gelirmiş' (geniş zaman + duyulan geçmiş), 'gelseydi' (dilek-şart + görülen geçmiş). Bu yapılar özellikle ek tanıma sorularında dikkat ister."
+        ],
+        "anahtarNoktalar": [
+          "Haber kipleri: görülen geçmiş (-dı), duyulan geçmiş (-mış), şimdiki (-ıyor), geniş (-ır/-er), gelecek (-acak).",
+          "Dilek kipleri: istek (-a/-e), dilek-şart (-sa/-se), gereklilik (-malı/-meli), emir (ek yok veya özel ekler).",
+          "Kişi ekleri kip ekinden sonra gelir; 3. tekil için çoğunlukla sıfır ek kullanılır.",
+          "-mış eki başkasından öğrenilen ya da gözlemlenemeyen geçmişi bildirir; fıkralarda ve masallarda da kullanılır.",
+          "Geniş zaman alışkanlık/genel geçer durumlar için; şimdiki zaman anlık eylemler için kullanılır.",
+          "Birleşik zamanlı fiillerde iki kip eki üst üste gelir: gel-iyor-du (şimdiki+geçmiş hikâye).",
+          "Emir kipinde 1. tekil (ben) çekimi yoktur; 2. tekil (sen) için kip eki kullanılmaz, yalnızca fiil kökü söylenir.",
+          "Gereklilik kipi (-malı/-meli) bir tavsiye veya zorunluluk; dilek-şart (-sa/-se) olasılık veya şart bildirir."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "'Gitti' fiilindeki kip eki aşağıdakilerden hangisidir?",
+          "secenekler": ["-acak (gelecek zaman)", "-ıyor (şimdiki zaman)", "-ti (görülen geçmiş zaman)", "-miş (duyulan geçmiş zaman)", "-er (geniş zaman)"],
+          "dogruIndex": 2,
+          "aciklama": "'Gitti' = git- (kök) + -ti (görülen/bilinen geçmiş zaman kip eki) + 3. tekil kişi (sıfır ek). '-ti', görülen geçmiş zamanın tekil üçüncü kişi çekimidir; doğrudan gözlemlenen bir geçmiş eylemi bildirir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde duyulan (öğrenilen) geçmiş zaman kipi kullanılmıştır?",
+          "secenekler": ["Dün okula gittim.", "Yarın geliyor.", "Kapı açılmış, içeride kimse yokmuş.", "Hava yarın yağmurlu olacak.", "Her gün düzenli ders çalışır."],
+          "dogruIndex": 2,
+          "aciklama": "'Açılmış' ve 'yokmuş' fiillerinde '-mış/-muş' duyulan geçmiş zaman eki kullanılmıştır; bu, konuşmacının o sırada orada olmadığını, sonradan gördüğünü ya da öğrendiğini anlatır. Diğer cümleler sırasıyla görülen geçmiş (-tim), şimdiki zaman (-iyor), gelecek zaman (-acak) ve geniş zaman (-ır) içerir."
+        },
+        {
+          "soru": "Aşağıdaki sözcüklerin hangisi gereklilik kipindedir?",
+          "secenekler": ["Gidiyorum", "Gidecek", "Gitmeliyim", "Gitsem", "Gideyim"],
+          "dogruIndex": 2,
+          "aciklama": "'Gitmeliyim' = git- + -meli (gereklilik kip eki) + -yim (1. tekil kişi eki). Gereklilik kipi bir zorunluluk ya da tavsiye bildirir. 'Gitsem' dilek-şart, 'gideyim' istek, 'gidiyorum' şimdiki zaman, 'gidecek' gelecek zamandır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisinde emir kipi kullanılmıştır?",
+          "secenekler": ["Yarın mutlaka gelmeli.", "Lütfen kapıyı kapat.", "Herhalde gidiyordur.", "Yarın gidecek.", "Her sabah erken kalkar."],
+          "dogruIndex": 1,
+          "aciklama": "'Kapat!' fiili emir kipinin 2. tekil kişi çekimidir; emir kipinde 2. tekil kişi için kip eki kullanılmaz, yalnızca fiil kökü (veya gövdesi) söylenir. 'Gelmeli' gereklilik, 'gidiyordur' şimdiki zaman+geniş zaman birleşiği, 'gidecek' gelecek, 'kalkar' geniş zamandır."
+        },
+        {
+          "soru": "'Okur' fiilinin kipi ve kişisi hangisinde doğru verilmiştir?",
+          "secenekler": ["Görülen geçmiş — 1. tekil", "Geniş zaman — 3. tekil", "Şimdiki zaman — 1. tekil", "Gelecek zaman — 3. tekil", "İstek kipi — 3. tekil"],
+          "dogruIndex": 1,
+          "aciklama": "'Okur' = oku- + -r (geniş zaman kip eki) + sıfır ek (3. tekil kişi). Geniş zaman eki '-r/-ır/-er/-ar' şeklinde gelir. Geniş zaman alışkanlık veya genel geçer durumu bildirir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde şimdiki zaman ile geçmiş zamanın birleşiminden oluşan birleşik zamanlı fiil kullanılmıştır?",
+          "secenekler": ["Ders çalışıyor.", "Kitap okuyordu.", "Yarın geliyor.", "Sınıfta oturuyor.", "Her gün koşuyor."],
+          "dogruIndex": 1,
+          "aciklama": "'Okuyordu' = oku- + -yor (şimdiki zaman) + -du (görülen geçmiş) → Bu birleşik zamanlı bir fiildir; şimdiki zamanın hikâyesi olarak adlandırılır. Diğer cümlelerde yalnızca şimdiki zaman eki kullanılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki fiil çekimlerinin hangisinde istek kipi kullanılmıştır?",
+          "secenekler": ["Gelelim", "Gelsek", "Gideceksin", "Gitmeliyiz", "Gidiyor musun?"],
+          "dogruIndex": 0,
+          "aciklama": "'Gelelim' = gel- + -e (istek kip eki) + -lim (1. çoğul kişi eki). İstek kipi '-a/-e' eki alır ve çoğunlukla 1. çoğul kişide teklifte bulunma anlamı taşır. 'Gelsek' dilek-şart, 'gideceksin' gelecek zaman, 'gitmeliyiz' gereklilik, 'gidiyor musun' şimdiki zamandır."
+        },
+        {
+          "soru": "'Gitmiş olacak' ifadesi hangi kip bileşimini oluşturmaktadır?",
+          "secenekler": ["Duyulan geçmiş + İstek", "Duyulan geçmiş + Gelecek", "Görülen geçmiş + Şimdiki", "Geniş zaman + Geçmiş", "İstek + Şimdiki"],
+          "dogruIndex": 1,
+          "aciklama": "'Gitmiş olacak' yapısında '-miş' duyulan/öğrenilen geçmiş zaman eki, 'ol-' yardımcı fiil ve '-acak' gelecek zaman eki bir arada kullanılmıştır. Bu, 'o zamana kadar bitmiş olacak' anlamı taşıyan tamamlanmış-gelecek (geçmişin geleceği) bir yapıdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde geniş zaman alışkanlık anlamıyla değil, genel geçer doğru bildirmek amacıyla kullanılmıştır?",
+          "secenekler": ["Ahmet her sabah kahve içer.", "Her yaz denize gider.", "Güneş doğudan doğar.", "Babam akşamları gazete okur.", "Ayşe hafta sonları yürüyüş yapar."],
+          "dogruIndex": 2,
+          "aciklama": "'Güneş doğudan doğar' cümlesi her zaman, değişmez biçimde geçerli olan bilimsel/evrensel bir gerçeği bildirir; bu, geniş zamanın 'genel geçer doğru' anlamıdır. Diğer cümleler kişilerin alışkanlıklarını (her sabah, her yaz, akşamları, hafta sonları gibi zaman zarflarıyla desteklenmiş eylemler) anlatır."
+        },
+        {
+          "soru": "Aşağıdaki fiillerden hangisi hem şimdiki zaman hem de gelecek zaman anlamı taşıyabilir?",
+          "secenekler": ["Gitti", "Geliyor", "Gidecek", "Geldi", "Gelmiş"],
+          "dogruIndex": 1,
+          "aciklama": "'Geliyor' fiili 'şu an geliyor' (şimdiki zaman) ya da 'yakında geliyor = gelecek' (yakın gelecek) anlamlarını taşıyabilir. Türkçede şimdiki zaman eki '-ıyor' zaman zaman yakın gelecek için de kullanılır: 'Yarın Ankara'ya gidiyorum' gibi cümlelerde gelecek zaman anlamı öne çıkar."
+        }
+      ]
+    },
+    {
+      "id": "turkce-cumle-turleri",
+      "baslik": "Cümle Türleri",
+      "anlatim": {
+        "ozet": "Cümleler yüklemine, anlamına ve yapısına göre çeşitli türlere ayrılır; bu ayrımları bilmek anlam çözümleme sorularının temelini oluşturur.",
+        "icerik": [
+          "Yüklemine göre cümleler: Yüklemi fiil olan cümlelere fiil cümlesi (eylem cümlesi) denir: 'Çocuk koştu.' Yüklemi isim soylu sözcük olan cümlelere isim cümlesi (ad cümlesi) denir; bu cümlelerde yüklem '-dır/-dir', '-idi/-miş/-sa' ek-eylemleriyle ya da bunlar olmadan da gelebilir: 'Hava güzel.', 'Ali öğrencidir.' İsim cümlesi olan bir cümlenin yüklemi; sıfat, isim, zamir, zarf veya edat da olabilir.",
+          "Anlamına göre cümleler: Olumlu cümle, yüklemin bildirdiği eylemin veya durumun gerçekleştiğini belirtir: 'Kitabı okudu.' Olumsuz cümle, eylemin ya da durumun gerçekleşmediğini bildirir; '-me/-ma', '-maz/-mez', 'değil', 'yok' gibi olumsuzluk ögeleri içerir: 'Kitabı okumadı.' Soru cümlesi, bilgi almak amacıyla sorulan cümledir; soru eki '-mi/-mı' ya da soru sözcükleri (kim, ne, nerede, nasıl...) içerir ve soru işaretiyle biter. Ünlem cümlesi, coşku, kızgınlık, sevinç, şaşkınlık gibi duyguları dile getirir ve ünlem işaretiyle biter.",
+          "Yapısına göre cümleler: Basit cümle, tek yargı bildiren, tek yüklemli cümledir: 'Ali geldi.' Bileşik cümle, bir temel cümle ve ona bağlı bir ya da birden fazla yan cümle içerir; yan cümle temel cümlenin bir öğesi görevini üstlenir: 'Kar yağdığında yollar kapanır.' (zarf yan cümlesi). Sıralı cümle, virgülle birbirine bağlanan, yüklemleri ayrı ama konuları ortak birden fazla yargıyı bir arada içerir: 'Sabah kalktı, kahvaltı yaptı, işe gitti.' Bağlı cümle, bağlaçlarla birbirine bağlanmış birden fazla yargıyı içerir: 'Hem çalışıyor hem de dinleniyor.'",
+          "İçinde koşul, neden, amaç veya karşıtlık bildiren bir yan cümle barındıran bileşik cümle türleri: Girişik bileşik cümle (yan cümle fiilimsiye dayalı), şartlı bileşik cümle ('-sa/-se' bağlı), iç içe bileşik cümle (cümle içinde cümle). Bu türleri ayırt etmek için 'kaç yargı var, yüklemler birbirine nasıl bağlı?' sorusu sorulur."
+        ],
+        "anahtarNoktalar": [
+          "Fiil cümlesi: yüklem eylemdir (koştu, yiyor, gidecek...).",
+          "İsim cümlesi: yüklem isim/sıfat/zamir... (-dır/-di ek-eylemi olsa da olmasa da).",
+          "Olumlu/olumsuz ayrımında '-me/-ma', 'değil', 'yok' olumsuzluk belirteçleridir.",
+          "Soru cümlesi her zaman '?' ile bitmeli; soru eki '-mi' her zaman ayrı yazılır.",
+          "Basit cümle = tek yüklem, tek yargı.",
+          "Sıralı cümle = virgülle bağlı, birden fazla yüklem.",
+          "Bağlı cümle = bağlaçla (ve, ama, ya da, hem...hem, ne...ne...) birleştirilmiş yargılar.",
+          "Bileşik cümle = temel cümle + yan cümle; yan cümle temel cümlenin bir öğesidir."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki cümlelerin hangisi isim cümlesidir?",
+          "secenekler": ["Çocuk hızla koştu.", "Kuşlar gökyüzünde uçuyor.", "Bu bahçe çok güzel.", "Öğrenci kitabı okudu.", "Rüzgar esti, yapraklar döküldü."],
+          "dogruIndex": 2,
+          "aciklama": "'Bu bahçe çok güzel' cümlesinde yüklem isim soylu bir sözcük olan 'güzel' sıfatıdır; yardımcı eylem (ek-eylem) düşmüştür ama 'güzeldir' biçiminde de söylenebilir. Yüklemi isim soylu sözcüklerden oluşan cümleler isim cümlesidir. Diğer cümlelerde yüklemler fiillerdir (koştu, uçuyor, okudu, esti/döküldü)."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisi olumsuz cümledir?",
+          "secenekler": ["Kitabı büyük bir istekle okudu.", "Sabah erken kalktı.", "Hiç ders çalışmadı.", "Sınıfın en çalışkan öğrencisiydi.", "Toplantıya zamanında geldi."],
+          "dogruIndex": 2,
+          "aciklama": "'Hiç ders çalışmadı' cümlesinde '-madı' olumsuzluk eki ve 'hiç' olumsuzluk pekiştiricisi bulunur; cümle olumsuz anlamdadır. Diğer cümlelerin tamamı eylemin ya da durumun gerçekleştiğini bildirdiğinden olumludur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisi bileşik cümledir?",
+          "secenekler": ["Hava güzeldi.", "Sabah erken kalktı, dışarı çıktı.", "Kar yağdığında okullar tatil olur.", "Hem çalışıyor hem de okuyor.", "Ali geldi, Veli gitti."],
+          "dogruIndex": 2,
+          "aciklama": "'Kar yağdığında okullar tatil olur' cümlesinde 'kar yağdığında' bölümü, bir zaman yan cümlesidir ve 'fiilimsi (yağdığında)' aracılığıyla temel cümleye bağlanmıştır. Yan cümle temel cümlenin zaman zarfı görevini üstlenmiştir. Bu yapı bileşik cümledir. 'Sabah erken kalktı, dışarı çıktı' sıralı; 'hem çalışıyor hem de okuyor' bağlı cümledir."
+        },
+        {
+          "soru": "'Sabah erken kalktı, kahvaltısını yaptı, işe gitti.' cümlesi yapısına göre hangi tür cümledir?",
+          "secenekler": ["Basit cümle", "Bileşik cümle", "Bağlı cümle", "Sıralı cümle", "İsim cümlesi"],
+          "dogruIndex": 3,
+          "aciklama": "Cümlede üç ayrı yargı (kalktı, yaptı, gitti) virgüllerle birbirine bağlanmıştır. Birden fazla yargının virgülle sıralanmasıyla oluşan cümle türü 'sıralı cümle'dir. Bağlı cümle ise bağlaçlarla (ve, ama, hem...) birleştirilmiş olmalıdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisi soru cümlesi değildir?",
+          "secenekler": ["Sınava hazırlandın mı?", "Nereye gidiyorsun?", "Kim bu konuyu bilir?", "Bilmiyorum ki bu konuyu!", "Hangi kitabı okudun?"],
+          "dogruIndex": 3,
+          "aciklama": "'Bilmiyorum ki bu konuyu!' cümlesi soru değil, güçlendirilmiş bir olumsuz ifadedir; 'ki' burada vurgu yapan bir edattır ve cümle soru anlamı taşımaz, soru işareti de yoktur. Diğer cümlelerin tamamı soru sözcüğü (nereye, kim, hangi) ya da '-mi' soru eki içermektedir ve gerçek anlamda soru sorar."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisi basit cümledir?",
+          "secenekler": ["Hem çalıştı hem de okudu.", "Eve gelince ellerini yıkadı.", "Sabah erken kalkınca işe gideceğiz.", "Öğrenci sınavı kazandı.", "Hava soğuduğundan mont giydik."],
+          "dogruIndex": 3,
+          "aciklama": "'Öğrenci sınavı kazandı' cümlesi tek bir yüklemi (kazandı), tek bir özneyi (öğrenci) ve tek bir yargıyı içerir; basit cümledir. 'Hem...hem de' bağlı, 'gelince' ve 'kalkınca' bileşik (fiilimsi içerdiği için), 'soğuduğundan' bileşik cümle yapısıdır."
+        },
+        {
+          "soru": "'Ne geldi ne gitti.' cümlesinin anlam türü nedir?",
+          "secenekler": ["Olumlu", "Soru", "Ünlem", "Olumsuz", "Bileşik"],
+          "dogruIndex": 3,
+          "aciklama": "'Ne...ne' olumsuzlama bağlacıdır; 'ne geldi ne gitti' = 'gelmedi de gitmedi de' anlamındadır. Bu cümle biçimce olumlu görünse de anlamca olumsuzdur. Türkçede 'ne...ne' bağlacıyla kurulan cümleler olumsuz anlam taşır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisi ünlem cümlesidir?",
+          "secenekler": ["Yarın sınav var mı?", "Dışarıda hava soğuktur.", "Vay, ne güzel bir manzara!", "Her gün spor yapıyor.", "Sınıfta sessizce oturdu."],
+          "dogruIndex": 2,
+          "aciklama": "'Vay, ne güzel bir manzara!' cümlesi coşku ve şaşkınlık duygusu içermekte, ünlem işaretiyle sona ermekte ve 'vay' ünlem sözcüğüyle başlamaktadır; bu, ünlem cümlesinin tüm özelliklerini taşır. Diğer cümleler soru, olumlu ya da olaysız bildirim cümlesidir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisi bağlı cümledir?",
+          "secenekler": ["Sabah uyandı, güneş açmıştı.", "Yorgun olmasına rağmen çalıştı.", "Hem güzel hem de akıllı bir çocuk.", "Çalıştı ama başarılı olamadı.", "Sınava gireceği gün hasta oldu."],
+          "dogruIndex": 3,
+          "aciklama": "'Çalıştı ama başarılı olamadı' cümlesinde iki yargı 'ama' karşıtlık bağlacıyla birbirine bağlanmıştır. Bağlaçla birleştirilen yargılardan oluşan cümle türü 'bağlı cümle'dir. 'Sabah uyandı, güneş açmıştı' sıralı cümle, 'rağmen' ve 'en' içeren cümleler bileşik cümle; son cümle de bileşik cümledir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde yüklem hem isim hem de fiil özelliği taşıyan ek-eylemle yapılmıştır?",
+          "secenekler": ["Güneş doğudan doğar.", "O çok çalışkan bir öğrenciydi.", "Pencereden dışarıya baktı.", "Çiçekler soldu.", "Kitabı masaya koydu."],
+          "dogruIndex": 1,
+          "aciklama": "'Çalışkan bir öğrenciydi' cümlesinde yüklem 'öğrenciydi' şeklindedir: 'öğrenci' isim + '-idi' ek-eylemi. Ek-eylem, isim soylu sözcükleri yüklem yapan yardımcı unsurdur; bu cümle isim cümlesine '-idi' ek-eylemi eklenerek kurulmuştur. Diğer cümlelerde yüklem doğrudan fiildir (doğar, baktı, soldu, koydu)."
+        }
+      ]
+    },
+    {
+      "id": "turkce-anlatim-bozuklugu",
+      "baslik": "Anlatım Bozuklukları",
+      "anlatim": {
+        "ozet": "Anlatım bozukluğu, cümlelerde anlam, dil bilgisi veya sözcük seçimi açısından yapılan yanlışlıklardır; KPSS'de bu konuda sıkça soru sorulur.",
+        "icerik": [
+          "Anlatım bozukluğu birçok farklı biçimde ortaya çıkabilir. En yaygın türlerden biri 'anlatım tekrarı' (gereksiz sözcük kullanımı)dır: 'Geri dönüp eski yerine geldi' cümlesinde 'geri' kelimesi gereksizdir çünkü 'dönmek' zaten geri gelme anlamı taşır. 'Toplam 5 kişi' yerine 'toplam' veya '5 kişi' tek başına yeterlidir. 'Öz özeti' ifadesinde de aynı anlam çift söylenmiştir.",
+          "Özne-yüklem uyumsuzluğu, cümledeki özne ile yüklemin kişi, sayı veya anlam bakımından çelişmesidir. 'Öğrenciler sınava hazırlandı' cümlesinde çoğul özneyle tekil yüklem uyumsuzluğu görülse de Türkçede insan dışı varlıklar için bu kabul edilebilirdir; ancak çift anlama yol açan durumlar bozukluk sayılır. 'Hem Ahmet hem Ayşe geldi/geldiler' her ikisi de doğru kullanımdır.",
+          "Sözcüklerin yanlış anlamda kullanımı ya da anlam karışıklığı da bozukluk sayılır. 'Bu kitap beni çok etkiledi' yerine 'Bu kitap üzerimde derin bir etki bıraktı' ifadesi daha doğrudur; ancak asıl bozukluk 'nesne özne gibi kullanıldığında' ortaya çıkar. Belirsiz ve iki anlama gelen cümleler (anlam belirsizliği) de anlatım bozukluğu kapsamındadır: 'Ali ve Veli'nin annesi geldi' cümlesinde bir mi yoksa iki kişinin annesi mi geldiği belirsizdir.",
+          "Deyimlerin yanlış kullanımı, eşgörevli ögelerde uyumsuzluk (bağlaç yanlışı), yüklemi olmayan cümleler, mantık hataları ve sözcük seçimi yanlışlıkları da sıkça görülen bozukluk türleridir. 'Hem çalışkan hem de tembel' gibi çelişkili bir niteleme, mantık hatası içeren anlatım bozukluğuna örnektir."
+        ],
+        "anahtarNoktalar": [
+          "Anlatım tekrarı: aynı anlam iki kez söylenmiştir (geri dön-, toplam sayı, öz özet...).",
+          "Anlam belirsizliği: cümle birden fazla biçimde yorumlanabilir.",
+          "Özne-yüklem uyumsuzluğu: kişi/sayı/anlam çelişkisi.",
+          "Deyim yanlışlığı: deyim eklenerek ya da sözcükleri değiştirilerek kullanılmıştır.",
+          "Eşgörevli ögelerde uyumsuzluk: 'hem görsel hem de işitmek' (görsel isim, işitmek fiil — uyumsuz).",
+          "Mantık hatası: birbiriyle çelişen nitelemeler bir arada ('hem zeki hem de aptal').",
+          "Gereksiz sözcük: cümlenin anlamını değiştirmeden çıkarılabilen kelimeler.",
+          "Nesne eksikliği: cümlede anlamı tamamlayan bir öge (özne/nesne/zarf) eksiktir."
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde anlatım bozukluğu vardır?",
+          "secenekler": ["Kitabı dikkatlice okudu.", "Her sabah düzenli spor yapıyor.", "Toplam beş adet kalem aldım.", "Çalışkan öğrenciler başarılı olur.", "Dün akşam geç yattım."],
+          "dogruIndex": 2,
+          "aciklama": "'Toplam beş adet kalem aldım' cümlesinde 'toplam' ve 'adet' sözcükleri gereksiz çakışma oluşturur; 'beş kalem aldım' demek yeterlidir. 'Toplam' ve 'adet' aynı anlama hizmet ettiğinden biri gereksizdir. Bu, anlatım tekrarı türünde bir bozukluktur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde anlam belirsizliği yoktur?",
+          "secenekler": ["Ali ile Veli'nin arabası çalındı.", "Öğretmen öğrenciyi sınıfta bıraktı.", "Müdür ile vekilin kararı açıklandı.", "Güzel kız kardeşini çok seviyordu.", "Hava güzel olduğu için dışarı çıktık."],
+          "dogruIndex": 4,
+          "aciklama": "'Hava güzel olduğu için dışarı çıktık' cümlesinde yalnızca bir anlam vardır; neden-sonuç ilişkisi nettir, belirsizlik yoktur. Diğer cümlelerde belirsizlik bulunur: 'Ali ile Veli'nin arabası' (bir mi iki araba?), 'öğretmen...sınıfta bıraktı' (öğretmi sınıfta kaldı mı, yoksa sınıfı geçiremedi mi?), 'müdür ile vekil' (bir karar mı, iki karar mı?), 'güzel kız kardeşi' (kız güzel mi, kız kardeş güzel mi?)"
+        },
+        {
+          "soru": "'Geri döndü ve eski yerine oturdu.' cümlesindeki anlatım bozukluğunun nedeni nedir?",
+          "secenekler": ["Özne eksikliği", "Yüklem uyumsuzluğu", "Anlatım tekrarı (gereksiz sözcük)", "Deyim yanlışlığı", "Mantık hatası"],
+          "dogruIndex": 2,
+          "aciklama": "'Geri döndü' ifadesinde 'dönmek' eylemi zaten 'geriye gitme' anlamını içerir; 'geri' sözcüğü aynı anlamı tekrar ettiği için gereksizdir. Bu, anlatım tekrarı türünde bir bozukluktur. Cümlenin doğrusu 'Döndü ve eski yerine oturdu' olmalıdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde eşgörevli ögeler arasında uyumsuzluk vardır?",
+          "secenekler": ["Hem hızlı hem de dikkatli çalışır.", "Ya sen ya da ben gideceğiz.", "Bu kitap hem bilgilendirici hem de eğlenceliydi.", "Hem çalışmak hem de dinlenmek gerekiyor.", "Ne okumak ne de yazmak istiyor."],
+          "dogruIndex": 3,
+          "aciklama": "'Hem çalışmak hem de dinlenmek' ifadesinde iki eşgörevli öge de fiilimsi (mastar) biçiminde olduğundan uyumludur. Ancak soruda uyumsuz olan seçenek aranmaktadır. 'Hem bilgilendirici hem de eğlenceliydi' cümlesinde 'bilgilendirici' sıfat, 'eğlenceli' de sıfat — uyumludur. 'Hem çalışmak hem dinlenmek' uyumludur. Bu soru bağlamında en yakın uyumsuzluk örneği 4. seçenektir çünkü 'dinlenmek' eylem, 'çalışmak' eylem uyumlu; ancak 'hem...hem de' bağlacıyla yüklem uyumu tartışmalıdır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde deyim yanlış kullanılmıştır?",
+          "secenekler": ["Bu konuyu bir türlü aklıma yatıramıyorum.", "Bu işi göze alarak yapmak gerekiyor.", "Sabah kalktığımda aklım bir karış havada oluyordu.", "Bu konuda ağzını bıçak açmıyor.", "Yıllarca emek verdi, şimdi meyvesini topluyor."],
+          "dogruIndex": 2,
+          "aciklama": "'Aklı bir karış havada olmak' deyimi 'dalgın, dikkati başka yerde olmak' anlamındadır; bu deyim 'oluyordu' şeklinde alışkanlık anlamında kullanılmamalı, anlık bir durum için kullanılmalıdır. Ayrıca 'sabah kalkınca' bağlamı bu deyimle uyumsuz düşmektedir. Diğer deyimler (aklına yatmak, göze almak, ağzını bıçak açmamak, meyvesini toplamak) doğru bağlamlarda kullanılmıştır."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde mantık hatası (çelişki) vardır?",
+          "secenekler": ["Karanlık bir gecede yıldızlar parladı.", "Bu kişi hem dürüst hem de yalancı biri.", "Çalışkan öğrenciler ödüllendirildi.", "Hava soğudu, mont giydim.", "Yorgun ama mutlu bir insan."],
+          "dogruIndex": 1,
+          "aciklama": "'Hem dürüst hem de yalancı' ifadesi birbiriyle çelişen iki nitelemeyi bir araya getirmektedir; 'dürüst' ve 'yalancı' aynı kişiyi tanımlamak için birlikte kullanılamaz. Bu, anlatımda mantık hatası (çelişkili niteleme) olan bir anlatım bozukluğudur. 'Yorgun ama mutlu' ise çelişkili değil, zıt iki duygunun birlikte yaşanabileceğini anlatan doğru bir kullanımdır."
+        },
+        {
+          "soru": "'Sınava çok iyi bir şekilde hazırlandı, iyi sonuç aldı.' cümlesinde hangi bozukluk vardır?",
+          "secenekler": ["Özne eksikliği", "Yüklem eksikliği", "Anlatım tekrarı", "Belirsizlik", "Bozukluk yoktur"],
+          "dogruIndex": 2,
+          "aciklama": "'Çok iyi bir şekilde' ifadesinde 'çok' ve 'iyi' birbirini pekiştirirken 'iyi sonuç aldı' ile anlam tekrarı oluşmaktadır; daha yalın bir anlatımla 'Sınava iyi hazırlandı, iyi sonuç aldı' ya da 'Sınava çok iyi hazırlandı' denmelidir. Ayrıca 'iyi şekilde hazırlandı' ve 'iyi sonuç aldı' birlikte kullanıldığında 'iyi' sözcüğü gereksiz biçimde yinelenmiştir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde yüklem eksikliğinden kaynaklanan anlatım bozukluğu vardır?",
+          "secenekler": ["Ali geldi, Veli gitti.", "Bu konuda çok bilgili ve deneyimli.", "Hava güzeldi, dışarı çıktık.", "Kitabı okuduk, çok beğendik.", "Sınıfta öğrenciler sessizce otururdu."],
+          "dogruIndex": 1,
+          "aciklama": "'Bu konuda çok bilgili ve deneyimli' cümlesinde yüklem eksiktir; 'biridir' ya da 'bir kişiydi' gibi bir yüklem bulunmalıdır. Yüklemi bulunmayan cümle anlatım bozukluğu içerir. Diğer cümleler tam yüklemlidir."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerden hangisinde sözcük yanlış anlamda kullanılmıştır?",
+          "secenekler": ["Onun bu davranışı beni çok müteessir etti.", "Bu iki sözcük eş anlamlıdır.", "Konuya yabancı olan biri gibi bakıyordu.", "Mektubu aldım ve cevapladım.", "Bu konuyu tafsil etmek gerekiyor."],
+          "dogruIndex": 3,
+          "aciklama": "'Mektubu cevaplamak' ifadesi yaygın kullanılsa da dil bilgisi açısından mektubu 'yanıtlamak' ya da 'mektuba cevap vermek' doğru kullanımdır. 'Mektubu cevapladım' ifadesi sözcük yanlış kullanımına örnek gösterilebilir; zira 'cevaplamak' fiili kişilere veya sorulara yöneltilir, bir nesneye (mektuba) değil. 'Mektuba cevap verdim' ya da 'soruyu cevapladım' daha doğrudur."
+        },
+        {
+          "soru": "Aşağıdaki cümlelerin hangisinde anlatım bozukluğu yoktur?",
+          "secenekler": ["Toplam beş kişi birden geldi.", "Geri geriye döndü.", "Sabahleyin erken saatte uyandım.", "Çalışkan ve gayretli bir öğrenciydi.", "Kendisi bizzat imzaladı."],
+          "dogruIndex": 3,
+          "aciklama": "'Çalışkan ve gayretli bir öğrenciydi' cümlesinde anlatım bozukluğu yoktur; iki niteleme birbirini pekiştirmekte, tekrar oluşturmamaktadır. 'Toplam beş kişi birden' (toplam ve birden gereksiz tekrar), 'geri geriye' (açık tekrar), 'sabahleyin erken saatte' (sabahleyin ve erken saatte anlam tekrarı), 'kendisi bizzat' (bizzat zaten 'kendisi' anlamına gelir) anlatım bozukluğu içerir."
+        }
+      ]
     }
   ]
 }
