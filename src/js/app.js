@@ -632,36 +632,95 @@ function renderWrongBank() {
 // ── Settings ──
 function renderSettings() {
   const s = Storage.getSettings();
+  const particleOn = s.particleEnabled !== false;
+  const pColor = s.particleColor || 'rainbow';
+
+  const colorOpts = [
+    { id: 'rainbow', label: '🌈 Gökkuşağı' },
+    { id: 'violet',  label: '💜 Mor' },
+    { id: 'rose',    label: '🌸 Pembe' },
+    { id: 'gold',    label: '✨ Altın' },
+    { id: 'mint',    label: '💚 Mint' },
+    { id: 'white',   label: '⚪ Gümüş' },
+  ];
+
+  const colorBtns = colorOpts.map(c => `
+    <button class="btn ${pColor === c.id ? 'btn-primary' : 'btn-secondary'} color-pick"
+      data-color="${c.id}" style="padding:8px 14px;font-size:13px">${c.label}</button>
+  `).join('');
+
   setRoot(`
-    <h2 style="font-size:20px;font-weight:800;margin:0 0 18px">⚙️ Ayarlar</h2>
-    <div class="card" style="padding:0;overflow:hidden;margin-bottom:16px">
+    <h2 style="font-size:20px;font-weight:800;margin:0 0 22px">⚙️ Ayarlar</h2>
+
+    <!-- Mouse efekti -->
+    <div class="section-title">🖱️ Mouse Toz Efekti</div>
+    <div class="card" style="padding:20px 22px;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div class="settings-title">Mouse efekti</div>
+          <div class="settings-sub">Fare hareket ettikçe toz parçacıkları çıkar</div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="s-particle-on" ${particleOn ? 'checked' : ''}>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div id="color-row" style="${particleOn ? '' : 'opacity:0.4;pointer-events:none'}">
+        <div class="settings-sub" style="margin-bottom:10px">Renk teması:</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">${colorBtns}</div>
+      </div>
+    </div>
+
+    <!-- Firebase -->
+    <div class="section-title" style="margin-top:24px">🔥 Sıralama (Liderboard)</div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:14px">
       <div class="settings-row">
         <div class="settings-label">
-          <div class="settings-title">🔥 Firebase Liderboard URL</div>
-          <div class="settings-sub">Ücretsiz. <a href="https://console.firebase.google.com" style="color:var(--violet-l)">console.firebase.google.com</a> → Proje oluştur → Realtime DB → Test mode → URL kopyala</div>
+          <div class="settings-title">Firebase URL</div>
+          <div class="settings-sub">Ücretsiz kurulum — aşağıdaki adımları izle</div>
         </div>
         <input class="settings-input" id="s-fb" placeholder="https://xxx.firebaseio.com" value="${esc(s.firebaseUrl || '')}" />
       </div>
     </div>
-    <div style="display:flex;gap:10px">
+    <div style="display:flex;gap:10px;margin-bottom:24px">
       <button class="btn btn-primary" id="s-save">Kaydet</button>
       <button class="btn btn-ghost" id="s-test">Bağlantıyı Test Et</button>
     </div>
-    <div style="margin-top:32px;padding:18px 20px;background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);border-radius:16px">
-      <h3 style="font-size:15px;margin:0 0 8px">Firebase Kurulum Adımları (2 dk)</h3>
-      <ol style="font-size:13.5px;color:var(--text-dim);padding-left:18px;line-height:2">
-        <li>console.firebase.google.com → <b>Add project</b></li>
-        <li>Proje adı: KPSS → Continue → Continue → Create</li>
-        <li>Sol menü: <b>Realtime Database</b> → Create Database → Start in <b>test mode</b> → Enable</li>
-        <li>Database URL'yi kopyala (örn: <code>https://kpss-xxxx-default-rtdb.firebaseio.com</code>)</li>
+
+    <div style="padding:18px 20px;background:rgba(139,92,246,0.07);border:1px solid rgba(139,92,246,0.18);border-radius:16px">
+      <h3 style="font-size:14.5px;margin:0 0 10px;color:var(--text-dim)">Firebase Kurulum Adımları (2 dk)</h3>
+      <ol style="font-size:13.5px;color:var(--text-faint);padding-left:18px;line-height:2.1;margin:0">
+        <li>console.firebase.google.com → <b style="color:var(--text-dim)">Add project</b></li>
+        <li>Proje adı: KPSS → Continue → Create</li>
+        <li>Sol menü: <b style="color:var(--text-dim)">Realtime Database</b> → Create → Test mode → Enable</li>
+        <li>Database URL'yi kopyala</li>
         <li>Yukarıdaki kutuya yapıştır → Kaydet</li>
       </ol>
     </div>
   `);
 
+  // Toggle switch
+  $('s-particle-on').addEventListener('change', () => {
+    const on = $('s-particle-on').checked;
+    $('color-row').style.opacity = on ? '1' : '0.4';
+    $('color-row').style.pointerEvents = on ? '' : 'none';
+    Storage.saveSettings({ ...Storage.getSettings(), particleEnabled: on });
+  });
+
+  // Color pick
+  document.querySelectorAll('.color-pick').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.color-pick').forEach(b => {
+        b.className = 'btn btn-secondary color-pick';
+      });
+      btn.className = 'btn btn-primary color-pick';
+      Storage.saveSettings({ ...Storage.getSettings(), particleColor: btn.dataset.color });
+      toast('Renk teması değiştirildi!', 'success');
+    });
+  });
+
   $('s-save').addEventListener('click', () => {
-    const url = $('s-fb').value.trim();
-    Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: url });
+    Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: $('s-fb').value.trim() });
     toast('Ayarlar kaydedildi!', 'success');
   });
   $('s-test').addEventListener('click', async () => {
@@ -670,7 +729,7 @@ function renderSettings() {
     Storage.saveSettings({ ...Storage.getSettings(), firebaseUrl: url });
     toast('Test ediliyor...', 'info');
     const ok = await Leaderboard.submitResult({ skor: 0, dogru: 0, yanlis: 0, bos: 0, toplam: 1, subjectAd: 'Test', topicBaslik: 'Test', tarih: new Date().toISOString() });
-    toast(ok ? '✅ Bağlantı başarılı!' : '❌ Bağlantı kurulamadı. URL\'yi kontrol et.', ok ? 'success' : 'error', 5000);
+    toast(ok ? '✅ Bağlantı başarılı!' : '❌ Bağlantı kurulamadı.', ok ? 'success' : 'error', 4000);
   });
 }
 
