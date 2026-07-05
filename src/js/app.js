@@ -20,16 +20,36 @@ const $ = id => document.getElementById(id);
 const sub = id => SUBJECTS.find(s => s.id === id);
 const topic = (s, tid) => s.data?.konular.find(t => t.id === tid);
 
-// ── Toast ──
+// ── Üstten düşen bildirim ──
+let _notifTimer = null;
 function toast(msg, type = 'info', dur = 3000) {
-  const el = $('toast');
+  const el = $('top-notif');
+  const icon = $('top-notif-icon');
+  const text = $('top-notif-text');
   if (!el) return;
-  const icons = { info: 'ℹ️', success: '✅', error: '❌', badge: '🏅' };
-  el.innerHTML = `<span>${icons[type] || 'ℹ️'}</span><span>${esc(msg)}</span>`;
-  el.className = `toast ${type}`;
-  el.classList.remove('hide');
-  clearTimeout(el._t);
-  el._t = setTimeout(() => el.classList.add('hide'), dur);
+
+  const icons = { info: 'ℹ️', success: '✨', error: '❌', badge: '🏅' };
+  icon.textContent = icons[type] || 'ℹ️';
+  text.textContent = msg;
+
+  // renk sınıfı
+  el.className = 'top-notif';
+  if (type === 'badge') el.style.borderColor = 'rgba(251,191,36,0.5)';
+  else if (type === 'success') el.style.borderColor = 'rgba(52,211,153,0.45)';
+  else if (type === 'error') el.style.borderColor = 'rgba(251,113,133,0.45)';
+  else el.style.borderColor = 'rgba(139,92,246,0.4)';
+
+  // Slide down
+  requestAnimationFrame(() => {
+    el.classList.add('show');
+  });
+
+  clearTimeout(_notifTimer);
+  _notifTimer = setTimeout(() => {
+    el.classList.remove('show');
+    el.classList.add('hide-up');
+    setTimeout(() => el.classList.remove('hide-up'), 500);
+  }, dur);
 }
 
 // ── Particles ──
@@ -684,11 +704,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   $('name-submit').addEventListener('click', submitName);
   $('name-input').addEventListener('keydown', e => e.key === 'Enter' && submitName());
   $('brand-home').addEventListener('click', () => navigate('home'));
-  $('nav-home').addEventListener('click', () => navigate('home'));
-  $('nav-leaderboard').addEventListener('click', () => navigate('leaderboard'));
-  $('nav-badges').addEventListener('click', () => navigate('badges'));
-  $('nav-wrong').addEventListener('click', () => navigate('wrong'));
-  $('nav-settings').addEventListener('click', () => navigate('settings'));
+  $('nav-home').addEventListener('click', () => { navigate('home'); setActiveNav('nav-home'); });
+  $('nav-leaderboard').addEventListener('click', () => { navigate('leaderboard'); setActiveNav('nav-leaderboard'); });
+  $('nav-badges').addEventListener('click', () => { navigate('badges'); setActiveNav('nav-badges'); });
+  $('nav-wrong').addEventListener('click', () => { navigate('wrong'); setActiveNav('nav-wrong'); });
+  $('nav-settings').addEventListener('click', () => { navigate('settings'); setActiveNav('nav-settings'); });
 
   if (!Storage.getUserName()) {
     $('name-modal').classList.remove('hidden');
@@ -696,6 +716,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   navigate('home');
 });
+
+function setActiveNav(id) {
+  document.querySelectorAll('.nav-pill').forEach(el => el.classList.remove('active'));
+  const el = $(id);
+  if (el) el.classList.add('active');
+}
 
 function submitName() {
   const val = $('name-input').value.trim();

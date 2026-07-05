@@ -18,24 +18,29 @@
   </div>
 </div>
 
+<!-- Üstten düşen bildirim -->
+<div id="top-notif" class="top-notif">
+  <span id="top-notif-icon"></span>
+  <span id="top-notif-text"></span>
+</div>
+
 <div id="app">
   <header class="app-header">
     <div class="brand" id="brand-home">
       <span class="brand-mark">🌙</span>
       <span class="brand-text"><span class="brand-v">KPSS</span><span class="brand-r">Hazırlık</span><span class="brand-badge">v2</span></span>
     </div>
-    <nav class="header-nav">
-      <button class="nav-btn" id="nav-home" title="Anasayfa">🏠 Ana</button>
-      <button class="nav-btn" id="nav-leaderboard" title="Sıralama">🏆 Sıra</button>
-      <button class="nav-btn" id="nav-badges" title="Rozetler">🎖 Rozetler</button>
-      <button class="nav-btn" id="nav-wrong" title="Yanlışlarım">❌ Yanlışlarım</button>
-      <button class="nav-btn" id="nav-settings" title="Ayarlar">⚙️</button>
+    <nav class="header-nav-center">
+      <button class="nav-pill" id="nav-home">🏠 <span>Anasayfa</span></button>
+      <button class="nav-pill" id="nav-leaderboard">🏆 <span>Sıralama</span></button>
+      <button class="nav-pill" id="nav-badges">🎖 <span>Rozetler</span></button>
+      <button class="nav-pill" id="nav-wrong">❌ <span>Yanlışlarım</span></button>
+      <button class="nav-pill nav-pill-icon" id="nav-settings" title="Ayarlar">⚙️</button>
     </nav>
+    <div class="header-right"></div>
   </header>
   <main id="view-root" class="view-root"></main>
 </div>
-
-<div id="toast" class="toast hide"></div>
 
 <script src="src/js/storage.js"></script>
 <script src="src/js/timer.js"></script>
@@ -45,5 +50,6 @@
 <script src="src/js/charts.js"></script>
 <script src="src/js/quiz.js"></script>
 <script src="src/js/app.js"></script>
+<script src="src/js/particles.js"></script>
 </body>
 </html>
