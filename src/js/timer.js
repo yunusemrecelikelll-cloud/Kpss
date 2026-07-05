@@ -1,9 +1,17 @@
 const Timer = (() => {
-  const SECS_PER_Q = 65; // ~KPSS GY-GK temposu
+  const AUTO_SECS_PER_Q = 65; // KPSS GY-GK oranı
 
   let _id = null, _remaining = 0, _onTick = null, _onExpire = null;
 
-  function durationFor(n) { return n * SECS_PER_Q; }
+  function _getSecsPerQ() {
+    try {
+      const s = JSON.parse(localStorage.getItem('kpss_v2_settings')) || {};
+      if (s.timerMode === 'perq') return Number(s.secsPerQ) || AUTO_SECS_PER_Q;
+    } catch {}
+    return AUTO_SECS_PER_Q;
+  }
+
+  function durationFor(n) { return n * _getSecsPerQ(); }
 
   function format(s) {
     const m = Math.floor(Math.abs(s) / 60).toString().padStart(2, '0');

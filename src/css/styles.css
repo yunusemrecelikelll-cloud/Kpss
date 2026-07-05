@@ -504,6 +504,12 @@ body::before {
   animation: pulse-glow 1s ease-in-out infinite;
   background: rgba(251,113,133,0.1);
 }
+.quiz-timer.danger {
+  color: #fff; border-color: var(--danger);
+  background: rgba(220,38,38,0.85);
+  animation: pulse-glow 0.35s ease-in-out infinite;
+  font-weight: 900; letter-spacing: 1px;
+}
 
 /* Quiz navigation dots */
 .quiz-dots {

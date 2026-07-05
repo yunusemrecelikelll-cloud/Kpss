@@ -10,6 +10,7 @@ const Storage = (() => {
     STREAK:    'kpss_v2_streak',
     DRAFT:     'kpss_v2_draft',
     SETTINGS:  'kpss_v2_settings',
+    USED_QS:   'kpss_v2_used_qs',
   };
 
   const get = (k, fb) => { try { return JSON.parse(localStorage.getItem(k)) ?? fb; } catch { return fb; } };
@@ -41,6 +42,24 @@ const Storage = (() => {
     return arr.length ? arr[arr.length - 1] : null;
   }
 
+  // ── Used questions tracking (tekrar önleme) ──
+  function getUsedQuestions(topicId) {
+    const all = get(K.USED_QS, {});
+    return all[topicId] || [];
+  }
+  function addUsedQuestions(topicId, questionKeys) {
+    const all = get(K.USED_QS, {});
+    const existing = new Set(all[topicId] || []);
+    questionKeys.forEach(k => existing.add(k));
+    all[topicId] = [...existing];
+    set(K.USED_QS, all);
+  }
+  function resetUsedQuestions(topicId) {
+    const all = get(K.USED_QS, {});
+    delete all[topicId];
+    set(K.USED_QS, all);
+  }
+
   // ── Wrong answers bank ──
   function getWrongBank() { return get(K.WRONG, []); }
   function addWrongQuestions(questions, subjectId, subjectAd) {
@@ -51,7 +70,6 @@ const Storage = (() => {
       if (!exists) bank.push({ key, subjectId, subjectAd, ...q, addedAt: Date.now() });
       else exists.count = (exists.count || 1) + 1;
     });
-    // keep latest 200
     if (bank.length > 200) bank.splice(0, bank.length - 200);
     set(K.WRONG, bank);
   }
@@ -100,7 +118,16 @@ const Storage = (() => {
   function clearDraft()     { localStorage.removeItem(K.DRAFT); }
 
   // ── Settings ──
-  function getSettings() { return get(K.SETTINGS, { theme: 'default', particleEnabled: true, particleColor: 'rainbow' }); }
+  function getSettings() {
+    return get(K.SETTINGS, {
+      theme: 'default',
+      particleEnabled: true,
+      particleColor: 'rainbow',
+      soundEnabled: true,
+      timerMode: 'auto',  // 'auto' = KPSS oranı (65s/soru) | 'perq' = kullanıcı belirler
+      secsPerQ: 65,       // timerMode==='perq' iken kullanılır
+    });
+  }
   function saveSettings(s) { set(K.SETTINGS, s); }
 
   // ── Topic attempt reset ──
@@ -110,6 +137,7 @@ const Storage = (() => {
     const c = getCompletedTopics();
     delete c[topicId];
     set(K.COMPLETED, c);
+    resetUsedQuestions(topicId);
     clearDraft();
   }
 
@@ -130,6 +158,7 @@ const Storage = (() => {
     getUserName, setUserName,
     getCompletedTopics, markTopicCompleted, isTopicCompleted,
     getAttempts, addAttempt, getAttemptsForTopic, getBestScore, getLastAttempt,
+    getUsedQuestions, addUsedQuestions, resetUsedQuestions,
     getWrongBank, addWrongQuestions, removeFromWrongBank, clearWrongBank,
     getUnlockedBadges, unlockBadge, isBadgeUnlocked,
     getMissionsDone, markMissionDone, isMissionDone, resetDailyMissions,

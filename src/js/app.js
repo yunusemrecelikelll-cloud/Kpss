@@ -13,12 +13,24 @@ const FULL_TEST_DIST = {
   turkce: 30, matematik: 30, tarih: 24, cografya: 24, vatandaslik: 8, guncel: 4
 };
 
+// Ders sınavı: her konudan kaç soru
+const SUBJECT_EXAM_Q_PER_TOPIC = 3;
+
 let _view = 'home', _params = {}, _loadErr = false;
 
 const esc = s => { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; };
 const $ = id => document.getElementById(id);
 const sub = id => SUBJECTS.find(s => s.id === id);
 const topic = (s, tid) => s.data?.konular.find(t => t.id === tid);
+
+// ── Ses efekti: global tıklama ──
+document.addEventListener('click', e => {
+  const el = e.target.closest('button, .btn, .crumb, .subject-card, .topic-row, .theme-swatch, .nav-pill, .badge-item, .mission-row');
+  if (!el) return;
+  if (el.closest('.q-opt')) return; // şık seçiminde ses çıkmasın
+  if (el.closest('.toggle-switch')) return;
+  Sounds.click();
+}, true);
 
 // ── Üstten düşen bildirim ──
 let _notifTimer = null;
@@ -32,18 +44,13 @@ function toast(msg, type = 'info', dur = 3000) {
   icon.textContent = icons[type] || 'ℹ️';
   text.textContent = msg;
 
-  // renk sınıfı
   el.className = 'top-notif';
   if (type === 'badge') el.style.borderColor = 'rgba(251,191,36,0.5)';
   else if (type === 'success') el.style.borderColor = 'rgba(52,211,153,0.45)';
   else if (type === 'error') el.style.borderColor = 'rgba(251,113,133,0.45)';
   else el.style.borderColor = 'rgba(139,92,246,0.4)';
 
-  // Slide down
-  requestAnimationFrame(() => {
-    el.classList.add('show');
-  });
-
+  requestAnimationFrame(() => { el.classList.add('show'); });
   clearTimeout(_notifTimer);
   _notifTimer = setTimeout(() => {
     el.classList.remove('show');
@@ -67,6 +74,7 @@ function spawnParticles() {
 // ── Router ──
 function navigate(view, params = {}) {
   Timer.stop();
+  Sounds.resetTickPhase();
   _view = view; _params = params;
   render();
   window.scrollTo(0, 0);
@@ -83,12 +91,27 @@ function render() {
   if (v === 'wrong') return renderWrongBank();
   if (v === 'settings') return renderSettings();
   if (v === 'fulltest') return startFullTest();
+  if (v === 'subjectexam') return startSubjectExam(_params.sid);
   if (v === 'missions') return renderMissions();
 }
 
-// ── Soru bankası: rastgele N soru seç ──
-function pickQuestions(allQuestions, count) {
-  const pool = [...allQuestions];
+// ── Soru bankası: tekrarsız rastgele seçim ──
+function pickQuestions(allQuestions, count, topicId) {
+  const usedKeys = topicId ? Storage.getUsedQuestions(topicId) : [];
+  const unused = allQuestions.filter(q => !usedKeys.includes(q.soru.slice(0, 50)));
+
+  // Tercih: kullanılmamış sorular; eğer yetmiyorsa tüm havuzdan tamamla
+  let pool;
+  if (unused.length >= count) {
+    pool = unused;
+  } else if (unused.length > 0) {
+    const used = allQuestions.filter(q => usedKeys.includes(q.soru.slice(0, 50)));
+    pool = [...unused, ...used.sort(() => Math.random() - 0.5)];
+  } else {
+    pool = [...allQuestions];
+  }
+
+  // Fisher-Yates karıştır
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
@@ -124,7 +147,6 @@ function renderHome() {
   const totalTopics = SUBJECTS.reduce((s, x) => s + (x.data?.konular.length || 0), 0);
   const doneTopics = SUBJECTS.reduce((s, x) => s + (x.data?.konular.filter(t => completed[t.id]).length || 0), 0);
 
-  // Motivasyon mesajı
   const motivations = [
     '💪 Her doğru cevap seni hedefe bir adım yaklaştırıyor!',
     '🌟 Bugün çalıştığın her dakika sınav günü gülümsetecek.',
@@ -134,7 +156,6 @@ function renderHome() {
   ];
   const motivMsg = motivations[new Date().getDate() % motivations.length];
 
-  // Günün önerisi
   const suggestion = Missions.getTodaySuggestion(SUBJECTS);
   const suggestHtml = suggestion ? `
     <div style="margin-top:14px;padding:12px 14px;background:rgba(244,114,182,0.1);border:1px solid rgba(244,114,182,0.25);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:10px">
@@ -142,7 +163,6 @@ function renderHome() {
       <button class="btn btn-secondary" style="padding:6px 14px;font-size:12.5px;white-space:nowrap" id="go-suggest">Başla</button>
     </div>` : '';
 
-  // Subject cards
   const subCards = SUBJECTS.filter(s => s.data).map(s => {
     const cnt = s.data.konular.length;
     const done = s.data.konular.filter(t => completed[t.id]).length;
@@ -161,7 +181,6 @@ function renderHome() {
       </div>`;
   }).join('');
 
-  // Best/worst subject
   const subAvgs = SUBJECTS.filter(s => s.data).map(s => ({ s, avg: Storage.computeSubjectAvg(s.id) })).filter(x => x.avg !== null);
   const bestSub = subAvgs.length ? subAvgs.reduce((a, b) => a.avg >= b.avg ? a : b) : null;
   const worstSub = subAvgs.length ? subAvgs.reduce((a, b) => a.avg <= b.avg ? a : b) : null;
@@ -240,12 +259,10 @@ function renderHome() {
       </div>` : ''}
   `);
 
-  // Chart
   if (subAvgs.length > 1) {
     Charts.barChart('subject-chart', subAvgs.map(x => ({ id: x.s.id, label: x.s.ad, value: x.avg || 0 })));
   }
 
-  // Events
   document.querySelectorAll('.subject-card').forEach(el => el.addEventListener('click', () => navigate('subject', { sid: el.dataset.sid })));
   $('fulltest-btn')?.addEventListener('click', () => navigate('fulltest'));
   $('resume-btn')?.addEventListener('click', resumeDraft);
@@ -258,6 +275,9 @@ function renderSubject(sid) {
   const s = sub(sid);
   if (!s || !s.data) return navigate('home');
   const completed = Storage.getCompletedTopics();
+  const totalTopicQs = s.data.konular.reduce((sum, t) => sum + (t.sorular?.length || 0), 0);
+  const examQCount = s.data.konular.length * SUBJECT_EXAM_Q_PER_TOPIC;
+  const examDur = Math.round(Timer.durationFor(examQCount) / 60);
 
   const rows = s.data.konular.map(t => {
     const done = !!completed[t.id];
@@ -282,12 +302,23 @@ function renderSubject(sid) {
   setRoot(`
     <div class="breadcrumb"><span class="crumb" data-go="home">Anasayfa</span><span class="sep">›</span><span>${esc(s.ad)}</span></div>
     <h2 style="font-size:22px;font-weight:800;margin:0 0 6px">${s.icon} ${esc(s.ad)}</h2>
-    <p style="font-size:13.5px;color:var(--text-faint);margin-bottom:22px">${s.data.konular.length} konu • Sırayla çalışmanı öneririz, ama istediğin konudan başlayabilirsin.</p>
+    <p style="font-size:13.5px;color:var(--text-faint);margin-bottom:16px">${s.data.konular.length} konu • Sırayla çalışmanı öneririz, ama istediğin konudan başlayabilirsin.</p>
+
+    <!-- Ders Sınavı Kartı -->
+    <div class="card" style="padding:16px 20px;margin-bottom:20px;background:rgba(167,139,250,0.07);border-color:rgba(167,139,250,0.3);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>
+        <div style="font-size:15px;font-weight:700;margin-bottom:4px">📝 ${esc(s.ad)} Sınavı</div>
+        <div style="font-size:13px;color:var(--text-faint)">${examQCount} soru (her konudan ${SUBJECT_EXAM_Q_PER_TOPIC}) • ~${examDur} dakika</div>
+      </div>
+      <button class="btn btn-primary" id="subjectexam-btn">Sınava Gir ➜</button>
+    </div>
+
     <div class="topic-list">${rows}</div>
   `);
 
   document.querySelectorAll('.crumb').forEach(el => el.dataset.go === 'home' && el.addEventListener('click', () => navigate('home')));
   document.querySelectorAll('.topic-row').forEach(el => el.addEventListener('click', () => navigate('topic', { sid, tid: el.dataset.tid })));
+  $('subjectexam-btn')?.addEventListener('click', () => navigate('subjectexam', { sid }));
 }
 
 // ── Topic ──
@@ -295,7 +326,9 @@ function renderTopic(sid, tid) {
   const s = sub(sid); if (!s?.data) return navigate('home');
   const t = topic(s, tid); if (!t) return navigate('subject', { sid });
   const a = t.anlatim || {};
-  const dur = Math.round(Timer.durationFor(Math.min(t.sorular.length, 10)) / 60);
+  const qCount = t.sorular?.length || 0;
+  const poolSize = Math.min(qCount, 10);
+  const dur = Math.round(Timer.durationFor(poolSize) / 60);
   const ytUrl = `https://www.youtube.com/results?search_query=KPSS+${encodeURIComponent(t.baslik)}+konu+anlat%C4%B1m%C4%B1`;
   const attempts = Storage.getAttemptsForTopic(tid);
   const attCount = attempts.length;
@@ -304,7 +337,6 @@ function renderTopic(sid, tid) {
   const pointsHtml = (a.anahtarNoktalar || []).map(p => `<li>${esc(p)}</li>`).join('');
   const parasHtml = (a.icerik || []).map(p => `<p class="lecture-para">${esc(p)}</p>`).join('');
 
-  // Geçmiş test sonuçları
   const historyHtml = attempts.length ? `
     <div class="section-title" style="margin-top:22px">📊 Geçmiş Testlerin</div>
     <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
@@ -329,7 +361,7 @@ function renderTopic(sid, tid) {
     </div>` : `
     <div class="card start-bar">
       <div class="start-info">
-        ${t.sorular.length} soruluk havuz &nbsp;•&nbsp; her seferinde farklı 10 soru &nbsp;•&nbsp;
+        ${qCount} soruluk havuz &nbsp;•&nbsp; her seferinde farklı 10 soru &nbsp;•&nbsp;
         <b>${MAX_ATTEMPTS_PER_TOPIC - attCount} hak kaldı</b>
       </div>
       <button class="btn btn-primary" id="start-btn">
@@ -363,7 +395,7 @@ function renderTopic(sid, tid) {
     if (el.dataset.go === 'sub')  el.addEventListener('click', () => navigate('subject', { sid }));
   });
   $('start-btn')?.addEventListener('click', () => {
-    const qs = pickQuestions(t.sorular, 10);
+    const qs = pickQuestions(t.sorular, 10, tid);
     beginQuiz(sid, s.ad, tid, t.baslik, qs, false);
   });
   $('reset-btn')?.addEventListener('click', () => {
@@ -371,6 +403,25 @@ function renderTopic(sid, tid) {
     toast('Test hakları sıfırlandı!', 'success');
     renderTopic(sid, tid);
   });
+}
+
+// ── Subject Exam ──
+function startSubjectExam(sid) {
+  const s = sub(sid);
+  if (!s?.data) { navigate('home'); return; }
+
+  const allQs = [];
+  s.data.konular.forEach(t => {
+    const pool = (t.sorular || []);
+    const picked = pickQuestions(pool, SUBJECT_EXAM_Q_PER_TOPIC, null); // no used-q tracking for exams
+    picked.forEach(q => allQs.push({ ...q, _topicBaslik: t.baslik }));
+  });
+
+  if (allQs.length < 3) { toast('Yeterli soru yüklenemedi.', 'error'); navigate('subject', { sid }); return; }
+
+  const examId = sid + '-sinav';
+  const examTitle = s.ad + ' Sınavı';
+  beginQuiz(sid, s.ad, examId, examTitle, allQs, false);
 }
 
 // ── Full Test ──
@@ -423,6 +474,9 @@ function updateTimer(rem) {
   if (!el) return;
   el.textContent = Timer.format(rem);
   el.classList.toggle('warning', rem <= 60);
+  el.classList.toggle('danger', rem <= 5);
+  // Son 5 saniye tik-tak sesi
+  if (rem <= 5 && rem > 0) Sounds.tick();
 }
 
 function renderQuizView() {
@@ -441,6 +495,7 @@ function renderQuizView() {
       <div class="opt-text">${esc(o)}</div>
     </div>`).join('');
 
+  const topicTag = q._topicBaslik ? `<span style="font-size:11px;color:var(--violet);margin-left:8px;opacity:.7">[${esc(q._topicBaslik)}]</span>` : '';
   const kaynak = q.kaynak ? `<span style="font-size:11px;color:var(--text-faint);margin-left:8px">${esc(q.kaynak)}</span>` : '';
 
   setRoot(`
@@ -453,7 +508,7 @@ function renderQuizView() {
     </div>
     <div class="quiz-dots">${dots}</div>
     <div class="card q-card">
-      <div class="q-number">Soru ${st.currentIndex+1}${kaynak}</div>
+      <div class="q-number">Soru ${st.currentIndex+1}${topicTag}${kaynak}</div>
       <div class="q-text">${esc(q.soru)}</div>
       <div class="q-options">${opts}</div>
     </div>
@@ -486,6 +541,13 @@ async function finishQuiz() {
   Timer.stop();
   const result = Quiz.finish(elapsed);
   Storage.addAttempt({ ...result });
+
+  // Konu testi ise kullanılan soruları kaydet
+  if (result.topicId && result.topicId !== 'full-test' && !result.topicId.endsWith('-sinav')) {
+    const usedKeys = result.review.map(r => r.soru.slice(0, 50));
+    Storage.addUsedQuestions(result.topicId, usedKeys);
+  }
+
   if (result.skor === 100 || result.skor >= 60) Storage.markTopicCompleted(result.topicId);
 
   postResultChecks(result);
@@ -496,7 +558,6 @@ async function finishQuiz() {
 
 // ── Result ──
 function renderResult(result) {
-  const scoreClsRing = `score-ring`;
   const letters = ['A','B','C','D','E'];
   const name = Storage.getUserName() || 'Aday';
 
@@ -531,9 +592,12 @@ function renderResult(result) {
       </div>`;
   }).join('');
 
+  const isTopicTest = result.topicId && result.topicId !== 'full-test' && !result.topicId.endsWith('-sinav');
+  const isSubjectExam = result.topicId && result.topicId.endsWith('-sinav');
+
   setRoot(`
     <div class="card result-hero anim-bounce">
-      <div class="${scoreClsRing}" style="--score-pct:${result.skor * 3.6}deg">
+      <div class="score-ring" style="--score-pct:${result.skor * 3.6}deg">
         <div class="score-num">%${result.skor}</div>
       </div>
       <div class="result-topic">${esc(result.subjectAd)} • ${esc(result.topicBaslik)}</div>
@@ -544,7 +608,8 @@ function renderResult(result) {
         <div class="res-stat bos"><div class="res-stat-val">${result.bos}</div><div class="res-stat-lbl">Boş —</div></div>
       </div>
       <div class="result-actions">
-        ${result.topicId !== 'full-test' ? `<button class="btn btn-secondary" id="r-topic">Konuya Dön</button>` : ''}
+        ${isTopicTest ? `<button class="btn btn-secondary" id="r-topic">Konuya Dön</button>` : ''}
+        ${isSubjectExam ? `<button class="btn btn-secondary" id="r-subject">Derse Dön</button>` : ''}
         <button class="btn btn-ghost" id="r-retry">Tekrar Çöz</button>
         <button class="btn btn-primary" id="r-home">Anasayfa</button>
         <button class="btn btn-ghost" id="r-badges" style="border-color:rgba(251,191,36,0.4);color:var(--gold)">🎖 Rozetler</button>
@@ -554,15 +619,17 @@ function renderResult(result) {
     <div class="review-list">${reviewHtml}</div>
   `);
 
-  $('r-topic')?.addEventListener('click', () => result.topicId !== 'full-test' && navigate('topic', { sid: result.subjectId, tid: result.topicId }));
+  $('r-topic')?.addEventListener('click', () => navigate('topic', { sid: result.subjectId, tid: result.topicId }));
+  $('r-subject')?.addEventListener('click', () => navigate('subject', { sid: result.subjectId }));
   $('r-retry')?.addEventListener('click', () => {
     if (result.topicId === 'full-test') { navigate('fulltest'); return; }
+    if (isSubjectExam) { navigate('subjectexam', { sid: result.subjectId }); return; }
     const s2 = sub(result.subjectId);
     const t2 = s2 && topic(s2, result.topicId);
     if (t2) {
       const attempts = Storage.getAttemptsForTopic(result.topicId);
       if (attempts.length >= MAX_ATTEMPTS_PER_TOPIC) { toast('Bu konu için maksimum test hakkını kullandın. Konuya git ve sıfırla.', 'error', 4000); return; }
-      beginQuiz(result.subjectId, result.subjectAd, result.topicId, result.topicBaslik, pickQuestions(t2.sorular, 10), false);
+      beginQuiz(result.subjectId, result.subjectAd, result.topicId, result.topicBaslik, pickQuestions(t2.sorular, 10, result.topicId), false);
     }
   });
   $('r-home')?.addEventListener('click', () => navigate('home'));
@@ -689,6 +756,9 @@ function renderSettings() {
   const s = Storage.getSettings();
   const particleOn = s.particleEnabled !== false;
   const pColor = s.particleColor || 'rainbow';
+  const soundOn = s.soundEnabled !== false;
+  const timerMode = s.timerMode || 'auto';
+  const secsPerQ = s.secsPerQ || 65;
 
   const colorOpts = [
     { id: 'rainbow', label: '🌈', name: 'Gökkuşağı' },
@@ -721,6 +791,12 @@ function renderSettings() {
       data-color="${c.id}" style="padding:8px 14px;font-size:13px">${c.label} ${c.name}</button>
   `).join('');
 
+  const secsOptions = [30, 45, 60, 90, 120];
+  const secsBtns = secsOptions.map(n => `
+    <button class="btn ${secsPerQ === n ? 'btn-primary' : 'btn-secondary'} secs-pick"
+      data-secs="${n}" style="padding:8px 16px;font-size:13px">${n}s</button>
+  `).join('');
+
   setRoot(`
     <h2 style="font-size:20px;font-weight:800;margin:0 0 22px">⚙️ Ayarlar</h2>
 
@@ -728,6 +804,46 @@ function renderSettings() {
     <div class="section-title">🎨 Uygulama Teması</div>
     <div class="card" style="padding:18px 20px;margin-bottom:16px">
       <div class="theme-grid">${themeSwatches}</div>
+    </div>
+
+    <!-- Ses -->
+    <div class="section-title" style="margin-top:20px">🔊 Ses Efektleri</div>
+    <div class="card" style="padding:18px 22px;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div class="settings-title">Buton sesleri</div>
+          <div class="settings-sub">Tıklamalarda ses çıkar; son 5 saniye tik-tak sesi gelir</div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="s-sound-on" ${soundOn ? 'checked' : ''}>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Süre Modu -->
+    <div class="section-title" style="margin-top:20px">⏱️ Test Süresi</div>
+    <div class="card" style="padding:18px 22px;margin-bottom:14px">
+      <div style="margin-bottom:16px">
+        <div class="settings-title" style="margin-bottom:10px">Süre hesaplama modu</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn ${timerMode === 'auto' ? 'btn-primary' : 'btn-secondary'} timer-mode-btn"
+            data-mode="auto" style="padding:9px 18px;font-size:13px">
+            🤖 Otomatik (KPSS oranı — 65sn/soru)
+          </button>
+          <button class="btn ${timerMode === 'perq' ? 'btn-primary' : 'btn-secondary'} timer-mode-btn"
+            data-mode="perq" style="padding:9px 18px;font-size:13px">
+            ✏️ Soru başına süre — Sen belirle
+          </button>
+        </div>
+      </div>
+      <div id="secs-row" style="${timerMode === 'perq' ? '' : 'opacity:0.4;pointer-events:none'}">
+        <div class="settings-sub" style="margin-bottom:10px">Her soru için süre:</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">${secsBtns}</div>
+        <div style="margin-top:10px;font-size:12.5px;color:var(--text-faint)">
+          Örnek: 10 soru × ${secsPerQ}sn = ${Math.round(10 * secsPerQ / 60)} dakika
+        </div>
+      </div>
     </div>
 
     <!-- Mouse efekti -->
@@ -760,7 +876,38 @@ function renderSettings() {
     });
   });
 
-  // Toggle switch
+  // Ses toggle
+  $('s-sound-on').addEventListener('change', () => {
+    Storage.saveSettings({ ...Storage.getSettings(), soundEnabled: $('s-sound-on').checked });
+  });
+
+  // Timer mode
+  document.querySelectorAll('.timer-mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.mode;
+      document.querySelectorAll('.timer-mode-btn').forEach(b => b.className = 'btn btn-secondary timer-mode-btn');
+      btn.className = 'btn btn-primary timer-mode-btn';
+      $('secs-row').style.opacity = mode === 'perq' ? '1' : '0.4';
+      $('secs-row').style.pointerEvents = mode === 'perq' ? '' : 'none';
+      Storage.saveSettings({ ...Storage.getSettings(), timerMode: mode });
+      toast(mode === 'auto' ? 'Otomatik süre modu seçildi.' : 'Soru başına süre modu seçildi.', 'success');
+    });
+  });
+
+  // Secs pick
+  document.querySelectorAll('.secs-pick').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const n = Number(btn.dataset.secs);
+      document.querySelectorAll('.secs-pick').forEach(b => b.className = 'btn btn-secondary secs-pick');
+      btn.className = 'btn btn-primary secs-pick';
+      Storage.saveSettings({ ...Storage.getSettings(), secsPerQ: n });
+      const ex = document.querySelector('#secs-row div:last-child');
+      if (ex) ex.textContent = `Örnek: 10 soru × ${n}sn = ${Math.round(10 * n / 60)} dakika`;
+      toast(`Soru başına ${n} saniye seçildi.`, 'success');
+    });
+  });
+
+  // Particle toggle
   $('s-particle-on').addEventListener('change', () => {
     const on = $('s-particle-on').checked;
     $('color-row').style.opacity = on ? '1' : '0.4';
@@ -808,7 +955,6 @@ function applyTheme(t) {
 
 // ── Init ──
 document.addEventListener('DOMContentLoaded', async () => {
-  // Tema uygula
   const savedTheme = Storage.getSettings().theme || 'default';
   document.documentElement.setAttribute('data-theme', savedTheme);
 
