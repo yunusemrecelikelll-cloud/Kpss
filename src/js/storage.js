@@ -1,37 +1,127 @@
-// KPSS v2 — Kalıcı veri katmanı (localStorage)
+// KPSS v2 — Çok kullanıcı destekli veri katmanı (localStorage)
 const Storage = (() => {
-  const K = {
-    NAME:      'kpss_v2_name',
-    COMPLETED: 'kpss_v2_completed',
-    ATTEMPTS:  'kpss_v2_attempts',
-    WRONG:     'kpss_v2_wrong',
-    BADGES:    'kpss_v2_badges',
-    MISSIONS:  'kpss_v2_missions_done',
-    STREAK:    'kpss_v2_streak',
-    DRAFT:     'kpss_v2_draft',
-    SETTINGS:  'kpss_v2_settings',
-    USED_QS:   'kpss_v2_used_qs',
+
+  // ── Global (kullanıcıdan bağımsız) anahtarlar ──
+  const G = {
+    USERS:  'kpss_v2_users',
+    ACTIVE: 'kpss_v2_active_user',
   };
+
+  // Eski format (tek kullanıcı) sabit sonekleri
+  const OLD_SUFFIXES = [
+    'name','completed','attempts','wrong','badges',
+    'missions_done','streak','draft','settings','used_qs'
+  ];
 
   const get = (k, fb) => { try { return JSON.parse(localStorage.getItem(k)) ?? fb; } catch { return fb; } };
   const set = (k, v) => localStorage.setItem(k, JSON.stringify(v));
 
+  // Kullanıcı adından güvenli anahtar öneki üret
+  function _safe(name) {
+    return name.replace(/[^a-zA-Z0-9ğüşıöçĞÜŞİÖÇ]/g, '_').slice(0, 40);
+  }
+
+  // Aktif kullanıcı için anahtar öneki
+  function _pre() {
+    const u = localStorage.getItem(G.ACTIVE) || '';
+    return u ? `kpss_v2_${_safe(u)}_` : 'kpss_v2_legacy_';
+  }
+
+  // Belirtilen kullanıcı için anahtar öneki
+  function _preFor(name) {
+    return `kpss_v2_${_safe(name)}_`;
+  }
+
+  const _get = (s, fb)  => get(_pre() + s, fb);
+  const _set = (s, v)   => set(_pre() + s, v);
+  const _getFor = (name, s, fb) => get(_preFor(name) + s, fb);
+
+  // ── Kullanıcı yönetimi ──
+  function getUserList()     { return get(G.USERS, []); }
+  function getActiveUser()   { return localStorage.getItem(G.ACTIVE) || ''; }
+  function setActiveUser(n)  { localStorage.setItem(G.ACTIVE, n); }
+
+  function addUser(rawName) {
+    const name = rawName.trim().slice(0, 24);
+    const cap = name.charAt(0).toUpperCase() + name.slice(1);
+    const users = getUserList();
+    if (!users.includes(cap)) { users.push(cap); set(G.USERS, users); }
+    return cap;
+  }
+
+  function deleteUser(name) {
+    const pre = _preFor(name);
+    const toDelete = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k && k.startsWith(pre)) toDelete.push(k);
+    }
+    toDelete.forEach(k => localStorage.removeItem(k));
+    set(G.USERS, getUserList().filter(u => u !== name));
+    if (getActiveUser() === name) localStorage.removeItem(G.ACTIVE);
+  }
+
+  // Eski tek-kullanıcı verisini yeni formata taşı
+  function migrateOldData() {
+    if (getUserList().length > 0) return false; // zaten göç edilmiş
+    const oldName = get('kpss_v2_name', '');
+    // Herhangi bir eski veri var mı kontrol et
+    const hasOldData = OLD_SUFFIXES.some(s => localStorage.getItem('kpss_v2_' + s) !== null);
+    if (!hasOldData) return false;
+
+    const name = addUser(oldName || 'Kullanıcı 1');
+    const newPre = _preFor(name);
+
+    OLD_SUFFIXES.forEach(s => {
+      const val = localStorage.getItem('kpss_v2_' + s);
+      if (val !== null) {
+        localStorage.setItem(newPre + s, val);
+        localStorage.removeItem('kpss_v2_' + s);
+      }
+    });
+
+    setActiveUser(name);
+    return true;
+  }
+
+  // Kullanıcı özet istatistikleri (seçim ekranı için)
+  function getUserStats(name) {
+    const attempts = _getFor(name, 'attempts', []);
+    const streak   = _getFor(name, 'streak', {});
+    const solved   = attempts.reduce((s, a) => s + (a.toplam || 0), 0);
+    const correct  = attempts.reduce((s, a) => s + (a.dogru  || 0), 0);
+    return {
+      solved,
+      rate:     solved > 0 ? Math.round(correct / solved * 100) : 0,
+      streak:   streak.count || 0,
+      tests:    attempts.length,
+      lastDate: streak.lastDate || null,
+    };
+  }
+
+  // Sabit renk avatar paleti (kullanıcı adı hash'e göre seçilir)
+  function userAvatarColor(name) {
+    const palette = ['#8b5cf6','#ec4899','#14b8a6','#f59e0b','#3b82f6','#10b981','#f43f5e','#6366f1'];
+    let h = 0;
+    for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffff;
+    return palette[h % palette.length];
+  }
+
   // ── Name ──
-  function getUserName() { return get(K.NAME, ''); }
+  function getUserName()    { return _get('name', ''); }
   function setUserName(n) {
-    const trimmed = n.trim();
-    const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
-    set(K.NAME, capitalized);
+    const c = n.trim();
+    _set('name', c.charAt(0).toUpperCase() + c.slice(1).toLowerCase());
   }
 
   // ── Completed topics ──
-  function getCompletedTopics() { return get(K.COMPLETED, {}); }
-  function markTopicCompleted(id) { const c = getCompletedTopics(); c[id] = true; set(K.COMPLETED, c); }
-  function isTopicCompleted(id)  { return !!getCompletedTopics()[id]; }
+  function getCompletedTopics()    { return _get('completed', {}); }
+  function markTopicCompleted(id)  { const c = getCompletedTopics(); c[id] = true; _set('completed', c); }
+  function isTopicCompleted(id)    { return !!getCompletedTopics()[id]; }
 
   // ── Attempts ──
-  function getAttempts() { return get(K.ATTEMPTS, []); }
-  function addAttempt(rec) { const a = getAttempts(); a.push(rec); set(K.ATTEMPTS, a); }
+  function getAttempts()           { return _get('attempts', []); }
+  function addAttempt(rec)         { const a = getAttempts(); a.push(rec); _set('attempts', a); }
   function getAttemptsForTopic(id) { return getAttempts().filter(a => a.topicId === id); }
   function getBestScore(id) {
     const arr = getAttemptsForTopic(id);
@@ -42,65 +132,62 @@ const Storage = (() => {
     return arr.length ? arr[arr.length - 1] : null;
   }
 
-  // ── Used questions tracking (tekrar önleme) ──
+  // ── Kullanılan sorular (tekrar önleme) ──
   function getUsedQuestions(topicId) {
-    const all = get(K.USED_QS, {});
+    const all = _get('used_qs', {});
     return all[topicId] || [];
   }
-  function addUsedQuestions(topicId, questionKeys) {
-    const all = get(K.USED_QS, {});
-    const existing = new Set(all[topicId] || []);
-    questionKeys.forEach(k => existing.add(k));
-    all[topicId] = [...existing];
-    set(K.USED_QS, all);
+  function addUsedQuestions(topicId, keys) {
+    const all = _get('used_qs', {});
+    const ex  = new Set(all[topicId] || []);
+    keys.forEach(k => ex.add(k));
+    all[topicId] = [...ex];
+    _set('used_qs', all);
   }
   function resetUsedQuestions(topicId) {
-    const all = get(K.USED_QS, {});
+    const all = _get('used_qs', {});
     delete all[topicId];
-    set(K.USED_QS, all);
+    _set('used_qs', all);
   }
 
   // ── Wrong answers bank ──
-  function getWrongBank() { return get(K.WRONG, []); }
+  function getWrongBank() { return _get('wrong', []); }
   function addWrongQuestions(questions, subjectId, subjectAd) {
     const bank = getWrongBank();
     questions.forEach(q => {
       const key = q.soru.slice(0, 40);
-      const exists = bank.find(w => w.key === key);
-      if (!exists) bank.push({ key, subjectId, subjectAd, ...q, addedAt: Date.now() });
-      else exists.count = (exists.count || 1) + 1;
+      const ex  = bank.find(w => w.key === key);
+      if (!ex) bank.push({ key, subjectId, subjectAd, ...q, addedAt: Date.now() });
+      else ex.count = (ex.count || 1) + 1;
     });
     if (bank.length > 200) bank.splice(0, bank.length - 200);
-    set(K.WRONG, bank);
+    _set('wrong', bank);
   }
-  function removeFromWrongBank(key) {
-    const bank = getWrongBank().filter(w => w.key !== key);
-    set(K.WRONG, bank);
-  }
-  function clearWrongBank() { set(K.WRONG, []); }
+  function removeFromWrongBank(key) { _set('wrong', getWrongBank().filter(w => w.key !== key)); }
+  function clearWrongBank()         { _set('wrong', []); }
 
   // ── Badges ──
-  function getUnlockedBadges() { return get(K.BADGES, []); }
+  function getUnlockedBadges()    { return _get('badges', []); }
   function unlockBadge(id) {
     const b = getUnlockedBadges();
-    if (!b.includes(id)) { b.push(id); set(K.BADGES, b); return true; }
+    if (!b.includes(id)) { b.push(id); _set('badges', b); return true; }
     return false;
   }
-  function isBadgeUnlocked(id) { return getUnlockedBadges().includes(id); }
+  function isBadgeUnlocked(id)    { return getUnlockedBadges().includes(id); }
 
   // ── Missions ──
-  function getMissionsDone() { return get(K.MISSIONS, {}); }
-  function markMissionDone(id) { const m = getMissionsDone(); m[id] = Date.now(); set(K.MISSIONS, m); }
-  function isMissionDone(id)  { const m = getMissionsDone(); return !!m[id]; }
+  function getMissionsDone()       { return _get('missions_done', {}); }
+  function markMissionDone(id)     { const m = getMissionsDone(); m[id] = Date.now(); _set('missions_done', m); }
+  function isMissionDone(id)       { return !!getMissionsDone()[id]; }
   function resetDailyMissions() {
     const m = getMissionsDone();
     const yesterday = Date.now() - 86400000;
     Object.keys(m).forEach(k => { if (m[k] < yesterday) delete m[k]; });
-    set(K.MISSIONS, m);
+    _set('missions_done', m);
   }
 
   // ── Streak ──
-  function getStreak() { return get(K.STREAK, { count: 0, lastDate: null }); }
+  function getStreak() { return _get('streak', { count: 0, lastDate: null }); }
   function touchStreak() {
     const today = new Date().toDateString();
     const s = getStreak();
@@ -108,35 +195,28 @@ const Storage = (() => {
     const yesterday = new Date(Date.now() - 86400000).toDateString();
     s.count = (s.lastDate === yesterday) ? s.count + 1 : 1;
     s.lastDate = today;
-    set(K.STREAK, s);
+    _set('streak', s);
     return s;
   }
 
-  // ── Draft quiz (kaldığı yerden devam) ──
-  function saveDraft(state) { set(K.DRAFT, state); }
-  function getDraft()       { return get(K.DRAFT, null); }
-  function clearDraft()     { localStorage.removeItem(K.DRAFT); }
+  // ── Draft quiz ──
+  function saveDraft(state) { _set('draft', state); }
+  function getDraft()       { return _get('draft', null); }
+  function clearDraft()     { localStorage.removeItem(_pre() + 'draft'); }
 
   // ── Settings ──
   function getSettings() {
-    return get(K.SETTINGS, {
-      theme: 'default',
-      particleEnabled: true,
-      particleColor: 'rainbow',
-      soundEnabled: true,
-      timerMode: 'auto',  // 'auto' = KPSS oranı (65s/soru) | 'perq' = kullanıcı belirler
-      secsPerQ: 65,       // timerMode==='perq' iken kullanılır
+    return _get('settings', {
+      theme: 'default', particleEnabled: true, particleColor: 'rainbow',
+      soundEnabled: true, timerMode: 'auto', secsPerQ: 65,
     });
   }
-  function saveSettings(s) { set(K.SETTINGS, s); }
+  function saveSettings(s) { _set('settings', s); }
 
   // ── Topic attempt reset ──
   function resetTopicAttempts(topicId) {
-    const all = getAttempts().filter(a => a.topicId !== topicId);
-    set(K.ATTEMPTS, all);
-    const c = getCompletedTopics();
-    delete c[topicId];
-    set(K.COMPLETED, c);
+    _set('attempts', getAttempts().filter(a => a.topicId !== topicId));
+    const c = getCompletedTopics(); delete c[topicId]; _set('completed', c);
     resetUsedQuestions(topicId);
     clearDraft();
   }
@@ -149,12 +229,16 @@ const Storage = (() => {
   }
   function computeOverall() {
     const a = getAttempts();
-    const solved = a.reduce((s, x) => s + x.toplam, 0);
-    const correct = a.reduce((s, x) => s + x.dogru, 0);
+    const solved  = a.reduce((s, x) => s + x.toplam, 0);
+    const correct = a.reduce((s, x) => s + x.dogru,  0);
     return { solved, correct, rate: solved ? Math.round(correct / solved * 100) : 0, tests: a.length };
   }
 
   return {
+    // Kullanıcı yönetimi
+    getUserList, getActiveUser, setActiveUser, addUser, deleteUser,
+    migrateOldData, getUserStats, userAvatarColor,
+    // Veri (aktif kullanıcıya göre)
     getUserName, setUserName,
     getCompletedTopics, markTopicCompleted, isTopicCompleted,
     getAttempts, addAttempt, getAttemptsForTopic, getBestScore, getLastAttempt,

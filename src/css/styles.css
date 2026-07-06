@@ -778,3 +778,142 @@ body::before {
   .stat-grid { grid-template-columns: repeat(2,1fr); }
   .full-test-card { flex-direction: column; align-items: flex-start; }
 }
+
+/* ===== KULLANICI SEÇİM EKRANI ===== */
+.user-select-screen {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  background-image: var(--body-bg);
+  z-index: 300;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.4s ease;
+}
+.user-select-screen.hidden { display: none; }
+
+.user-select-inner {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 0;
+  max-width: 640px; width: 100%;
+}
+
+.user-select-logo {
+  font-size: 52px; margin-bottom: 10px;
+  filter: drop-shadow(0 0 18px rgba(167,139,250,0.5));
+  animation: float 4s ease-in-out infinite;
+}
+.user-select-title {
+  font-size: 30px; font-weight: 900;
+  background: linear-gradient(135deg, var(--violet-l), var(--rose));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+.user-select-sub {
+  font-size: 14.5px; color: var(--text-faint);
+  margin-bottom: 28px;
+}
+
+.user-cards-grid {
+  display: flex; flex-wrap: wrap;
+  gap: 14px; justify-content: center;
+  width: 100%; margin-bottom: 0;
+}
+
+.user-card-btn {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 22px 20px 18px;
+  cursor: pointer;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 9px;
+  min-width: 130px; max-width: 160px;
+  transition: all 0.22s ease;
+  position: relative;
+}
+.user-card-btn:hover {
+  border-color: var(--violet-l);
+  background: var(--glass-2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(139,92,246,0.25);
+}
+
+.user-avatar-circle {
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; font-weight: 900; color: #fff;
+  letter-spacing: -1px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+}
+
+.user-card-name {
+  font-size: 15px; font-weight: 700;
+  color: var(--text); text-align: center;
+  max-width: 110px; overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap;
+}
+.user-card-stats {
+  font-size: 11.5px; color: var(--text-faint); text-align: center;
+  line-height: 1.4;
+}
+
+.user-card-new .user-avatar-circle {
+  background: var(--glass-2) !important;
+  border: 1.5px dashed var(--border-2);
+  font-size: 28px; color: var(--text-faint);
+}
+
+/* Kullanıcı silme butonu (kart üzerindeki ×) */
+.user-card-del {
+  position: absolute; top: 6px; right: 8px;
+  background: none; border: none;
+  color: var(--text-faint); font-size: 14px;
+  cursor: pointer; line-height: 1; padding: 2px 4px;
+  opacity: 0; transition: opacity 0.2s;
+  border-radius: 4px;
+}
+.user-card-btn:hover .user-card-del { opacity: 0.6; }
+.user-card-del:hover { opacity: 1 !important; color: var(--danger); }
+
+/* Yeni kullanıcı formu */
+.new-user-form {
+  margin-top: 22px; width: 100%; max-width: 340px;
+  animation: slideDown 0.25s ease;
+}
+.new-user-form.hidden { display: none; }
+.new-user-form-inner {
+  background: var(--glass-2);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-lg);
+  padding: 22px 24px;
+  text-align: center;
+}
+.new-user-label {
+  font-size: 14px; color: var(--text-dim);
+  margin-bottom: 10px; font-weight: 600;
+}
+
+/* Header sağ köşe: kullanıcı avatarı + değiştir */
+.user-switch-pill {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--glass); border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: 6px 12px; cursor: pointer;
+  font-size: 13px; color: var(--text-dim);
+  transition: all 0.2s;
+}
+.user-switch-pill:hover {
+  border-color: var(--violet-l); color: var(--violet-l);
+}
+.user-switch-avatar {
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800; color: #fff;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

@@ -846,6 +846,18 @@ function renderSettings() {
       </div>
     </div>
 
+    <!-- Kullanıcılar -->
+    <div class="section-title" style="margin-top:20px">👤 Kullanıcılar</div>
+    <div class="card" style="padding:18px 22px;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>
+          <div class="settings-title">Aktif: <span style="color:var(--violet-l)">${esc(Storage.getActiveUser())}</span></div>
+          <div class="settings-sub">${Storage.getUserList().length} kayıtlı kullanıcı</div>
+        </div>
+        <button class="btn btn-secondary" id="s-switch-user" style="padding:9px 18px">👤 Kullanıcı Değiştir</button>
+      </div>
+    </div>
+
     <!-- Mouse efekti -->
     <div class="section-title" style="margin-top:20px">🖱️ Mouse Toz Efekti</div>
     <div class="card" style="padding:20px 22px;margin-bottom:14px">
@@ -924,6 +936,9 @@ function renderSettings() {
       toast('Mouse rengi değiştirildi!', 'success');
     });
   });
+
+  // Kullanıcı değiştir
+  $('s-switch-user')?.addEventListener('click', () => showUserSelect());
 }
 
 // ── Missions ──
@@ -953,17 +968,119 @@ function applyTheme(t) {
   Storage.saveSettings({ ...Storage.getSettings(), theme: t || 'default' });
 }
 
+// ── Kullanıcı Seçim Ekranı ──
+function showUserSelect() {
+  $('main-app').classList.add('hidden');
+  $('user-select-screen').classList.remove('hidden');
+  renderUserCards();
+}
+
+function hideUserSelect() {
+  $('user-select-screen').classList.add('hidden');
+  $('main-app').classList.remove('hidden');
+}
+
+function renderUserCards() {
+  const grid = $('user-cards-grid');
+  const users = Storage.getUserList();
+
+  const cards = users.map(name => {
+    const stats = Storage.getUserStats(name);
+    const color = Storage.userAvatarColor(name);
+    const initial = name.charAt(0).toUpperCase();
+    const statsLine = stats.solved > 0
+      ? `${stats.solved} soru • %${stats.rate} başarı`
+      : 'Henüz test çözülmedi';
+    const streakLine = stats.streak > 1 ? `🔥 ${stats.streak} günlük seri` : '';
+
+    return `
+      <button class="user-card-btn" data-user="${esc(name)}">
+        <button class="user-card-del" data-del="${esc(name)}" title="Kullanıcıyı Sil">✕</button>
+        <div class="user-avatar-circle" style="background:${color}">
+          ${initial}
+        </div>
+        <div class="user-card-name">${esc(name)}</div>
+        <div class="user-card-stats">${esc(statsLine)}${streakLine ? '<br>' + esc(streakLine) : ''}</div>
+      </button>`;
+  }).join('');
+
+  const addBtn = `
+    <button class="user-card-btn user-card-new" id="add-user-card-btn">
+      <div class="user-avatar-circle">＋</div>
+      <div class="user-card-name">Yeni Kullanıcı</div>
+      <div class="user-card-stats">Hesap oluştur</div>
+    </button>`;
+
+  grid.innerHTML = cards + addBtn;
+
+  // Events
+  grid.querySelectorAll('.user-card-btn:not(.user-card-new)').forEach(btn => {
+    btn.addEventListener('click', e => {
+      if (e.target.closest('.user-card-del')) return;
+      selectUser(btn.dataset.user);
+    });
+  });
+  grid.querySelectorAll('.user-card-del').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const name = btn.dataset.del;
+      if (confirm(`"${name}" kullanıcısını ve tüm verilerini silmek istiyor musun?`)) {
+        Storage.deleteUser(name);
+        renderUserCards();
+      }
+    });
+  });
+  $('add-user-card-btn')?.addEventListener('click', () => {
+    $('new-user-form').classList.remove('hidden');
+    $('new-user-input').focus();
+  });
+}
+
+function selectUser(name) {
+  Storage.setActiveUser(name);
+  // Kullanıcının temasını uygula
+  const theme = Storage.getSettings().theme || 'default';
+  document.documentElement.setAttribute('data-theme', theme);
+  updateUserPill();
+  hideUserSelect();
+  navigate('home');
+}
+
+function updateUserPill() {
+  const btn = $('switch-user-btn');
+  if (!btn) return;
+  const name = Storage.getActiveUser();
+  if (!name) { btn.textContent = '👤'; return; }
+  const color = Storage.userAvatarColor(name);
+  const initial = name.charAt(0).toUpperCase();
+  btn.innerHTML = `
+    <div class="user-switch-avatar" style="background:${color}">${initial}</div>
+    <span>${esc(name)}</span>`;
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', async () => {
+  // Eski tek-kullanıcı verisini yeni formata taşı
+  Storage.migrateOldData();
+
+  // Tema önce uygula
   const savedTheme = Storage.getSettings().theme || 'default';
   document.documentElement.setAttribute('data-theme', savedTheme);
 
-  spawnParticles();
-  await loadAllSubjects();
-  Storage.resetDailyMissions();
+  // Yeni kullanıcı formu olayları
+  $('new-user-submit').addEventListener('click', createNewUser);
+  $('new-user-input').addEventListener('keydown', e => { if (e.key === 'Enter') createNewUser(); });
+  $('new-user-cancel').addEventListener('click', () => {
+    $('new-user-form').classList.add('hidden');
+    $('new-user-input').value = '';
+  });
 
-  $('name-submit').addEventListener('click', submitName);
-  $('name-input').addEventListener('keydown', e => e.key === 'Enter' && submitName());
+  // Kullanıcı değiştir butonu
+  $('switch-user-btn').addEventListener('click', showUserSelect);
+
+  // Ana uygulama nav olayları
+  $('name-submit')?.addEventListener('click', submitName);
+  $('name-input')?.addEventListener('keydown', e => e.key === 'Enter' && submitName());
   $('brand-home').addEventListener('click', () => { navigate('home'); setActiveNav('nav-home'); });
   $('nav-home').addEventListener('click', () => { navigate('home'); setActiveNav('nav-home'); });
   $('nav-badges').addEventListener('click', () => { navigate('badges'); setActiveNav('nav-badges'); });
@@ -971,12 +1088,39 @@ document.addEventListener('DOMContentLoaded', async () => {
   $('nav-missions').addEventListener('click', () => { navigate('missions'); setActiveNav('nav-missions'); });
   $('nav-settings').addEventListener('click', () => { navigate('settings'); setActiveNav('nav-settings'); });
 
-  if (!Storage.getUserName()) {
-    $('name-modal').classList.remove('hidden');
-    $('name-input').focus();
+  // Veri yükle
+  spawnParticles();
+  await loadAllSubjects();
+
+  // Kullanıcı kontrolü
+  const users = Storage.getUserList();
+  const active = Storage.getActiveUser();
+
+  if (users.length === 0) {
+    // Hiç kullanıcı yok → kullanıcı oluştur ekranı
+    showUserSelect();
+  } else if (!active || !users.includes(active)) {
+    // Aktif kullanıcı yok veya listede değil → seçim ekranı
+    showUserSelect();
+  } else {
+    // Kullanıcı var → direkt ana ekran
+    hideUserSelect();
+    updateUserPill();
+    Storage.resetDailyMissions();
+    navigate('home');
   }
-  navigate('home');
 });
+
+function createNewUser() {
+  const val = $('new-user-input').value.trim();
+  if (!val) { $('new-user-input').focus(); return; }
+  const name = Storage.addUser(val);
+  $('new-user-input').value = '';
+  $('new-user-form').classList.add('hidden');
+  selectUser(name);
+  Storage.resetDailyMissions();
+  toast(`Hoş geldin, ${name}! 🌸`, 'success');
+}
 
 function setActiveNav(id) {
   document.querySelectorAll('.nav-pill').forEach(el => el.classList.remove('active'));
@@ -988,7 +1132,7 @@ function submitName() {
   const val = $('name-input').value.trim();
   if (!val) { $('name-input').focus(); return; }
   Storage.setUserName(val);
-  $('name-modal').classList.add('hidden');
+  $('name-modal')?.classList.add('hidden');
   Storage.touchStreak();
   render();
   toast(`Hoş geldin, ${Storage.getUserName()}! 🌸`, 'success');

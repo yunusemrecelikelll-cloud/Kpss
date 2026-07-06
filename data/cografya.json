@@ -876,6 +876,501 @@
           "aciklama": "Çay tarımı, yüksek nem isteyen bir bitki olduğu için Akdeniz Bölgesi'nde değil, her mevsim yağışlı Doğu Karadeniz kıyısında yapılır. Akdeniz Bölgesi turunçgil, sera tarımı ve maki bitki örtüsüyle tanınır."
         }
       ]
+    },
+    {
+      "id": "cografya-harita",
+      "baslik": "Harita Bilgisi ve Ölçek",
+      "anlatim": {
+        "ozet": "🗺️ Haritadan ölçeğe, eş yükselti eğrilerinden projeksiyona: harita okuma ve yorumlama becerileri.",
+        "icerik": [
+          "📌 Harita, yeryüzünün tamamının ya da bir bölümünün belirli bir ölçek kullanılarak düzleme aktarılmış, semboller ve çizgilerle ifade edilmiş kuşbakışı görünümüdür. Haritayı basit bir çizimden ayıran üç temel özellik vardır: ölçek (küçültme oranı), projeksiyon (düzleme aktarım yöntemi) ve lejant (semboller listesi).",
+          "📎 Ölçek, haritadaki bir uzunluğun gerçekteki uzunluğa oranını gösterir. Büyük ölçekli haritalar (1/1.000, 1/25.000 gibi) küçük bir alanı ayrıntılı gösterir; kadastro ve şehir haritaları bu türdendir. Küçük ölçekli haritalar (1/1.000.000 gibi) geniş alanları özet olarak gösterir; siyasi ve fiziki dünya haritaları bu gruba girer. Önemli: paydası büyük olan ölçek daha küçük ölçektir.",
+          "📌 Topoğrafya haritaları, yüzey şekillerini eş yükselti eğrileri (izohips) ile gösterir. Eş yükselti eğrileri aynı yükseltideki noktaları birleştiren kapalı eğrilerdir. Eğriler sıkışık ise arazi eğimli (dik); seyrek ise düz demektir. Tepe, vadi, sırt ve çukur gibi yer şekilleri bu eğrilerden okunabilir. Projeksiyon türleri düzlem, silindir ve koni projeksiyonlarıdır; her birinde farklı alan ve şekil bozulmaları ortaya çıkar."
+        ],
+        "anahtarNoktalar": [
+          "🔑 Büyük ölçekli harita: az alan, çok ayrıntı (1/1.000 gibi küçük paydası olan)",
+          "💡 Küçük ölçekli harita: geniş alan, az ayrıntı (1/1.000.000 gibi büyük paydası olan)",
+          "⚡ Eş yükselti eğrileri sıkışıksa arazi dik eğimli, seyrekse düzdür",
+          "🔑 Haritanın temel unsurları: ölçek, projeksiyon, lejant, yön oku",
+          "🎯 Topoğrafya haritasında iki eğri arasındaki dikey mesafe 'eşyükselti aralığı' olarak adlandırılır"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Aşağıdaki ölçeklerden hangisi en büyük ölçeklidir?",
+          "secenekler": ["1/1.000.000", "1/500.000", "1/100.000", "1/25.000", "1/5.000.000"],
+          "dogruIndex": 3,
+          "aciklama": "Ölçek kesrinde payda ne kadar küçükse harita o kadar büyük ölçeklidir. 1/25.000 seçenekler arasında en küçük paydaya sahip olduğu için en büyük ölçekli haritadır; küçük alanı ayrıntılı gösterir.",
+          "distractorAciklama": "1/1.000.000 en büyük paydaya sahip olduğundan en küçük ölçekli haritadır; bunu büyük ölçekli sanmak sık yapılan bir hatadır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Haritada eş yükselti eğrilerinin sık (sıkışık) olduğu bir alan hakkında aşağıdakilerden hangisi söylenebilir?",
+          "secenekler": [
+            "Arazi düz ve ovaya benzemektedir",
+            "Arazi eğimlidir, eğim fazladır",
+            "Arazi deniz seviyesinin altındadır",
+            "Arazi çok geniş bir alanı kapsamaktadır",
+            "Arazi bataklıktır"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Eş yükselti eğrileri birbirine yakın (sıkışık) olduğunda, kısa yatay mesafede yükseklik çok değişiyor demektir; bu durum dik eğimli araziyi gösterir. Seyrek eğriler ise düz araziyi ifade eder.",
+          "distractorAciklama": "Sıkışık eğri = dik arazi; seyrek eğri = düz arazi. Bu ilişki topoğrafya sorularının temel mantığıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Haritada ölçeğin temel işlevi aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Haritadaki renklerin anlamını açıklamak",
+            "Haritanın hangi yönünün kuzey olduğunu göstermek",
+            "Haritadaki uzunlukların gerçekteki uzunluklara oranını belirtmek",
+            "Haritanın yapıldığı tarihi belirtmek",
+            "Haritadaki sembollerin listesini vermek"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ölçek, harita üzerindeki bir uzunluğun gerçek arazideki uzunluğuna oranını gösteren katsayıdır. Bu sayede haritadan gerçek mesafe hesaplanabilir.",
+          "distractorAciklama": "Sembollerin listesi lejant; yön oku ya da pusula kuzeyi gösterir. Ölçek yalnızca küçültme oranını verir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Topoğrafya haritasında bir tepeyi gösteren eş yükselti eğrilerinin genel biçimi aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Dışa doğru açılan yay biçimli eğriler",
+            "İçe doğru kıvrılan kapalı halkalar (en dış eğri en düşük, en iç eğri en yüksek)",
+            "Paralel düz çizgiler",
+            "Birbirine dik kesişen çizgiler",
+            "Sarmal çizgiler"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Tepelerde eş yükselti eğrileri kapalı halkalar oluşturur; merkeze gidildikçe yükseklik artar (en içteki halka en yüksek noktayı temsil eder). Bu biçim topoğrafya haritasında tepelerin temel görsel karakteridir.",
+          "distractorAciklama": "Vadilerde eğriler yukarıya doğru sivrilir; sırtlarda aşağıya doğru. Kapalı halkalar tepe yapısına özgüdür.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "1/25.000 ölçekli bir haritada 5 cm'lik bir mesafe gerçekte kaç km'ye karşılık gelir?",
+          "secenekler": ["0,5 km", "1,25 km", "1,5 km", "2,5 km", "5 km"],
+          "dogruIndex": 1,
+          "aciklama": "1/25.000 ölçeğinde haritada 1 cm = gerçekte 25.000 cm = 250 m'ye karşılık gelir. 5 cm ise 5 × 250 m = 1.250 m = 1,25 km eder.",
+          "distractorAciklama": "Ölçek hesabında paydayı haritadaki cm ile çarpıp metre ya da km'ye çevirmek gerekir. 5 cm × 25.000 = 125.000 cm = 1.250 m = 1,25 km.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdaki harita türlerinden hangisi büyük ölçekli haritaya örnek gösterilebilir?",
+          "secenekler": [
+            "Dünya siyasi haritası",
+            "Türkiye fiziki haritası",
+            "Kadastro (tapu-kadastro) haritası",
+            "Kıta haritası",
+            "Ülke yol haritası"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Kadastro haritaları, arsalar ve parselleri ayrıntılı biçimde göstermek için kullanılan büyük ölçekli haritalardır (genellikle 1/500 veya 1/1.000). Dünya ve Türkiye haritaları ise küçük ölçeklidir.",
+          "distractorAciklama": "Büyük ölçek = küçük alan, yüksek ayrıntı. Kadastro haritaları tek parseli gösterir; bu nedenle büyük ölçeğin en iyi örneğidir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Projeksiyon nedir?",
+          "secenekler": [
+            "Haritadaki sembollerin açıklanma yöntemi",
+            "Küresel yeryüzünün düzleme aktarılma yöntemi",
+            "Haritanın ölçeğinin belirlenmesi işlemi",
+            "Eş yükselti eğrilerinin çizilme tekniği",
+            "Haritada kuzey yönünün belirlenmesi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Projeksiyon, küresel bir yüzeyin (yeryüzü) bir düzleme (kâğıt) aktarılmasında kullanılan matematiksel yöntemdir. Tüm projeksiyonlarda alan, şekil, mesafe veya yön açısından bir bozulma kaçınılmazdır.",
+          "distractorAciklama": "Projeksiyon haritanın temel sorunlarından birini (küresel yüzeyi düzleme yansıtma) çözmek için geliştirilmiş matematiksel bir yöntemdir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Topoğrafya haritasında iki komşu eş yükselti eğrisi arasındaki dikey mesafeye ne ad verilir?",
+          "secenekler": ["İzohips aralığı", "Eş yükselti farkı", "Eşyükselti aralığı (ekidistans)", "Kontur farkı", "Yükselti katsayısı"],
+          "dogruIndex": 2,
+          "aciklama": "İki komşu eş yükselti eğrisi arasındaki sabit yükseklik farkına 'eşyükselti aralığı' (ekidistans) denir. Bu değer haritanın ölçeği ve amacına göre belirlenir; büyük ölçekli haritalarda daha küçük, küçük ölçekli haritalarda daha büyük tutulur.",
+          "distractorAciklama": "Eşyükselti aralığı yatay değil dikey mesafeyi ifade eder. İzohips ise eş yükselti eğrisinin teknik adıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi topoğrafya haritasında bir vadi görünümünü tanımlar?",
+          "secenekler": [
+            "Eş yükselti eğrilerinin kapalı halkalar oluşturması",
+            "Eş yükselti eğrilerinin yukarıya (yüksek kesime) doğru sivrilmesi",
+            "Eş yükselti eğrilerinin düz ve paralel çizgiler oluşturması",
+            "Eş yükselti eğrilerinin aşağıya (alçak kesime) doğru sivrilmesi",
+            "Eş yükselti eğrilerinin birbirine eşit aralıklı olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Topoğrafya haritasında vadiler, eş yükselti eğrilerinin yüksek kesime doğru (yukarıya doğru) sivrilerek girmesiyle gösterilir. Sırtlarda ise eğriler alçak kesime doğru (aşağıya) sivrilerek çıkar.",
+          "distractorAciklama": "Vadi = eğriler yukarıya sivriliyor; sırt = eğriler aşağıya sivriliyor; tepe = kapalı halkalar. Bu üç biçim topoğrafya sorularının temelini oluşturur.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Küçük ölçekli haritaların büyük ölçekli haritalara göre en belirgin özelliği aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Daha fazla ayrıntı göstermeleri",
+            "Daha küçük bir alanı kapsamaları",
+            "Daha geniş bir alanı daha az ayrıntıyla göstermeleri",
+            "Topoğrafya amacıyla kullanılmaları",
+            "Kadastro işlerinde kullanılmaları"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Küçük ölçekli haritalar (örneğin 1/1.000.000), büyük ölçekli haritalara kıyasla çok daha geniş alanları kapsar; ancak bu geniş alanı sığdırabilmek için ayrıntıdan ödün verilir.",
+          "distractorAciklama": "Büyük ölçekli haritalar ayrıntılı ama dar alanı; küçük ölçekli haritalar geniş alanı ama az ayrıntıyı gösterir. Bu ilişkiyi ters anlamak sık yapılan bir hatadır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Haritada lejant (açıklama kutusu) ne işe yarar?",
+          "secenekler": [
+            "Haritanın küçültme oranını gösterir",
+            "Haritada kullanılan renk ve sembollerin ne anlama geldiğini açıklar",
+            "Haritanın kuzeyini belirler",
+            "Haritanın çizildiği tarihi belirtir",
+            "Harita üzerindeki koordinat ağını oluşturur"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Lejant, haritada kullanılan renk, çizgi, simge ve diğer grafik öğelerin anlamını açıklayan rehber kutucuktur; haritanın okunabilmesi için vazgeçilmezdir.",
+          "distractorAciklama": "Ölçek küçültme oranını; yön oku kuzeyi; koordinat sistemi ise konumu gösterir. Lejant yalnızca sembollerin açıklamasını yapar.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "1/100.000 ölçekli bir haritada gerçekte 20 km olan bir yolun harita üzerindeki uzunluğu kaç cm'dir?",
+          "secenekler": ["2 cm", "5 cm", "10 cm", "20 cm", "50 cm"],
+          "dogruIndex": 3,
+          "aciklama": "1/100.000 ölçeğinde gerçekte 1 km = 100.000 cm, haritada ise 1 cm'ye karşılık gelir. 20 km = 2.000.000 cm → haritada 2.000.000 / 100.000 = 20 cm eder.",
+          "distractorAciklama": "Ölçek hesabında gerçek mesafeyi (cm cinsinden) paydaya bölmek gerekir: 2.000.000 cm ÷ 100.000 = 20 cm. Birimi km'den cm'ye çevirmeyi unutmamak önemlidir.",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
+    },
+    {
+      "id": "cografya-dogal-afetler",
+      "baslik": "Doğal Afetler ve Çevre Sorunları",
+      "anlatim": {
+        "ozet": "🌋 Depremden küresel ısınmaya: Türkiye'nin doğal afet coğrafyası ve çevre sorunları.",
+        "icerik": [
+          "📌 Deprem, yer kabuğundaki levha hareketleri sonucu biriken enerjinin fay hatları boyunca aniden boşalmasıyla oluşur. Türkiye, Avrasya, Afrika ve Arap levhalarının kesişiminde bulunduğundan dünyanın en aktif deprem kuşaklarından birindedir. Kuzey Anadolu Fay Hattı (KAFH) doğudan batıya İstanbul'u tehdit eden en önemli sismik yapıdır; 1999 Marmara depremi bu hattın yıkıcı potansiyelini gözler önüne serdi.",
+          "📎 Heyelan (toprak kayması) eğimli arazilerde aşırı yağış, deprem veya ormansızlaşma sonucu tetiklenir. Sel, su tutma kapasitesini aşan yağışın hızlı akmasıyla oluşur; ormansız ve eğimli alanlarda erozyon riskini artırır. Çölleşme, bitki örtüsünün yok edilmesi ve iklim değişikliğiyle kurak/yarı kurak alanların genişlemesidir; Türkiye'nin özellikle iç ve güneydoğu kesimlerinde bu risk yüksektir.",
+          "📌 Küresel ısınma, atmosferdeki sera gazlarının (CO₂, metan) artmasıyla yeryüzünden uzaya yansıyan ısının tutulmasına bağlıdır. Sonuçları: kutup buzullarının erimesi, deniz seviyesi yükselmesi, ekstrem hava olaylarının artması ve biyoçeşitlilik kaybıdır. Ozon tabakasının incelmesi ise başta CFC gazları olmak üzere insan kaynaklı kimyasalların neden olduğu farklı bir çevre sorunudur; ultraviyole radyasyon artışına yol açar."
+        ],
+        "anahtarNoktalar": [
+          "🔑 Türkiye Kuzey Anadolu, Doğu Anadolu ve diğer fay hatları üzerindedir",
+          "💡 Kuzey Anadolu Fay Hattı (KAFH) doğudan batıya uzanır; Marmara bölgesini tehdit eder",
+          "⚡ Heyelan: eğimli arazi + aşırı yağış + ormansızlaşma üçgeninde oluşur",
+          "🔑 Küresel ısınmanın ana nedeni fosil yakıtlardan salınan CO₂ ve diğer sera gazlarıdır",
+          "🎯 Ozon tabakasının incelmesi CFC gazları (kloroflorokarbon) ile ilişkilidir"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Türkiye'nin deprem açısından bu kadar riskli olmasının temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Türkiye'nin tropikal kuşakta yer alması",
+            "Türkiye'nin birden fazla levhanın kesişim bölgesinde, aktif fay hatları üzerinde bulunması",
+            "Türkiye'nin dağlarının çok yüksek olması",
+            "Türkiye'de çok sayıda volkanik dağın bulunması",
+            "Türkiye'nin yarımada şeklinde olması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Türkiye, Avrasya, Afrika ve Arap levhalarının birbirine yaklaştığı bir bölgede yer alır. Bu levhaların hareketi Kuzey Anadolu ve Doğu Anadolu gibi aktif fay hatlarını oluşturmuş; ülke yüksek deprem riski altına girmiştir.",
+          "distractorAciklama": "Volkanik aktivite deprem riskiyle ilişkili olabilir; ancak Türkiye'nin depremselliğinin temel nedeni levha tektoniği ve fay hatlarıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Kuzey Anadolu Fay Hattı (KAFH) genel olarak hangi yönde uzanmaktadır?",
+          "secenekler": ["Kuzey-güney", "Doğu-batı", "Kuzeybatı-güneydoğu", "Güneybatı-kuzeydoğu", "Çevresel (halka biçiminde)"],
+          "dogruIndex": 1,
+          "aciklama": "KAFH, Doğu Anadolu'dan (Karlıova çevresinden) başlayarak Karadeniz kıyısını izleyerek batıya, Marmara Denizi'ne uzanan doğu-batı doğrultulu bir sağ-yanal doğrultu atımlı faydır.",
+          "distractorAciklama": "KAFH'nin doğu-batı uzanımını bilmek, neden İstanbul'un deprem riski altında olduğunu açıklar. Fayın Marmara'ya uzanması İstanbul'u doğrudan tehdit eder.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Heyelanın (toprak kaymasının) oluşumunu tetikleyen faktörler arasında aşağıdakilerden hangisi YER ALMAZ?",
+          "secenekler": [
+            "Aşırı yağış",
+            "Ormanların tahrip edilmesi",
+            "Deprem",
+            "Eğimli arazi",
+            "Kurak ve düz arazi koşulları"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Heyelan, eğimli, nemli ve bitki örtüsünden yoksun arazilerde tetiklenir. Kurak ve düz arazi koşulları ise bu süreçle doğrudan bağlantılı değildir; aksine düz arazi ve kuruluk heyelan riskini azaltır.",
+          "distractorAciklama": "Heyelan için gerekli koşullar: eğim + fazla nem (yağış) + gevşek zemin + ormansızlaşma. Kurak-düz arazi bu sayımın dışındadır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Küresel ısınmanın başlıca nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Ozon tabakasının incelmesi",
+            "Nükleer enerji santrallerinin yaygınlaşması",
+            "Fosil yakıtların yakılmasıyla atmosfere salınan CO₂ ve diğer sera gazlarının artması",
+            "Orman yangınlarının tüm sera gazlarını yakması",
+            "Deniz seviyesinin yükselmesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Küresel ısınmanın temel nedeni, kömür, petrol ve doğal gaz gibi fosil yakıtların yakılmasıyla atmosfere karışan CO₂, metan ve azot oksit gibi sera gazlarının artmasıdır. Bu gazlar güneş enerjisinin uzaya yansımasını engelleyerek yeryüzünü ısıtır.",
+          "distractorAciklama": "Ozon incelmesi ve küresel ısınma farklı sorunlardır; ozon CFC gazlarından, ısınma ise CO₂ başta olmak üzere sera gazlarından kaynaklanır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Ozon tabakasının incelmesinden sorumlu başlıca kimyasallar aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Karbondioksit (CO₂)",
+            "Metan (CH₄)",
+            "Kloroflorokarbonlar (CFC)",
+            "Azot oksitler (NOx)",
+            "Kükürt dioksit (SO₂)"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "CFC (kloroflorokarbon) gazları, eski tip buzdolabı ve klimalarda kullanılan kimyasallardır. Atmosferin üst katmanlarına ulaştıklarında ozon (O₃) moleküllerini parçalarlar; bu da UV radyasyonun yeryüzüne daha fazla ulaşmasına neden olur.",
+          "distractorAciklama": "CO₂ ve metan sera gazlarıdır (küresel ısınma nedeni); CFC ise ozon incelmesinin başlıca nedenidir. İki sorunun farklı nedenlerini birbirine karıştırmamak gerekir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Çölleşmenin Türkiye'de en yoğun görüldüğü bölgeler aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Karadeniz kıyıları ve Ege kıyıları",
+            "İç Anadolu ve Güneydoğu Anadolu'nun kurak/yarı kurak kesimleri",
+            "Trakya ve Marmara çevresi",
+            "Doğu Karadeniz'in dağlık yaylaları",
+            "Akdeniz kıyı şeridi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Çölleşme, bitki örtüsünün tahrip edilmesi ve iklim değişikliğiyle kurak/yarı kurak bölgelerde hızlanır. Türkiye'de İç Anadolu ve Güneydoğu Anadolu'nun step iklimli kesimleri bu açıdan en kırılgan alanlardır.",
+          "distractorAciklama": "Karadeniz bölgesi yağışlı olduğu için çölleşme riski düşüktür. Kurak step bölgeleri başlıca risk alanlarıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Erozyon ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+          "secenekler": [
+            "Erozyon yalnızca rüzgar ile gerçekleşir",
+            "Ormanlık alanlar erozyon riskini artırır",
+            "Erozyon; su, rüzgar gibi dış kuvvetlerin toprağı aşındırıp taşımasıdır; ormansızlaşma ve eğimli arazi riski artırır",
+            "Türkiye'de erozyon yalnızca kıyı bölgelerinde görülür",
+            "Erozyon verimli toprağın birikimi anlamına gelir"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Erozyon, toprak yüzeyinin su ya da rüzgar tarafından aşındırılıp taşınmasıdır. Orman örtüsünün kaldırılması, yanlış tarım uygulamaları ve eğimli araziler erozyonu hızlandırır; Türkiye bu açıdan önemli risk taşır.",
+          "distractorAciklama": "Ormanlar erozyonu önler, artırmaz. Erozyon hem su hem rüzgar kaynaklı olabilir; toprak kaybına (verim düşüşüne) yol açar.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "1999 Marmara (Gölcük) Depremi hangi fay hattı üzerinde gerçekleşmiştir?",
+          "secenekler": [
+            "Doğu Anadolu Fay Hattı",
+            "Kuzey Anadolu Fay Hattı (KAFH)",
+            "Ege graben sistemi",
+            "Toros dağ kuşağı",
+            "Güneydoğu Anadolu fay sistemi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "17 Ağustos 1999 Marmara (Gölcük) Depremi, Kuzey Anadolu Fay Hattı'nın Marmara kolu üzerinde 7,4 büyüklüğünde gerçekleşmiş; 17.000'den fazla can kayıplarına yol açmıştır.",
+          "distractorAciklama": "Doğu Anadolu Fay Hattı daha güneyde yer alır. 1999 depremi KAFH'nin batı kesiminde Kocaeli-Gölcük çevresinde olmuştur.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Küresel ısınmanın olası sonuçları arasında aşağıdakilerden hangisi YER ALMAZ?",
+          "secenekler": [
+            "Kutup buzullarının erimesi",
+            "Deniz seviyesinin yükselmesi",
+            "Aşırı hava olaylarının (sel, kuraklık) artması",
+            "Ozon tabakasının kalınlaşması",
+            "Biyoçeşitliliğin azalması"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Ozon tabakasının kalınlaşması küresel ısınmanın sonucu değildir; aksine ısınma ve ozon incelmesi birbirinden farklı çevre sorunlarıdır. Küresel ısınma sera etkisinden, ozon incelmesi ise CFC gazlarından kaynaklanır.",
+          "distractorAciklama": "Küresel ısınma ile ozon incelmesi farklı mekanizmalar ve farklı gazlarla ilişkilidir. Bu fark KPSS'de sık sorgulanır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Sel afetinin oluşma riskini artıran coğrafi faktörler arasında aşağıdakilerden hangisi yer alır?",
+          "secenekler": [
+            "Bol yağış + ormanlık alan + düz arazi",
+            "Az yağış + çıplak arazi + eğimli arazi",
+            "Bol yağış + çıplak/ormansız arazi + eğimli arazi",
+            "Az yağış + ormanlık alan + düz arazi",
+            "Bol yağış + ormanlık alan + dağlık arazi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Sel oluşumu için yüksek yağış yükü, toprağın suyu tutamaması (ormansız/çıplak zemin) ve akışı hızlandıran eğimli arazi birlikte gereklidir. Orman örtüsü suyu tutarak sel riskini azaltır.",
+          "distractorAciklama": "Ormanlık alan sel riskini azaltır; ormansız arazi ise artırır. Üçlü risk kombinasyonu: fazla yağış + eğim + ormansızlık.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdaki çevre sorunları ile başlıca nedenleri eşleştirmesinden hangisi YANLIŞTIR?",
+          "secenekler": [
+            "Küresel ısınma – CO₂ ve sera gazları",
+            "Ozon incelmesi – CFC gazları",
+            "Asit yağmurları – SO₂ ve NOx emisyonları",
+            "Çölleşme – ormansızlaşma ve kuraklık",
+            "Ozon incelmesi – CO₂ artışı"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Ozon tabakasının incelmesi CO₂ artışından değil CFC (kloroflorokarbon) ve benzer halojenlü kimyasallardan kaynaklanır. CO₂ artışı ise küresel ısınmanın temel nedenidir.",
+          "distractorAciklama": "Bu soru iki farklı çevre sorununu (küresel ısınma ve ozon incelmesi) ve nedenlerini test eder. CO₂ → ısınma; CFC → ozon incelmesi şeklinde ezberlemek faydalıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'de yaşanan sel ve heyelan afetlerinin önlenmesinde en etkili coğrafi önlem aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Kıyılara beton duvar inşa etmek",
+            "Kurak bölgelerde sulama kanalı açmak",
+            "Ormansızlaşmış eğimli alanları ağaçlandırmak ve arazi kullanımını düzenlemek",
+            "Dağ zirvelerine meteoroloji istasyonu kurmak",
+            "İç göçü teşvik etmek"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Orman örtüsü yağış suyunu tutarak akışı yavaşlatır, toprağın kaymaya karşı direncini artırır. Ormansızlaşmış eğimli alanlarda ağaçlandırma; hem sel hem de heyelan riskini doğrudan azaltır.",
+          "distractorAciklama": "Kıyı duvarları sel önlemez; sulama kanalları heyelanla ilgisizdir. En temel ve etkili coğrafi önlem ağaçlandırma ve arazi kullanımının düzenlenmesidir.",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
+    },
+    {
+      "id": "cografya-su-kaynaklari",
+      "baslik": "Türkiye'nin Su Kaynakları",
+      "anlatim": {
+        "ozet": "💧 Fırat'tan Van Gölü'ne, Atatürk Barajı'ndan su havzalarına: Türkiye'nin su zenginliği ve yönetimi.",
+        "icerik": [
+          "📌 Türkiye, su kaynakları bakımından görece zengin bir ülkedir; ancak bu kaynaklar coğrafi olarak dengesiz dağılmıştır. Karadeniz'e dökülen akarsular en düzenli rejime sahipken, iç kesimlerdeki akarsular yaz kuraklığında önemli ölçüde çekilir. Başlıca akarsular: Fırat ve Dicle (Basra Körfezi'ne dökülen, Türkiye'nin en uzunları), Kızılırmak (tamamen Türkiye'de akan en uzun akarsu), Sakarya (Marmara'ya yakın) ve Gediz (Ege'ye dökülen).",
+          "📎 Doğal göller yer şekilleri, iklim ve jeolojik oluşumlara göre çeşitlenir. Van Gölü (soda gölü, kapalı havza, Türkiye'nin en büyük gölü), Tuz Gölü (sığ tuzlu göl, buharlaşma fazla, iç drenaj), Beyşehir Gölü (Türkiye'nin en büyük tatlı su gölü) önemli örneklerdir. Kapalı havza göllerinde suyun denize ulaşacak çıkışı yoktur; tuz birikmesi bu nedenle gerçekleşir.",
+          "📌 Barajlar ve hidroelektrik santral (HES) yatırımları Türkiye'nin su politikasının merkezindedir. Fırat havzasındaki Atatürk Barajı (Türkiye'nin en büyük barajı), Keban ve Karakaya; Dicle havzasındaki Ilısu Barajı önemli yapılardır. Su havzaları; bir akarsuya ya da denize dökülen suyun toplandığı bölgedir. Havza yönetimi, su kalitesinin korunması ve sınır ötesi su sorunları (Fırat-Dicle üzerindeki Türkiye-Suriye-Irak gerginliği) güncel politika konularıdır."
+        ],
+        "anahtarNoktalar": [
+          "🔑 Kızılırmak, tamamen Türkiye topraklarında akan en uzun akarsudur",
+          "💡 Fırat ve Dicle, Türkiye'den doğup Basra Körfezi'ne dökülen en uzun akarsulardır",
+          "⚡ Van Gölü kapalı havzada, tuzlu (soda gölü); Türkiye'nin en büyük gölüdür",
+          "🔑 Atatürk Barajı (Fırat üzerinde) Türkiye'nin en büyük barajıdır",
+          "🎯 Beyşehir Gölü, Türkiye'nin en büyük tatlı su gölüdür"
+        ]
+      },
+      "sorular": [
+        {
+          "soru": "Tamamen Türkiye toprakları içinde doğup denize dökülen en uzun akarsu aşağıdakilerden hangisidir?",
+          "secenekler": ["Fırat", "Dicle", "Kızılırmak", "Sakarya", "Gediz"],
+          "dogruIndex": 2,
+          "aciklama": "Kızılırmak, Orta Anadolu'dan doğup Karadeniz'e dökülen ve tamamıyla Türkiye sınırları içinde akan en uzun akarsudur. Fırat ve Dicle daha uzundur; ancak Türkiye sınırları dışına çıkarlar.",
+          "distractorAciklama": "Fırat ve Dicle Türkiye'nin en uzun akarsuları olmakla birlikte Suriye ve Irak'tan geçerler. 'Tamamen Türkiye'de akan' nitelemesi Kızılırmak'ı işaret eder.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Van Gölü'nün neden tuzlu (soda gölü) olduğunun temel nedeni aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Karadeniz'e bağlı olması",
+            "Aşırı yağış alması",
+            "Kapalı havzada yer alması; gideğeninin (drenaj çıkışının) bulunmaması ve yüksek buharlaşma",
+            "Volkanik faaliyetin tuz üretmesi",
+            "Deniz altında kalıp sonradan yükselmesi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Van Gölü kapalı bir havzada yer alır; buraya akan sular denize ulaşacak çıkış bulamaz. Yüksek buharlaşma su hacmini azaltırken, mineraller (özellikle sodyum karbonat) birikir; bu nedenle göl tuzlu ve sodalıdır.",
+          "distractorAciklama": "Kapalı havza + yüksek buharlaşma = tuz birikimi. Van Gölü'nün sodalı yapısı bu iki etkenin ürünüdür; volkanik aktivite gölün oluşumunu (volkanik set) etkiler ama tuzluluğu açıklamaz.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'nin en büyük tatlı su gölü aşağıdakilerden hangisidir?",
+          "secenekler": ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü", "İznik Gölü"],
+          "dogruIndex": 2,
+          "aciklama": "Beyşehir Gölü, Türkiye'nin en büyük tatlı su gölüdür. Van Gölü (tuzlu) ve Tuz Gölü (tuzlu/sodalı) tatlı su gölü değildir; Beyşehir ise tatlı su kategorisinde birincisidir.",
+          "distractorAciklama": "Van Gölü en büyük göldür; ancak tuzludur. 'En büyük tatlı su gölü' sorusunun cevabı Beyşehir'dir. Bu fark sık sorulur.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Atatürk Barajı hangi akarsu üzerinde inşa edilmiştir?",
+          "secenekler": ["Dicle", "Kızılırmak", "Sakarya", "Fırat", "Yeşilırmak"],
+          "dogruIndex": 3,
+          "aciklama": "Atatürk Barajı, Güneydoğu Anadolu'da Fırat Nehri üzerinde inşa edilmiş ve Türkiye'nin en büyük barajıdır. GAP kapsamında sulama ve enerji amacıyla kullanılmaktadır.",
+          "distractorAciklama": "Ilısu Barajı Dicle üzerindedir; Atatürk Barajı ise Fırat üzerindedir. Bu iki barajı karıştırmamak gerekir.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Fırat ve Dicle nehirleri hangi denize (körfeze) dökülür?",
+          "secenekler": ["Karadeniz", "Akdeniz", "Hazar Denizi", "Basra Körfezi", "Kızıl Deniz"],
+          "dogruIndex": 3,
+          "aciklama": "Fırat ve Dicle, Türkiye'den doğup Suriye ve Irak üzerinden birleşerek Şattülarap adını alır ve Basra Körfezi'ne dökülür.",
+          "distractorAciklama": "Bu akarsular Türkiye'den Arap yarımadasına doğru güneye akar; Karadeniz ya da Akdeniz'e değil Basra Körfezi'ne ulaşır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'nin en büyük gölü aşağıdakilerden hangisidir?",
+          "secenekler": ["Tuz Gölü", "Beyşehir Gölü", "Van Gölü", "Eğirdir Gölü", "Sapanca Gölü"],
+          "dogruIndex": 2,
+          "aciklama": "Van Gölü, yaklaşık 3.713 km² yüzölçümü ile Türkiye'nin en büyük gölüdür. Tuzlu (soda) bir göl olup Doğu Anadolu Bölgesi'ndedir.",
+          "distractorAciklama": "Tuz Gölü yüzölçümü açısından ikinci büyük göldür; ancak Van Gölü en büyüğüdür. 'Tatlı su' vurgusu yapılmadan 'en büyük göl' sorulduğunda cevap Van Gölü'dür.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Gediz Nehri hangi denize dökülür?",
+          "secenekler": ["Karadeniz", "Marmara Denizi", "Ege Denizi", "Akdeniz", "Hazar Denizi"],
+          "dogruIndex": 2,
+          "aciklama": "Gediz Nehri, Ege Bölgesi'nde İzmir yakınlarında Ege Denizi'ne dökülür. Büyük Menderes ve Küçük Menderes ile birlikte Ege Bölgesi'nin başlıca akarsularındandır.",
+          "distractorAciklama": "Karadeniz'e dökülen akarsular (Kızılırmak, Yeşilırmak, Sakarya vb.) kuzeyden akar. Gediz ise Ege Bölgesi'nden Ege Denizi'ne ulaşır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Su havzası kavramı en doğru biçimde aşağıdakilerden hangisiyle tanımlanır?",
+          "secenekler": [
+            "Bir göl çevresindeki şehirlerin toplamı",
+            "Bir akarsuya ya da denize dökülen suların toplandığı coğrafi alan",
+            "Barajın su tuttuğu rezervuar",
+            "Yağış miktarı en yüksek olan bölge",
+            "Yeraltı suyu tabakasının bulunduğu alan"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Su havzası (drenaj havzası), tüm yağış sularının belirli bir akarsuya ya da iç denize/göle doğru aktığı coğrafi sınırlarla çevrili bölgedir. Havza sınırları genellikle su bölümü çizgisiyle (sıradağ tepeleriyle) belirlenir.",
+          "distractorAciklama": "Baraj rezervuarı yapay bir depolama alanıdır; havza ise yağışın toplandığı doğal coğrafi birimdir. İkisi farklı kavramlardır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'nin su kaynakları üzerindeki sınır ötesi anlaşmazlıklar özellikle hangi akarsu havzasında yoğunlaşmaktadır?",
+          "secenekler": [
+            "Kızılırmak havzası",
+            "Sakarya havzası",
+            "Fırat-Dicle havzası",
+            "Gediz-Menderes havzası",
+            "Meriç havzası"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Fırat ve Dicle nehirleri Türkiye'den doğup Suriye ve Irak üzerinden Basra Körfezi'ne ulaştığından, bu havzada üç ülke arasında su paylaşımı konusunda kronik gerilimler yaşanmaktadır.",
+          "distractorAciklama": "Meriç Nehri üzerinde de Türkiye-Yunanistan-Bulgaristan arasında tartışmalar vardır; ancak en güncel ve kapsamlı sınır ötesi su sorunu Fırat-Dicle havzasındadır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Tuz Gölü'nün özellikleriyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+          "secenekler": [
+            "Derin ve tatlı su gölüdür; Türkiye'nin en büyük tatlı su rezervidir",
+            "Sığ, tuzlu ve iç drenajlı bir göldür; buharlaşma nedeniyle yaz aylarında kuruyabilir",
+            "Karadeniz'e bağlanan bir kanalı vardır",
+            "Volkanik set sonucu oluşmuştur",
+            "Doğu Anadolu'nun en yüksek noktasında yer alır"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Tuz Gölü, İç Anadolu'da yer alan sığ, tuzlu ve kapalı havza gölüdür. Yaz aylarında yüksek buharlaşma nedeniyle gölün büyük kısmı kurur ve tuz tablası hâlini alır; tuz üretimi bu dönemde yapılır.",
+          "distractorAciklama": "Tuz Gölü derin değil sığdır. Van Gölü volkanik setle oluşmuştur; Tuz Gölü ise tektonik çöküntü (graben) sonucu oluşmuş kapalı havza gölüdür.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Sakarya Nehri hangi denize dökülür?",
+          "secenekler": ["Ege Denizi", "Akdeniz", "Karadeniz", "Marmara Denizi", "Hazar Denizi"],
+          "dogruIndex": 2,
+          "aciklama": "Sakarya Nehri, İç Anadolu'dan doğup kuzeye akarak Karadeniz'e dökülür. Kızılırmak ve Yeşilırmak ile birlikte Karadeniz havzasının önemli akarsularından biridir.",
+          "distractorAciklama": "Sakarya, coğrafi konumuyla Marmara yakınlarında olmasına karşın Karadeniz'e dökülür; Marmara Denizi ile karıştırılmamalıdır.",
+          "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Aşağıdaki göl-özellik eşleştirmelerinden hangisi YANLIŞTIR?",
+          "secenekler": [
+            "Van Gölü – Türkiye'nin en büyük gölü – tuzlu (soda)",
+            "Tuz Gölü – sığ, tuzlu, yaz aylarında kuruyabilir",
+            "Beyşehir Gölü – Türkiye'nin en büyük tatlı su gölü",
+            "Eğirdir Gölü – tatlı su, Isparta yakınlarında",
+            "Sapanca Gölü – Doğu Anadolu'da volkanik set gölü"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Sapanca Gölü, Doğu Anadolu'da değil Kocaeli-Sakarya çevresinde (Marmara yakını) yer alan tatlı su gölüdür ve İstanbul ile Kocaeli'nin içme suyu kaynaklarından biridir. Volkanik set gölü olan Van Gölü'dür.",
+          "distractorAciklama": "Van Gölü volkanik set (Nemrut volkanı) sonucu oluşmuştur ve Doğu Anadolu'dadır. Sapanca'yı Doğu Anadolu'ya ya da volkanik set gölü olarak tanımlamak yanlıştır.",
+          "kaynak": "KPSS-Tipi"
+        }
+      ]
     }
   ]
 }

@@ -8,38 +8,71 @@
 </head>
 <body>
 
-<div id="name-modal" class="modal-overlay hidden">
-  <div class="card modal-card">
-    <span class="modal-icon">🌸</span>
-    <h2>Merhaba, ben senin KPSS yol arkadaşın!</h2>
-    <p class="modal-text">2026 KPSS'ye birlikte hazırlanacağız. Başlamadan önce seni tanımak istiyorum.</p>
-    <input id="name-input" class="modal-input" type="text" maxlength="24" placeholder="Adın nedir?" autocomplete="off" />
-    <button id="name-submit" class="btn btn-primary btn-block" style="margin-bottom:10px">Hazırlığa Başla ✨</button>
+<!-- ── Kullanıcı Seçim Ekranı ── -->
+<div id="user-select-screen" class="user-select-screen hidden">
+  <div class="user-select-inner">
+    <div class="user-select-logo">🌙</div>
+    <h1 class="user-select-title">KPSS Hazırlık</h1>
+    <p class="user-select-sub">Kimi olarak giriş yapıyorsun?</p>
+
+    <!-- Mevcut kullanıcı kartları -->
+    <div id="user-cards-grid" class="user-cards-grid"></div>
+
+    <!-- Yeni kullanıcı ekleme formu -->
+    <div id="new-user-form" class="new-user-form hidden">
+      <div class="new-user-form-inner">
+        <p class="new-user-label">Adın nedir?</p>
+        <input id="new-user-input" class="modal-input" type="text" maxlength="24"
+          placeholder="Adını gir..." autocomplete="off" />
+        <div style="display:flex;gap:10px;margin-top:12px;justify-content:center">
+          <button id="new-user-cancel" class="btn btn-ghost">İptal</button>
+          <button id="new-user-submit" class="btn btn-primary">Oluştur ✨</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Üstten düşen bildirim -->
-<div id="top-notif" class="top-notif">
-  <span id="top-notif-icon"></span>
-  <span id="top-notif-text"></span>
-</div>
+<!-- ── Ana Uygulama ── -->
+<div id="main-app" class="hidden">
 
-<div id="app">
-  <header class="app-header">
-    <div class="brand" id="brand-home">
-      <span class="brand-mark">🌙</span>
-      <span class="brand-text"><span class="brand-v">KPSS</span><span class="brand-r">Hazırlık</span><span class="brand-badge">v2</span></span>
+  <div id="name-modal" class="modal-overlay hidden">
+    <div class="card modal-card">
+      <span class="modal-icon">🌸</span>
+      <h2>Merhaba, ben senin KPSS yol arkadaşın!</h2>
+      <p class="modal-text">2026 KPSS'ye birlikte hazırlanacağız.</p>
+      <input id="name-input" class="modal-input" type="text" maxlength="24" placeholder="Adın nedir?" autocomplete="off" />
+      <button id="name-submit" class="btn btn-primary btn-block" style="margin-bottom:10px">Hazırlığa Başla ✨</button>
     </div>
-    <nav class="header-nav-center">
-      <button class="nav-pill" id="nav-home">🏠 <span>Anasayfa</span></button>
-      <button class="nav-pill" id="nav-badges">🎖 <span>Rozetler</span></button>
-      <button class="nav-pill" id="nav-wrong">❌ <span>Yanlışlarım</span></button>
-      <button class="nav-pill" id="nav-missions">📋 <span>Görevler</span></button>
-      <button class="nav-pill nav-pill-icon" id="nav-settings" title="Ayarlar">⚙️</button>
-    </nav>
-    <div class="header-right"></div>
-  </header>
-  <main id="view-root" class="view-root"></main>
+  </div>
+
+  <!-- Üstten düşen bildirim -->
+  <div id="top-notif" class="top-notif">
+    <span id="top-notif-icon"></span>
+    <span id="top-notif-text"></span>
+  </div>
+
+  <div id="app">
+    <header class="app-header">
+      <div class="brand" id="brand-home">
+        <span class="brand-mark">🌙</span>
+        <span class="brand-text"><span class="brand-v">KPSS</span><span class="brand-r">Hazırlık</span><span class="brand-badge">v2</span></span>
+      </div>
+      <nav class="header-nav-center">
+        <button class="nav-pill" id="nav-home">🏠 <span>Anasayfa</span></button>
+        <button class="nav-pill" id="nav-badges">🎖 <span>Rozetler</span></button>
+        <button class="nav-pill" id="nav-wrong">❌ <span>Yanlışlarım</span></button>
+        <button class="nav-pill" id="nav-missions">📋 <span>Görevler</span></button>
+        <button class="nav-pill nav-pill-icon" id="nav-settings" title="Ayarlar">⚙️</button>
+      </nav>
+      <div class="header-right">
+        <!-- Kullanıcı değiştir butonu (header sağında) -->
+        <button id="switch-user-btn" class="user-switch-pill" title="Kullanıcı Değiştir"></button>
+      </div>
+    </header>
+    <main id="view-root" class="view-root"></main>
+  </div>
+
 </div>
 
 <script src="src/js/storage.js"></script>

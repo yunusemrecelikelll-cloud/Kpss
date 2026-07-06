@@ -189,6 +189,246 @@
           "aciklama": "Türkiye, COVID-19 pandemisinin ilk döneminde (2020) TİKA (Türk İşbirliği ve Koordinasyon Ajansı) koordinasyonuyla 150'den fazla ülkeye tıbbi malzeme ve maske yardımı göndermiştir.",
           "distractorAciklama": "TURKOVAC Türkiye'nin geliştirdiği COVID-19 aşısının adıdır. TİKA ise yurt dışı kalkınma yardımlarını koordine eden kurumdur; pandemideki tıbbi yardım TİKA üzerinden organize edilmiştir.",
           "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "2023 Cumhurbaşkanlığı seçiminin ikinci turunda Recep Tayyip Erdoğan'ın rakibi kim olmuştur?",
+          "secenekler": [
+            "A) Mansur Yavas",
+            "B) Kemal Kılıçdaroğlu",
+            "C) Muharrem İnce",
+            "D) Ekrem İmamoğlu",
+            "E) Meral Akşener"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "2023 Cumhurbaşkanlığı seçiminde Millet İttifakı adayı Kemal Kılıçdaroğlu ile Recep Tayyip Erdoğan ikinci tura kalmış; Erdoğan yaklaşık %52,1 oranında oy alarak seçimi kazanmıştır."
+        },
+        {
+          "soru": "2023 milletvekili genel seçimlerinde tek başına en fazla milletvekili çıkaran parti hangisidir?",
+          "secenekler": [
+            "A) CHP",
+            "B) İYİ Parti",
+            "C) HDP/HEDEP",
+            "D) AKP",
+            "E) MHP"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "14 Mayıs 2023 milletvekili seçimlerinde AKP (Adalet ve Kalkınma Partisi) tek başına en fazla milletvekili çıkaran parti olmuştur."
+        },
+        {
+          "soru": "Türkiye'nin NATO üyeliği hangi yıla dayanmaktadır?",
+          "secenekler": [
+            "A) 1945",
+            "B) 1949",
+            "C) 1952",
+            "D) 1955",
+            "E) 1963"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye, 1952 yılında NATO'ya (Kuzey Atlantik Antlaşması Örgütü) katılmıştır."
+        },
+        {
+          "soru": "Türkiye ile Avrupa Birliği arasında tam üyelik müzakereleri hangi yıl resmen başlamıştır?",
+          "secenekler": [
+            "A) 1999",
+            "B) 2002",
+            "C) 2005",
+            "D) 2010",
+            "E) 2016"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye ile AB arasındaki tam üyelik müzakereleri 2005 yılında resmen başlamıştır. Ancak çeşitli nedenlerle müzakereler büyük ölçüde askıya alınmış durumdadır."
+        },
+        {
+          "soru": "Cumhurbaşkanlığı Hükümet Sistemi hangi seçimle birlikte tam olarak yürürlüğe girmiştir?",
+          "secenekler": [
+            "A) 2014 cumhurbaşkanlığı seçimi",
+            "B) 2017 referandumu",
+            "C) Haziran 2018 seçimleri",
+            "D) 2019 yerel seçimleri",
+            "E) 2023 genel seçimleri"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Nisan 2017'de halkoylamasıyla kabul edilen anayasa değişiklikleri Haziran 2018 seçimlerinin ardından yürürlüğe girmiştir. Bu tarihten itibaren Cumhurbaşkanlığı Hükümet Sistemi uygulanmaktadır."
+        },
+        {
+          "soru": "Türkiye'nin 2023 itibarıyla güncel dış politikasında öne çıkan 'tahıl koridoru' anlaşması hangi ülkeleri kapsamaktadır?",
+          "secenekler": [
+            "A) Türkiye, İran, Irak, Suriye",
+            "B) Türkiye, Rusya, Ukrayna, BM",
+            "C) Türkiye, AB, Ukrayna",
+            "D) Türkiye, NATO, Ukrayna",
+            "E) Türkiye, Çin, Rusya"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "2022'de imzalanan 'İstanbul Tahıl Girişimi' Türkiye, Rusya, Ukrayna ve BM arasında imzalanmıştır. Ukrayna'nın Karadeniz limanlarından tahıl ihracatını mümkün kılmayı amaçlamıştır."
+        },
+        {
+          "soru": "Türkiye'nin Suriye politikasında gerçekleştirdiği sınır ötesi operasyonlardan hangisi en kapsamlı olanıdır?",
+          "secenekler": [
+            "A) Fırat Kalkanı Harekâtı",
+            "B) Zeytin Dalı Harekâtı",
+            "C) Barış Pınarı Harekâtı",
+            "D) Pençe-Kartal Harekâtı",
+            "E) Bahar Kalkanı Harekâtı"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "2019 yılında gerçekleştirilen Barış Pınarı Harekâtı, Kuzey Suriye'de en geniş coğrafyayı kapsayan Türk sınır ötesi operasyonudur."
+        },
+        {
+          "soru": "Türkiye'nin 'Mavi Vatan' doktrini hangi coğrafi alanı kapsamaktadır?",
+          "secenekler": [
+            "A) Karadeniz ve Hazar Denizi",
+            "B) Ege, Doğu Akdeniz ve Karadeniz'deki Türk deniz yetki alanları",
+            "C) Yalnızca Ege Denizi",
+            "D) Marmara Denizi ve çevresi",
+            "E) Türkiye'nin kıta sahanlığı sınırları"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "'Mavi Vatan' doktrini; Türkiye'nin Ege, Doğu Akdeniz ve Karadeniz'deki deniz yetki alanı iddialarını kapsayan stratejik bir deniz politikası konseptidir."
+        },
+        {
+          "soru": "2023 yılında yaşanan Kahramanmaraş merkezli depremde can kaybı yaklaşık kaç kişi olmuştur?",
+          "secenekler": [
+            "A) 5.000",
+            "B) 10.000",
+            "C) 30.000",
+            "D) 50.000",
+            "E) 100.000"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "6 Şubat 2023'te meydana gelen Kahramanmaraş merkezli depremlerde (7,7 ve 7,6 büyüklüğünde) Türkiye'de 50.000'in üzerinde kişi hayatını kaybetmiştir."
+        },
+        {
+          "soru": "Türkiye'nin İsveç'in NATO üyeliğini onaylaması hangi yılda gerçekleşmiştir?",
+          "secenekler": [
+            "A) 2022",
+            "B) 2023",
+            "C) 2024",
+            "D) 2025",
+            "E) 2021"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye TBMM, İsveç'in NATO üyeliğini Ocak 2024'te onaylamıştır. İsveç resmi olarak Mart 2024'te NATO'ya katılmıştır."
+        },
+        {
+          "soru": "Türkiye ile Yunanistan arasındaki temel sorunlardan biri olan 'kıta sahanlığı' uyuşmazlığı hangi denizde yaşanmaktadır?",
+          "secenekler": [
+            "A) Karadeniz",
+            "B) Marmara Denizi",
+            "C) Ege Denizi ve Doğu Akdeniz",
+            "D) Adriyatik Denizi",
+            "E) İyon Denizi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye ile Yunanistan arasındaki kıta sahanlığı ve münhasır ekonomik bölge uyuşmazlıkları ağırlıklı olarak Ege Denizi ve Doğu Akdeniz'de yaşanmaktadır."
+        },
+        {
+          "soru": "Türkiye'nin 2023-2024 döneminde Orta Doğu politikasında en belirgin konu hangisidir?",
+          "secenekler": [
+            "A) Libya iç savaşı",
+            "B) Körfez ülkeleriyle askeri ittifak",
+            "C) Gazze'deki çatışma sürecinde İsrail karşıtı tutum ve Filistin'e destek",
+            "D) Irak'la sınır anlaşmazlığı",
+            "E) Suriye'nin yeniden yapılanmasına destek"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ekim 2023'te başlayan Gazze-İsrail çatışmasında Türkiye, uluslararası arenada İsrail'e yönelik eleştirilerini dile getirmiş ve Filistin'e destek politikasını ön plana çıkarmıştır."
+        },
+        {
+          "soru": "2023 yılında Türkiye'de düzenlenen büyük uluslararası zirvelerden hangisi İstanbul'da gerçekleşmiştir?",
+          "secenekler": [
+            "A) G20 Zirvesi",
+            "B) BM İklim Zirvesi (COP)",
+            "C) NATO Zirvesi",
+            "D) Türkiye-Afrika Zirvesi",
+            "E) Avrupa Konseyi Zirvesi"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Türkiye-Afrika Ortaklık Zirvesi 2023 yılında İstanbul'da düzenlenmiştir. Türkiye-Afrika ilişkilerinin geliştirilmesi amacıyla düzenlenen bu zirve önemli bir dış politika adımıdır."
+        },
+        {
+          "soru": "Türkiye'de 31 Mart 2024 yerel seçimlerinin en dikkat çekici sonucu nedir?",
+          "secenekler": [
+            "A) AKP tüm büyükşehirleri kazandı.",
+            "B) CHP büyükşehirlerdeki başarısını pekiştirdi ve İstanbul ile Ankara'yı korudu.",
+            "C) MHP büyükşehirlerde oy oranını artırdı.",
+            "D) İYİ Parti üç büyükşehiri kazandı.",
+            "E) Bağımsız adaylar galip geldi."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "31 Mart 2024 yerel seçimlerinde CHP, önceki dönemde kazandığı İstanbul ve Ankara başta olmak üzere birçok büyükşehirdeki başarısını pekiştirmiş ve oy oranını önemli ölçüde artırmıştır."
+        },
+        {
+          "soru": "Türkiye'de 'kişisel verilerin korunması' alanında temel yasal çerçeveyi oluşturan kanun hangisidir?",
+          "secenekler": [
+            "A) 5651 sayılı İnternet Kanunu",
+            "B) 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)",
+            "C) 7253 sayılı Sosyal Medya Kanunu",
+            "D) 5809 sayılı Elektronik Haberleşme Kanunu",
+            "E) 6362 sayılı Sermaye Piyasası Kanunu"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) 2016'da yürürlüğe girmiştir. AB'nin GDPR'ına benzer biçimde kişisel verilerin işlenmesine ilişkin temel kuralları belirler."
+        },
+        {
+          "soru": "Türkiye Cumhuriyeti'nin 100. yıl dönümü hangi tarihte kutlanmıştır?",
+          "secenekler": [
+            "A) 23 Nisan 2023",
+            "B) 29 Ekim 2023",
+            "C) 19 Mayıs 2023",
+            "D) 30 Ağustos 2023",
+            "E) 10 Kasım 2023"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Türkiye Cumhuriyeti'nin kuruluşunun 100. yıl dönümü 29 Ekim 2023'te büyük törenlerle kutlanmıştır. Cumhuriyetin 100. yılı özel anma etkinlikleri ve projelerle de anılmıştır."
+        },
+        {
+          "soru": "Türkiye'nin BM Güvenlik Konseyi geçici üyeliği hangi dönemde gerçekleşmiştir?",
+          "secenekler": [
+            "A) 2009-2010",
+            "B) 2013-2014",
+            "C) 2015-2016",
+            "D) 2020-2021",
+            "E) 2022-2023"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Türkiye, BM Güvenlik Konseyi'ne 2020-2021 dönemi için geçici üye seçilmiş ve bu dönemde aktif bir dış politika izlemiştir."
+        },
+        {
+          "soru": "Türkiye 2023 seçimlerinde hangi ittifak çerçevesinde iktidara gelmiştir?",
+          "secenekler": [
+            "A) Millet İttifakı",
+            "B) Cumhur İttifakı",
+            "C) HDP-HEDEP ittifakı",
+            "D) AKP-CHP koalisyonu",
+            "E) Yeniden Refah-MHP ittifakı"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "2023 seçimlerinde AKP ve MHP'nin oluşturduğu Cumhur İttifakı iktidarını sürdürmüştür. Recep Tayyip Erdoğan Cumhurbaşkanlığı seçimini kazanmıştır."
+        },
+        {
+          "soru": "Türkiye'nin SCO (Şangay İşbirliği Örgütü) ile ilişkisi nasıl tanımlanabilir?",
+          "secenekler": [
+            "A) Kurucu üyedir.",
+            "B) Tam üyedir.",
+            "C) Diyalog ortağıdır.",
+            "D) Gözlemci üyedir.",
+            "E) Hiçbir ilişkisi yoktur."
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye, Şangay İşbirliği Örgütü'nde 2013'ten bu yana diyalog ortağı statüsündedir. Tam üyelik tartışmaları zaman zaman gündeme gelse de Türkiye NATO üyeliğini sürdürmektedir."
+        },
+        {
+          "soru": "Türkiye-Suriye ilişkilerinde 2024 yılı itibarıyla öne çıkan gelişme hangisidir?",
+          "secenekler": [
+            "A) Suriye ile tam diplomatik normalleşme sağlandı.",
+            "B) Esad rejiminin yıkılmasıyla Suriye'de yeni yönetimle ilişkiler kuruldu.",
+            "C) Türkiye askeri üslerini Suriye'den çekti.",
+            "D) Suriye AB üyeliğine kabul edildi.",
+            "E) Suriye NATO'ya gözlemci olarak katıldı."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Aralık 2024'te Esad rejiminin çöküşünün ardından Suriye'de yeni bir yönetim kurulmuş; Türkiye bu süreçte aktif rol üstlenmiş ve yeni Suriye yönetimiyle ilişkilerini geliştirmeye çalışmıştır."
         }
       ]
     },
@@ -380,6 +620,246 @@
           "aciklama": "Türkiye'nin ihracatında Avrupa Birliği ülkeleri en büyük pazar konumundadır; Almanya, İngiltere ve diğer AB ülkeleri önemli pay taşımaktadır.",
           "distractorAciklama": "ABD ve Körfez ülkeleri de önemli pazarlar olmakla birlikte AB, Türkiye'nin toplam ihracatında tarihsel olarak en büyük paya sahip coğrafyadır.",
           "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "TÜBİTAK'ın açılımı nedir?",
+          "secenekler": [
+            "A) Türkiye Bilim ve Teknoloji Araştırma Kurumu",
+            "B) Türkiye Bilimsel ve Teknolojik Araştırma Kurumu",
+            "C) Türkiye Bilim Teknoloji ve Kalkınma Araştırma Kurumu",
+            "D) Türkiye Bilişim ve Teknoloji Araştırma Kurumu",
+            "E) Türkiye Bilim Araştırma ve Teknoloji Kurumu"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "TÜBİTAK; Türkiye Bilimsel ve Teknolojik Araştırma Kurumu'nun kısaltmasıdır. 1963 yılında kurulmuş olup Türkiye'nin en önemli bilim ve teknoloji kurumudur."
+        },
+        {
+          "soru": "ASELSAN hangi alanlarda faaliyet gösteren bir savunma sanayi şirketidir?",
+          "secenekler": [
+            "A) Gemi inşası ve deniz platformları",
+            "B) Elektronik sistemler, haberleşme ve savunma elektroniği",
+            "C) Uçak motoru ve havacılık sistemleri",
+            "D) Kimyasal savunma sistemleri",
+            "E) Balistik füze üretimi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "ASELSAN (Askeri Elektronik Sanayii), elektronik sistemler, haberleşme, radar, sensör sistemleri ve savunma elektroniği alanlarında faaliyet gösteren Türkiye'nin en büyük savunma elektroniği şirketidir."
+        },
+        {
+          "soru": "Türkiye'nin yerli insansız hava aracı (İHA) Bayraktar TB2'yi hangi şirket üretmektedir?",
+          "secenekler": [
+            "A) ASELSAN",
+            "B) ROKETSAN",
+            "C) Baykar",
+            "D) TAI",
+            "E) Havelsan"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Bayraktar TB2 (Silahlı İnsansız Hava Aracı - SİHA), Baykar Savunma şirketi tarafından üretilmektedir. Azerbaycan-Ermenistan çatışmasındaki başarısıyla uluslararası üne kavuşmuştur."
+        },
+        {
+          "soru": "AFAD'ın temel görevi nedir?",
+          "secenekler": [
+            "A) Askeri operasyonları planlamak",
+            "B) Afet ve acil durum yönetimini koordine etmek",
+            "C) Kamu altyapısını denetlemek",
+            "D) Çevre kirliliğiyle mücadele etmek",
+            "E) Sağlık hizmetlerini düzenlemek"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "AFAD (Afet ve Acil Durum Yönetimi Başkanlığı); deprem, sel ve diğer afetlerde koordinasyon, önleme ve müdahale görevlerini yürüten Cumhurbaşkanlığına bağlı kurumdur."
+        },
+        {
+          "soru": "TİKA (Türk İşbirliği ve Koordinasyon Ajansı) hangi alanlarda çalışma yürütür?",
+          "secenekler": [
+            "A) Askeri işbirliği ve silah transferi",
+            "B) Gelişmekte olan ülkelere kalkınma yardımı ve teknik işbirliği",
+            "C) Yurt içi istihdam politikaları",
+            "D) Yabancı yatırımların teşviki",
+            "E) Turizm tanıtım faaliyetleri"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "TİKA; Türkiye'nin resmi kalkınma yardımı kuruluşudur. Gelişmekte olan ülkelerde eğitim, sağlık, tarım, altyapı alanlarında teknik destek ve proje uygulamaları yürütür."
+        },
+        {
+          "soru": "TÜRKSAT ne işle uğraşmaktadır?",
+          "secenekler": [
+            "A) Türkiye'nin deniz altı boru hatlarını işletmektedir.",
+            "B) Uydu haberleşme hizmeti sağlamaktadır.",
+            "C) Askeri radar sistemleri geliştirmektedir.",
+            "D) Nükleer enerji santrali işletmektedir.",
+            "E) Türkiye'nin ulusal havacılık ajansıdır."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "TÜRKSAT, Türkiye'nin uydu haberleşme, uydu yayıncılığı ve kablo TV hizmetlerini sunan devlet şirketidir. Ayrıca e-devlet ağ altyapısını da yönetmektedir."
+        },
+        {
+          "soru": "Türk Kızılay'ının uluslararası hareketteki statüsü nedir?",
+          "secenekler": [
+            "A) Uluslararası Kızılhaç Komitesi'nin (ICRC) bir şubesidir.",
+            "B) Uluslararası Kızılhaç ve Kızılay Dernekleri Federasyonu'nun üyesidir.",
+            "C) Tamamen bağımsız bir yardım kuruluşudur.",
+            "D) BM insani yardım ajansının alt koludur.",
+            "E) NATO'nun sivil yardım birimidir."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Türk Kızılay; Uluslararası Kızılhaç ve Kızılay Dernekleri Federasyonu'nun (IFRC) üyesidir. 1868'de kurulan Kızılay Türkiye'nin en köklü yardım kuruluşudur."
+        },
+        {
+          "soru": "SPK'nın (Sermaye Piyasası Kurulu) temel görevi nedir?",
+          "secenekler": [
+            "A) Bankacılık sektörünü denetlemek",
+            "B) Sermaye piyasalarını düzenlemek ve denetlemek",
+            "C) Para politikasını belirlemek",
+            "D) Kamu ihalelerini denetlemek",
+            "E) Vergi politikasını belirlemek"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "SPK (Sermaye Piyasası Kurulu); Borsa İstanbul dahil sermaye piyasalarını düzenlemek, denetlemek ve yatırımcıları korumakla görevli bağımsız idari otoritedir."
+        },
+        {
+          "soru": "BDDK'nın (Bankacılık Düzenleme ve Denetleme Kurumu) temel işlevi nedir?",
+          "secenekler": [
+            "A) Enflasyonu kontrol etmek",
+            "B) Bankacılık sistemini düzenlemek ve denetlemek",
+            "C) Kamu borç yönetimini sağlamak",
+            "D) Döviz kurunu belirlemek",
+            "E) Vergi toplamak"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "BDDK; Türk bankacılık sektörünü düzenlemek, denetlemek ve finansal istikrarı korumakla görevli bağımsız idari otoritedir."
+        },
+        {
+          "soru": "Türkiye Cumhuriyet Merkez Bankası'nın temel amacı nedir?",
+          "secenekler": [
+            "A) Devlet bütçesini hazırlamak",
+            "B) Fiyat istikrarını sağlamak ve para politikasını yürütmek",
+            "C) Kamu bankalarını yönetmek",
+            "D) Vergi gelirlerini toplamak",
+            "E) Dış ticareti düzenlemek"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Türkiye Cumhuriyet Merkez Bankası'nın temel amacı fiyat istikrarını sağlamaktır. Bu doğrultuda para politikasını belirler, rezerv yönetimi yapar ve finansal sistemi destekler."
+        },
+        {
+          "soru": "AKINCI İHA'nın TB2'den temel farkı nedir?",
+          "secenekler": [
+            "A) AKINCI deniz görevleri için tasarlanmıştır.",
+            "B) AKINCI daha büyük gövdeli, uzun menzilli ve daha ağır silah yükü taşıyabilen bir KARGO İHA'dır.",
+            "C) AKINCI yalnızca keşif görevleri için kullanılır.",
+            "D) AKINCI insanlı bir hava platformudur.",
+            "E) AKINCI yalnızca elektronik harp sistemleri taşır."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Baykar tarafından geliştirilen AKINCI, TB2'ye kıyasla daha büyük, daha uzun menzilli ve daha ağır silah yükü taşıyabilen üst sınıf bir silahlı insansız hava aracıdır (MSIH)."
+        },
+        {
+          "soru": "TCG Anadolu hangi tür bir deniz platformudur?",
+          "secenekler": [
+            "A) Nükleer denizaltı",
+            "B) Amfibi hücum gemisi (hafif uçak gemisi)",
+            "C) Destroyer savaş gemisi",
+            "D) Fırkateyn",
+            "E) Deniz mayın avcısı"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "TCG Anadolu (L-400), Türkiye'nin inşa ettiği amfibi hücum gemisidir. Gemi, TB3 insansız hava araçlarıyla operasyon yapabilecek şekilde tasarlanmış ve 'insansız hava araçlı amfibi gemi' olarak nitelendirilmektedir."
+        },
+        {
+          "soru": "ROKETSAN hangi alanda üretim yapmaktadır?",
+          "secenekler": [
+            "A) Elektronik harp sistemleri",
+            "B) Roket, füze ve mühimmat sistemleri",
+            "C) Askeri uçak gövdesi üretimi",
+            "D) Radar ve algılayıcı sistemleri",
+            "E) Zırhlı araç üretimi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "ROKETSAN; roket, füze ve mühimmat sistemleri üretimi alanında faaliyet gösteren Türkiye'nin önde gelen savunma sanayi kuruluşlarından biridir."
+        },
+        {
+          "soru": "Türkiye'nin milli muharip uçak projesi hangisidir?",
+          "secenekler": [
+            "A) HÜRKUŞ",
+            "B) ANKA",
+            "C) KAAN",
+            "D) ÇAKIR",
+            "E) BAYRAKTAR TB3"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "KAAN (eski adı TF-X/MMU), TAI (Türk Havacılık ve Uzay Sanayii) tarafından geliştirilen Türkiye'nin ilk milli muharip uçak programıdır. İlk uçuşunu 2023'te gerçekleştirmiştir."
+        },
+        {
+          "soru": "Türkiye'nin savunma sanayiindeki yerlilik oranı son on yılda nasıl değişmiştir?",
+          "secenekler": [
+            "A) %20'den %40'a yükselmiştir.",
+            "B) %25'ten %80'in üzerine çıkmıştır.",
+            "C) Sabit kalmıştır.",
+            "D) %50'den %30'a düşmüştür.",
+            "E) %10'dan %50'ye çıkmıştır."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Türkiye'nin savunma sanayiindeki yerlilik oranı 2000'li yılların başındaki yaklaşık %25 düzeyinden 2020'lerin başında %80'in üzerine çıkmıştır."
+        },
+        {
+          "soru": "Türkiye'de 'kamu iktisadi teşebbüsü' (KİT) nedir?",
+          "secenekler": [
+            "A) Yalnızca özel sektöre ait ticari şirketler",
+            "B) Devletin ekonomik faaliyetlerde bulunmak amacıyla kurduğu veya katıldığı kamu işletmeleri",
+            "C) Belediye şirketleri",
+            "D) AB fonlarıyla kurulan ortaklıklar",
+            "E) Yabancı sermayeli kuruluşlar"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "KİT'ler (Kamu İktisadi Teşebbüsleri); devletin mal ve hizmet üretmek amacıyla kurduğu veya ortak olduğu, ticari esaslara göre faaliyet gösteren kamu işletmeleridir. Örn. PTT, TCDD, TEİAŞ."
+        },
+        {
+          "soru": "Türkiye'de enflasyonla mücadelede kullanılan temel politika aracı hangisidir?",
+          "secenekler": [
+            "A) Vergi artışları",
+            "B) Merkez Bankası faiz politikası",
+            "C) Döviz rezervleri satışı",
+            "D) Kamu harcamaları kısıtlaması",
+            "E) İthalat yasakları"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Merkez bankacılığında enflasyonla mücadelenin temel aracı faiz politikasıdır. Türkiye Cumhuriyet Merkez Bankası; politika faizini artırarak veya azaltarak enflasyon ve büyüme dengesini yönetmeye çalışır."
+        },
+        {
+          "soru": "Türkiye'de 'e-devlet' kapısı hangi kurumun koordinasyonunda yürütülmektedir?",
+          "secenekler": [
+            "A) TÜBİTAK BİLGEM",
+            "B) Hazine ve Maliye Bakanlığı",
+            "C) Dijital Dönüşüm Ofisi ve TÜRKSAT",
+            "D) Sanayi ve Teknoloji Bakanlığı",
+            "E) İçişleri Bakanlığı"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye'nin e-devlet kapısı (turkiye.gov.tr) Cumhurbaşkanlığı Dijital Dönüşüm Ofisi koordinasyonunda ve TÜRKSAT'ın teknik altyapı desteğiyle yürütülmektedir."
+        },
+        {
+          "soru": "Türkiye'de 'kalkınma bankası' işlevi gören ve KOBİ'lere destek sağlayan temel kamu kuruluşu hangisidir?",
+          "secenekler": [
+            "A) Ziraat Bankası",
+            "B) KOSGEB",
+            "C) BDDK",
+            "D) SPK",
+            "E) Hazine Müsteşarlığı"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "KOSGEB (Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı); küçük ve orta ölçekli işletmelere hibe, kredi desteği ve eğitim imkânı sunan kamu kuruluşudur."
+        },
+        {
+          "soru": "Türkiye'nin İstanbul Finans Merkezi (IFM) projesiyle hedeflenen ana amaç nedir?",
+          "secenekler": [
+            "A) Yalnızca Türk bankalarının merkezini bir araya getirmek",
+            "B) İstanbul'u küresel bir finans merkezi haline getirmek",
+            "C) Döviz rezervlerini artırmak",
+            "D) AB'ye katılım sürecini hızlandırmak",
+            "E) Turizm gelirlerini artırmak"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İstanbul Finans Merkezi (IFM); İstanbul'u bölgesel ve küresel ölçekte önde gelen bir finans merkezi konumuna taşımayı amaçlayan bir projedir. 2022'de açılmıştır."
         }
       ]
     },
@@ -570,6 +1050,246 @@
           "aciklama": "Nobel Edebiyat Ödülü'nü kazanan tek Türk yazar Orhan Pamuk'tur (2006). 2024 dahil sonraki yıllarda herhangi bir Türk yazar bu ödülü almamıştır.",
           "distractorAciklama": "Elif Şafak, Yaşar Kemal ve Ahmet Altan Nobel Edebiyat Ödülü almamıştır. Bu ödülü alan tek Türk yazar Orhan Pamuk'tur (2006).",
           "kaynak": "2024-Güncel"
+        },
+        {
+          "soru": "Göbeklitepe hangi ülkede yer almakta ve UNESCO Dünya Mirası Listesi'ne ne zaman alınmıştır?",
+          "secenekler": [
+            "A) Irak, 2005",
+            "B) Türkiye, 2018",
+            "C) Suriye, 2010",
+            "D) Türkiye, 2015",
+            "E) İran, 2012"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Göbeklitepe; Şanlıurfa iline bağlı Örencik köyünde yer alan ve yaklaşık 12.000 yıllık olan dünyanın en eski tapınak kompleksidir. 2018 yılında UNESCO Dünya Mirası Listesi'ne alınmıştır."
+        },
+        {
+          "soru": "Çatalhöyük neyi temsil etmektedir ve nerededir?",
+          "secenekler": [
+            "A) Tunç Çağı kalesi; Bursa",
+            "B) Dünyanın en eski şehir yerleşimlerinden biri; Konya",
+            "C) Osmanlı dönemi sarayı; İstanbul",
+            "D) Antik liman kenti; İzmir",
+            "E) Roma dönemi amfitiyatrosu; Efes"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Çatalhöyük; Konya'da yer alan ve yaklaşık 9.500 yıl önce kurulmuş, dünyanın en eski büyük yerleşim yerlerinden biridir. 2012 yılında UNESCO Dünya Mirası Listesi'ne alınmıştır."
+        },
+        {
+          "soru": "Pamukkale ve Hierapolis UNESCO Dünya Mirası Listesi'ne hangi yıl alınmıştır?",
+          "secenekler": [
+            "A) 1988",
+            "B) 1992",
+            "C) 1998",
+            "D) 2004",
+            "E) 2010"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Pamukkale ve Hierapolis antik kenti 1988 yılında UNESCO Dünya Mirası Listesi'ne alınmıştır. Denizli iline bağlı olan bu alan, travertenlerden oluşan doğal termal havuzlarıyla ünlüdür."
+        },
+        {
+          "soru": "Nobel Edebiyat Ödülü'nü kazanan ilk Türk yazar kimdir ve hangi yıl almıştır?",
+          "secenekler": [
+            "A) Yaşar Kemal, 1997",
+            "B) Orhan Pamuk, 2006",
+            "C) Halide Edib Adıvar, 1975",
+            "D) Nazım Hikmet, 1963",
+            "E) Aziz Nesin, 1980"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Orhan Pamuk 2006 yılında Nobel Edebiyat Ödülü'nü kazanarak bu ödülü alan ilk Türk yazar olmuştur. 'İstanbul Kültürel Belleğin Simgelerini Keşfetmek' gerekçesiyle ödüle layık görülmüştür."
+        },
+        {
+          "soru": "Fazıl Say hangi alanda uluslararası üne kavuşmuştur?",
+          "secenekler": [
+            "A) Türk pop müziği bestecisi",
+            "B) Klasik müzik piyanisti ve bestecisi",
+            "C) Caz müzisyeni",
+            "D) Halk müziği sanatçısı",
+            "E) Elektronik müzik prodüktörü"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Fazıl Say; uluslararası arenada tanınan Türk klasik müzik piyanisti ve bestecisidir. Mozart, Bach ve diğer klasik bestecilerin yorumları ile kendi bestelerini dünya sahnesinde sunan önemli bir müzisyendir."
+        },
+        {
+          "soru": "TEMA Vakfı hangi amaçla kurulmuştur?",
+          "secenekler": [
+            "A) Türk sanatını tanıtmak",
+            "B) Türkiye'de toprak erozyonu ve çölleşmeyle mücadele etmek, ağaçlandırma yapmak",
+            "C) Bilimsel araştırmaları desteklemek",
+            "D) Eğitim yatırımları yapmak",
+            "E) Kültürel mirası korumak"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "TEMA (Türkiye Erozyonla Mücadele, Ağaçlandırma ve Doğal Varlıkları Koruma Vakfı); toprak erozyonuyla mücadele, ağaçlandırma ve doğal kaynakların korunması amacıyla 1992 yılında kurulmuştur."
+        },
+        {
+          "soru": "İstanbul Tarihi Alanları UNESCO Dünya Mirası Listesi'ne hangi yıl alınmıştır?",
+          "secenekler": [
+            "A) 1978",
+            "B) 1985",
+            "C) 1990",
+            "D) 1995",
+            "E) 2000"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İstanbul'un tarihi alanları (Sultanahmet, Topkapı Sarayı, Ayasofya, Süleymaniye Camii çevresi) 1985 yılında UNESCO Dünya Mirası Listesi'ne alınmıştır."
+        },
+        {
+          "soru": "Türkiye'nin Sümela Manastırı hangi ilde bulunmaktadır?",
+          "secenekler": [
+            "A) Artvin",
+            "B) Rize",
+            "C) Trabzon",
+            "D) Sinop",
+            "E) Kastamonu"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Sümela Manastırı; Trabzon iline bağlı Maçka ilçesinde, Altındere Vadisi'nde sarp kayalıklar üzerine inşa edilmiş antik bir Bizans manastırıdır."
+        },
+        {
+          "soru": "Türkiye'den hangi bilim insanı uluslararası alanda önemli bir fizik ödülü almıştır?",
+          "secenekler": [
+            "A) Aziz Sancar - Nobel Kimya Ödülü",
+            "B) Abdus Salam - Nobel Fizik Ödülü",
+            "C) Neriman Aral - Fields Madalyası",
+            "D) Mehmet Öz - Tıp Nobel Ödülü",
+            "E) Fuat Sezgin - Einstein Madalyası"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Aziz Sancar, Türk asıllı Amerikan bilim insanıdır. 2015 yılında DNA onarım mekanizmalarını aydınlatmasına katkısı nedeniyle Nobel Kimya Ödülü'nü almıştır. Türk kökenli Nobel ödüllülerdendir."
+        },
+        {
+          "soru": "Türkiye'nin UNESCO somut olmayan kültürel miras listesindeki unsurları arasında hangisi bulunmaktadır?",
+          "secenekler": [
+            "A) Mehter müziği ve bağlama",
+            "B) Ebru (kâğıt süsleme sanatı) ve mevlevilik sema töreni",
+            "C) Zeybek dansı ve davul zurna",
+            "D) Karadeniz horon dansı",
+            "E) Van kedisi"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "UNESCO Somut Olmayan Kültürel Miras Listesi'nde Türkiye'den birçok unsur yer almaktadır. Ebru (Türk kâğıt süsleme sanatı) ve Mevlevilik sema töreni bu listenin önemli unsurları arasındadır."
+        },
+        {
+          "soru": "Türkiye'de en uzun süredir yayımlanmakta olan resmi haber ajansı hangisidir?",
+          "secenekler": [
+            "A) TRT",
+            "B) AA (Anadolu Ajansı)",
+            "C) İHA",
+            "D) DHA",
+            "E) CNN Türk"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Anadolu Ajansı (AA); 6 Nisan 1920'de Atatürk'ün talimatıyla kurulan Türkiye'nin resmi haber ajansıdır. Türkiye'nin en köklü haber kuruluşudur."
+        },
+        {
+          "soru": "Türkiye'de 'kültür başkenti' unvanını taşıyan ve 2010 yılında Avrupa Kültür Başkenti seçilen şehir hangisidir?",
+          "secenekler": [
+            "A) Ankara",
+            "B) İzmir",
+            "C) İstanbul",
+            "D) Bursa",
+            "E) Edirne"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İstanbul, 2010 yılında Avrupa Kültür Başkenti unvanını Essen (Almanya) ve Pécs (Macaristan) ile birlikte taşımıştır."
+        },
+        {
+          "soru": "Orhan Pamuk'un Nobel Edebiyat Ödülü'ne layık görülen romanları arasında en tanınmışı hangisidir?",
+          "secenekler": [
+            "A) Benim Adım Kırmızı",
+            "B) Tutunamayanlar",
+            "C) Mavi Karanfil",
+            "D) İnce Memed",
+            "E) Küçük Ağa"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "'Benim Adım Kırmızı' (My Name Is Red), Orhan Pamuk'un uluslararası arenada en çok okunan ve ödüllendirilen romanlarından biridir."
+        },
+        {
+          "soru": "Türkiye'de Topkapı Sarayı hangi dönemde inşa edilmiştir?",
+          "secenekler": [
+            "A) Selçuklu dönemi (11. yüzyıl)",
+            "B) Osmanlı dönemi (15. yüzyıl, Fatih Sultan Mehmet döneminde)",
+            "C) Bizans dönemi (6. yüzyıl)",
+            "D) Cumhuriyet dönemi (20. yüzyıl)",
+            "E) Osmanlı dönemi (17. yüzyıl, IV. Mehmed döneminde)"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Topkapı Sarayı; 15. yüzyılda Fatih Sultan Mehmet tarafından inşa ettirilen Osmanlı sarayıdır. 1478'den 1856'ya kadar Osmanlı padişahlarının ana ikametgahı olarak kullanılmıştır."
+        },
+        {
+          "soru": "Türkiye'de müzecilik alanındaki en kapsamlı koleksiyonu barındıran müze hangisidir?",
+          "secenekler": [
+            "A) İstanbul Arkeoloji Müzesi",
+            "B) Ankara Etnografya Müzesi",
+            "C) Topkapı Sarayı Müzesi",
+            "D) İzmir Arkeoloji Müzesi",
+            "E) Antalya Müzesi"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "İstanbul Arkeoloji Müzesi; 1.000.000'u aşkın eseriyle Türkiye'nin ve dünyanın en büyük arkeoloji müzelerinden biridir. Özellikle İskender Lahdi koleksiyonuyla ünlüdür."
+        },
+        {
+          "soru": "Türkiye'de 'kültür ve turizm' alanında önemli bir festival olan İstanbul Bienali kaç yılda bir düzenlenmektedir?",
+          "secenekler": [
+            "A) Her yıl",
+            "B) İki yılda bir",
+            "C) Üç yılda bir",
+            "D) Dört yılda bir",
+            "E) Beş yılda bir"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İstanbul Bienali; 1987'den bu yana iki yılda bir düzenlenen uluslararası çağdaş sanat etkinliğidir. Türkiye'nin en önemli sanat organizasyonları arasında yer alır."
+        },
+        {
+          "soru": "Türk sinemasından dünyaca tanınan ve 'Uzak' filmiyle Cannes Film Festivali'nde En İyi Yönetmen ödülünü kazanan isim kimdir?",
+          "secenekler": [
+            "A) Yılmaz Güney",
+            "B) Ferzan Özpetek",
+            "C) Nuri Bilge Ceylan",
+            "D) Zeki Demirkubuz",
+            "E) Fatih Akın"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Nuri Bilge Ceylan; 'Uzak' (2003) filmiyle Cannes'da En İyi Yönetmen ödülünü, 'Bir Zamanlar Anadolu'da' filmiyle Büyük Jüri Ödülü'nü ve 'Kış Uykusu' filmiyle ise Altın Palmiye'yi kazanmıştır."
+        },
+        {
+          "soru": "Türkiye'de bulunan antik kentlerden hangisi UNESCO Dünya Mirası Listesi'nde yer almaktadır?",
+          "secenekler": [
+            "A) Patara",
+            "B) Xanthos-Letoon",
+            "C) Perge",
+            "D) Aspendos",
+            "E) Side"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Xanthos-Letoon antik kenti; Antalya iline bağlı Kaş ilçesinde yer alan ve 1988 yılında UNESCO Dünya Mirası Listesi'ne alınan Likya medeniyetinin önemli merkezlerindendir."
+        },
+        {
+          "soru": "Türkiye'den hangi sanatçı/müzisyen 'Eurovision Song Contest'te birinci olmuştur?",
+          "secenekler": [
+            "A) Sertab Erener (2003)",
+            "B) Ajda Pekkan (1980)",
+            "C) Tarkan (1998)",
+            "D) Bülent Ersoy (2000)",
+            "E) Hadise (2009)"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Sertab Erener, 2003 yılında 'Everyway That I Can' adlı şarkısıyla Eurovision Song Contest'te birinci olmuştur. Türkiye bu yarışmada tek birincilik kazanmıştır."
+        },
+        {
+          "soru": "Türkiye'de 2023 yılında restorasyon çalışmaları tamamlanan ve camiye dönüştürülen tarihi yapı hangisidir?",
+          "secenekler": [
+            "A) Topkapı Sarayı",
+            "B) Dolmabahçe Sarayı",
+            "C) Ayasofya-i Kebir Camii",
+            "D) Sultanahmet Camii",
+            "E) Eyüp Sultan Camii"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ayasofya; 2020 yılında Danıştay kararı ve Cumhurbaşkanlığı kararnamesiyle müzeden yeniden camiye dönüştürülmüştür. 2023 yılında ise restorasyon ve yenileme çalışmaları sürdürülmüştür."
         }
       ]
     },
@@ -595,73 +1315,373 @@
       "sorular": [
         {
           "soru": "BM Güvenlik Konseyi'nin 5 daimi üyesinden biri değildir?",
-          "secenekler": ["A) ABD", "B) Rusya", "C) Almanya", "D) Çin", "E) Fransa"],
+          "secenekler": [
+            "A) ABD",
+            "B) Rusya",
+            "C) Almanya",
+            "D) Çin",
+            "E) Fransa"
+          ],
           "dogruIndex": 2,
           "aciklama": "BM Güvenlik Konseyi'nin 5 daimi üyesi (P5): ABD, Rusya, Çin, Fransa ve Birleşik Krallık'tır. Almanya daimi üye değildir; ancak G4 ülkesi olarak daimi üyelik talep etmektedir.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "NATO Antlaşması'nın 'Madde 5' ilkesi ne anlama gelir?",
-          "secenekler": ["A) Tüm üyeler nükleer silah paylaşımına tabidir.", "B) Bir üyeye yapılan silahlı saldırı tüm üyelere yapılmış sayılır.", "C) Üyeler yıllık GSYİH'larının %2'sini savunmaya harcamak zorundadır.", "D) Üyeler arasındaki ticaret anlaşmazlıkları NATO tahkimiyle çözülür.", "E) Üyeler büyük nükleer kararlar için oy birliği aramak zorundadır."],
+          "secenekler": [
+            "A) Tüm üyeler nükleer silah paylaşımına tabidir.",
+            "B) Bir üyeye yapılan silahlı saldırı tüm üyelere yapılmış sayılır.",
+            "C) Üyeler yıllık GSYİH'larının %2'sini savunmaya harcamak zorundadır.",
+            "D) Üyeler arasındaki ticaret anlaşmazlıkları NATO tahkimiyle çözülür.",
+            "E) Üyeler büyük nükleer kararlar için oy birliği aramak zorundadır."
+          ],
           "dogruIndex": 1,
           "aciklama": "Madde 5, NATO'nun kolektif savunma ilkesini düzenler: üyelerden birine silahlı saldırı gerçekleşirse bu saldırı tüm ittifak üyelerine yapılmış sayılır ve ortak savunma mekanizması devreye girer.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "Türkiye NATO'ya hangi yılda katılmıştır?",
-          "secenekler": ["A) 1945", "B) 1949", "C) 1952", "D) 1963", "E) 1980"],
+          "secenekler": [
+            "A) 1945",
+            "B) 1949",
+            "C) 1952",
+            "D) 1963",
+            "E) 1980"
+          ],
           "dogruIndex": 2,
           "aciklama": "Türkiye, Yunanistan ile birlikte 1952 yılında NATO'ya katılmıştır. NATO'nun kuruluşu 1949'dadır; Türkiye kurucu üye değildir.",
           "kaynak": "2020-KPSS"
         },
         {
           "soru": "Rusya'nın Ukrayna'ya tam ölçekli askeri saldırısı hangi tarihte başlamıştır?",
-          "secenekler": ["A) Ocak 2021", "B) Kasım 2021", "C) Şubat 2022", "D) Ekim 2022", "E) Mart 2023"],
+          "secenekler": [
+            "A) Ocak 2021",
+            "B) Kasım 2021",
+            "C) Şubat 2022",
+            "D) Ekim 2022",
+            "E) Mart 2023"
+          ],
           "dogruIndex": 2,
           "aciklama": "Rusya, 24 Şubat 2022'de Ukrayna'ya tam ölçekli askeri saldırı başlattı. Bu, 2014'teki Kırım ilhakı ve Donbas çatışmalarından farklı olarak Avrupa'nın tamamını etkileyen büyük çaplı bir savaşın başlangıcı oldu.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "2023 yılında NATO'ya katılan ülke hangisidir?",
-          "secenekler": ["A) İsveç", "B) Finlandiya", "C) Ukrayna", "D) Avustralya", "E) Japonya"],
+          "secenekler": [
+            "A) İsveç",
+            "B) Finlandiya",
+            "C) Ukrayna",
+            "D) Avustralya",
+            "E) Japonya"
+          ],
           "dogruIndex": 1,
           "aciklama": "Finlandiya, Şubat 2023'te NATO'nun 31. üyesi oldu. İsveç ise Mart 2024'te 32. üye olarak katıldı. İkisi de onlarca yıllık askeri tarafsızlık politikasını Ukrayna savaşının ardından sona erdirdi.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "BM Güvenlik Konseyi'nin toplam üye sayısı kaçtır?",
-          "secenekler": ["A) 5", "B) 10", "C) 15", "D) 20", "E) 25"],
+          "secenekler": [
+            "A) 5",
+            "B) 10",
+            "C) 15",
+            "D) 20",
+            "E) 25"
+          ],
           "dogruIndex": 2,
           "aciklama": "BM Güvenlik Konseyi 15 üyeden oluşur: 5 daimi üye (P5) ve Genel Kurul tarafından 2 yıllık dönemler için seçilen 10 geçici üye.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "BRICS grubunun kurucu üyelerinden biri değildir?",
-          "secenekler": ["A) Brezilya", "B) Rusya", "C) Türkiye", "D) Hindistan", "E) Çin"],
+          "secenekler": [
+            "A) Brezilya",
+            "B) Rusya",
+            "C) Türkiye",
+            "D) Hindistan",
+            "E) Çin"
+          ],
           "dogruIndex": 2,
           "aciklama": "BRICS'in kurucu üyeleri Brezilya, Rusya, Hindistan, Çin ve Güney Afrika'dır (Güney Afrika 2010'da katıldı). Türkiye BRICS üyesi değildir; SCO'ya gözlemci statüsünde katılım süreci yürütmektedir.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "BM'nin genel merkezi hangi şehirdedir?",
-          "secenekler": ["A) Cenevre", "B) Brüksel", "C) Lahey", "D) New York", "E) Paris"],
+          "secenekler": [
+            "A) Cenevre",
+            "B) Brüksel",
+            "C) Lahey",
+            "D) New York",
+            "E) Paris"
+          ],
           "dogruIndex": 3,
           "aciklama": "BM Genel Merkezi New York'ta bulunmaktadır. Cenevre'de ise BM Avrupa ofisi ve pek çok BM kuruluşu yer almaktadır. Uluslararası Adalet Divanı Lahey'de, NATO'nun genel merkezi ise Brüksel'dedir.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "Avrupa Birliği'nin Türkiye'ye yönelik tam üyelik müzakereleri resmen hangi yılda başlamıştır?",
-          "secenekler": ["A) 1987", "B) 1999", "C) 2002", "D) 2005", "E) 2013"],
+          "secenekler": [
+            "A) 1987",
+            "B) 1999",
+            "C) 2002",
+            "D) 2005",
+            "E) 2013"
+          ],
           "dogruIndex": 3,
           "aciklama": "AB tam üyelik müzakereleri Türkiye ile Ekim 2005'te resmen başlatılmıştır. Türkiye 1987'de ortaklık başvurusu yapmış, 1999'da aday ülke statüsü kazanmıştır.",
           "kaynak": "2020-KPSS"
         },
         {
           "soru": "İklim değişikliğiyle mücadelede Paris Anlaşması'nın temel hedefi nedir?",
-          "secenekler": ["A) Okyanus plastik kirliliğini sıfırlamak", "B) Küresel ortalama sıcaklık artışını sanayi öncesine göre 1,5-2°C ile sınırlamak", "C) Tüm ülkelerin 2030'a kadar sıfır emisyona ulaşması", "D) Fosil yakıt ticaretini yasaklamak", "E) Nükleer santrallerin kapatılmasını sağlamak"],
+          "secenekler": [
+            "A) Okyanus plastik kirliliğini sıfırlamak",
+            "B) Küresel ortalama sıcaklık artışını sanayi öncesine göre 1,5-2°C ile sınırlamak",
+            "C) Tüm ülkelerin 2030'a kadar sıfır emisyona ulaşması",
+            "D) Fosil yakıt ticaretini yasaklamak",
+            "E) Nükleer santrallerin kapatılmasını sağlamak"
+          ],
           "dogruIndex": 1,
           "aciklama": "2015 yılında imzalanan Paris Anlaşması'nın temel hedefi; küresel ortalama sıcaklık artışını sanayi öncesi dönemin 2°C üzerinde sınırlamak, mümkünse 1,5°C ile tutmaktır. Bu hedef için ülkeler ulusal katkı beyanlarını (NDC) BM'ye sunar.",
           "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "BM Güvenlik Konseyi'nin daimi üyeleri hangileridir?",
+          "secenekler": [
+            "A) ABD, Rusya, Çin, Fransa, Almanya",
+            "B) ABD, Rusya, Çin, Fransa, İngiltere",
+            "C) ABD, Rusya, Çin, İngiltere, Japonya",
+            "D) ABD, Rusya, AB, Çin, Hindistan",
+            "E) ABD, Rusya, Çin, Fransa, İtalya"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "BM Güvenlik Konseyi'nin 5 daimi (veto hakkına sahip) üyesi şunlardır: ABD, Rusya Federasyonu, Çin Halk Cumhuriyeti, Fransa ve Birleşik Krallık."
+        },
+        {
+          "soru": "Finlandiya NATO'ya hangi yıl katılmıştır?",
+          "secenekler": [
+            "A) 2022",
+            "B) 2023",
+            "C) 2024",
+            "D) 2025",
+            "E) 2021"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Finlandiya, Rusya'nın Ukrayna'yı işgalinin ardından Nisan 2023'te NATO'ya katılmıştır. Bu adım; Finlandiya'nın onlarca yıllık tarafsızlık politikasından vazgeçmesi bakımından tarihi bir kırılma noktasıdır."
+        },
+        {
+          "soru": "İsveç NATO'ya hangi yılda katılmıştır?",
+          "secenekler": [
+            "A) 2022",
+            "B) 2023",
+            "C) 2024",
+            "D) 2025",
+            "E) 2021"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İsveç, Mart 2024'te NATO'ya 32. üye olarak katılmıştır. Türkiye, İsveç'in üyeliğine ilişkin onay sürecini Ocak 2024'te tamamlamıştır."
+        },
+        {
+          "soru": "Rusya'nın Ukrayna'yı fiilen işgal ettiği tarih hangisidir?",
+          "secenekler": [
+            "A) 24 Şubat 2022",
+            "B) 14 Nisan 2021",
+            "C) 8 Mart 2023",
+            "D) 31 Aralık 2021",
+            "E) 9 Mayıs 2022"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Rusya'nın Ukrayna'ya yönelik geniş çaplı askeri işgali 24 Şubat 2022'de başlamıştır."
+        },
+        {
+          "soru": "BRICS grubu başlangıçta hangi ülkelerden oluşmaktaydı?",
+          "secenekler": [
+            "A) Brezilya, Rusya, Hindistan, Çin, Güney Afrika",
+            "B) Brezilya, Romanya, İran, Çin, Suudi Arabistan",
+            "C) Bolivya, Rusya, Irak, Çin, Arjantin",
+            "D) Brezilya, Rusya, Hindistan, Kuveyt, Sudan",
+            "E) Bolivya, Romanya, Endonezya, Çin, Singapur"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "BRICS; Brezilya, Rusya, Hindistan, Çin ve Güney Afrika'nın kısaltmasıdır. Gelişmekte olan büyük ekonomilerin oluşturduğu bu grup 2024'te genişleme sürecine girmiştir."
+        },
+        {
+          "soru": "Paris İklim Anlaşması'nın temel hedefi nedir?",
+          "secenekler": [
+            "A) Nükleer silahsızlanmayı sağlamak",
+            "B) Küresel ortalama sıcaklık artışını sanayi öncesi döneme kıyasla 2°C altında tutmak",
+            "C) Deniz kirliliğini önlemek",
+            "D) Ozon tabakasını korumak",
+            "E) Biyoçeşitlilik kaybını durdurmak"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Paris İklim Anlaşması (2015); küresel ortalama sıcaklık artışını sanayi öncesi döneme göre 2°C'nin altında tutmayı, tercihen 1,5°C ile sınırlandırmayı hedefler."
+        },
+        {
+          "soru": "BM'nin kaç üye devleti bulunmaktadır (2024 itibarıyla)?",
+          "secenekler": [
+            "A) 165",
+            "B) 173",
+            "C) 185",
+            "D) 193",
+            "E) 200"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Birleşmiş Milletler'in 2024 itibarıyla 193 üye devleti bulunmaktadır."
+        },
+        {
+          "soru": "Avrupa Birliği'nin para birimi avronun kullanılmadığı AB üyesi ülkeler arasında hangisi yer almaktadır?",
+          "secenekler": [
+            "A) Fransa",
+            "B) Almanya",
+            "C) İspanya",
+            "D) İsveç",
+            "E) İtalya"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "İsveç, AB üyesi olmasına rağmen euroya geçmemiş ve ulusal para birimi İsveç Kronası'nı (SEK) kullanmaya devam etmektedir. Danimarka ve Macaristan da avroyu kullanmayan AB üyeleridir."
+        },
+        {
+          "soru": "NATO'nun 'Madde 5' hükmü ne anlama gelir?",
+          "secenekler": [
+            "A) Üye devletlerin savunma harcamaları için belirlenen eşik",
+            "B) Bir üye devlete yapılan silahlı saldırının tüm üyelere yapılmış sayılması ve kolektif savunma yükümlülüğü",
+            "C) Nükleer silah kullanımına ilişkin kurallar",
+            "D) NATO genişlemesine ilişkin usul kuralları",
+            "E) Üye devletlerin askeri katkı oranları"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "NATO Antlaşması'nın 5. maddesi 'kolektif savunma' ilkesini düzenler: Bir üye devlete yapılan silahlı saldırı tüm üyelere yapılmış sayılır ve kolektif savunma yükümlülüğünü tetikler."
+        },
+        {
+          "soru": "İklim değişikliğiyle mücadelede 'COP' toplantıları hangi uluslararası kuruluş çerçevesinde düzenlenmektedir?",
+          "secenekler": [
+            "A) NATO",
+            "B) BM İklim Değişikliği Çerçeve Sözleşmesi (UNFCCC)",
+            "C) Dünya Bankası",
+            "D) IMF",
+            "E) Avrupa Birliği"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "COP (Conference of the Parties - Taraflar Konferansı); BM İklim Değişikliği Çerçeve Sözleşmesi (UNFCCC) kapsamında her yıl düzenlenen küresel iklim zirvesidir."
+        },
+        {
+          "soru": "Gazze'deki Ekim 2023 çatışması hangi iki taraf arasında yaşanmaktadır?",
+          "secenekler": [
+            "A) İsrail ve Suriye",
+            "B) İsrail ve Hamas",
+            "C) Filistin Yönetimi ve İsrail",
+            "D) İsrail ve Hizbullah",
+            "E) İsrail ve İran"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "7 Ekim 2023'te Hamas'ın İsrail'e yönelik gerçekleştirdiği saldırının ardından Gazze'de İsrail-Hamas çatışması başlamış ve büyük insani kriz yaşanmıştır."
+        },
+        {
+          "soru": "G20 zirvesi 2023 yılında hangi ülkede düzenlenmiştir?",
+          "secenekler": [
+            "A) Japonya",
+            "B) Hindistan",
+            "C) Endonezya",
+            "D) Arjantin",
+            "E) Brezilya"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "G20 Zirvesi 2023 yılında Hindistan'ın New Delhi şehrinde düzenlenmiştir. Afrika Birliği bu zirvede G20'ye kalıcı üye olarak kabul edilmiştir."
+        },
+        {
+          "soru": "Avrupa Birliği'nin 2024 yılında yapay zeka alanında çıkardığı düzenlemenin adı nedir?",
+          "secenekler": [
+            "A) Dijital Hizmetler Yasası",
+            "B) AB Yapay Zeka Yasası (AI Act)",
+            "C) Genel Veri Koruma Tüzüğü (GDPR)",
+            "D) Dijital Pazarlar Yasası",
+            "E) Avrupa Siber Güvenlik Kanunu"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "AB Yapay Zeka Yasası (AI Act), Mart 2024'te Avrupa Parlamentosu tarafından onaylanan ve dünyanın ilk kapsamlı yapay zeka düzenlemesi olarak tarihe geçen yasadır."
+        },
+        {
+          "soru": "IMF (Uluslararası Para Fonu) hangi alanlarda faaliyetlerini yürütür?",
+          "secenekler": [
+            "A) Yalnızca az gelişmiş ülkelere hibe sağlar.",
+            "B) Küresel parasal işbirliğini destekler, finansal istikrarı izler, ekonomik danışmanlık ve koşullu kredi sağlar.",
+            "C) Dünya ticaretini düzenler.",
+            "D) İklim değişikliğiyle mücadele fonlarını yönetir.",
+            "E) Nükleer enerji politikalarını denetler."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "IMF; küresel parasal işbirliğini teşvik etmek, finansal istikrarı sağlamak, ödemeler dengesi güçlüğü yaşayan üye ülkelere koşullu borç vermek ve ekonomik politika danışmanlığı yapmak amacıyla kurulmuştur."
+        },
+        {
+          "soru": "Dünya Ticaret Örgütü'nün (WTO) temel işlevi nedir?",
+          "secenekler": [
+            "A) Uluslararası para politikalarını belirlemek",
+            "B) Uluslararası ticaret kurallarını düzenlemek ve ticaret anlaşmazlıklarını çözmek",
+            "C) Gelişmekte olan ülkelere kalkınma yardımı sağlamak",
+            "D) Küresel enerji ticaretini denetlemek",
+            "E) Nükleer silahların yayılmasını önlemek"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "WTO (Dünya Ticaret Örgütü); uluslararası ticaretin kurallarını belirleyen, ticaret anlaşmazlıklarını çözen ve ticaretin serbestleşmesini hedefleyen uluslararası örgüttür."
+        },
+        {
+          "soru": "2024 yılında düzenlenen ABD başkanlık seçimini kim kazanmıştır?",
+          "secenekler": [
+            "A) Joe Biden",
+            "B) Donald Trump",
+            "C) Kamala Harris",
+            "D) Ron DeSantis",
+            "E) Bernie Sanders"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Donald Trump, Kasım 2024'te yapılan ABD başkanlık seçiminde Demokrat aday Kamala Harris'i yenerek ABD'nin 47. Cumhurbaşkanı seçilmiştir."
+        },
+        {
+          "soru": "Avrupa Birliği'nin üye sayısı 2024 itibarıyla kaçtır?",
+          "secenekler": [
+            "A) 24",
+            "B) 25",
+            "C) 27",
+            "D) 28",
+            "E) 30"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Birleşik Krallık'ın 2020'de ayrılmasının (Brexit) ardından AB'nin üye sayısı 27'ye düşmüştür ve 2024 itibarıyla bu sayı aynı kalmaktadır."
+        },
+        {
+          "soru": "BM İnsan Hakları Evrensel Beyannamesi hangi tarihte ilan edilmiştir?",
+          "secenekler": [
+            "A) 24 Ekim 1945",
+            "B) 10 Aralık 1948",
+            "C) 4 Nisan 1949",
+            "D) 26 Haziran 1945",
+            "E) 1 Ocak 1950"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "BM İnsan Hakları Evrensel Beyannamesi 10 Aralık 1948'de ilan edilmiştir. Her yıl 10 Aralık 'Dünya İnsan Hakları Günü' olarak kutlanmaktadır."
+        },
+        {
+          "soru": "NATO'nun genel merkezi hangi şehirde bulunmaktadır?",
+          "secenekler": [
+            "A) Londra",
+            "B) Paris",
+            "C) Brüksel",
+            "D) Cenevre",
+            "E) Strazburg"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "NATO'nun genel merkezi Belçika'nın başkenti Brüksel'de bulunmaktadır."
+        },
+        {
+          "soru": "Sürdürülebilir Kalkınma Hedefleri (SKH) kaç hedeften oluşmaktadır ve 2030 Gündemi çerçevesinde benimsenmiştir?",
+          "secenekler": [
+            "A) 8 hedef, 2000 Gündemi",
+            "B) 15 hedef, 2015 Gündemi",
+            "C) 17 hedef, 2030 Gündemi",
+            "D) 20 hedef, 2020 Gündemi",
+            "E) 12 hedef, 2025 Gündemi"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "BM Sürdürülebilir Kalkınma Hedefleri (SKH/SDG); 2015 yılında 193 BM üyesi tarafından benimsenen ve 2030 yılına kadar ulaşılması hedeflenen 17 küresel amaçtan oluşmaktadır."
         }
       ]
     },
@@ -687,73 +1707,361 @@
       "sorular": [
         {
           "soru": "ChatGPT'yi geliştiren şirket hangisidir?",
-          "secenekler": ["A) Google DeepMind", "B) Meta AI", "C) OpenAI", "D) Microsoft Research", "E) IBM Watson"],
+          "secenekler": [
+            "A) Google DeepMind",
+            "B) Meta AI",
+            "C) OpenAI",
+            "D) Microsoft Research",
+            "E) IBM Watson"
+          ],
           "dogruIndex": 2,
           "aciklama": "ChatGPT, San Francisco merkezli OpenAI şirketi tarafından geliştirilmiş ve Kasım 2022'de kamuoyuyla paylaşılmıştır. Microsoft, OpenAI'ye büyük yatırım yaparak ürünlerini entegre etmiştir.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "Togg (Türkiye'nin Otomobili) hangi yılda seri üretimine başlamıştır?",
-          "secenekler": ["A) 2020", "B) 2021", "C) 2022", "D) 2023", "E) 2025"],
+          "secenekler": [
+            "A) 2020",
+            "B) 2021",
+            "C) 2022",
+            "D) 2023",
+            "E) 2025"
+          ],
           "dogruIndex": 3,
           "aciklama": "Togg, 2023 yılında Bursa Gemlik'teki fabrikasında seri üretime başlamış ve aynı yıl ilk müşterilerine teslim edilmiştir. Türkiye'nin ilk yerli ve milli elektrikli otomobilidir.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "Bitcoin hangi yılda piyasaya çıkmıştır?",
-          "secenekler": ["A) 2005", "B) 2007", "C) 2009", "D) 2011", "E) 2013"],
+          "secenekler": [
+            "A) 2005",
+            "B) 2007",
+            "C) 2009",
+            "D) 2011",
+            "E) 2013"
+          ],
           "dogruIndex": 2,
           "aciklama": "Bitcoin, Satoshi Nakamoto takma adlı kişi/grup tarafından 2009 yılında tanıtılmış; Ocak 2009'da ilk blok (genesis block) üretilmiştir.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "Avrupa Birliği'nin yapay zekayı kapsamlı biçimde düzenleyen 'AI Act' yasası hangi yılda yürürlüğe girmiştir?",
-          "secenekler": ["A) 2021", "B) 2022", "C) 2023", "D) 2024", "E) 2025"],
+          "secenekler": [
+            "A) 2021",
+            "B) 2022",
+            "C) 2023",
+            "D) 2024",
+            "E) 2025"
+          ],
           "dogruIndex": 3,
           "aciklama": "AB'nin Yapay Zeka Yasası (AI Act) 2024 yılında resmi olarak yürürlüğe girmiştir. Dünya tarihinde yapay zekayı bu ölçekte kapsamlı biçimde düzenleyen ilk yasal çerçevedir.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "Türkiye'nin ilk uzay yolcusu kimdir ve ISS'a hangi yılda gitmiştir?",
-          "secenekler": ["A) Selçuk Bayraktar — 2023", "B) Alper Gezeravcı — 2024", "C) Haluk Bayraktar — 2023", "D) Hasan Doğan — 2022", "E) Türkiye henüz uzay yolcusu göndermemiştir."],
+          "secenekler": [
+            "A) Selçuk Bayraktar — 2023",
+            "B) Alper Gezeravcı — 2024",
+            "C) Haluk Bayraktar — 2023",
+            "D) Hasan Doğan — 2022",
+            "E) Türkiye henüz uzay yolcusu göndermemiştir."
+          ],
           "dogruIndex": 1,
           "aciklama": "Türk astronot Alper Gezeravcı, Ocak 2024'te SpaceX Crew Dragon aracıyla Uluslararası Uzay İstasyonu'na (ISS) gönderilmiş ve yaklaşık 14 gün orada görev yapmıştır.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "Blok zinciri (blockchain) teknolojisinin temel özelliği nedir?",
-          "secenekler": ["A) Merkezi bir sunucu tarafından kontrol edilir.", "B) Verileri değiştirilemez biçimde dağıtık kayıt defterinde saklar.", "C) Yalnızca kripto para işlemlerinde kullanılabilir.", "D) Veriler internet bağlantısı olmadan silinemez.", "E) Her işlem devlet onayına tabidir."],
+          "secenekler": [
+            "A) Merkezi bir sunucu tarafından kontrol edilir.",
+            "B) Verileri değiştirilemez biçimde dağıtık kayıt defterinde saklar.",
+            "C) Yalnızca kripto para işlemlerinde kullanılabilir.",
+            "D) Veriler internet bağlantısı olmadan silinemez.",
+            "E) Her işlem devlet onayına tabidir."
+          ],
           "dogruIndex": 1,
           "aciklama": "Blok zinciri; verilerin şifrelenerek birbirine bağlı bloklar hâlinde, dağıtık ve değiştirilemez biçimde saklandığı teknolojidir. Kripto para dışında tedarik zinciri, tapu, sağlık ve oy verme sistemlerinde de kullanılır.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "5G teknolojisinin 4G'ye kıyasla temel avantajı nedir?",
-          "secenekler": ["A) Daha düşük enerji tüketimi ve daha az baz istasyonu ihtiyacı", "B) Çok daha yüksek veri hızı ve düşük gecikme süresi", "C) Yalnızca şehir merkezlerinde kapsama alanı sunabilir.", "D) Yüksek güvenlik nedeniyle şifreleme gerektirmez.", "E) Uluslararası arama ücretlerini ortadan kaldırır."],
+          "secenekler": [
+            "A) Daha düşük enerji tüketimi ve daha az baz istasyonu ihtiyacı",
+            "B) Çok daha yüksek veri hızı ve düşük gecikme süresi",
+            "C) Yalnızca şehir merkezlerinde kapsama alanı sunabilir.",
+            "D) Yüksek güvenlik nedeniyle şifreleme gerektirmez.",
+            "E) Uluslararası arama ücretlerini ortadan kaldırır."
+          ],
           "dogruIndex": 1,
           "aciklama": "5G, 4G'ye kıyasla 100 kata kadar daha hızlı veri iletimi ve çok daha düşük gecikme süresi sunar. Bu özellikler otonom araçlar, akıllı fabrikalar (endüstri 4.0) ve uzaktan cerrahi gibi gecikmeye duyarlı uygulamalar için kritiktir.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "Türkiye'de kripto para kullanımına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
-          "secenekler": ["A) Türkiye'de kripto para tamamen yasaklanmıştır.", "B) Kripto para alım-satımı serbesttir; ancak mal/hizmet ödemelerinde kullanımı yasaktır.", "C) Türkiye, kripto parayı resmi para birimi olarak kabul etmiştir.", "D) Yalnızca devlet onaylı borsa platformlarında işlem yapılabilir.", "E) Kripto para yatırımcıları vergi ödeme yükümlülüğünden muaftır."],
+          "secenekler": [
+            "A) Türkiye'de kripto para tamamen yasaklanmıştır.",
+            "B) Kripto para alım-satımı serbesttir; ancak mal/hizmet ödemelerinde kullanımı yasaktır.",
+            "C) Türkiye, kripto parayı resmi para birimi olarak kabul etmiştir.",
+            "D) Yalnızca devlet onaylı borsa platformlarında işlem yapılabilir.",
+            "E) Kripto para yatırımcıları vergi ödeme yükümlülüğünden muaftır."
+          ],
           "dogruIndex": 1,
           "aciklama": "Türkiye'de 2021 yılında yürürlüğe giren düzenlemeyle kripto paraların ödeme aracı olarak kullanılması yasaklandı; ancak borsa platformları üzerinden alım-satım (yatırım amaçlı) yasaldır. 2024'te kripto varlık hizmet sağlayıcılarının lisanslı olması zorunluluğu getirildi.",
           "kaynak": "2024-Güncel"
         },
         {
           "soru": "TÜBİTAK BİLGEM Türkiye'de hangi alanda çalışmalar yürütmektedir?",
-          "secenekler": ["A) Uzay araştırmaları ve uydu geliştirme", "B) Siber güvenlik ve bilişim teknolojileri araştırmaları", "C) Yerli otomobil geliştirme", "D) Yenilenebilir enerji sistemleri", "E) Nükleer enerji reaktörü tasarımı"],
+          "secenekler": [
+            "A) Uzay araştırmaları ve uydu geliştirme",
+            "B) Siber güvenlik ve bilişim teknolojileri araştırmaları",
+            "C) Yerli otomobil geliştirme",
+            "D) Yenilenebilir enerji sistemleri",
+            "E) Nükleer enerji reaktörü tasarımı"
+          ],
           "dogruIndex": 1,
           "aciklama": "TÜBİTAK BİLGEM (Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi), siber güvenlik, kriptografi, yazılım geliştirme ve bilgi güvenliği alanlarında Türkiye'nin önde gelen araştırma merkezi olarak faaliyet göstermektedir.",
           "kaynak": "KPSS-Tipi"
         },
         {
           "soru": "Üretken yapay zeka (Generative AI) sistemleri aşağıdakilerden hangisini yapabilir?",
-          "secenekler": ["A) Yalnızca metin yorumlayabilir; yeni içerik üretemez.", "B) Fiziksel nesneleri 3D yazıcıyla basabilir.", "C) Metinden görüntü, ses, video ve kod üretebilir.", "D) İnternet erişimi olmadan çalışamaz.", "E) Yalnızca programlama dilleri için kullanılır."],
+          "secenekler": [
+            "A) Yalnızca metin yorumlayabilir; yeni içerik üretemez.",
+            "B) Fiziksel nesneleri 3D yazıcıyla basabilir.",
+            "C) Metinden görüntü, ses, video ve kod üretebilir.",
+            "D) İnternet erişimi olmadan çalışamaz.",
+            "E) Yalnızca programlama dilleri için kullanılır."
+          ],
           "dogruIndex": 2,
           "aciklama": "Üretken yapay zeka, metin, görüntü, ses, video ve kod dahil çok sayıda formatta yeni içerik üretebilen yapay zeka sistemlerini kapsar. ChatGPT (metin), DALL-E (görüntü), Sora (video) ve GitHub Copilot (kod) bunların örnekleridir.",
           "kaynak": "KPSS-Tipi"
+        },
+        {
+          "soru": "Türkiye'nin yerli elektrikli otomobili Togg'un açılımı nedir?",
+          "secenekler": [
+            "A) Türkiye Otomotiv Girişim Grubu",
+            "B) Türk Otonom Güdümlü Girişim",
+            "C) Türkiye'nin Otomobili Girişim Grubu",
+            "D) Türkiye Ortak Girişim Grubu",
+            "E) Türk Otomasyon ve Güç Grubu"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "TOGG; Türkiye'nin Otomobili Girişim Grubu'nun kısaltmasıdır. 2017'de kurulan şirket, Türkiye'nin ilk yerli ve milli elektrikli otomobilini üretmektedir."
+        },
+        {
+          "soru": "Alper Gezeravcı'nın uzay yolculuğu hakkında aşağıdakilerden hangisi doğrudur?",
+          "secenekler": [
+            "A) 2022 yılında Soyuz roketi ile uzaya gitti.",
+            "B) Ocak 2024'te SpaceX'in Crew Dragon kapsülüyle uzaya giderek ilk Türk astronot oldu.",
+            "C) 2021 yılında ilk Türk uydu fırlatma görevini tamamladı.",
+            "D) NASA'nın astronot programına kabul edilen ilk Türk'tür.",
+            "E) Uzaya giden ilk Müslüman astronottur."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Alper Gezeravcı; 18 Ocak 2024'te SpaceX Falcon 9 roketiyle fırlatılan Crew Dragon kapsülüyle Uluslararası Uzay İstasyonu'na giderek Türkiye'nin ilk astronotu olmuştur."
+        },
+        {
+          "soru": "Blockchain teknolojisinin temel özelliği nedir?",
+          "secenekler": [
+            "A) Merkezi bir sunucu üzerinde çalışır.",
+            "B) Verilerin dağıtık, şifrelenmiş ve değiştirilemez bir kayıt zincirinde tutulmasıdır.",
+            "C) Yalnızca finans sektöründe kullanılır.",
+            "D) Hız açısından geleneksel veritabanlarından yavaştır ama güvenliği yoktur.",
+            "E) Devletler tarafından kontrol edilen bir sistem gerektirir."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Blockchain (dağıtık defter teknolojisi); verilerin merkezi bir otorite yerine ağdaki tüm katılımcılara dağıtılmış, şifrelenmiş ve birbirine zincirlenmiş bloklar halinde tutulduğu bir teknolojidir."
+        },
+        {
+          "soru": "5G teknolojisinin 4G'ye göre temel avantajı nedir?",
+          "secenekler": [
+            "A) Daha az baz istasyonu gerektirir.",
+            "B) Çok daha yüksek veri hızı ve çok daha düşük gecikme süresi sağlar.",
+            "C) Yalnızca akıllı telefonlarda kullanılır.",
+            "D) Kapsama alanı daha geniştir.",
+            "E) Daha az enerji tüketir ve daha ucuzdur."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "5G; 4G/LTE'ye kıyasla çok daha yüksek veri hızı (teorik olarak 20 Gbps'e kadar) ve çok daha düşük gecikme süresi (1 ms altı) sunmaktadır. Nesnelerin interneti ve otonom araçlar için kritik öneme sahiptir."
+        },
+        {
+          "soru": "TÜBİTAK BİLGEM hangi alanda faaliyet göstermektedir?",
+          "secenekler": [
+            "A) Tarım araştırmaları",
+            "B) Bilgi ve iletişim teknolojileri ile siber güvenlik",
+            "C) Uzay bilimleri",
+            "D) Tıp ve ilaç araştırmaları",
+            "E) Enerji sistemleri araştırmaları"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "TÜBİTAK BİLGEM (Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi); bilgi ve iletişim teknolojileri, siber güvenlik ve kriptografi alanlarında araştırma ve geliştirme faaliyetleri yürütmektedir."
+        },
+        {
+          "soru": "AB Yapay Zeka Yasası (AI Act) hangi yılda kabul edilmiştir?",
+          "secenekler": [
+            "A) 2021",
+            "B) 2022",
+            "C) 2023",
+            "D) 2024",
+            "E) 2025"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Avrupa Parlamentosu AB Yapay Zeka Yasası'nı (AI Act) Mart 2024'te onaylamıştır. Mayıs 2024'te yürürlüğe giren bu yasa, dünyanın ilk kapsamlı yapay zeka düzenlemesi olarak tarihe geçmiştir."
+        },
+        {
+          "soru": "Togg'un üretim tesisi hangi şehirde kurulmuştur?",
+          "secenekler": [
+            "A) İstanbul",
+            "B) Ankara",
+            "C) İzmir",
+            "D) Bursa (Gemlik)",
+            "E) Kocaeli"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Türkiye'nin yerli otomobili Togg'un üretim tesisi Bursa iline bağlı Gemlik ilçesinde inşa edilmiştir. İlk araçlar 2023 yılında teslim edilmeye başlanmıştır."
+        },
+        {
+          "soru": "Yapay zekanın 'Büyük Dil Modeli' (LLM) ne anlama gelir?",
+          "secenekler": [
+            "A) Yalnızca matematik hesaplamalar yapan yazılım",
+            "B) Büyük veri kümeleri üzerinde eğitilerek metin anlama ve üretme yeteneği kazanan derin öğrenme modeli",
+            "C) Programcılar tarafından elle yazılan kural tabanlı sistem",
+            "D) Görüntü tanıma için kullanılan algoritma türü",
+            "E) Fiziksel robotiği yönlendiren yazılım"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Büyük Dil Modelleri (LLM - Large Language Models); devasa metin veri kümeleri üzerinde eğrilerek dil anlama ve üretme yeteneği kazanan derin öğrenme modellerdir. GPT-4, Claude ve Gemini bu kategoriye girer."
+        },
+        {
+          "soru": "Türkiye'nin yerli ve milli uydu fırlatma roketi projesi hangisidir?",
+          "secenekler": [
+            "A) GÖKTÜRK",
+            "B) TÜRKSAT 5A",
+            "C) Roket-san Fırlatma Sistemi",
+            "D) Hürkuş",
+            "E) Müzik (TUA)"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "GÖKTÜRK uydu ailesi Türkiye'nin yerli uydu programlarını kapsamaktadır. Türkiye Uzay Ajansı (TUA) da milli fırlatma aracı geliştirme çalışmalarını sürdürmektedir."
+        },
+        {
+          "soru": "Türkiye Uzay Ajansı (TUA) kaç yılında kurulmuştur?",
+          "secenekler": [
+            "A) 2010",
+            "B) 2014",
+            "C) 2018",
+            "D) 2020",
+            "E) 2022"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Türkiye Uzay Ajansı (TUA), 13 Aralık 2018 tarihinde kurulmuştur. 2023 yılında uzay stratejisi ve milli uzay programı kapsamında çalışmalarını sürdürmektedir."
+        },
+        {
+          "soru": "Metaverse kavramı teknoloji dünyasında ne anlama gelir?",
+          "secenekler": [
+            "A) Büyük veri analizi teknolojisi",
+            "B) Sanal ve artırılmış gerçekliğin bütünleştiği, kullanıcıların avatar aracılığıyla etkileşim kurduğu 3 boyutlu dijital evren",
+            "C) Yeni nesil arama motoru teknolojisi",
+            "D) Yapay zeka tabanlı tercüme sistemi",
+            "E) Bulut bilişim altyapısı"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Metaverse; sanal gerçeklik, artırılmış gerçeklik ve internet teknolojilerini bir araya getirerek kullanıcıların avatar aracılığıyla etkileşim kurduğu immersif üç boyutlu dijital ortamdır."
+        },
+        {
+          "soru": "Togg markasının ürettiği ilk araç modeli hangisidir?",
+          "secenekler": [
+            "A) Togg Sedan",
+            "B) Togg T10X (SUV)",
+            "C) Togg Hatchback",
+            "D) Togg Pickup",
+            "E) Togg Van"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Togg'un piyasaya sürdüğü ilk araç modeli T10X (SUV - Spor Yardımcı Araç) olmuştur. Araç, 2023 yılının ilk yarısında teslim edilmeye başlanmıştır."
+        },
+        {
+          "soru": "Siber güvenlik alanında 'fidye yazılımı' (ransomware) nedir?",
+          "secenekler": [
+            "A) Veri silen kötü amaçlı yazılım",
+            "B) Kullanıcının dosyalarını şifreleyerek şifre çözme anahtarı için fidye talep eden kötü amaçlı yazılım",
+            "C) Bilgisayarın ağ bağlantısını kesen yazılım",
+            "D) Şifreleri çalan casus yazılım",
+            "E) Reklam gösteren zararsız yazılım"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Fidye yazılımı (ransomware); kurbanın bilgisayarındaki dosyaları şifreleyerek erişimi engelleyen ve dosyaları geri almak için (genellikle kripto para cinsinden) fidye talep eden kötü amaçlı yazılım türüdür."
+        },
+        {
+          "soru": "Nesnelerin İnterneti (IoT) teknolojisi neyi ifade eder?",
+          "secenekler": [
+            "A) Yalnızca akıllı telefon uygulamalarını",
+            "B) Fiziksel nesnelerin sensörler ve ağ bağlantısıyla birbirine ve internete bağlandığı teknolojiyi",
+            "C) Sosyal medya platformlarının birbirine bağlanmasını",
+            "D) İnternetin yalnızca ev kullanımını",
+            "E) Bulut depolama hizmetlerini"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Nesnelerin İnterneti (IoT - Internet of Things); günlük nesnelerin (ev aletleri, araçlar, endüstriyel makineler vb.) sensörler, yazılım ve ağ bağlantısı aracılığıyla veri toplayıp paylaşabildiği teknolojidir."
+        },
+        {
+          "soru": "Alper Gezeravcı'nın uzay görevinde hangi kuruluş sponsorluğu üstlenmiştir?",
+          "secenekler": [
+            "A) TÜBİTAK",
+            "B) Türkiye Uzay Ajansı (TUA) ve Axiom Space",
+            "C) NASA ve ESA",
+            "D) Roscosmos",
+            "E) Türk Hava Kuvvetleri"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Alper Gezeravcı'nın uzay görevi; Türkiye Uzay Ajansı (TUA) ile Axiom Space şirketinin işbirliğiyle Ax-3 misyonu kapsamında gerçekleştirilmiştir."
+        },
+        {
+          "soru": "Yapay zekada 'derin öğrenme' (deep learning) ne anlama gelir?",
+          "secenekler": [
+            "A) Kurallar listesi üzerinden programlanmış karar ağacı",
+            "B) Çok katmanlı yapay sinir ağları kullanarak büyük veriden örüntü öğrenme yöntemi",
+            "C) Verileri manuel olarak sınıflandırma yöntemi",
+            "D) Uzman sistemlerin kullanıldığı eski nesil yapay zeka",
+            "E) Sosyal medya analizinde kullanılan özel algoritma"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Derin öğrenme (deep learning); insan beyninden ilham alınan çok katmanlı yapay sinir ağlarını kullanarak büyük veri kümelerinden otomatik özellik ve örüntü öğrenen makine öğrenimi yaklaşımıdır."
+        },
+        {
+          "soru": "Türkiye'nin siber güvenlik alanındaki koordinasyonunu sağlayan kurum hangisidir?",
+          "secenekler": [
+            "A) TÜBİTAK BİLGEM",
+            "B) BTK (Bilgi Teknolojileri ve İletişim Kurumu)",
+            "C) USOM (Ulusal Siber Olaylara Müdahale Merkezi)",
+            "D) Bilgi Güvenliği alanında B ve C birlikte çalışır.",
+            "E) Cumhurbaşkanlığı Dijital Dönüşüm Ofisi"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Türkiye'de siber güvenlik koordinasyonu; BTK bünyesindeki USOM (Ulusal Siber Olaylara Müdahale Merkezi) ve sektörel SOME'ler (Siber Olaylara Müdahale Ekipleri) aracılığıyla yürütülmektedir."
+        },
+        {
+          "soru": "Kuantum bilgisayarların klasik bilgisayarlardan temel farkı nedir?",
+          "secenekler": [
+            "A) Daha küçük ve taşınabilirdir.",
+            "B) Bit yerine kubit kullanarak süperpozisyon ve dolaşıklık ilkeleriyle çok daha hızlı belirli hesaplamalar yapabilir.",
+            "C) Elektrik yerine güneş enerjisiyle çalışır.",
+            "D) Yalnızca yapay zeka uygulamalarında kullanılır.",
+            "E) İnternete bağlanmadan çalışır."
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Kuantum bilgisayarlar; klasik 0/1 bitler yerine süperpozisyon durumunda bulunabilen 'kubit' kullanır. Bu sayede kriptografi kırma, ilaç keşfi ve optimizasyon gibi belirli problem sınıflarını çok daha hızlı çözebilirler."
+        },
+        {
+          "soru": "Yapay zekanın 'büyük dil modeli' eğitiminde kullanılan 'ince ayar' (fine-tuning) ne anlama gelir?",
+          "secenekler": [
+            "A) Modelin sıfırdan yeniden eğitilmesi",
+            "B) Genel amaçlı önceden eğitilmiş bir modelin belirli bir görev veya alan için ek verilerle özelleştirilmesi",
+            "C) Modelin hızlandırılması için yazılım optimizasyonu",
+            "D) Kullanıcı arayüzünün tasarlanması",
+            "E) Modelin internetten veri toplaması"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İnce ayar (fine-tuning); genel amaçlı bir büyük dil modelinin (örn. GPT) belirli bir alan veya görev için daha az ek veri ve hesaplama gücüyle özelleştirilmesi sürecidir."
         }
       ]
     }
