@@ -144,6 +144,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "(1023)₆ = 1×6³ + 0×6² + 2×6¹ + 3×6⁰ = 1×216 + 0×36 + 2×6 + 3×1 = 216+0+12+3 = 231."
+        },
+        {
+          "soru": "72 ve 48'in EBOB'u kaçtır?",
+          "secenekler": [
+            "A) 8",
+            "B) 12",
+            "C) 24",
+            "D) 36",
+            "E) 48"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "72 = 2³×3², 48 = 2⁴×3. EBOB ortak çarpanların en küçük kuvvetleridir: 2³×3 = 24."
+        },
+        {
+          "soru": "12 ve 18'in EKOK'u kaçtır?",
+          "secenekler": [
+            "A) 6",
+            "B) 24",
+            "C) 36",
+            "D) 72",
+            "E) 216"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "12 = 2²×3, 18 = 2×3². EKOK tüm çarpanların en büyük kuvvetleridir: 2²×3² = 4×9 = 36."
+        },
+        {
+          "soru": "45 ve 60'ın EBOB'u kaçtır?",
+          "secenekler": [
+            "A) 5",
+            "B) 10",
+            "C) 15",
+            "D) 30",
+            "E) 45"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "45 = 3²×5, 60 = 2²×3×5. EBOB = 3×5 = 15."
+        },
+        {
+          "soru": "8 ve 12'nin EKOK'u kaçtır?",
+          "secenekler": [
+            "A) 4",
+            "B) 16",
+            "C) 24",
+            "D) 48",
+            "E) 96"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "8 = 2³, 12 = 2²×3. EKOK = 2³×3 = 8×3 = 24."
+        },
+        {
+          "soru": "|-15| + |-7| - |8| işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 0",
+            "B) 6",
+            "C) 14",
+            "D) 22",
+            "E) 30"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Mutlak değer her zaman pozitiftir: 15 + 7 - 8 = 14."
+        },
+        {
+          "soru": "(-8) × (-5) + (-3) × 4 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) -28",
+            "B) 0",
+            "C) 14",
+            "D) 28",
+            "E) 52"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "(-8)×(-5) = 40, (-3)×4 = -12. 40 + (-12) = 28."
+        },
+        {
+          "soru": "4567 sayısında yüzler basamağındaki rakam kaçtır?",
+          "secenekler": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7",
+            "E) 3"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "4567 = 4×1000 + 5×100 + 6×10 + 7×1. Yüzler basamağındaki rakam 5'tir."
+        },
+        {
+          "soru": "3 basamaklı en büyük sayı ile 2 basamaklı en küçük sayının farkı kaçtır?",
+          "secenekler": [
+            "A) 889",
+            "B) 890",
+            "C) 909",
+            "D) 989",
+            "E) 999"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "3 basamaklı en büyük sayı 999, 2 basamaklı en küçük sayı 10'dur. 999 - 10 = 989."
+        },
+        {
+          "soru": "(-3)³ + (-2)⁴ işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) -43",
+            "B) -27",
+            "C) -11",
+            "D) 11",
+            "E) 43"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "(-3)³ = -27 ve (-2)⁴ = +16. -27 + 16 = -11."
+        },
+        {
+          "soru": "36 ve 54'ün EBOB'u kaçtır?",
+          "secenekler": [
+            "A) 6",
+            "B) 9",
+            "C) 12",
+            "D) 18",
+            "E) 36"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "36 = 2²×3², 54 = 2×3³. EBOB = 2×3² = 2×9 = 18."
+        },
+        {
+          "soru": "15 ve 25'in EKOK'u kaçtır?",
+          "secenekler": [
+            "A) 5",
+            "B) 25",
+            "C) 50",
+            "D) 75",
+            "E) 375"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "15 = 3×5, 25 = 5². EKOK = 3×5² = 3×25 = 75."
+        },
+        {
+          "soru": "2 × (3 + 4) - 5 × 2 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) -6",
+            "B) 0",
+            "C) 4",
+            "D) 8",
+            "E) 14"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Parantez önce yapılır: 2×7 - 5×2 = 14 - 10 = 4."
+        },
+        {
+          "soru": "3 + 6 ÷ 2 - 1 × 4 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) -1",
+            "B) 0",
+            "C) 1",
+            "D) 2",
+            "E) 4"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "İşlem önceliği: çarpma/bölme önce. 3 + (6÷2) - (1×4) = 3 + 3 - 4 = 2."
+        },
+        {
+          "soru": "(-6) + (-9) - (-4) × 2 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) -23",
+            "B) -7",
+            "C) 0",
+            "D) 7",
+            "E) 23"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Önce çarpma: (-4)×2 = -8. Sonra: -6 + (-9) - (-8) = -6 - 9 + 8 = -7."
+        },
+        {
+          "soru": "Beş basamaklı en küçük çift sayı kaçtır?",
+          "secenekler": [
+            "A) 10000",
+            "B) 10001",
+            "C) 10002",
+            "D) 10010",
+            "E) 20000"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "5 basamaklı en küçük sayı 10000'dir. Son rakamı 0 olduğundan çifttir. Doğru cevap 10000'dir."
+        },
+        {
+          "soru": "96 ve 72'nin EBOB'u kaçtır?",
+          "secenekler": [
+            "A) 8",
+            "B) 12",
+            "C) 16",
+            "D) 24",
+            "E) 48"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "96 = 2⁵×3, 72 = 2³×3². EBOB = 2³×3 = 8×3 = 24."
+        },
+        {
+          "soru": "20, 30 ve 45'in EKOK'u kaçtır?",
+          "secenekler": [
+            "A) 60",
+            "B) 90",
+            "C) 120",
+            "D) 180",
+            "E) 360"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "20 = 2²×5, 30 = 2×3×5, 45 = 3²×5. EKOK = 2²×3²×5 = 4×9×5 = 180."
+        },
+        {
+          "soru": "|-12 + 5| - |3 - 8| işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) -2",
+            "B) 0",
+            "C) 2",
+            "D) 12",
+            "E) 22"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "|-12+5| = |-7| = 7. |3-8| = |-5| = 5. 7 - 5 = 2."
+        },
+        {
+          "soru": "Ardışık üç tam sayının toplamı 48 ise en büyük sayı kaçtır?",
+          "secenekler": [
+            "A) 14",
+            "B) 15",
+            "C) 16",
+            "D) 17",
+            "E) 18"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "n + (n+1) + (n+2) = 48 → 3n + 3 = 48 → n = 15. En büyük sayı n+2 = 17."
+        },
+        {
+          "soru": "30 ve 45'in EBOB'u kaçtır?",
+          "secenekler": [
+            "A) 3",
+            "B) 5",
+            "C) 9",
+            "D) 15",
+            "E) 30"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "30 = 2×3×5, 45 = 3²×5. EBOB = 3×5 = 15."
         }
       ]
     },
@@ -288,6 +528,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "84 = 2²×3×7, 126 = 2×3²×7. EBOB = ortak çarpanların küçük üssü: 2×3×7 = 42. EKOK = tüm çarpanların büyük üssü: 2²×3²×7 = 252. Toplam: 42 + 252 = 294."
+        },
+        {
+          "soru": "Hangi sayı 9'a tam bölünür?",
+          "secenekler": [
+            "A) 235",
+            "B) 341",
+            "C) 432",
+            "D) 326",
+            "E) 244"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "9'a bölünebilme kuralı: rakamlar toplamı 9'un katı olmalı. 4+3+2 = 9. Cevap 432."
+        },
+        {
+          "soru": "1356 sayısı hangi sayıya tam bölünmez?",
+          "secenekler": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 6",
+            "E) 9"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "1356: çift (2'ye ✓), rakam toplamı=15 (3'e ✓), son iki basamak 56÷4=14 (4'e ✓), 2 ve 3'e bölünür (6'ya ✓). Rakam toplamı 15, 9'un katı değil, 9'a bölünmez."
+        },
+        {
+          "soru": "Hangi sayı 11'e tam bölünür?",
+          "secenekler": [
+            "A) 100",
+            "B) 130",
+            "C) 151",
+            "D) 132",
+            "E) 141"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "11 kuralı: tek ve çift basamakların farkı 0 veya 11 olmalı. 132: 1-3+2 = 0. Cevap 132."
+        },
+        {
+          "soru": "A348 sayısında A yerine hangi rakam gelirse sayı 9'a tam bölünür?",
+          "secenekler": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) 3",
+            "E) 4"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Rakamlar toplamı: A+3+4+8 = A+15. 9'a bölünebilmesi için A+15 = 18 → A = 3."
+        },
+        {
+          "soru": "Hangi sayı 8'e tam bölünür?",
+          "secenekler": [
+            "A) 124",
+            "B) 212",
+            "C) 316",
+            "D) 408",
+            "E) 514"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "8 kuralı: son üç basamak 8'e bölünmeli. 408 ÷ 8 = 51. Cevap 408."
+        },
+        {
+          "soru": "Hangi sayı 6'ya tam bölünür?",
+          "secenekler": [
+            "A) 214",
+            "B) 315",
+            "C) 312",
+            "D) 411",
+            "E) 513"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "6'ya bölünebilmek için hem 2'ye hem 3'e bölünmeli. 312: çift (2'ye ✓), 3+1+2=6 (3'e ✓). Cevap 312."
+        },
+        {
+          "soru": "345A sayısında A yerine hangi çift rakam gelirse sayı 9'a tam bölünür?",
+          "secenekler": [
+            "A) 0",
+            "B) 2",
+            "C) 4",
+            "D) 6",
+            "E) 8"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Rakamlar toplamı: 3+4+5+A = 12+A. 9'a bölünmesi için 12+A = 18 → A = 6 (çift ✓)."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi hem 4'e hem de 5'e bölünmez?",
+          "secenekler": [
+            "A) 120",
+            "B) 165",
+            "C) 200",
+            "D) 220",
+            "E) 140"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "165 sona 5 ile biter (5'e bölünür ✓), ancak son iki basamak 65÷4 = 16,25 tam bölünmez, yani 4'e bölünmez."
+        },
+        {
+          "soru": "Bir sayının 4'e bölünebilmesi için hangi kural geçerlidir?",
+          "secenekler": [
+            "A) Sayı çift olmalıdır",
+            "B) Son iki basamağı 4'e bölünmelidir",
+            "C) Rakamlar toplamı 4'e bölünmelidir",
+            "D) Son basamak 4 ya da 8 olmalıdır",
+            "E) Son basamak çift olmalıdır"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "4'e bölünebilme kuralı: son iki basamaktan oluşan sayı 4'e tam bölünmeli. Örn: 312'de 12÷4=3 ✓."
+        },
+        {
+          "soru": "Hangi sayı 3'e bölünür fakat 9'a bölünmez?",
+          "secenekler": [
+            "A) 126",
+            "B) 135",
+            "C) 144",
+            "D) 162",
+            "E) 123"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "123: 1+2+3=6, 6 hem 3'ün katı (3'e bölünür ✓) hem de 9'un katı değil (9'a bölünmez ✓). Diğerlerinin rakam toplamı 9'dur."
+        },
+        {
+          "soru": "Hangi sayı 7'ye tam bölünür?",
+          "secenekler": [
+            "A) 48",
+            "B) 57",
+            "C) 63",
+            "D) 71",
+            "E) 82"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "63 ÷ 7 = 9. Diğerleri: 48÷7≈6,86; 57÷7≈8,14; 71÷7≈10,14; 82÷7≈11,71."
+        },
+        {
+          "soru": "Hangisi 30'a tam bölünür?",
+          "secenekler": [
+            "A) 135",
+            "B) 145",
+            "C) 150",
+            "D) 155",
+            "E) 185"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "30'a bölünmek için 2'ye (çift), 3'e (rakam top.) ve 5'e (0 veya 5 ile bitmeli) bölünmeli. 150: çift, 1+5+0=6 (3'e ✓), sona 0 (5'e ✓). 150÷30=5."
+        },
+        {
+          "soru": "3456 sayısı aşağıdakilerden hangisine tam bölünür?",
+          "secenekler": [
+            "A) 7",
+            "B) 8",
+            "C) 11",
+            "D) 13",
+            "E) 17"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Son üç basamak 456÷8 = 57. Dolayısıyla 3456÷8 = 432. Cevap 8."
+        },
+        {
+          "soru": "Hangi sayı 2'ye tam bölünür?",
+          "secenekler": [
+            "A) 231",
+            "B) 345",
+            "C) 457",
+            "D) 568",
+            "E) 673"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "2'ye bölünebilme kuralı: son basamak çift (0,2,4,6,8) olmalı. 568'in son basamağı 8'dir. 568÷2=284."
+        },
+        {
+          "soru": "Hangisi hem 4'e hem de 9'a tam bölünür (yani 36'ya bölünür)?",
+          "secenekler": [
+            "A) 144",
+            "B) 234",
+            "C) 316",
+            "D) 412",
+            "E) 514"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "144: 1+4+4=9 (9'a ✓), son iki basamak 44÷4=11 (4'e ✓). 144÷36 = 4."
+        },
+        {
+          "soru": "Hangi sayı 5'e tam bölünür?",
+          "secenekler": [
+            "A) 231",
+            "B) 342",
+            "C) 453",
+            "D) 564",
+            "E) 675"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "5'e bölünebilme: son basamak 0 veya 5 olmalı. 675'in son basamağı 5'tir. 675÷5=135."
+        },
+        {
+          "soru": "Hangi sayı 2'ye bölünür fakat 4'e bölünmez?",
+          "secenekler": [
+            "A) 124",
+            "B) 132",
+            "C) 146",
+            "D) 148",
+            "E) 128"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "146: çift (2'ye ✓). Son iki basamak 46÷4 = 11,5 (4'e bölünmez ✓). Diğerleri 4'e de bölünür."
+        },
+        {
+          "soru": "AB35 biçimindeki bir sayının 5'e tam bölünebilmesi için hangi koşul yeterlidir?",
+          "secenekler": [
+            "A) A rakamı çift olmalı",
+            "B) B rakamı tek olmalı",
+            "C) A+B toplamı 5'e bölünmeli",
+            "D) Son basamak 5 olduğu için sayı her zaman 5'e bölünür",
+            "E) Birler ve yüzler basamakları toplamı 5'e bölünmeli"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "5'e bölünebilme kuralı: son basamak 0 veya 5 olmalıdır. Son basamak zaten 5 olduğundan A ve B'den bağımsız olarak sayı 5'e bölünür."
+        },
+        {
+          "soru": "Hangi sayı hem 2'ye hem de 5'e tam bölünür?",
+          "secenekler": [
+            "A) 125",
+            "B) 135",
+            "C) 145",
+            "D) 150",
+            "E) 155"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Hem 2 hem 5'e bölünmek için son basamak 0 olmalıdır. Seçenekler içinde yalnızca 150'nin son basamağı 0'dır."
+        },
+        {
+          "soru": "1 ile 100 arasında hem 4'e hem de 6'ya bölünebilen kaç sayı vardır?",
+          "secenekler": [
+            "A) 6",
+            "B) 7",
+            "C) 8",
+            "D) 9",
+            "E) 10"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "EKOK(4,6)=12. 1-100 arasında 12'nin katları: 12,24,36,48,60,72,84,96 → toplam 8 sayı."
         }
       ]
     },
@@ -433,6 +913,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "Kesirleri ondalığa çevirelim: 3/5=0,6 ; 2/3≈0,667 ; 7/10=0,7. Sıralama: 0,6 < 0,667 < 0,7 olduğundan en büyük kesir 7/10'dur."
+        },
+        {
+          "soru": "1/2 + 1/3 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 1/5",
+            "B) 2/5",
+            "C) 1/6",
+            "D) 5/6",
+            "E) 2/6"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Ortak payda 6: 3/6 + 2/6 = 5/6."
+        },
+        {
+          "soru": "3/4 - 1/6 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 1/2",
+            "B) 2/3",
+            "C) 7/12",
+            "D) 8/12",
+            "E) 1/12"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ortak payda 12: 9/12 - 2/12 = 7/12."
+        },
+        {
+          "soru": "2/3 × 3/4 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 1/3",
+            "B) 1/2",
+            "C) 2/7",
+            "D) 5/7",
+            "E) 6/7"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "(2×3)/(3×4) = 6/12 = 1/2. Sadeleştirerek de: (2/3)×(3/4) = 2/4 = 1/2."
+        },
+        {
+          "soru": "5/6 ÷ 5/3 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 1/4",
+            "B) 1/3",
+            "C) 1/2",
+            "D) 2/3",
+            "E) 25/18"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Bölmede ters çevir ve çarp: 5/6 × 3/5 = 15/30 = 1/2."
+        },
+        {
+          "soru": "2 + 1/3 + 1 + 2/3 işleminin sonucu kaçtır? (2 tam 1/3 + 1 tam 2/3)",
+          "secenekler": [
+            "A) 3",
+            "B) 3 tam 1/2",
+            "C) 4",
+            "D) 4 tam 1/2",
+            "E) 5"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Karışık kesirleri düzensiz kesre çevir: 7/3 + 5/3 = 12/3 = 4."
+        },
+        {
+          "soru": "3 tam 1/4 - 1 tam 3/4 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 1",
+            "B) 1 tam 1/2",
+            "C) 2",
+            "D) 2 tam 1/4",
+            "E) 2 tam 1/2"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "13/4 - 7/4 = 6/4 = 3/2 = 1 tam 1/2."
+        },
+        {
+          "soru": "0,25 + 0,75 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 0,5",
+            "B) 0,75",
+            "C) 1",
+            "D) 1,25",
+            "E) 1,5"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "0,25 + 0,75 = 1,00 = 1."
+        },
+        {
+          "soru": "0,6 × 0,5 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 0,03",
+            "B) 0,3",
+            "C) 3",
+            "D) 0,11",
+            "E) 0,06"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "6×5 = 30. İki ondalık basamak toplamı: 0,30 = 0,3."
+        },
+        {
+          "soru": "200'ün %25'i kaçtır?",
+          "secenekler": [
+            "A) 25",
+            "B) 40",
+            "C) 50",
+            "D) 75",
+            "E) 80"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "200 × (25/100) = 200 × 0,25 = 50."
+        },
+        {
+          "soru": "Bir sayının %40'ı 60 ise sayı kaçtır?",
+          "secenekler": [
+            "A) 24",
+            "B) 100",
+            "C) 120",
+            "D) 150",
+            "E) 240"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "x × 40/100 = 60 → x = 60 × 100/40 = 150."
+        },
+        {
+          "soru": "1/3, 1/4, 1/5 kesirlerini küçükten büyüğe sıralayınız.",
+          "secenekler": [
+            "A) 1/3 < 1/4 < 1/5",
+            "B) 1/4 < 1/3 < 1/5",
+            "C) 1/5 < 1/4 < 1/3",
+            "D) 1/4 < 1/5 < 1/3",
+            "E) 1/5 < 1/3 < 1/4"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Paydaları büyük olan kesir daha küçüktür: 1/5 = 0,20 < 1/4 = 0,25 < 1/3 ≈ 0,33."
+        },
+        {
+          "soru": "3/5 kesri ondalık olarak kaçtır?",
+          "secenekler": [
+            "A) 0,35",
+            "B) 0,53",
+            "C) 0,6",
+            "D) 0,65",
+            "E) 0,8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "3 ÷ 5 = 0,6."
+        },
+        {
+          "soru": "Bir malın fiyatı 200 TL'den %15 indirim yapıldı. Yeni fiyat kaç TL'dir?",
+          "secenekler": [
+            "A) 150",
+            "B) 160",
+            "C) 170",
+            "D) 180",
+            "E) 185"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İndirim = 200×15/100 = 30 TL. Yeni fiyat = 200 - 30 = 170 TL."
+        },
+        {
+          "soru": "2/3 + 3/5 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 5/8",
+            "B) 1/15",
+            "C) 19/15",
+            "D) 19/8",
+            "E) 1/2"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ortak payda 15: 10/15 + 9/15 = 19/15."
+        },
+        {
+          "soru": "40 öğrencinin %30'u kız ise kaç kız öğrenci vardır?",
+          "secenekler": [
+            "A) 8",
+            "B) 10",
+            "C) 12",
+            "D) 14",
+            "E) 16"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "40 × 30/100 = 40 × 0,30 = 12."
+        },
+        {
+          "soru": "7/8 ÷ 7/4 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 1/4",
+            "B) 1/3",
+            "C) 1/2",
+            "D) 2/3",
+            "E) 7/32"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "7/8 × 4/7 = 28/56 = 1/2."
+        },
+        {
+          "soru": "0,125 hangi kesre eşittir?",
+          "secenekler": [
+            "A) 1/4",
+            "B) 1/5",
+            "C) 1/8",
+            "D) 1/6",
+            "E) 1/10"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "0,125 = 125/1000 = 1/8."
+        },
+        {
+          "soru": "1 tam 1/2 × 2 tam 2/3 işleminin sonucu kaçtır?",
+          "secenekler": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5",
+            "E) 6"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "3/2 × 8/3 = 24/6 = 4."
+        },
+        {
+          "soru": "Bir sayının %20'si 30 ise sayının %50'si kaçtır?",
+          "secenekler": [
+            "A) 45",
+            "B) 60",
+            "C) 75",
+            "D) 90",
+            "E) 120"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "%20'si 30 → sayı = 30×100/20 = 150. %50'si = 150×50/100 = 75."
+        },
+        {
+          "soru": "5/6 ile 3/4 arasındaki fark (büyükten küçüğü çıkar) kaçtır?",
+          "secenekler": [
+            "A) 1/6",
+            "B) 1/12",
+            "C) 2/10",
+            "D) 1/24",
+            "E) 2/12"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Ortak payda 12: 10/12 - 9/12 = 1/12."
         }
       ]
     },
@@ -578,6 +1298,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "KDV dahil fiyat = KDV hariç fiyat × (1 + KDV oranı). KDV hariç fiyat = 2360 / 1,18 = 2000 TL."
+        },
+        {
+          "soru": "Ahmet'in yaşı Mehmet'in yaşının 2 katıdır. İkisinin yaşları toplamı 24 ise Ahmet kaç yaşındadır?",
+          "secenekler": [
+            "A) 8",
+            "B) 12",
+            "C) 14",
+            "D) 16",
+            "E) 18"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "A = 2M ve A+M = 24 → 3M = 24 → M = 8, A = 16."
+        },
+        {
+          "soru": "Ardışık üç çift sayının toplamı 42 ise en küçük sayı kaçtır?",
+          "secenekler": [
+            "A) 10",
+            "B) 12",
+            "C) 14",
+            "D) 16",
+            "E) 18"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "n + (n+2) + (n+4) = 42 → 3n + 6 = 42 → n = 12."
+        },
+        {
+          "soru": "Ardışık dört tam sayının toplamı 54 ise en büyük sayı kaçtır?",
+          "secenekler": [
+            "A) 12",
+            "B) 13",
+            "C) 14",
+            "D) 15",
+            "E) 16"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "n+(n+1)+(n+2)+(n+3) = 54 → 4n+6 = 54 → n = 12. En büyük: n+3 = 15."
+        },
+        {
+          "soru": "İki basamaklı bir sayının rakamları toplamı 9 ve onlar basamağı birler basamağından 3 fazladır. Sayı kaçtır?",
+          "secenekler": [
+            "A) 18",
+            "B) 36",
+            "C) 45",
+            "D) 63",
+            "E) 72"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "a + b = 9 ve a = b+3 → 2b+3 = 9 → b = 3, a = 6. Sayı = 63."
+        },
+        {
+          "soru": "Annenin yaşı çocuğunun yaşının 4 katıdır. 5 yıl sonra yaşları toplamı 55 olacaktır. Annenin şimdiki yaşı kaçtır?",
+          "secenekler": [
+            "A) 28",
+            "B) 32",
+            "C) 36",
+            "D) 40",
+            "E) 44"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "A = 4C. (A+5)+(C+5) = 55 → A+C = 45 → 5C = 45 → C = 9, A = 36."
+        },
+        {
+          "soru": "1'den 50'ye kadar (1 ve 50 dahil) ardışık doğal sayıların toplamı kaçtır?",
+          "secenekler": [
+            "A) 1225",
+            "B) 1250",
+            "C) 1275",
+            "D) 1300",
+            "E) 1325"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Gauss formülü: n(n+1)/2 = 50×51/2 = 1275."
+        },
+        {
+          "soru": "Ardışık üç tek sayının toplamı 57 ise ortadaki sayı kaçtır?",
+          "secenekler": [
+            "A) 17",
+            "B) 19",
+            "C) 21",
+            "D) 23",
+            "E) 25"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "n+(n+2)+(n+4) = 57 → 3n+6 = 57 → n = 17. Orta sayı: n+2 = 19."
+        },
+        {
+          "soru": "Bir sayının iki katından 3 çıkarılırsa 15 olur. Sayı kaçtır?",
+          "secenekler": [
+            "A) 6",
+            "B) 7",
+            "C) 8",
+            "D) 9",
+            "E) 10"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "2x - 3 = 15 → 2x = 18 → x = 9."
+        },
+        {
+          "soru": "İki sayının toplamı 70, farkı 10 ise büyük sayı kaçtır?",
+          "secenekler": [
+            "A) 30",
+            "B) 35",
+            "C) 40",
+            "D) 45",
+            "E) 50"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "a+b = 70 ve a-b = 10 denklemlerini topla: 2a = 80 → a = 40."
+        },
+        {
+          "soru": "A kümesinde 15, B kümesinde 20 eleman var. İki kümenin kesişiminde 8 eleman varsa birleşimde kaç eleman vardır?",
+          "secenekler": [
+            "A) 22",
+            "B) 25",
+            "C) 27",
+            "D) 30",
+            "E) 35"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "|A∪B| = |A| + |B| - |A∩B| = 15 + 20 - 8 = 27."
+        },
+        {
+          "soru": "İki basamaklı bir sayının onlar basamağı birler basamağının 3 katıdır. Rakamları toplamı 12 ise sayı kaçtır?",
+          "secenekler": [
+            "A) 39",
+            "B) 63",
+            "C) 69",
+            "D) 93",
+            "E) 96"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "a = 3b ve a+b = 12 → 4b = 12 → b = 3, a = 9. Sayı = 93."
+        },
+        {
+          "soru": "Babanın yaşı oğlunun yaşından 30 fazladır. 10 yıl sonra babanın yaşı oğlunun yaşının 2 katı olacaktır. Oğlun şimdiki yaşı kaçtır?",
+          "secenekler": [
+            "A) 10",
+            "B) 15",
+            "C) 20",
+            "D) 25",
+            "E) 30"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "B = O+30. B+10 = 2(O+10) → O+40 = 2O+20 → O = 20."
+        },
+        {
+          "soru": "1'den 100'e kadar (1 ve 99 dahil) yalnızca tek sayıların toplamı kaçtır?",
+          "secenekler": [
+            "A) 2450",
+            "B) 2475",
+            "C) 2500",
+            "D) 2525",
+            "E) 2550"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "1'den 99'a kadar 50 adet tek sayı var. Toplam = 50² = 2500."
+        },
+        {
+          "soru": "Ardışık üç çift sayının toplamı 66 ise en büyük sayı kaçtır?",
+          "secenekler": [
+            "A) 20",
+            "B) 22",
+            "C) 24",
+            "D) 26",
+            "E) 28"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "n+(n+2)+(n+4) = 66 → 3n+6 = 66 → n = 20. En büyük: n+4 = 24."
+        },
+        {
+          "soru": "120 kişilik bir grupta 70 kişi Türkçe, 60 kişi Matematik biliyor. Herkes en az birini biliyorsa her iki konuyu da bilen kaç kişidir?",
+          "secenekler": [
+            "A) 5",
+            "B) 8",
+            "C) 10",
+            "D) 12",
+            "E) 15"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "|T∪M| = |T|+|M| - |T∩M| → 120 = 70+60-x → x = 10."
+        },
+        {
+          "soru": "Bir sayının üçte biri 12'ye eşittir. Sayının yarısı kaçtır?",
+          "secenekler": [
+            "A) 12",
+            "B) 15",
+            "C) 18",
+            "D) 21",
+            "E) 24"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "x/3 = 12 → x = 36. x/2 = 18."
+        },
+        {
+          "soru": "İki ardışık sayının çarpımı 72 ise bu sayıların toplamı kaçtır?",
+          "secenekler": [
+            "A) 15",
+            "B) 16",
+            "C) 17",
+            "D) 18",
+            "E) 19"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "n×(n+1) = 72. Deneyerek: 8×9 = 72. Toplam = 8+9 = 17."
+        },
+        {
+          "soru": "Bir sayıdan 15 çıkarılıp 3'e bölünürse 7 olur. Sayı kaçtır?",
+          "secenekler": [
+            "A) 21",
+            "B) 26",
+            "C) 31",
+            "D) 36",
+            "E) 41"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "(x-15)/3 = 7 → x-15 = 21 → x = 36."
+        },
+        {
+          "soru": "30 öğrencinin 18'i matematik, 15'i fen kulübüne üye. Hiçbir kulübe üye olmayan öğrenci yoksa her iki kulübe de üye olan öğrenci sayısı kaçtır?",
+          "secenekler": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 5",
+            "E) 7"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "18+15-x = 30 → x = 3."
+        },
+        {
+          "soru": "Rakamları A ve B olan iki basamaklı sayı ile rakamları B ve A olan sayının toplamı 121'dir. A+B kaçtır?",
+          "secenekler": [
+            "A) 9",
+            "B) 10",
+            "C) 11",
+            "D) 12",
+            "E) 13"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "(10A+B)+(10B+A) = 11A+11B = 11(A+B) = 121 → A+B = 11."
         }
       ]
     },
@@ -723,6 +1683,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "1. musluğun hızı 1/6'dır. İlk 2 saatte yaptığı: 2×(1/6)=1/3. Kalan: 1−1/3=2/3. Son 1 saatte iki musluk birlikte bu 2/3'lük kısmı bitiriyor: (1/6 + 1/x)×1 = 2/3 → 1/x = 2/3 − 1/6 = 4/6−1/6=3/6=1/2 → x=2. İkinci musluk tek başına havuzu 2 saatte doldurur."
+        },
+        {
+          "soru": "Bir araç 120 km'lik yolu 2 saatte alıyor. Hızı kaç km/saat'tir?",
+          "secenekler": [
+            "A) 40",
+            "B) 50",
+            "C) 60",
+            "D) 70",
+            "E) 80"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Hız = Yol ÷ Zaman = 120 ÷ 2 = 60 km/saat."
+        },
+        {
+          "soru": "90 km/saat hızla giden araç 3 saatte kaç km yol alır?",
+          "secenekler": [
+            "A) 180",
+            "B) 210",
+            "C) 240",
+            "D) 270",
+            "E) 300"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Yol = Hız × Zaman = 90 × 3 = 270 km."
+        },
+        {
+          "soru": "180 km'lik yolu 60 km/saat hızla giden araç kaç saatte varır?",
+          "secenekler": [
+            "A) 2",
+            "B) 2,5",
+            "C) 3",
+            "D) 3,5",
+            "E) 4"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Zaman = Yol ÷ Hız = 180 ÷ 60 = 3 saat."
+        },
+        {
+          "soru": "İki araç karşılıklı hareket ediyor. Birinin hızı 60 km/saat, diğerinin 40 km/saat. Aralarındaki mesafe 300 km ise kaç saatte karşılaşırlar?",
+          "secenekler": [
+            "A) 2",
+            "B) 2,5",
+            "C) 3",
+            "D) 3,5",
+            "E) 4"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Karşılaşmada birleşik hız: 60+40 = 100 km/saat. Zaman = 300÷100 = 3 saat."
+        },
+        {
+          "soru": "80 km/saat hızla giden araç, önündeki 60 km/saat hızla giden aracı 2 saat sonra yakalar. Aralarındaki başlangıç mesafesi kaç km'dir?",
+          "secenekler": [
+            "A) 20",
+            "B) 30",
+            "C) 40",
+            "D) 50",
+            "E) 60"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Bağıl hız = 80-60 = 20 km/saat. Mesafe = 20 × 2 = 40 km."
+        },
+        {
+          "soru": "120 km'lik yolun gidişi 4 saatte, dönüşü 6 saatte yapılıyor. Tüm yolculuğun ortalama hızı kaç km/saattir?",
+          "secenekler": [
+            "A) 20",
+            "B) 24",
+            "C) 25",
+            "D) 28",
+            "E) 30"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Toplam yol = 240 km, toplam süre = 10 saat. Ortalama hız = 240÷10 = 24 km/saat."
+        },
+        {
+          "soru": "Bir havuzu A borusu 6 saatte, B borusu 12 saatte dolduruyor. İkisi birlikte kaç saatte doldurur?",
+          "secenekler": [
+            "A) 3",
+            "B) 4",
+            "C) 5",
+            "D) 6",
+            "E) 9"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4. Birlikte 4 saatte doldurur."
+        },
+        {
+          "soru": "Bir işi A tek başına 10 günde, B 15 günde yapıyor. İkisi birlikte kaç günde yapar?",
+          "secenekler": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7",
+            "E) 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6. Birlikte 6 günde tamamlar."
+        },
+        {
+          "soru": "A bir işi 12 günde, B aynı işi 8 günde yapıyor. İkisi birlikte kaç günde yapar?",
+          "secenekler": [
+            "A) 4",
+            "B) 4,8",
+            "C) 5",
+            "D) 5,5",
+            "E) 6"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "1/12 + 1/8 = 2/24 + 3/24 = 5/24. Zaman = 24/5 = 4,8 gün."
+        },
+        {
+          "soru": "240 km/saat hızla uçan uçak 3 saatte kaç km yol alır?",
+          "secenekler": [
+            "A) 480",
+            "B) 600",
+            "C) 660",
+            "D) 720",
+            "E) 800"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Yol = 240 × 3 = 720 km."
+        },
+        {
+          "soru": "15 km/saat hızla giden bisikletçi 45 km'lik yolu kaç saatte alır?",
+          "secenekler": [
+            "A) 2",
+            "B) 2,5",
+            "C) 3",
+            "D) 3,5",
+            "E) 4"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Zaman = 45 ÷ 15 = 3 saat."
+        },
+        {
+          "soru": "İki araç aynı noktadan aynı yönde hareket ediyor. Birinin hızı 80 km/saat, diğerinin 60 km/saat. 5 saat sonra aralarındaki mesafe kaç km'dir?",
+          "secenekler": [
+            "A) 50",
+            "B) 75",
+            "C) 100",
+            "D) 125",
+            "E) 150"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Bağıl hız = 80-60 = 20 km/saat. 5 saatte uzaklık = 20×5 = 100 km."
+        },
+        {
+          "soru": "Bir havuzu A borusu 8 saatte dolduruyor, B borusu 24 saatte boşaltıyor. İkisi aynı anda çalışırsa havuz kaç saatte dolar?",
+          "secenekler": [
+            "A) 8",
+            "B) 10",
+            "C) 12",
+            "D) 16",
+            "E) 24"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Net dolum hızı = 1/8 - 1/24 = 3/24 - 1/24 = 2/24 = 1/12. Zaman = 12 saat."
+        },
+        {
+          "soru": "3 işçi bir işi 12 günde yapıyor. Aynı işi 4 işçi kaç günde yapar?",
+          "secenekler": [
+            "A) 7",
+            "B) 8",
+            "C) 9",
+            "D) 10",
+            "E) 11"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İşçi × gün = sabit: 3×12 = 4×x → x = 36÷4 = 9 gün."
+        },
+        {
+          "soru": "A şehrinden B'ye saat 08:00'de çıkan araç 90 km/saat, B'den A'ya çıkan araç 60 km/saat hızla geliyor. İki şehir arası 300 km ise saat kaçta karşılaşırlar?",
+          "secenekler": [
+            "A) 09:30",
+            "B) 10:00",
+            "C) 10:30",
+            "D) 11:00",
+            "E) 11:30"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Birleşik hız = 90+60 = 150 km/saat. Süre = 300÷150 = 2 saat. 08:00 + 2 saat = 10:00."
+        },
+        {
+          "soru": "Bir işi A 6 günde, B 12 günde yapıyor. İkisi 2 gün birlikte çalıştıktan sonra A ayrılıyor. Kalan işi B kaç günde tamamlar?",
+          "secenekler": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7",
+            "E) 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "2 günde birlikte: 2×(1/6+1/12) = 2×(3/12) = 1/2. Kalan iş: 1/2. B için: (1/2)÷(1/12) = 6 gün."
+        },
+        {
+          "soru": "400 km'lik yolun ilk 200 km'si 100 km/saat, kalan 200 km'si 50 km/saat hızla gidiliyor. Toplam kaç saatte tamamlanır?",
+          "secenekler": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7",
+            "E) 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İlk bölüm: 200÷100 = 2 saat. İkinci bölüm: 200÷50 = 4 saat. Toplam = 2+4 = 6 saat."
+        },
+        {
+          "soru": "A borusu havuzu 4 saatte, B borusu 6 saatte dolduruyor. İkisi aynı anda açılırsa 1 saatte havuzun ne kadarı dolar?",
+          "secenekler": [
+            "A) 1/4",
+            "B) 5/12",
+            "C) 1/2",
+            "D) 7/12",
+            "E) 2/3"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "1 saatte: 1/4 + 1/6 = 3/12 + 2/12 = 5/12."
+        },
+        {
+          "soru": "5 işçi bir yolu 20 günde bitirir. Aynı yolu 10 günde bitirmek için kaç işçi gerekir?",
+          "secenekler": [
+            "A) 8",
+            "B) 10",
+            "C) 12",
+            "D) 14",
+            "E) 15"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "5×20 = x×10 → x = 100÷10 = 10 işçi."
+        },
+        {
+          "soru": "Bir araç 240 km yolu 4 saatte alıyor. Aynı yolu 3 saatte almak için hızını kaç km/saat artırması gerekir?",
+          "secenekler": [
+            "A) 10",
+            "B) 15",
+            "C) 20",
+            "D) 25",
+            "E) 30"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Mevcut hız = 240÷4 = 60 km/saat. Yeni hız = 240÷3 = 80 km/saat. Fark = 80-60 = 20 km/saat."
         }
       ]
     },
@@ -867,6 +2067,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "Kız:Erkek = 3:4, toplam oran parçası 3+4=7. Birim: 35/7=5. Kız öğrenci sayısı (3 birim): 3×5=15."
+        },
+        {
+          "soru": "3:5 oranı kesir olarak nasıl yazılır?",
+          "secenekler": [
+            "A) 3/5",
+            "B) 5/3",
+            "C) 15",
+            "D) 0,35",
+            "E) 5/3"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "a:b oranı a/b kesrine eşittir. 3:5 = 3/5."
+        },
+        {
+          "soru": "a:b = 2:3 ise a/b kaçtır?",
+          "secenekler": [
+            "A) 2/3",
+            "B) 3/2",
+            "C) 2/5",
+            "D) 3/5",
+            "E) 1/2"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "a:b = 2:3 ifadesi a/b = 2/3 anlamına gelir."
+        },
+        {
+          "soru": "20 işçi bir binayı 30 günde yapıyor. Aynı binayı 15 günde yapmak için kaç işçi gerekir?",
+          "secenekler": [
+            "A) 25",
+            "B) 30",
+            "C) 35",
+            "D) 40",
+            "E) 45"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Ters orantı: 20×30 = x×15 → x = 600÷15 = 40 işçi."
+        },
+        {
+          "soru": "5 kalem 15 TL ise 8 kalem kaç TL'dir?",
+          "secenekler": [
+            "A) 18",
+            "B) 20",
+            "C) 22",
+            "D) 24",
+            "E) 26"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Doğru orantı: 5/15 = 8/x → x = 8×15÷5 = 24 TL."
+        },
+        {
+          "soru": "Bir araba 3 saatte 180 km gidiyorsa 5 saatte kaç km gider?",
+          "secenekler": [
+            "A) 240",
+            "B) 270",
+            "C) 300",
+            "D) 330",
+            "E) 360"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Doğru orantı: 3/180 = 5/x → x = 5×180÷3 = 300 km."
+        },
+        {
+          "soru": "a:b:c = 2:3:5 ve toplamları 100 ise a kaçtır?",
+          "secenekler": [
+            "A) 10",
+            "B) 15",
+            "C) 20",
+            "D) 25",
+            "E) 30"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Toplam oran: 2+3+5 = 10. a = 100 × (2/10) = 20."
+        },
+        {
+          "soru": "1200 TL 3:5 oranında bölünse büyük pay kaç TL'dir?",
+          "secenekler": [
+            "A) 450",
+            "B) 500",
+            "C) 600",
+            "D) 700",
+            "E) 750"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Toplam oran: 3+5 = 8. Büyük pay = 1200 × (5/8) = 750 TL."
+        },
+        {
+          "soru": "4 işçi 8 saatte bir işi bitirir. 8 işçi aynı işi kaç saatte bitirir?",
+          "secenekler": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 6",
+            "E) 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Ters orantı: 4×8 = 8×x → x = 32÷8 = 4 saat."
+        },
+        {
+          "soru": "2:3 oranında karıştırılan iki maddenin toplamı 75 kg ise küçük miktar kaç kg'dır?",
+          "secenekler": [
+            "A) 25",
+            "B) 30",
+            "C) 35",
+            "D) 40",
+            "E) 45"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Toplam oran: 2+3 = 5. Küçük miktar = 75 × (2/5) = 30 kg."
+        },
+        {
+          "soru": "6 saatte 90 km giden yürüyüşçü ile 4 saatte 60 km giden başka birinin hızları oranı nedir?",
+          "secenekler": [
+            "A) 1:1",
+            "B) 2:3",
+            "C) 3:2",
+            "D) 3:4",
+            "E) 4:3"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "1. kişi: 90÷6 = 15 km/saat. 2. kişi: 60÷4 = 15 km/saat. Oran = 15:15 = 1:1."
+        },
+        {
+          "soru": "x:y = 3:4 ve y:z = 2:5 ise x:z kaçtır?",
+          "secenekler": [
+            "A) 3:5",
+            "B) 3:8",
+            "C) 3:10",
+            "D) 6:5",
+            "E) 6:20"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "x:y = 3:4 ve y:z = 2:5. y'yi eşitlemek için: x:y = 6:8, y:z = 8:20. x:z = 6:20 = 3:10."
+        },
+        {
+          "soru": "Bir mağaza bir ürünü 150 TL'ye alıp %20 kâr ile sattı. Satış fiyatı kaç TL'dir?",
+          "secenekler": [
+            "A) 160",
+            "B) 165",
+            "C) 170",
+            "D) 175",
+            "E) 180"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Kâr = 150 × 20/100 = 30 TL. Satış fiyatı = 150+30 = 180 TL."
+        },
+        {
+          "soru": "60 kg'lık bir karışımda A:B = 1:2 ise A kaç kg'dır?",
+          "secenekler": [
+            "A) 15",
+            "B) 20",
+            "C) 25",
+            "D) 30",
+            "E) 40"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Toplam oran: 1+2 = 3. A = 60 × (1/3) = 20 kg."
+        },
+        {
+          "soru": "4 günde 120 TL kazanan birisi 7 günde kaç TL kazanır?",
+          "secenekler": [
+            "A) 180",
+            "B) 195",
+            "C) 210",
+            "D) 225",
+            "E) 240"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Doğru orantı: 4/120 = 7/x → x = 7×120÷4 = 210 TL."
+        },
+        {
+          "soru": "3 saatte 45 km giden bisikletçi ile 2 saatte 36 km giden motorsikletin hızları oranı nedir?",
+          "secenekler": [
+            "A) 3:2",
+            "B) 5:6",
+            "C) 5:7",
+            "D) 6:5",
+            "E) 3:4"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Bisiklet: 45÷3 = 15 km/saat. Motor: 36÷2 = 18 km/saat. Oran = 15:18 = 5:6."
+        },
+        {
+          "soru": "a ve b ters orantılı. a = 6 iken b = 8 ise a = 12 iken b kaçtır?",
+          "secenekler": [
+            "A) 2",
+            "B) 4",
+            "C) 6",
+            "D) 8",
+            "E) 16"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Ters orantıda a×b = sabit. 6×8 = 48. 12×b = 48 → b = 4."
+        },
+        {
+          "soru": "360'ı 2:3:4 oranında üç parçaya böl. En büyük parça kaçtır?",
+          "secenekler": [
+            "A) 80",
+            "B) 100",
+            "C) 120",
+            "D) 140",
+            "E) 160"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "Toplam oran: 2+3+4 = 9. En büyük parça = 360 × (4/9) = 160."
+        },
+        {
+          "soru": "5 makine 6 saatte 300 parça üretiyor. 3 makine 10 saatte kaç parça üretir?",
+          "secenekler": [
+            "A) 180",
+            "B) 240",
+            "C) 300",
+            "D) 360",
+            "E) 400"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Birim hız: 300÷(5×6) = 10 parça/makine/saat. 3 makine × 10 saat × 10 = 300 parça."
+        },
+        {
+          "soru": "a:b = 5:3 ve b = 12 ise a kaçtır?",
+          "secenekler": [
+            "A) 15",
+            "B) 18",
+            "C) 20",
+            "D) 24",
+            "E) 25"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "a/12 = 5/3 → a = 12×5÷3 = 20."
+        },
+        {
+          "soru": "Doğru orantılı iki büyüklük için x = 4 iken y = 12 ise x = 7 iken y kaçtır?",
+          "secenekler": [
+            "A) 15",
+            "B) 18",
+            "C) 21",
+            "D) 24",
+            "E) 28"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Oran sabit: y/x = 12/4 = 3. x = 7 için y = 3×7 = 21."
         }
       ]
     },
@@ -1012,6 +2452,246 @@
           ],
           "dogruIndex": 4,
           "aciklama": "Pisagor teoremi kontrol edilir: en uzun kenarın karesi, diğer iki kenarın karelerinin toplamına eşit mi? 3²+4²=9+16=25 ve 5²=25. Eşit olduğundan bu üçgen dik üçgendir ve hipotenüsü (dik açının karşısındaki en uzun kenar) 5 cm'dir."
+        },
+        {
+          "soru": "Bir üçgenin açıları 2x, 3x ve 4x biçiminde verilmiştir. En büyük açı kaç derecedir?",
+          "secenekler": [
+            "A) 60°",
+            "B) 70°",
+            "C) 80°",
+            "D) 90°",
+            "E) 100°"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "2x + 3x + 4x = 180° → 9x = 180° → x = 20°. En büyük açı 4x = 4×20 = 80°."
+        },
+        {
+          "soru": "Kenarları 4 cm, 7 cm ve x cm olan bir üçgen oluşturulabilmesi için x hangi aralıkta olmalıdır?",
+          "secenekler": [
+            "A) 1 < x < 9",
+            "B) 2 < x < 11",
+            "C) 3 < x < 11",
+            "D) 2 < x < 13",
+            "E) 1 < x < 11"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Üçgen eşitsizliğine göre: |7 - 4| < x < 7 + 4 → 3 < x < 11."
+        },
+        {
+          "soru": "Tabanı 14 cm, yüksekliği 8 cm olan bir üçgenin alanı kaç cm²'dir?",
+          "secenekler": [
+            "A) 44",
+            "B) 56",
+            "C) 64",
+            "D) 72",
+            "E) 112"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Alan = (taban × yükseklik) / 2 = (14 × 8) / 2 = 56 cm²."
+        },
+        {
+          "soru": "Uzun kenarı 12 cm, kısa kenarı 5 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+          "secenekler": [
+            "A) 34",
+            "B) 36",
+            "C) 38",
+            "D) 40",
+            "E) 60"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Çevre = 2 × (12 + 5) = 2 × 17 = 34 cm."
+        },
+        {
+          "soru": "Alanı 64 cm² olan bir karenin çevresi kaç cm'dir?",
+          "secenekler": [
+            "A) 16",
+            "B) 24",
+            "C) 28",
+            "D) 32",
+            "E) 36"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "a² = 64 → a = 8 cm. Çevre = 4 × 8 = 32 cm."
+        },
+        {
+          "soru": "Yarıçapı 5 cm olan bir dairenin alanı kaç cm²'dir? (π = 3 alınız)",
+          "secenekler": [
+            "A) 60",
+            "B) 65",
+            "C) 70",
+            "D) 75",
+            "E) 80"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Alan = π × r² = 3 × 5² = 3 × 25 = 75 cm²."
+        },
+        {
+          "soru": "Dik açılı bir üçgenin dik kenarları 9 cm ve 12 cm'dir. Hipotenüs kaç cm'dir?",
+          "secenekler": [
+            "A) 13",
+            "B) 15",
+            "C) 17",
+            "D) 18",
+            "E) 21"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Pisagor: c² = 9² + 12² = 81 + 144 = 225 → c = 15 cm."
+        },
+        {
+          "soru": "Bir paralel kenarın bir açısı 65°'dir. Bu açıya komşu olan açı kaç derecedir?",
+          "secenekler": [
+            "A) 65°",
+            "B) 95°",
+            "C) 105°",
+            "D) 115°",
+            "E) 125°"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Paralel kenarda komşu açılar toplamı 180°'dir. 180° - 65° = 115°."
+        },
+        {
+          "soru": "Bir üçgenin iki iç açısı 55° ve 70°'dir. Üçüncü köşedeki dış açı kaç derecedir?",
+          "secenekler": [
+            "A) 105°",
+            "B) 115°",
+            "C) 120°",
+            "D) 125°",
+            "E) 130°"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Dış açı teoremi: dış açı = komşu olmayan iki iç açının toplamı = 55° + 70° = 125°."
+        },
+        {
+          "soru": "Bir üçgenin dış açısı 130°'dir. Bu dış açıya komşu olmayan iki iç açının toplamı kaç derecedir?",
+          "secenekler": [
+            "A) 100°",
+            "B) 110°",
+            "C) 120°",
+            "D) 130°",
+            "E) 140°"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Dış açı teoremi gereği, dış açı komşu olmayan iki iç açının toplamına eşittir: 130°."
+        },
+        {
+          "soru": "Dik açılı bir üçgende hipotenüs 17 cm, bir dik kenar 8 cm ise diğer dik kenar kaç cm'dir?",
+          "secenekler": [
+            "A) 13",
+            "B) 14",
+            "C) 15",
+            "D) 16",
+            "E) 17"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Pisagor: b² = 17² - 8² = 289 - 64 = 225 → b = 15 cm."
+        },
+        {
+          "soru": "Bir dikdörtgenin alanı 72 cm² ve bir kenarı 8 cm'dir. Çevresi kaç cm'dir?",
+          "secenekler": [
+            "A) 34",
+            "B) 38",
+            "C) 40",
+            "D) 44",
+            "E) 46"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Diğer kenar = 72 / 8 = 9 cm. Çevre = 2 × (8 + 9) = 34 cm."
+        },
+        {
+          "soru": "Bir çemberin yarıçapı 3 cm'dir. Çevresi kaç cm'dir? (π = 3,14)",
+          "secenekler": [
+            "A) 18,84",
+            "B) 19,84",
+            "C) 20,84",
+            "D) 21,84",
+            "E) 22,84"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Çevre = 2 × π × r = 2 × 3,14 × 3 = 18,84 cm."
+        },
+        {
+          "soru": "Bir karenin çevresi 36 cm'dir. Alanı kaç cm²'dir?",
+          "secenekler": [
+            "A) 64",
+            "B) 72",
+            "C) 81",
+            "D) 90",
+            "E) 100"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Kenar = 36 / 4 = 9 cm. Alan = 9² = 81 cm²."
+        },
+        {
+          "soru": "Bir üçgenin alanı 30 cm² ve tabanı 10 cm'dir. Yüksekliği kaç cm'dir?",
+          "secenekler": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7",
+            "E) 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Alan = (taban × yükseklik) / 2 → 30 = (10 × h) / 2 → h = 6 cm."
+        },
+        {
+          "soru": "Taban kenarı 10 cm, yüksekliği 6 cm olan bir paralel kenarın alanı kaç cm²'dir?",
+          "secenekler": [
+            "A) 40",
+            "B) 50",
+            "C) 55",
+            "D) 60",
+            "E) 65"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Paralel kenar alanı = taban × yükseklik = 10 × 6 = 60 cm²."
+        },
+        {
+          "soru": "Dik üçgende hipotenüs 10 cm, bir dik kenar 6 cm ise diğer dik kenar kaç cm'dir?",
+          "secenekler": [
+            "A) 6",
+            "B) 7",
+            "C) 8",
+            "D) 9",
+            "E) 10"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Pisagor: b² = 10² - 6² = 100 - 36 = 64 → b = 8 cm."
+        },
+        {
+          "soru": "Bir dikdörtgenin çevresi 40 cm ve uzun kenarı 12 cm'dir. Kısa kenarı kaç cm'dir?",
+          "secenekler": [
+            "A) 6",
+            "B) 7",
+            "C) 8",
+            "D) 9",
+            "E) 10"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "2 × (12 + kısa) = 40 → 12 + kısa = 20 → kısa = 8 cm."
+        },
+        {
+          "soru": "Bir üçgenin dış açısı 115°'dir ve komşu olmayan iç açılardan biri 60°'dir. Diğeri kaç derecedir?",
+          "secenekler": [
+            "A) 45°",
+            "B) 50°",
+            "C) 55°",
+            "D) 60°",
+            "E) 65°"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Dış açı teoremi: 115° = 60° + x → x = 55°."
+        },
+        {
+          "soru": "Yarıçapı 10 cm olan bir dairenin alanı kaç cm²'dir? (π = 3,14)",
+          "secenekler": [
+            "A) 204",
+            "B) 214",
+            "C) 284",
+            "D) 314",
+            "E) 324"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Alan = π × r² = 3,14 × 10² = 3,14 × 100 = 314 cm²."
         }
       ]
     },
@@ -1040,63 +2720,363 @@
       "sorular": [
         {
           "soru": "5 öğrencinin sınav notları 60, 70, 80, 90 ve 100'dür. Bu öğrencilerin not ortalaması kaçtır?",
-          "secenekler": ["70", "75", "80", "85", "90"],
+          "secenekler": [
+            "70",
+            "75",
+            "80",
+            "85",
+            "90"
+          ],
           "dogruIndex": 2,
           "aciklama": "Ortalama = (60+70+80+90+100)/5 = 400/5 = 80."
         },
         {
           "soru": "3, 7, 5, 9, 1 sayılarının ortancası (medyanı) kaçtır?",
-          "secenekler": ["5", "7", "6", "3", "9"],
+          "secenekler": [
+            "5",
+            "7",
+            "6",
+            "3",
+            "9"
+          ],
           "dogruIndex": 0,
           "aciklama": "Küçükten büyüğe sıralama: 1, 3, 5, 7, 9. 5 veri olduğundan ortanca 3. sıradaki değer = 5'tir."
         },
         {
           "soru": "2, 4, 4, 6, 8, 10 sayılarının ortancası kaçtır?",
-          "secenekler": ["4", "5", "6", "4,5", "7"],
+          "secenekler": [
+            "4",
+            "5",
+            "6",
+            "4,5",
+            "7"
+          ],
           "dogruIndex": 1,
           "aciklama": "Sıralı seri: 2, 4, 4, 6, 8, 10. Çift sayıda (6) veri olduğundan ortanca = (4. değer olan 4 + bu değer olmaz; 3. ve 4. değerler) = (4+6)/2 = 10/2 = 5."
         },
         {
           "soru": "3, 5, 5, 7, 5, 9, 3 sayılarının modu kaçtır?",
-          "secenekler": ["3", "5", "7", "9", "3 ve 5"],
+          "secenekler": [
+            "3",
+            "5",
+            "7",
+            "9",
+            "3 ve 5"
+          ],
           "dogruIndex": 1,
           "aciklama": "Seride 3 iki kez, 5 üç kez, 7 ve 9 birer kez geçmektedir. En çok tekrarlanan değer 5'tir; mod = 5."
         },
         {
           "soru": "Bir sınıftaki 4 öğrenciden 3'ü 60 puan, 2'si 80 puan almıştır. Ağırlıklı ortalama kaçtır?",
-          "secenekler": ["68", "70", "72", "66", "74"],
+          "secenekler": [
+            "68",
+            "70",
+            "72",
+            "66",
+            "74"
+          ],
           "dogruIndex": 0,
           "aciklama": "Ağırlıklı ortalama = (3×60 + 2×80) / (3+2) = (180+160)/5 = 340/5 = 68."
         },
         {
           "soru": "Bir pasta grafiğinde 'Matematik' dilimi 72° açıya sahiptir. Toplam öğrenci sayısı 100 ise matematik dersini seçen öğrenci sayısı kaçtır?",
-          "secenekler": ["15", "18", "20", "24", "36"],
+          "secenekler": [
+            "15",
+            "18",
+            "20",
+            "24",
+            "36"
+          ],
           "dogruIndex": 2,
           "aciklama": "Pasta grafiğinde bir dilimin oranı = açısı/360°. 72/360 = 1/5. Öğrenci sayısı = 100 × (1/5) = 20."
         },
         {
           "soru": "Bir veri kümesinde 5 değer vardır ve ortalamaları 10'dur. Bu değerlerin toplamı kaçtır?",
-          "secenekler": ["40", "45", "50", "55", "60"],
+          "secenekler": [
+            "40",
+            "45",
+            "50",
+            "55",
+            "60"
+          ],
           "dogruIndex": 2,
           "aciklama": "Ortalama = toplam / veri sayısı → Toplam = ortalama × veri sayısı = 10 × 5 = 50."
         },
         {
           "soru": "4, 8, 6, 10, 2 sayılarının hem aritmetik ortalaması hem de ortancası kaçtır?",
-          "secenekler": ["Ortalama 6, ortanca 6", "Ortalama 6, ortanca 8", "Ortalama 8, ortanca 6", "Ortalama 6, ortanca 10", "Ortalama 5, ortanca 6"],
+          "secenekler": [
+            "Ortalama 6, ortanca 6",
+            "Ortalama 6, ortanca 8",
+            "Ortalama 8, ortanca 6",
+            "Ortalama 6, ortanca 10",
+            "Ortalama 5, ortanca 6"
+          ],
           "dogruIndex": 0,
           "aciklama": "Ortalama = (4+8+6+10+2)/5 = 30/5 = 6. Küçükten büyüğe sıralama: 2, 4, 6, 8, 10. Ortanca = 3. değer = 6. Her ikisi de 6'dır."
         },
         {
           "soru": "Aşağıdaki veri kümelerinden hangisinin modu yoktur?",
-          "secenekler": ["1, 2, 2, 3, 4", "5, 5, 6, 7, 8", "2, 4, 6, 8, 10", "3, 3, 5, 5, 7", "9, 9, 9, 10, 11"],
+          "secenekler": [
+            "1, 2, 2, 3, 4",
+            "5, 5, 6, 7, 8",
+            "2, 4, 6, 8, 10",
+            "3, 3, 5, 5, 7",
+            "9, 9, 9, 10, 11"
+          ],
           "dogruIndex": 2,
           "aciklama": "2, 4, 6, 8, 10 serisinde hiçbir değer tekrarlanmamaktadır; bu nedenle bu serinin modu yoktur. Diğer serilerde en az bir değer birden fazla tekrarlanmaktadır (5, 3 ve 5, 9 gibi)."
         },
         {
           "soru": "Bir veri kümesinde ortalama 50, ortanca 45 ve mod 40'tır. Bu veriye göre aşağıdakilerden hangisi söylenemez?",
-          "secenekler": ["Dağılım sağa çarpıktır.", "Ortalamanın üstünde değerler var.", "Mod, tüm istatistikler içinde en küçük değerdir.", "Aşırı yüksek değerler ortamayı yukarı çekmiştir.", "Ortalama, ortancadan küçüktür."],
+          "secenekler": [
+            "Dağılım sağa çarpıktır.",
+            "Ortalamanın üstünde değerler var.",
+            "Mod, tüm istatistikler içinde en küçük değerdir.",
+            "Aşırı yüksek değerler ortamayı yukarı çekmiştir.",
+            "Ortalama, ortancadan küçüktür."
+          ],
           "dogruIndex": 4,
           "aciklama": "Ortalama (50) ortancadan (45) büyüktür; yani 'ortalama ortancadan küçüktür' ifadesi yanlıştır ve bu söylenemez. Ortalama > ortanca > mod sıralaması sağa çarpık dağılımı gösterir; büyük değerler ortamayı yukarı çekmiştir."
+        },
+        {
+          "soru": "3, 7, 5, 9, 6 sayılarının aritmetik ortalaması kaçtır?",
+          "secenekler": [
+            "A) 5",
+            "B) 6",
+            "C) 7",
+            "D) 8",
+            "E) 9"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "(3 + 7 + 5 + 9 + 6) / 5 = 30 / 5 = 6."
+        },
+        {
+          "soru": "Beş sınavdan 70, 85, 90, 75, 80 puan alan öğrencinin ortalama puanı kaçtır?",
+          "secenekler": [
+            "A) 78",
+            "B) 80",
+            "C) 82",
+            "D) 84",
+            "E) 86"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "(70 + 85 + 90 + 75 + 80) / 5 = 400 / 5 = 80."
+        },
+        {
+          "soru": "4, 4, 7, 8, 10, 11, 12 sayılarının ortancası (medyanı) kaçtır?",
+          "secenekler": [
+            "A) 7",
+            "B) 8",
+            "C) 9",
+            "D) 10",
+            "E) 11"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "7 eleman sıralanmış; ortanca 4. eleman = 8."
+        },
+        {
+          "soru": "5, 5, 7, 7, 7, 9, 9 sayılarının modu kaçtır?",
+          "secenekler": [
+            "A) 5",
+            "B) 6",
+            "C) 7",
+            "D) 8",
+            "E) 9"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "7 sayısı 3 kez tekrar etmektedir; mod = 7."
+        },
+        {
+          "soru": "10, 12, 14, 16, 18 sayılarının aritmetik ortalaması kaçtır?",
+          "secenekler": [
+            "A) 12",
+            "B) 13",
+            "C) 14",
+            "D) 15",
+            "E) 16"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "(10 + 12 + 14 + 16 + 18) / 5 = 70 / 5 = 14."
+        },
+        {
+          "soru": "Bir öğrenci 4 kredilik dersten 70, 3 kredilik dersten 80 puan almıştır. Ağırlıklı ortalaması kaçtır?",
+          "secenekler": [
+            "A) 74",
+            "B) 74,28",
+            "C) 74,5",
+            "D) 75",
+            "E) 75,5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Ağırlıklı ortalama = (4×70 + 3×80) / (4+3) = (280+240) / 7 = 520 / 7 ≈ 74,28."
+        },
+        {
+          "soru": "4, 6, 8, 10, 12 sayılarının ortalaması 8'dir. Bu 5 sayıya ek olarak 14 de ekleniyor. Yeni ortalama kaçtır?",
+          "secenekler": [
+            "A) 8",
+            "B) 9",
+            "C) 9,33",
+            "D) 10",
+            "E) 10,5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Yeni toplam = 40 + 14 = 54, yeni eleman sayısı = 6; ortalama = 54 / 6 = 9."
+        },
+        {
+          "soru": "Bir sınıfta 5 öğrencinin notları sırasıyla: 60, 70, 75, 80, 90. Ortanca not kaçtır?",
+          "secenekler": [
+            "A) 70",
+            "B) 72",
+            "C) 75",
+            "D) 78",
+            "E) 80"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Sıralı 5 elemanda ortanca 3. eleman = 75."
+        },
+        {
+          "soru": "3, 5, 7, 9, 11, 13 sayılarının ortancası kaçtır?",
+          "secenekler": [
+            "A) 7",
+            "B) 8",
+            "C) 9",
+            "D) 10",
+            "E) 11"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "6 eleman; ortanca = (3. eleman + 4. eleman) / 2 = (7 + 9) / 2 = 8."
+        },
+        {
+          "soru": "15, 20, 25, 30 sayılarının aritmetik ortalaması kaçtır?",
+          "secenekler": [
+            "A) 20",
+            "B) 21",
+            "C) 22",
+            "D) 22,5",
+            "E) 23"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "(15 + 20 + 25 + 30) / 4 = 90 / 4 = 22,5."
+        },
+        {
+          "soru": "Ortalaması 50 olan 10 elemanlı bir veri setine 70 değeri eklenirse yeni ortalama kaçtır?",
+          "secenekler": [
+            "A) 51,7",
+            "B) 51,82",
+            "C) 52",
+            "D) 53",
+            "E) 54"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Eski toplam = 50 × 10 = 500. Yeni toplam = 570. Yeni ortalama = 570 / 11 ≈ 51,82."
+        },
+        {
+          "soru": "5, 5, 6, 7, 7, 7, 8, 9 sayılarının modu ve ortancasının toplamı kaçtır?",
+          "secenekler": [
+            "A) 13",
+            "B) 13,5",
+            "C) 14",
+            "D) 14,5",
+            "E) 15"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Mod = 7 (3 kez). 8 eleman; ortanca = (7+7)/2 = 7. Toplam = 7 + 7 = 14."
+        },
+        {
+          "soru": "3 matematik sınavından 60, 80, 70 puan alan öğrencinin aritmetik ortalaması kaçtır?",
+          "secenekler": [
+            "A) 68",
+            "B) 69",
+            "C) 70",
+            "D) 71",
+            "E) 72"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "(60 + 80 + 70) / 3 = 210 / 3 = 70."
+        },
+        {
+          "soru": "Sütun grafiğinde A şehri 50, B şehri 70, C şehri 80, D şehri 40 kişiyi gösteriyor. Toplam kaç kişidir?",
+          "secenekler": [
+            "A) 220",
+            "B) 230",
+            "C) 240",
+            "D) 250",
+            "E) 260"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "50 + 70 + 80 + 40 = 240 kişi."
+        },
+        {
+          "soru": "Pasta grafiğinde bir dilim %35 yer kaplıyor ve toplam 200 kişiyi temsil ediyor. Bu dilim kaç kişiyi gösterir?",
+          "secenekler": [
+            "A) 60",
+            "B) 65",
+            "C) 70",
+            "D) 75",
+            "E) 80"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "200 × 0,35 = 70 kişi."
+        },
+        {
+          "soru": "Beş sayının ortalaması 12'dir. Altıncı sayı 18 olunca yeni ortalama kaçtır?",
+          "secenekler": [
+            "A) 12",
+            "B) 13",
+            "C) 14",
+            "D) 15",
+            "E) 16"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Eski toplam = 12 × 5 = 60. Yeni toplam = 60 + 18 = 78. Yeni ortalama = 78 / 6 = 13."
+        },
+        {
+          "soru": "10, 20, 30, 40, 50 sayılarının her birine 5 eklenirse ortalama ne kadar artar?",
+          "secenekler": [
+            "A) 1",
+            "B) 3",
+            "C) 5",
+            "D) 10",
+            "E) 25"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Her elemana sabit bir sayı eklendiğinde ortalama da o kadar artar: ortalama 5 artar."
+        },
+        {
+          "soru": "2, 3, 5, 7, 8, 9 sayılarının ortancası kaçtır?",
+          "secenekler": [
+            "A) 5",
+            "B) 6",
+            "C) 6,5",
+            "D) 7",
+            "E) 7,5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "6 eleman sıralı; ortanca = (3. + 4. eleman) / 2 = (5 + 7) / 2 = 6."
+        },
+        {
+          "soru": "Bir sınıfta 3 öğrenci 60, 4 öğrenci 75, 3 öğrenci 90 puan almıştır. Ağırlıklı ortalama kaçtır?",
+          "secenekler": [
+            "A) 72",
+            "B) 73",
+            "C) 74",
+            "D) 75",
+            "E) 76"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "(3×60 + 4×75 + 3×90) / 10 = (180 + 300 + 270) / 10 = 750 / 10 = 75."
+        },
+        {
+          "soru": "6, 8, 10, 12, 14 sayılarının ortalaması ile 4, 6, 8, 10, 12 sayılarının ortalaması arasındaki fark kaçtır?",
+          "secenekler": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4",
+            "E) 5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "İlk küme ortalaması = 50/5 = 10; ikinci küme ortalaması = 40/5 = 8; fark = 2."
         }
       ]
     },
@@ -1125,63 +3105,363 @@
       "sorular": [
         {
           "soru": "Aşağıdaki sayılardan hangisi asal sayıdır?",
-          "secenekler": ["1", "9", "15", "17", "21"],
+          "secenekler": [
+            "1",
+            "9",
+            "15",
+            "17",
+            "21"
+          ],
           "dogruIndex": 3,
           "aciklama": "17, yalnızca 1 ve 17'ye tam bölünür; bu nedenle asaldır. 1 asal değildir (tanım gereği). 9 = 3², 15 = 3×5, 21 = 3×7 olduğundan hepsi bileşik sayıdır."
         },
         {
           "soru": "1'den 30'a kadar kaç asal sayı vardır?",
-          "secenekler": ["8", "9", "10", "11", "7"],
+          "secenekler": [
+            "8",
+            "9",
+            "10",
+            "11",
+            "7"
+          ],
           "dogruIndex": 2,
           "aciklama": "1-30 arasındaki asal sayılar: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Toplam 10 tane."
         },
         {
           "soru": "360 sayısını asal çarpanlarına ayırdığımızda hangi ifade elde edilir?",
-          "secenekler": ["2² × 3² × 5", "2³ × 3² × 5", "2² × 3³ × 5", "2³ × 3 × 5²", "2 × 3² × 5²"],
+          "secenekler": [
+            "2² × 3² × 5",
+            "2³ × 3² × 5",
+            "2² × 3³ × 5",
+            "2³ × 3 × 5²",
+            "2 × 3² × 5²"
+          ],
           "dogruIndex": 1,
           "aciklama": "360 ÷ 2 = 180, ÷ 2 = 90, ÷ 2 = 45, ÷ 3 = 15, ÷ 3 = 5, ÷ 5 = 1. Sonuç: 2³ × 3² × 5."
         },
         {
           "soru": "2³ × 3² × 5 sayısının bölen sayısı kaçtır?",
-          "secenekler": ["18", "24", "12", "20", "16"],
+          "secenekler": [
+            "18",
+            "24",
+            "12",
+            "20",
+            "16"
+          ],
           "dogruIndex": 1,
           "aciklama": "Bölen sayısı formülü: (üs1+1) × (üs2+1) × (üs3+1) = (3+1)(2+1)(1+1) = 4×3×2 = 24."
         },
         {
           "soru": "97 sayısı asal mıdır? (Gerekli kontrol: 2, 3, 5, 7'ye bölünüp bölünmediğini test et)",
-          "secenekler": ["Evet, asaldır", "Hayır, 3'e bölünür", "Hayır, 7'ye bölünür", "Hayır, 11'e bölünür", "Hayır, bileşik bir sayıdır"],
+          "secenekler": [
+            "Evet, asaldır",
+            "Hayır, 3'e bölünür",
+            "Hayır, 7'ye bölünür",
+            "Hayır, 11'e bölünür",
+            "Hayır, bileşik bir sayıdır"
+          ],
           "dogruIndex": 0,
           "aciklama": "√97 ≈ 9,8 olduğundan 9'a kadar asallara (2, 3, 5, 7) bölünüp bölünmediği kontrol edilir. 97÷2=48,5 (tam değil), 97÷3=32,3 (tam değil), 97÷5=19,4 (tam değil), 97÷7=13,8 (tam değil). Hiçbirine tam bölünmediğinden 97 asaldır."
         },
         {
           "soru": "İki asal sayının toplamı 20'dir. Bu iki asal sayının çarpımı en fazla kaç olabilir?",
-          "secenekler": ["91", "77", "99", "96", "85"],
+          "secenekler": [
+            "91",
+            "77",
+            "99",
+            "96",
+            "85"
+          ],
           "dogruIndex": 0,
           "aciklama": "Toplamı 20 olan asal çiftler: (3,17), (7,13). En büyük çarpım 7×13=91. (3×17=51 daha küçük)."
         },
         {
           "soru": "Aşağıdaki sayıların hangisi asal sayı değildir?",
-          "secenekler": ["2", "7", "11", "13", "9"],
+          "secenekler": [
+            "2",
+            "7",
+            "11",
+            "13",
+            "9"
+          ],
           "dogruIndex": 4,
           "aciklama": "9 = 3² olduğundan bileşik sayıdır; 1 ve kendisinden başka bölenler vardır (3 ile bölünür). Diğer tüm sayılar (2, 7, 11, 13) asaldır."
         },
         {
           "soru": "12 sayısının tüm pozitif bölenleri hangi kümedir?",
-          "secenekler": ["{1, 2, 3, 4}", "{1, 2, 3, 4, 6, 12}", "{2, 3, 6, 12}", "{1, 12}", "{1, 2, 4, 6}"],
+          "secenekler": [
+            "{1, 2, 3, 4}",
+            "{1, 2, 3, 4, 6, 12}",
+            "{2, 3, 6, 12}",
+            "{1, 12}",
+            "{1, 2, 4, 6}"
+          ],
           "dogruIndex": 1,
           "aciklama": "12 = 2² × 3. Bölenler: 1, 2, 3, 4, 6, 12. Bölen sayısı formülü: (2+1)(1+1)=6 bölen, doğrulanır."
         },
         {
           "soru": "Ardışık iki asal sayının farkı 6'dır. Bu asal sayıların büyüğü en fazla kaç olabilir? (İki basamaklı sayılar arasında)",
-          "secenekler": ["17", "19", "23", "29", "31"],
+          "secenekler": [
+            "17",
+            "19",
+            "23",
+            "29",
+            "31"
+          ],
           "dogruIndex": 3,
           "aciklama": "Farkı 6 olan iki basamaklı asal çiftler: (5,11), (7,13), (11,17), (13,19), (23,29). En büyüğü 29."
         },
         {
           "soru": "Hem 2 hem 3 hem de 5'in katı olan en küçük doğal sayı kaçtır? (Bu soruyu çarpanlara ayırma yöntemiyle çöz)",
-          "secenekler": ["10", "15", "30", "60", "120"],
+          "secenekler": [
+            "10",
+            "15",
+            "30",
+            "60",
+            "120"
+          ],
           "dogruIndex": 2,
           "aciklama": "Hem 2 hem 3 hem de 5'e bölünen en küçük sayı EKOK(2,3,5) = 2×3×5 = 30'dur. Tümü asal olduğundan EKOK, bunların doğrudan çarpımına eşittir."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi asal sayıdır?",
+          "secenekler": [
+            "A) 27",
+            "B) 33",
+            "C) 49",
+            "D) 53",
+            "E) 91"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "27=3³, 33=3×11, 49=7², 91=7×13. Yalnızca 53 asal sayıdır."
+        },
+        {
+          "soru": "60 sayısının asal çarpanlarına ayrılmış hali hangisidir?",
+          "secenekler": [
+            "A) 2×3×5",
+            "B) 2²×3×5",
+            "C) 2²×15",
+            "D) 4×15",
+            "E) 2³×5²"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "60 = 4 × 15 = 2² × 3 × 5."
+        },
+        {
+          "soru": "84 sayısının kaç tane pozitif böleni vardır?",
+          "secenekler": [
+            "A) 8",
+            "B) 10",
+            "C) 12",
+            "D) 14",
+            "E) 16"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "84 = 2² × 3 × 7. Bölen sayısı = (2+1)(1+1)(1+1) = 3×2×2 = 12."
+        },
+        {
+          "soru": "EBOB(24, 36) kaçtır?",
+          "secenekler": [
+            "A) 6",
+            "B) 8",
+            "C) 9",
+            "D) 12",
+            "E) 18"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "24 = 2³×3, 36 = 2²×3². EBOB = 2²×3 = 12."
+        },
+        {
+          "soru": "EKOK(12, 18) kaçtır?",
+          "secenekler": [
+            "A) 24",
+            "B) 30",
+            "C) 36",
+            "D) 42",
+            "E) 48"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "12 = 2²×3, 18 = 2×3². EKOK = 2²×3² = 36."
+        },
+        {
+          "soru": "120 sayısının kaç tane pozitif böleni vardır?",
+          "secenekler": [
+            "A) 12",
+            "B) 14",
+            "C) 16",
+            "D) 18",
+            "E) 20"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "120 = 2³×3×5. Bölen sayısı = (3+1)(1+1)(1+1) = 4×2×2 = 16."
+        },
+        {
+          "soru": "Aşağıdakilerden hangisi asal sayı DEĞİLDİR?",
+          "secenekler": [
+            "A) 11",
+            "B) 17",
+            "C) 23",
+            "D) 37",
+            "E) 51"
+          ],
+          "dogruIndex": 4,
+          "aciklama": "51 = 3 × 17 olduğundan asal değildir."
+        },
+        {
+          "soru": "48 sayısının asal çarpanlarına ayrılmış hali hangisidir?",
+          "secenekler": [
+            "A) 2×24",
+            "B) 2²×12",
+            "C) 2³×6",
+            "D) 2⁴×3",
+            "E) 2⁵×3"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "48 = 2 × 24 = 4 × 12 = 8 × 6 = 16 × 3 = 2⁴ × 3."
+        },
+        {
+          "soru": "İki sayının EBOB'u 6, EKOK'u 60'tır. Bu iki sayının çarpımı kaçtır?",
+          "secenekler": [
+            "A) 240",
+            "B) 300",
+            "C) 360",
+            "D) 420",
+            "E) 480"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "EBOB × EKOK = a × b → 6 × 60 = 360."
+        },
+        {
+          "soru": "1'den 20'ye kadar (20 dahil) kaç tane asal sayı vardır?",
+          "secenekler": [
+            "A) 6",
+            "B) 7",
+            "C) 8",
+            "D) 9",
+            "E) 10"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Asal sayılar: 2, 3, 5, 7, 11, 13, 17, 19 → 8 adet."
+        },
+        {
+          "soru": "72 = 2^a × 3^b biçiminde yazılırsa a + b kaçtır?",
+          "secenekler": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7",
+            "E) 8"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "72 = 8 × 9 = 2³ × 3². a = 3, b = 2, a + b = 5."
+        },
+        {
+          "soru": "EBOB(30, 45) kaçtır?",
+          "secenekler": [
+            "A) 5",
+            "B) 10",
+            "C) 15",
+            "D) 20",
+            "E) 25"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "30 = 2×3×5, 45 = 3²×5. EBOB = 3×5 = 15."
+        },
+        {
+          "soru": "EKOK(8, 12, 18) kaçtır?",
+          "secenekler": [
+            "A) 24",
+            "B) 36",
+            "C) 48",
+            "D) 72",
+            "E) 96"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "8=2³, 12=2²×3, 18=2×3². EKOK = 2³×3² = 72."
+        },
+        {
+          "soru": "36 sayısının kaç farklı pozitif böleni vardır?",
+          "secenekler": [
+            "A) 7",
+            "B) 8",
+            "C) 9",
+            "D) 10",
+            "E) 11"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "36 = 2²×3². Bölen sayısı = (2+1)(2+1) = 9."
+        },
+        {
+          "soru": "Aşağıdaki sayılardan hangisi hem 2'ye hem de 3'e bölünür?",
+          "secenekler": [
+            "A) 34",
+            "B) 45",
+            "C) 54",
+            "D) 64",
+            "E) 75"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "54 = 2×27 = 2×3³ → hem 2'ye hem 3'e bölünür."
+        },
+        {
+          "soru": "100 = 2^a × 5^b ise a × b kaçtır?",
+          "secenekler": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5",
+            "E) 6"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "100 = 4 × 25 = 2² × 5². a = 2, b = 2, a × b = 4."
+        },
+        {
+          "soru": "Birbirinden farklı iki asal sayının EKOK'u aşağıdakilerden hangisine eşittir?",
+          "secenekler": [
+            "A) 1",
+            "B) İki sayının kendisi",
+            "C) İki sayının çarpımı",
+            "D) İki sayının toplamı",
+            "E) İki sayının farkı"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "İki farklı asal sayı birbirinin katı olamaz; ortak çarpanları yoktur, EKOK = iki sayının çarpımı."
+        },
+        {
+          "soru": "EBOB(a, b) = 4 ve EKOK(a, b) = 48 ise a × b kaçtır?",
+          "secenekler": [
+            "A) 96",
+            "B) 144",
+            "C) 192",
+            "D) 216",
+            "E) 240"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "EBOB × EKOK = a × b → 4 × 48 = 192."
+        },
+        {
+          "soru": "90 sayısının asal çarpanlarına ayrılmış hali hangisidir?",
+          "secenekler": [
+            "A) 2×3²×5",
+            "B) 2×3×15",
+            "C) 2²×3×5",
+            "D) 2×45",
+            "E) 3²×10"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "90 = 2 × 45 = 2 × 9 × 5 = 2 × 3² × 5."
+        },
+        {
+          "soru": "Aşağıdaki sayı çiftlerinden hangisi aralarında asaldır (EBOB = 1)?",
+          "secenekler": [
+            "A) 6 ve 9",
+            "B) 8 ve 12",
+            "C) 15 ve 20",
+            "D) 17 ve 35",
+            "E) 24 ve 36"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "17 asal ve 35 = 5×7; ortak asal çarpanları yoktur → EBOB(17, 35) = 1."
         }
       ]
     },
@@ -1210,63 +3490,363 @@
       "sorular": [
         {
           "soru": "%20 tuzlu 200 g su ile %10 tuzlu 300 g su karıştırılıyor. Oluşan karışımdaki tuz yüzdesi kaçtır?",
-          "secenekler": ["%12", "%14", "%15", "%16", "%18"],
+          "secenekler": [
+            "%12",
+            "%14",
+            "%15",
+            "%16",
+            "%18"
+          ],
           "dogruIndex": 1,
           "aciklama": "Karışımdaki tuz miktarı: 200×0,20 + 300×0,10 = 40 + 30 = 70 g. Toplam karışım = 500 g. Tuz yüzdesi = 70/500 = 0,14 = %14."
         },
         {
           "soru": "%60 altın içeren 500 g alaşım ile %40 altın içeren 300 g alaşım karıştırılıyor. Yeni alaşımdaki altın yüzdesi kaçtır?",
-          "secenekler": ["%50", "%52,5", "%55", "%47,5", "%48"],
+          "secenekler": [
+            "%50",
+            "%52,5",
+            "%55",
+            "%47,5",
+            "%48"
+          ],
           "dogruIndex": 1,
           "aciklama": "Altın miktarı: 500×0,60 + 300×0,40 = 300 + 120 = 420 g. Toplam = 800 g. Yüzde = 420/800 = 0,525 = %52,5."
         },
         {
           "soru": "10 L %30 alkollü çözeltiden 2 L alınıp yerine 2 L saf su konuluyor. Yeni çözeltideki alkol yüzdesi kaçtır?",
-          "secenekler": ["%20", "%22", "%24", "%26", "%28"],
+          "secenekler": [
+            "%20",
+            "%22",
+            "%24",
+            "%26",
+            "%28"
+          ],
           "dogruIndex": 2,
           "aciklama": "2 L alınan kısımdaki alkol: 2×0,30=0,6 L. Kalan alkol: 10×0,30 - 0,6 = 3 - 0,6 = 2,4 L. Yeni çözelti = 10 L (2 çıktı, 2 su girdi). Yüzde = 2,4/10 = 0,24 = %24."
         },
         {
           "soru": "%10 ve %40 konsantrasyonlu iki çözelti karıştırılarak %20 konsantrasyonlu çözelti elde edilmek isteniyor. İki çözeltinin miktar oranı nedir?",
-          "secenekler": ["1:2", "2:1", "3:1", "1:3", "1:1"],
+          "secenekler": [
+            "1:2",
+            "2:1",
+            "3:1",
+            "1:3",
+            "1:1"
+          ],
           "dogruIndex": 1,
           "aciklama": "Denge noktası yöntemi: %10'luk için uzaklık |40-20|=20; %40'lık için |20-10|=10. Oranlar ters: %10'luk : %40'lık = 20:10 = 2:1. Yani 2 birim %10'luk, 1 birim %40'lık kullanılmalı."
         },
         {
           "soru": "Bir çözeltide 200 g su içinde 50 g tuz erimiştir. Bu çözeltinin tuz yüzdesi kaçtır?",
-          "secenekler": ["%20", "%25", "%50", "%33", "%10"],
+          "secenekler": [
+            "%20",
+            "%25",
+            "%50",
+            "%33",
+            "%10"
+          ],
           "dogruIndex": 0,
           "aciklama": "Toplam çözelti = 200 + 50 = 250 g. Tuz yüzdesi = 50/250 = 0,20 = %20."
         },
         {
           "soru": "500 g %20 tuzlu çözeltiden su buharlaştırılarak %25 tuzlu çözelti elde ediliyor. Ne kadar su buharlaştırılmalıdır?",
-          "secenekler": ["50 g", "75 g", "100 g", "125 g", "150 g"],
+          "secenekler": [
+            "50 g",
+            "75 g",
+            "100 g",
+            "125 g",
+            "150 g"
+          ],
           "dogruIndex": 2,
           "aciklama": "Tuz miktarı değişmez: 500×0,20 = 100 g tuz. Yeni toplam = 100/0,25 = 400 g. Buharlaşan su = 500 - 400 = 100 g."
         },
         {
           "soru": "%15 alkollü 400 g içecek ile saf alkol (saf alkol = %100) karıştırılarak %20 alkollü karışım elde ediliyor. Eklenen saf alkol miktarı kaç gramdır?",
-          "secenekler": ["20 g", "25 g", "30 g", "35 g", "26 g"],
+          "secenekler": [
+            "20 g",
+            "25 g",
+            "30 g",
+            "35 g",
+            "26 g"
+          ],
           "dogruIndex": 1,
           "aciklama": "Eklenen saf alkol x g olsun. Karışımdaki alkol: 400×0,15 + x×1 = 60 + x g. Toplam karışım = 400 + x. Denklem: (60+x)/(400+x) = 0,20 → 60+x = 80+0,2x → 0,8x = 20 → x = 25 g."
         },
         {
           "soru": "İki farklı süt karıştırılıyor: birinci süt %3,5 yağlı (200 g), ikinci süt %1,5 yağlı (300 g). Karışımın yağ yüzdesi kaçtır?",
-          "secenekler": ["%2,3", "%2,5", "%2,9", "%3", "%2,7"],
+          "secenekler": [
+            "%2,3",
+            "%2,5",
+            "%2,9",
+            "%3",
+            "%2,7"
+          ],
           "dogruIndex": 0,
           "aciklama": "Yağ miktarı: 200×0,035 + 300×0,015 = 7 + 4,5 = 11,5 g. Toplam = 500 g. Yüzde = 11,5/500 = 0,023 = %2,3."
         },
         {
           "soru": "%80 saf demir içeren 250 g metal ile %50 saf demir içeren 750 g metal karıştırılıyor. Karışımdaki saf demir yüzdesi kaçtır?",
-          "secenekler": ["%55", "%57,5", "%60", "%62,5", "%65"],
+          "secenekler": [
+            "%55",
+            "%57,5",
+            "%60",
+            "%62,5",
+            "%65"
+          ],
           "dogruIndex": 3,
           "aciklama": "Demir miktarı: 250×0,80 + 750×0,50 = 200 + 375 = 575 g. Toplam = 1000 g. Yüzde = 575/1000 = 0,575 = %57,5. (Doğru cevap B'dir, seçenekte 57,5 var.)"
         },
         {
           "soru": "200 g %40 tuzlu çözeltiyle 300 g saf su karıştırılıyor. Oluşan çözeltinin tuz yüzdesi kaçtır?",
-          "secenekler": ["%12", "%14", "%16", "%20", "%10"],
+          "secenekler": [
+            "%12",
+            "%14",
+            "%16",
+            "%20",
+            "%10"
+          ],
           "dogruIndex": 2,
           "aciklama": "Tuz miktarı: 200×0,40 = 80 g. Saf su tuz içermez. Toplam = 200+300=500 g. Tuz yüzdesi = 80/500 = 0,16 = %16."
+        },
+        {
+          "soru": "200 gram çözeltide 30 gram tuz bulunmaktadır. Çözeltinin konsantrasyonu yüzde kaçtır?",
+          "secenekler": [
+            "A) %10",
+            "B) %12",
+            "C) %15",
+            "D) %18",
+            "E) %20"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Konsantrasyon = (tuz / toplam) × 100 = (30 / 200) × 100 = %15."
+        },
+        {
+          "soru": "%20 konsantrasyonlu 300 gram çözelti ile %10 konsantrasyonlu 100 gram çözelti karıştırılıyor. Sonuçtaki konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %15",
+            "B) %17,5",
+            "C) %18",
+            "D) %20",
+            "E) %22"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Tuz: 300×0,20 + 100×0,10 = 60 + 10 = 70 g. Toplam = 400 g. Konsantrasyon = 70/400 = %17,5."
+        },
+        {
+          "soru": "%30 şekerli 200 gram şuruba kaç gram saf şeker eklenirse konsantrasyon %40 olur?",
+          "secenekler": [
+            "A) 20 g",
+            "B) 25 g",
+            "C) 30 g",
+            "D) 33,3 g",
+            "E) 40 g"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Başlangıç şekeri = 60 g. (60+x)/(200+x) = 0,40 → 60+x = 80+0,4x → 0,6x = 20 → x ≈ 33,3 g."
+        },
+        {
+          "soru": "%25 konsantrasyonlu 400 gram çözeltiden kaç gram su buharlaştırılırsa konsantrasyon %50 olur?",
+          "secenekler": [
+            "A) 100 g",
+            "B) 150 g",
+            "C) 200 g",
+            "D) 250 g",
+            "E) 300 g"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz = 400×0,25 = 100 g. 100/(400-x) = 0,50 → 400-x = 200 → x = 200 g."
+        },
+        {
+          "soru": "%10 tuzlu 500 gram çözeltiye 100 gram saf su eklenirse yeni konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %6,67",
+            "B) %7,5",
+            "C) %8,33",
+            "D) %8,67",
+            "E) %9"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz = 500×0,10 = 50 g. Yeni toplam = 600 g. Konsantrasyon = 50/600 ≈ %8,33."
+        },
+        {
+          "soru": "%15 asitli 200 mL çözelti ile %25 asitli 300 mL çözelti karıştırılırsa konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %18",
+            "B) %19",
+            "C) %20",
+            "D) %21",
+            "E) %22"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Asit: 200×0,15 + 300×0,25 = 30 + 75 = 105 mL. Toplam = 500 mL. Konsantrasyon = 105/500 = %21."
+        },
+        {
+          "soru": "%20 tuzlu 400 gram çözelti ile %30 tuzlu 600 gram çözelti karıştırılırsa sonuçtaki konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %24",
+            "B) %25",
+            "C) %26",
+            "D) %27",
+            "E) %28"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz: 400×0,20 + 600×0,30 = 80 + 180 = 260 g. Toplam = 1000 g. Konsantrasyon = 260/1000 = %26."
+        },
+        {
+          "soru": "150 gram çözeltide 45 gram madde varsa konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %20",
+            "B) %25",
+            "C) %30",
+            "D) %35",
+            "E) %40"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Konsantrasyon = (45 / 150) × 100 = %30."
+        },
+        {
+          "soru": "%40 alkollü 250 gram karışım ile %60 alkollü 250 gram karışım eşit miktarda karıştırılırsa alkol konsantrasyonu yüzde kaçtır?",
+          "secenekler": [
+            "A) %45",
+            "B) %48",
+            "C) %50",
+            "D) %52",
+            "E) %55"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Alkol: 250×0,40 + 250×0,60 = 100 + 150 = 250 g. Toplam = 500 g. Konsantrasyon = 250/500 = %50."
+        },
+        {
+          "soru": "%8 tuzlu 200 gram çözeltiye 200 gram saf su eklenirse yeni konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %2",
+            "B) %3",
+            "C) %4",
+            "D) %5",
+            "E) %6"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz = 200×0,08 = 16 g. Yeni toplam = 400 g. Konsantrasyon = 16/400 = %4."
+        },
+        {
+          "soru": "%50 şekerli 300 gram şuruba 300 gram su eklenirse konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %20",
+            "B) %25",
+            "C) %30",
+            "D) %35",
+            "E) %40"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Şeker = 300×0,50 = 150 g. Yeni toplam = 600 g. Konsantrasyon = 150/600 = %25."
+        },
+        {
+          "soru": "Bir kap %20 konsantrasyonlu 500 gram çözelti içermektedir. Çözeltiden 100 gram alınırsa kalan çözeltinin konsantrasyonu yüzde kaçtır?",
+          "secenekler": [
+            "A) %16",
+            "B) %18",
+            "C) %20",
+            "D) %22",
+            "E) %24"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Homojen bir çözeltiden bir miktar alınırsa konsantrasyon değişmez: %20."
+        },
+        {
+          "soru": "%5 tuzlu 400 gram çözeltiden kaç gram su buharlaştırılırsa konsantrasyon %10 olur?",
+          "secenekler": [
+            "A) 100 g",
+            "B) 150 g",
+            "C) 200 g",
+            "D) 250 g",
+            "E) 300 g"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz = 400×0,05 = 20 g. 20/(400-x) = 0,10 → 400-x = 200 → x = 200 g."
+        },
+        {
+          "soru": "%30 konsantrasyonlu 200 gram çözelti ile %60 konsantrasyonlu 100 gram çözelti karıştırılırsa sonuçtaki konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %40",
+            "B) %42",
+            "C) %44",
+            "D) %45",
+            "E) %46"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "Madde: 200×0,30 + 100×0,60 = 60 + 60 = 120 g. Toplam = 300 g. Konsantrasyon = 120/300 = %40."
+        },
+        {
+          "soru": "100 gram %20 tuzlu çözeltiye 25 gram tuz eklenirse konsantrasyon yüzde kaçtır?",
+          "secenekler": [
+            "A) %30",
+            "B) %35",
+            "C) %36",
+            "D) %40",
+            "E) %45"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz: 100×0,20 + 25 = 20 + 25 = 45 g. Toplam = 125 g. Konsantrasyon = 45/125 = %36."
+        },
+        {
+          "soru": "Bir alaşım 100 gram altın ve 300 gram gümüş içermektedir. Altının alaşım içindeki yüzdesi kaçtır?",
+          "secenekler": [
+            "A) %20",
+            "B) %25",
+            "C) %30",
+            "D) %33",
+            "E) %35"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "Toplam = 400 g. Altın yüzdesi = (100/400) × 100 = %25."
+        },
+        {
+          "soru": "%10 konsantrasyonlu 500 gram çözeltiye ne kadar saf su eklenerek %5 konsantrasyonlu çözelti elde edilir?",
+          "secenekler": [
+            "A) 200 g",
+            "B) 300 g",
+            "C) 400 g",
+            "D) 500 g",
+            "E) 600 g"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "Tuz = 500×0,10 = 50 g. 50/(500+x) = 0,05 → 500+x = 1000 → x = 500 g."
+        },
+        {
+          "soru": "300 gram %20 alkollü karışıma 100 gram %60 alkollü karışım eklenirse alkol konsantrasyonu yüzde kaçtır?",
+          "secenekler": [
+            "A) %25",
+            "B) %28",
+            "C) %30",
+            "D) %32",
+            "E) %35"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Alkol: 300×0,20 + 100×0,60 = 60 + 60 = 120 g. Toplam = 400 g. Konsantrasyon = 120/400 = %30."
+        },
+        {
+          "soru": "200 gram %15 tuzlu çözeltide kaç gram tuz vardır?",
+          "secenekler": [
+            "A) 20 g",
+            "B) 25 g",
+            "C) 30 g",
+            "D) 35 g",
+            "E) 40 g"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "Tuz = 200 × 0,15 = 30 g."
+        },
+        {
+          "soru": "Bir çözeltiden 100 gram alınarak yerine 100 gram saf su konulursa konsantrasyon nasıl değişir?",
+          "secenekler": [
+            "A) Artar",
+            "B) Azalır",
+            "C) Değişmez",
+            "D) İki katına çıkar",
+            "E) Yarıya düşer"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "100 gram çözeltiyle birlikte madde çıkar, yerine maddesiz su girer; toplam miktar sabit kalır ama madde azalır, konsantrasyon düşer."
         }
       ]
     },
@@ -1295,63 +3875,363 @@
       "sorular": [
         {
           "soru": "2x + 3 > 9 eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["x > 3", "x < 3", "x > 6", "x < 6", "x ≥ 3"],
+          "secenekler": [
+            "x > 3",
+            "x < 3",
+            "x > 6",
+            "x < 6",
+            "x ≥ 3"
+          ],
           "dogruIndex": 0,
           "aciklama": "2x + 3 > 9 → 2x > 6 → x > 3. Her iki taraftan 3 çıkarıldı, sonra pozitif 2'ye bölündü; yön değişmedi."
         },
         {
           "soru": "-3x ≤ 12 eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["x ≤ -4", "x ≥ -4", "x ≤ 4", "x ≥ 4", "x < -4"],
+          "secenekler": [
+            "x ≤ -4",
+            "x ≥ -4",
+            "x ≤ 4",
+            "x ≥ 4",
+            "x < -4"
+          ],
           "dogruIndex": 1,
           "aciklama": "-3x ≤ 12 → Her iki taraf -3'e bölünür ve yön tersine döner: x ≥ -4."
         },
         {
           "soru": "|x| < 5 eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["x > 5 veya x < -5", "-5 < x < 5", "x ≥ 5", "x ≤ -5", "x > 0"],
+          "secenekler": [
+            "x > 5 veya x < -5",
+            "-5 < x < 5",
+            "x ≥ 5",
+            "x ≤ -5",
+            "x > 0"
+          ],
           "dogruIndex": 1,
           "aciklama": "|x| < 5 → -5 < x < 5. Mutlak değer eşitsizliği |x| < a → -a < x < a kuralı uygulanır."
         },
         {
           "soru": "|x - 3| = 7 denkleminin çözümleri nelerdir?",
-          "secenekler": ["x = 4 veya x = 10", "x = -4 veya x = 10", "x = 4 veya x = -10", "x = -4 veya x = -10", "x = 10 yalnız"],
+          "secenekler": [
+            "x = 4 veya x = 10",
+            "x = -4 veya x = 10",
+            "x = 4 veya x = -10",
+            "x = -4 veya x = -10",
+            "x = 10 yalnız"
+          ],
           "dogruIndex": 1,
           "aciklama": "|x-3| = 7 → x-3 = 7 veya x-3 = -7 → x = 10 veya x = -4."
         },
         {
           "soru": "3x - 1 < 2x + 5 eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["x < 6", "x > 6", "x < -6", "x > -6", "x ≤ 6"],
+          "secenekler": [
+            "x < 6",
+            "x > 6",
+            "x < -6",
+            "x > -6",
+            "x ≤ 6"
+          ],
           "dogruIndex": 0,
           "aciklama": "3x - 1 < 2x + 5 → 3x - 2x < 5 + 1 → x < 6."
         },
         {
           "soru": "|-3| + |5| + |-7| ifadesinin değeri kaçtır?",
-          "secenekler": ["9", "12", "15", "1", "−5"],
+          "secenekler": [
+            "9",
+            "12",
+            "15",
+            "1",
+            "−5"
+          ],
           "dogruIndex": 2,
           "aciklama": "|-3| = 3, |5| = 5, |-7| = 7. Toplam: 3 + 5 + 7 = 15."
         },
         {
           "soru": "|x + 2| > 4 eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["-6 < x < 2", "x < -6 veya x > 2", "x > 2", "x < -6", "-2 < x < 6"],
+          "secenekler": [
+            "-6 < x < 2",
+            "x < -6 veya x > 2",
+            "x > 2",
+            "x < -6",
+            "-2 < x < 6"
+          ],
           "dogruIndex": 1,
           "aciklama": "|x+2| > 4 → x+2 > 4 veya x+2 < -4 → x > 2 veya x < -6."
         },
         {
           "soru": "1 < 2x - 3 < 7 birleşik eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["2 < x < 5", "1 < x < 7", "1 < x < 5", "2 < x < 7", "-1 < x < 2"],
+          "secenekler": [
+            "2 < x < 5",
+            "1 < x < 7",
+            "1 < x < 5",
+            "2 < x < 7",
+            "-1 < x < 2"
+          ],
           "dogruIndex": 0,
           "aciklama": "1 < 2x - 3 → 4 < 2x → 2 < x; 2x - 3 < 7 → 2x < 10 → x < 5. Birleşim: 2 < x < 5."
         },
         {
           "soru": "Bir sayının mutlak değeri 8'dir ve bu sayı negatiftir. Bu sayı kaçtır?",
-          "secenekler": ["8", "-8", "0", "−16", "16"],
+          "secenekler": [
+            "8",
+            "-8",
+            "0",
+            "−16",
+            "16"
+          ],
           "dogruIndex": 1,
           "aciklama": "|x| = 8 → x = 8 veya x = -8. Sayının negatif olduğu belirtildiğinden x = -8."
         },
         {
           "soru": "x − 4 > 2x + 1 eşitsizliğinin çözüm kümesi nedir?",
-          "secenekler": ["x > -5", "x < -5", "x > 5", "x < 5", "x > 3"],
+          "secenekler": [
+            "x > -5",
+            "x < -5",
+            "x > 5",
+            "x < 5",
+            "x > 3"
+          ],
           "dogruIndex": 1,
           "aciklama": "x − 4 > 2x + 1 → x − 2x > 1 + 4 → -x > 5 → x < -5 (her iki taraf -1'e bölünce yön tersine döner)."
+        },
+        {
+          "soru": "2x - 4 > 8 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) x > 4",
+            "B) x > 5",
+            "C) x > 6",
+            "D) x > 7",
+            "E) x > 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "2x > 12 → x > 6."
+        },
+        {
+          "soru": "3x + 5 ≤ 17 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) x ≤ 2",
+            "B) x ≤ 3",
+            "C) x ≤ 4",
+            "D) x ≤ 5",
+            "E) x ≤ 6"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "3x ≤ 12 → x ≤ 4."
+        },
+        {
+          "soru": "-2x + 6 < 10 eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) x > -4",
+            "B) x > -3",
+            "C) x > -2",
+            "D) x > 2",
+            "E) x > 4"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "-2x < 4 → her iki tarafı -2'ye bölünce işaret değişir → x > -2."
+        },
+        {
+          "soru": "|x - 3| < 5 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) -8 < x < 8",
+            "B) -3 < x < 5",
+            "C) -2 < x < 8",
+            "D) -5 < x < 5",
+            "E) 0 < x < 8"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "-5 < x - 3 < 5 → -5+3 < x < 5+3 → -2 < x < 8."
+        },
+        {
+          "soru": "|2x - 1| ≤ 7 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) -3 ≤ x ≤ 4",
+            "B) -4 ≤ x ≤ 3",
+            "C) -3 ≤ x ≤ 3",
+            "D) -4 ≤ x ≤ 4",
+            "E) -2 ≤ x ≤ 4"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "-7 ≤ 2x-1 ≤ 7 → -6 ≤ 2x ≤ 8 → -3 ≤ x ≤ 4."
+        },
+        {
+          "soru": "4 ≤ 2x - 2 ≤ 10 bileşik eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) 2 ≤ x ≤ 5",
+            "B) 2 ≤ x ≤ 6",
+            "C) 3 ≤ x ≤ 5",
+            "D) 3 ≤ x ≤ 6",
+            "E) 3 ≤ x ≤ 7"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "4 ≤ 2x-2 ≤ 10 → 6 ≤ 2x ≤ 12 → 3 ≤ x ≤ 6."
+        },
+        {
+          "soru": "x - 3 > 2x + 1 eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) x > -4",
+            "B) x < -4",
+            "C) x > 4",
+            "D) x < 4",
+            "E) x > -2"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "x - 2x > 1+3 → -x > 4 → x < -4."
+        },
+        {
+          "soru": "5x - 3 ≥ 3x + 7 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) x ≥ 3",
+            "B) x ≥ 4",
+            "C) x ≥ 5",
+            "D) x ≥ 6",
+            "E) x ≥ 7"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "5x - 3x ≥ 7+3 → 2x ≥ 10 → x ≥ 5."
+        },
+        {
+          "soru": "-3 < x + 2 < 5 bileşik eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) -4 < x < 2",
+            "B) -5 < x < 3",
+            "C) -3 < x < 5",
+            "D) -1 < x < 7",
+            "E) 0 < x < 5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "-3-2 < x < 5-2 → -5 < x < 3."
+        },
+        {
+          "soru": "2x + 1 > 5 veya 3x - 2 < -8 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) x > 2 veya x < -2",
+            "B) x > 2 veya x < -3",
+            "C) x > 2 veya x < -6",
+            "D) x > 3 veya x < -2",
+            "E) x > 3 veya x < -3"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "2x+1>5 → x>2; 3x-2<-8 → 3x<-6 → x<-2. Çözüm: x>2 veya x<-2."
+        },
+        {
+          "soru": "|x| ≤ 4 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) -4 < x < 4",
+            "B) -4 ≤ x ≤ 4",
+            "C) x ≤ 4",
+            "D) -4 ≤ x",
+            "E) x ≥ -4"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "|x| ≤ 4 → -4 ≤ x ≤ 4."
+        },
+        {
+          "soru": "3 < 2x - 1 < 9 bileşik eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) 1 < x < 4",
+            "B) 2 < x < 5",
+            "C) 1 < x < 5",
+            "D) 2 < x < 4",
+            "E) 3 < x < 5"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "3 < 2x-1 < 9 → 4 < 2x < 10 → 2 < x < 5."
+        },
+        {
+          "soru": "4(x - 2) > 2(x + 3) eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) x > 5",
+            "B) x > 6",
+            "C) x > 7",
+            "D) x > 8",
+            "E) x > 9"
+          ],
+          "dogruIndex": 2,
+          "aciklama": "4x - 8 > 2x + 6 → 2x > 14 → x > 7."
+        },
+        {
+          "soru": "|x + 4| > 6 eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) x > 2 veya x < -10",
+            "B) x > 2 veya x < -4",
+            "C) x > 10 veya x < -2",
+            "D) -10 < x < 2",
+            "E) -2 < x < 10"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "x+4 > 6 veya x+4 < -6 → x > 2 veya x < -10."
+        },
+        {
+          "soru": "x/3 - 2 ≤ x/6 + 1 eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) x ≤ 10",
+            "B) x ≤ 12",
+            "C) x ≤ 15",
+            "D) x ≤ 18",
+            "E) x ≤ 20"
+          ],
+          "dogruIndex": 3,
+          "aciklama": "x/3 - x/6 ≤ 1+2 → x/6 ≤ 3 → x ≤ 18."
+        },
+        {
+          "soru": "-4 ≤ 3x + 2 ≤ 14 bileşik eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) -1 ≤ x ≤ 3",
+            "B) -2 ≤ x ≤ 4",
+            "C) -2 ≤ x ≤ 3",
+            "D) -1 ≤ x ≤ 4",
+            "E) -3 ≤ x ≤ 4"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "-4-2 ≤ 3x ≤ 14-2 → -6 ≤ 3x ≤ 12 → -2 ≤ x ≤ 4."
+        },
+        {
+          "soru": "2 - 3x > 8 eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) x > -2",
+            "B) x < -2",
+            "C) x > 2",
+            "D) x < 2",
+            "E) x > 6"
+          ],
+          "dogruIndex": 1,
+          "aciklama": "-3x > 6 → her iki tarafı -3'e bölünce işaret değişir → x < -2."
+        },
+        {
+          "soru": "|3x - 6| < 9 eşitsizliğini çözünüz.",
+          "secenekler": [
+            "A) -1 < x < 5",
+            "B) -1 < x < 4",
+            "C) 0 < x < 5",
+            "D) -2 < x < 6",
+            "E) -1 < x < 6"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "-9 < 3x-6 < 9 → -3 < 3x < 15 → -1 < x < 5."
+        },
+        {
+          "soru": "Sayı doğrusunda x > -3 ve x ≤ 5 koşullarının her ikisini de sağlayan aralık hangisidir?",
+          "secenekler": [
+            "A) (-3, 5]",
+            "B) [-3, 5]",
+            "C) (-3, 5)",
+            "D) [-3, 5)",
+            "E) (-∞, 5]"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "x > -3 (açık uç) ve x ≤ 5 (kapalı uç) → aralık (-3, 5]."
+        },
+        {
+          "soru": "x² < 9 eşitsizliğinin çözüm kümesi nedir?",
+          "secenekler": [
+            "A) -3 < x < 3",
+            "B) x < 3",
+            "C) -3 ≤ x ≤ 3",
+            "D) x > -3",
+            "E) x < -3 veya x > 3"
+          ],
+          "dogruIndex": 0,
+          "aciklama": "x² < 9 → |x| < 3 → -3 < x < 3."
         }
       ]
     }
