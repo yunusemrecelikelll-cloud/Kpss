@@ -107,6 +107,11 @@ const Storage = (() => {
     return palette[h % palette.length];
   }
 
+  // ── Gender ──
+  function getUserGender()          { return _get('gender', ''); }            // 'k' | 'e' | ''
+  function setUserGender(g)         { _set('gender', g); }
+  function getUserGenderFor(name)   { return _getFor(name, 'gender', ''); }
+
   // ── Name ──
   function getUserName()    { return _get('name', ''); }
   function setUserName(n) {
@@ -238,6 +243,7 @@ const Storage = (() => {
     // Kullanıcı yönetimi
     getUserList, getActiveUser, setActiveUser, addUser, deleteUser,
     migrateOldData, getUserStats, userAvatarColor,
+    getUserGender, setUserGender, getUserGenderFor,
     // Veri (aktif kullanıcıya göre)
     getUserName, setUserName,
     getCompletedTopics, markTopicCompleted, isTopicCompleted,

@@ -24,7 +24,12 @@
         <p class="new-user-label">Adın nedir?</p>
         <input id="new-user-input" class="modal-input" type="text" maxlength="24"
           placeholder="Adını gir..." autocomplete="off" />
-        <div style="display:flex;gap:10px;margin-top:12px;justify-content:center">
+        <p class="new-user-label" style="margin-top:18px;margin-bottom:10px">Sen kimsin?</p>
+        <div class="gender-pick-row">
+          <button type="button" class="gender-btn" data-g="k" id="gender-k">👸 Prenses</button>
+          <button type="button" class="gender-btn" data-g="e" id="gender-e">🤴 Prens</button>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:18px;justify-content:center">
           <button id="new-user-cancel" class="btn btn-ghost">İptal</button>
           <button id="new-user-submit" class="btn btn-primary">Oluştur ✨</button>
         </div>

@@ -138,22 +138,50 @@ function postResultChecks(result) {
   newMissions.forEach(m => setTimeout(() => toast(`✅ Görev tamamlandı: ${m.title}!`, 'success', 4000), 1600));
 }
 
+// ── Cinsiyet bazlı hitap yardımcıları ──
+function _titleFor(gender, name) {
+  if (gender === 'k') return `Prenses ${name}`;
+  if (gender === 'e') return `Prens ${name}`;
+  return name;
+}
+function _motivationsFor(gender, streak) {
+  const seriBilgi = streak.count > 1
+    ? `${streak.count} günlük serideysin!`
+    : 'Bugün yeni bir seri başlat!';
+  if (gender === 'k') return [
+    '👸 Prenses, her doğru cevap seni taçlandırıyor!',
+    '💜 Büyük sınav günü geldiğinde hazır olacaksın, inan kendine!',
+    '🌸 Canım, bugün çalıştığın her dakika sınav günü gülümsetecek.',
+    '✨ Sen bunu başarabilirsin — devam et, prenses!',
+    `🏆 ${seriBilgi}`,
+  ];
+  if (gender === 'e') return [
+    '🤴 Prens, her doğru cevap seni zafere yaklaştırıyor!',
+    '⚔️ Şampiyon olmak çalışmayı gerektirir — bunu sen bilirsin!',
+    '🔥 Bugün çalıştığın her dakika sınav günü güç verecek.',
+    '💪 Sen bunu başarabilirsin — devam et, prens!',
+    `🏆 ${seriBilgi}`,
+  ];
+  return [
+    '💪 Her doğru cevap seni hedefe bir adım yaklaştırıyor!',
+    '🌟 Bugün çalıştığın her dakika sınav günü gülümsetecek.',
+    '✨ Sen bunu başarabilirsin — devam et!',
+    '🔥 Seri bozulmasın, bugün en az bir test çöz!',
+    `🏆 ${seriBilgi}`,
+  ];
+}
+
 // ── Home ──
 function renderHome() {
   const name = Storage.getActiveUser() || Storage.getUserName() || 'Aday';
+  const gender = Storage.getUserGender();
   const overall = Storage.computeOverall();
   const completed = Storage.getCompletedTopics();
   const streak = Storage.getStreak();
   const totalTopics = SUBJECTS.reduce((s, x) => s + (x.data?.konular.length || 0), 0);
   const doneTopics = SUBJECTS.reduce((s, x) => s + (x.data?.konular.filter(t => completed[t.id]).length || 0), 0);
 
-  const motivations = [
-    '💪 Her doğru cevap seni hedefe bir adım yaklaştırıyor!',
-    '🌟 Bugün çalıştığın her dakika sınav günü gülümsetecek.',
-    '✨ Sen bunu başarabilirsin — devam et!',
-    '🔥 Seri bozulmasın, bugün en az bir test çöz!',
-    `🏆 ${streak.count > 1 ? `${streak.count} günlük serideysin!` : 'Bugün yeni bir seri başlat!'}`,
-  ];
+  const motivations = _motivationsFor(gender, streak);
   const motivMsg = motivations[new Date().getDate() % motivations.length];
 
   const suggestion = Missions.getTodaySuggestion(SUBJECTS);
@@ -198,7 +226,7 @@ function renderHome() {
       </div>` : ''}
 
     <div class="card hero-card anim-fade">
-      <div class="hero-greeting">Merhaba, <span>${esc(name)}</span>! 🌸</div>
+      <div class="hero-greeting">Merhaba, <span>${esc(_titleFor(gender, name))}</span>! ${gender === 'k' ? '👸' : gender === 'e' ? '🤴' : '🌸'}</div>
       <p class="hero-sub">2026 Ortaöğretim KPSS hazırlığında bugün ne çalışmak istersin?</p>
       <div class="hero-motivation">${motivMsg}</div>
       ${suggestHtml}
@@ -560,8 +588,22 @@ async function finishQuiz() {
 function renderResult(result) {
   const letters = ['A','B','C','D','E'];
   const name = Storage.getActiveUser() || Storage.getUserName() || 'Aday';
+  const gender = Storage.getUserGender();
+  const title = _titleFor(gender, name);
 
   function msg(skor) {
+    if (gender === 'k') {
+      if (skor >= 85) return `${title}, muhteşemsin! 👸✨ Bu konuyu tamamen kavramışsın!`;
+      if (skor >= 70) return `${title}, çok iyisin! 💜 Küçük eksiklerini gider, bu konu senin!`;
+      if (skor >= 50) return `${title}, fena değil! 🌸 Biraz daha çalışırsan harika olacaksın.`;
+      return `${title}, bu konu biraz zorluyordu ama sorun değil! 🤗 Anlatımı tekrar oku ve yeniden dene, sende olur!`;
+    }
+    if (gender === 'e') {
+      if (skor >= 85) return `${title}, muhteşemsin! 🤴⚔️ Bu konuyu tamamen kavramışsın!`;
+      if (skor >= 70) return `${title}, çok iyisin! 💪 Küçük eksiklerini gider, bu konu senin!`;
+      if (skor >= 50) return `${title}, fena değil! 🔥 Biraz daha çalışırsan harika olacaksın.`;
+      return `${title}, bu konu biraz zorluyordu ama sorun değil! 💪 Anlatımı tekrar oku ve yeniden dene, sen yaparsın!`;
+    }
     if (skor >= 85) return `${name}, muhteşem! 🌟 Bu konuyu tamamen kavramışsın!`;
     if (skor >= 70) return `${name}, çok iyi! 💪 Küçük eksiklerini gider, bu konu sende!`;
     if (skor >= 50) return `${name}, fena değil! 🌱 Biraz daha çalışırsan harika olacaksın.`;
@@ -985,9 +1027,11 @@ function renderUserCards() {
   const users = Storage.getUserList();
 
   const cards = users.map(name => {
-    const stats = Storage.getUserStats(name);
-    const color = Storage.userAvatarColor(name);
+    const stats  = Storage.getUserStats(name);
+    const color  = Storage.userAvatarColor(name);
+    const g      = Storage.getUserGenderFor(name);
     const initial = name.charAt(0).toUpperCase();
+    const gIcon  = g === 'k' ? '👸' : g === 'e' ? '🤴' : '';
     const statsLine = stats.solved > 0
       ? `${stats.solved} soru • %${stats.rate} başarı`
       : 'Henüz test çözülmedi';
@@ -999,7 +1043,7 @@ function renderUserCards() {
         <div class="user-avatar-circle" style="background:${color}">
           ${initial}
         </div>
-        <div class="user-card-name">${esc(name)}</div>
+        <div class="user-card-name">${gIcon ? gIcon + ' ' : ''}${esc(name)}</div>
         <div class="user-card-stats">${esc(statsLine)}${streakLine ? '<br>' + esc(streakLine) : ''}</div>
       </button>`;
   }).join('');
@@ -1073,6 +1117,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   $('new-user-cancel').addEventListener('click', () => {
     $('new-user-form').classList.add('hidden');
     $('new-user-input').value = '';
+    document.querySelectorAll('.gender-btn').forEach(b => b.classList.remove('selected'));
+  });
+  document.querySelectorAll('.gender-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.gender-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+    });
   });
 
   // Kullanıcı değiştir butonu
@@ -1114,12 +1165,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 function createNewUser() {
   const val = $('new-user-input').value.trim();
   if (!val) { $('new-user-input').focus(); return; }
+  const selectedGender = document.querySelector('.gender-btn.selected')?.dataset.g || '';
   const name = Storage.addUser(val);
   $('new-user-input').value = '';
   $('new-user-form').classList.add('hidden');
+  document.querySelectorAll('.gender-btn').forEach(b => b.classList.remove('selected'));
   selectUser(name);
+  Storage.setUserGender(selectedGender);
   Storage.resetDailyMissions();
-  toast(`Hoş geldin, ${name}! 🌸`, 'success');
+  const titleWord = selectedGender === 'k' ? 'Prenses' : selectedGender === 'e' ? 'Prens' : '';
+  const emoji = selectedGender === 'k' ? '👸' : selectedGender === 'e' ? '🤴' : '🌸';
+  toast(`Hoş geldin, ${titleWord ? titleWord + ' ' : ''}${name}! ${emoji}`, 'success');
 }
 
 function setActiveNav(id) {
