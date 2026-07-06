@@ -14,8 +14,13 @@
   const THROTTLE = 16; // ~60 fps
 
   function getSettings() {
-    try { return JSON.parse(localStorage.getItem('kpss_v2_settings')) || {}; }
-    catch { return {}; }
+    try {
+      const u = localStorage.getItem('kpss_v2_active_user') || '';
+      const pre = u
+        ? `kpss_v2_${u.replace(/[^a-zA-Z0-9ğüşıöçĞÜŞİÖÇ]/g, '_').slice(0, 40)}_`
+        : 'kpss_v2_legacy_';
+      return JSON.parse(localStorage.getItem(pre + 'settings')) || {};
+    } catch { return {}; }
   }
 
   function isSafe(el) {

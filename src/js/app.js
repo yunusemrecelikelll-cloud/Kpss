@@ -140,7 +140,7 @@ function postResultChecks(result) {
 
 // ── Home ──
 function renderHome() {
-  const name = Storage.getUserName() || 'Aday';
+  const name = Storage.getActiveUser() || Storage.getUserName() || 'Aday';
   const overall = Storage.computeOverall();
   const completed = Storage.getCompletedTopics();
   const streak = Storage.getStreak();
@@ -559,7 +559,7 @@ async function finishQuiz() {
 // ── Result ──
 function renderResult(result) {
   const letters = ['A','B','C','D','E'];
-  const name = Storage.getUserName() || 'Aday';
+  const name = Storage.getActiveUser() || Storage.getUserName() || 'Aday';
 
   function msg(skor) {
     if (skor >= 85) return `${name}, muhteşem! 🌟 Bu konuyu tamamen kavramışsın!`;

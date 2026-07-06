@@ -3,11 +3,19 @@ const Timer = (() => {
 
   let _id = null, _remaining = 0, _onTick = null, _onExpire = null;
 
-  function _getSecsPerQ() {
+  function _readSettings() {
     try {
-      const s = JSON.parse(localStorage.getItem('kpss_v2_settings')) || {};
-      if (s.timerMode === 'perq') return Number(s.secsPerQ) || AUTO_SECS_PER_Q;
-    } catch {}
+      const u = localStorage.getItem('kpss_v2_active_user') || '';
+      const pre = u
+        ? `kpss_v2_${u.replace(/[^a-zA-Z0-9ğüşıöçĞÜŞİÖÇ]/g, '_').slice(0, 40)}_`
+        : 'kpss_v2_legacy_';
+      return JSON.parse(localStorage.getItem(pre + 'settings')) || {};
+    } catch { return {}; }
+  }
+
+  function _getSecsPerQ() {
+    const s = _readSettings();
+    if (s.timerMode === 'perq') return Number(s.secsPerQ) || AUTO_SECS_PER_Q;
     return AUTO_SECS_PER_Q;
   }
 
