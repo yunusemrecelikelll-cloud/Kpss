@@ -23,33 +23,22 @@ const Sounds = (() => {
     } catch { return true; }
   }
 
-  // Yumuşak "tık" sesi — iki katmanlı: keskin ön vuruş + hafif rezonans
+  // Dolgun tık — hızlı frekans düşüşü, tok vuruş hissi
   function click() {
     if (!_enabled()) return;
     const ctx = _getCtx(); if (!ctx) return;
     const t = ctx.currentTime;
-
-    // Üst katman: keskin ön vuruş
-    const osc1 = ctx.createOscillator();
-    const g1 = ctx.createGain();
-    osc1.type = 'triangle';
-    osc1.frequency.setValueAtTime(1200, t);
-    osc1.frequency.exponentialRampToValueAtTime(600, t + 0.03);
-    g1.gain.setValueAtTime(0.14, t);
-    g1.gain.exponentialRampToValueAtTime(0.001, t + 0.045);
-    osc1.connect(g1); g1.connect(ctx.destination);
-    osc1.start(t); osc1.stop(t + 0.05);
-
-    // Alt katman: hafif dolgunluk
-    const osc2 = ctx.createOscillator();
-    const g2 = ctx.createGain();
-    osc2.type = 'sine';
-    osc2.frequency.setValueAtTime(420, t);
-    osc2.frequency.exponentialRampToValueAtTime(280, t + 0.1);
-    g2.gain.setValueAtTime(0.07, t);
-    g2.gain.exponentialRampToValueAtTime(0.001, t + 0.1);
-    osc2.connect(g2); g2.connect(ctx.destination);
-    osc2.start(t); osc2.stop(t + 0.11);
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(280, t);
+    osc.frequency.exponentialRampToValueAtTime(80, t + 0.07);
+    gain.gain.setValueAtTime(0.45, t);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 0.13);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(t);
+    osc.stop(t + 0.14);
   }
 
   // Tik-tak (son 5 saniyelik geri sayım)
