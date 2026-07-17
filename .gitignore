@@ -2,3 +2,9 @@ node_modules/
 dist/
 .DS_Store
 *.log
+
+# Yönetimsel yardımcı scriptler ve Firestore veri dökümleri — burada
+# Admin SDK servis hesabı anahtarının dosya YOLUNA referans veren scriptler
+# olabiliyor (anahtarın kendisi hiçbir zaman repo içine konulmamalı).
+scratchpad/
+*firebase-adminsdk*.json
